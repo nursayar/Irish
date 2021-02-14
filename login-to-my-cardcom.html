@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Login To My Cardcom - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Login To My Cardcom",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/02/d0/24/02d0242cd04ad73230aac39e3281b7f5.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=login+to+my+cardcom",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Login To My Cardcom</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Her online greeting cards are seen by millions and are among the most artistic and complex ecards on the Internet. Secure and convenient. We would like to show you a description here but the site wont allow us. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-wives-on-lifetime.html">army wives on lifetime</a>
+											<a class="badge badge-success" href="/army-warrant-officer-kills-wife-boyfriend.html">army warrant officer kills wife boyfriend</a>
+											<a class="badge badge-light" href="/becoming-a-navy-social-worker.html">becoming a navy social worker</a>
+											<a class="badge badge-danger" href="/army-wives-who-does-gloria-choose.html">army wives who does gloria choose</a>
+											<a class="badge badge-danger" href="/australian-national-archives-war-service-records.html">australian national archives war service records</a>
+											<a class="badge badge-info" href="/army-wife-logo.html">army wife logo</a>
+											<a class="badge badge-info" href="/army-wife-funny-quotes.html">army wife funny quotes</a>
+											<a class="badge badge-info" href="/army-wife-hoodie.html">army wife hoodie</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and image content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/56/71/985671868f6c52818a8a3b5d9970fd13.png" data-lightbox="roadtrip" data-title="Indigo Credit Card Login Www Myindigocard Com Login Payment 2 Credit Card Credit Card Payment Paying Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/56/71/985671868f6c52818a8a3b5d9970fd13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAM35qqcGbLZSydMHJoXw6ZuaeOX_0sQd7g';" alt="Indigo Credit Card Login Www Myindigocard Com Login Payment 2 Credit Card Credit Card Payment Paying Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indigo Credit Card Login Www Myindigocard Com Login Payment 2 Credit Card Credit Card Payment Paying Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/cf/af/d4cfaf055db0ec5e4a1617e2a44666e2.png" data-lightbox="roadtrip" data-title="Card Holders Can Login To Their Bmw Card Account And Access And Manage Their Card Account Online Throu Credit Card Rewards Credit Cards Credit Card Application">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/cf/af/d4cfaf055db0ec5e4a1617e2a44666e2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiY3MtaD5IQnhdocdhigS9Q2X6i797L3vFXw';" alt="Card Holders Can Login To Their Bmw Card Account And Access And Manage Their Card Account Online Throu Credit Card Rewards Credit Cards Credit Card Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Card Holders Can Login To Their Bmw Card Account And Access And Manage Their Card Account Online Throu Credit Card Rewards Credit Cards Credit Card Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/b1/a0/66b1a09d4b9b9de1102b153de358d543.jpg" data-lightbox="roadtrip" data-title="Pin By Gmaillogin On Gmail Login Gmail Sign Gmail Sign Up Gmail Sign In Login">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/b1/a0/66b1a09d4b9b9de1102b153de358d543.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3mZ6GCRuDQvPmGp4ham6TWIew0NyPAsN8A';" alt="Pin By Gmaillogin On Gmail Login Gmail Sign Gmail Sign Up Gmail Sign In Login">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Gmaillogin On Gmail Login Gmail Sign Gmail Sign Up Gmail Sign In Login</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/d0/24/02d0242cd04ad73230aac39e3281b7f5.png" data-lightbox="roadtrip" data-title="Pcs Mastercard Activation Activate Pcs Mastercard Mastercard Gift Card Paypal Gift Card Mastercard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/d0/24/02d0242cd04ad73230aac39e3281b7f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCJ-mLlsS0VFygOXjowK6mO0mDpNkU48hxg';" alt="Pcs Mastercard Activation Activate Pcs Mastercard Mastercard Gift Card Paypal Gift Card Mastercard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Mastercard Activation Activate Pcs Mastercard Mastercard Gift Card Paypal Gift Card Mastercard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/9d/2f/129d2f130e2eddc51e22d3aca5d1fe94.jpg" data-lightbox="roadtrip" data-title="Login To Falconflyer Member Card Cards Flyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/9d/2f/129d2f130e2eddc51e22d3aca5d1fe94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-x_8QkV1aDH0wN6cNdDEvcikgJhli0tNSg';" alt="Login To Falconflyer Member Card Cards Flyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login To Falconflyer Member Card Cards Flyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/0b/0e/0a0b0ed0e064ee200c9f67f6a339e49b.jpg" data-lightbox="roadtrip" data-title="Yahoo Mail Login Sign In To My Email Account Yahoo Mail Login Page Tecng Mail Login Check Mail Email Account">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/0b/0e/0a0b0ed0e064ee200c9f67f6a339e49b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7stwFTI9zoFnDsdG4dV2LZvIkqt-P3Rg3w';" alt="Yahoo Mail Login Sign In To My Email Account Yahoo Mail Login Page Tecng Mail Login Check Mail Email Account">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yahoo Mail Login Sign In To My Email Account Yahoo Mail Login Page Tecng Mail Login Check Mail Email Account</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/ec/43/c8/ec43c810db179452decf7554d89bfdc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7stwFTI9zoFnDsdG4dV2LZvIkqt-P3Rg3w';" alt="Yahoo Mail Login Sign In To My Email Account Yahoo Mail Login Page Tecng Mail Login Check Mail Email Account">
+										<div class="card-body">
+						<h3 class="h5"><b>Your aqua online account lets you manage everything to do with your aqua card in one convenient place from paying your balance to changing personal details.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Login to my cardcom</strong>. 
+								
+																	Skip typing your password by staying logged in on this device. 
+																	Keep in mind that our Online Card Services are for card accounts only. 
+																	Download our new app or check out our website. 
+																	These are your login details for this website NOT argoscouk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Amazon Credit Card Online Account Manager lets you manage everything to do with your account in one place - from paying your balance to updating your details. 
+																	Send money all over the world instantly without hidden fees. 
+																	Sign in to your Tesco account to shop groceries easily using your favourites list. 
+																	Welcome to a new way to get your Nectar on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Log in to your American Express account to activate a new card review and spend your reward points get a question answered or a range of other services. 
+																	Jacquie Lawson has made animated ecards for holidays birthdays and many other occasions since making her first online Christmas card featuring Chudleigh in 2000. 
+																	Log in to your account Register for an account. 
+																	Logon ID Login ID Your Login ID is at least 6 characters and can contain letters numbers or special characters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whenever you check out on a new device and browser when logged in with your Google account you can log in automatically at checkout without entering your password. 
+																	Online Card Services makes it easy to manage your credit card account when it suits you best. 
+																	Fast access to your account available 24 hours a day 7 days a week. 
+																	Stay logged in for faster checkout. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This website uses cookies to ensure you get the best experience on our website. 
+																	For security well occasionally ask you to log in including every time you update your personal or financial information. 
+																	The Amazon Credit Card Online Account Manager lets you manage everything to do with your account in one place - from paying your balance to updating your details. 
+																	You can also update your account details and manage your Clubcard including checking your points. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Send request money or split bills with friends and family instantly whether. 
+																	Just add a 20 deposit to get started and order your free card to spend at home or abroad in 150 currencies. 
+																	Textglobalmeta_description If you cannot access your account or have forgotten your username please contact Customer Services. 
+																	Download the Vanquis Mobile App today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Vanquis App makes it even quicker and easier for you to manage your account on the move. 
+																	Whether youre living abroad or have family overseas you can hold exchange send and receive 28 currencies like MXN CAD and EUR in seconds. 
+																	Were currently working on our range of online services for loans watch this space. 
+																	Your aqua online account lets you manage everything to do with your aqua card in one convenient place from paying your balance to changing personal details. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Dorothy Perkins Credit Card Online Account Manager lets you manage everything to do with your account in one place - from paying your balance to updating your details. 
+																	If you cant remember it press FORGOTTEN YOUR LOGIN ID below. 
+																	Checkbox screen reader text Remember my Login ID Last name Surname. 
+																	Log in to your US American Express account to activate a new card review and spend your reward points get a question answered or a range of other services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Costa is the nations favourite coffee shop and the largest and fastest growing coffee shop chain in the UK. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/dd/aa/caddaa9609f0907c7af887e30521586f.png" data-lightbox="roadtrip" data-title="Reflex Credit Card Login Reflex Mastercard Payment Cardsbase Credit Card Online Credit Card Apply Credit Card Application">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/dd/aa/caddaa9609f0907c7af887e30521586f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjqZBL-v08q_d23bOOEgd5IMm2Ty9bdZeNQ';" alt="Reflex Credit Card Login Reflex Mastercard Payment Cardsbase Credit Card Online Credit Card Apply Credit Card Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reflex Credit Card Login Reflex Mastercard Payment Cardsbase Credit Card Online Credit Card Apply Credit Card Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/2c/89/a32c891cbb369293e461582b0691ec47.png" data-lightbox="roadtrip" data-title="Best Buy Credit Card Login If You Are Facing Issues In My Best Buy Credit Card To Make Online Payment Cool Things To Buy Credit Card Application Credit Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/2c/89/a32c891cbb369293e461582b0691ec47.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRgrHCpgIFJjoognrtIr-DxDZkB9ZrOJIzw';" alt="Best Buy Credit Card Login If You Are Facing Issues In My Best Buy Credit Card To Make Online Payment Cool Things To Buy Credit Card Application Credit Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Buy Credit Card Login If You Are Facing Issues In My Best Buy Credit Card To Make Online Payment Cool Things To Buy Credit Card Application Credit Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/52/53/a75253ad3dd5ad00600a197809edecf6.png" data-lightbox="roadtrip" data-title="Andrebts Login Basics App Login App Login">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/52/53/a75253ad3dd5ad00600a197809edecf6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXNnZgAuF7jEpWaCusDTJL8urzICgM4nwODQ';" alt="Andrebts Login Basics App Login App Login">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Andrebts Login Basics App Login App Login</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/69/d4/9169d4bdfecd939658bd90af45741f26.png" data-lightbox="roadtrip" data-title="Indulge Gift Card Free Visa Gift Cards Numbers With Ccv Mastercard Gift Card Secure Credit Card Credit Card Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/69/d4/9169d4bdfecd939658bd90af45741f26.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvHnIHJw-3TFlYCxt4Bllsra4zHy27NnnZdw';" alt="Indulge Gift Card Free Visa Gift Cards Numbers With Ccv Mastercard Gift Card Secure Credit Card Credit Card Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indulge Gift Card Free Visa Gift Cards Numbers With Ccv Mastercard Gift Card Secure Credit Card Credit Card Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/48/3c/48/483c485b7781a2d27be0d8707621de51.jpg" data-lightbox="roadtrip" data-title="Mybpcreditcard Credit Card Online Credit Card Best Credit Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/48/3c/48/483c485b7781a2d27be0d8707621de51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xMfqkNjrZK4Ru1agqgHoWi_cu72jDofm6w';" alt="Mybpcreditcard Credit Card Online Credit Card Best Credit Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mybpcreditcard Credit Card Online Credit Card Best Credit Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ec/43/c8/ec43c810db179452decf7554d89bfdc4.jpg" data-lightbox="roadtrip" data-title="Login Wirecard Login Prepaid Card Online Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ec/43/c8/ec43c810db179452decf7554d89bfdc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaf6kkYzed_Uhpcj7p-zY8IINHTaAR3SY8HQ';" alt="Login Wirecard Login Prepaid Card Online Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login Wirecard Login Prepaid Card Online Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/63/5b/1f635b8810a8caa1e2795f60625f3c24.jpg" data-lightbox="roadtrip" data-title="Pin On Credit Card Submit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/63/5b/1f635b8810a8caa1e2795f60625f3c24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC4KvtzZFF9uWsch0LDyLI5uADo97mgC9LQ';" alt="Pin On Credit Card Submit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Credit Card Submit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/82/c4/cf82c49ea3099896740463565ba92e00.jpg" data-lightbox="roadtrip" data-title="Pin On Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/82/c4/cf82c49ea3099896740463565ba92e00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWjZ28HTKZE-nsDz4u277AgaLXRc6XfUwBg';" alt="Pin On Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/a3/ef/36a3efda7b092c29cd058bcd8bd5f213.jpg" data-lightbox="roadtrip" data-title="Login To Start Using Your Canada Post Visa Prepaid Card Prepaid Card Cards Bank Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/a3/ef/36a3efda7b092c29cd058bcd8bd5f213.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShkf1dcbCSnSPVbQEUfTL9hwwwu7m5BpoqPw';" alt="Login To Start Using Your Canada Post Visa Prepaid Card Prepaid Card Cards Bank Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login To Start Using Your Canada Post Visa Prepaid Card Prepaid Card Cards Bank Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/2e/9c/062e9c605f90916696be38673cd0d46c.png" data-lightbox="roadtrip" data-title="Discover Card Login To Access Your Account Discover Card Discover Credit Card Platinum Credit Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/2e/9c/062e9c605f90916696be38673cd0d46c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSukIlXJjZeC112JCzuksXyW_utRnigbzTuXw';" alt="Discover Card Login To Access Your Account Discover Card Discover Credit Card Platinum Credit Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover Card Login To Access Your Account Discover Card Discover Credit Card Platinum Credit Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/4c/8c/804c8c1209b635bbfbdb26f6696673d5.jpg" data-lightbox="roadtrip" data-title="Marriott Rewards Card Login Marriott Com By Chase Credit Reward Card Rewards Credit Cards Rewards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/4c/8c/804c8c1209b635bbfbdb26f6696673d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37ZfVKsw_RBG1gJ-eHotxeNVGCmyguO3X1w';" alt="Marriott Rewards Card Login Marriott Com By Chase Credit Reward Card Rewards Credit Cards Rewards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriott Rewards Card Login Marriott Com By Chase Credit Reward Card Rewards Credit Cards Rewards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/d5/70/bfd57007adc74d24e9a20212cc074295.png" data-lightbox="roadtrip" data-title="Community Card Mobile App Login Screen App Login Mobile App Mobile Login">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/d5/70/bfd57007adc74d24e9a20212cc074295.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrUdNd5HE2Wb8hJ_2afoZZs2e9yGG-qjkihw';" alt="Community Card Mobile App Login Screen App Login Mobile App Mobile Login">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Community Card Mobile App Login Screen App Login Mobile App Mobile Login</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3c/af/93/3caf93f26e981f9be0da80adfe84862e.jpg" data-lightbox="roadtrip" data-title="Login Wirecard In 2021 Password Log Login Forget You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3c/af/93/3caf93f26e981f9be0da80adfe84862e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxGouIxww-FNUO0CGhUPZ-I600ty-QKR-ffg';" alt="Login Wirecard In 2021 Password Log Login Forget You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login Wirecard In 2021 Password Log Login Forget You</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-hats-for-sale-near-me.html">Army Hats For Sale Near Me</a></li>
+													<li class="list-group-item"><a href="/army-hard-hat.html">Army Hard Hat</a></li>
+													<li class="list-group-item"><a href="/army-eo-complaint-timeline.html">Army Eo Complaint Timeline</a></li>
+													<li class="list-group-item"><a href="/army-careers-office-middlesbrough-number.html">Army Careers Office Middlesbrough Number</a></li>
+													<li class="list-group-item"><a href="/army-helpline-number.html">Army Helpline Number</a></li>
+													<li class="list-group-item"><a href="/army-hrc-my-portal.html">Army Hrc My Portal</a></li>
+													<li class="list-group-item"><a href="/army-education-benefits-number.html">Army Education Benefits Number</a></li>
+													<li class="list-group-item"><a href="/army-civilian-hr-training.html">Army Civilian Hr Training</a></li>
+													<li class="list-group-item"><a href="/army-hrc-iperms-login.html">Army Hrc Iperms Login</a></li>
+													<li class="list-group-item"><a href="/army-careers-phone-number.html">Army Careers Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-heroes-photo.html">Army Heroes Photo</a></li>
+													<li class="list-group-item"><a href="/army-haircut-example.html">Army Haircut Example</a></li>
+													<li class="list-group-item"><a href="/army-hats-ireland.html">Army Hats Ireland</a></li>
+													<li class="list-group-item"><a href="/army-hrc-my-portal-login.html">Army Hrc My Portal Login</a></li>
+													<li class="list-group-item"><a href="/army-doctor-kills-wife.html">Army Doctor Kills Wife</a></li>
+													<li class="list-group-item"><a href="/army-headlamp.html">Army Headlamp</a></li>
+													<li class="list-group-item"><a href="/army-education-benefits-powerpoint.html">Army Education Benefits Powerpoint</a></li>
+													<li class="list-group-item"><a href="/army-help-number.html">Army Help Number</a></li>
+													<li class="list-group-item"><a href="/army-family-support-pay-chart.html">Army Family Support Pay Chart</a></li>
+													<li class="list-group-item"><a href="/army-eo-complaint.html">Army Eo Complaint</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Jobs With Criminal Justice Degree - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Jobs With Criminal Justice Degree",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/f4/f1/76/f4f176719ac2441ce008d81fc636789e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+jobs+with+criminal+justice+degree",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Jobs With Criminal Justice Degree</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">With so many options its hard to narrow them down to the top 10 Air Force jobs. Whether planning to join the Air Force Army Marines Navy or Coast Guard each of these military branches allow students with four-year degrees to bypass general enlistment and move directly into officer trainingIn addition to saving time spent working up the ranks officers take on leadership roles and earn higher salaries. You can transfer these credits toward coursework in the Community College of the Air Force. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-is-1-hour-in-military-time.html">what is 1 hour in military time</a>
+											<a class="badge badge-light" href="/what-is-the-meaning-of-military-historian.html">what is the meaning of military historian</a>
+											<a class="badge badge-info" href="/what-is-the-meaning-of-military-exploits.html">what is the meaning of military exploits</a>
+											<a class="badge badge-dark" href="/what-happens-if-you-divorce-someone-in-the-military.html">what happens if you divorce someone in the military</a>
+											<a class="badge badge-info" href="/what-is-the-meaning-of-military-expedition-in-english.html">what is the meaning of military expedition in english</a>
+											<a class="badge badge-dark" href="/what-constitutes-an-eo-complaint-in-the-army.html">what constitutes an eo complaint in the army</a>
+											<a class="badge badge-warning" href="/what-is-the-meaning-of-military-minded.html">what is the meaning of military minded</a>
+											<a class="badge badge-light" href="/what-is-the-meaning-of-military-outpost.html">what is the meaning of military outpost</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to visit the right site.  Our site gives you hints for viewing the highest quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/f7/e2/78f7e2ce043e5e6788bd8fd3ef89b80c.jpg" data-lightbox="roadtrip" data-title="Pin On Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/f7/e2/78f7e2ce043e5e6788bd8fd3ef89b80c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFr2yCSwe5V7HfqjRqkCQlskNy6Z-l3LDcrw';" alt="Pin On Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/64/a5/b564a57d4b8e991c062cf911fd993fa9.jpg" data-lightbox="roadtrip" data-title="Pin By Amelia Montgomery On Military And Nurses Air Force Nurse Military Nurses Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/64/a5/b564a57d4b8e991c062cf911fd993fa9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP51gFS1ZlNrUlSyq_3_W8hBZhtKvqFbtshw';" alt="Pin By Amelia Montgomery On Military And Nurses Air Force Nurse Military Nurses Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amelia Montgomery On Military And Nurses Air Force Nurse Military Nurses Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/c5/6c/02c56ce179716e279fc6115ce1e63023.png" data-lightbox="roadtrip" data-title="Pin On Online Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/c5/6c/02c56ce179716e279fc6115ce1e63023.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90C4OyfNk2piIIGQwLgA70yNRL9uRKQ-JuA';" alt="Pin On Online Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Online Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/2a/89/b82a89e01c6f828a2317981f2a40c423.jpg" data-lightbox="roadtrip" data-title="Criminal Justice Top Careers For Students Of Criminology And Criminal Justice Asu Beebe Affordab Criminology Criminal Justice Criminal Justice Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/2a/89/b82a89e01c6f828a2317981f2a40c423.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK72UGmB0sCjI645t8huH4MFvRqAt89L9FGA';" alt="Criminal Justice Top Careers For Students Of Criminology And Criminal Justice Asu Beebe Affordab Criminology Criminal Justice Criminal Justice Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Criminal Justice Top Careers For Students Of Criminology And Criminal Justice Asu Beebe Affordab Criminology Criminal Justice Criminal Justice Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/38/0e/64380e8633793542c7318e65dde793e1.png" data-lightbox="roadtrip" data-title="If You Intend To Become An Enlisted Active Duty Airman Or Enlisted Reserve Airman Some Air Force In 2020 Air Force Basic Training Air Force Recruiter Air Force Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/38/0e/64380e8633793542c7318e65dde793e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFEp75GZGMrZ7O5rGK_UsfDCt7c_je-ghtQ';" alt="If You Intend To Become An Enlisted Active Duty Airman Or Enlisted Reserve Airman Some Air Force In 2020 Air Force Basic Training Air Force Recruiter Air Force Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Intend To Become An Enlisted Active Duty Airman Or Enlisted Reserve Airman Some Air Force In 2020 Air Force Basic Training Air Force Recruiter Air Force Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/fa/f7/8efaf7f368f721a8055f4deffbadcbf7.png" data-lightbox="roadtrip" data-title="Materiel Management 2s0x1 Air Force Careers Airman Vision Air Force Jobs Management Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/fa/f7/8efaf7f368f721a8055f4deffbadcbf7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOIpo1k5Af7acEz39qeQ4tw-ab7GHyBv3dQ';" alt="Materiel Management 2s0x1 Air Force Careers Airman Vision Air Force Jobs Management Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Materiel Management 2s0x1 Air Force Careers Airman Vision Air Force Jobs Management Air Force</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/78/f7/e2/78f7e2ce043e5e6788bd8fd3ef89b80c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOIpo1k5Af7acEz39qeQ4tw-ab7GHyBv3dQ';" alt="Materiel Management 2s0x1 Air Force Careers Airman Vision Air Force Jobs Management Air Force">
+										<div class="card-body">
+						<h3 class="h5"><b>Like their counterparts in the Army and Marine CIDs special investigators in the Air Force investigate major and sensitive crimes in their branch of service.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force jobs with criminal justice degree</strong>. 
+								
+																	Of course the higher score you get on your ASVAB and the more schooling you have under your belt the greater your opportunities are. 
+																	MPs as theyre popularly called have a huge job in the US. 
+																	Cincinnatis Air Force ROTC program focuses on developing leadership skills and providing the education and training cadets need to be first-class Air Force officers. 
+																	Getting a pilot slot is very. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Air Force jobs list is as long as it is varied. 
+																	Welcome to the United States Air Force. 
+																	Either way after a few years in the military you could test for and go into the FBI. 
+																	Potential career fields include military police corrections officer NCIS special agent Air Force Office of Special Investigations special agent and military lawyer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Custom Protection Officer Office Manager Intelligence Analyst and more. 
+																	Depending on your career goals you can opt for part-time or full-time service. 
+																	One of the primary jobs of being an FBI agent is investigating federal law violations. 
+																	The University of Cincinnati offers a Bachelor of Science in Criminal Justice that gives students a thorough grounding in understanding criminality and the criminal justice system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They do this by doing undercover operations and monitoring suspicious activities. 
+																	However with a degree you may want to aim for Intelligence. 
+																	In this climate it is clear that the criminal justice field is fraught with employment opportunities and a college degree in criminal justice can give you a distinct advantage. 
+																	So yes you could be an Air Force pilot with a CJ degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Police When talking about criminal justice and criminology jobs in the military perhaps the most obvious starting point is military police. 
+																	Each option has different benefits and requirements so its helpful to talk with a recruiter to best understand each option. 
+																	Apply to Social Worker Criminalist I Administrator II and more. 
+																	Specifically the Air Force Enlisted Classification Manual tells us that a special investigator conducts criminal economic crime counterintelligence force protection personnel suitability computer crime technical services investigations and special inquiries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Career Information for Military Criminal Justice Jobs Correctional Officers Jailers Correctional officers and jailers in the military guard inmates in military prisons and jails and respond to. 
+																	One of the many criminal justice jobs available with a military degree the paralegal specialist job is a great option for individuals who would like to be involved with the criminal justice system but would rather work in a relatively calm environment. 
+																	As far as the Air Force goes they require a degree what its in is not specified. 
+																	The Air Force offers over 200 different jobs known as AFSCs for enlisted airmen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Among all fields in criminal justice FBI has one of the biggest acceptance of women minorities and people with disabilities. 
+																	The Marine Corps still has their military doing most of the police as well as the Air Force infact the Marine Corps gets their K-9 training from the Air Force at Lacklack AFB. 
+																	The program for Air Force Security Forces Specialist is based in Lackland Air Force Base in Texas and is 65 days in length. 
+																	Military to maintain law and order on base investigate minor crimes and make arrests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn about great opportunities for enlisted airmen officers and health care professionals. 
+																	Individuals serving in the military can find criminal justice careers that will hone their previous knowledge and training. 
+																	Graduates are awarded a military police certificate in Criminal Justice with 17 college equivalency credits. 
+																	Active Duty full timeAir National Guard part-timeAir Force Reserve part-timeAir Force Civilian Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can choose to serve. 
+																	Judge advocate general Defend your country in the courtroom Overview. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/78/17/447817843d238225312c8c026e8263d0.jpg" data-lightbox="roadtrip" data-title="Http Www Badgeframe Com State College Criminal Justice Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/78/17/447817843d238225312c8c026e8263d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1oorJxjRwq4cM_m7JG8A1nrdNDKb68WJNOw';" alt="Http Www Badgeframe Com State College Criminal Justice Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Badgeframe Com State College Criminal Justice Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/9d/6b/839d6b3a85df7186ceaaca5f070ff0b9.jpg" data-lightbox="roadtrip" data-title="Aviano Air Base Media Gallery Air Force Families Air Force Air Force Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/9d/6b/839d6b3a85df7186ceaaca5f070ff0b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6-AjUEm4gY26ZhSLw2ux4jfSALxxRh1VHWw';" alt="Aviano Air Base Media Gallery Air Force Families Air Force Air Force Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aviano Air Base Media Gallery Air Force Families Air Force Air Force Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/3d/d7/763dd7c666d971d607ab6814376a50de.jpg" data-lightbox="roadtrip" data-title="This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/3d/d7/763dd7c666d971d607ab6814376a50de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMs8i9ME0qVtq3LQpy9MR8AEWFLE0lR6MYA';" alt="This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Sample Resume For A Marine Seeking A Position In Law Enforcement Shows How You Can Translate Your Militar In 2021 Police Officer Resume Police Jobs Paper Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/52/57/b75257046c3faa0a34d67ffffe2fd0d0.jpg" data-lightbox="roadtrip" data-title="All About Air Force Asvab Composite Scores Air Force Jobs Scores Definitions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/52/57/b75257046c3faa0a34d67ffffe2fd0d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY23YHQepYbywXtTWUBUqNOTOuGUq-kA4RZA';" alt="All About Air Force Asvab Composite Scores Air Force Jobs Scores Definitions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All About Air Force Asvab Composite Scores Air Force Jobs Scores Definitions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/f1/76/f4f176719ac2441ce008d81fc636789e.jpg" data-lightbox="roadtrip" data-title="All About Air Force Asvab Composite Scores Air Force Jobs Air Force Military Life Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/f1/76/f4f176719ac2441ce008d81fc636789e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDM9lPQkZxu9bnbfnKtJ_gWi9mwd4-IUXuaQ';" alt="All About Air Force Asvab Composite Scores Air Force Jobs Air Force Military Life Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All About Air Force Asvab Composite Scores Air Force Jobs Air Force Military Life Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/92/a9/2592a98eeb1c64e4e61b573f680187b1.jpg" data-lightbox="roadtrip" data-title="Decorated Graduation Cap Criminal Justice Major Joining The Air Force Graduation Cap Decoration Cap Decorations Air Force Graduation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/92/a9/2592a98eeb1c64e4e61b573f680187b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSla0nPSKGuuMg0HNEtH4KtmRNSaov6Dz1kPw';" alt="Decorated Graduation Cap Criminal Justice Major Joining The Air Force Graduation Cap Decoration Cap Decorations Air Force Graduation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Decorated Graduation Cap Criminal Justice Major Joining The Air Force Graduation Cap Decoration Cap Decorations Air Force Graduation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/8c/e0/ab8ce00e49cd7cbb596fe8f4ef4ab0c4.gif" data-lightbox="roadtrip" data-title="Uniform Air Force Girlfriend Air Force Mom Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/8c/e0/ab8ce00e49cd7cbb596fe8f4ef4ab0c4.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbmsaNxwV9FjipbpCkK9GsHOBxmNkH40M2g';" alt="Uniform Air Force Girlfriend Air Force Mom Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uniform Air Force Girlfriend Air Force Mom Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/04/67/7b04679239cf631012f51432fdbaaf13.jpg" data-lightbox="roadtrip" data-title="Air Force Logo Sigma Alpha Epsilon Fraternity Gettysburg College Sae Goldstars In United States Air Force Air Force Veteran Us Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/04/67/7b04679239cf631012f51432fdbaaf13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7jmCt2zbnQcfe_YdLXbqkSEScu61dg6-gg';" alt="Air Force Logo Sigma Alpha Epsilon Fraternity Gettysburg College Sae Goldstars In United States Air Force Air Force Veteran Us Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Logo Sigma Alpha Epsilon Fraternity Gettysburg College Sae Goldstars In United States Air Force Air Force Veteran Us Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/fd/17/ddfd17c8d829b50107863ba1bbf59626.jpg" data-lightbox="roadtrip" data-title="Touch The Sky Feel The Glory Call 81000 20614 Visit Http Www Siegwaldacademy Com In 2020 Training Academy Career Training Coaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/fd/17/ddfd17c8d829b50107863ba1bbf59626.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLZkuIH_SZAAoxHfFm4zQurG5hhRk4YQxVg';" alt="Touch The Sky Feel The Glory Call 81000 20614 Visit Http Www Siegwaldacademy Com In 2020 Training Academy Career Training Coaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch The Sky Feel The Glory Call 81000 20614 Visit Http Www Siegwaldacademy Com In 2020 Training Academy Career Training Coaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2019/10/air-force-jobs-1140x558.jpg" data-lightbox="roadtrip" data-title="7 Of The Coolest Air Force Jobs You Can Have Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2019/10/air-force-jobs-1140x558.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhEfH2jV4jS9b34igUXIMD_aeQVZXnCU2wQ';" alt="7 Of The Coolest Air Force Jobs You Can Have Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Of The Coolest Air Force Jobs You Can Have Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/90/d9/3590d9011f0d6575b220abfd457eef96.png" data-lightbox="roadtrip" data-title="Surviving Air Force Basic Training Air Force Basic Training Air Force Academy Air Force Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/90/d9/3590d9011f0d6575b220abfd457eef96.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPrqEXdGnQ0O9EeINls-Ct0FRQ1nTUsTXywg';" alt="Surviving Air Force Basic Training Air Force Basic Training Air Force Academy Air Force Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surviving Air Force Basic Training Air Force Basic Training Air Force Academy Air Force Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c1/61/01/c16101fe274060f55606a27be1b81414.jpg" data-lightbox="roadtrip" data-title="What Is The Highest Asvab Score Air Force Basic Training Military Jobs Navy Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c1/61/01/c16101fe274060f55606a27be1b81414.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTj0fEZHOHSZk74OlSZSihtIrtbfUOx2opw';" alt="What Is The Highest Asvab Score Air Force Basic Training Military Jobs Navy Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Highest Asvab Score Air Force Basic Training Military Jobs Navy Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/85/eb/8185eb43071ce1e8d3d9e0c441a983fc.jpg" data-lightbox="roadtrip" data-title="Women In Police Force Police Academy Training Criminal Justice Criminal Justice Major">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/85/eb/8185eb43071ce1e8d3d9e0c441a983fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9PilL76ADuWDLSj0B4xqD9GbUA7awYebcA';" alt="Women In Police Force Police Academy Training Criminal Justice Criminal Justice Major">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In Police Force Police Academy Training Criminal Justice Criminal Justice Major</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-benefits-for-divorced-spouse.html">Va Disability Benefits For Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/va-dependents-allowance.html">Va Dependents Allowance</a></li>
+													<li class="list-group-item"><a href="/va-benefits-update-dependents.html">Va Benefits Update Dependents</a></li>
+													<li class="list-group-item"><a href="/va-dependent-award.html">Va Dependent Award</a></li>
+													<li class="list-group-item"><a href="/va-dependent-stimulus.html">Va Dependent Stimulus</a></li>
+													<li class="list-group-item"><a href="/va-dependant-disability-compensation.html">Va Dependant Disability Compensation</a></li>
+													<li class="list-group-item"><a href="/va-college-benefits-for-spouse.html">Va College Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-turns-18.html">Va Disability Dependent Turns 18</a></li>
+													<li class="list-group-item"><a href="/va-dependent-dental-insurance.html">Va Dependent Dental Insurance</a></li>
+													<li class="list-group-item"><a href="/va-dependent-college-form.html">Va Dependent College Form</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-rates.html">Va Disability Dependent Rates</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-application.html">Va Dependent Benefits Application</a></li>
+													<li class="list-group-item"><a href="/va-dependent-indemnity.html">Va Dependent Indemnity</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-disabled-veteran.html">Va Dependent Benefits Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/va-death-records-ancestry.html">Va Death Records Ancestry</a></li>
+													<li class="list-group-item"><a href="/va-death-certificate-form.html">Va Death Certificate Form</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-college.html">Va Dependent Benefits College</a></li>
+													<li class="list-group-item"><a href="/va-dependent-parent-fact-sheet.html">Va Dependent Parent Fact Sheet</a></li>
+													<li class="list-group-item"><a href="/va-dependent-pay-scale.html">Va Dependent Pay Scale</a></li>
+													<li class="list-group-item"><a href="/va-dependent-care-benefits.html">Va Dependent Care Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Uk Gov - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Uk Gov",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/47/bd/00/47bd0011815cb687b9fa2a5117c1eda2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+uk+gov",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Uk Gov</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Summary This statutory Merchant Shipping Notice sets out the categorisations of waters in the United Kingdom Key Points The notice replaces and augments MSN 1837 M Amendment 1 with new amendments The categorisations determine. UK designated sea areas can be found in MSN 1747 M. Who MSNs are for The letter. <br>				
+			</p>
+										<a class="badge badge-primary" href="/benefits-of-being-a-navy-reserve-officer.html">benefits of being a navy reserve officer</a>
+											<a class="badge badge-light" href="/benefits-of-military-police.html">benefits of military police</a>
+											<a class="badge badge-primary" href="/benefits-of-joining-air-force-reserves-reddit.html">benefits of joining air force reserves reddit</a>
+											<a class="badge badge-secondary" href="/benefits-of-naval-fruit.html">benefits of naval fruit</a>
+											<a class="badge badge-warning" href="/benefits-of-military-shoulder-press.html">benefits of military shoulder press</a>
+											<a class="badge badge-danger" href="/benefits-of-military-medical-retirement.html">benefits of military medical retirement</a>
+											<a class="badge badge-dark" href="/benefits-of-being-a-army-recruiter.html">benefits of being a army recruiter</a>
+											<a class="badge badge-success" href="/benefits-of-being-a-navy-recruiter.html">benefits of being a navy recruiter</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png" data-lightbox="roadtrip" data-title="Withdrawn Msn 1672 Amendent 3 Ship Inspection And Survey Organisations Gov Uk">
+											<img class="card-img v-image ads-img " src="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnHbaKo2Tjclnd4IrKe9yXDs6NeduMJ2MTaQ';" alt="Withdrawn Msn 1672 Amendent 3 Ship Inspection And Survey Organisations Gov Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Withdrawn Msn 1672 Amendent 3 Ship Inspection And Survey Organisations Gov Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dx19q.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" data-lightbox="roadtrip" data-title="1ynf3ihrlckubm">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dx19q.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSycZo2yMbnRrAlOVpsS18syeENkAL4u5iYMg';" alt="1ynf3ihrlckubm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1ynf3ihrlckubm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gov.uk/assets/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png" data-lightbox="roadtrip" data-title="Browse Universal Credit Gov Uk">
+											<img class="card-img v-image ads-img " src="https://www.gov.uk/assets/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ583c7ZqWvgs-1tX09X6UbRtHGSlM3ryDKZQ';" alt="Browse Universal Credit Gov Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Browse Universal Credit Gov Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c74Qw.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=470&amp;y=226" data-lightbox="roadtrip" data-title="New Covid Strain Concerns Gov Cuomo Says British Airways Delta Virgin Atlantic To Screen Passengers From U K Headed To New York">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c74Qw.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=470&amp;y=226" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6idHlqDGr2y1e3f7gwm_-w4Wk_vRukAzXiQ';" alt="New Covid Strain Concerns Gov Cuomo Says British Airways Delta Virgin Atlantic To Screen Passengers From U K Headed To New York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Covid Strain Concerns Gov Cuomo Says British Airways Delta Virgin Atlantic To Screen Passengers From U K Headed To New York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/a0/85/75a085045ba0b4102e868cb96303d5d5.png" data-lightbox="roadtrip" data-title="Pin On Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/a0/85/75a085045ba0b4102e868cb96303d5d5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgv6CU0YnuqHCOIiinWccVKwfVlfMP8hW8Q';" alt="Pin On Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/1b/77/e71b7745f03558c5ef1963f9d8a5dfa6.jpg" data-lightbox="roadtrip" data-title="Biodiversity And Climate Change Uk Gov Web Site Adriano Castelli Shutterstock Clouds White Clouds Stock Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/1b/77/e71b7745f03558c5ef1963f9d8a5dfa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKFuEpbJWuZwBbN95EsyxaYXTBe2WNU-6Sg';" alt="Biodiversity And Climate Change Uk Gov Web Site Adriano Castelli Shutterstock Clouds White Clouds Stock Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Biodiversity And Climate Change Uk Gov Web Site Adriano Castelli Shutterstock Clouds White Clouds Stock Photos</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/35/4f/f2/354ff2089e653fa31d7e57201c3db3ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKFuEpbJWuZwBbN95EsyxaYXTBe2WNU-6Sg';" alt="Biodiversity And Climate Change Uk Gov Web Site Adriano Castelli Shutterstock Clouds White Clouds Stock Photos">
+										<div class="card-body">
+						<h3 class="h5"><b>What Ive Learned About Self-Care and Mental Health as a Black Political.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn uk gov</strong>. 
+								
+																	Marine Equipment - United Kingdom conformity assessment procedures for marine equipment other approval and standards MSN 1874MF Amendment 4. 
+																	This Notice advises all Shipowners. 
+																	See more of MSN UK on Facebook. 
+																	News Media Website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine directive other approval and standards - GOVUK. 
+																	Radioheads Colin Greenwood has implored the UK government to renegotiate its provision for touring post-Brexit. 
+																	Search and rescue facilities means in relation to a ship involved in an incidentemergency the search and rescue services for the area in which the ship is located. 
+																	MSN 1837 M Amendment 2 Categorisation of Waters Notice to all Owners Operators and Masters This Notice supersedes Merchant Shipping Notice MSN 1837M Amendment 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more of MSN UK on Facebook. 
+																	A Microsoft 365 subscription offers an ad-free interface custom domains enhanced security options the full desktop version of Office and 1 TB of cloud storage. 
+																	Become informed about UK news local news international stories and opinion. 
+																	This notice replaces MSN 1870 MF amendment 1 and should be read with the merchant shipping and fishing vessels personal protective equipment regulations 1999 SI 19992205 and the merchant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 51-year-old musician - who is best known as the bassist for the Creep group. 
+																	News Media Website. 
+																	MSN 1815 MF Amendment 5 Countries whose medical seafarers certificates have been assessed as meeting international requirements and are acceptable for use on UK ships PDF 253KB 4 pages. 
+																	All stories are expertly selected from across the best UK and global newspapers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your customizable and curated collection of the best in trusted news plus coverage of sports entertainment money weather travel health and lifestyle combined with OutlookHotmail Facebook. 
+																	DeSantis continues to focus on vaccinations as UK variant spreads in Florida WPTV West Palm Beach FL. 
+																	All the obligations in the EU legislation mentioned in MSN 1889 MF Amendment 2 which have affect in the UK prior to the 1st January 2021 are retained in UK law with any necessary. 
+																	This is mandatory information and must be complied with under UK legislation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Media Website. 
+																	Weve developed a suite of premium Outlook features for people with advanced email and calendar needs. 
+																	See more of MSN UK on Facebook. 
+																	MSN 1676 M The Merchant Shipping Life-Saving Appliances for Ships Other Than Ships of Classes III to VIA Regulations 1999 The Merchant Shipping Life-Saving Appliances for Passenger Ships of Classes III to VIA Regulations 1999. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more of MSN UK on Facebook. 
+																	News Media Website. 
+																	MSNs contain the technical detail of regulations called statutory instruments SIs. 
+																	News Media Website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Media Website. 
+																	Notice to Shipowners Certifying Authorities Shipbuilders Shiprepairers Ship Masters and Surveyors. 
+																	News Media Website. 
+																	Read todays top stories news weather sport entertainment lifestyle money cars and more all expertly curated from across top UK and global news providers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Media Website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB1dxYBT.img?h=368&amp;w=622&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=397&amp;y=216" data-lightbox="roadtrip" data-title="Z2 Qo5wwgbogum">
+											<img class="card-img v-image ads-img " src="https://static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB1dxYBT.img?h=368&amp;w=622&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=397&amp;y=216" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQP4OyPqiygJK-2Zbf2StjaglRZm1LU78J9w';" alt="Z2 Qo5wwgbogum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Z2 Qo5wwgbogum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB14qIEF.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=851&amp;y=532" data-lightbox="roadtrip" data-title="New York Mayor Says Deputies Will Check On Uk Arrivals To Make Sure They Re Quarantining">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB14qIEF.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=851&amp;y=532" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXl0UGI9HgV2EeJwqkz-j4d-rrLBbH3I2muA';" alt="New York Mayor Says Deputies Will Check On Uk Arrivals To Make Sure They Re Quarantining">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Mayor Says Deputies Will Check On Uk Arrivals To Make Sure They Re Quarantining</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/db/ea/5a/dbea5a34173d3638a2fddc74dae04f22.jpg" data-lightbox="roadtrip" data-title="This Document Lists Useful Websites For Research Search Engines Pshe Education And Careers Training And Furt Educational Websites Further Education Website">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/db/ea/5a/dbea5a34173d3638a2fddc74dae04f22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC9OouuiiMxPUv95TK3vneNcMA1n7hnuRPyg';" alt="This Document Lists Useful Websites For Research Search Engines Pshe Education And Careers Training And Furt Educational Websites Further Education Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Document Lists Useful Websites For Research Search Engines Pshe Education And Careers Training And Furt Educational Websites Further Education Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/ba/46/b2ba463f15df41969bcd5496c192283d.jpg" data-lightbox="roadtrip" data-title="Local Seo Search Engine Optimization And Multiple Cities Blog Blogging Candidwriter Search Optimization Local Seo Pin Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/ba/46/b2ba463f15df41969bcd5496c192283d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qb6ZUTOgdlLAFLWJe7aP2Y8fb6-YYOW5TQ';" alt="Local Seo Search Engine Optimization And Multiple Cities Blog Blogging Candidwriter Search Optimization Local Seo Pin Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Local Seo Search Engine Optimization And Multiple Cities Blog Blogging Candidwriter Search Optimization Local Seo Pin Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/18/9e/b8189e724dc313edc9bbe2d0f6d37b79.jpg" data-lightbox="roadtrip" data-title="Hotmail Outlook Skype Bing Latest News Photos Videos Photo And Video Outlook Baby Face">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/18/9e/b8189e724dc313edc9bbe2d0f6d37b79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qe635hwki-cV6kROkW6FwXhUPuDaXev-Qw';" alt="Hotmail Outlook Skype Bing Latest News Photos Videos Photo And Video Outlook Baby Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hotmail Outlook Skype Bing Latest News Photos Videos Photo And Video Outlook Baby Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/bd/00/47bd0011815cb687b9fa2a5117c1eda2.jpg" data-lightbox="roadtrip" data-title="Questions Linger 50 Years After Jfk S Assassination Jfk Assasination Jfk Assassination Jfk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/bd/00/47bd0011815cb687b9fa2a5117c1eda2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67w-HPjNq4WMMjdRIHEY63BKx-1lrBgl7yQ';" alt="Questions Linger 50 Years After Jfk S Assassination Jfk Assasination Jfk Assassination Jfk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Questions Linger 50 Years After Jfk S Assassination Jfk Assasination Jfk Assassination Jfk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/4a/52/1b4a5256aeaffaa468c2c06af7fd4456.jpg" data-lightbox="roadtrip" data-title="Pin On Positive Affirmations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/4a/52/1b4a5256aeaffaa468c2c06af7fd4456.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEh9vsMVJS6wfV4MED-9gVMxF_byk--OfuOQ';" alt="Pin On Positive Affirmations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Positive Affirmations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.middlesbrough.gov.uk/sites/default/files/Pavement-licence-Sherlocks-page2.jpg" data-lightbox="roadtrip" data-title="Pavement Licence Applications Middlesbrough Council">
+											<img class="card-img v-image ads-img " src="https://www.middlesbrough.gov.uk/sites/default/files/Pavement-licence-Sherlocks-page2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvohfR5TJQUKa2qdqJz-v04BuX17LDPIePyA';" alt="Pavement Licence Applications Middlesbrough Council">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pavement Licence Applications Middlesbrough Council</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/90/fb/ef/90fbefba32e182b78bc1cb0eaceafb5f.jpg" data-lightbox="roadtrip" data-title="Manual Seo Service Buy Provide 100 Edu Gov Profile Social Forum Backlinks Image Answer Guest Blog In 2020 Online Marketing Services Seo Services Seo Services Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/90/fb/ef/90fbefba32e182b78bc1cb0eaceafb5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJZ1931A-J1dk1FmnWJ610y6BFjO7lMMRpg';" alt="Manual Seo Service Buy Provide 100 Edu Gov Profile Social Forum Backlinks Image Answer Guest Blog In 2020 Online Marketing Services Seo Services Seo Services Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manual Seo Service Buy Provide 100 Edu Gov Profile Social Forum Backlinks Image Answer Guest Blog In 2020 Online Marketing Services Seo Services Seo Services Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="AEqA390dLQdxjM" data-lightbox="roadtrip" data-title="Https Assets Publishing Service Gov Uk Government Uploads System Uploads Attachment Data File 854576 Min 605 M Recognised Qualifications In Food Hygiene Or Food Safety In Catering For Ship S Cooks Etc Pdf">
+											<img class="card-img v-image ads-img " src="AEqA390dLQdxjM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZUTJvkYzynd4Vjphsh6yZPXwMMrW3bkvRLg';" alt="Https Assets Publishing Service Gov Uk Government Uploads System Uploads Attachment Data File 854576 Min 605 M Recognised Qualifications In Food Hygiene Or Food Safety In Catering For Ship S Cooks Etc Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Assets Publishing Service Gov Uk Government Uploads System Uploads Attachment Data File 854576 Min 605 M Recognised Qualifications In Food Hygiene Or Food Safety In Catering For Ship S Cooks Etc Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/6f/ca/da6fcaf44139a53e094316ad224200c7.jpg" data-lightbox="roadtrip" data-title="Design By Toko Branding Design Stationery Branding Brand Identity Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/6f/ca/da6fcaf44139a53e094316ad224200c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq15VKWlm6pAzv1JXbL9yUpF-qg6MOdLMtPg';" alt="Design By Toko Branding Design Stationery Branding Brand Identity Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Design By Toko Branding Design Stationery Branding Brand Identity Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/28/c7/4328c7df4813f982ae5baa09e854a37c.jpg" data-lightbox="roadtrip" data-title="Www Owenhealth Co Uk C Owen Health Feel Free To Print It Share It And Embed On Your Website With Appropriate Credit H Strategic Marketing Marketing Pharma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/28/c7/4328c7df4813f982ae5baa09e854a37c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR91H9fu5hLC5Yd_3GtVkkEJjuGm8N1-3X9g';" alt="Www Owenhealth Co Uk C Owen Health Feel Free To Print It Share It And Embed On Your Website With Appropriate Credit H Strategic Marketing Marketing Pharma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Www Owenhealth Co Uk C Owen Health Feel Free To Print It Share It And Embed On Your Website With Appropriate Credit H Strategic Marketing Marketing Pharma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/4f/f2/354ff2089e653fa31d7e57201c3db3ed.jpg" data-lightbox="roadtrip" data-title="Dps Email Login To Webmail Dps Texas Gov Webmail Login Page Email Service Email">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/4f/f2/354ff2089e653fa31d7e57201c3db3ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoupj40umXIUHV2QC_oSpFGq46_ClP6eqaw';" alt="Dps Email Login To Webmail Dps Texas Gov Webmail Login Page Email Service Email">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dps Email Login To Webmail Dps Texas Gov Webmail Login Page Email Service Email</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-eo-complaint-process.html">Army Eo Complaint Process</a></li>
+													<li class="list-group-item"><a href="/army-housing-on-base-in-hawaii.html">Army Housing On Base In Hawaii</a></li>
+													<li class="list-group-item"><a href="/army-hats-ireland.html">Army Hats Ireland</a></li>
+													<li class="list-group-item"><a href="/army-hats-ebay.html">Army Hats Ebay</a></li>
+													<li class="list-group-item"><a href="/army-heroes-photo.html">Army Heroes Photo</a></li>
+													<li class="list-group-item"><a href="/army-family-support-requirements.html">Army Family Support Requirements</a></li>
+													<li class="list-group-item"><a href="/army-hrc-iperms-login.html">Army Hrc Iperms Login</a></li>
+													<li class="list-group-item"><a href="/army-complaint-cell-number.html">Army Complaint Cell Number</a></li>
+													<li class="list-group-item"><a href="/army-emergency-number.html">Army Emergency Number</a></li>
+													<li class="list-group-item"><a href="/army-heroes-lords-mobile.html">Army Heroes Lords Mobile</a></li>
+													<li class="list-group-item"><a href="/army-hr-policy.html">Army Hr Policy</a></li>
+													<li class="list-group-item"><a href="/army-doctor-kills-wife.html">Army Doctor Kills Wife</a></li>
+													<li class="list-group-item"><a href="/army-hr-song-mp3-download.html">Army Hr Song Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/army-eo-complaint-form.html">Army Eo Complaint Form</a></li>
+													<li class="list-group-item"><a href="/army-contact-number-uk.html">Army Contact Number Uk</a></li>
+													<li class="list-group-item"><a href="/army-emergency-relief-spouse-education-assistance-program.html">Army Emergency Relief Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/army-hrc-mi-branch.html">Army Hrc Mi Branch</a></li>
+													<li class="list-group-item"><a href="/army-hrc-chemical-branch.html">Army Hrc Chemical Branch</a></li>
+													<li class="list-group-item"><a href="/army-family-readiness-support-assistant.html">Army Family Readiness Support Assistant</a></li>
+													<li class="list-group-item"><a href="/army-hero-quotes.html">Army Hero Quotes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Iran News - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Iran News",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/37/a3/f9/37a3f90a08447bd523473454db346ea6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+iran+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Iran News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Islamic Republic of Iran Air Force is the aviation branch of the Islamic Republic of Iran Army. Speaking in a press conference on Sunday Commander of the Islamic Republic of Iran Air Force IRIAF Brigadier General Aziz Nasirzadeh noted that the process of the drill codenamed Fadaeeyan-e Harim-e Velayat 9 The Devotees of the Velayat Sanctuary 9 has started since Saturday with the transfer of aircraft to Isfahan province. In a ceremony marking the delivery military officials once again. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/ncaa-eligibility-center-member-institution-portal.html">ncaa eligibility center member institution portal</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-center-send-transcripts.html">ncaa eligibility center send transcripts</a>
+											<a class="badge badge-success" href="/ncaa-division-iii-graduate-student-eligibility.html">ncaa division iii graduate student eligibility</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-center-id-lookup.html">ncaa eligibility center id lookup</a>
+											<a class="badge badge-primary" href="/ncaa-division-3-graduate-student-eligibility.html">ncaa division 3 graduate student eligibility</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-center-send-test-scores.html">ncaa eligibility center send test scores</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-center-customer-service-number.html">ncaa eligibility center customer service number</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-center-faq.html">ncaa eligibility center faq</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right site.  Our website gives you hints for viewing the maximum quality video and image content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/88/58/e4885835f4042ec8542cab51e17be1a5.jpg" data-lightbox="roadtrip" data-title="Iran Iraq War Iraq War Fighter Iraq">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/88/58/e4885835f4042ec8542cab51e17be1a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaHpd258IstYyFNLmf_oBH_3ICp1FT3bYCPQ';" alt="Iran Iraq War Iraq War Fighter Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Iraq War Iraq War Fighter Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/ae/16/18ae1616b1c21df6b920b38f12b2a83a.jpg" data-lightbox="roadtrip" data-title="Islamic Republic Of Iran Air Force Sukhoi Su 24mk Fencer Iran Air Su 24 Fencer Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/ae/16/18ae1616b1c21df6b920b38f12b2a83a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSErvdgQ38SV6uwMYrwF215ak2LrXA3xXKsXA';" alt="Islamic Republic Of Iran Air Force Sukhoi Su 24mk Fencer Iran Air Su 24 Fencer Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Islamic Republic Of Iran Air Force Sukhoi Su 24mk Fencer Iran Air Su 24 Fencer Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/75/f2/7e75f224b94e6b7adbef14ce277ccb75.jpg" data-lightbox="roadtrip" data-title="Iran Unveils New Domestic Fighter Jet Fighter Jets Iran Air Iran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/75/f2/7e75f224b94e6b7adbef14ce277ccb75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9v9KhZuGFy9lRYDwuY2IUjT_D4tGgSj93cg';" alt="Iran Unveils New Domestic Fighter Jet Fighter Jets Iran Air Iran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Unveils New Domestic Fighter Jet Fighter Jets Iran Air Iran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/c5/0d/72c50d9ef2f45e90dc7a18f0fdaaf8d3.jpg" data-lightbox="roadtrip" data-title="Photos Of World S Last Active Service F 14 Tomcat Jets Overhauled In Iran Air Force Iran Air Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/c5/0d/72c50d9ef2f45e90dc7a18f0fdaaf8d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwKO6ag_Hik0l_zwTKoCN4I-8euLc18NsDw';" alt="Photos Of World S Last Active Service F 14 Tomcat Jets Overhauled In Iran Air Force Iran Air Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Of World S Last Active Service F 14 Tomcat Jets Overhauled In Iran Air Force Iran Air Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/04/c9/3e04c949e9c63b478a047cac94a88ecb.jpg" data-lightbox="roadtrip" data-title="Iranian Airforce Tomcat Fighter Planes Fighter Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/04/c9/3e04c949e9c63b478a047cac94a88ecb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7jTzDve74nYJPRlP2XswJ83Eka211z0cRg';" alt="Iranian Airforce Tomcat Fighter Planes Fighter Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iranian Airforce Tomcat Fighter Planes Fighter Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/6f/b1/c66fb101fd3bf1c921c404c6529e41b5.jpg" data-lightbox="roadtrip" data-title="Breaking News Iran Air Force Chengdu F 7 Crash Near The Esfahan On June 2 2018 The Pilots Ejected And Transferred To The Base T Me Airforceeagle Fuerza Mundo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/6f/b1/c66fb101fd3bf1c921c404c6529e41b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffevyd3cMt3BDeVZXUmxgxpePrdLZsmaPtQ';" alt="Breaking News Iran Air Force Chengdu F 7 Crash Near The Esfahan On June 2 2018 The Pilots Ejected And Transferred To The Base T Me Airforceeagle Fuerza Mundo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking News Iran Air Force Chengdu F 7 Crash Near The Esfahan On June 2 2018 The Pilots Ejected And Transferred To The Base T Me Airforceeagle Fuerza Mundo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/67/30/19/673019ee8313422590fd9bee8fed3b3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffevyd3cMt3BDeVZXUmxgxpePrdLZsmaPtQ';" alt="Breaking News Iran Air Force Chengdu F 7 Crash Near The Esfahan On June 2 2018 The Pilots Ejected And Transferred To The Base T Me Airforceeagle Fuerza Mundo">
+										<div class="card-body">
+						<h3 class="h5"><b>MEHR News Agency.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force iran news</strong>. 
+								
+																	It has carried out major operations like Operation Kaman 99 Operation Sultan 10 the H-3 airstrike and the first attack on a nuclear reactor in histor. 
+																	Supreme Leader Ayatollah Ali Khamenei speaks during a meeting with armys air force and air defense staff in Tehran Iran Sunday Feb. 
+																	THE US Air Force has sent a warning to Iran by broadcasting its first message to the Middle East to defend American forces and interests of the region. 
+																	There are a total of 34 individual aircraft entries in the Active Islamic Republic of Iran Air Force Aircraft 2021 category in the Military Factory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	01 MNA The Islamic Republic of Irans Air Force will start the final phase of a military drill on Monday in Isfahan province. 
+																	Gen Soleimani was a popular figure in Iran Irans most powerful military commander Gen Qasem Soleimani has been killed by a US air strike in Iraq. 
+																	On June 25 Irans Tasnim News Agency reported that three new domestically built HESA Kowsar jets were delivered to the military. 
+																	Politics news TEHRAN Tasnim The air force commanders of Iran and Iraq weighed plans at a meeting in Tehran for joint operations in the battle against Takfiri terrorists and other sources of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is one of the few air forces in the Middle East with experience in a conventional war having fought the Iran-Iraq War in the 80s. 
+																	By Rachel Russell PUBLISHED. 
+																	Iran should increase its military might to prevent a war Khamenei told. 
+																	The Iranian Air Force remains a fascinating subject for many defence and aviation enthusiasts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Entries are listed below in alphanumeric order 1-to-Z. 
+																	File photo of Iranian Cobra Toufan military chopper. 
+																	American sanctions may have done some harsh damage to Irans economy but that has not stopped the Iranian air force from seeing through a deal. 
+																	Our only aim is to make sure our security is guaranteed Khamenei told a group of commanders and staff of Irans Air Force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Irans endless drive to prove that its military makes it a great world power the Iranian media showed off three locally built Kowsar fighter jets this week. 
+																	Army Air Force Navy and Marine Corps. 
+																	The 62-year-old spearheaded Iranian military. 
+																	The Imperial Iranian Air Force purchased 80 of the powerful fourth generation fighters before the 1979 Islamic revolution but deliveries were halted at 79 aircraft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BEIRUT LEBANON 1200 PM On Monday the ninth phase of the 99th Fedayeen Al-Wilayat maneuvers of the Iranian Air Force began in Isfahan province central Iran with the participation of seven military air bases in different parts of the country. 
+																	The present Air Force came into being in the early 1980s when the former Imperial Iranian Air Force was renamed. 
+																	Office of the Iranian Supreme Leader via AP. 
+																	The Iranian air force on paper is one of the biggest air arms in the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They were delivered to the armed. 
+																	Its order of battle includes around 350 fighters more than twice as many as the Royal Air Force possesses. 
+																	US Air Force send warning to Iran as 52 stealth fighters take off in single wave The 52 F-35A aircrafts took off from the Hill Air Force Base in Utah US in an exercise carried out by the active. 
+																	The recent rise of tensions in the region have meant that its capabilities or lack thereof are of crucial importance should the US or others undertake any kind of military action. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Despite some Cold War-era hardware the nation of Iran manages a fairly healthy aircraft inventory with varying types ready-to-attack. 
+																	News about the US. 
+																	The IRGC has its own navy and air force and oversees Irans strategic weapons The IRGC was set up 40 years ago to defend the Islamic system in Iran and has become a major military political and. 
+																	Irans Air Force Receives 8 Overhauled Military Aircraft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iran begins 9th phase of air force maneuvers. 
+																	Eight overhauled military aircraft were delivered to Irans Air Force on February 20 2020 in the presence of Iranian Minister of Defense Brigadier General Amir Hatami and Commander of the Islamic Republic of Iran Air Force IRIAF Brigadier General Aziz Nasirzadeh. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/a3/f9/37a3f90a08447bd523473454db346ea6.jpg" data-lightbox="roadtrip" data-title="News Story Iran To Get Chinese J 10 Fighters In Return For Oil Rights Fighter Aircraft People S Liberation Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/a3/f9/37a3f90a08447bd523473454db346ea6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOLtCPttuC54Spm_TX1jucm8huc3JMioW80A';" alt="News Story Iran To Get Chinese J 10 Fighters In Return For Oil Rights Fighter Aircraft People S Liberation Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Story Iran To Get Chinese J 10 Fighters In Return For Oil Rights Fighter Aircraft People S Liberation Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/88/5a/93885a3ef1024ad80ce29a20a2796432.png" data-lightbox="roadtrip" data-title="Pin By Amir Shayan On Military World Aircraft Iran Air Fighter Jets Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/88/5a/93885a3ef1024ad80ce29a20a2796432.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Cub9eMf4jjDWPuF0ZzGYevJizOOTllNN3w';" alt="Pin By Amir Shayan On Military World Aircraft Iran Air Fighter Jets Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amir Shayan On Military World Aircraft Iran Air Fighter Jets Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/2b/d6/e52bd6af0db6ad42cd1b10010b068aa7.png" data-lightbox="roadtrip" data-title="Tehran Unveiled The Homegrown Jet At A Ceremony On Tuesday Fighter Jets Fighter Warplane">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/2b/d6/e52bd6af0db6ad42cd1b10010b068aa7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbK2nCnCSduw12v-F4V6pTVz874jXM1hiYg';" alt="Tehran Unveiled The Homegrown Jet At A Ceremony On Tuesday Fighter Jets Fighter Warplane">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tehran Unveiled The Homegrown Jet At A Ceremony On Tuesday Fighter Jets Fighter Warplane</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/31/bc/a931bcce3be944a4d38a1db617635ad7.jpg" data-lightbox="roadtrip" data-title="Latest Fighter Craft Of The World 2016 Iran Air Air Force Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/31/bc/a931bcce3be944a4d38a1db617635ad7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkU1BhGEHRdx8ekNEQFQSeuPtMlbGUCbeccQ';" alt="Latest Fighter Craft Of The World 2016 Iran Air Air Force Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Fighter Craft Of The World 2016 Iran Air Air Force Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/51/f3/c951f35a2e805bcb88496715caec3c41.jpg" data-lightbox="roadtrip" data-title="The Iranian Air Force Is The Last Operator Of The Legendary F 14 Tomcat The Photos In This Article Were Recently Rele Iran Air Military Jets Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/51/f3/c951f35a2e805bcb88496715caec3c41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKaIpvLfSmW4LMfxU3VF3GDxzlU43En-kzA';" alt="The Iranian Air Force Is The Last Operator Of The Legendary F 14 Tomcat The Photos In This Article Were Recently Rele Iran Air Military Jets Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Iranian Air Force Is The Last Operator Of The Legendary F 14 Tomcat The Photos In This Article Were Recently Rele Iran Air Military Jets Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/01/d5/9e01d533052d2a81560749245ca14dd6.jpg" data-lightbox="roadtrip" data-title="Iran Optimizing F14 Fighter Jets For New Missions Aviation Air Force News At Defencetalk Fighter Jets Iran Air Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/01/d5/9e01d533052d2a81560749245ca14dd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqsGXoXNGmqzkoKy-Uu4Z5TeDA8bY3c7lyA';" alt="Iran Optimizing F14 Fighter Jets For New Missions Aviation Air Force News At Defencetalk Fighter Jets Iran Air Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Optimizing F14 Fighter Jets For New Missions Aviation Air Force News At Defencetalk Fighter Jets Iran Air Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/bb/01/48bb01a7f1f100e103ba56a9bb213ae9.jpg" data-lightbox="roadtrip" data-title="Photo Of 3 7370 Northrop F 5e Saeghe Iran Air Force Airplane Fighter Iran Air Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/bb/01/48bb01a7f1f100e103ba56a9bb213ae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNHz6nzhx3kIQ3dTJwHfc3TN7fkXQy8Q0ig';" alt="Photo Of 3 7370 Northrop F 5e Saeghe Iran Air Force Airplane Fighter Iran Air Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Of 3 7370 Northrop F 5e Saeghe Iran Air Force Airplane Fighter Iran Air Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/af/1a/ccaf1ad609920306024510c13d28d67d.jpg" data-lightbox="roadtrip" data-title="Su 24 Iran Air Force Iran Air Aviation Aviation Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/af/1a/ccaf1ad609920306024510c13d28d67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_N22BhjHyuIDIzFZWK2NRIUPXJp7KIU3Fw';" alt="Su 24 Iran Air Force Iran Air Aviation Aviation Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Su 24 Iran Air Force Iran Air Aviation Aviation Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/30/22/123022bd9696a39d8db62d0335734c50.jpg" data-lightbox="roadtrip" data-title="Iran Reveals Newest Fighter Jet In Defiance Of U S Sanctions Fighter Jets Fighter Iran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/30/22/123022bd9696a39d8db62d0335734c50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwUQR_qoyjN7uMcJ-euLM9J36TmbBtNdYirQ';" alt="Iran Reveals Newest Fighter Jet In Defiance Of U S Sanctions Fighter Jets Fighter Iran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Reveals Newest Fighter Jet In Defiance Of U S Sanctions Fighter Jets Fighter Iran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b9/15/34/b91534761285947d4e1aa0506a0245b1.jpg" data-lightbox="roadtrip" data-title="Iran Already Has U S Made F 4 F 5 As Well As F 14 Fighter Jets And Also Russian Made Sukhoi Aircraft In Service Fighter Jets Iran Warplane">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b9/15/34/b91534761285947d4e1aa0506a0245b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk3-8F7fzRQvH5ackwMER-VpI3CZhc9UE3PA';" alt="Iran Already Has U S Made F 4 F 5 As Well As F 14 Fighter Jets And Also Russian Made Sukhoi Aircraft In Service Fighter Jets Iran Warplane">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Already Has U S Made F 4 F 5 As Well As F 14 Fighter Jets And Also Russian Made Sukhoi Aircraft In Service Fighter Jets Iran Warplane</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/30/19/673019ee8313422590fd9bee8fed3b3c.jpg" data-lightbox="roadtrip" data-title="Iran Begins Testing Military Aircraft In War Games Iran Air Fighter Jets Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/30/19/673019ee8313422590fd9bee8fed3b3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCJAj7TiPpET4y6agkfdrMpGxz_0Fg5YZYA';" alt="Iran Begins Testing Military Aircraft In War Games Iran Air Fighter Jets Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Begins Testing Military Aircraft In War Games Iran Air Fighter Jets Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/0a/03/2f0a03ede67f699b3ac6413f54bfebff.jpg" data-lightbox="roadtrip" data-title="Iran Air Force Begins Large Scale Drills Iran Air Air Force Aircraft Carrier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/0a/03/2f0a03ede67f699b3ac6413f54bfebff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6q1woNGTOtNDP7yE6WBgxId2SY34fXUUTkw';" alt="Iran Air Force Begins Large Scale Drills Iran Air Air Force Aircraft Carrier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Air Force Begins Large Scale Drills Iran Air Air Force Aircraft Carrier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/c4/da/afc4da30f5b5665bdd175adbd0162f53.jpg" data-lightbox="roadtrip" data-title="Imperial Iranian F4 Phantom Refueling Pin By Bwambele Ododada Iraq War Iran Air Phantom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/c4/da/afc4da30f5b5665bdd175adbd0162f53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-Aj8QxVIHPwYSX0W1GiGxQ_mmi9AAKOZtg';" alt="Imperial Iranian F4 Phantom Refueling Pin By Bwambele Ododada Iraq War Iran Air Phantom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imperial Iranian F4 Phantom Refueling Pin By Bwambele Ododada Iraq War Iran Air Phantom</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-survivors-and-dependents-education-program.html">Military Survivors And Dependents Education Program</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-notes.html">Military Thank You Notes</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-speech.html">Military Thank You Speech</a></li>
+													<li class="list-group-item"><a href="/military-t-shirts-design.html">Military T Shirts Design</a></li>
+													<li class="list-group-item"><a href="/military-survivor-benefit-plan-and-divorce.html">Military Survivor Benefit Plan And Divorce</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-online-india.html">Military T Shirt Online India</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-herren.html">Military T Shirt Herren</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-iowa.html">Military Tax Exemption Iowa</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-poster.html">Military Thank You Poster</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-creator.html">Military T Shirt Creator</a></li>
+													<li class="list-group-item"><a href="/military-tattoo-ideas-for-guys.html">Military Tattoo Ideas For Guys</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-month.html">Military Thank You Month</a></li>
+													<li class="list-group-item"><a href="/military-t-shirts-ebay.html">Military T Shirts Ebay</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-design-online.html">Military T Shirt Design Online</a></li>
+													<li class="list-group-item"><a href="/military-tax-exempt-walmart.html">Military Tax Exempt Walmart</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-pictures.html">Military T Shirt Pictures</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-roll.html">Military T Shirt Roll</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-poems.html">Military Thank You Poems</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-video.html">Military Thank You Video</a></li>
+													<li class="list-group-item"><a href="/military-tee-shirt-quilt.html">Military Tee Shirt Quilt</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

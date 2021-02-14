@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycarolinas Login Page - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycarolinas Login Page",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/c1/9c/58/c19c58613cd0be6a963210a9a1c3ae91--alt.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycarolinas+login+page",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycarolinas Login Page</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Access your test results No more waiting for a phone call or letter view your results and your doctors comments within days. Join thousands of satisfied visitors who discovered Activation Code Doctor Healthcare and CMC Login. We enhanced this page on September 15th to improve the user experience. <br>				
+			</p>
+										<a class="badge badge-primary" href="/my-husband-enemy.html">my husband enemy</a>
+											<a class="badge badge-danger" href="/my-career-jump-shot-creator-2k20.html">my career jump shot creator 2k20</a>
+											<a class="badge badge-info" href="/my-husband-in-law-thai-drama-ep-2-eng-sub.html">my husband in law thai drama ep 2 eng sub</a>
+											<a class="badge badge-dark" href="/my-career-nba-2k20-locker-codes.html">my career nba 2k20 locker codes</a>
+											<a class="badge badge-dark" href="/my-career-kundli.html">my career kundli</a>
+											<a class="badge badge-light" href="/my-career-offline-nba-2k20.html">my career offline nba 2k20</a>
+											<a class="badge badge-primary" href="/my-carleton-student-login.html">my carleton student login</a>
+											<a class="badge badge-primary" href="/my-career-kobe-build.html">my career kobe build</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for seeing the maximum quality video and picture content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/17/25/1b172551f9b11e29f569ea6b2f1ddf6e.png" data-lightbox="roadtrip" data-title="Mycarolinas Home Health Care Login Page Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/17/25/1b172551f9b11e29f569ea6b2f1ddf6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpjH_KeZsgIZD32LdYb8A1agesnlMxzKATA';" alt="Mycarolinas Home Health Care Login Page Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycarolinas Home Health Care Login Page Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/3e/33/ab3e33295ce87e47ca43b3d08ca6ff2c.png" data-lightbox="roadtrip" data-title="Pin By Aileen Evans On Thrive Home Decor Decals Login Page Thrive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/3e/33/ab3e33295ce87e47ca43b3d08ca6ff2c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3qnmjczzFzRqFE8Z-eZv0iWvXr4DqslNBg';" alt="Pin By Aileen Evans On Thrive Home Decor Decals Login Page Thrive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Aileen Evans On Thrive Home Decor Decals Login Page Thrive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/56/f7/1a56f7467e454f48e4ee7a0cd0bdcb0d.png" data-lightbox="roadtrip" data-title="This Is The First App That Integrates All Wearables Into A Hospital S Electronic Health Record Imedic Electronic Health Records Health Tracker App Health App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/56/f7/1a56f7467e454f48e4ee7a0cd0bdcb0d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElQhkXfKX3pDgqt_Q9G77OPGcOcv6S7sp1A';" alt="This Is The First App That Integrates All Wearables Into A Hospital S Electronic Health Record Imedic Electronic Health Records Health Tracker App Health App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The First App That Integrates All Wearables Into A Hospital S Electronic Health Record Imedic Electronic Health Records Health Tracker App Health App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/fd/7a/9dfd7a293c28e160092a46af61baef14.jpg" data-lightbox="roadtrip" data-title="Bringly App App App Design Coffee Drinks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/fd/7a/9dfd7a293c28e160092a46af61baef14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHfrDWgxppfSJD-vHgZ5e_7Q_2WJu13gccg';" alt="Bringly App App App Design Coffee Drinks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bringly App App App Design Coffee Drinks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/b4/2c/50b42c342b4f43bf178e2e40ec13a56e.png" data-lightbox="roadtrip" data-title="Pin By Katelynn Ostronic On Bullet Journal Bullet Journal Journal Bullet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/b4/2c/50b42c342b4f43bf178e2e40ec13a56e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxqNgSokhioBAmLmzSwIBrVpocmcTxpGE7w';" alt="Pin By Katelynn Ostronic On Bullet Journal Bullet Journal Journal Bullet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Katelynn Ostronic On Bullet Journal Bullet Journal Journal Bullet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/b7/43/0db7439f2ed49fb83f77bb6b81c0a751.jpg" data-lightbox="roadtrip" data-title="Medfusion Acquires Appointment Self Scheduling Company Nexsched Apple Health Health Records Appointments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/b7/43/0db7439f2ed49fb83f77bb6b81c0a751.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0wpiXQyiFkK3BA3Lcchhqycx0T6LdmeYfg';" alt="Medfusion Acquires Appointment Self Scheduling Company Nexsched Apple Health Health Records Appointments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medfusion Acquires Appointment Self Scheduling Company Nexsched Apple Health Health Records Appointments</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1b/17/25/1b172551f9b11e29f569ea6b2f1ddf6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0wpiXQyiFkK3BA3Lcchhqycx0T6LdmeYfg';" alt="Medfusion Acquires Appointment Self Scheduling Company Nexsched Apple Health Health Records Appointments">
+										<div class="card-body">
+						<h3 class="h5"><b>Your username will be sent to your e-mail address on file.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycarolinas login page</strong>. 
+								
+																	The information should not be considered complete or timely nor should it be relied on to suggest a course of treatment for. 
+																	Enter the email address associated with your account. 
+																	Please verify your personal information. 
+																	For more help please contact MyAtriumHealth Support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyAtriumHealth - Your secure online health connection 1999 - 2020 Epic Systems Corporation. 
+																	Atrium Health and Wake Forest Baptist Health Combine Create Next-Generation Academic Health System. 
+																	Welcome to Carolinas Healthcares Online Ordering Portal. 
+																	The information you provide on this web site is protected by federal laws. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Request prescription refills If you have refills remaining please contact your pharmacy. 
+																	CARECONNECT HEALTH INFORMATION EXCHANGE AUTHORIZED USER AGREEMENT. 
+																	Communicate with your doctor Get answers to your medical questions from the comfort of your own home. 
+																	Call 855-799-0044 toll-free 8 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By filling out this form 3. 
+																	Three Ways to Get Access. 
+																	Our Health Information Exchange HIE application provides secure encrypted access to confidential patient information. 
+																	Your privacy is important to us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A new era of healthcare was ushered in today as Atrium Health and Wake Forest Baptist Health including Wake Forest School of Medicine officially joined together as a single enterprise Atrium Health. 
+																	Privacy of Your Health Care Information. 
+																	We cant wait to hear from you. 
+																	MyAtriumHealth has free COVID-19 risk assessments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you are ready to enroll check the box to accept. 
+																	Please take a moment to review the Terms and Conditions for MyCarolinas. 
+																	At your doctors office or when you are in one of our hospitals 2. 
+																	Log in now to get started. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The informational content contained on the MyAtriumHealth home page and in the sections on help and resources is presented for the purpose of educating consumers on wellness and disease management topics and is not intended to be used for medical diagnosis or treatment. 
+																	A link to reset your password will be sent to your contact email. 
+																	Enrollment Welcome to MyCarolinas. 
+																	Please check your e-mail account for your MyAtriumHealth username. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By calling us at 704 667-9145 or toll-free at 855 799-0044 W. 
+																	Heres how to connect with us at The University of North Carolinas Office of Undergraduate Admissions. 
+																	If the information you submitted matched a MyAtriumHealth account in our records your username has been sent to the email address on file. 
+																	Please sign in to order eligible supplies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyAtriumHealth - Login Page. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/50/0a/aa500a60d8adeb0652684beb943e439a.png" data-lightbox="roadtrip" data-title="Hedspace Meditation Apps Headspace App Headspace Meditation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/50/0a/aa500a60d8adeb0652684beb943e439a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYewftb61OZJglo3skXZutikTe01h0dz_dlQ';" alt="Hedspace Meditation Apps Headspace App Headspace Meditation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hedspace Meditation Apps Headspace App Headspace Meditation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/75/f5/cc75f5795f9f1b4d03eb96cdaed3ad3a.jpg" data-lightbox="roadtrip" data-title="Mync Exclusives Lookbook Online Shopping Clothes Women Clothes For Women Online Womens Clothing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/75/f5/cc75f5795f9f1b4d03eb96cdaed3ad3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLCVkZl5bfs6NJH4sW3z9xet6gIJMR0rRlQ';" alt="Mync Exclusives Lookbook Online Shopping Clothes Women Clothes For Women Online Womens Clothing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mync Exclusives Lookbook Online Shopping Clothes Women Clothes For Women Online Womens Clothing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/46/3c/84463c4f5b8dbaa4f3de58bfdeb96752.jpg" data-lightbox="roadtrip" data-title="Headspace Icons Google Search Meditation Apps Headspace App Headspace Meditation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/46/3c/84463c4f5b8dbaa4f3de58bfdeb96752.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3OnG0weqeoJGUIGuTcpHT6adTPoKAH7q6w';" alt="Headspace Icons Google Search Meditation Apps Headspace App Headspace Meditation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Headspace Icons Google Search Meditation Apps Headspace App Headspace Meditation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9d/b3/6b9db338edf56b59f1a8455971d106ce.jpg" data-lightbox="roadtrip" data-title="Mync Presents Cr2 Live Direct From Bora Bora Beach With Fatboy Slim Bora Bora Beaches Bora Bora Ibiza">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9d/b3/6b9db338edf56b59f1a8455971d106ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5NBr6lYV6lXGWIWV6Ib7OJVWSrzfvPnRzQ';" alt="Mync Presents Cr2 Live Direct From Bora Bora Beach With Fatboy Slim Bora Bora Beaches Bora Bora Ibiza">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mync Presents Cr2 Live Direct From Bora Bora Beach With Fatboy Slim Bora Bora Beaches Bora Bora Ibiza</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c1/9c/58/c19c58613cd0be6a963210a9a1c3ae91--alt.jpg" data-lightbox="roadtrip" data-title="How To Place Keywords In The 5 Most Strategic Places On Your Site Recent Earthquakes Keywords Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c1/9c/58/c19c58613cd0be6a963210a9a1c3ae91--alt.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzuATijUW3BO3oxkvlRavWEbIExmE7y4WKA';" alt="How To Place Keywords In The 5 Most Strategic Places On Your Site Recent Earthquakes Keywords Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Place Keywords In The 5 Most Strategic Places On Your Site Recent Earthquakes Keywords Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/3d/c4/d93dc47f608a8a6eb917e4793d9135bb.gif" data-lightbox="roadtrip" data-title="Colours Flyer Party Flyer Flyer Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/3d/c4/d93dc47f608a8a6eb917e4793d9135bb.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wBcsZ_qrbIe7oKtrM7pBuucGmrRalgSD2Q';" alt="Colours Flyer Party Flyer Flyer Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colours Flyer Party Flyer Flyer Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/b4/c4/efb4c46d19d37e4dceff8dcf39b625dd.png" data-lightbox="roadtrip" data-title="Weekly Log Bullet Journal Bullet Journal Journal Bullet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/b4/c4/efb4c46d19d37e4dceff8dcf39b625dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQJMvYywx-llsLry8ESzSNLMuj4nDeBdrFA';" alt="Weekly Log Bullet Journal Bullet Journal Journal Bullet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weekly Log Bullet Journal Bullet Journal Journal Bullet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/93/7b/89/937b89af6fb76831d5dca62fd4a2eb74.jpg" data-lightbox="roadtrip" data-title="Pin On Yes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/93/7b/89/937b89af6fb76831d5dca62fd4a2eb74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rT7QZ3OMQGrr23aAAUUHJKZlqj0bEzds7A';" alt="Pin On Yes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Yes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/36/2b/44362ba37016b1e274a6832e3aa8e3f0.png" data-lightbox="roadtrip" data-title="Pin By Sarah Olson On Money Hero App Meditation Apps Headspace App Headspace Meditation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/36/2b/44362ba37016b1e274a6832e3aa8e3f0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEuGlMNqu6nb13PD4ZnYraJTvWVbrryTf7g';" alt="Pin By Sarah Olson On Money Hero App Meditation Apps Headspace App Headspace Meditation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sarah Olson On Money Hero App Meditation Apps Headspace App Headspace Meditation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/c9/6d/21c96d2aa7c2a1dd04af00ba6e6fcf3c.jpg" data-lightbox="roadtrip" data-title="Book Of Hours Ms M 76 Fol 177r Images From Medieval And Renaissance Manuscripts The Morgan Library Illuminated Manuscript Book Of Hours Medieval Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/c9/6d/21c96d2aa7c2a1dd04af00ba6e6fcf3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAk179farDqvi_oJ4v1Ng8WzBRpX4nAtXspw';" alt="Book Of Hours Ms M 76 Fol 177r Images From Medieval And Renaissance Manuscripts The Morgan Library Illuminated Manuscript Book Of Hours Medieval Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Of Hours Ms M 76 Fol 177r Images From Medieval And Renaissance Manuscripts The Morgan Library Illuminated Manuscript Book Of Hours Medieval Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/e6/bb/91e6bb64e2b4d9287723e572a263b524.png" data-lightbox="roadtrip" data-title="Pin On H2o Humanization Of Healthcare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/e6/bb/91e6bb64e2b4d9287723e572a263b524.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY9X5xJi818YMV_VMyJOxOAweo3Hv8LeIePQ';" alt="Pin On H2o Humanization Of Healthcare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On H2o Humanization Of Healthcare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/42/d7/e942d7d523d7764bda4c64259bd53f5f.jpg" data-lightbox="roadtrip" data-title="Kardia Por Alivecor Inc Ipod Touch Iphone Ipod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/42/d7/e942d7d523d7764bda4c64259bd53f5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWu1caZxci98XZAV9meWnDdylxIJm-QfWWg';" alt="Kardia Por Alivecor Inc Ipod Touch Iphone Ipod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kardia Por Alivecor Inc Ipod Touch Iphone Ipod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f2/d2/1cf2d25360fde30f5a6eb0a1856d7842.jpg" data-lightbox="roadtrip" data-title="Pin By Mync On Vocaloid Vocaloid Ia Anime Anime Chibi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f2/d2/1cf2d25360fde30f5a6eb0a1856d7842.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjOOswoZ11uBhQ-o4fXdVHgwqq6R_IVhRoQ';" alt="Pin By Mync On Vocaloid Vocaloid Ia Anime Anime Chibi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mync On Vocaloid Vocaloid Ia Anime Anime Chibi</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/marine-kills-wife-camp-lejeune-nc.html">Marine Kills Wife Camp Lejeune Nc</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-what-channel.html">Man Utd Vs Chelsea What Channel</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-india-kolkata.html">Merchant Navy India Kolkata</a></li>
+													<li class="list-group-item"><a href="/masters-athletics-records-nz.html">Masters Athletics Records Nz</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-xg.html">Man Utd Vs Chelsea Xg</a></li>
+													<li class="list-group-item"><a href="/marine-corps-spouse-college.html">Marine Corps Spouse College</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-jobs-in-india-after-btech.html">Merchant Navy Jobs In India After Btech</a></li>
+													<li class="list-group-item"><a href="/mens-military-hats-for-sale.html">Mens Military Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-in-india-after-12th.html">Merchant Navy In India After 12th</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-xi.html">Man Utd Vs Chelsea Xi</a></li>
+													<li class="list-group-item"><a href="/marine-spouse-tuition-assistance.html">Marine Spouse Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/maximum-age-ncaa-eligibility.html">Maximum Age Ncaa Eligibility</a></li>
+													<li class="list-group-item"><a href="/mens-military-style-hats-for-sale.html">Mens Military Style Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-in-indian.html">Merchant Navy In Indian</a></li>
+													<li class="list-group-item"><a href="/marine-corps-order-on-paying-spouse.html">Marine Corps Order On Paying Spouse</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-india-in-hindi.html">Merchant Navy India In Hindi</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-india-qualification.html">Merchant Navy India Qualification</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-india-recruitment.html">Merchant Navy India Recruitment</a></li>
+													<li class="list-group-item"><a href="/medical-benefits-for-dependents-of-military-retirees.html">Medical Benefits For Dependents Of Military Retirees</a></li>
+													<li class="list-group-item"><a href="/masters-swimming-records-canada.html">Masters Swimming Records Canada</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

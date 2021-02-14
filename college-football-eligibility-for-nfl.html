@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Football Eligibility For Nfl - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Football Eligibility For Nfl",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/31/48/5c/31485cb9588b2efb31c2ef75ec19904b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+football+eligibility+for+nfl",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Football Eligibility For Nfl</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Jim Harbaugh is never afraid to float new ideas for college sports. However if the individual is not drafted. It has turned into quite the annual spectacle and this year it is scheduled to take place beginning on Thursday April 29 in Cleveland no less just a drive up I-71 in Ohio from Columbus. <br>				
+			</p>
+										<a class="badge badge-dark" href="/do-retired-military-dependents-get-id-cards.html">do retired military dependents get id cards</a>
+											<a class="badge badge-warning" href="/do-military-spouses-pay-out-of-state-tuition.html">do military spouses pay out of state tuition</a>
+											<a class="badge badge-light" href="/does-mycaa-pay-for-bachelors-degree.html">does mycaa pay for bachelors degree</a>
+											<a class="badge badge-warning" href="/does-hong-kong-have-a-military.html">does hong kong have a military</a>
+											<a class="badge badge-success" href="/do-military-dependents-get-free-baggage.html">do military dependents get free baggage</a>
+											<a class="badge badge-danger" href="/does-scra-apply-to-military-spouses.html">does scra apply to military spouses</a>
+											<a class="badge badge-info" href="/does-the-army-have-a-hr.html">does the army have a hr</a>
+											<a class="badge badge-dark" href="/dividing-military-retirement-pay-in-divorce.html">dividing military retirement pay in divorce</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right site.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/48/5c/31485cb9588b2efb31c2ef75ec19904b.jpg" data-lightbox="roadtrip" data-title="2019 Nfl Draft Record Number Of College Football Players Enter With Eligibility Remaining Cbs Sports The Final List College Football Players Nfl Ohio State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/48/5c/31485cb9588b2efb31c2ef75ec19904b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcbPGFIY-1El8GaPRo4Jd-UxRlPF91-X0Kg';" alt="2019 Nfl Draft Record Number Of College Football Players Enter With Eligibility Remaining Cbs Sports The Final List College Football Players Nfl Ohio State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Nfl Draft Record Number Of College Football Players Enter With Eligibility Remaining Cbs Sports The Final List College Football Players Nfl Ohio State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/6d/67/246d6773b907be016d9a4ef7e6d32e7f.png" data-lightbox="roadtrip" data-title="Nfl Draft Prospect Kenny Robinson Gave Up His Remaining College Eligibility To Play In The Xfl And Now Looks To Turn Tha Nfl Draft Nfl Professional Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/6d/67/246d6773b907be016d9a4ef7e6d32e7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1mFgrd_R-c9TWmKdboX-iGIzOv4ki6Fnfg';" alt="Nfl Draft Prospect Kenny Robinson Gave Up His Remaining College Eligibility To Play In The Xfl And Now Looks To Turn Tha Nfl Draft Nfl Professional Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nfl Draft Prospect Kenny Robinson Gave Up His Remaining College Eligibility To Play In The Xfl And Now Looks To Turn Tha Nfl Draft Nfl Professional Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/61/86/606186ee32142f6e310bbd2bdd0514b3.jpg" data-lightbox="roadtrip" data-title="College Football Edits On Instagram Former Notre Dame Qb Brandon Wimbush Has Announced That He Will Be Transferring To Ucf And Will Be Eligible Immediately">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/61/86/606186ee32142f6e310bbd2bdd0514b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcq4wnZKRs6f0zLkeOMnIiSgooSQ632sDdPA';" alt="College Football Edits On Instagram Former Notre Dame Qb Brandon Wimbush Has Announced That He Will Be Transferring To Ucf And Will Be Eligible Immediately">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Edits On Instagram Former Notre Dame Qb Brandon Wimbush Has Announced That He Will Be Transferring To Ucf And Will Be Eligible Immediately</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/99/37/36993759ce0d1f4f4952756d66fcd45a.jpg" data-lightbox="roadtrip" data-title="Trevor Lawrence Could Go Pro If Not For Nfl Eligibility Rules Mike Greenberg Get Up Mike Greenberg Trevor Lawrence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/99/37/36993759ce0d1f4f4952756d66fcd45a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiX9p1yvaZoTBYjjzJwJT5stAC1N3__Gzplw';" alt="Trevor Lawrence Could Go Pro If Not For Nfl Eligibility Rules Mike Greenberg Get Up Mike Greenberg Trevor Lawrence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trevor Lawrence Could Go Pro If Not For Nfl Eligibility Rules Mike Greenberg Get Up Mike Greenberg Trevor Lawrence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/45/a2/9d45a27e2f9a144670fca7304ebd7154.jpg" data-lightbox="roadtrip" data-title="How Ohio State Can Unlock The Newly Eligible Justin Fields Potential All Sports Games And Sports Hd Streaming C Football Football Notebook College Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/45/a2/9d45a27e2f9a144670fca7304ebd7154.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qYBUVS1bKrZ13800Uz9cE8wX53A_q2BSKA';" alt="How Ohio State Can Unlock The Newly Eligible Justin Fields Potential All Sports Games And Sports Hd Streaming C Football Football Notebook College Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Ohio State Can Unlock The Newly Eligible Justin Fields Potential All Sports Games And Sports Hd Streaming C Football Football Notebook College Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/25/c5/f025c5ad40a3c27fa1e6ee49c574b04f.jpg" data-lightbox="roadtrip" data-title="Report Tua Tagovailoa Had Positive Checkup On Injury Before Entering Nfl Draft In 2020 Nfl Nfl Draft Nfl News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/25/c5/f025c5ad40a3c27fa1e6ee49c574b04f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbiJ77TF4Phows-RPmXGEdBofA7wRzjrNtA';" alt="Report Tua Tagovailoa Had Positive Checkup On Injury Before Entering Nfl Draft In 2020 Nfl Nfl Draft Nfl News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Report Tua Tagovailoa Had Positive Checkup On Injury Before Entering Nfl Draft In 2020 Nfl Nfl Draft Nfl News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f3/cd/d9/f3cdd98117542202793c807a386ca83b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbiJ77TF4Phows-RPmXGEdBofA7wRzjrNtA';" alt="Report Tua Tagovailoa Had Positive Checkup On Injury Before Entering Nfl Draft In 2020 Nfl Nfl Draft Nfl News">
+										<div class="card-body">
+						<h3 class="h5"><b>Additionally NFL combine invites for senior prospects that have not yet declared will likely be delayed.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College football eligibility for nfl</strong>. 
+								
+																	A player or his agent may ask the NFL Commissioners office for special. 
+																	Mond a senior who started all four years for AM made the announcement Thursday morning. 
+																	This means that seniors who normally would have been. 
+																	Special Permission for Early Eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College football The NCAA rulebook defines eligible receivers for college football in Rule 7 Section 3 Article 3. 
+																	That was up from 16 such players last year. 
+																	Therefore heading into the 2021 NFL Draft all players will have college eligibility remaining essentially making them underclassmen and will need to declare by the deadline. 
+																	For the 2017 NFL Draft 106 undergraduates received NFL approval to enter the draft as did 13 players who graduated without using up all their college eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An early look at the top 20 NFL draft-eligible college football players taking the field in 2021 The deadline for declaring for the 2021 NFL Draft has come and gone leaving plenty of stars in. 
+																	College football roster construction underwent a massive change last week when the NCAA Board of Governors announced the 2020 season would not count against a players eligibility clock. 
+																	The COVID-19 pandemic added another layer of complication to the 2021 NFL Draft on Friday when the NCAA Division I Board of Directors adopted a recommendation to provide an additional year of. 
+																	NFL amends draft eligibility due to pandemic impact. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once players have become. 
+																	Texas AM quarterback Kellen Mond is bypassing his extra year of eligibility and entering the NFL draft. 
+																	Each college may. 
+																	The determining factors are the players position on the field at the snap and their jersey number. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NFL has clarified its eligibility requirements for the draft to allow college players who wouldve played a fourth season during the pandemic-altered 2020 season to be eligible. 
+																	The NFL has clarified its eligibility requirements for the draft to allow college players who wouldve played a fourth season during the pandemic-altered 2020 season to be eligible. 
+																	Now that the Super Bowl is complete thus ending the football regular season all attention in the American football world will now turn to the 2021 NFL draft as the next big show in town. 
+																	Wednesday January 20 2021 Monday marked the early-entry deadline for underclassmen to enter the 2021 NFL draft so we now have a better idea of who is staying or leaving and which schools were. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Because of the COVID-19 pandemic the NCAA ruled that the 2020 college football season would not count against anyones eligibility clock. 
+																	The 30 players with college eligibility remaining after completing their degree requirements had to notify the NFL of their intentions for the draft. 
+																	While there is no minimum age for professional football players the NFL mandates that you must be out of high school for at least three years before you are eligible to play. 
+																	College players automatically are eligible for the NFL Draft without a declaration when they. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By ROB MAADDI January 14 2021. 
+																	Get the latest NFL Draft prospect rankings from CBS Sports. 
+																	Specifically any players on offense wearing numbers between 50 and 79 are always ineligible. 
+																	In a memo sent to teams that was obtained by The Associated Press on Thursday the league said the 2020 college football season will be considered a season of participation for all college football student-athletes including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NFL Draft Eligibility Rules Automatic Eligibility. 
+																	If you graduate at 17. 
+																	As for those 98 players granted special eligibility without yet finishing their degrees that was one fewer than last year and the lowest total since 95 in 2017. 
+																	Find out where your favorite Position stacks up against the 2021 class and view expert mock drafts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Today he proposed a new idea for college football eligibility in an effort to empower the student-athlete. 
+																	If he is drafted within the first 224 picks of the NFL Draft or chooses to sign a free agent contract he would forego remaining college eligibility. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/66/89/ab66898e926c32cad9b60c9eaff9b243.jpg" data-lightbox="roadtrip" data-title="Arizona Athletic Scholarships Football Recruiting College Football Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/66/89/ab66898e926c32cad9b60c9eaff9b243.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCbRSiVpTa896yIteXBLXecxo8H5yyGwZpw';" alt="Arizona Athletic Scholarships Football Recruiting College Football Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Athletic Scholarships Football Recruiting College Football Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/30/11/1c30111846236b1478072ac5ab9dbb83.jpg" data-lightbox="roadtrip" data-title="Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/30/11/1c30111846236b1478072ac5ab9dbb83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xBB86lBoN8DIfc5nuOYqXeLjmcCLsHYHBg';" alt="Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/0f/d1/2c0fd1d6b00c0a7f70cae9380afece2e.jpg" data-lightbox="roadtrip" data-title="Kentucky Sports Graphic Design College Football Teams Sports Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/0f/d1/2c0fd1d6b00c0a7f70cae9380afece2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJa5FKQWjldlF9fwdpgQfvdl6mZBntmxhPA';" alt="Kentucky Sports Graphic Design College Football Teams Sports Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Sports Graphic Design College Football Teams Sports Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/c9/71/96c971e755a5c0a3e60d26db4e7dc027.jpg" data-lightbox="roadtrip" data-title="Nfl Combine Complete Entry List Nfl Nfl Draft Ncaa Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/c9/71/96c971e755a5c0a3e60d26db4e7dc027.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkU3VeSi6QUYzVoKEYT5ZMl5qtxrMFqhUnRA';" alt="Nfl Combine Complete Entry List Nfl Nfl Draft Ncaa Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nfl Combine Complete Entry List Nfl Nfl Draft Ncaa Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/f5/14/baf514f422666db2aa5d0a5f0660ff00.jpg" data-lightbox="roadtrip" data-title="Football Eligibility Packet For High School Athletes A Free Resource Which Is Great For Coaches Who Have Parents Who Co Tackle Football Football Nfl Playoffs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/f5/14/baf514f422666db2aa5d0a5f0660ff00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnMZflsSIBz_fA-n6AUpKHpCyj-FvOe26fQ';" alt="Football Eligibility Packet For High School Athletes A Free Resource Which Is Great For Coaches Who Have Parents Who Co Tackle Football Football Nfl Playoffs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Football Eligibility Packet For High School Athletes A Free Resource Which Is Great For Coaches Who Have Parents Who Co Tackle Football Football Nfl Playoffs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/19/e7/ef19e72621061e92db066e9668891da1.jpg" data-lightbox="roadtrip" data-title="Travis Etienne Has Millions Of Reasons To Return To Clemson Football In 2020 National Football Le In 2020 National Football League Clemson Football National Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/19/e7/ef19e72621061e92db066e9668891da1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScCZzSbT-WpfWSh4ouinSpAyrSRgTsT432g';" alt="Travis Etienne Has Millions Of Reasons To Return To Clemson Football In 2020 National Football Le In 2020 National Football League Clemson Football National Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Travis Etienne Has Millions Of Reasons To Return To Clemson Football In 2020 National Football Le In 2020 National Football League Clemson Football National Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/ee/d3/0eeed3b044afc81292c2587327150627.jpg" data-lightbox="roadtrip" data-title="Pin On Thee Ohio State University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/ee/d3/0eeed3b044afc81292c2587327150627.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oaloews1z2Y0p2nTYfwPzUzpGBg7z-QuDw';" alt="Pin On Thee Ohio State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thee Ohio State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/49/ab/8349ab42fec9aab4f1ef15cfff507000.jpg" data-lightbox="roadtrip" data-title="Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Alabama Fans Nfl Draft Nfl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/49/ab/8349ab42fec9aab4f1ef15cfff507000.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnoMCp2ZvuL5gmyNXkcMkh3q_wp6Az2WULg';" alt="Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Alabama Fans Nfl Draft Nfl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Alabama Fans Nfl Draft Nfl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/51/a5/7351a51559a679f4933c0e23a7efb0dc.jpg" data-lightbox="roadtrip" data-title="Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Nfl Draft Alabama Nfl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/51/a5/7351a51559a679f4933c0e23a7efb0dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YuyFmsX8jyKP8u8Bm_KPbBfGFutJ-wnNMQ';" alt="Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Nfl Draft Alabama Nfl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Wr Henry Ruggs Iii Declares For 2020 Nfl Draft Forgoes Senior Season In 2020 Nfl Draft Alabama Nfl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/ba/b8/43bab89c7a00c3ee99ec6714a94f7abc.jpg" data-lightbox="roadtrip" data-title="Alabama Wr Jerry Jeudy Declares For 2020 Nfl Draft Bleacher Report Latest News Videos And Highlights Nfl Draft Roll Tide Football Nfl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/ba/b8/43bab89c7a00c3ee99ec6714a94f7abc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmcpvJo6cuyIllpqMCb5FnYTB9E6FJUVnvw';" alt="Alabama Wr Jerry Jeudy Declares For 2020 Nfl Draft Bleacher Report Latest News Videos And Highlights Nfl Draft Roll Tide Football Nfl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Wr Jerry Jeudy Declares For 2020 Nfl Draft Bleacher Report Latest News Videos And Highlights Nfl Draft Roll Tide Football Nfl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/cd/d9/f3cdd98117542202793c807a386ca83b.jpg" data-lightbox="roadtrip" data-title="Georgia S Jones To Enter Draft Forgo Eligibility Georgia Bulldogs Nfl Draft Uga Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/cd/d9/f3cdd98117542202793c807a386ca83b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsv0di7_4Yvvb9-bnyq6I1JqjsDyZy7tK4QQ';" alt="Georgia S Jones To Enter Draft Forgo Eligibility Georgia Bulldogs Nfl Draft Uga Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia S Jones To Enter Draft Forgo Eligibility Georgia Bulldogs Nfl Draft Uga Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/41/a5/9141a5800e71de89c05a53d9b9d5cfca.png" data-lightbox="roadtrip" data-title="Pin On American Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/41/a5/9141a5800e71de89c05a53d9b9d5cfca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD4EFq6qvyllXsJTewCSMrWhZQsE-xxxAUXA';" alt="Pin On American Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/02/d4/7e02d45efe34c45a779f34c9a0db3c65.jpg" data-lightbox="roadtrip" data-title="Deshaun Watson S A Hot Prospect And Bears Need A Qb But Is No 3 Too High Deshaun Watson Football Helmets College Football Playoff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/02/d4/7e02d45efe34c45a779f34c9a0db3c65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3qylKLxnGmRPS7uc6WF1MSNIAnVf5A3R_w';" alt="Deshaun Watson S A Hot Prospect And Bears Need A Qb But Is No 3 Too High Deshaun Watson Football Helmets College Football Playoff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deshaun Watson S A Hot Prospect And Bears Need A Qb But Is No 3 Too High Deshaun Watson Football Helmets College Football Playoff</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-seal-gallagher-trial.html">Navy Seal Gallagher Trial</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-uniform-shop.html">Navy San Diego Uniform Shop</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-duties.html">Navy Seal Officer Duties</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-fitness-requirements.html">Navy Seal Officer Fitness Requirements</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-pl.html">Navy San Diego Pl</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-recruiter.html">Navy San Diego Recruiter</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-fire.html">Navy San Diego Fire</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-age-waiver.html">Navy Seal Officer Age Waiver</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-age.html">Navy Seal Edward Gallagher Age</a></li>
+													<li class="list-group-item"><a href="/navy-seal-marriage-benefits.html">Navy Seal Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-attrition-rate.html">Navy Seal Officer Attrition Rate</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-news.html">Navy Seal Gallagher News</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-news.html">Navy San Diego News</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-movie.html">Navy Seal Gallagher Movie</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-news.html">Navy Seal Eddie Gallagher News</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-gym.html">Navy San Diego Gym</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-movies.html">Navy San Diego Movies</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-exchange.html">Navy San Diego Exchange</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-youtube.html">Navy Seal Eddie Gallagher Youtube</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-update.html">Navy Seal Gallagher Update</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

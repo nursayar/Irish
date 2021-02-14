@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Spouse Caregiver Benefits - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Spouse Caregiver Benefits",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/04/f2/f2/04f2f225d0fb7cde106b629f4bdd8923.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+spouse+caregiver+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Spouse Caregiver Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Services for eligible participants may include a financial stipend access to health insurance mental health counseling caregiver training and respite care. The Caregiver Recognition Benefit recognizes the important role a caregiver delivers on a day-to-day basis by providing them 105389 2021 per month tax free. Monthly stipend Travel expenses including lodging and per diem while accompanying veterans undergoing care Access to health care insurance if the caregiver is not already entitled to care or services under a health care plan Mental health services and. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-is-the-meaning-of-military-group.html">what is the meaning of military group</a>
+											<a class="badge badge-light" href="/what-happens-if-you-divorce-someone-in-the-military.html">what happens if you divorce someone in the military</a>
+											<a class="badge badge-primary" href="/what-is-the-meaning-of-military-dream.html">what is the meaning of military dream</a>
+											<a class="badge badge-light" href="/what-is-the-meaning-of-military-strength.html">what is the meaning of military strength</a>
+											<a class="badge badge-light" href="/what-is-1000-hours-military-time.html">what is 1000 hours military time</a>
+											<a class="badge badge-primary" href="/what-is-the-job-description-of-a-human-resources-assistant.html">what is the job description of a human resources assistant</a>
+											<a class="badge badge-light" href="/what-is-it-like-being-an-army-wife.html">what is it like being an army wife</a>
+											<a class="badge badge-info" href="/what-is-a-military-no-contact-order.html">what is a military no contact order</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/f2/f2/04f2f225d0fb7cde106b629f4bdd8923.jpg" data-lightbox="roadtrip" data-title="Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Veterans Benefits Elderly Parents Elderly Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/f2/f2/04f2f225d0fb7cde106b629f4bdd8923.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7J8bGZHr7G0uTEG0LLBJnXnAdPTTF_ipsA';" alt="Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Veterans Benefits Elderly Parents Elderly Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Veterans Benefits Elderly Parents Elderly Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/4d/d6/ce4dd6f76d57f3fb4620e84ae5c49513.png" data-lightbox="roadtrip" data-title="Benefits For The Veteran S Spouse Veteran Spouse Benefits Disabled Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/4d/d6/ce4dd6f76d57f3fb4620e84ae5c49513.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6KejnXFUXmUl9yj-F-PEheX35K3tOKre-4w';" alt="Benefits For The Veteran S Spouse Veteran Spouse Benefits Disabled Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits For The Veteran S Spouse Veteran Spouse Benefits Disabled Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/83/2a/c7832aa7dbe1fc7d24fcc50cca35b9ad.png" data-lightbox="roadtrip" data-title="If You Are A Veteran Or Surviving Spouse Who Needs On Going Caregiving Assistance In Your Home Assisted Living Dementia Activities Veteran Elderly Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/83/2a/c7832aa7dbe1fc7d24fcc50cca35b9ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9PTjMtYPAr0y68hgdTZLRjh3dkowvRQAtA';" alt="If You Are A Veteran Or Surviving Spouse Who Needs On Going Caregiving Assistance In Your Home Assisted Living Dementia Activities Veteran Elderly Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Veteran Or Surviving Spouse Who Needs On Going Caregiving Assistance In Your Home Assisted Living Dementia Activities Veteran Elderly Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/4b/0e/a64b0e712db1b961c4e64670bd89e00f.jpg" data-lightbox="roadtrip" data-title="Caregivers Serve Too The Caregiver Space Elderly Care Caregiver Family Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/4b/0e/a64b0e712db1b961c4e64670bd89e00f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNf2b0uRDd4pA8iCta20UY24ol0ig40zC88Q';" alt="Caregivers Serve Too The Caregiver Space Elderly Care Caregiver Family Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caregivers Serve Too The Caregiver Space Elderly Care Caregiver Family Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/63/2c/0b632cca1be59f767520f6a61164e2d6.png" data-lightbox="roadtrip" data-title="Wholecare 8 Assistance For Veterans And Their Spouses In 2020 Veterans Programs Activities Of Daily Living Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/63/2c/0b632cca1be59f767520f6a61164e2d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhw4a0oq2Bduko7RkQEUlPHB5do18l6edJYQ';" alt="Wholecare 8 Assistance For Veterans And Their Spouses In 2020 Veterans Programs Activities Of Daily Living Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wholecare 8 Assistance For Veterans And Their Spouses In 2020 Veterans Programs Activities Of Daily Living Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/30/e4/f730e4408f11d1594b4390f8af920ae8.jpg" data-lightbox="roadtrip" data-title="Money Waiting Little Known Va Benefit Helps Pay For Caregiving Caregiver Veteran Spouse Benefits Disability Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/30/e4/f730e4408f11d1594b4390f8af920ae8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7LzfTQnSd2eMrqvNMZq1RdjmaD1-HjV_rA';" alt="Money Waiting Little Known Va Benefit Helps Pay For Caregiving Caregiver Veteran Spouse Benefits Disability Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Money Waiting Little Known Va Benefit Helps Pay For Caregiving Caregiver Veteran Spouse Benefits Disability Help</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/04/f2/f2/04f2f225d0fb7cde106b629f4bdd8923.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7LzfTQnSd2eMrqvNMZq1RdjmaD1-HjV_rA';" alt="Money Waiting Little Known Va Benefit Helps Pay For Caregiving Caregiver Veteran Spouse Benefits Disability Help">
+										<div class="card-body">
+						<h3 class="h5"><b>Veterans service members and family members must meet specific requirements to be eligible for benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran spouse caregiver benefits</strong>. 
+								
+																	This program offers support and services for family caregivers of eligible Veterans who were seriously injured in the line of duty during certain time periods and meet other eligibility requirements. 
+																	A monthly stipend payment Access to health care benefits through the Civilian Health and Medical Program of the Department of Veterans Affairs CHAMPVAif you dont already qualify for care or services under another health care plan Learn more about CHAMPVA. 
+																	Then for each additional benefit you qualify for you would add or adjust your monthly rate using the Added or increased amounts table. 
+																	Aid Attendance and Other VA Pensions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Caregivers of eligible veterans can receive. 
+																	If the veteran is able to perform daily living activities the caregiver would receive about 1750 a month. 
+																	Some of these benefits can be used to pay family caregivers for providing in-home care services for vets. 
+																	There are many things you may be eligible for including job counseling free college and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA caregiver program is not called aid and attendance - it is the Program of Comprehensive Assistance for Family Caregivers which offers enhanced support for Caregivers of eligible Veterans seriously injured in the line of duty on or after September 11 2001 and may include a stipend to caregivers based on the amount of services provided by the caregiver and the vets need for such services. 
+																	You may be eligible for PCAFC if you are a family caregiver of a veteran. 
+																	To receive this benefit your case manager will conduct or arrange an assessment to confirm that you require the assistance of a caregiver. 
+																	Eligible Primary Family Caregivers may also receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Surviving spouses of eligible veterans can also make use of long-term-care programs like Aid Attendance and Housebound Pensions. 
+																	There are many things you may be eligible for including health insurance. 
+																	Since the focus of this article is on how informal caregivers such as family members can get paid to provide care for a veteran in-home care is relevant. 
+																	A primary family caregiver stipend is monetary compensation paid to a primary family caregiver for providing personal care services to an eligible veteran enrolled in the Caregiver Support Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs VA assists the families of veterans and service members. 
+																	As the spouse or dependent child of a Veteran or service member you may qualify for certain benefits like health care life insurance or money to help pay for school or training. 
+																	Those enrolled in the Department of Veterans Affairs caregiver program will receive COVID-19 vaccines at roughly the same time as the veterans they assist according to new information provided by. 
+																	VA benefits for spouses dependents survivors and family caregivers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using a reverse mortgage to pay a husband or wife to provide care for their partner is possible but doing so does not make strong. 
+																	As the survivor of a Veteran or service member you may qualify for added benefits including help with burial costs and survivor compensation. 
+																	Paying Spouses to Care for Their Elderly or Disabled Partners Medicare Medicaid VA Other Options. 
+																	The Aid Attendance AA pension is a cash benefit for veterans and surviving spouses who require long-term in-home care assisted living or nursing home care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It may seem daunting to try and understand all the benefits you may be eligible for as the spouse of a disabled veteran. 
+																	The surviving spouse or child of a Veteran who was at the time of death rated permanently and totally disabled from a service-connected disability or The surviving spouse or child of a service member who died in the line of duty not due to misconduct in most of these cases family members qualify for TRICARE not CHAMPVA. 
+																	For example a primary family caregiver of a veteran in Dallas who is unable to perform daily living activities or requires continuous supervision would receive approximately 2800 a month. 
+																	You may not be aware that as a spouse of a veteran you are entitled to many benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre the surviving spouse of a Veteran whose pay grade was E-3 your monthly rate would start at 135756. 
+																	Additional Compensation for Veterans Rated Over 30 Disabled. 
+																	And there are veteran burial benefits to ease the financial burden of funeral costs. 
+																	VA Benefits for Spouses Dependents and Survivors Information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses of disabled veterans may be eligible for VA benefits such as disability compensation health care education and training employee services insurance coverage and survivors benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/ee/ab/edeeab6c5b67324f967fe4e754941c5f.png" data-lightbox="roadtrip" data-title="Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/ee/ab/edeeab6c5b67324f967fe4e754941c5f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5HDDNsDjCTxUsiytYKuqRR2hKKY0vkTXTWQ';" alt="Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/36/fd/a1/36fda1efda8f45e3dd4939aa173a07ef.jpg" data-lightbox="roadtrip" data-title="Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/36/fd/a1/36fda1efda8f45e3dd4939aa173a07ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6jwLXw3o-6D2BW79UAWbUD-1upDKdJt5dA';" alt="Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/c6/1a/11c61a7915c122227e1e5d8739cda854.png" data-lightbox="roadtrip" data-title="Resources For Caregivers Of Veterans Caregiver Veteran Caregiver Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/c6/1a/11c61a7915c122227e1e5d8739cda854.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTnChCdVZDiw2nzXB55EM7IIa7h1_zlDNOQ';" alt="Resources For Caregivers Of Veterans Caregiver Veteran Caregiver Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources For Caregivers Of Veterans Caregiver Veteran Caregiver Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/f2/ba/f9f2badddcef933d22ae535d19c8d29f.png" data-lightbox="roadtrip" data-title="10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/f2/ba/f9f2badddcef933d22ae535d19c8d29f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDK77KuW2GbsOOwAe29eGy02BzZ-tEeTMGQ';" alt="10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Tips To Help With Caregiver Life Veteran Disabled Veterans 10 Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/7a/2e/4e7a2e8d8b5428fa20bc674d94c2e450.jpg" data-lightbox="roadtrip" data-title="10 Ways To Get Financial Aid For Disabled Army Veterans Va And Dependents Army Veteran Financial Aid Money Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/7a/2e/4e7a2e8d8b5428fa20bc674d94c2e450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlLnffVS3JvVZ3zDQLi6W6yS0lpAL62BS9uw';" alt="10 Ways To Get Financial Aid For Disabled Army Veterans Va And Dependents Army Veteran Financial Aid Money Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Get Financial Aid For Disabled Army Veterans Va And Dependents Army Veteran Financial Aid Money Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" data-lightbox="roadtrip" data-title="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEh126fKxorwJzP_6sEMzOM7ixMnS_O5YycQ';" alt="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/8c/60/698c609aad876a316edc5589e5e03b9d.png" data-lightbox="roadtrip" data-title="Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Older Adults Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/8c/60/698c609aad876a316edc5589e5e03b9d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqpZRpRW3hkZSuIrlw5mY9aXW0IC34vOIng';" alt="Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Older Adults Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits That Older Adults May Not Know They Qualify For Advocating For The Aging Older Adults Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/de/1c/cede1c30bf7f7d563bb060d020419eec.png" data-lightbox="roadtrip" data-title="Pin On Senior Caregiving 101">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/de/1c/cede1c30bf7f7d563bb060d020419eec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTece-Pu4aXZP3JNKR4ij0KqD4wn2f_rxh_dA';" alt="Pin On Senior Caregiving 101">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Senior Caregiving 101</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/60/69/136069e87152aecf6740b1c70a8f25a5.png" data-lightbox="roadtrip" data-title="10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/60/69/136069e87152aecf6740b1c70a8f25a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1X85htSmRhIxIPzgv795HI6Ezi2_Ka77tg';" alt="10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/e4/45/37e445d6813dfb6859461391c6ef47dd.jpg" data-lightbox="roadtrip" data-title="5 5 Million Family Members Serve As Caregivers For Disabled Veterans Caregiver Caregiving Caregiver Family Caregiver Elderly Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/e4/45/37e445d6813dfb6859461391c6ef47dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSfA1EbV6CU_sGb4u4ImopY--6e9_Lqzts4w';" alt="5 5 Million Family Members Serve As Caregivers For Disabled Veterans Caregiver Caregiving Caregiver Family Caregiver Elderly Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 5 Million Family Members Serve As Caregivers For Disabled Veterans Caregiver Caregiving Caregiver Family Caregiver Elderly Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/05/e2/7205e2c3dbf731ec14b2433cfe7b67aa.png" data-lightbox="roadtrip" data-title="Pin On Va Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/05/e2/7205e2c3dbf731ec14b2433cfe7b67aa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AMLwZSTbTagrnnBsmtVj4PjyfjBDlp3z_w';" alt="Pin On Va Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/da/9c/46da9c2fdad0e2f92d12b2b490e9332e.png" data-lightbox="roadtrip" data-title="There Is A World Of Difference Between Being A Army Spouse And A Veteran Spouse Here Are 6 Tips To Survive This Turbule Spouse Quotes Caregiver Quotes Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/da/9c/46da9c2fdad0e2f92d12b2b490e9332e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWr6VFG-pSxGuCcqynTossEPix0_FR6PB2zg';" alt="There Is A World Of Difference Between Being A Army Spouse And A Veteran Spouse Here Are 6 Tips To Survive This Turbule Spouse Quotes Caregiver Quotes Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is A World Of Difference Between Being A Army Spouse And A Veteran Spouse Here Are 6 Tips To Survive This Turbule Spouse Quotes Caregiver Quotes Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/82/59/a98259ad6618f4dd20a44b7989273302.jpg" data-lightbox="roadtrip" data-title="Must Know Acronyms For Military Caregivers Military Letters Caregiver Support Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/82/59/a98259ad6618f4dd20a44b7989273302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDRgO8DtavhH8TrcYNOMxouc9jwwKZi4igJQ';" alt="Must Know Acronyms For Military Caregivers Military Letters Caregiver Support Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Must Know Acronyms For Military Caregivers Military Letters Caregiver Support Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-military-dog-handler.html">Pros And Cons Of Being A Military Dog Handler</a></li>
+													<li class="list-group-item"><a href="/request-military-records-for-deceased-veteran.html">Request Military Records For Deceased Veteran</a></li>
+													<li class="list-group-item"><a href="/programs-for-enlisted-to-officer-in-air-force.html">Programs For Enlisted To Officer In Air Force</a></li>
+													<li class="list-group-item"><a href="/rebirth-of-the-little-military-wife-spoilers.html">Rebirth Of The Little Military Wife Spoilers</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-military-child.html">Pros And Cons Of Being A Military Child</a></li>
+													<li class="list-group-item"><a href="/proud-army-parent-license-plate-frame.html">Proud Army Parent License Plate Frame</a></li>
+													<li class="list-group-item"><a href="/prayer-for-military-wife.html">Prayer For Military Wife</a></li>
+													<li class="list-group-item"><a href="/requesting-archived-military-medical-records.html">Requesting Archived Military Medical Records</a></li>
+													<li class="list-group-item"><a href="/programs-mycaa-covers.html">Programs Mycaa Covers</a></li>
+													<li class="list-group-item"><a href="/portal-campus-training.html">Portal Campus Training</a></li>
+													<li class="list-group-item"><a href="/portal-mi-campus-tijuana.html">Portal Mi Campus Tijuana</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-woman-in-the-military.html">Pros And Cons Of Being A Woman In The Military</a></li>
+													<li class="list-group-item"><a href="/renew-military-dependent-id-card-near-me.html">Renew Military Dependent Id Card Near Me</a></li>
+													<li class="list-group-item"><a href="/rare-air-force-1-uk.html">Rare Air Force 1 Uk</a></li>
+													<li class="list-group-item"><a href="/renewing-military-dependent-id-card-without-sponsor.html">Renewing Military Dependent Id Card Without Sponsor</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-military-doctor.html">Pros And Cons Of Being A Military Doctor</a></li>
+													<li class="list-group-item"><a href="/quotes-about-military-couples.html">Quotes About Military Couples</a></li>
+													<li class="list-group-item"><a href="/requesting-military-records-from-the-national-archives.html">Requesting Military Records From The National Archives</a></li>
+													<li class="list-group-item"><a href="/rebirth-of-the-little-military-wife-wuxia.html">Rebirth Of The Little Military Wife Wuxia</a></li>
+													<li class="list-group-item"><a href="/proud-army-mom-license-plate-frame.html">Proud Army Mom License Plate Frame</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

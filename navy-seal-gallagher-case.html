@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Seal Gallagher Case - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Seal Gallagher Case",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/2e/5a/bb/2e5abb54acbe31bdde0baec249341059.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+seal+gallagher+case",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Seal Gallagher Case</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Gallagher was also a member of SEAL Team 7 in Iraq but with a different platoon and under different leadership. Retired Navy SEAL Rob ONeill joins Harris Faulkner on Outnumbered Overtime FoxNews FOX News operates the FOX News Channel FNC FOX Business Network F. Embattled Navy SEAL Eddie Gallagher center released a statement Sunday night thanking President Donald Trump for the numerous times he has intervened on his behalf shortly after Navy Secretary. <br>				
+			</p>
+										<a class="badge badge-light" href="/anniston-army-depot-human-resources-number.html">anniston army depot human resources number</a>
+											<a class="badge badge-light" href="/army-24-hour-ration-packs.html">army 24 hour ration packs</a>
+											<a class="badge badge-light" href="/army-careers-office-contact-number.html">army careers office contact number</a>
+											<a class="badge badge-info" href="/air-force-wife-svg.html">air force wife svg</a>
+											<a class="badge badge-dark" href="/air-force-rotc-scholarship-for-college-students.html">air force rotc scholarship for college students</a>
+											<a class="badge badge-secondary" href="/amazon-hiring-military-spouses.html">amazon hiring military spouses</a>
+											<a class="badge badge-info" href="/an-army-soldier-prayer.html">an army soldier prayer</a>
+											<a class="badge badge-light" href="/are-military-spouses-eligible-for-va-loans.html">are military spouses eligible for va loans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the right site.  Our website provides you with hints for viewing the highest quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/11/1f/14/111f142881f0c652ad3194e4728f3688.jpg" data-lightbox="roadtrip" data-title="Navy Seals Paint Disturbing Picture Of Gallagher In New Video Nation Stltoday Com Navy Seals War Crime Seal Face">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/11/1f/14/111f142881f0c652ad3194e4728f3688.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5hcnPEFyhAeN5ewYlNt5Iv5mywCFEeLVPZA';" alt="Navy Seals Paint Disturbing Picture Of Gallagher In New Video Nation Stltoday Com Navy Seals War Crime Seal Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Paint Disturbing Picture Of Gallagher In New Video Nation Stltoday Com Navy Seals War Crime Seal Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e4/56/c7/e456c7abf9a898a00cf0ce3e95f5ef30.jpg" data-lightbox="roadtrip" data-title="Top Navy Seal Sends Eddie Gallagher Case Before Military Board Navy Seals Navy Girlfriend Military Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e4/56/c7/e456c7abf9a898a00cf0ce3e95f5ef30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm3UzxxeOn3L1AsLdCuBbctKJ4QXRqFiLPng';" alt="Top Navy Seal Sends Eddie Gallagher Case Before Military Board Navy Seals Navy Girlfriend Military Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Navy Seal Sends Eddie Gallagher Case Before Military Board Navy Seals Navy Girlfriend Military Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/c0/b4/dcc0b4c49cfcf425e1500301e68654fa.jpg" data-lightbox="roadtrip" data-title="Navy Seals Who Turned In Gallagher He Is Freaking Evil Thehill In 2020 Navy Seals War Crime Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/c0/b4/dcc0b4c49cfcf425e1500301e68654fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2p687nJjxecOWh6XGUjJ8qYN9gYRF1kjgJQ';" alt="Navy Seals Who Turned In Gallagher He Is Freaking Evil Thehill In 2020 Navy Seals War Crime Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Who Turned In Gallagher He Is Freaking Evil Thehill In 2020 Navy Seals War Crime Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/7b/9e/a97b9e979b77c6ba2f4c636aec1f4f5e.jpg" data-lightbox="roadtrip" data-title="Lawmakers Join Family S Fight For Fair Treatment Of Navy Seal Jailed On War Crimes Charges House Republicans Urge The Secretary Navy Seals War Crime Seal Face">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/7b/9e/a97b9e979b77c6ba2f4c636aec1f4f5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLXqUSBOPc794SDEc4BI7zSSLLhJex5CxHA';" alt="Lawmakers Join Family S Fight For Fair Treatment Of Navy Seal Jailed On War Crimes Charges House Republicans Urge The Secretary Navy Seals War Crime Seal Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lawmakers Join Family S Fight For Fair Treatment Of Navy Seal Jailed On War Crimes Charges House Republicans Urge The Secretary Navy Seals War Crime Seal Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/7a/41/597a41803f1b929f59963b2d50fb693e.jpg" data-lightbox="roadtrip" data-title="Naval Base San Diego The Prosecution Rested Its Case Against Navy Seal Chief Eddie Gallagher On Tuesday After A Week Of Testimony From Members Of Seal Team 7 Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/7a/41/597a41803f1b929f59963b2d50fb693e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRghefg272E7v9lCmYd7yK3OkyYfhe3QxxR2A';" alt="Naval Base San Diego The Prosecution Rested Its Case Against Navy Seal Chief Eddie Gallagher On Tuesday After A Week Of Testimony From Members Of Seal Team 7 Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Base San Diego The Prosecution Rested Its Case Against Navy Seal Chief Eddie Gallagher On Tuesday After A Week Of Testimony From Members Of Seal Team 7 Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/17/05/d317057dc30cb9301906d990aa880ab9.jpg" data-lightbox="roadtrip" data-title="Pin On Trump Train Wreck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/17/05/d317057dc30cb9301906d990aa880ab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgRm1AeyyD5fiA79mT7HxRYjGbi0MA9FTlA';" alt="Pin On Trump Train Wreck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trump Train Wreck</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a9/7b/9e/a97b9e979b77c6ba2f4c636aec1f4f5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgRm1AeyyD5fiA79mT7HxRYjGbi0MA9FTlA';" alt="Pin On Trump Train Wreck">
+										<div class="card-body">
+						<h3 class="h5"><b>Gallagher born May 29 1979 is a former United States Navy SEAL who came to national attention in the United States after he was charged in September 2018 with ten offenses under the Uniform Code of Military Justice over accusations that he had stabbed to death an injured sedated 17-year-old ISIS prisoner photographing himself with the corpse and sending the photo to friends.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy seal gallagher case</strong>. 
+								
+																	Gallagher a 15-year SEAL was found not guilty of murdering an Islamic State ISIS fighter in 2017 but was convicted of posing with the dead prisoners corpse. 
+																	Navy SEAL Special Operations Chief Edward Gallagher 40 was accused of fatally stabbing a young wounded fighter for the Islamic State militant group posing for a picture with the corpse and. 
+																	SAN DIEGO Five sailors including three Navy SEALs have been granted immunity to testify in the case of a SEAL charged with sexually assaulting a fellow sailor during a deployment to Iraq in. 
+																	The Navy reduced his rank from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SAN DIEGO The US. 
+																	Eddie Gallagher Navy SEAL acquitted of stabbing wounded ISIS prisoner to death tells his story This week on 60 Minutes contributor and CBS News national security correspondent David Martin spoke. 
+																	Navy Special Operations Chief Edward Gallagher walks out of military court during lunch recess on July 2 2019 in San Diego California. 
+																	The prosecution of Navy Special Operations Chief Edward Gallagher and a failed attempt to demote him and strip him of his status as a SEAL is expected to have broad repercussions for the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spencer out as Navy secretary over SEAL trident scandal The Pentagon has asked the White House to consider Kenneth Braithwaite the current US. 
+																	Navy on Tuesday dropped sexual assault charges against an enlisted SEAL in a case involving a female sailor at a Fourth of July party in Iraq that had prompted the rare. 
+																	WASHINGTON AP The war crimes case against a Navy SEAL that drew the attention of President Donald Trump and conservative activists has cost the Secretary of the Navy his job. 
+																	Gallagher who was convicted of a single charge for posing with the dead teen militants body for a picture got support from then-President Donald Trump who prevented the military from taking disciplinary action against the ex-SEAL pitting the commander-in-chief against. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The SEAL didnt think Gallagher. 
+																	Navy SEAL Chief Eddie Gallagher of SEAL Team 7 a special operator the past 15 years who has deployed eight times is living through a betrayal right now imprisoned while awaiting trial for allegedly knifing an injured ISIS fighter during his last deployment to Mosul in 2017. 
+																	Top Navy SEAL Rear Admiral Collin Green left is sending Eddie Gallaghers right case to a military review board which could result in his expulsion from the SEALs On November 15 Trump reversed. 
+																	CNN Navy SEAL Eddie Gallagher has retired from the Navy capping off a career that gained national attention when President Donald Trump controversially intervened in a war crimes case on his. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was Gallagher a Navy corpsman assigned to Marines before he became a SEAL who began treating the wounded Iraqi which the SO1 assumed was a shrapnel wound. 
+																	Special Operations Chief Edward Gallaghers case continues to roil the Navy even after his acquittal on most charges after another SEAL surprised prosecutors on the stand. 
+																	On this day military prosecutors say Gallagher killed a captive teen-aged Islamic State combatant by stabbing him in the neck and chest in a Navy SEAL post near Mosul Iraq. 
+																	His family says he didnt do it and claims that an eye witness and video footage help substantiate their claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ambassador to Norway and a retired Navy rear. 
+																	Sandy HuffakerGetty Images The case of Navy SEAL. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/5b/a7/d85ba79b45de001153450e834a24d839.jpg" data-lightbox="roadtrip" data-title="Pin On Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/5b/a7/d85ba79b45de001153450e834a24d839.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNP6fcEbfx7JwAX0EHR1cN5xaVXeqJwPJ_wA';" alt="Pin On Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/f1/0a/7ef10a7f10280b8711d3b9cd30e10f72.jpg" data-lightbox="roadtrip" data-title="Navy Reduces Punishment For Seal In War Crimes Case Published 2019 Chief Petty Officer War Crime Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/f1/0a/7ef10a7f10280b8711d3b9cd30e10f72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5lR-zrEdC5RIJ5Stmp8BqSaSQ6n63rR9mw';" alt="Navy Reduces Punishment For Seal In War Crimes Case Published 2019 Chief Petty Officer War Crime Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Reduces Punishment For Seal In War Crimes Case Published 2019 Chief Petty Officer War Crime Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/ef/eb/05efeb99ac5ea9df031dee8f09ee6b52.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/ef/eb/05efeb99ac5ea9df031dee8f09ee6b52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sb0yva51NdcQ_TNFFQG7Ray7Wi41IgfQEw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/8d/91/ab8d9171fc7c4422edb1c52894f2d186.jpg" data-lightbox="roadtrip" data-title="Navy Cancels Trident Review Boards For 3 Seal Officers Tied To Gallagher Case Military Com Navy Seals Naval Special Warfare Chief Of Naval Operations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/8d/91/ab8d9171fc7c4422edb1c52894f2d186.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaa8gGUIVIkZf2F_PnoGKfNKuLQHaYSmpb8w';" alt="Navy Cancels Trident Review Boards For 3 Seal Officers Tied To Gallagher Case Military Com Navy Seals Naval Special Warfare Chief Of Naval Operations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Cancels Trident Review Boards For 3 Seal Officers Tied To Gallagher Case Military Com Navy Seals Naval Special Warfare Chief Of Naval Operations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/6c/5d/c86c5d8b4e097111cd313aeb196c8c95.jpg" data-lightbox="roadtrip" data-title="Pin On History Politics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/6c/5d/c86c5d8b4e097111cd313aeb196c8c95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDeLz_WPxiPshx1rOJOIscVdmgWu4R7-_-g';" alt="Pin On History Politics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History Politics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/5a/bb/2e5abb54acbe31bdde0baec249341059.jpg" data-lightbox="roadtrip" data-title="Pin On Politics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/5a/bb/2e5abb54acbe31bdde0baec249341059.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E4Q7xZruHQMWVitNYOhcMiKBfxW9C-XG7w';" alt="Pin On Politics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Politics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/17/23/2d17232f53a0c4b9cc0223c55db42d3d.jpg" data-lightbox="roadtrip" data-title="Ce30ef3d1b9c5739a3ec710f0d7d2ec3 Foxnewscolumnsfoxnewsfirst Fnc Navy Secretary Spencer Fired For Undermining Mil Navy Seals Chief Petty Officer Rear Admiral">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/17/23/2d17232f53a0c4b9cc0223c55db42d3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmteJm-9J-VXdeNaEb_JY8M5JyIkEkZAX88g';" alt="Ce30ef3d1b9c5739a3ec710f0d7d2ec3 Foxnewscolumnsfoxnewsfirst Fnc Navy Secretary Spencer Fired For Undermining Mil Navy Seals Chief Petty Officer Rear Admiral">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ce30ef3d1b9c5739a3ec710f0d7d2ec3 Foxnewscolumnsfoxnewsfirst Fnc Navy Secretary Spencer Fired For Undermining Mil Navy Seals Chief Petty Officer Rear Admiral</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/ef/0f/42ef0f063bc455f351ed4b19eb9a24cc.jpg" data-lightbox="roadtrip" data-title="Navy Secretary Denies Threatening To Resign Over Handling Of Eddie Gallagher War Crimes Case Navy Chief Chief Petty Officer Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/ef/0f/42ef0f063bc455f351ed4b19eb9a24cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVWwlj5XST1tVY_HR3rEOlrz50kcWAtV4ZA';" alt="Navy Secretary Denies Threatening To Resign Over Handling Of Eddie Gallagher War Crimes Case Navy Chief Chief Petty Officer Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Secretary Denies Threatening To Resign Over Handling Of Eddie Gallagher War Crimes Case Navy Chief Chief Petty Officer Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/53/81/80538169d8963dd6c8f35b6aac354ca9.jpg" data-lightbox="roadtrip" data-title="Pin On News Articles And Information Gathering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/53/81/80538169d8963dd6c8f35b6aac354ca9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNksPmCdvKmg54hMGUWaVxwe5sHF0DT9NHdA';" alt="Pin On News Articles And Information Gathering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News Articles And Information Gathering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/f4/de/f7f4de472292becd9a9b974d90f286e1.jpg" data-lightbox="roadtrip" data-title="We Have A Problem Admiral Tells Navy Seals To Restore Discipline Navy Seals Chief Petty Officer Sailor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/f4/de/f7f4de472292becd9a9b974d90f286e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBmf_2njKCGS8ydLskvHCUkIJanNh_6OMA2w';" alt="We Have A Problem Admiral Tells Navy Seals To Restore Discipline Navy Seals Chief Petty Officer Sailor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Have A Problem Admiral Tells Navy Seals To Restore Discipline Navy Seals Chief Petty Officer Sailor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/09/6d/55096d7ded9658050c6bee74b6a40fef.jpg" data-lightbox="roadtrip" data-title="Pin On Military Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/09/6d/55096d7ded9658050c6bee74b6a40fef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKUJt_1Pw1o9T-kkkCmhpAGSnttsMs5aeh8w';" alt="Pin On Military Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b1/c0/0f/b1c00fde6011e5d7d3b69be1d4c6387e.jpg" data-lightbox="roadtrip" data-title="Top White House National Security Official Many Navy Seals Have Eddie Gallagher S Back Navy Seals Navy Chief Legal Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b1/c0/0f/b1c00fde6011e5d7d3b69be1d4c6387e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2t4oKkD8CSgNh5QbA3sVAr0TXXMjZJ7t2w';" alt="Top White House National Security Official Many Navy Seals Have Eddie Gallagher S Back Navy Seals Navy Chief Legal Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top White House National Security Official Many Navy Seals Have Eddie Gallagher S Back Navy Seals Navy Chief Legal Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/d1/37/bed137de97c78f1bbc29e85919556ccc.jpg" data-lightbox="roadtrip" data-title="Navy Seal Edward Gallagher S Defense Lawyer Wants To Rejoin The Navy To Teach Prosecutors Says He Fears For Law Abiding Warfighters Navy Seals Navy Mom Shorts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/d1/37/bed137de97c78f1bbc29e85919556ccc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBbMtUfpEoIgafICPdozQ8fBt90uxlgd7w_A';" alt="Navy Seal Edward Gallagher S Defense Lawyer Wants To Rejoin The Navy To Teach Prosecutors Says He Fears For Law Abiding Warfighters Navy Seals Navy Mom Shorts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Edward Gallagher S Defense Lawyer Wants To Rejoin The Navy To Teach Prosecutors Says He Fears For Law Abiding Warfighters Navy Seals Navy Mom Shorts</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/do-military-spouses-get-dental.html">Do Military Spouses Get Dental</a></li>
+													<li class="list-group-item"><a href="/divorce-military-retirement-disability.html">Divorce Military Retirement Disability</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-hotel-discounts.html">Do Military Spouses Get Hotel Discounts</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-college-paid-for.html">Do Military Spouses Get College Paid For</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-benefits.html">Do Military Spouses Get Benefits</a></li>
+													<li class="list-group-item"><a href="/does-military-leave-count-as-hours-worked.html">Does Military Leave Count As Hours Worked</a></li>
+													<li class="list-group-item"><a href="/does-military-leave-count-weekends.html">Does Military Leave Count Weekends</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-have-to-pay-out-of-state-tuition.html">Do Military Spouses Have To Pay Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-tricare.html">Do Military Spouses Get Tricare</a></li>
+													<li class="list-group-item"><a href="/does-military-pay-spouses-college.html">Does Military Pay Spouses College</a></li>
+													<li class="list-group-item"><a href="/does-military-time-change-with-time-zones.html">Does Military Time Change With Time Zones</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-pay-in-state-tuition.html">Do Military Spouses Pay In State Tuition</a></li>
+													<li class="list-group-item"><a href="/do-42a-see-combat.html">Do 42a See Combat</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-financial-aid.html">Do Military Spouses Get Financial Aid</a></li>
+													<li class="list-group-item"><a href="/does-military-tuition-assistance-cover-certifications.html">Does Military Tuition Assistance Cover Certifications</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-college.html">Do Military Spouses Get Free College</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-background-checks.html">Do Military Spouses Get Background Checks</a></li>
+													<li class="list-group-item"><a href="/disabled-veterans-spouse-medical-benefits.html">Disabled Veterans Spouse Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/documents-required-military-dependent-id-card.html">Documents Required Military Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-a-check.html">Do Military Spouses Get A Check</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Navy District Imus Contact Number - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Navy District Imus Contact Number",
+  "datePublished": "2021-02-14",
+  "image": "https://cdn1.clickthecity.com/images/establishment/common/400/6905.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+navy+district+imus+contact+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Navy District Imus Contact Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Ground Level - Space 101 Bridgestone Bldg. CL - 36743 211-139. 10-3041 - 60 With 1 Term Discount Reservation Fee 10000000 10 Down Payment 161620000 Monthly Amortization 12560000 60 Balance 1029585000 Other Charges 68953058 Main Central Park Complex - Central Pak 086 hectares - Swimming Pool 400 sqm - Clubhouse Landmarks. <br>				
+			</p>
+										<a class="badge badge-warning" href="/mycar-north-bay.html">mycar north bay</a>
+											<a class="badge badge-secondary" href="/mycar-noarlunga.html">mycar noarlunga</a>
+											<a class="badge badge-success" href="/mycaa-tcc.html">mycaa tcc</a>
+											<a class="badge badge-primary" href="/mycar-maroochydore.html">mycar maroochydore</a>
+											<a class="badge badge-success" href="/mycar-epping.html">mycar epping</a>
+											<a class="badge badge-danger" href="/mycar-penang.html">mycar penang</a>
+											<a class="badge badge-primary" href="/mycar-driver-register.html">mycar driver register</a>
+											<a class="badge badge-primary" href="/mycar-auto-service.html">mycar auto service</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/16/b7/ac/eb/army-navy.jpg" data-lightbox="roadtrip" data-title="Army Navy Imus Aguinaldo Hwy Menu Prices Restaurant Reviews Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/16/b7/ac/eb/army-navy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEo9MzjkAlRXo6wfY417rGlaFPZhCUhSzdA';" alt="Army Navy Imus Aguinaldo Hwy Menu Prices Restaurant Reviews Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Imus Aguinaldo Hwy Menu Prices Restaurant Reviews Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/18/4b/56/c3/your-order-please.jpg" data-lightbox="roadtrip" data-title="Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/18/4b/56/c3/your-order-please.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3k6fvt0pF2cTKktf_9P8i5nwXKTKZEfJYeQ';" alt="Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn1.clickthecity.com/images/establishment/common/raw/6907.jpg" data-lightbox="roadtrip" data-title="Army Navy Alabang Muntinlupa Metro Manila Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink">
+											<img class="card-img v-image ads-img " src="https://cdn1.clickthecity.com/images/establishment/common/raw/6907.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDn2wRAvFLSJIISNy5NYMTtwAdXC4wcWvKbQ';" alt="Army Navy Alabang Muntinlupa Metro Manila Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Alabang Muntinlupa Metro Manila Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-i/16/b7/ac/eb/army-navy.jpg" data-lightbox="roadtrip" data-title="The 10 Best Restaurants Near Imus Cathedral Cavite City Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-i/16/b7/ac/eb/army-navy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrJ-wcDrhlgDF5dA13Kj14CjtZR4qxb7Ftw';" alt="The 10 Best Restaurants Near Imus Cathedral Cavite City Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Restaurants Near Imus Cathedral Cavite City Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/18/4b/56/fd/nice-souvenir.jpg" data-lightbox="roadtrip" data-title="Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/18/4b/56/fd/nice-souvenir.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP57bIr42AoMThNHbpj2eQJWk6OA-K1rdfCg';" alt="Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Dasmarinas City Molino Paliparan Rd Menu Prices Restaurant Reviews Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2873533882671767" data-lightbox="roadtrip" data-title="Sachon Asian Cuisine Imus Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2873533882671767" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxVAWciMuMBM98YigOaaXcrQb0L3rDF_PzQ';" alt="Sachon Asian Cuisine Imus Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sachon Asian Cuisine Imus Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b5/d7/92/b5d792ad62c2fe7160a9b812df4925e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxVAWciMuMBM98YigOaaXcrQb0L3rDF_PzQ';" alt="Sachon Asian Cuisine Imus Home Facebook">
+										<div class="card-body">
+						<h3 class="h5"><b>These can be paired with the classic Pasta and Meatballs or the Carbonara Pasta or any of the side dishes such as onion rings nachos freedom fries and bacon cheese fries.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army navy district imus contact number</strong>. 
+								
+																	If youre interested in talking to us about what we could offer your school or college please contact our outreach team on RG-NRCOutreachAdminmodgovuk or call us on 0345 600 8080 Discover more on our British Army Supporting Education website. 
+																	Aguinaldo Highway Palico 4 Imus Luzon 4102 Philippines 63 46 476 0871 Website Menu Add hours. 
+																	We ordered bacon breakfast and longganisa breakfast which both tasted like paper-- bland just a waste of money. 
+																	Restroom was smelly needed cleaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	50360 likes 248 talking about this 150351 were here. 
+																	Convenience Within Your Community. 
+																	All photos 7 All photos 7 Enhance this page - Upload photos. 
+																	Order Army Navy delivery in Makati City now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	 
+																	The District Cavite Imus Cavite. 
+																	The chicken line-up on the Army Navy menu features Classic Buffalo and Chipotle Barbecue Chickenwhich are available in 4-piece and 6-piece orders and the crispy Fearless Fried Chicken. 
+																	Enhance this page - Upload photos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army navy Imus Good food nice customer service worth going and trying the food out I trying a burger and a burrito. 
+																	See 7 unbiased reviews of Army Navy rated 45 of 5 on Tripadvisor and ranked 7 of 68 restaurants in Dasmarinas City. 
+																	Placement on map is approximate only. 
+																	Aguinaldo Highway Anabu Ii-a Imus Cavite Philippines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	OWN A LOT in Ardia Vermosa for only 12560000 Monthly. 
+																	Superfast food delivery to your home or office Check Army Navy menu and prices Fast order easy payment. 
+																	All photos 7 All photos 7 Enhance this page - Upload photos. 
+																	Corner Filinvest Ave Alabang Muntinlupa Metro Manila Philippines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The District Imus 5km Nuvali 31 km. 
+																	046 471-2134 512-6018 09175998177. 
+																	The crew was lousy no greeting no smile whatsoever. 
+																	Army Navy The District Imus - Unit 206 2nd Level Promenade Imus - Cavite Emilio Aguinaldo Highway corner Daang Hari Road Imus Cavite Philippines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	63 2 333-3131. 
+																	Cities - Browse Reviews - Site Settings Place 44759733 RAM - 295 MB Time - 72 ms. 
+																	Aguinaldo Highway Palico 4 Imus Luzon 4102 Philippines 63 46 476 0871 Website Menu Add hours. 
+																	Enhance this page - Upload photos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Navy Dasmarinas City. 
+																	The District Imus Ayala Malls E. 
+																	3 years ago on Yelp. 
+																	Great - See 21 traveller reviews 7 candid photos and great deals for Imus Philippines at Tripadvisor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Aguinaldo Hway cor Daang Hari Brgy Anabu City of Imus Cavite Philippines. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fastly.4sqi.net/img/general/600x600/37721581_m4w1jlJIBvcsP5EBHbgdH9g2HRw9GyOh7bm9W4yIFUc.jpg" data-lightbox="roadtrip" data-title="The District Parking Lot Parking In Anabu 2 D">
+											<img class="card-img v-image ads-img " src="https://fastly.4sqi.net/img/general/600x600/37721581_m4w1jlJIBvcsP5EBHbgdH9g2HRw9GyOh7bm9W4yIFUc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5NyoQ8XGamF1yHuZzh8ZG_AqyIcEE5htJ3A';" alt="The District Parking Lot Parking In Anabu 2 D">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The District Parking Lot Parking In Anabu 2 D</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn1.clickthecity.com/images/establishment/common/400/6905.jpg" data-lightbox="roadtrip" data-title="Army Navy Solenad 2 Sta Rosa Laguna Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink">
+											<img class="card-img v-image ads-img " src="https://cdn1.clickthecity.com/images/establishment/common/400/6905.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwjaIML6SGV6OwwPMURFXJ1OJouMhk_0hLVA';" alt="Army Navy Solenad 2 Sta Rosa Laguna Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Solenad 2 Sta Rosa Laguna Burgers Mexican Restaurant P200 P499 Clickthecity Food Drink</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/2-CYVULKNHGU3YWE/hero/d130b4541b284f34bda5afc77aec09f2_1597766312664751190.jpeg" data-lightbox="roadtrip" data-title="Army Navy Burger Burrito Imus Bayan Available For Long Distance Delivery Food Delivery Menu Grabfood Ph">
+											<img class="card-img v-image ads-img " src="https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/2-CYVULKNHGU3YWE/hero/d130b4541b284f34bda5afc77aec09f2_1597766312664751190.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTazawhA7Ij2SXUqPkKPQm5oNJXKWO1RA9BAQ';" alt="Army Navy Burger Burrito Imus Bayan Available For Long Distance Delivery Food Delivery Menu Grabfood Ph">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Burger Burrito Imus Bayan Available For Long Distance Delivery Food Delivery Menu Grabfood Ph</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.manilaonsale.com/wp-content/uploads/2017/06/army2.png" data-lightbox="roadtrip" data-title="Get Your 2nd Army Navy Burger Boss For Php8 Manila On Sale">
+											<img class="card-img v-image ads-img " src="https://www.manilaonsale.com/wp-content/uploads/2017/06/army2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsIZU62atK5FEMIbfuqpyFiW9fbr8qk50dg';" alt="Get Your 2nd Army Navy Burger Boss For Php8 Manila On Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Your 2nd Army Navy Burger Boss For Php8 Manila On Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fastly.4sqi.net/img/general/200x200/28903315_JmzsAhNNmdAPdV-SPRuQ31sRE7juNDhdwe3KZx6JpDg.jpg" data-lightbox="roadtrip" data-title="Ineng S Special Bbq District Imus 1 Tip">
+											<img class="card-img v-image ads-img " src="https://fastly.4sqi.net/img/general/200x200/28903315_JmzsAhNNmdAPdV-SPRuQ31sRE7juNDhdwe3KZx6JpDg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZVkph2PSV2hzmUgYdqvCbjkfAhbOQe8CMQ';" alt="Ineng S Special Bbq District Imus 1 Tip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ineng S Special Bbq District Imus 1 Tip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=660408067376971" data-lightbox="roadtrip" data-title="Army Navy S Freedom Toast Is Our New The District Dasmarinas Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=660408067376971" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpwcWrmjBf1tUHByUWaD09SK-TqyPKpvSbA';" alt="Army Navy S Freedom Toast Is Our New The District Dasmarinas Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy S Freedom Toast Is Our New The District Dasmarinas Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://appassets.mvtdev.com/index/public-transit-maps/en/location/site_46075187.jpg" data-lightbox="roadtrip" data-title="How To Get To San Roque Supermarket In Imus By Bus Moovit">
+											<img class="card-img v-image ads-img " src="https://appassets.mvtdev.com/index/public-transit-maps/en/location/site_46075187.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmz2n6fzEjEQNNz8xQXLJE1soORJ-7MugW1w';" alt="How To Get To San Roque Supermarket In Imus By Bus Moovit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get To San Roque Supermarket In Imus By Bus Moovit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.esupermommy.com/wp-content/uploads/2015/06/Army-Navy-burger1.jpg?fit=480%2C480" data-lightbox="roadtrip" data-title="Army Navy Burger And Freedom Fries Experience Of A Super Mommy">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.esupermommy.com/wp-content/uploads/2015/06/Army-Navy-burger1.jpg?fit=480%2C480" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVcelEdUCQFD5DJ-GznCJ9KhzthqZ3NmCtvw';" alt="Army Navy Burger And Freedom Fries Experience Of A Super Mommy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Burger And Freedom Fries Experience Of A Super Mommy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/16/fd/d6/f1/photo2jpg.jpg" data-lightbox="roadtrip" data-title="Sit Zip Garden Cafe Imus Emilio Aguinaldo Hway Restaurant Reviews Phone Number Photos Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/16/fd/d6/f1/photo2jpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFZsNF9cghUB1Qd6fOH6fjzWENHA7uWIjRw';" alt="Sit Zip Garden Cafe Imus Emilio Aguinaldo Hway Restaurant Reviews Phone Number Photos Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sit Zip Garden Cafe Imus Emilio Aguinaldo Hway Restaurant Reviews Phone Number Photos Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.tacdn.com/img2/brand_refresh/application_icons/post-image-550x370.png" data-lightbox="roadtrip" data-title="Nami S Cafe Imus Restaurant Reviews Phone Number Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://static.tacdn.com/img2/brand_refresh/application_icons/post-image-550x370.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJN34vZXzvEQUKsyHPvQF_9OFErBvOJdkDSQ';" alt="Nami S Cafe Imus Restaurant Reviews Phone Number Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nami S Cafe Imus Restaurant Reviews Phone Number Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/d7/92/b5d792ad62c2fe7160a9b812df4925e2.jpg" data-lightbox="roadtrip" data-title="Ready To Ship A Soldier Doesn T Fight Because He Hates Military Quotes Patriotic Sign Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/d7/92/b5d792ad62c2fe7160a9b812df4925e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fHyny8_YGZxQEyYbb91vaYFxi6TSFrtJWg';" alt="Ready To Ship A Soldier Doesn T Fight Because He Hates Military Quotes Patriotic Sign Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Ship A Soldier Doesn T Fight Because He Hates Military Quotes Patriotic Sign Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-i/16/af/1c/be/photo1jpg.jpg" data-lightbox="roadtrip" data-title="The 10 Best Restaurants Near The District Imus Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-i/16/af/1c/be/photo1jpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQKcWBD-zt6WuhWoTxHpUZiirDJsADt1wW_g';" alt="The 10 Best Restaurants Near The District Imus Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Restaurants Near The District Imus Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/ea/5b/dcea5b53f059d0f817f7dc23dc34fad0.jpg" data-lightbox="roadtrip" data-title="State Movie Theater Manila 1940 Manila Philippines Manila Philippines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/ea/5b/dcea5b53f059d0f817f7dc23dc34fad0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdelVu-OlOfS-a9oIF7HrvPKxRfQ7laZ0GQ';" alt="State Movie Theater Manila 1940 Manila Philippines Manila Philippines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Movie Theater Manila 1940 Manila Philippines Manila Philippines</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/british-army-hr-specialist-salary.html">British Army Hr Specialist Salary</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-card.html">Benefits Of Navy Federal Credit Card</a></li>
+													<li class="list-group-item"><a href="/cal-vet-dependent-college-benefits.html">Cal Vet Dependent College Benefits</a></li>
+													<li class="list-group-item"><a href="/camden-national-bank-login-to-my-account.html">Camden National Bank Login To My Account</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-reserve.html">Benefits Of Navy Reserve</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-reserve-retirement.html">Benefits Of Navy Reserve Retirement</a></li>
+													<li class="list-group-item"><a href="/campus-portal-activation-key.html">Campus Portal Activation Key</a></li>
+													<li class="list-group-item"><a href="/camp-hero-air-force-base-new-york.html">Camp Hero Air Force Base New York</a></li>
+													<li class="list-group-item"><a href="/british-military-24-hour-ration-pack.html">British Military 24 Hour Ration Pack</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-union.html">Benefits Of Navy Federal Credit Union</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-with-name.html">Black Military Hat With Name</a></li>
+													<li class="list-group-item"><a href="/black-fur-military-hat-crossword-clue.html">Black Fur Military Hat Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/best-majors-for-military-spouses.html">Best Majors For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/best-dental-insurance-for-military-dependents.html">Best Dental Insurance For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/black-peaked-military-hat.html">Black Peaked Military Hat</a></li>
+													<li class="list-group-item"><a href="/best-mba-programs-for-military-spouses.html">Best Mba Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/california-free-college-for-military-dependents.html">California Free College For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal-workout.html">Benefits Of Navy Seal Workout</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-roblox.html">Black Military Hat Roblox</a></li>
+													<li class="list-group-item"><a href="/california-veterans-dependents-educational-benefits.html">California Veterans Dependents Educational Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

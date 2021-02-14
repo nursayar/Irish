@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Division Ii Eligibility Relief - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Division Ii Eligibility Relief",
+  "datePublished": "2021-02-14",
+  "image": "https://www.ncaa.org/sites/default/files/DIITopper_20170725.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+division+ii+eligibility+relief",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Division Ii Eligibility Relief</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Now schools will be able to apply for a waiver to restore a year of competition for a. NCAA Division II Programs News 5. An NCAA Division II committee announced that all spring sport athletes would receive an additional season of eligibility a promising sign for Division I athletes hoping for a similar decision. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/hari-jadi-army-tanggal-berapa.html">hari jadi army tanggal berapa</a>
+											<a class="badge badge-light" href="/grateful-for-my-husband-quotes.html">grateful for my husband quotes</a>
+											<a class="badge badge-warning" href="/french-military-hats-for-sale.html">french military hats for sale</a>
+											<a class="badge badge-success" href="/good-colleges-for-military-spouses.html">good colleges for military spouses</a>
+											<a class="badge badge-secondary" href="/funny-military-wife-memes.html">funny military wife memes</a>
+											<a class="badge badge-danger" href="/hari-spesial-army.html">hari spesial army</a>
+											<a class="badge badge-info" href="/hari-kelahiran-army.html">hari kelahiran army</a>
+											<a class="badge badge-info" href="/free-tsa-precheck-for-military-dependents.html">free tsa precheck for military dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" data-lightbox="roadtrip" data-title="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RhxSm64a3h9GgSUU5UOzKzk2Nru3P9YX9Q';" alt="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Extra Year Of Eligibility Coronavirus Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/DIITopper_20170725.png" data-lightbox="roadtrip" data-title="Becoming A Division Ii Member Institution Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/DIITopper_20170725.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr24lthbqQVCXCU8c3i9ywJKRWqMxy9_kHbA';" alt="Becoming A Division Ii Member Institution Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Becoming A Division Ii Member Institution Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://reflector.uindy.edu/wp-content/uploads/2018/12/Redshirt-Info.png" data-lightbox="roadtrip" data-title="Division Ii Redshirting Explained By Coaches And Student Athletes The Reflector">
+											<img class="card-img v-image ads-img " src="http://reflector.uindy.edu/wp-content/uploads/2018/12/Redshirt-Info.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPH9vhQ9geJB4vol9EM9l2kIXS9nYzYdawA';" alt="Division Ii Redshirting Explained By Coaches And Student Athletes The Reflector">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Division Ii Redshirting Explained By Coaches And Student Athletes The Reflector</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.ncaa.org/sites/default/files/distrib_info.png" data-lightbox="roadtrip" data-title="Special Financial Assistance Delivered To Division I Members Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="http://www.ncaa.org/sites/default/files/distrib_info.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOoHGOkGJgm8Z3CMdP8TjjvBq97-iJZqRXbg';" alt="Special Financial Assistance Delivered To Division I Members Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Financial Assistance Delivered To Division I Members Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/1.png" data-lightbox="roadtrip" data-title="International Student Athletes Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2_j5OZzijB0zd2bwkJ1GBmEY5ba1c-IfnHw';" alt="International Student Athletes Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">International Student Athletes Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.swimswam.com/wp-content/uploads/2019/03/NCAA-By-Jack-Spitser-CD8I0013-1080x720.jpg" data-lightbox="roadtrip" data-title="Division Ii Gives Fall Athletes Additional Season Of Competition Relief">
+											<img class="card-img v-image ads-img " src="https://cdn.swimswam.com/wp-content/uploads/2019/03/NCAA-By-Jack-Spitser-CD8I0013-1080x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPeA4Nco5DjZKLAfLaAEdR_cXx7Fq6ZQMdw';" alt="Division Ii Gives Fall Athletes Additional Season Of Competition Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Division Ii Gives Fall Athletes Additional Season Of Competition Relief</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ncaa.org/sites/default/files/AASP%209.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPeA4Nco5DjZKLAfLaAEdR_cXx7Fq6ZQMdw';" alt="Division Ii Gives Fall Athletes Additional Season Of Competition Relief">
+										<div class="card-body">
+						<h3 class="h5"><b>NCAA Division II D-II is an intermediate-level division of competition in the National Collegiate Athletic Association NCAA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa division ii eligibility relief</strong>. 
+								
+																	Some are about many or all the schools in the D-II division such as rankings 8 and expanding eligibility 1. 
+																	Olympic Team Trials qualifying time or for Paralympic or international student-athletes the international equivalent to continue to receive coaching instruction from their collegiate coaches through the US. 
+																	A gathering of articles of NCAA Division II wrestling programs. 
+																	Ohio schools such as Lake Erie 3 7 and Ohio Valley 6. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All Division II fall sport student-athletes can play up to their sports maximum permissible amount of competition and receive both an additional year of eligibility and a season of competition through a waiver the Division II Administrative Committee approved Wednesday. 
+																	There is currently no word on the status of Division II and Division III eligibility. 
+																	Before 1973 the NCAAs smaller schools were grouped together in the College Division. 
+																	Create a Certification Account and well guide you through the process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Details of eligibility relief will be finalized at a later time. 
+																	TDR Editors Notes. 
+																	Division I or II You need to be certified by the NCAA Eligibility Center to compete at an NCAA Division I or II school. 
+																	Mar 13 2020 The NCAA will grant spring student athletes relief for a season of eligibility after canceling winter and spring championships due to the coronavirus outbreak officials announced. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA Provides Eligibility Relief March 13 On Thursday the NCAA announced the cancelation of the mens and womens basketball tournaments along with all spring college sports. 
+																	The Division I Council on Monday voted to allow schools to provide spring-sport student-athletes an additional season of competition and an extension of their period of eligibility. 
+																	Added eligibility available if season is canceled team plays 50 or less of sports maximums. 
+																	The NCAA Division II Committee for Legislative Relief approved a blanket waiver to allow Division II mens and womens swimming and diving student-athletes who have achieved a 2021 US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Divisions I and II Committees for Legislative Relief approved a blanket waiver permitting Divisions I and II mens and womens soccer coaches to attend and evaluate prospective student-athletes competing in the 2018 National Junior College Athletic Association Division I Mens and Womens Soccer Championship during the recruiting dead periods occurring November 12-15 2018 for Division I and November 12 7 am - November 14 7 am 2018 for Division II. 
+																	The NCAA has agreed to grant a year of eligibility relief to Division I and III student-athletes who compete in spring sports after a mass cancellation by the organization on Thursday. 
+																	NCAA rules generally limit student-athletes to four seasons of competition in a five-year period. 
+																	It offers an alternative to both the larger and better-funded Division I and to the scholarship-free environment offered in Division III. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA to allow eligibility relief for Division II and III student-athletes who participated in spring sports On March 13 the Division II Administrative Council and Division III Administrative. 
+																	Along with the agreement the NCAA also placed an immediate ban on in-person recruiting for coaches and the recruiting dead period will be extended until at least April 15. 
+																	You need to create a Certification Account to make official visits to Divisions I and II schools or to sign a National Letter of Intent. 
+																	On Friday the NCAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Division II student-athletes will not be charged with the use of a season for the 2020-21 academic year if their team can complete only 50 or less of the sports maximum contestsdates of competition because their season is canceled due to the COVID-19 pandemic. 
+																	Additional issues with the NCAA rules must be addressed and appropriate governance bodies will work through those in the coming. 
+																	The committee also waived the Division II sports sponsorship and three-season requirement for schools and conferences for the 2020-21 academic year citing the financial scheduling and roster management challenges they. 
+																	On October 20 the NCAA Division 2 followed suit and extended eligibility relief to winter sports athletes whose season may be impacted by the pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DII grants winter athletes further season-of-competition relief. 
+																	Members also adjusted financial aid rules to allow teams to carry more members on scholarship to account for incoming recruits and student-athletes who had been in their last year of eligibility who decide to stay. 
+																	July 22 2020 612pmCorbin McGuire. 
+																	Division II winter sport student-athletes who compete during the 2020-21 academic year will receive an additional season of competition through a waiver the Division II Management Council approved this week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Olympic Trials which begin June 13 2021 or for Paralympic or international student-athletes. 
+																	Previously Division 2 athletes would only receive an extra year of eligibility if their team did not compete in more than 50 of the scheduled competitions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="9macF4iMGpz5YM" data-lightbox="roadtrip" data-title="Https Web3 Ncaa Org Lsdbi Reports Getreport 90010">
+											<img class="card-img v-image ads-img " src="9macF4iMGpz5YM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNB0vf9dsKCnLOLgB9xqdqXfRUWLserE2Ptg';" alt="Https Web3 Ncaa Org Lsdbi Reports Getreport 90010">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Web3 Ncaa Org Lsdbi Reports Getreport 90010</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="6M9jcRyn8fNn6M" data-lightbox="roadtrip" data-title="Https Www Ncaa Org Sites Default Files 2018ecag Usermanual 20180328 Pdf">
+											<img class="card-img v-image ads-img " src="6M9jcRyn8fNn6M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAagJ_awO0gnjdsITpeV62J9UaHbGK_E8vBQ';" alt="Https Www Ncaa Org Sites Default Files 2018ecag Usermanual 20180328 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ncaa Org Sites Default Files 2018ecag Usermanual 20180328 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/25/6a/b5256a1ead08d268c7d290c0154fbd4b.jpg" data-lightbox="roadtrip" data-title="Aiou Online Assignment Upload Procedure Aiouword Online Assignments Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/25/6a/b5256a1ead08d268c7d290c0154fbd4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZhsPIRuDuLL-xLd9UEG_Wt6oMnKZ0fnqHw';" alt="Aiou Online Assignment Upload Procedure Aiouword Online Assignments Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aiou Online Assignment Upload Procedure Aiouword Online Assignments Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/Eligibility-Requirements-min.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility Requirements And Academic Eligibility Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/Eligibility-Requirements-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5jL1xKAsp9QXyoMpNrlKXbwFG0w7loCVSg';" alt="Ncaa Eligibility Requirements And Academic Eligibility Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Requirements And Academic Eligibility Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f2/fe/7b/f2fe7b85eb2aaf277f067c600feac346.jpg" data-lightbox="roadtrip" data-title="How To Become Homeless In 2020 Cheap Birthday Party Credit Card Companies Credit Score">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f2/fe/7b/f2fe7b85eb2aaf277f067c600feac346.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4um0cv-jSz5noz9YVWcbHc2_O5F6Cs9Ijww';" alt="How To Become Homeless In 2020 Cheap Birthday Party Credit Card Companies Credit Score">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become Homeless In 2020 Cheap Birthday Party Credit Card Companies Credit Score</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/styles/standard_small/public/Understanding%20Dietary%20Supplements%20Fact%20Sheet%20thumbnail-1.jpg?itok=sh9DS15r" data-lightbox="roadtrip" data-title="Dietary Supplements Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/styles/standard_small/public/Understanding%20Dietary%20Supplements%20Fact%20Sheet%20thumbnail-1.jpg?itok=sh9DS15r" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsFUAJhI249xgBu_JdCwI96mRDfPFs3qKXA';" alt="Dietary Supplements Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dietary Supplements Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/58/22/22/5822224aecbe902417b38c5bc2cc4670.jpg" data-lightbox="roadtrip" data-title="How To Make A Payment To Ge Bank In 2020 Credit Score Credit Score Range Types Of Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/58/22/22/5822224aecbe902417b38c5bc2cc4670.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCrex2_Gg5i6TmfVfmkB9tC1wiPL47jj0CTw';" alt="How To Make A Payment To Ge Bank In 2020 Credit Score Credit Score Range Types Of Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make A Payment To Ge Bank In 2020 Credit Score Credit Score Range Types Of Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/29/34/9529345405edad37e777510e2bb18bce.jpg" data-lightbox="roadtrip" data-title="The Sympathetic Division Of The Ans Is Also Known As The Thoracolumbar Division Because It Arises From The Thoracic And Lumbar Spinal Cord Spinal Lesion Spinal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/29/34/9529345405edad37e777510e2bb18bce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivcEMN8f2qz_DEYQlb3zyXdw52gBOrfMF6Q';" alt="The Sympathetic Division Of The Ans Is Also Known As The Thoracolumbar Division Because It Arises From The Thoracic And Lumbar Spinal Cord Spinal Lesion Spinal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sympathetic Division Of The Ans Is Also Known As The Thoracolumbar Division Because It Arises From The Thoracic And Lumbar Spinal Cord Spinal Lesion Spinal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/02/56/ef0256c451d4450b09c8fcedb0377b59.jpg" data-lightbox="roadtrip" data-title="Pin On Govt Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/02/56/ef0256c451d4450b09c8fcedb0377b59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbctSNgxQeguaQdfucirHEekNPU77xpZlgCQ';" alt="Pin On Govt Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Govt Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/AASP%209.jpeg" data-lightbox="roadtrip" data-title="Aasp Grants For Schools Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/AASP%209.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40L9xzz9MbNiJzUOURVr92vsH8Dt3zJeOow';" alt="Aasp Grants For Schools Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aasp Grants For Schools Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.wsj.net/im-168855?width=1280&amp;size=1.77777778" data-lightbox="roadtrip" data-title="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+											<img class="card-img v-image ads-img " src="https://images.wsj.net/im-168855?width=1280&amp;size=1.77777778" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6P5rDAS_SaAkWRNtp7527rXJBynUA0CcJag';" alt="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/2020RRS_header.jpg" data-lightbox="roadtrip" data-title="Regional Rules Seminars Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/2020RRS_header.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-ZEmTCkcm25rnHDJ95jNo_shiLwVfOQZ-A';" alt="Regional Rules Seminars Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Regional Rules Seminars Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/d3/88/09d388024d67a8b470a900b09e584f3d.jpg" data-lightbox="roadtrip" data-title="Date Sheet For Class 5th 6th 7th 8th Supplementary Exam 2018 Exam Dating Class">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/d3/88/09d388024d67a8b470a900b09e584f3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJv3CzWomo_e7KNTit3n1mbipcNL-E26NYiw';" alt="Date Sheet For Class 5th 6th 7th 8th Supplementary Exam 2018 Exam Dating Class">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Date Sheet For Class 5th 6th 7th 8th Supplementary Exam 2018 Exam Dating Class</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-jobs-notification.html">Air Force Jobs Notification</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-biology-majors.html">Air Force Jobs For Biology Majors</a></li>
+													<li class="list-group-item"><a href="/air-force-iraq-ribbon.html">Air Force Iraq Ribbon</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-the-colorblind.html">Air Force Jobs For The Colorblind</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-june-2020.html">Air Force Jobs June 2020</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-college-graduates.html">Air Force Jobs For College Graduates</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-enlisted.html">Air Force Jobs For Enlisted</a></li>
+													<li class="list-group-item"><a href="/air-force-hymn-words.html">Air Force Hymn Words</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-civilians.html">Air Force Jobs For Civilians</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-diploma-holders.html">Air Force Jobs For Diploma Holders</a></li>
+													<li class="list-group-item"><a href="/air-force-human-resources-phone-number.html">Air Force Human Resources Phone Number</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-australia.html">Air Force Jobs Australia</a></li>
+													<li class="list-group-item"><a href="/air-force-how-to-join.html">Air Force How To Join</a></li>
+													<li class="list-group-item"><a href="/air-force-human-resources-address.html">Air Force Human Resources Address</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-criminal-justice.html">Air Force Jobs For Criminal Justice</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-ladies.html">Air Force Jobs For Ladies</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-matric-base-2019.html">Air Force Jobs For Matric Base 2019</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-diploma-in-civil-engineering.html">Air Force Jobs For Diploma In Civil Engineering</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-august-2019.html">Air Force Jobs August 2019</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-ki-taiyari-kaise-kare.html">Air Force Jobs Ki Taiyari Kaise Kare</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Dependent Travel Restrictions - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Dependent Travel Restrictions",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/bd/be/9a/bdbe9ab3f4c8f6828235b083fafd00d8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+dependent+travel+restrictions",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Dependent Travel Restrictions</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If the sponsor is a member of HM armed forces leave to enter is to be granted as the dependant of a sponsor who has less than 4 years service remaining an additional 28 days should be added to. Military members can enter the United States with a copy of their travel orders and military ID. On May 26 2020 the Secretary of Defense issued memorandum Transition to Conditions-based Phased Approach to Coronavirus Disease 2019 Personnel Movement and Travel Restrictions which shifts to a conditions-based phased approach for personnel movement and travel restrictions see the accompanying fact sheetThis replaces previously issued DoD memoranda. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/does-the-military-pay-for-spouses-to-go-to-college.html">does the military pay for spouses to go to college</a>
+											<a class="badge badge-light" href="/federal-benefits-for-veterans-and-dependents-booklet-2020.html">federal benefits for veterans and dependents booklet 2020</a>
+											<a class="badge badge-light" href="/does-the-veterans-administration-help-with-funeral-expenses.html">does the veterans administration help with funeral expenses</a>
+											<a class="badge badge-dark" href="/former-spouse-entitlement-to-military-retirement-pay.html">former spouse entitlement to military retirement pay</a>
+											<a class="badge badge-light" href="/free-college-tuition-in-texas-for-military-dependents.html">free college tuition in texas for military dependents</a>
+											<a class="badge badge-info" href="/federal-benefits-for-veterans-and-dependents-handbook.html">federal benefits for veterans and dependents handbook</a>
+											<a class="badge badge-warning" href="/free-college-for-veterans-dependents-in-texas.html">free college for veterans dependents in texas</a>
+											<a class="badge badge-danger" href="/does-the-military-pay-for-college-for-spouses.html">does the military pay for college for spouses</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/70/ac/5e70ac0949eaf8ab35436fccbaecd22a.png" data-lightbox="roadtrip" data-title="Travel Restrictions Green Locations June 8 2020 U S Department Of Defense Release Travel Belgium Germany Locations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/70/ac/5e70ac0949eaf8ab35436fccbaecd22a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55ECywUQySozPd_EuQYl9w4K3Md16RyqMTw';" alt="Travel Restrictions Green Locations June 8 2020 U S Department Of Defense Release Travel Belgium Germany Locations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Travel Restrictions Green Locations June 8 2020 U S Department Of Defense Release Travel Belgium Germany Locations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/b7/fd/51b7fd34f446c8f9284857a85408c4bf.png" data-lightbox="roadtrip" data-title="Learn How A Sponsor Can Help You Feel At Home Faster On Your New Installation With A Free Course From Sponsorship Program Military Community Community Outreach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/b7/fd/51b7fd34f446c8f9284857a85408c4bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYDncHpbmOYnGTw1vEL-kJIdfcdVymxy2OA';" alt="Learn How A Sponsor Can Help You Feel At Home Faster On Your New Installation With A Free Course From Sponsorship Program Military Community Community Outreach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn How A Sponsor Can Help You Feel At Home Faster On Your New Installation With A Free Course From Sponsorship Program Military Community Community Outreach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/74/a8/3a74a87f017f576b62f9d005ee6d754c.jpg" data-lightbox="roadtrip" data-title="Space A Travel Packing List What To Wear And Bring On A Military Hop Poppin Smoke Military Hops Packing List For Travel Travel Packing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/74/a8/3a74a87f017f576b62f9d005ee6d754c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYXdRzGyP2gjGbkEY-AJYZD9HEA8BTdNM0w';" alt="Space A Travel Packing List What To Wear And Bring On A Military Hop Poppin Smoke Military Hops Packing List For Travel Travel Packing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Space A Travel Packing List What To Wear And Bring On A Military Hop Poppin Smoke Military Hops Packing List For Travel Travel Packing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/bd/6a/f1bd6ad8762e3f9d1cbde2076e4a326d.jpg" data-lightbox="roadtrip" data-title="Pin On Military Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/bd/6a/f1bd6ad8762e3f9d1cbde2076e4a326d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIgk6CXzmxfm59QjPhLkZx7zNGuOLHfahvpQ';" alt="Pin On Military Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/b0/e2/cdb0e216c6badc2179c7cf834007a7ad.jpg" data-lightbox="roadtrip" data-title="Military Travel Discounts The Ultimate Guide In 2020 Discount Travel Military Discounts Packing Tips For Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/b0/e2/cdb0e216c6badc2179c7cf834007a7ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Fpcj51_EZOURFFIoGr9wz0vhKvDoiyBSbQ';" alt="Military Travel Discounts The Ultimate Guide In 2020 Discount Travel Military Discounts Packing Tips For Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Travel Discounts The Ultimate Guide In 2020 Discount Travel Military Discounts Packing Tips For Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/ee/a4/f3eea4089ebf6eeba99f3b51b730cea4.jpg" data-lightbox="roadtrip" data-title="Big List Of Military Discounts Bookmark This Military Discounts Money Saving Strategies Couponing For Beginners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/ee/a4/f3eea4089ebf6eeba99f3b51b730cea4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXa2hf3oOejVd-EfgEbCUO0Oy6P1NF8GXoQ';" alt="Big List Of Military Discounts Bookmark This Military Discounts Money Saving Strategies Couponing For Beginners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big List Of Military Discounts Bookmark This Military Discounts Money Saving Strategies Couponing For Beginners</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/9a/46/63/9a46636120acbe5288f7c00b7ec04924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXa2hf3oOejVd-EfgEbCUO0Oy6P1NF8GXoQ';" alt="Big List Of Military Discounts Bookmark This Military Discounts Money Saving Strategies Couponing For Beginners">
+										<div class="card-body">
+						<h3 class="h5"><b>DOD announces restrictions on domestic travel for service members civilians.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military dependent travel restrictions</strong>. 
+								
+																	DOD Guidance on Military travel and restrictionsAs of March 18 2020 130 pm. 
+																	Look for a new update each week. 
+																	Our primary goals are to ensure the well-being of the entire military community and to assist in force readiness for the national defense and current worldwide military missions. 
+																	In order to qualify for dependent student travel benefits the student must. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense is now lifting travel restrictions based on local conditions at installations. 
+																	This includes Permanent Change of Station or Temporary Duty. 
+																	The travel bans for military families service members and DoD civilians set forth by the Secretary of Defense are more strict in than the one set by the President in the following ways. 
+																	For any military travel from the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	100 for one dependent age 12 or older. 
+																	ATravel restrictions were put in place in March 2020 for all official travel for DOD service members and their family members. 
+																	The Joint Travel Regulations JTR implements policy and law to establish travel and transportation allowances for Uniformed Service members ie Army Navy Air Force Marine Corps Coast Guard National Oceanic and Atmospheric Administration Commissioned Corps and Public Health Service Commissioned Corps Department of Defense DoD civilian employees and. 
+																	50 for each dependent under age 12 traveling with that dependent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However family members will need passports to travel to Japan or back to the United States. 
+																	At this time all countries other than the United States are either Level 2 or Level 3 which requires screening whether it was for travel to. 
+																	Travel restrictions affecting foreign nationals These restrictions have been implemented under the authority of the Minister of Health through emergency orders under the Quarantine Act and of the Minister of Transport through interim orders under the Aeronautics Act the Orders. 
+																	The travel restrictions set by the President are only 30 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additionally service members will be authorized local leave only The restrictions apply from March 16 to May 11. 
+																	Meet the qualification to be a regular military dependent under 23 if a full-time college student command sponsored. 
+																	If either the losing or gaining installation is red or restricted the service members or civilians travel would require to be either under the exemptions or waivers outlined in the Secretary of Defense memo on the conditions-based phased approach to personnel movement and travel dated May 22 2020. 
+																	DoD Restrictions on Foreign and Domestic Travel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Countries troops have to observe a 14-day restriction-of-movement period in which they are essentially confined to. 
+																	Military dependents on PCS orders and military members who need a passport for official travel may be eligible for an official or no-fee passport. 
+																	This includes Permanent Change of Station or Temporary Duty. 
+																	However the actions we expect our leaders and people to take are dependent upon their travel routes and locations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defense Secretary Mark Esper announced six American service members and seven military dependents were infected. 
+																	Green Locations June 8 2020 June 8 2020 The Secretary of Defense recently signed a memo moving to a conditions-based phased approach to personnel movement and travel. 
+																	Then-Defense Secretary Mark Esper began restricting travel for military personnel and their families and in May signed a memorandum laying out the conditions needed to allow for travel to and from. 
+																	To a foreign country or between non-US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Exceptions include travel that is mission-essential for humanitarian reasons. 
+																	When two or more dependents travel together but separate from the member the member is authorized per diem at a rate of. 
+																	75 for each of the other dependents age 12 or older traveling with that dependent. 
+																	It is 60 days for the ones set by the Secretary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest travel restrictions which will be in place for 30 days starting Friday restrict all forms of travel for military personnel families and civilians through Level 3 regions where. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/be/9a/bdbe9ab3f4c8f6828235b083fafd00d8.png" data-lightbox="roadtrip" data-title="Are You Getting All Your Military Tax Deductions Use Miltax To File And Meet Your Deadline Today Moving Expenses Money Management Printables Financial Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/be/9a/bdbe9ab3f4c8f6828235b083fafd00d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9I9x_naUqOI4zd23S5uebr1ORRL-k3f-sA';" alt="Are You Getting All Your Military Tax Deductions Use Miltax To File And Meet Your Deadline Today Moving Expenses Money Management Printables Financial Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Getting All Your Military Tax Deductions Use Miltax To File And Meet Your Deadline Today Moving Expenses Money Management Printables Financial Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/e0/eb/24e0eb3af771a6b3077e6d9a6d52a396.jpg" data-lightbox="roadtrip" data-title="17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke Military Resorts Outdoor Recreation Activities Military Campgrounds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/e0/eb/24e0eb3af771a6b3077e6d9a6d52a396.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINGf98ff7PsiU9IW0XY7QdQghHn9J2MTc1g';" alt="17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke Military Resorts Outdoor Recreation Activities Military Campgrounds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 U S Military Recreation Facilities To Try On Your Next Vacation Poppin Smoke Military Resorts Outdoor Recreation Activities Military Campgrounds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/ef/84/ecef8419200c56c160fb91527b4f458f.png" data-lightbox="roadtrip" data-title="Pin By Krystel Hudson Spell On Travel Military Discounts Military Wife Life Military Discounts Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/ef/84/ecef8419200c56c160fb91527b4f458f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBlIulydfRlekSu-txaQxpk-0U7bSoO91x7Q';" alt="Pin By Krystel Hudson Spell On Travel Military Discounts Military Wife Life Military Discounts Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Krystel Hudson Spell On Travel Military Discounts Military Wife Life Military Discounts Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6e/38/97/6e3897a175dc3bc59c5dd728cdf146f0.jpg" data-lightbox="roadtrip" data-title="Pin On Travel Wanderlust">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6e/38/97/6e3897a175dc3bc59c5dd728cdf146f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cw18gF4SwjSt7ZbZFJKL_m_wDEltvwy6PQ';" alt="Pin On Travel Wanderlust">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel Wanderlust</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/4b/6d/084b6d634cad8e442b490aca63373071.png" data-lightbox="roadtrip" data-title="All Time Best List Of Quotes For Military Service Members And Families On Courage Bravery Gratitude In 2021 Military Wife Quotes Military Family Quotes Family Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/4b/6d/084b6d634cad8e442b490aca63373071.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fwpAz9itl-s8NKabSzcq5HjhOBOSMH3RhQ';" alt="All Time Best List Of Quotes For Military Service Members And Families On Courage Bravery Gratitude In 2021 Military Wife Quotes Military Family Quotes Family Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Time Best List Of Quotes For Military Service Members And Families On Courage Bravery Gratitude In 2021 Military Wife Quotes Military Family Quotes Family Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/4a/3e/fe4a3edc457fad800e0824999b9b0d1f.png" data-lightbox="roadtrip" data-title="Military Children Are More Than Numbers Celebrate What Makes Them Unique This Month Of The Military Child Parent Resources School Readiness Military Parents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/4a/3e/fe4a3edc457fad800e0824999b9b0d1f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStHnj4_uxL17xHje1OgaJJ4-VCtB_yo1vKOA';" alt="Military Children Are More Than Numbers Celebrate What Makes Them Unique This Month Of The Military Child Parent Resources School Readiness Military Parents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Children Are More Than Numbers Celebrate What Makes Them Unique This Month Of The Military Child Parent Resources School Readiness Military Parents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/72/c9/c472c9a29ce280734d322bc20b4def9b.png" data-lightbox="roadtrip" data-title="Pin On On The Homefront">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/72/c9/c472c9a29ce280734d322bc20b4def9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwuzTk1E6yLw5WVt2MfSQdyUXj06jDYTWcg';" alt="Pin On On The Homefront">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On On The Homefront</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/37/84/3a3784b70462f5dba2a5a1fc365cc48f.png" data-lightbox="roadtrip" data-title="Planning A Trip To Washington State Soon Already Live There Here S Your Guide To Military Discounts Found Right In Military Discounts Military Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/37/84/3a3784b70462f5dba2a5a1fc365cc48f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oBVN01GCD6GGjqPxJnM1U0wOKc_L3JRK2w';" alt="Planning A Trip To Washington State Soon Already Live There Here S Your Guide To Military Discounts Found Right In Military Discounts Military Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Planning A Trip To Washington State Soon Already Live There Here S Your Guide To Military Discounts Found Right In Military Discounts Military Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9a/46/63/9a46636120acbe5288f7c00b7ec04924.jpg" data-lightbox="roadtrip" data-title="10 Airlines With A Military Discount Updated For 2020 In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9a/46/63/9a46636120acbe5288f7c00b7ec04924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6FbMMzxfu9_CSAmS6DPC4A9cuUsgFmY_WQ';" alt="10 Airlines With A Military Discount Updated For 2020 In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Airlines With A Military Discount Updated For 2020 In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/43/b1/6d43b1959ea08e114e6e3c3916e9e6ee.jpg" data-lightbox="roadtrip" data-title="The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/43/b1/6d43b1959ea08e114e6e3c3916e9e6ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvKty06TTfF9f-CM-_KnZmfp38cyOLmBS_9g';" alt="The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c3/54/ac/c354ac06be81cb32b6902a83e0f5680d.jpg" data-lightbox="roadtrip" data-title="49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c3/54/ac/c354ac06be81cb32b6902a83e0f5680d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-A7vdvrpOY_Cmdtz-_0cJDainS42Y9DddA';" alt="49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/88/9e/e2889e4d28b01b57f06fd57973bdad1a.png" data-lightbox="roadtrip" data-title="Time To Move Forward With Space Force Air Force Secretary Says Aerotech News Review Air Force Military Forces Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/88/9e/e2889e4d28b01b57f06fd57973bdad1a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgH8u7cHrtqv4zLsEtolRjLfBLnPVcqZdm_Q';" alt="Time To Move Forward With Space Force Air Force Secretary Says Aerotech News Review Air Force Military Forces Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Time To Move Forward With Space Force Air Force Secretary Says Aerotech News Review Air Force Military Forces Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/55/7e/a9557e1a797c7721bfdeddec7810a62f.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/55/7e/a9557e1a797c7721bfdeddec7810a62f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RFAh0RmnCtdvm1hrbWIQg1sAgUM-tAiMNw';" alt="Pin On U S Army Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hat-drawing.html">Military Hat Drawing</a></li>
+													<li class="list-group-item"><a href="/military-hat-restoration.html">Military Hat Restoration</a></li>
+													<li class="list-group-item"><a href="/military-hat-with-a-plume-at-the-front.html">Military Hat With A Plume At The Front</a></li>
+													<li class="list-group-item"><a href="/military-hats-canada.html">Military Hats Canada</a></li>
+													<li class="list-group-item"><a href="/military-hat-fallout-4.html">Military Hat Fallout 4</a></li>
+													<li class="list-group-item"><a href="/military-hats-and-caps-for-sale.html">Military Hats And Caps For Sale</a></li>
+													<li class="list-group-item"><a href="/military-hatchet.html">Military Hatchet</a></li>
+													<li class="list-group-item"><a href="/military-hat-is-called.html">Military Hat Is Called</a></li>
+													<li class="list-group-item"><a href="/military-hat-green.html">Military Hat Green</a></li>
+													<li class="list-group-item"><a href="/military-hats-for-sun-protection.html">Military Hats For Sun Protection</a></li>
+													<li class="list-group-item"><a href="/military-hat-fancy-dress.html">Military Hat Fancy Dress</a></li>
+													<li class="list-group-item"><a href="/military-hat-white.html">Military Hat White</a></li>
+													<li class="list-group-item"><a href="/military-hats-cheap.html">Military Hats Cheap</a></li>
+													<li class="list-group-item"><a href="/military-hat-gift.html">Military Hat Gift</a></li>
+													<li class="list-group-item"><a href="/military-hat-ending-in-o.html">Military Hat Ending In O</a></li>
+													<li class="list-group-item"><a href="/military-hat-transparent.html">Military Hat Transparent</a></li>
+													<li class="list-group-item"><a href="/military-hats-blue.html">Military Hats Blue</a></li>
+													<li class="list-group-item"><a href="/military-hat-glitter.html">Military Hat Glitter</a></li>
+													<li class="list-group-item"><a href="/military-hat-synonym.html">Military Hat Synonym</a></li>
+													<li class="list-group-item"><a href="/military-hat-japanese.html">Military Hat Japanese</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

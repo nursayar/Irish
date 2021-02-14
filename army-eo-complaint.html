@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Eo Complaint - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Eo Complaint",
+  "datePublished": "2021-02-14",
+  "image": "https://images.slideplayer.com/10/2733346/slides/slide_8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+eo+complaint",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Eo Complaint</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">250 Max Characters Allowed. A formal EO complaint is one that a complainant files in writing DA Fm 7279-R and swears to the accuracy of the information. Formal complaints require specific actions and. <br>				
+			</p>
+										<a class="badge badge-dark" href="/funny-military-wife-memes.html">funny military wife memes</a>
+											<a class="badge badge-secondary" href="/gold-star-spouse-day.html">gold star spouse day</a>
+											<a class="badge badge-warning" href="/french-military-hats-for-sale.html">french military hats for sale</a>
+											<a class="badge badge-success" href="/hari-kelahiran-army.html">hari kelahiran army</a>
+											<a class="badge badge-primary" href="/free-tsa-precheck-for-military-dependents.html">free tsa precheck for military dependents</a>
+											<a class="badge badge-secondary" href="/google-program-for-military-spouses.html">google program for military spouses</a>
+											<a class="badge badge-danger" href="/hari-besar-army.html">hari besar army</a>
+											<a class="badge badge-warning" href="/get-ncaa-eligibility-number.html">get ncaa eligibility number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Fqdwc6ePkbxR5M" data-lightbox="roadtrip" data-title="Https Home Army Mil Monterey Index Php Download File View 836 645">
+											<img class="card-img v-image ads-img " src="Fqdwc6ePkbxR5M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsBiMMZtE1_6FDOE52vyCSlfajsDpmq-AoA';" alt="Https Home Army Mil Monterey Index Php Download File View 836 645">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Monterey Index Php Download File View 836 645</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/apg/application/files/thumbnails/small/9615/3444/4830/EEO-Graphic.png" data-lightbox="roadtrip" data-title="Equal Employment Opportunity Eeo Program U S Army Aberdeen Proving Ground">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/apg/application/files/thumbnails/small/9615/3444/4830/EEO-Graphic.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4NjR16mibMA0pdWpLSNCXMPktzIe6Ven73A';" alt="Equal Employment Opportunity Eeo Program U S Army Aberdeen Proving Ground">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Equal Employment Opportunity Eeo Program U S Army Aberdeen Proving Ground</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image3.slideserve.com/6867780/slide1-n.jpg" data-lightbox="roadtrip" data-title="Ppt Iii Corps Eo Complaint Process Powerpoint Presentation Free Download Id 6867780">
+											<img class="card-img v-image ads-img " src="https://image3.slideserve.com/6867780/slide1-n.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ4K0_q13NwWF3K-xz-6GDfzUs4mvU9oabA';" alt="Ppt Iii Corps Eo Complaint Process Powerpoint Presentation Free Download Id 6867780">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ppt Iii Corps Eo Complaint Process Powerpoint Presentation Free Download Id 6867780</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Ax6llQ-9v1oXbM" data-lightbox="roadtrip" data-title="Https Www Army Mil E2 C Downloads 461908 Pdf">
+											<img class="card-img v-image ads-img " src="Ax6llQ-9v1oXbM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEjARQnEgSgbv6G4V6kKq2Tp8ZjP0wPykVw';" alt="Https Www Army Mil E2 C Downloads 461908 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Army Mil E2 C Downloads 461908 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="yoXTXW3QQdM02M" data-lightbox="roadtrip" data-title="Http Www Carson Army Mil Assets Docs Eo Eo Complaint Process Pdf">
+											<img class="card-img v-image ads-img " src="yoXTXW3QQdM02M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHyIC7JUadwre_VcWnV-WawnRtWQlrK5LjQ';" alt="Http Www Carson Army Mil Assets Docs Eo Eo Complaint Process Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Carson Army Mil Assets Docs Eo Eo Complaint Process Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="QUA1fYDmU3GmqM" data-lightbox="roadtrip" data-title="Https Home Army Mil Knox Index Php Download File View 775 735">
+											<img class="card-img v-image ads-img " src="QUA1fYDmU3GmqM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Re91eVrX2-W_swxSnjOtir-_Av0LWTTNLA';" alt="Https Home Army Mil Knox Index Php Download File View 775 735">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Knox Index Php Download File View 775 735</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://www.powershow.com/image/7aed9-ZDc1Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Re91eVrX2-W_swxSnjOtir-_Av0LWTTNLA';" alt="Https Home Army Mil Knox Index Php Download File View 775 735">
+										<div class="card-body">
+						<h3 class="h5"><b>EEO Library Military personnel such as AGR ADOS OTOT or traditional drilling Guardsman fall under Military Equal Opportunity.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army eo complaint</strong>. 
+								
+																	Army Reserve Equal Opportunity Policy Letters. 
+																	Download Army Eo Complaint Procedures doc. 
+																	EO complaint as avenue of appeal IF chain of command was contacted first Formal Complaint SEE PG 3 CC or IC may request EO to work informal complaint Formal Complaint SEE PG 3 EO ChiefSuperintendent grants approval for facilitation EO ChiefSuperintendent does NOT grant approval for facilitation Complaint Unsubstantiated Substantiated EO closes. 
+																	Matter is recommended decision from bulletin boards in the local eeo office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Title 10 USC Section 3013 Secretary of the Army. 
+																	A formal complaint DA Form 2590 must be filed within 15 calendar days of receipt of the Notice of Right to File. 
+																	The EO complaints processing system addresses complaints that allege unlawful discrimination or unfair treatment on the basis of race color religion gender and national origin. 
+																	To provide a means for filing complaint based on discrimination due to race color religion or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The EO complaints processing system addresses complaints that allege unlawful discrimination or unfair treatment on the basis of race color religion sex to include gender identity national. 
+																	See below for the complaint process and souces of contact. 
+																	SGM Eloise Parker Phone. 
+																	Eighth Army provides Equal Opportunity and fair treatment for Soldiers including KATUSA Soldiers and Family members without regard to race color gender including gender identity religion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This information is submitted for the basic purpose of requesting assistance correcting injustices affecting the individual or eliminating conditions considered detrimental to the efficiency or reputation of the Army. 
+																	Governs the army complaint with disabilities. 
+																	According to Army Regulation 690-12 the focus of the EO Program is to prohibit discrimination in employment because of race color religion sex national origin reprisal disability age sexual orientation gender identity status as a parent or other impermissible bases and to promote the full realization of EO through a continuing diversity and inclusion program. 
+																	Download Army Eo Complaint Procedures pdf. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Who else do you believe has information regarding your complaint name phone number email etc. 
+																	Maintains liaison with the Recruiting Services Selective Service System SSS Defense Transportation Management Command General Services Administration Defense Manpower Data Center and other governmental and non-governmental activities on matters affecting. 
+																	Note complaints made after 60 days may be pursued at the. 
+																	Erroneous interpretation of army eo procedures do not a recommended decision Been persistent low participation in the chain of the home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The equal opportunity complaint process which is outlined in the enclosure was established to provide a forum for processing EO complaints by using the chain of command or addressing them through the servicing EO office 517-481-77257726. 
+																	Complaints made after 60 days may be pursued at the commanders discretion. 
+																	EO Complaint Resolution Request processpdf. 
+																	EQUAL OPPORTUNITY EO COMPLAINT PROCESS File a formal complaint on DA Form 7279. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Reserve Equal Opportunity Team. 
+																	Equal Opportunity Advisor or Equal Opportunity Specialist Inspector General Housing Referral Office Judge Advocate General Military Police or Criminal Investigator Chaplain Medical Agency Complaints must be filed within 60 days of the incident. 
+																	All EO complaint investigations will be complete within 14 calendar days after the Investigation Officer receives the DA Form 7279. 
+																	Complaints must be filed within 60 days of the incident. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Regulation 600-20 Army Command Policy. 
+																	Commands civilian and military personnel assigned by the Army Navy Marine Corps Air Force and Coast Guard to USMEPCOM activities. 
+																	Army will provide EO and fair treatment for military personnel and family members without regard to race color religion gender sexual orientation or national origin and provide an. 
+																	Except if a 30 day extension is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The complainant term used during the formal complaint. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ssi.army.mil/!EOTP/rv4_images/Complaint_Process.PNG" data-lightbox="roadtrip" data-title="Soldier Support Institute Ssi Fort Jackson Sc">
+											<img class="card-img v-image ads-img " src="https://www.ssi.army.mil/!EOTP/rv4_images/Complaint_Process.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRn-bUsEQ2r6ti5tqcaKrUK8RxikGEPP7-uw';" alt="Soldier Support Institute Ssi Fort Jackson Sc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Support Institute Ssi Fort Jackson Sc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.soc.mil/SWCS/EO/images/EOTri%20Signed.png" data-lightbox="roadtrip" data-title="Equal Opportunity Program Usajfkswcs">
+											<img class="card-img v-image ads-img " src="https://www.soc.mil/SWCS/EO/images/EOTri%20Signed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31_lk4LgnSdTlgfwepZtbYLTE908NdMBeig';" alt="Equal Opportunity Program Usajfkswcs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Equal Opportunity Program Usajfkswcs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image4.slideserve.com/1201224/slide1-n.jpg" data-lightbox="roadtrip" data-title="Ppt The Army Equal Opportunity Complaint Process Powerpoint Presentation Id 1201224">
+											<img class="card-img v-image ads-img " src="https://image4.slideserve.com/1201224/slide1-n.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRScsrP0evP4AEw_Xlt0bteyUC6LcOeMJ9NHQ';" alt="Ppt The Army Equal Opportunity Complaint Process Powerpoint Presentation Id 1201224">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ppt The Army Equal Opportunity Complaint Process Powerpoint Presentation Id 1201224</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.powershow.com/image/7aed9-ZDc1Z" data-lightbox="roadtrip" data-title="Ppt The Army Equal Opportunity Complaint Process How To Complain Powerpoint Presentation Free To Download Id 7aed9 Zdc1z">
+											<img class="card-img v-image ads-img " src="http://www.powershow.com/image/7aed9-ZDc1Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPysxxA3j4UsPP2yomSmiNVYBuh-go5dY3vA';" alt="Ppt The Army Equal Opportunity Complaint Process How To Complain Powerpoint Presentation Free To Download Id 7aed9 Zdc1z">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ppt The Army Equal Opportunity Complaint Process How To Complain Powerpoint Presentation Free To Download Id 7aed9 Zdc1z</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="N9PD7vioQGBN9M" data-lightbox="roadtrip" data-title="Https Www Army Mil E2 C Downloads 488240 Pdf">
+											<img class="card-img v-image ads-img " src="N9PD7vioQGBN9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ42IpgAd5RpCXKYCJv1EF4MJKXjzXOoiWhA';" alt="Https Www Army Mil E2 C Downloads 488240 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Army Mil E2 C Downloads 488240 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="V4sILJ8KlmxXwM" data-lightbox="roadtrip" data-title="Https Home Army Mil Wiesbaden Index Php Download File View 404 529">
+											<img class="card-img v-image ads-img " src="V4sILJ8KlmxXwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45IBqZdkL_GBzlrdQHIezLZAgtnVNGC2dhg';" alt="Https Home Army Mil Wiesbaden Index Php Download File View 404 529">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Wiesbaden Index Php Download File View 404 529</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/12024783/69/images/15/EO+Complaint+Procedures.jpg" data-lightbox="roadtrip" data-title="The Army S Equal Opportunity Eo Program Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/12024783/69/images/15/EO+Complaint+Procedures.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7CY0WkBH33wDLzChThTLMCIf9B3C8QqhFPA';" alt="The Army S Equal Opportunity Eo Program Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army S Equal Opportunity Eo Program Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Fcmwa1hgPgLCwM" data-lightbox="roadtrip" data-title="Https Home Army Mil Wiesbaden Index Php Download File View 406 529">
+											<img class="card-img v-image ads-img " src="Fcmwa1hgPgLCwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwKG4--w5QpOd_LDrRhxZqQksS0QOs9YBrxw';" alt="Https Home Army Mil Wiesbaden Index Php Download File View 406 529">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Wiesbaden Index Php Download File View 406 529</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="c3DmGhlPhbcIkM" data-lightbox="roadtrip" data-title="Https Home Army Mil Jackson Index Php Download File View 453 635">
+											<img class="card-img v-image ads-img " src="c3DmGhlPhbcIkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4r2jt4xTsUA4_qAPb_GuG6rEoNnZBGkk9A';" alt="Https Home Army Mil Jackson Index Php Download File View 453 635">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Jackson Index Php Download File View 453 635</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.usar.army.mil/Portals/98/Documents/EO-Equal%20Opportunity/EEO%20Poster%20signed%20JD.jpeg?ver=UGfXV_0mzlRryzg9n9X5nQ%3D%3D" data-lightbox="roadtrip" data-title="Eeo Office">
+											<img class="card-img v-image ads-img " src="https://www.usar.army.mil/Portals/98/Documents/EO-Equal%20Opportunity/EEO%20Poster%20signed%20JD.jpeg?ver=UGfXV_0mzlRryzg9n9X5nQ%3D%3D" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwv5ZRYqLmm0GSF9VixJVbCOPrQ74C-uQm4Q';" alt="Eeo Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eeo Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/10/2733346/slides/slide_8.jpg" data-lightbox="roadtrip" data-title="Equal Opportunity 2 Terminal Learning Objective Action Communicate The Individual Soldier S Obligations In Support Of The Army S Equal Opportunity Eo Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/10/2733346/slides/slide_8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsBMMgv0NmR8Ya7wKZ47Qxbt4_zpOzxarVQ';" alt="Equal Opportunity 2 Terminal Learning Objective Action Communicate The Individual Soldier S Obligations In Support Of The Army S Equal Opportunity Eo Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Equal Opportunity 2 Terminal Learning Objective Action Communicate The Individual Soldier S Obligations In Support Of The Army S Equal Opportunity Eo Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pdffiller.com/preview/10/68/10068523.png" data-lightbox="roadtrip" data-title="Army Complaint Form Fill Online Printable Fillable Blank Pdffiller">
+											<img class="card-img v-image ads-img " src="https://www.pdffiller.com/preview/10/68/10068523.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwHsZdbU5NSiqTgXgoi0_22JrU4y8H2XVU6g';" alt="Army Complaint Form Fill Online Printable Fillable Blank Pdffiller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Complaint Form Fill Online Printable Fillable Blank Pdffiller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BR5jqIlRSDOm1M" data-lightbox="roadtrip" data-title="Https Home Army Mil Wood Index Php Download File 5935 529">
+											<img class="card-img v-image ads-img " src="BR5jqIlRSDOm1M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCb-GuBMUynKpnXsWRGdujZQp1GvHEs_SRQ';" alt="Https Home Army Mil Wood Index Php Download File 5935 529">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Wood Index Php Download File 5935 529</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-id-card-tracy-ca.html">Military Id Card Tracy Ca</a></li>
+													<li class="list-group-item"><a href="/military-id-card-tallahassee-fl.html">Military Id Card Tallahassee Fl</a></li>
+													<li class="list-group-item"><a href="/military-leave-240-hours.html">Military Leave 240 Hours</a></li>
+													<li class="list-group-item"><a href="/military-id-card-spartanburg-sc.html">Military Id Card Spartanburg Sc</a></li>
+													<li class="list-group-item"><a href="/military-jungle-hats.html">Military Jungle Hats</a></li>
+													<li class="list-group-item"><a href="/military-id-card-walk-in-near-me.html">Military Id Card Walk In Near Me</a></li>
+													<li class="list-group-item"><a href="/military-id-card-without-sponsor.html">Military Id Card Without Sponsor</a></li>
+													<li class="list-group-item"><a href="/military-id-card-us.html">Military Id Card Us</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-request-form.html">Military Medical Records Request Form</a></li>
+													<li class="list-group-item"><a href="/military-id-card-unlock.html">Military Id Card Unlock</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-civilian.html">Military Jobs For Civilian</a></li>
+													<li class="list-group-item"><a href="/military-id-card-sample.html">Military Id Card Sample</a></li>
+													<li class="list-group-item"><a href="/military-id-card-warner-robins.html">Military Id Card Warner Robins</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-spouses-on-base.html">Military Jobs For Spouses On Base</a></li>
+													<li class="list-group-item"><a href="/military-id-cards-for-dependents-over-18.html">Military Id Cards For Dependents Over 18</a></li>
+													<li class="list-group-item"><a href="/military-id-card-scheduler.html">Military Id Card Scheduler</a></li>
+													<li class="list-group-item"><a href="/military-id-card-prop.html">Military Id Card Prop</a></li>
+													<li class="list-group-item"><a href="/military-logo-hats.html">Military Logo Hats</a></li>
+													<li class="list-group-item"><a href="/military-in-state-tuition-for-dependents.html">Military In State Tuition For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-id-card-philippines.html">Military Id Card Philippines</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

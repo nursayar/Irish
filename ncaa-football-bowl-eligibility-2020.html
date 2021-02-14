@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Football Bowl Eligibility 2020 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Football Bowl Eligibility 2020",
+  "datePublished": "2021-02-14",
+  "image": "https://s1.ticketm.net/tm/en-us/img/static/collegebowls/Header_400x150.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+football+bowl+eligibility+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Football Bowl Eligibility 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">- Very few things about the 2020 college football season have been normal. In 2020 many programs schedules have gotten shorter and more difficult. NCAA Division I athletes who participate in winter sports will be given another year of eligibility and football teams will be allowed to compete in bowl games regardless of record in one-time. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-military-records-request-form.html">va military records request form</a>
+											<a class="badge badge-light" href="/va-spouse-benefits-for-assisted-living.html">va spouse benefits for assisted living</a>
+											<a class="badge badge-secondary" href="/va-medical-records-request.html">va medical records request</a>
+											<a class="badge badge-danger" href="/va-pay-for-dependents-college.html">va pay for dependents college</a>
+											<a class="badge badge-info" href="/veteran-spouse-dic-benefits.html">veteran spouse dic benefits</a>
+											<a class="badge badge-success" href="/veteran-world-running-records.html">veteran world running records</a>
+											<a class="badge badge-secondary" href="/veteran-educational-benefits-for-dependents.html">veteran educational benefits for dependents</a>
+											<a class="badge badge-warning" href="/veteran-dependents-in-state-tuition.html">veteran dependents in state tuition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sportshub.cbsistatic.com/i/r/2018/12/30/ac4a3941-7507-4b08-88ce-377642566fba/thumbnail/1200x675/056aea2925b3663e1a5fab7788d26ec2/sun-bowl-stadium.jpg" data-lightbox="roadtrip" data-title="Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com">
+											<img class="card-img v-image ads-img " src="https://sportshub.cbsistatic.com/i/r/2018/12/30/ac4a3941-7507-4b08-88ce-377642566fba/thumbnail/1200x675/056aea2925b3663e1a5fab7788d26ec2/sun-bowl-stadium.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8Rxw8HDKm2KQkcoRJ6POrMIv_DpvWlKXCQ';" alt="Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/NL3p_loA6Sg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Games 2020 21 Schedule Matchups Dates Times And Locations Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/NL3p_loA6Sg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFfr3FxaMCvUNkYIfU37u9PDCRr2Cg0o4xqQ';" alt="College Football Bowl Games 2020 21 Schedule Matchups Dates Times And Locations Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Games 2020 21 Schedule Matchups Dates Times And Locations Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.heartlandcollegesports.com/wp-content/uploads/2019/12/USATSI_9028070.jpg" data-lightbox="roadtrip" data-title="All 127 Fbs Teams Eligible For Bowl Games In 2020">
+											<img class="card-img v-image ads-img " src="https://www.heartlandcollegesports.com/wp-content/uploads/2019/12/USATSI_9028070.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf73TtQlpn_xjLpMOG_VZF1P4y3N-ZmV-pxg';" alt="All 127 Fbs Teams Eligible For Bowl Games In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All 127 Fbs Teams Eligible For Bowl Games In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/896/977/hi-res-a7200b289341037561bb5e7c7082af1e_crop_north.jpg" data-lightbox="roadtrip" data-title="Bowl Games 2020 21 Printable Schedule Latest Odds And Picks For Every Matchup Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/896/977/hi-res-a7200b289341037561bb5e7c7082af1e_crop_north.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4yvSxtE4RA4aYedSlVEX-ona9gvzmHSPbw';" alt="Bowl Games 2020 21 Printable Schedule Latest Odds And Picks For Every Matchup Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bowl Games 2020 21 Printable Schedule Latest Odds And Picks For Every Matchup Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://149346005.v2.pressablecdn.com/wp-content/uploads/2020/10/2020-21-bowl-schedule.jpg" data-lightbox="roadtrip" data-title="2020 21 College Football Bowl Schedule Including New Orleans Sugar Bowls Announced Crescent City Sports">
+											<img class="card-img v-image ads-img " src="https://149346005.v2.pressablecdn.com/wp-content/uploads/2020/10/2020-21-bowl-schedule.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKfdmKHa15e1IrIf45KIfgDUis52kmjc8PA';" alt="2020 21 College Football Bowl Schedule Including New Orleans Sugar Bowls Announced Crescent City Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 21 College Football Bowl Schedule Including New Orleans Sugar Bowls Announced Crescent City Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fbschedules.com/wp-content/uploads/2020/12/USATSI_13905351.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Games 2020 21 Selections Schedule">
+											<img class="card-img v-image ads-img " src="https://fbschedules.com/wp-content/uploads/2020/12/USATSI_13905351.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyL0IwFpCumr0bRuxQw4eSMiTqXEA-_uIvbw';" alt="College Football Bowl Games 2020 21 Selections Schedule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Games 2020 21 Selections Schedule</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2020-12/thumb_1.jpg?h=ab2cd730&amp;itok=Fk9wdNgb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyL0IwFpCumr0bRuxQw4eSMiTqXEA-_uIvbw';" alt="College Football Bowl Games 2020 21 Selections Schedule">
+										<div class="card-body">
+						<h3 class="h5"><b>In normal circumstances to qualify for a postseason bowl game a team must meet the criteria to be considered a deserving team which is generally defined as having a 500 overall record.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa football bowl eligibility 2020</strong>. 
+								
+																	October 14 2020 323 PM 2 min read Every FBS team is eligible to play in a bowl game in 2020. 
+																	Wednesday the NCAA Division I Council waived bowl. 
+																	FBS teams may schedule a second FCS opponent as they chase bowl eligibility in the 2020-2021 season. 
+																	For the 2020-21 bowl season only postseason games could be played Dec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 contributors This is the eligibility status of all 128 college football teams after Week 13. 
+																	That means some teams that. 
+																	Alabama defeated Ohio State 52-24 for the CFP national title. 
+																	By Ed Scimia on July 16 2020 2 min read. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This would apply only to the. 
+																	In mid-October 2020 the NCAA waived bowl eligibility requirements for the 202021 bowl season intended to allow as many student-athletes as possible the opportunity to participate in bowl games this year This led to nine teams with losing records accepting bids to bowl games. 
+																	NCAA Loosens Bowl Eligibility Requirements for 2020 Football Season. 
+																	Schools must continue to meet Academic Progress Rate requirements for postseason eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With 36 bowl games and 3 playoff games a total of 76 teams will participate in postseason play. 
+																	The Fenway Bowl and LA Bowl postponed. 
+																	Fourteen existing bowls were cancelled either due to either travel restrictions Bahamas Bowl and Hawaii Bowl. 
+																	You can add the bowl season to that list. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Schools must continue to meet Academic Progress Rate requirements for postseason eligibility. 
+																	Normally teams would be required to have won six games and. 
+																	Sep 24 2020 On Thursday the NCAAs Division I Football Oversight Committee recommended waiving the bowl-eligibility requirements for the 2020-21 bowl season. 
+																	202021 bowl season The NCAA waived eligibility requirements to allow as many student-athletes as possible the opportunity to participate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division I Football Oversight Committee on Thursday recommended the removal of normal requirements that teams must meet in order to become bowl eligible. 
+																	The NCAA Division I Football Oversight Committee recommended Thursday to waive the requirements for bowl eligibility for 2020 games. 
+																	The Division I Council waived bowl eligibility requirements for the 2020-21 bowl season and waived the minimum number of contests for all football teams. 
+																	Thats why a waiver to do away with bowl eligibility requirements has been filed to the NCAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every College Football Team Is Bowl Eligible in 2020 by Ryan Glasspiegel 4 months ago 1 One thing you can set your watch to as the year approaches the holidays is a lot of people taking shots at the surplus of bowl games as though its a bad thing to have football on television at all hours of the day for a few weeks. 
+																	The Council met by videoconference Tuesday and Wednesday. 
+																	The NCAAs Division I Council announced on Wednesday that it has waived bowl eligibility. 
+																	The 2020-21 college football bowl season is complete. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The committees recommendation requires approval by the Division I Council which is scheduled to meet Oct. 
+																	College football teams will have more flexibility in crafting schedules that give them a chance at bowl eligibility in the 2020-2021 season no matter how many games they ultimately get to play. 
+																	Below find the full schedule and final results and stats from every bowl game. 
+																	The extension of eligibility for fall athletes follows a similar measure approved by the NCAA earlier this year with spring athletes who had most of their 2020 seasons erased by the COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the 2020-21 bowl season only postseason games could be played Dec. 
+																	October 14 2020 352pm. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/428/382/844b822be287cc6bae25eb02602d2e0a_crop_exact.jpg" data-lightbox="roadtrip" data-title="Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/428/382/844b822be287cc6bae25eb02602d2e0a_crop_exact.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCok2888KHx2Czg0n2J4xqRuD086Uu19R42A';" alt="Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/429/470/487df407f894e65c41e2720eabe6beab_crop_exact.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Picks 2020 Predictions For Most Underrated Games On Slate Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/429/470/487df407f894e65c41e2720eabe6beab_crop_exact.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9UG_ozyfrUDYzNZ1JVmT45y0JYCQWiYPlA';" alt="College Football Bowl Picks 2020 Predictions For Most Underrated Games On Slate Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Picks 2020 Predictions For Most Underrated Games On Slate Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aseaofred.com/wp-content/uploads/2020/10/50529931592_47754072a6_c.jpg" data-lightbox="roadtrip" data-title="2020 21 Bowl Schedule Announced Liberty Has Had Conversations With Specific Bowls A Sea Of Red">
+											<img class="card-img v-image ads-img " src="https://www.aseaofred.com/wp-content/uploads/2020/10/50529931592_47754072a6_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReS4AEjybL6s8c-MmpIB7LCIvzNbgRtvZoag';" alt="2020 21 Bowl Schedule Announced Liberty Has Had Conversations With Specific Bowls A Sea Of Red">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 21 Bowl Schedule Announced Liberty Has Had Conversations With Specific Bowls A Sea Of Red</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.footballzebras.com/wp-content/uploads/2019/12/ncaa-football.jpg?resize=640%2C427" data-lightbox="roadtrip" data-title="Officiating Crews For The 2020 College Football Conference Championship Games Football Zebras">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.footballzebras.com/wp-content/uploads/2019/12/ncaa-football.jpg?resize=640%2C427" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd1pL1QhhApFAOTkKCkfKl6BkGE29Nyg_4aA';" alt="Officiating Crews For The 2020 College Football Conference Championship Games Football Zebras">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Officiating Crews For The 2020 College Football Conference Championship Games Football Zebras</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.yardbarker.com/media/6/e/6ef2b3a761e0e7d967b44f099a9d1cfc1b79efb9/thumb_16x9/college-football-bowl-matchups-picks-preview.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Matchups Picks And Preview Yardbarker">
+											<img class="card-img v-image ads-img " src="http://www.yardbarker.com/media/6/e/6ef2b3a761e0e7d967b44f099a9d1cfc1b79efb9/thumb_16x9/college-football-bowl-matchups-picks-preview.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mO-hhuKoyNoBeLmFjlaOad-MS83apbxAkw';" alt="College Football Bowl Matchups Picks And Preview Yardbarker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Matchups Picks And Preview Yardbarker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2020-12/thumb_1.jpg?h=ab2cd730&amp;itok=Fk9wdNgb" data-lightbox="roadtrip" data-title="College Football Playoff Rankings See Who S In Full New Year S Six Schedule">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2020-12/thumb_1.jpg?h=ab2cd730&amp;itok=Fk9wdNgb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGstWtC61_qzOoRo6zddUvolPWqf-oFHt31Q';" alt="College Football Playoff Rankings See Who S In Full New Year S Six Schedule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Playoff Rankings See Who S In Full New Year S Six Schedule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.oddsshark.com/sites/default/files/inline/images/bowls.jpg" data-lightbox="roadtrip" data-title="Ncaaf Bowl Odds College Football Bowl Odds Odds Shark">
+											<img class="card-img v-image ads-img " src="https://www.oddsshark.com/sites/default/files/inline/images/bowls.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3JX43jCn9pQeBFbFHcl_SDHvm4ZOx-9cdw';" alt="Ncaaf Bowl Odds College Football Bowl Odds Odds Shark">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaaf Bowl Odds College Football Bowl Odds Odds Shark</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://collegefootballnews.com/wp-content/uploads/sites/83/2020/03/cfp_2021_logo-1000-2.jpg?w=1000&amp;h=600&amp;crop=1" data-lightbox="roadtrip" data-title="Bowl Projections College Football Playoff Prediction 2020 Preseason">
+											<img class="card-img v-image ads-img " src="https://collegefootballnews.com/wp-content/uploads/sites/83/2020/03/cfp_2021_logo-1000-2.jpg?w=1000&amp;h=600&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtzsrKrMxdkEx09ybSJLyNZQ0M7kZrFq2HQ';" alt="Bowl Projections College Football Playoff Prediction 2020 Preseason">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bowl Projections College Football Playoff Prediction 2020 Preseason</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.profootballnetwork.com/wp-content/uploads/2020/12/college-football-bowl-games-today-2020-21-1024x576.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Games Today Tv Schedules Start Times Predictions">
+											<img class="card-img v-image ads-img " src="https://www.profootballnetwork.com/wp-content/uploads/2020/12/college-football-bowl-games-today-2020-21-1024x576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBTDc6e8M5po-rfFn5qkHxHAHt4fNnYtmMJw';" alt="College Football Bowl Games Today Tv Schedules Start Times Predictions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Games Today Tv Schedules Start Times Predictions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sportshub.cbsistatic.com/i/r/2020/07/22/4a0212fe-0c22-4bfb-a483-8f39ae3011d6/thumbnail/770x433/3b23b1cbc324ed00af0d41d1be7d20af/ncaa-football.jpg" data-lightbox="roadtrip" data-title="College Football Schedule 2020 The 106 Games Already Postponed Or Canceled Due To Covid 19 Cbssports Com">
+											<img class="card-img v-image ads-img " src="https://sportshub.cbsistatic.com/i/r/2020/07/22/4a0212fe-0c22-4bfb-a483-8f39ae3011d6/thumbnail/770x433/3b23b1cbc324ed00af0d41d1be7d20af/ncaa-football.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7-57YcUDyowHqI657HwOzqo7FsGNXtW4Iw';" alt="College Football Schedule 2020 The 106 Games Already Postponed Or Canceled Due To Covid 19 Cbssports Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Schedule 2020 The 106 Games Already Postponed Or Canceled Due To Covid 19 Cbssports Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s1.ticketm.net/tm/en-us/img/static/collegebowls/Header_400x150.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Game Tickets Cfp Bowl Schedule 2020 21 Ticketmaster">
+											<img class="card-img v-image ads-img " src="https://s1.ticketm.net/tm/en-us/img/static/collegebowls/Header_400x150.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mkbqXb_kel7OLTgAmyEy0RGy4W9rkf5C2w';" alt="College Football Bowl Game Tickets Cfp Bowl Schedule 2020 21 Ticketmaster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Game Tickets Cfp Bowl Schedule 2020 21 Ticketmaster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/896/795/hi-res-18f754fe07281f58af8a0b0deb04513d_crop_north.jpg" data-lightbox="roadtrip" data-title="Sugar Bowl 2020 Updated Odds And Preview For Clemson Vs Ohio State Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/896/795/hi-res-18f754fe07281f58af8a0b0deb04513d_crop_north.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6kKdKQ0vUe0tn7ldTjEIOLTEFdLsUTc0NQ';" alt="Sugar Bowl 2020 Updated Odds And Preview For Clemson Vs Ohio State Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sugar Bowl 2020 Updated Odds And Preview For Clemson Vs Ohio State Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.perishablenews.com/wp-content/uploads/2020/11/p2432.jpg" data-lightbox="roadtrip" data-title="One Of College Football S Most Exciting Bowl Games The Famous Idaho Potato Bowl Will Kick Off On December 22nd Perishable News">
+											<img class="card-img v-image ads-img " src="https://www.perishablenews.com/wp-content/uploads/2020/11/p2432.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57bk0ShyFNKnsaQYOQa9AV-Gu_cC8PMY8GA';" alt="One Of College Football S Most Exciting Bowl Games The Famous Idaho Potato Bowl Will Kick Off On December 22nd Perishable News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of College Football S Most Exciting Bowl Games The Famous Idaho Potato Bowl Will Kick Off On December 22nd Perishable News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dependent-child-scholarship.html">Military Dependent Child Scholarship</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-expired.html">Military Dependent Id Expired</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-fort-hood.html">Military Dependent Id Card Fort Hood</a></li>
+													<li class="list-group-item"><a href="/military-dependent-dental-program.html">Military Dependent Dental Program</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-expiration-extension.html">Military Dependent Id Card Expiration Extension</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-age-requirements.html">Military Dependent Id Card Age Requirements</a></li>
+													<li class="list-group-item"><a href="/military-dependent-covid-vaccine.html">Military Dependent Covid Vaccine</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-without-sponsor.html">Military Dependent Id Card Without Sponsor</a></li>
+													<li class="list-group-item"><a href="/military-dad-haircut.html">Military Dad Haircut</a></li>
+													<li class="list-group-item"><a href="/military-dependent-card-uk.html">Military Dependent Card Uk</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-deers.html">Military Dependent Id Deers</a></li>
+													<li class="list-group-item"><a href="/military-dependent-child-age-limit.html">Military Dependent Child Age Limit</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-airport.html">Military Dependent Id Airport</a></li>
+													<li class="list-group-item"><a href="/military-dependent-airline-discounts.html">Military Dependent Airline Discounts</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-near-me.html">Military Dependent Id Near Me</a></li>
+													<li class="list-group-item"><a href="/military-death-benefit-for-spouse.html">Military Death Benefit For Spouse</a></li>
+													<li class="list-group-item"><a href="/military-dependent-application-form.html">Military Dependent Application Form</a></li>
+													<li class="list-group-item"><a href="/military-dental-insurance-for-dependents-metlife.html">Military Dental Insurance For Dependents Metlife</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-real-id.html">Military Dependent Id Card Real Id</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-age-21.html">Military Dependent Id Card Age 21</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

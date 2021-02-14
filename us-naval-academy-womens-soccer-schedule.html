@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Naval Academy Womens Soccer Schedule - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Naval Academy Womens Soccer Schedule",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/aa/50/f8/aa50f8a0df83dff199fba02db7cb4208.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+naval+academy+womens+soccer+schedule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Naval Academy Womens Soccer Schedule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The US Naval Academy will host the womens championship from April 29 to May 2. The official 2019 Mens Soccer schedule for the Naval Academy. Annapolis MD US Naval Academy Golf Club Navy Spring Invitational. <br>				
+			</p>
+										<a class="badge badge-dark" href="/login-my-cash-app.html">login my cash app</a>
+											<a class="badge badge-danger" href="/korean-war-veteran-service-records.html">korean war veteran service records</a>
+											<a class="badge badge-warning" href="/little-rock-air-force-base-hours.html">little rock air force base hours</a>
+											<a class="badge badge-dark" href="/little-rock-air-force-base-commissary-hours.html">little rock air force base commissary hours</a>
+											<a class="badge badge-success" href="/login-to-my-campus.html">login to my campus</a>
+											<a class="badge badge-light" href="/login-sscn-bkn-hasil-seleksi-administrasi.html">login sscn bkn hasil seleksi administrasi</a>
+											<a class="badge badge-primary" href="/login-to-my-arlo-camera.html">login to my arlo camera</a>
+											<a class="badge badge-danger" href="/ladies-military-hats-for-sale.html">ladies military hats for sale</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/aa/5f/b4aa5fe4828488ebc5c0b8fb4bd72d47.jpg" data-lightbox="roadtrip" data-title="2012 Navy Volleyball Team Naval Academy Team Pictures United States Naval Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/aa/5f/b4aa5fe4828488ebc5c0b8fb4bd72d47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvd4Cg9eVBBN5HYJPXRB9K4aH-4kAQ6VT2OQ';" alt="2012 Navy Volleyball Team Naval Academy Team Pictures United States Naval Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 Navy Volleyball Team Naval Academy Team Pictures United States Naval Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/47/09/cb4709b622cbda9c462080acd4125b19.jpg" data-lightbox="roadtrip" data-title="2013 Navy Women S Golf Team United States Naval Academy Naval Academy Ladies Golf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/47/09/cb4709b622cbda9c462080acd4125b19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Xi0t3zJPoECxAAmGncJjTj7DJAcWRAerbw';" alt="2013 Navy Women S Golf Team United States Naval Academy Naval Academy Ladies Golf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Navy Women S Golf Team United States Naval Academy Naval Academy Ladies Golf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/0d/92/fc0d92980e0ef4bf34db53d313ab287b.jpg" data-lightbox="roadtrip" data-title="2012 Navy Women S Soccer Poster Soccer Poster Womens Soccer College Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/0d/92/fc0d92980e0ef4bf34db53d313ab287b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLk186BMAAO618v3XCHeegke7tir6hlGZFKw';" alt="2012 Navy Women S Soccer Poster Soccer Poster Womens Soccer College Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 Navy Women S Soccer Poster Soccer Poster Womens Soccer College Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1f/df/e8/1fdfe8b8fc545f86548f1fb9a3bddc8f--college-soccer-soccer-poster.jpg" data-lightbox="roadtrip" data-title="2012 Navy Men S Soccer Poster College Soccer Soccer Poster Mens Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1f/df/e8/1fdfe8b8fc545f86548f1fb9a3bddc8f--college-soccer-soccer-poster.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0BCQ84DySbMLHx5SZuFXtulVrz2vn4CFVw';" alt="2012 Navy Men S Soccer Poster College Soccer Soccer Poster Mens Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 Navy Men S Soccer Poster College Soccer Soccer Poster Mens Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/6b/0c/2e6b0cdac96e5b07e3b47c1260bed537.jpg" data-lightbox="roadtrip" data-title="Pin By U S Amy Rcruiting On Army Sports Army Women Women S Soccer Team Womens Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/6b/0c/2e6b0cdac96e5b07e3b47c1260bed537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpCX4vK7gNOlp4Kj0lTlhI4aOBLntIQyf0g';" alt="Pin By U S Amy Rcruiting On Army Sports Army Women Women S Soccer Team Womens Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By U S Amy Rcruiting On Army Sports Army Women Women S Soccer Team Womens Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/f1/3a/60f13a3501e10ff935e444d1d0762556.jpg" data-lightbox="roadtrip" data-title="2012 13 Navy Men S Basketball Team Basketball Uniforms Design Basketball Academy Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/f1/3a/60f13a3501e10ff935e444d1d0762556.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVrhBsd2j4Adk4hrUSSious5dDwdSBwrwOA';" alt="2012 13 Navy Men S Basketball Team Basketball Uniforms Design Basketball Academy Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 13 Navy Men S Basketball Team Basketball Uniforms Design Basketball Academy Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b0/1c/7f/b01c7fbba69670cadbdb615ec0f11504.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVrhBsd2j4Adk4hrUSSious5dDwdSBwrwOA';" alt="2012 13 Navy Men S Basketball Team Basketball Uniforms Design Basketball Academy Basketball Teams">
+										<div class="card-body">
+						<h3 class="h5"><b>Here you will get information regarding the college and details on their Womens Volleyball program like who to get hold of about recruitment names of past alumni what scholarship opportunities can be had and ways to start the recruiting process.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us naval academy womens soccer schedule</strong>. 
+								
+																	BuySell Tickets Phone Official E-Mail of Army West Point Athletics United States Military Academy Admissions Compliance Athletic Training Student-Athlete Enhancement Facilities Cadet-Athlete Handbook Recruiting Questionnaires Visiting. 
+																	Updated Mon Jan 11 105238 EST 2021. 
+																	The camps are conducted on the grounds of the historic Naval Academy located in Annapolis Maryland and provide the premier experience for campers of all rowing abilities from the complete novice to the seasoned racer ages 13-18 rising 8th graders through recent high. 
+																	Welcome to the United States Naval Academy Womens Volleyball scholarship and program info page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Caroline Kelly was named the Army West Point womens soccer assistant coach in February of 2018. 
+																	This is met through a sports program that is one of the broadest in the nation. 
+																	October 11 2020 Sunday 130 pm. 
+																	The United States Naval Academy Athletic Association is proud to once again present the Navy Rowing Camp for Girls. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020 Womens Soccer Schedule. 
+																	Womens Soccer Schedule Roster. 
+																	Soccer Development Academy has suspended all Boys and Girls regular season matches through the end of April and canceled the 2020 Allstate Development Academy Spring Cup US. 
+																	Pershing Rd Suite 350 Kansas City MO 64108-2463 8164711941. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Cross Country Cross Country. 
+																	Navy Womens Rugby currently competes as an Independent in USA Rugby D1 and the Penn Mutual Collegiate Rugby Championships. 
+																	The nine programs will play 10 games against league opponents. 
+																	The official 2019 Mens Soccer schedule for the Naval Academy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Naval Academy sports news and features including conference nickname location and official social media handles. 
+																	Page for Navy Womens soccer program including standings roster and stats. 
+																	Just as the Naval Academy promotes the professional and intellectual development of Midshipmen so also must it fulfill its responsibility for each Midshipmens physical development. 
+																	Academic Term Calendars page for Academics at USNAedu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thanks for visiting the United States Naval Academy Mens Soccer scholarship and program details page. 
+																	Soccer Development Academy Suspends Official Operations Through End of April As Precaution Against Spread of Coronavirus. 
+																	The official 2020 Womens Soccer Roster for the Air Force Academy Falcons. 
+																	Here youll get information about the school and details on their Mens Soccer program like who to get hold of about recruiting names of past alumni what scholarship opportunities are presented and ways to begin the recruiting process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order to lead you must first follow. 
+																	Football Scout Day Online Store Official Online Store Under Armour Collectibles Gameday Tailgate Jerseys Sweatshirts Men Women Kids Donate to the Blue-N-Gold Donate to The Fund for Athletic Excellence Blue-N-Gold. 
+																	She has played an integral role in the progression of the team especially on the defensive side of the ball. 
+																	NEWS - March 12 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meanwhile the team enjoys friendly games with teams in both upper and lower leagues throughout the rest of the year. 
+																	The official 2021 Womens Golf schedule for the Towson University Tigers. 
+																	Date Time At Opponent Location Tournament Result Links. 
+																	The official Womens Soccer page for the Army West Point Black Knights. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	September 20 2020 Sunday 200 pm. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/5d/a1/8a5da1e8b1663820ba7c067c04a8516f.jpg" data-lightbox="roadtrip" data-title="2012 13 Navy Men S Track And Field Team Track And Field United States Naval Academy Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/5d/a1/8a5da1e8b1663820ba7c067c04a8516f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49tCHnYyTIuhPMTjscmBECNME67IZMW_iPQ';" alt="2012 13 Navy Men S Track And Field Team Track And Field United States Naval Academy Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 13 Navy Men S Track And Field Team Track And Field United States Naval Academy Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/4c/ab/fb4cab621e259c603ef3923199848c14.jpg" data-lightbox="roadtrip" data-title="Q A With Naval Academy Soccer Coach And Mom Soccer Coaching Naval Academy Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/4c/ab/fb4cab621e259c603ef3923199848c14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8aYFIM8eT652w7GmvdMRN-N0eh8fmjCv-jA';" alt="Q A With Naval Academy Soccer Coach And Mom Soccer Coaching Naval Academy Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Q A With Naval Academy Soccer Coach And Mom Soccer Coaching Naval Academy Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/8f/98/798f98b2be5b6c971095270144046646.jpg" data-lightbox="roadtrip" data-title="Bicyclingweb Com Just Another Wp Host Nine Sites Site">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/8f/98/798f98b2be5b6c971095270144046646.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGN31LlpLdbJKDFBZA4dTPEWP0pMVZOIePA';" alt="Bicyclingweb Com Just Another Wp Host Nine Sites Site">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bicyclingweb Com Just Another Wp Host Nine Sites Site</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/e5/1e/53e51e8f6467c5954ce8c625917b253f.jpg" data-lightbox="roadtrip" data-title="Prosphere Women S United States Naval Academy Maya Tech T Https Www Amazon Com Dp B01gcbh15m Ref Cm Sw R Pi Dp Jersey Design Sports Uniforms Bike Clothes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/e5/1e/53e51e8f6467c5954ce8c625917b253f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYG_ndR6qNfR9n4dXpgS3PzOIRiQ1WVnwbiw';" alt="Prosphere Women S United States Naval Academy Maya Tech T Https Www Amazon Com Dp B01gcbh15m Ref Cm Sw R Pi Dp Jersey Design Sports Uniforms Bike Clothes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prosphere Women S United States Naval Academy Maya Tech T Https Www Amazon Com Dp B01gcbh15m Ref Cm Sw R Pi Dp Jersey Design Sports Uniforms Bike Clothes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/2f/18/822f181fbf2ab2842ffce8405d7f9a14.jpg" data-lightbox="roadtrip" data-title="Pin By Alexis Hampshire On Women Girls Naval Academy United States Naval Academy Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/2f/18/822f181fbf2ab2842ffce8405d7f9a14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfkjLTSVFDRITypB3GA6ILejRLvEC_QgnCoA';" alt="Pin By Alexis Hampshire On Women Girls Naval Academy United States Naval Academy Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alexis Hampshire On Women Girls Naval Academy United States Naval Academy Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/cf/6b/a6cf6bdfa0995e0f86b17d73d902072e.jpg" data-lightbox="roadtrip" data-title="2013 Navy Women S Lacrosse Team With Images Lacrosse Team Womens Lacrosse Lacrosse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/cf/6b/a6cf6bdfa0995e0f86b17d73d902072e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB5wLsee7GXvbY3a0svJJJDQPUVgGtHzAV6A';" alt="2013 Navy Women S Lacrosse Team With Images Lacrosse Team Womens Lacrosse Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Navy Women S Lacrosse Team With Images Lacrosse Team Womens Lacrosse Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/50/f8/aa50f8a0df83dff199fba02db7cb4208.jpg" data-lightbox="roadtrip" data-title="United States Naval Academy Women S Lacrosse Http Www Payscale Com Research Us School United States Naval Aca Naval Academy United States Naval Academy Naval">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/50/f8/aa50f8a0df83dff199fba02db7cb4208.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZbJp8dTgVekv8PUbcsZP-5txCqR74XwLvA';" alt="United States Naval Academy Women S Lacrosse Http Www Payscale Com Research Us School United States Naval Aca Naval Academy United States Naval Academy Naval">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Naval Academy Women S Lacrosse Http Www Payscale Com Research Us School United States Naval Aca Naval Academy United States Naval Academy Naval</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/ee/16/57ee16f61005c8ad74fbf12e5b27d9c2.jpg" data-lightbox="roadtrip" data-title="Navy Vs Ecu Navy Football Go Navy Beat Army Naval Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/ee/16/57ee16f61005c8ad74fbf12e5b27d9c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq096S2kq3uXRvEGviNm1HjxXMR0H4xWwsZw';" alt="Navy Vs Ecu Navy Football Go Navy Beat Army Naval Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Vs Ecu Navy Football Go Navy Beat Army Naval Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/3e/34/4b3e34eb76580682ae309643fbda418e.jpg" data-lightbox="roadtrip" data-title="Congratulations To The Navy Women S Lacrosse Team For Winning The 2013 Patriot League Tournament Championship Four Patriot League Lacrosse Team Naval Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/3e/34/4b3e34eb76580682ae309643fbda418e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpxsKe7ch0LOsynnN-9gf0Szekg0coNnDdw';" alt="Congratulations To The Navy Women S Lacrosse Team For Winning The 2013 Patriot League Tournament Championship Four Patriot League Lacrosse Team Naval Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congratulations To The Navy Women S Lacrosse Team For Winning The 2013 Patriot League Tournament Championship Four Patriot League Lacrosse Team Naval Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/0e/48/cb0e4879568cb50d8d4a4736ae3b6b26.png" data-lightbox="roadtrip" data-title="Pin By Victor Huaman On Camisetas Futbol Soccer Jersey Soccer Outfits Usa Soccer Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/0e/48/cb0e4879568cb50d8d4a4736ae3b6b26.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZekRGKg2G5CE3eriB90yDKxNhia0a3obXXA';" alt="Pin By Victor Huaman On Camisetas Futbol Soccer Jersey Soccer Outfits Usa Soccer Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Victor Huaman On Camisetas Futbol Soccer Jersey Soccer Outfits Usa Soccer Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/96/3c/4b963c756e87bcd5ca48ca4d3ad3a0a9.png" data-lightbox="roadtrip" data-title="West Point Women S Soccer Team West Point United States Military Academy Women S Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/96/3c/4b963c756e87bcd5ca48ca4d3ad3a0a9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2s158vre9VpTIcyT67njiqDKkQdCtrsgvMA';" alt="West Point Women S Soccer Team West Point United States Military Academy Women S Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Point Women S Soccer Team West Point United States Military Academy Women S Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/33/e0/5133e02427dd3d0bfbede48df43cb3b5.jpg" data-lightbox="roadtrip" data-title="Patriots Navy Graduate Joe Cardona Appreciates Opportunity Sports Patriots New England Patriots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/33/e0/5133e02427dd3d0bfbede48df43cb3b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ00TReqvO1BdW1KJfowKqG8F-wjoCDi_kQA';" alt="Patriots Navy Graduate Joe Cardona Appreciates Opportunity Sports Patriots New England Patriots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patriots Navy Graduate Joe Cardona Appreciates Opportunity Sports Patriots New England Patriots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/1c/7f/b01c7fbba69670cadbdb615ec0f11504.jpg" data-lightbox="roadtrip" data-title="2012 13 Navy Wrestling Team Wrestling Team Naval Academy United States Naval Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/1c/7f/b01c7fbba69670cadbdb615ec0f11504.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShOqwoAV-eyS21Dffrf_5GH8Ctgjik_ZlTGQ';" alt="2012 13 Navy Wrestling Team Wrestling Team Naval Academy United States Naval Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 13 Navy Wrestling Team Wrestling Team Naval Academy United States Naval Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-administration-military-records.html">Veterans Administration Military Records</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-system.html">Va Medical Records System</a></li>
+													<li class="list-group-item"><a href="/va-pension-benefits-surviving-spouse.html">Va Pension Benefits Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-college-scholarships.html">Veteran Dependent College Scholarships</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-washington-state.html">Va Medical Records Washington State</a></li>
+													<li class="list-group-item"><a href="/va-records-destroyed-in-fire.html">Va Records Destroyed In Fire</a></li>
+													<li class="list-group-item"><a href="/va-spouse-home-health-care-benefits.html">Va Spouse Home Health Care Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-world-running-records.html">Veteran World Running Records</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-for-spouse.html">Va Tuition Assistance For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-request-form.html">Va Medical Records Request Form</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-medical-records-request.html">Veterans Administration Medical Records Request</a></li>
+													<li class="list-group-item"><a href="/vet-shot-records.html">Vet Shot Records</a></li>
+													<li class="list-group-item"><a href="/va-mycare.html">Va Mycare</a></li>
+													<li class="list-group-item"><a href="/va-veterans-benefits-dependents.html">Va Veterans Benefits Dependents</a></li>
+													<li class="list-group-item"><a href="/va-national-archives-and-records-administration.html">Va National Archives And Records Administration</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-id-card.html">Veteran Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/va-pension-rates-with-dependents.html">Va Pension Rates With Dependents</a></li>
+													<li class="list-group-item"><a href="/veteran-military-records-request.html">Veteran Military Records Request</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-wilmington-nc.html">Va Medical Records Wilmington Nc</a></li>
+													<li class="list-group-item"><a href="/vagov-records.html">Vagov Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

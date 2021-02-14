@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Roper - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Roper",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/98/2e/bc/982ebcd21be8c05f5af266e0cc335a6d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+roper",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Roper</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Will Roper became the Assistant Secretary of the Air Force for Acquisition Technology and Logistics in February 2018. Missile defense systems which are not designed to take on maneuverable ultra-fast weapons. 8 interview with Defense News Air Force acquisition executive Will Roper said one of his main goals before President-elect Joe Biden is inaugurated on Jan. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-hr-policies.html">army hr policies</a>
+											<a class="badge badge-light" href="/army-haircut-design.html">army haircut design</a>
+											<a class="badge badge-secondary" href="/army-helpline-number-gujarat.html">army helpline number gujarat</a>
+											<a class="badge badge-primary" href="/army-hrc-enlisted-records.html">army hrc enlisted records</a>
+											<a class="badge badge-success" href="/army-education-benefits-for-spouse.html">army education benefits for spouse</a>
+											<a class="badge badge-light" href="/army-dependents-parents.html">army dependents parents</a>
+											<a class="badge badge-warning" href="/army-hrc-login-portal.html">army hrc login portal</a>
+											<a class="badge badge-light" href="/army-eo-complaint.html">army eo complaint</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website gives you hints for viewing the highest quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/2e/5a/df2e5a06255dcd68a908b91abaa1af0f.jpg" data-lightbox="roadtrip" data-title="Roper 10 Fighter Jets Air Show Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/2e/5a/df2e5a06255dcd68a908b91abaa1af0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYeWXxI7FAOhh86fiaBKA0l_-TdvDCh_uig';" alt="Roper 10 Fighter Jets Air Show Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper 10 Fighter Jets Air Show Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/19/13/8919130a4c618cd80ce737512a0ce914.jpg" data-lightbox="roadtrip" data-title="Roper 93 Usaf Fighter Jets Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/19/13/8919130a4c618cd80ce737512a0ce914.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZph1r5wHvA90dhM1BHA0stXejv1lWueoHNw';" alt="Roper 93 Usaf Fighter Jets Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper 93 Usaf Fighter Jets Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/ec/66/24ec669bf4c30dc24c8cf371e02fbe35.jpg" data-lightbox="roadtrip" data-title="Roper Sees High Low Mix For Hypersonic Missiles Air Force Magazine Lockheed Air Force Glide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/ec/66/24ec669bf4c30dc24c8cf371e02fbe35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCsNSXrJsmrCtyMuNWjopdz81Dq_JLrLUi2g';" alt="Roper Sees High Low Mix For Hypersonic Missiles Air Force Magazine Lockheed Air Force Glide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper Sees High Low Mix For Hypersonic Missiles Air Force Magazine Lockheed Air Force Glide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/0c/dc/f70cdc20c8880635d6b2c7339235b5d0.jpg" data-lightbox="roadtrip" data-title="Roper Roper Fighter Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/0c/dc/f70cdc20c8880635d6b2c7339235b5d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWk352Kr1lsdpE3U61MZ5TqZwvNcGdfuUtQQ';" alt="Roper Roper Fighter Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper Roper Fighter Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/b3/42/e2b3426e97aabe1f14a5a0e1f99adc48.jpg" data-lightbox="roadtrip" data-title="Roper In Action Fighter Jets Action Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/b3/42/e2b3426e97aabe1f14a5a0e1f99adc48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1ghb5lbqh-l1v_aH5thgvbPAD7zQU-UATA';" alt="Roper In Action Fighter Jets Action Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper In Action Fighter Jets Action Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/fe/55/59fe556ef98d3e671c40aeb971ce4641.jpg" data-lightbox="roadtrip" data-title="Roper 04 Aviation Aircraft Experimental Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/fe/55/59fe556ef98d3e671c40aeb971ce4641.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQONkaDDwOq8oi8ikcpEMfFV_wA4_I7WIzQ';" alt="Roper 04 Aviation Aircraft Experimental Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roper 04 Aviation Aircraft Experimental Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/71/7e/24/717e2470888d2b8f327ca269e3876a30.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQONkaDDwOq8oi8ikcpEMfFV_wA4_I7WIzQ';" alt="Roper 04 Aviation Aircraft Experimental Aircraft">
+										<div class="card-body">
+						<h3 class="h5"><b>In April Will Roper then the Air Forces top acquisition official told reporters that an agreement with Boeing for a new and improved KC-46 vision system could pave the way for autonomous.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force roper</strong>. 
+								
+																	Additive and advanced manufacturing has been going like gangbusters across the Air Force and Space Force printing thousands of parts for airplanes Air Force acquisition head Will Roper said. 
+																	The addition of 4K high-definition cameras modern processors and LiDAR light detecting and ranging sensors would help the new system accumulate much of the data necessary for a. 
+																	Roper has been one of the programs biggest boosters. 
+																	By Pat Host. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	20 is to ensure Air Force leaders sign off on an ABMS acquisition strategy. 
+																	Air Force acquisition chief Will Roper is trying to build the case for frequent spiral development of the Digital Century Series DCS of aircraftamong them the Next-Generation Air Dominance NGAD fighterin preparation for the release of the fiscal 2022 budget in the first quarter of next year. 
+																	Is an American string theorist and foreign policy strategist who served as the 13th Assistant Secretary of the Air Force for Acquisition Technology and Logistics overseeing procurement for both the Air Force and later the Space Force from 2018 to 2021. 
+																	Will Roper is the Assistant Secretary of the Air Force for Acquisition Technology and Logistics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He pointed to Chinese development to counter US. 
+																	Air Force acquisition chief Will Roper about a possible role in the new administration but Roper is so far planning to leave his position before Inauguration Day on Jan. 
+																	Defense strategy as it was to Chinas Roper said. 
+																	The world is changing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Air Forces Roper views supersonic transportation as services next Prime technology. 
+																	Will Roper assistant secretary of the Air Force for acquisition technology and logistics at the Air Force Associations 2019 Air Space and Cyber Conference in National Harbor Sept. 
+																	In an exclusive Jan. 
+																	The US Air Forces USAFs outgoing acquisition chief has laid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rebutting doubters that the Air Force is on the cusp of a new digital revolution service acquisition chief Will Roper revealed at AFAs September virtual Air Space Cyber Conference that a secret prototype of USAFs next fighterdesigned and built using the digital thread methodis already flying. 
+																	The family of systems is the Air Forces technical contribution to the Joint All Domain Command and Control JADC2 concept where all networks are linked data is ubiquitously shared and a military internet of things could be controlled by iPad-wielding generals. 
+																	As the Air Forces Service Acquisition Executive Dr. 
+																	Will Roper assistant secretary for acquisition technology and logistics at the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Before taking office he served within the Department of Defense as founder and director of the Strategic Capabilities. 
+																	In April Will Roper then the Air Forces top acquisition official told reporters that an agreement with Boeing for a new and improved KC-46 vision system could pave the way for autonomous aerial refueling. 
+																	Air Force acquisition chief Will Roper Air Force Photo The transition team of President-elect Joe Biden has reached out to US. 
+																	The Assistant Secretary of the Air Force for Acquisition position was created in 1987 by National Security Decision Directive 219 following recommendations from President Reagans Blue Ribbon Commission on Defense Management. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force and a three-time Wash100 Award winner said he believes the service must hack the federal procurement. 
+																	Roper is responsible for and oversees Air Force research development and acquisition activities totaling an annual budget in excess of 60 billion for more than 550 acquisition programs. 
+																	Defense News reported in December that the Biden administration is. 
+																	Hypersonic capabilities will give the Air Force a valuable stand-off strike option but may not be quite as crucial to US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	19 including Secretary Barbara Barrett and acquisition czar Will Roper are nothing more than normal practice for a. 
+																	The US Air Force USAF needs to explain more clearly to lawmakers how the service will benefit from technologies such as digital engineering to accomplish its modernisation goals said Will Roper. 
+																	The resignations of five top Air Force officials on Jan. 
+																	Will Roper assistant secretary of the Air Force for acquisition technology and logistics is also expected to step down. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To become a more competitive acquisition system the Air Force needs to be aware of trends in technology Roper said. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/c8/dc/85c8dcefecf7a92aa315c482fab2f91a.jpg" data-lightbox="roadtrip" data-title="Us Air Force Northrop T 38a Talon 65 10342 Us Air Force Fighter Aircraft Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/c8/dc/85c8dcefecf7a92aa315c482fab2f91a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyl1GXaj-SpfSU_00pDFnMc1nP1HECZYER4w';" alt="Us Air Force Northrop T 38a Talon 65 10342 Us Air Force Fighter Aircraft Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Northrop T 38a Talon 65 10342 Us Air Force Fighter Aircraft Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/eb/a7/d9eba78deac73edc8377ce8b736f0d6c.jpg" data-lightbox="roadtrip" data-title="Us Air Force Northrop T 38a Talon 65 10342 Air Force Us Air Force Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/eb/a7/d9eba78deac73edc8377ce8b736f0d6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfHozMLJDrGCs3XSSWLK-keXmWfn2Ayit6g';" alt="Us Air Force Northrop T 38a Talon 65 10342 Air Force Us Air Force Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Northrop T 38a Talon 65 10342 Air Force Us Air Force Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/f6/22/b7f622a5746eb702e05aee2ad1249f7e.jpg" data-lightbox="roadtrip" data-title="U S Air Force Capt A J Roper 18th Aggressors Squadron F 16 Pilot Performs A Walk Round Inspection Of An F 16 Fighting Falcon May 16 2014 Eielson Air For">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/f6/22/b7f622a5746eb702e05aee2ad1249f7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpqfjgc2JHIV1ZB4uFu_f-Xk_adx9ArQF1A';" alt="U S Air Force Capt A J Roper 18th Aggressors Squadron F 16 Pilot Performs A Walk Round Inspection Of An F 16 Fighting Falcon May 16 2014 Eielson Air For">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Air Force Capt A J Roper 18th Aggressors Squadron F 16 Pilot Performs A Walk Round Inspection Of An F 16 Fighting Falcon May 16 2014 Eielson Air For</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/aa/64/5eaa645c115599d66099e22ca1df04a4.jpg" data-lightbox="roadtrip" data-title="See This Instagram Photo By Nonstopaviation 213 Likes Swedish Air Force Air Force Swedish Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/aa/64/5eaa645c115599d66099e22ca1df04a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLa9FJYSd6WvR85KDLo7-XELhlAA6PqMUR5Q';" alt="See This Instagram Photo By Nonstopaviation 213 Likes Swedish Air Force Air Force Swedish Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">See This Instagram Photo By Nonstopaviation 213 Likes Swedish Air Force Air Force Swedish Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/b6/e8/4db6e89312c1c266707a6d1a6aac032a.jpg" data-lightbox="roadtrip" data-title="Pin On Militarysalaryempoymentcontracts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/b6/e8/4db6e89312c1c266707a6d1a6aac032a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0hmkfBVh89L8CrbCpg956F5-LoSguJ6jzEA';" alt="Pin On Militarysalaryempoymentcontracts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Militarysalaryempoymentcontracts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/c2/d5/d5c2d57e500f3d1b0355141759970d79.jpg" data-lightbox="roadtrip" data-title="Pin By Janic A Roper On Outtfis In 2020 White Nike Shoes Nike Air Shoes Custom Nike Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/c2/d5/d5c2d57e500f3d1b0355141759970d79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXccR4o3gZQMmREXV4Rp6gQzCVjeiUibJOw';" alt="Pin By Janic A Roper On Outtfis In 2020 White Nike Shoes Nike Air Shoes Custom Nike Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Janic A Roper On Outtfis In 2020 White Nike Shoes Nike Air Shoes Custom Nike Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/c3/1f/dcc31fa01e7d0fe3d9edb659ae7bd934.jpg" data-lightbox="roadtrip" data-title="Pin On Flight">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/c3/1f/dcc31fa01e7d0fe3d9edb659ae7bd934.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaaGBmpSOhKQcn6m9YMfJ4DuGomA9bunOi5g';" alt="Pin On Flight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Flight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/23/a4/af23a43ed577a794917537a92722d9e6.jpg" data-lightbox="roadtrip" data-title="Pin By Malaya Roper On Tenis Tacones Botas Favoritos In 2020 White Nike Shoes Nike Air Shoes Butterfly Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/23/a4/af23a43ed577a794917537a92722d9e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ERhlkynX2JcmA7-wurVkuo2fut5lJ9O1OQ';" alt="Pin By Malaya Roper On Tenis Tacones Botas Favoritos In 2020 White Nike Shoes Nike Air Shoes Butterfly Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Malaya Roper On Tenis Tacones Botas Favoritos In 2020 White Nike Shoes Nike Air Shoes Butterfly Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/20/7e/84207ea820d6aaed691e3de483de04e6.jpg" data-lightbox="roadtrip" data-title="Pin On F 15 Eagle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/20/7e/84207ea820d6aaed691e3de483de04e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xFfWawf4c12DCOCYpWSnz3S3uhlbNMI6Cg';" alt="Pin On F 15 Eagle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On F 15 Eagle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/7e/24/717e2470888d2b8f327ca269e3876a30.png" data-lightbox="roadtrip" data-title="See Russian Fighters Get Very Close To Us Recon Plane Russian Fighter Non Commissioned Officer Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/7e/24/717e2470888d2b8f327ca269e3876a30.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7k63X4RBWR53nctyTlIhpR_z0LxAGf7Bgxw';" alt="See Russian Fighters Get Very Close To Us Recon Plane Russian Fighter Non Commissioned Officer Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">See Russian Fighters Get Very Close To Us Recon Plane Russian Fighter Non Commissioned Officer Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/2a/13/b42a1307295e89cf6bab18bb8666c61a.jpg" data-lightbox="roadtrip" data-title="Pin On Futuristic Weapons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/2a/13/b42a1307295e89cf6bab18bb8666c61a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV0GOUalQXonCQ0dTaFwpA16OcbzlurN5Veg';" alt="Pin On Futuristic Weapons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Futuristic Weapons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/2e/bc/982ebcd21be8c05f5af266e0cc335a6d.jpg" data-lightbox="roadtrip" data-title="Pin By Megan Roper On Nike Cheetah Print Shoes Cheetah Shoes Sneakers Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/2e/bc/982ebcd21be8c05f5af266e0cc335a6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-NMsesEbsTTsmUUL3_MNmpGYuQfc1Xxnew';" alt="Pin By Megan Roper On Nike Cheetah Print Shoes Cheetah Shoes Sneakers Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Megan Roper On Nike Cheetah Print Shoes Cheetah Shoes Sneakers Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/49/eb/af49eb83d3cf141b860a3eb2f1701098.jpg" data-lightbox="roadtrip" data-title="Saab Jas 39c Gripen Of The Hungarian Air Force By Daniel K Aviation Photography Daniel K Com Fighter Aircraft Aviation Photography Military Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/49/eb/af49eb83d3cf141b860a3eb2f1701098.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tuMNK_eyNMTVortUJA3LJ8W4i7L2fwMImw';" alt="Saab Jas 39c Gripen Of The Hungarian Air Force By Daniel K Aviation Photography Daniel K Com Fighter Aircraft Aviation Photography Military Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saab Jas 39c Gripen Of The Hungarian Air Force By Daniel K Aviation Photography Daniel K Com Fighter Aircraft Aviation Photography Military Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-spouse-id-card.html">Veterans Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-survivor-benefits.html">Veterans Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/view-military-records-online-free.html">View Military Records Online Free</a></li>
+													<li class="list-group-item"><a href="/virginia-military-spouse-and-dependents-education-program.html">Virginia Military Spouse And Dependents Education Program</a></li>
+													<li class="list-group-item"><a href="/vintage-military-hats-for-sale.html">Vintage Military Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/war-heroes-day-sri-lanka.html">War Heroes Day Sri Lanka</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-canada-archives.html">Veterans Affairs Canada Archives</a></li>
+													<li class="list-group-item"><a href="/vetrecs-archives-gov-veterans-request-home.html">Vetrecs Archives Gov Veterans Request Home</a></li>
+													<li class="list-group-item"><a href="/vetrecsarchivesgovveteran-requesthomeasp.html">Vetrecsarchivesgovveteran Requesthomeasp</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-of-world-war-2.html">Veterans Benefits For Widows Of World War 2</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-dependent-education-benefits.html">Veterans Disability Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/vetrecsarchivesgov-veteran-request.html">Vetrecsarchivesgov Veteran Request</a></li>
+													<li class="list-group-item"><a href="/veterans-national-personnel-records-center.html">Veterans National Personnel Records Center</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-medical-records-department.html">Veterans Affairs Medical Records Department</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-benefits-after-death.html">Veterans Spouse Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-of-vietnam-war.html">Veterans Benefits For Widows Of Vietnam War</a></li>
+													<li class="list-group-item"><a href="/veterans-childrens-benefits-for-college-california.html">Veterans Childrens Benefits For College California</a></li>
+													<li class="list-group-item"><a href="/war-eternal-heroes.html">War Eternal Heroes</a></li>
+													<li class="list-group-item"><a href="/vetrecs-archives-veteran-request.html">Vetrecs Archives Veteran Request</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-and-divorce.html">Veterans Benefits And Divorce</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

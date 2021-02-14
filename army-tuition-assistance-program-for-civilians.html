@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Tuition Assistance Program For Civilians - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Tuition Assistance Program For Civilians",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c8/e1/2d/c8e12d834f8a388edbfbd3ce5e0a0421.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+tuition+assistance+program+for+civilians",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Tuition Assistance Program For Civilians</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">ATAP provides tuition assistance to eligible Army Acquisition Workforce AAW civilians and Military Occupational Specialty MOS 51 Contracting 51C Noncommissioned officers NCOs. The Military Tuition Assistance MilTA Program provides financial assistance for voluntary off-duty civilian education programs in support of an Airmans professional and personal self-development goals. Using the GI Bill while serving is called the Top Up program. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-reserve-benefits-website.html">army reserve benefits website</a>
+											<a class="badge badge-primary" href="/army-reserve-medical-support-units.html">army reserve medical support units</a>
+											<a class="badge badge-info" href="/army-pha-online-link.html">army pha online link</a>
+											<a class="badge badge-success" href="/army-pha-online-training.html">army pha online training</a>
+											<a class="badge badge-primary" href="/army-shop-hrvatska-ozaljska-ulica-zagreb.html">army shop hrvatska ozaljska ulica zagreb</a>
+											<a class="badge badge-secondary" href="/army-quotes-images-in-hindi.html">army quotes images in hindi</a>
+											<a class="badge badge-warning" href="/army-reserve-benefits-australia.html">army reserve benefits australia</a>
+											<a class="badge badge-light" href="/army-pha-online-assessment.html">army pha online assessment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/99/0b/60990b9d8a5e0c2f0908a80d470ff944.jpg" data-lightbox="roadtrip" data-title="Urgent Budget Sequester Stops Tuition Assistance For Army Marines Tuition Assistance Military Spouse Appreciation Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/99/0b/60990b9d8a5e0c2f0908a80d470ff944.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-pESvvwifyn0F2Wz96JFmg66ru1TsWTntA';" alt="Urgent Budget Sequester Stops Tuition Assistance For Army Marines Tuition Assistance Military Spouse Appreciation Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Urgent Budget Sequester Stops Tuition Assistance For Army Marines Tuition Assistance Military Spouse Appreciation Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" data-lightbox="roadtrip" data-title="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Hw0GxaTPloApJvD-Czf_lHOAjda3Qu-yqA';" alt="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/ca/51/dcca51372fa928f579fd1313c7ba6a64.jpg" data-lightbox="roadtrip" data-title="Image Result For Military Facts Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/ca/51/dcca51372fa928f579fd1313c7ba6a64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUgFQDQs0o6DYD9C7-YEMf2iooc7Mlv-br0A';" alt="Image Result For Military Facts Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Military Facts Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/2e/27/d32e27c54146f863a468b2b2ef5fa514.png" data-lightbox="roadtrip" data-title="Goarmyed Android Apps On Google Play Tuition Assistance Education System School Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/2e/27/d32e27c54146f863a468b2b2ef5fa514.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWF2lO-j2_HuXlivOwgOL_TUFdwRCUR0cTGw';" alt="Goarmyed Android Apps On Google Play Tuition Assistance Education System School Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goarmyed Android Apps On Google Play Tuition Assistance Education System School Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/01/a5/ee01a5381f2295c53dc031adf961f582.png" data-lightbox="roadtrip" data-title="Pin On Military Transition Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/01/a5/ee01a5381f2295c53dc031adf961f582.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5NYUpmUQILYVvsqXCkGOXmsslrI4YOoCIQ';" alt="Pin On Military Transition Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Transition Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/26/8b/30268b6e567e7a746374efd613db269d.jpg" data-lightbox="roadtrip" data-title="Returning From War Is The Start Of Another Battle American Soldiers Military Heroes Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/26/8b/30268b6e567e7a746374efd613db269d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagaJtiEwkF8JTEtLlrI7-quNS7hVYcKCMNg';" alt="Returning From War Is The Start Of Another Battle American Soldiers Military Heroes Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Returning From War Is The Start Of Another Battle American Soldiers Military Heroes Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ee/01/a5/ee01a5381f2295c53dc031adf961f582.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagaJtiEwkF8JTEtLlrI7-quNS7hVYcKCMNg';" alt="Returning From War Is The Start Of Another Battle American Soldiers Military Heroes Afghanistan War">
+										<div class="card-body">
+						<h3 class="h5"><b>You can supplement Military Tuition Assistance with the GI Bill but it is not mandatory and these benefits are separate.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army tuition assistance program for civilians</strong>. 
+								
+																	The Reserve Education Assistance Program REAP offers nearly 40000 in education benefits and tuition assistance for Army Reserve Soldiers who served on active duty at least 90 consecutive days on or after Sept. 
+																	Acquisition Tuition Assistance Program ATAP The tuition assistance program primarily supports the educational requirements in the Defense Acquisition Workforce Improvement Act DAWIA for. 
+																	30 Tuition assistance versus the Department of Veterans Affairs education benefits. 
+																	Army Civilian Education and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It supports Civilian voluntary education coursework to Associate Bachelor Master inclJuris Doctorate and doctorate levels. 
+																	Announce the Army Acquisition Tuition Assistance Program ATAP education opportunity. 
+																	External Sources of Funding. 
+																	Military Tuition Assistance is not a loan and you will not need to repay it as long as class completion requirements are met. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army civilians who would like to submit their TA request through the GoArmyEd portal may take the following steps. 
+																	GoArmyEd will be deactivated on Feb. 
+																	Enroll in your courses through Liberty University. 
+																	Fund Your Education According to the United States Census college graduates make 23000 more per year than high school graduates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Section 2007 and implemented by Department of Defense Instruction 132225 Voluntary Education Programs. 
+																	CTAP is designed to function in much the same way a Military Tuition Assistance does. 
+																	The coursework must be taken at an accredited College or University and approved to accept TA. 
+																	GoArmyEd the 247 system supporting the Armys tuition assistance TA program for Soldiers scholarship payments for Cadets and professional development funds for DA Civilians and Apprentices will soon transition to a new system ArmyIgnitED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Tuition Assistance Program may fund up to 100 of your college tuition and certain fees with the following limits Not to exceed 250 per semester credit hour or 166 per quarter credit hour Not to exceed 4500 per fiscal year Oct. 
+																	Air Force is expanding its 2017 civilian tuition assistance program CTAP and all permanent full-time appropriated fund employees including those in wage-grade positions. 
+																	The Tuition Assistance TA Program provides financial assistance for voluntary off-duty civilian education programs in support of a Soldiers professional and personal self-development goals. 
+																	The Army DACM Office is the sponsor of the ATAP and will fund the cost of tuition laboratory and technology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Armed Forces Tuition Assistance TA Program is a benefit paid to eligible members of the Army Navy Marines Air Force and Coast Guard. 
+																	Log into the GoArmyEd Portal. 
+																	Congress has authorized each service to pay up to. 
+																	1 2001 for a contingency operation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Acquisition Tuition Assistance Program ATAP provides tuition assistance to eligible Army Acquisition workforce AAW civilians and Military Occupational Specialty MOS 51 Contracting. 
+																	Military Tuition Assistance Program Air Forces Personnel Center The Air Force currently pays 100 percent of tuition up to 250 per semester hour and 166 quarter hour 4500 annually in off-duty courses with accredited schools who have signed the Department of Defense Memorandum of Understanding in pursuit of approved degree programs. 
+																	GoArmyEd Policy and Army Regulation 621-5. 
+																	REAP benefits cant be used with other Veterans Affairs education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MilTA is authorized under USC. 
+																	ArmyIgnitED is scheduled to be fully operational March 8. 
+																	The Armys Tuition Assistance Program. 
+																	The Tuition Assistance TA program provides financial assistance for voluntary off-duty education programs in support of a Soldiers professional and personal self-development goals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Given the benefits of a degree youre smart to take advantage of the tuition help the Army offers. 
+																	TA is available for courses that are offered in the classroom or by distance learning and is part of an approved academic degree or certificate program. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZveMn_QuNCfg85NzMJ4zVKPU9LUP470v1A';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/29/52/b929528cf60d231ed79e763da0e0798c.jpg" data-lightbox="roadtrip" data-title="Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/29/52/b929528cf60d231ed79e763da0e0798c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmz11LbgiDUTTaKvoQGv9pbFgjrIY1BV6KQ';" alt="Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/11/a8/3911a84a3ee3c63744e99bdfd3b1965c.jpg" data-lightbox="roadtrip" data-title="Pin By Jordan Walker On My Favorite Quotes American Soldiers Military Heroes Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/11/a8/3911a84a3ee3c63744e99bdfd3b1965c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyTdBYvBRDjBqbW8mFOjnqN1mQzk4O3-3t7Q';" alt="Pin By Jordan Walker On My Favorite Quotes American Soldiers Military Heroes Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jordan Walker On My Favorite Quotes American Soldiers Military Heroes Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/5e/63/6d5e631132d1a01d9fda2aff9845d365.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/5e/63/6d5e631132d1a01d9fda2aff9845d365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHqUz_RuYXH7d5y9jPC3A6y4253nNnT6euw';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/27/ee/ee27eef58b6e294df64add11b8404cbc.jpg" data-lightbox="roadtrip" data-title="Medical Care Is Expensive In Civilian Life But In The Army It Is All Covered Both Medical And Dental Proce Army Benefits Joining The Army Dental Procedures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/27/ee/ee27eef58b6e294df64add11b8404cbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HCwZQsZBz69_e9c4OuQZ_zAFthOMEPLrOQ';" alt="Medical Care Is Expensive In Civilian Life But In The Army It Is All Covered Both Medical And Dental Proce Army Benefits Joining The Army Dental Procedures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Care Is Expensive In Civilian Life But In The Army It Is All Covered Both Medical And Dental Proce Army Benefits Joining The Army Dental Procedures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/e1/2d/c8e12d834f8a388edbfbd3ce5e0a0421.jpg" data-lightbox="roadtrip" data-title="The Army Tuition Assistance Program Better Known As Ta Is Available To Any Member Of The Army Arm Tuition Assistance Military Scholarships Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/e1/2d/c8e12d834f8a388edbfbd3ce5e0a0421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3YDUsnWH_zgzR7Z31FSL4SwdJrcKX-msj7Q';" alt="The Army Tuition Assistance Program Better Known As Ta Is Available To Any Member Of The Army Arm Tuition Assistance Military Scholarships Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Tuition Assistance Program Better Known As Ta Is Available To Any Member Of The Army Arm Tuition Assistance Military Scholarships Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" data-lightbox="roadtrip" data-title="Military Education Benefits Army College Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_YHkyM3_03Ib_Zvuxxjm46_34p26iLXF3A';" alt="Military Education Benefits Army College Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Education Benefits Army College Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/7c/8d/237c8dbc2565f05387b93f38f2d9ca0a.jpg" data-lightbox="roadtrip" data-title="Pin On Radical Rational Americans Defending Individual Choice And Liberty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/7c/8d/237c8dbc2565f05387b93f38f2d9ca0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh0bO6CLEBpF8sum59mPiqKV4M8bC0_4EpqA';" alt="Pin On Radical Rational Americans Defending Individual Choice And Liberty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Radical Rational Americans Defending Individual Choice And Liberty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/b4/c4/d8b4c4e4602863e6de3bae8fd33a389c.jpg" data-lightbox="roadtrip" data-title="Outofregs Archives Goodbye Tuition Assistance Tuition Assistance Joining The Military Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/b4/c4/d8b4c4e4602863e6de3bae8fd33a389c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4u29AUlVauQgizMnfbkRppR5QF8jurlWocw';" alt="Outofregs Archives Goodbye Tuition Assistance Tuition Assistance Joining The Military Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Outofregs Archives Goodbye Tuition Assistance Tuition Assistance Joining The Military Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/e7/90/95e79048711629c23e5819e60561cea8.png" data-lightbox="roadtrip" data-title="Goarmyed Android Apps On Google Play Technology Integration Tuition Assistance Education System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/e7/90/95e79048711629c23e5819e60561cea8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9eu-04Rwj2zUPA-zfJgxIiLpqLvqyWPo-A';" alt="Goarmyed Android Apps On Google Play Technology Integration Tuition Assistance Education System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goarmyed Android Apps On Google Play Technology Integration Tuition Assistance Education System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/47/08/06/4708065cc8d791213223c8ef8f7d6554.jpg" data-lightbox="roadtrip" data-title="The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/47/08/06/4708065cc8d791213223c8ef8f7d6554.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mXXe_OTNqO9wYa5gpTVaQjol5NKO5kElHw';" alt="The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/8a/8e/828a8ed0e3e9f42a189ca796361bb6d1.jpg" data-lightbox="roadtrip" data-title="Pin On Support Our Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/8a/8e/828a8ed0e3e9f42a189ca796361bb6d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrVksfduGR3RDzQB-WkPFWxUDz8QeN1TuQA';" alt="Pin On Support Our Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Support Our Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/ac/a1/91aca1d475960d0e0247ded4607b2328.jpg" data-lightbox="roadtrip" data-title="Pin On Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/ac/a1/91aca1d475960d0e0247ded4607b2328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dIOKtAbixPHaml0BWIObo-io9H8X8k42vg';" alt="Pin On Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/age-for-dependent-military-id-card.html">Age For Dependent Military Id Card</a></li>
+													<li class="list-group-item"><a href="/air-force-academy-hard-to-get-into.html">Air Force Academy Hard To Get Into</a></li>
+													<li class="list-group-item"><a href="/accredited-online-colleges-for-military-spouses.html">Accredited Online Colleges For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/air-force-academy-chapel-hours.html">Air Force Academy Chapel Hours</a></li>
+													<li class="list-group-item"><a href="/air-force-domestic-abuse-victim-advocate.html">Air Force Domestic Abuse Victim Advocate</a></li>
+													<li class="list-group-item"><a href="/42a-mos-requirements.html">42a Mos Requirements</a></li>
+													<li class="list-group-item"><a href="/42a-human-resources-specialist-army.html">42a Human Resources Specialist Army</a></li>
+													<li class="list-group-item"><a href="/air-force-boku-no-hero.html">Air Force Boku No Hero</a></li>
+													<li class="list-group-item"><a href="/air-force-academy-hours-of-operation.html">Air Force Academy Hours Of Operation</a></li>
+													<li class="list-group-item"><a href="/active-duty-military-spouse-scholarship.html">Active Duty Military Spouse Scholarship</a></li>
+													<li class="list-group-item"><a href="/advantages-of-having-a-military-draft.html">Advantages Of Having A Military Draft</a></li>
+													<li class="list-group-item"><a href="/air-force-blue-hero.html">Air Force Blue Hero</a></li>
+													<li class="list-group-item"><a href="/air-force-enlisted-pilot-program.html">Air Force Enlisted Pilot Program</a></li>
+													<li class="list-group-item"><a href="/24-hour-military-time-sundial.html">24 Hour Military Time Sundial</a></li>
+													<li class="list-group-item"><a href="/42a-mos-promotion-points.html">42a Mos Promotion Points</a></li>
+													<li class="list-group-item"><a href="/air-force-1-hrvatska.html">Air Force 1 Hrvatska</a></li>
+													<li class="list-group-item"><a href="/42a-human-resources-specialist-army-national-guard.html">42a Human Resources Specialist Army National Guard</a></li>
+													<li class="list-group-item"><a href="/air-force-careers-for-officers.html">Air Force Careers For Officers</a></li>
+													<li class="list-group-item"><a href="/air-force-1-blue-hero.html">Air Force 1 Blue Hero</a></li>
+													<li class="list-group-item"><a href="/academic-eligibility-for-ncaa-division-1.html">Academic Eligibility For Ncaa Division 1</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

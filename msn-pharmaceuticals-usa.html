@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Pharmaceuticals Usa - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Pharmaceuticals Usa",
+  "datePublished": "2021-02-14",
+  "image": "http://www.msnlabs.com/img/research.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+pharmaceuticals+usa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Pharmaceuticals Usa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We Are Reputable Canadian Online Pharmacy. DB Hoovers provides sales leads and sales intelligence data on over 120 million. Jazz will acquire GW for 220 per. <br>				
+			</p>
+										<a class="badge badge-dark" href="/get-new-military-dependent-id-card.html">get new military dependent id card</a>
+											<a class="badge badge-primary" href="/hari-army-kapan.html">hari army kapan</a>
+											<a class="badge badge-light" href="/gifts-for-spouse-while-deployed.html">gifts for spouse while deployed</a>
+											<a class="badge badge-success" href="/h4-dependent-visa-age-limit.html">h4 dependent visa age limit</a>
+											<a class="badge badge-info" href="/full-dress-military-hat-crossword-clue.html">full dress military hat crossword clue</a>
+											<a class="badge badge-dark" href="/hampton-va-medical-records-mailed-to-wrong-person.html">hampton va medical records mailed to wrong person</a>
+											<a class="badge badge-light" href="/grants-for-college-for-military-members.html">grants for college for military members</a>
+											<a class="badge badge-secondary" href="/gcss-army-equipment-status-report-cheat-sheet.html">gcss army equipment status report cheat sheet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/global/msn-usa.jpg" data-lightbox="roadtrip" data-title="Msn In Usa Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/global/msn-usa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn6fNsaY3cRZ5hXBgyXdl37EWkklqrqVdcXA';" alt="Msn In Usa Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn In Usa Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnpi.com/images/slider/slider-2.jpg" data-lightbox="roadtrip" data-title="Msn Pharmaceuticals Inc An Msn Company Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnpi.com/images/slider/slider-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXrvm_TfAZTVwxA2URm8GLTZD18nMTL2TzA';" alt="Msn Pharmaceuticals Inc An Msn Company Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Pharmaceuticals Inc An Msn Company Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/who-we-are.jpg" data-lightbox="roadtrip" data-title="Who We Are Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/who-we-are.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiXYOo7CmjmEiVJOdcSFIuI-FZqRqvvjyIyA';" alt="Who We Are Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who We Are Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C4E1BAQGAODCvql_s9A/company-background_10000/0/1569613333156?e=2159024400&amp;v=beta&amp;t=v3QVgRaswjfTgFPN7Yh1lNidVW5eia_FN_VDbiON0aM" data-lightbox="roadtrip" data-title="Msn Pharmaceuticals Inc Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C4E1BAQGAODCvql_s9A/company-background_10000/0/1569613333156?e=2159024400&amp;v=beta&amp;t=v3QVgRaswjfTgFPN7Yh1lNidVW5eia_FN_VDbiON0aM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZpYoknSj-9sa22kCjOPqE20J7rJSqlwa3g';" alt="Msn Pharmaceuticals Inc Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Pharmaceuticals Inc Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/careers.jpg" data-lightbox="roadtrip" data-title="Careers Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/careers.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCWxvdXq0uvDkVl6-JZZ4oaJuJ5ZmoGghlg';" alt="Careers Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Careers Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/aa/ae/a6/aaaea67f4f953e019cd9e5ca81fcc1ac.jpg" data-lightbox="roadtrip" data-title="Amoli Organics Urgent Job Openings In Production Qc Adl Departments Pharma Walks Latest Pharma Jobs And Walk In In Job Opening Job Career Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/aa/ae/a6/aaaea67f4f953e019cd9e5ca81fcc1ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0AlH-Grp6xdDOcEEjFh1oHpStrsNj_TkeQ';" alt="Amoli Organics Urgent Job Openings In Production Qc Adl Departments Pharma Walks Latest Pharma Jobs And Walk In In Job Opening Job Career Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amoli Organics Urgent Job Openings In Production Qc Adl Departments Pharma Walks Latest Pharma Jobs And Walk In In Job Opening Job Career Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ee/f6/34/eef6340fd4b2cd8fa750d47a70749c54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0AlH-Grp6xdDOcEEjFh1oHpStrsNj_TkeQ';" alt="Amoli Organics Urgent Job Openings In Production Qc Adl Departments Pharma Walks Latest Pharma Jobs And Walk In In Job Opening Job Career Opportunities">
+										<div class="card-body">
+						<h3 class="h5"><b>Canadian Pharmacies Shipping To Usa.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn pharmaceuticals usa</strong>. 
+								
+																	MSN Labs is a global leader in the development manufacturing of APIs active pharmaceutical ingredients. 
+																	British pharmaceutical firm GW has been sold to US rival Jazz Pharmaceuticals for 72bn 53bn sending shares in the Cambridge-based company soaring. 
+																	Specialized Pharmaceutical Generic development and manufacturing facility based out of Piscataway New Jersey Developing high-quality generic pharmaceutical products MSNPI was established in the year 2014. 
+																	Generic Cialis Viagra Levitra. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adamis Pharmaceuticals Corporation ADMP was a big mover last session as the company saw its shares rise nearly 7 on the day. 
+																	MSN Pharmaceuticals Inc is a US Subsidiary of MSN Laboratories Private Limited Hyderabad India. 
+																	Apply to Nurse Practitioner Clinical Research Coordinator Director of Education and more. 
+																	Read todays top stories news weather sport entertainment lifestyle money cars and more all expertly curated from across top UK and global news providers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our supply of APIs across the globe has made us a successful business partner and being recognized as a true global player in the pharmaceutical sector. 
+																	MSN PI is a fully owned subsidiary of the MSN group of companies and is specialized in contract development and manufacturing of high-quality generic pharmaceutical products. 
+																	MSN Pharmaceuticals Inc is a US Subsidiary of MSN Laboratories Private Limited Hyderabad India. 
+																	Founded in 2003 with a mission to make health care affordable this Hyderabad-based venture has nine API and five finished dosage facilities established across Hyderabad USA and Myanmar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The company is one of the leading holders of active DMFs Drug Master Files and supplies a majority of US based generic pharma companies with API. 
+																	One of the fastest growing pharmaceutical companies in the country MSN Laboratories has nine API facilities including oncology. 
+																	One of the fastest growing pharmaceutical companies in the country MSN Laboratories has nine API facilities including ones for Cytotoxics and Prostaglandines. 
+																	Is located in Piscataway NJ United States and is part of the Pharmaceutical Manufacturing Industry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Novadoz Pharmaceuticals 20 Duke Road Piscataway Edison NJ 08837 Get Directions Visit website. 
+																	With a vision of becoming a significant player in US Generics MSN is establishing a 203000 SFT. 
+																	MSN Labs Americas SAS. 
+																	Finished Dosage form facility was built in 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About Us MSN Group is the fastest growing research-based pharmaceutical company based out of India. 
+																	Your customizable and curated collection of the best in trusted news plus coverage of sports entertainment money weather travel health and lifestyle combined with OutlookHotmail Facebook. 
+																	There are 36 companies in the Msn Pharmaceuticals Inc. 
+																	MSN Pharmaceuticals Inc is a US subsidiary of MSN Laboratories located in New Jersey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MGC Pharma is a European-based bio-pharma company specialising in the. 
+																	Has 6 total employees across all of its locations and generates 962071 in sales USD. 
+																	Founded in 2003 the Hyderabad based MSN Labs is one of the fastest growing research-based pharmaceutical. 
+																	Medicinal cannabis firm MGC Pharmaceuticals has announced plans to float on the main market of the London Stock Exchange. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reviews from MSN PHARMACEUTICALS INC employees about MSN PHARMACEUTICALS INC culture salaries benefits work-life balance management job security and more. 
+																	The move came on solid volume too with far more shares changing hands. 
+																	Established in 2014 MSN Pharmaceuticals Inc MSN PI is a state-of-the-art finished dosage manufacturing facility based out of Piscataway New Jersey. 
+																	20 Duke Road Piscataway Edison NJ 08854-374USA Get Directions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With a vision of becoming a significant player in US Generics MSN is establishing a 203000 SFT. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/90/0d/78900d1a50bd1924442ce78f93e61148.jpg" data-lightbox="roadtrip" data-title="Anthem Biosciences Urgent Job Openings For Scientist Sr Scientist For Strain Development In Yeast Molecular Biology P Molecular Biology Molecular Scientist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/90/0d/78900d1a50bd1924442ce78f93e61148.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0agZuyF3DMy6ultNLP1pa1qybDsadDs_Wg';" alt="Anthem Biosciences Urgent Job Openings For Scientist Sr Scientist For Strain Development In Yeast Molecular Biology P Molecular Biology Molecular Scientist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anthem Biosciences Urgent Job Openings For Scientist Sr Scientist For Strain Development In Yeast Molecular Biology P Molecular Biology Molecular Scientist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cf/0c/69/cf0c69e1f39196648de354623d7eab71.jpg" data-lightbox="roadtrip" data-title="Pharma Wisdom Advantmed Campus Interview For B Pharm D Pharm Campus Interview Medical Coding Jobs Coding Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cf/0c/69/cf0c69e1f39196648de354623d7eab71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNElEYDDLMTL_OwCiCEPc0UieyvkZF7j9mPQ';" alt="Pharma Wisdom Advantmed Campus Interview For B Pharm D Pharm Campus Interview Medical Coding Jobs Coding Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pharma Wisdom Advantmed Campus Interview For B Pharm D Pharm Campus Interview Medical Coding Jobs Coding Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.msnlabs.com/img/research.jpg" data-lightbox="roadtrip" data-title="Employee Portal Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://www.msnlabs.com/img/research.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5q07lxpTFtZDGuWnruf4Wqp58nPhP0ZnjGg';" alt="Employee Portal Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employee Portal Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/news.jpg" data-lightbox="roadtrip" data-title="News Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/news.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1eGDufvfr2SlywZSGByjeMIIjns78hW7yw';" alt="News Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/api-development.jpg" data-lightbox="roadtrip" data-title="Api Development Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/api-development.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsBBe2zqXumHNfvP_BGjf8E5Bc3HRYGnICw';" alt="Api Development Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Api Development Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/1f/18/1e1f186983e3736c080c9cf654291e20.jpg" data-lightbox="roadtrip" data-title="Pin On Medications For Armed Forces And Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/1f/18/1e1f186983e3736c080c9cf654291e20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNoSVzuNPFuCaFXIKU7cWj0bkwRgCmMmjY1A';" alt="Pin On Medications For Armed Forces And Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Medications For Armed Forces And Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/f6/34/eef6340fd4b2cd8fa750d47a70749c54.jpg" data-lightbox="roadtrip" data-title="Bio Island Kid 39 S Range Is Specifically Developed To Cater To Kids 39 Nutrition Needs As They Grow Artwor Kids Nutrition Nutrition Poster Nutrition Month">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/f6/34/eef6340fd4b2cd8fa750d47a70749c54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR68JI-7mIoyuu0ihpdVXUABQ5b_8z3TdrXbQ';" alt="Bio Island Kid 39 S Range Is Specifically Developed To Cater To Kids 39 Nutrition Needs As They Grow Artwor Kids Nutrition Nutrition Poster Nutrition Month">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bio Island Kid 39 S Range Is Specifically Developed To Cater To Kids 39 Nutrition Needs As They Grow Artwor Kids Nutrition Nutrition Poster Nutrition Month</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://msnlabs.com/img/team/bharath-reddy.jpg" data-lightbox="roadtrip" data-title="Our Leadership Msn Laboratories Leading Pharmaceutical Company">
+											<img class="card-img v-image ads-img " src="http://msnlabs.com/img/team/bharath-reddy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp0GYytLc4VGNY35xoRUexJbDKcuRAHVW7g';" alt="Our Leadership Msn Laboratories Leading Pharmaceutical Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Leadership Msn Laboratories Leading Pharmaceutical Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/32/29/b43229a9d24b27e49eb0d2d8bd7d2ecf.jpg" data-lightbox="roadtrip" data-title="The 15 Most Billionaire Dense Countries Places Around The World Pictures Of The Week Countries To Visit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/32/29/b43229a9d24b27e49eb0d2d8bd7d2ecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmGDW4ozM1T_3zYLqSKlqSd5jez6nPmgH2Gw';" alt="The 15 Most Billionaire Dense Countries Places Around The World Pictures Of The Week Countries To Visit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 15 Most Billionaire Dense Countries Places Around The World Pictures Of The Week Countries To Visit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/cc/03/6ecc03c51f1b5c0138fbbac1efffeed5.jpg" data-lightbox="roadtrip" data-title="Alexandra Raisman Of The U S During Artistic Gymnastics Women S Flr Exercise">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/cc/03/6ecc03c51f1b5c0138fbbac1efffeed5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72or3EYm9-TF9DPpSmHiG_vU1h9zjgXepFQ';" alt="Alexandra Raisman Of The U S During Artistic Gymnastics Women S Flr Exercise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alexandra Raisman Of The U S During Artistic Gymnastics Women S Flr Exercise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/97/82/26978240d077d2ccc9a22bc8fa249a34.jpg" data-lightbox="roadtrip" data-title="Pin On Toxins Pharmaceuticals Basic Drugs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/97/82/26978240d077d2ccc9a22bc8fa249a34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguEDoB27gP10GUhTxXHvWlfRUSfxA5evxpA';" alt="Pin On Toxins Pharmaceuticals Basic Drugs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Toxins Pharmaceuticals Basic Drugs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/8b/74/778b74f5ceac7da6fb81a3c2e91bb591.jpg" data-lightbox="roadtrip" data-title="Old Office Building In Boston Transformed Into A Grand Multi Family Residence Wall Decor Bedroom Building Wall Decor Living Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/8b/74/778b74f5ceac7da6fb81a3c2e91bb591.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqljl5gS4aIK8_B53z4iY6rSNWXoK8lyh6Ng';" alt="Old Office Building In Boston Transformed Into A Grand Multi Family Residence Wall Decor Bedroom Building Wall Decor Living Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old Office Building In Boston Transformed Into A Grand Multi Family Residence Wall Decor Bedroom Building Wall Decor Living Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ZlVW5KWVDFg/mqdefault.jpg" data-lightbox="roadtrip" data-title="Continuing Construction At Msn Laboratories Bancroft Construction Company">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ZlVW5KWVDFg/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWR5247ajFNvVRmH4IavB-E5QxQFJDQKh_-A';" alt="Continuing Construction At Msn Laboratories Bancroft Construction Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Continuing Construction At Msn Laboratories Bancroft Construction Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-affairs-war-records.html">Veterans Affairs War Records</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-center-st-louis-missouri.html">Veterans Administration Records Center St Louis Missouri</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-records-management-center-st-louis-mo.html">Veterans Affairs Records Management Center St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/veterans-national-personnel-records-center.html">Veterans National Personnel Records Center</a></li>
+													<li class="list-group-item"><a href="/visiting-spouse-on-deployment.html">Visiting Spouse On Deployment</a></li>
+													<li class="list-group-item"><a href="/war-heroes-day-sri-lanka.html">War Heroes Day Sri Lanka</a></li>
+													<li class="list-group-item"><a href="/veterans-service-records-page-of-the-national-archives.html">Veterans Service Records Page Of The National Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-benefits-for-assisted-living.html">Veterans Spouse Benefits For Assisted Living</a></li>
+													<li class="list-group-item"><a href="/war-heroes-cheat-codes.html">War Heroes Cheat Codes</a></li>
+													<li class="list-group-item"><a href="/veterans-records-request-status.html">Veterans Records Request Status</a></li>
+													<li class="list-group-item"><a href="/veterans-records-fire-st-louis.html">Veterans Records Fire St Louis</a></li>
+													<li class="list-group-item"><a href="/virginia-civil-war-service-records-of-confederate-soldiers.html">Virginia Civil War Service Records Of Confederate Soldiers</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-immunization-records.html">Veterans Affairs Immunization Records</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-spouses-of-deceased.html">Veterans Benefits For Spouses Of Deceased</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-medical-records-jobs.html">Veterans Affairs Medical Records Jobs</a></li>
+													<li class="list-group-item"><a href="/veterans-records-personal-information-exposed-in-data-breach.html">Veterans Records Personal Information Exposed In Data Breach</a></li>
+													<li class="list-group-item"><a href="/war-animal-heroes.html">War Animal Heroes</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-canada-archives.html">Veterans Affairs Canada Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-medical-and-health-records.html">Veterans Medical And Health Records</a></li>
+													<li class="list-group-item"><a href="/vietnam-veteran-benefits-for-dependents.html">Vietnam Veteran Benefits For Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

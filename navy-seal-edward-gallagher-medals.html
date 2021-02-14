@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Seal Edward Gallagher Medals - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Seal Edward Gallagher Medals",
+  "datePublished": "2021-02-14",
+  "image": "https://nbc25news.com/resources/media/4a077a27-146e-486f-a49e-f9439d15b122-medium16x9_AP19184017362739.jpg?1564610900841",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+seal+edward+gallagher+medals",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Seal Edward Gallagher Medals</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Prosecutors who lost the case against SEAL Eddie Gallagher who I released from solitary. Navy prosecutors were awarded medals for their superb results and expert litigation despite losing their trial against Special Warfare Chief Edward Gallagher a Navy SEAL accused of war crimes. Gallagher born May 29 1979 is a former United States Navy SEAL who came to national attention in the United States after he was charged in September 2018 with ten offenses under the Uniform Code of Military Justice over accusations that he had stabbed to death an injured sedated 17-year-old ISIS prisoner photographing himself with the corpse and sending the photo to friends. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-hats-list.html">military hats list</a>
+											<a class="badge badge-primary" href="/military-health-insurance-for-veterans.html">military health insurance for veterans</a>
+											<a class="badge badge-warning" href="/military-hero-scholarship.html">military hero scholarship</a>
+											<a class="badge badge-danger" href="/military-hero-award-crossword.html">military hero award crossword</a>
+											<a class="badge badge-primary" href="/military-hats-near-me.html">military hats near me</a>
+											<a class="badge badge-dark" href="/military-hats-ww2.html">military hats ww2</a>
+											<a class="badge badge-success" href="/military-health-insurance-echo.html">military health insurance echo</a>
+											<a class="badge badge-warning" href="/military-health-insurance-after-separation.html">military health insurance after separation</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kpbs.media.clients.ellingtoncms.com/img/photos/2019/07/03/AP_19184006381219_ZV0Tg32_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" data-lightbox="roadtrip" data-title="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Kpbs">
+											<img class="card-img v-image ads-img " src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2019/07/03/AP_19184006381219_ZV0Tg32_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTi8sb6LOM0dcp6KQoZ8VYNHcLe1AzizVOg';" alt="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Kpbs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Prosecutors To Be Stripped Of Achievement Medals Kpbs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://khqa.com/resources/media2/16x9/full/1015/center/80/571b8c03-0360-41b9-b27c-1c10c0e6dce9-large16x9_AP19212751732178.jpg" data-lightbox="roadtrip" data-title="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Khqa">
+											<img class="card-img v-image ads-img " src="https://khqa.com/resources/media2/16x9/full/1015/center/80/571b8c03-0360-41b9-b27c-1c10c0e6dce9-large16x9_AP19212751732178.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ALrpKbJdmxnzLwE0_3iuh2y3vWoOIju2HA';" alt="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Khqa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Prosecutors To Be Stripped Of Achievement Medals Khqa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nypost.com/wp-content/uploads/sites/2/2019/07/gettyimages-1153326273.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" data-lightbox="roadtrip" data-title="Trump Orders Medals Removed From Eddie Gallagher Prosecutors">
+											<img class="card-img v-image ads-img " src="https://nypost.com/wp-content/uploads/sites/2/2019/07/gettyimages-1153326273.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUoqxKQKsIdLcI5giLwYHcVXiUzVg12Nra7w';" alt="Trump Orders Medals Removed From Eddie Gallagher Prosecutors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Orders Medals Removed From Eddie Gallagher Prosecutors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c.ndtvimg.com/2019-05/c9jong18_edward-gallagher-reuters_625x300_31_May_19.jpg" data-lightbox="roadtrip" data-title="Us Navy Seal S Trial For War Crimes Begins In San Diego">
+											<img class="card-img v-image ads-img " src="https://c.ndtvimg.com/2019-05/c9jong18_edward-gallagher-reuters_625x300_31_May_19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp2XEtUw-Lju0mdlLue6aOi_ytZ4HOOEHVng';" alt="Us Navy Seal S Trial For War Crimes Begins In San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Seal S Trial For War Crimes Begins In San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wowo.com/wp-content/uploads/2019/04/Eddie-Gallagher.jpg" data-lightbox="roadtrip" data-title="Medic Testifies That He Not Navy Seal Eddie Gallagher Was Responsible For Isis Fighter S Death Wowo 1190 Am 107 5 Fm">
+											<img class="card-img v-image ads-img " src="https://www.wowo.com/wp-content/uploads/2019/04/Eddie-Gallagher.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_Bws_-BkAjD4JwqvzUjV-2MwaBXILin71w';" alt="Medic Testifies That He Not Navy Seal Eddie Gallagher Was Responsible For Isis Fighter S Death Wowo 1190 Am 107 5 Fm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medic Testifies That He Not Navy Seal Eddie Gallagher Was Responsible For Isis Fighter S Death Wowo 1190 Am 107 5 Fm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/190701184622-gallager-arrives-court-0701-live-video.jpg" data-lightbox="roadtrip" data-title="Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/190701184622-gallager-arrives-court-0701-live-video.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2DG4O8ciNnYRgsEZMxMSBnbjNJVjeo88OQ';" alt="Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://c.ndtvimg.com/2019-05/c9jong18_edward-gallagher-reuters_625x300_31_May_19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2DG4O8ciNnYRgsEZMxMSBnbjNJVjeo88OQ';" alt="Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors">
+										<div class="card-body">
+						<h3 class="h5"><b>In the high-profile case Chief Edward Gallagher was found not guilty by a military jury of the premeditated murder of the 17year-old Islamic State prisoner in 2017.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy seal edward gallagher medals</strong>. 
+								
+																	Special Warfare Operator Chief Edward Eddie Gallagher in Iraq in 2017. 
+																	He was repeatedly awarded medals for heroic actions. 
+																	Mr Trumps announcement was a remarkable rebuke by a US president of his own Navy leadership. 
+																	Special Operations Chief Edward Gallagher is charged with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy announced on Wednesday that military prosecutors in the case would be losing the achievement medals they had received. 
+																	Glad I could help Edward Gallagher convicted of unlawfully posing for pictures with the detainees dead body. 
+																	Yesterday the Navy Secretary Richard Spencer ordered seven Navy Achievement Medals and 3 letters of commendation given to the prosecution team be rescinded. 
+																	Courtesy photo The most serious allegation against Gallagher 39 is a premeditated murder charge in connection with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Throughout his 19 years of service Gallagher earned the Bronze Star with V for Valor twice a Meritorious Unit commendation and a trio of Navy and Marine Corps Achievement medals among other. 
+																	Edward Eddie Gallagher 39 on Saturday was transferred from Naval Consolidated Brig Miramar to another Naval facility in San Diego where he was allowed to meet with his wife and son. 
+																	That you possibly could. 
+																	Navy SEAL prosecutors to be stripped of achievement medals FILE - In this July 2 2019 file photo Navy Special Operations Chief Edward Gallagher leaves a military court on Naval Base San Diego in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Throughout his 19 years of service Gallagher earned the Bronze Star with V for Valor twice a Meritorious Unit commendation and a trio of Navy and Marine Corps Achievement medals among other. 
+																	Gallagher was acquitted in July and officials for the US. 
+																	In total Eddie has earned the Bronze star with V for Valor twice Meritorious Unit commendation Presidential Unit citation two Navy Commendation medals three Navy and Marine Corps Achievement medals and four good conduct awards. 
+																	Trump tweeted earlier Wednesday that he had directed the secretary of the Navy and the chief of naval operations to immediately withdraw and rescind the Navy Achievement Medal from prosecutors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He is the consummate and professional warfighter earning medal after medal for leadership and bravery in battle. 
+																	Navy SEAL officer charged with war crimes in Iraq who Donald Trump is considering pardoning has been allowed to see his wife. 
+																	President Donald Trump on Wednesday ordered top Navy officials to rescind medals awarded to the prosecutors who unsuccessfully tried Navy SEAL team leader Eddie Gallagher for murder. 
+																	Trump congratulates navy Seal who committed war crime with dead body. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Special Operations Chief Edward Gallagher during a deployment in Iraq in 2017 in a photo provided by his lawyer. 
+																	Following reports that the military prosecutors of Navy SEAL Eddie Gallagher are receiving Navy Achievement Medals -- despite failing to secure a conviction for Gallagher on murder charges --. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kpbs.media.clients.ellingtoncms.com/img/photos/2016/02/29/160224-N-ZZ999-110_t800.JPG?90232451fbcadccc64a17de7521d859a8f88077d" data-lightbox="roadtrip" data-title="Navy Seal Who Trained In San Diego Receives Medal Of Honor Kpbs">
+											<img class="card-img v-image ads-img " src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2016/02/29/160224-N-ZZ999-110_t800.JPG?90232451fbcadccc64a17de7521d859a8f88077d" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg3N7mHNpm9Xiu0VQ2MRlo3KaXCj1w9KgtA';" alt="Navy Seal Who Trained In San Diego Receives Medal Of Honor Kpbs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Who Trained In San Diego Receives Medal Of Honor Kpbs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ewscripps.brightspotcdn.com/dims4/default/1e5ef57/2147483647/strip/true/crop/895x503+0+32/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F94%2F28%2F6dd9045f4489972a45a9a85e5f84%2Fedward-gallagher-acquitted-070219.jpg" data-lightbox="roadtrip" data-title="President Trump Orders Honors Revoked For Jag Prosecutors In Eddie Gallagher Case">
+											<img class="card-img v-image ads-img " src="https://ewscripps.brightspotcdn.com/dims4/default/1e5ef57/2147483647/strip/true/crop/895x503+0+32/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F94%2F28%2F6dd9045f4489972a45a9a85e5f84%2Fedward-gallagher-acquitted-070219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFvO-ggg5f9kaDh4y8nBHG3QPTqiuoCTqeg';" alt="President Trump Orders Honors Revoked For Jag Prosecutors In Eddie Gallagher Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President Trump Orders Honors Revoked For Jag Prosecutors In Eddie Gallagher Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ktla.com/wp-content/uploads/sites/4/2019/07/gettyimages-1153326275.jpg?w=2560&amp;h=1440&amp;crop=1" data-lightbox="roadtrip" data-title="Navy Orders Review Of Its Justice System After Seal S Acquittal Of Murder In Is Boy S Death Ktla">
+											<img class="card-img v-image ads-img " src="https://ktla.com/wp-content/uploads/sites/4/2019/07/gettyimages-1153326275.jpg?w=2560&amp;h=1440&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzxKopAgVzDnfOGyPA-ua8Lr1e5D38olDpw';" alt="Navy Orders Review Of Its Justice System After Seal S Acquittal Of Murder In Is Boy S Death Ktla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Orders Review Of Its Justice System After Seal S Acquittal Of Murder In Is Boy S Death Ktla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ca-times.brightspotcdn.com/dims4/default/1a64aea/2147483647/strip/true/crop/5496x3540+0+0/resize/840x541!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8a%2F3a%2Fefd9bbe444e2bc6e867a2d7694f7%2Fafp-getty-military-trial-of-navy-seal-eddie-gallagher-en2.JPG" data-lightbox="roadtrip" data-title="Commentary What Duncan Hunter S Support Of Eddie Gallagher Reveals About His Character The San Diego Union Tribune">
+											<img class="card-img v-image ads-img " src="https://ca-times.brightspotcdn.com/dims4/default/1a64aea/2147483647/strip/true/crop/5496x3540+0+0/resize/840x541!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8a%2F3a%2Fefd9bbe444e2bc6e867a2d7694f7%2Fafp-getty-military-trial-of-navy-seal-eddie-gallagher-en2.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1_VUyoFt5JwX279JBEqChp7S9YgZ-KG-CQ';" alt="Commentary What Duncan Hunter S Support Of Eddie Gallagher Reveals About His Character The San Diego Union Tribune">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commentary What Duncan Hunter S Support Of Eddie Gallagher Reveals About His Character The San Diego Union Tribune</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://taskandpurpose.com/app/uploads/2020/11/22083808-1.jpg" data-lightbox="roadtrip" data-title="Trump Makes Navy Seal Eddie Gallagher A Chief Again">
+											<img class="card-img v-image ads-img " src="https://taskandpurpose.com/app/uploads/2020/11/22083808-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgYGz5GYW-spRDwXg7dKXOs9VDI7_P5n6aw';" alt="Trump Makes Navy Seal Eddie Gallagher A Chief Again">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Makes Navy Seal Eddie Gallagher A Chief Again</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-super-tease.jpg" data-lightbox="roadtrip" data-title="Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors Cnnpolitics">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-super-tease.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKQDVBG-0CQyDk-riEpGF1qdpQxAG6YZBXw';" alt="Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors Cnnpolitics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Moves To Rescind Medals Awarded To Eddie Gallagher Prosecutors Cnnpolitics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/LP6ZV3DYWZAKNISJ5ZQZTORAFU.jpg" data-lightbox="roadtrip" data-title="Jury To Decide Seal S Punishment For Posing With Corpse Syracuse Com">
+											<img class="card-img v-image ads-img " src="https://arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/LP6ZV3DYWZAKNISJ5ZQZTORAFU.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLEQsPPS7zCqhx-7GMc592Gwbfqe9jodkq2Q';" alt="Jury To Decide Seal S Punishment For Posing With Corpse Syracuse Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jury To Decide Seal S Punishment For Posing With Corpse Syracuse Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/wBaBaon_NHY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Leaked Us Navy Seal Videos Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/wBaBaon_NHY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt36B9RL36Ffrf9FQ2R0ZrxbSR0j4YCbv98w';" alt="Leaked Us Navy Seal Videos Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leaked Us Navy Seal Videos Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.593749.1565299154!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Former Gallagher Prosecutor Reassigned Amid Scrutiny Of Navy Jag Corps Navy Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.593749.1565299154!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAc30ZmSp24IYbQnHF1YC7kQH5nlfy8I8RQ';" alt="Former Gallagher Prosecutor Reassigned Amid Scrutiny Of Navy Jag Corps Navy Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Former Gallagher Prosecutor Reassigned Amid Scrutiny Of Navy Jag Corps Navy Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nbc25news.com/resources/media/4a077a27-146e-486f-a49e-f9439d15b122-medium16x9_AP19184017362739.jpg?1564610900841" data-lightbox="roadtrip" data-title="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Weyi">
+											<img class="card-img v-image ads-img " src="https://nbc25news.com/resources/media/4a077a27-146e-486f-a49e-f9439d15b122-medium16x9_AP19184017362739.jpg?1564610900841" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdslELE2g5ELD5TvZrYgmOpp8xLk6UCfchUQ';" alt="Navy Seal Prosecutors To Be Stripped Of Achievement Medals Weyi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Prosecutors To Be Stripped Of Achievement Medals Weyi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wkrg.com/wp-content/uploads/sites/49/2019/06/c41abb89717e455f96a8f5f28fe6d55c-2.jpg?w=512" data-lightbox="roadtrip" data-title="Witness Navy Seal Called Dead Prisoner An Isis Dirtbag Wkrg News 5">
+											<img class="card-img v-image ads-img " src="https://www.wkrg.com/wp-content/uploads/sites/49/2019/06/c41abb89717e455f96a8f5f28fe6d55c-2.jpg?w=512" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt12M6B7lu-Ur1daxe50iw7WI-veJmM1e9Qw';" alt="Witness Navy Seal Called Dead Prisoner An Isis Dirtbag Wkrg News 5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Witness Navy Seal Called Dead Prisoner An Isis Dirtbag Wkrg News 5</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ca-times.brightspotcdn.com/dims4/default/2f6162d/2147483647/strip/true/crop/689x771+0+0/resize/840x940!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F6c%2F73%2F0c327c804830bc3431c80aab314b%2Fgallagher2photo.jpg" data-lightbox="roadtrip" data-title="Navy Seal Eddie Gallagher Neither Pardoned Nor Cleared By Trump Says Navy Is Retaliating Against Him The San Diego Union Tribune">
+											<img class="card-img v-image ads-img " src="https://ca-times.brightspotcdn.com/dims4/default/2f6162d/2147483647/strip/true/crop/689x771+0+0/resize/840x940!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F6c%2F73%2F0c327c804830bc3431c80aab314b%2Fgallagher2photo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQizwh2cxrA0wS-RbLkTK9wmq6FcUdQaZrkw';" alt="Navy Seal Eddie Gallagher Neither Pardoned Nor Cleared By Trump Says Navy Is Retaliating Against Him The San Diego Union Tribune">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Eddie Gallagher Neither Pardoned Nor Cleared By Trump Says Navy Is Retaliating Against Him The San Diego Union Tribune</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5d485199100a2453f8785c35?width=700" data-lightbox="roadtrip" data-title="Navy Cno Takes Over Navy Seal Eddie Gallagher Court Martial Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5d485199100a2453f8785c35?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzDgs8S5fFLdygOzSElyc_lw0gtYEGXRcmg';" alt="Navy Cno Takes Over Navy Seal Eddie Gallagher Court Martial Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Cno Takes Over Navy Seal Eddie Gallagher Court Martial Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-recruitment-centre-number.html">Army Recruitment Centre Number</a></li>
+													<li class="list-group-item"><a href="/army-reserve-tuition-assistance-program.html">Army Reserve Tuition Assistance Program</a></li>
+													<li class="list-group-item"><a href="/army-reserve-tuition-assistance-reddit.html">Army Reserve Tuition Assistance Reddit</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-contact-uk.html">Army Recruitment Contact Uk</a></li>
+													<li class="list-group-item"><a href="/army-pays-for-spouse-education.html">Army Pays For Spouse Education</a></li>
+													<li class="list-group-item"><a href="/army-records-for-veterans.html">Army Records For Veterans</a></li>
+													<li class="list-group-item"><a href="/army-pension-scheme-contact.html">Army Pension Scheme Contact</a></li>
+													<li class="list-group-item"><a href="/army-ptsd-support.html">Army Ptsd Support</a></li>
+													<li class="list-group-item"><a href="/army-quotes-in-hindi-images.html">Army Quotes In Hindi Images</a></li>
+													<li class="list-group-item"><a href="/army-spouse-college-scholarships.html">Army Spouse College Scholarships</a></li>
+													<li class="list-group-item"><a href="/army-pension-enquiry.html">Army Pension Enquiry</a></li>
+													<li class="list-group-item"><a href="/army-reserve-spouse-education-benefits.html">Army Reserve Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/army-reserve-benefits-for-employers.html">Army Reserve Benefits For Employers</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-center-contact-number.html">Army Recruitment Center Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-officer-wife-duties.html">Army Officer Wife Duties</a></li>
+													<li class="list-group-item"><a href="/army-reserve-benefits-canada.html">Army Reserve Benefits Canada</a></li>
+													<li class="list-group-item"><a href="/army-reserve-benefits-us.html">Army Reserve Benefits Us</a></li>
+													<li class="list-group-item"><a href="/army-pay-contact.html">Army Pay Contact</a></li>
+													<li class="list-group-item"><a href="/army-reg-on-spousal-support.html">Army Reg On Spousal Support</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-contact-number.html">Army Recruitment Contact Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

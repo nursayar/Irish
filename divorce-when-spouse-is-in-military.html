@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Divorce When Spouse Is In Military - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Divorce When Spouse Is In Military",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/e6/89/0e/e6890e78129cd5c5516129f846ea433b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=divorce+when+spouse+is+in+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Divorce When Spouse Is In Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">SLR of the military member spouse is the state of entry into the service or the state where the member has been stationed for an extended time if the member changed the domicile to that state. Former spouses will retain all military benefits and privileges including medical commissary military exchanges if he or she was married to the member at least 20 years the member had at least. There is one small bit of room for negotiation if the member is still in the military and the couple is close to attaining 202020 status when the divorce starts they may agree to delay the divorce slightly or even obtain a legal separation until the former spouse reaches 202020 status. <br>				
+			</p>
+										<a class="badge badge-info" href="/est-military-time.html">est military time</a>
+											<a class="badge badge-primary" href="/does-the-military-pay-off-student-loans-for-spouses.html">does the military pay off student loans for spouses</a>
+											<a class="badge badge-light" href="/free-college-for-veterans-dependents-in-texas.html">free college for veterans dependents in texas</a>
+											<a class="badge badge-dark" href="/florida-first-military-heroes-government-loan-programs.html">florida first military heroes government loan programs</a>
+											<a class="badge badge-primary" href="/federal-student-loan-spousal-consolidation.html">federal student loan spousal consolidation</a>
+											<a class="badge badge-light" href="/free-college-for-retired-military-dependents.html">free college for retired military dependents</a>
+											<a class="badge badge-info" href="/free-college-programs-for-military-spouses.html">free college programs for military spouses</a>
+											<a class="badge badge-light" href="/finra-military-spouse-fellowship-program.html">finra military spouse fellowship program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you hints for viewing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/dd/27/26dd2740e1c4bb87d702e8adfcfc032b.jpg" data-lightbox="roadtrip" data-title="Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/dd/27/26dd2740e1c4bb87d702e8adfcfc032b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXev-ShyagTpmgMRecT0xxLIF2EBgp-bZ8A';" alt="Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/14/e6/53/14e6531e3e0971b6f7153e013c509d90--military-divorce-army-life.jpg" data-lightbox="roadtrip" data-title="Abandoned Military Spouses An Unpleasant Reality Military Spouse Military Divorce Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/14/e6/53/14e6531e3e0971b6f7153e013c509d90--military-divorce-army-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dlFEqNoHjUYwV_FyuGXoN6TxbebftqGviQ';" alt="Abandoned Military Spouses An Unpleasant Reality Military Spouse Military Divorce Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abandoned Military Spouses An Unpleasant Reality Military Spouse Military Divorce Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/3b/a6/3b3ba65946df1eef411b609887aa436a.png" data-lightbox="roadtrip" data-title="When Civilians Go Through Divorces Most Of The Time The Laws And Procedures Governing That Process Are Determined B Military Divorce Divorce Divorce Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/3b/a6/3b3ba65946df1eef411b609887aa436a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06nEBLLHJ9fsO4SYJZDzESglIossDC4YLsg';" alt="When Civilians Go Through Divorces Most Of The Time The Laws And Procedures Governing That Process Are Determined B Military Divorce Divorce Divorce Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Civilians Go Through Divorces Most Of The Time The Laws And Procedures Governing That Process Are Determined B Military Divorce Divorce Divorce Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/ce/52/15ce52be4ad73d8c781b0bd998b8b4da.png" data-lightbox="roadtrip" data-title="50 Things Only A Military Spouse Would Understand Military Girlfriend Military Spouse Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/ce/52/15ce52be4ad73d8c781b0bd998b8b4da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQes6cl95hb10tOsq26UK0z3drF9ZgjGDAylA';" alt="50 Things Only A Military Spouse Would Understand Military Girlfriend Military Spouse Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Things Only A Military Spouse Would Understand Military Girlfriend Military Spouse Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" data-lightbox="roadtrip" data-title="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXd_cMxD0m7x5ZBZ8z_wienZqAxk8AZ4TMQ';" alt="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/80/03/2580032b8cd1557d75bee75259dfafa0.png" data-lightbox="roadtrip" data-title="The Divorced Dependent Blindsided Military Divorce Divorce Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/80/03/2580032b8cd1557d75bee75259dfafa0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmFHl7uuQMbOjfJ6p7xdEZ1aQLkixsWeeCQ';" alt="The Divorced Dependent Blindsided Military Divorce Divorce Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Divorced Dependent Blindsided Military Divorce Divorce Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/24/3d/b4/243db4a649721b3ad9c914bd56161e53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmFHl7uuQMbOjfJ6p7xdEZ1aQLkixsWeeCQ';" alt="The Divorced Dependent Blindsided Military Divorce Divorce Military Spouse">
+										<div class="card-body">
+						<h3 class="h5"><b>Legal expertise for every military divorce case.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Divorce when spouse is in military</strong>. 
+								
+																	In fact according to this study by Princeton University and the RAND corporation military marriages are more likely to end in divorce after the service member has left the military. 
+																	Legally military personnel who are getting divorced are no different than anyone else so the procedural process is the same. 
+																	However military spouses have access to free military legal assistance services through installation legal assistance offices. 
+																	A military spouse must file for divorce where the service member is stationed or in the state where he or she is a resident State of Legal Residency or SLR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free military legal assistance services are available through the installation legal. 
+																	Rights and Benefits of Divorced Spouses in the Military Military legal assistance. 
+																	There are many different types of pensions and one of the most challenging and interesting types to deal with are military pensions army naval royal air force. 
+																	Regarding the 1010 rule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sometimes military spouses expect too much out of military authorities. 
+																	Pensions can be a tricky area to deal with during a divorce often because they are not properly understood. 
+																	Your military spouse performed at least 20 years of service creditable for retirement pay. 
+																	Your spouse served in the military for at least 20 years which are creditable for retirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whilst the law for ending the marriage is the same as for civilians the complexities of military life and especially military pensions means that you need to take expert legal advice. 
+																	They think they can contact their spouses commander and the commander will waive a magic wand and make everything better. 
+																	Overall its important to realize that the military considers divorce and separation to be a private civil matter best resolved by the courts. 
+																	Servicemembers Civil Relief Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When a Service Member divorces or enters into a legal separation judgment the former spouse must have at least 10 years of marriage overlapping with 10 years of military service in order to be eligible to receive direct payments from the military as a property award from the family court. 
+																	There is a minimum of a 15-year overlap in the marriage and your spouses time in the military. 
+																	Military divorce lawyers Life in the services can put any relationship under pressure. 
+																	The Servicemembers Civil Relief Act applies to military service members and may affect. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A spouse is entitled to one year of transitional medical benefits under the 202015 rule which requires at least twenty years of marriage at least twenty years of military service and at least fifteen years of overlap of the marriage and the military service. 
+																	The most important law that should be noted by couples pursuing a military divorce is the Service Members Civil Relief Act. 
+																	Military spouse and divorce. 
+																	In a military divorce couples might have moved in 20 years or six or seven times all over the world The first step for a spouse filing for divorce from an active duty husband or wife is to determine which state has jurisdiction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are in the military or are a military spouse there are some. 
+																	Your rights as a divorced military spouse Generally the military views divorce as a private civil matter to be addressed by a civilian court. 
+																	You were married for 20 years. 
+																	The other circumstance under which you can get an exemption or partial entitlement would be one in which you were divorced from a servicemember whose eligibility to receive retired pay terminated because of domestic abuse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may qualify for medical benefits for one year following you divorce if. 
+																	Under these statutes service members cannot begin the divorce process or be sued while they are active-duty or within sixty days of returning from an active-duty assignment. 
+																	Armed Forces Pension Scheme pension sharing on divorce factors April 2019 PDF 900KB 52 pages Pensions on divorce or dissolution of a civil partnership charging regime PDF 711KB 8 pages. 
+																	A spouse is entitled to widowswidowers benefits until they are legally divorced even if they are separated from the member Soldiers often assume that because there was no need to get divorced that this period of separation wont affect their pension on divorce they are wrong. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While military service provides many incentives for getting married unfortunately life after service for many includes filing for divorce. 
+																	Nearly every military divorce will have unique circumstances for which there are a myriad of state laws and military policies and someone considering divorce is best advised to hire a good. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/ab/70/11ab701ff265cc98b740ed1a45c66ce0.jpg" data-lightbox="roadtrip" data-title="Army Wife Military Divorce Military Wife Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/ab/70/11ab701ff265cc98b740ed1a45c66ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf7f4HCEYBCQ3EEW-BslEYQDjUYmLexQFBRg';" alt="Army Wife Military Divorce Military Wife Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Military Divorce Military Wife Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/30/7f/c5307f8896a62a70f4a0ba44867057aa.jpg" data-lightbox="roadtrip" data-title="Should Have Been In My Wedding Vows Lol Military Spouse Appreciation Army Wife Life Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/30/7f/c5307f8896a62a70f4a0ba44867057aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCLZwpMz0QxbpTZeKFYIBqMmxsNKtKyXGyw';" alt="Should Have Been In My Wedding Vows Lol Military Spouse Appreciation Army Wife Life Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should Have Been In My Wedding Vows Lol Military Spouse Appreciation Army Wife Life Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e.png" data-lightbox="roadtrip" data-title="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoEdZKKyIFut2n5okNWk_ijQvjlbfBP8sVHQ';" alt="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/18/30/61183080e69a41d116e2bdce4edc37ab.jpg" data-lightbox="roadtrip" data-title="Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/18/30/61183080e69a41d116e2bdce4edc37ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf47XlTn-FSuY9WWQNYCF1OReiuxIr4RTLTw';" alt="Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/1c/85/341c85ef63ed0bc2aa8f525998398724.jpg" data-lightbox="roadtrip" data-title="80 Percent Of Military Spouses Are Women Under The Age Of 35 Join Our Supportive Community With Others Like You Military Divorce Military Wife Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/1c/85/341c85ef63ed0bc2aa8f525998398724.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvU7aVW64OmkKIrYq4Uutjhc2-6qbcBmmVqA';" alt="80 Percent Of Military Spouses Are Women Under The Age Of 35 Join Our Supportive Community With Others Like You Military Divorce Military Wife Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">80 Percent Of Military Spouses Are Women Under The Age Of 35 Join Our Supportive Community With Others Like You Military Divorce Military Wife Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/71/51/d4/7151d47f3596d58eee2c7de78452f230--military-divorce-navy.jpg" data-lightbox="roadtrip" data-title="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/71/51/d4/7151d47f3596d58eee2c7de78452f230--military-divorce-navy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPXlffndQaEXp4aGiqQFa1wjTH4pEVW7oEqQ';" alt="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/9e/c7/c99ec76b54f1e485f8f40f3cc7c23e3e.png" data-lightbox="roadtrip" data-title="Bizarre Facts About Military Divorces Infographic Www Rotololawfirm Com Hunterdon County Nj Divorce Lawyers Military Divorce Divorce Divorce Lawyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/9e/c7/c99ec76b54f1e485f8f40f3cc7c23e3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqweXZofuv7LdL-QW2opPVMguULIxdauJg-w';" alt="Bizarre Facts About Military Divorces Infographic Www Rotololawfirm Com Hunterdon County Nj Divorce Lawyers Military Divorce Divorce Divorce Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bizarre Facts About Military Divorces Infographic Www Rotololawfirm Com Hunterdon County Nj Divorce Lawyers Military Divorce Divorce Divorce Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/19/34/b51934996a41cd6c73c58b15df63a050.jpg" data-lightbox="roadtrip" data-title="Texas Divorce Serving Military Personnel Or Their Spouse Worldwide Family Law Military Divorce Texas Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/19/34/b51934996a41cd6c73c58b15df63a050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0IAnLKYzoZj9UBbixDVqaOSfewNjw6K95A';" alt="Texas Divorce Serving Military Personnel Or Their Spouse Worldwide Family Law Military Divorce Texas Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Divorce Serving Military Personnel Or Their Spouse Worldwide Family Law Military Divorce Texas Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/8e/01/cd8e01c047a05f01cee020658e727e24.jpg" data-lightbox="roadtrip" data-title="Former Military Spouse Divorce Tips Current Usfspa Law Service Members Military Former Spouses Save Ti Military Spouse Military Spouse Appreciation Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/8e/01/cd8e01c047a05f01cee020658e727e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPM35QZzpJs7ywUoeOtmZ8yr5PQY0ztztaQ';" alt="Former Military Spouse Divorce Tips Current Usfspa Law Service Members Military Former Spouses Save Ti Military Spouse Military Spouse Appreciation Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Former Military Spouse Divorce Tips Current Usfspa Law Service Members Military Former Spouses Save Ti Military Spouse Military Spouse Appreciation Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e4/4f/90/e44f9011c7e1f362df6f3984622c8ea3.jpg" data-lightbox="roadtrip" data-title="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e4/4f/90/e44f9011c7e1f362df6f3984622c8ea3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbHQpaVKxT-W4TebKsdc7OJXi1n9V5gdKqRA';" alt="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/5a/98/175a9817bfe1961b1205bcd7187585ed.png" data-lightbox="roadtrip" data-title="Military Divorce Attorneys Lawyersinsandiego Separationattorney Separationlawyer Childcustodylawyer Fa Military Couples Military Marriage Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/5a/98/175a9817bfe1961b1205bcd7187585ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5rrWfejUGich4fxat_NWxCHcbBAL38lgMA';" alt="Military Divorce Attorneys Lawyersinsandiego Separationattorney Separationlawyer Childcustodylawyer Fa Military Couples Military Marriage Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce Attorneys Lawyersinsandiego Separationattorney Separationlawyer Childcustodylawyer Fa Military Couples Military Marriage Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/89/0e/e6890e78129cd5c5516129f846ea433b.jpg" data-lightbox="roadtrip" data-title="Navigating The Trenches Of Divorce For The Military Spouse Military Divorce Military Spouse Military Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/89/0e/e6890e78129cd5c5516129f846ea433b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_jQrAMzvD5HFh9z-tIExL98CNoM0aqHI4g';" alt="Navigating The Trenches Of Divorce For The Military Spouse Military Divorce Military Spouse Military Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navigating The Trenches Of Divorce For The Military Spouse Military Divorce Military Spouse Military Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/3d/b4/243db4a649721b3ad9c914bd56161e53.jpg" data-lightbox="roadtrip" data-title="Sgli Military Spouse Beneficiary In Divorce Military Spouse Military Divorce Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/3d/b4/243db4a649721b3ad9c914bd56161e53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2lVKGGZMQIzzeUh8uKdRiEHCD9O6lyMYqg';" alt="Sgli Military Spouse Beneficiary In Divorce Military Spouse Military Divorce Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sgli Military Spouse Beneficiary In Divorce Military Spouse Military Divorce Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-humvee-for-sale-florida.html">Military Humvee For Sale Florida</a></li>
+													<li class="list-group-item"><a href="/military-id-card-green-bay-wi.html">Military Id Card Green Bay Wi</a></li>
+													<li class="list-group-item"><a href="/military-id-card-locations-michigan.html">Military Id Card Locations Michigan</a></li>
+													<li class="list-group-item"><a href="/military-id-card-houston.html">Military Id Card Houston</a></li>
+													<li class="list-group-item"><a href="/military-hk416.html">Military Hk416</a></li>
+													<li class="list-group-item"><a href="/military-id-card-goose-creek-sc.html">Military Id Card Goose Creek Sc</a></li>
+													<li class="list-group-item"><a href="/military-id-card-office-birmingham-al.html">Military Id Card Office Birmingham Al</a></li>
+													<li class="list-group-item"><a href="/military-heroes-quotes.html">Military Heroes Quotes</a></li>
+													<li class="list-group-item"><a href="/military-hq-surplus-hawaii.html">Military Hq Surplus Hawaii</a></li>
+													<li class="list-group-item"><a href="/military-id-card-benefits.html">Military Id Card Benefits</a></li>
+													<li class="list-group-item"><a href="/military-id-card-facility-charlotte-nc.html">Military Id Card Facility Charlotte Nc</a></li>
+													<li class="list-group-item"><a href="/military-id-card-office-online.html">Military Id Card Office Online</a></li>
+													<li class="list-group-item"><a href="/military-id-card-locations-in-florida.html">Military Id Card Locations In Florida</a></li>
+													<li class="list-group-item"><a href="/military-hong-kong-border.html">Military Hong Kong Border</a></li>
+													<li class="list-group-item"><a href="/military-hr-100.html">Military Hr 100</a></li>
+													<li class="list-group-item"><a href="/military-heroes-penfed.html">Military Heroes Penfed</a></li>
+													<li class="list-group-item"><a href="/military-id-card-jobs.html">Military Id Card Jobs</a></li>
+													<li class="list-group-item"><a href="/military-heroes-stories.html">Military Heroes Stories</a></li>
+													<li class="list-group-item"><a href="/military-id-card-ellington-field.html">Military Id Card Ellington Field</a></li>
+													<li class="list-group-item"><a href="/military-hq-sand-island.html">Military Hq Sand Island</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

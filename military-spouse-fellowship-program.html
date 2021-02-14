@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Fellowship Program - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Fellowship Program",
+  "datePublished": "2021-02-14",
+  "image": "https://www.hiringourheroes.org/wp-content/uploads/2020/10/USAA-support-for-military-spouse-employment.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+fellowship+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Fellowship Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Military Spouse Fellowship Program provides military spouses with professional training networking and hands-on experience in the civilian workforce. The fellowship covers the costs associated with completing the AFC training and testing. Train a corps of military spouses to provide financial counseling and education within the military community Help military spouses achieve career goals and aspirations and enhance job-related marketability and Develop personal financial management skills of military families. <br>				
+			</p>
+										<a class="badge badge-success" href="/hr-specialist-in-army.html">hr specialist in army</a>
+											<a class="badge badge-secondary" href="/if-your-spouse-is-in-the-military-do-you-get-free-college.html">if your spouse is in the military do you get free college</a>
+											<a class="badge badge-primary" href="/hrcapps-army-mil-portal.html">hrcapps army mil portal</a>
+											<a class="badge badge-warning" href="/hrcapps-army-mil-ppw.html">hrcapps army mil ppw</a>
+											<a class="badge badge-light" href="/human-resource-jobs-in-army.html">human resource jobs in army</a>
+											<a class="badge badge-primary" href="/indian-army-wife-book.html">indian army wife book</a>
+											<a class="badge badge-primary" href="/indian-army-wife-book-pdf.html">indian army wife book pdf</a>
+											<a class="badge badge-light" href="/human-resources-for-army.html">human resources for army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right blog.  Our site gives you hints for viewing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.saveandinvest.org/sites/saveandinvest/files/Logo-Military-Spouse-Fellow.gif" data-lightbox="roadtrip" data-title="Military Spouse Fellowship Program Save And Invest">
+											<img class="card-img v-image ads-img " src="https://www.saveandinvest.org/sites/saveandinvest/files/Logo-Military-Spouse-Fellow.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzKFRWbPaVd8bX85bDgSUXpffGKIYhflIig&amp;ec=45774421';" alt="Military Spouse Fellowship Program Save And Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Fellowship Program Save And Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tbcdn.talentbrew.com/company/694/7826/content/Lockheed-Martin-heroes.jpg" data-lightbox="roadtrip" data-title="The Lockheed Martin Heroes Program Provides Fellowship Opportunities To Military Spouses">
+											<img class="card-img v-image ads-img " src="https://tbcdn.talentbrew.com/company/694/7826/content/Lockheed-Martin-heroes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8oAHy864QAzUohOcsKB2oopGZL7WKdexIlA&amp;ec=45774421';" alt="The Lockheed Martin Heroes Program Provides Fellowship Opportunities To Military Spouses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Lockheed Martin Heroes Program Provides Fellowship Opportunities To Military Spouses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2020/10/USAA-support-for-military-spouse-employment.jpg" data-lightbox="roadtrip" data-title="Military Family Relief Initiative Supports Milspouse Employment Program Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2020/10/USAA-support-for-military-spouse-employment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5jY4SOKn1PhjylGI_EkGrNoTzCfFmkMBzQ&amp;ec=45774421';" alt="Military Family Relief Initiative Supports Milspouse Employment Program Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Family Relief Initiative Supports Milspouse Employment Program Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20200521-SFP-Annoucement-fb-tw-li.jpg?itok=vTauv1mG" data-lightbox="roadtrip" data-title="Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation">
+											<img class="card-img v-image ads-img " src="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20200521-SFP-Annoucement-fb-tw-li.jpg?itok=vTauv1mG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWRf4XOKKCvTawE6GKx2JOmKw3wGhgz5BhQ&amp;ec=45774421';" alt="Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2018/05/Chelsea-Bridges-Maryland-Military-Spouse-Corporate-Fellowship-AAWDC-839x630.jpeg" data-lightbox="roadtrip" data-title="C3 Provides Paid Fellowships For Maryland Based Military Spouses Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2018/05/Chelsea-Bridges-Maryland-Military-Spouse-Corporate-Fellowship-AAWDC-839x630.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoUYSkdL0Teudnd7MXsKksa10yi2YNrAx28A&amp;ec=45774421';" alt="C3 Provides Paid Fellowships For Maryland Based Military Spouses Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">C3 Provides Paid Fellowships For Maryland Based Military Spouses Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/12/Resized-2019-Year-in-Review-for-Hiring-Our-Heroes.jpg" data-lightbox="roadtrip" data-title="Programs That Prepare Veterans Military Spouses For Future Employment Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/12/Resized-2019-Year-in-Review-for-Hiring-Our-Heroes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrh5ziyQeNPFu6_SS8GVIObzmLP_OIGYhnIA&amp;ec=45774421';" alt="Programs That Prepare Veterans Military Spouses For Future Employment Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Programs That Prepare Veterans Military Spouses For Future Employment Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/03/mten-banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrh5ziyQeNPFu6_SS8GVIObzmLP_OIGYhnIA&amp;ec=45774421';" alt="Programs That Prepare Veterans Military Spouses For Future Employment Hiring Our Heroes">
+										<div class="card-body">
+						<h3 class="h5"><b>Christy is the Military Spouse Fellowship Programs first graduate.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse fellowship program</strong>. 
+								
+																	Get professional training networking and hands-on experience in the civilian workforce. 
+																	The fellowship covers the costs associated with completing the AFC training and testing. 
+																	The Hiring Our Heroes Military Spouse Fellowship Program MSFP is a cutting-edge initiative that provides military spouses with professional training networking and hands-on experience in the civilian workforce. 
+																	The professional development and direct connection to local employers offered through the program enable military spouses to quickly build their networks and gain localized job experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both organizations will work together to identify new hospitality career opportunities and implement a new fellowship program which will allow select military spouses to participate in a six-week experiential learning program with leading hotel brands providing insight into the dynamic career opportunities that exist in hospitality sales marketing and revenue management. 
+																	The initial fellowship program consisted of three cohorts Malotts fellowship began in August and finished 12 weeks later. 
+																	The professional development and direct connection to local employers offered through the 6-week program enable military spouses to quickly build their networks and gain localized job experience. 
+																	The Hiring Our Heroes Military Spouse Fellowship Program MSFP is a cutting edge initiative that provides military spouses with professional training networking and hands-on experience in the civilian workforce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military spouse fellowship program is a cutting edge initiative that provides military spouses with the skills they need to build the careers they want. 
+																	The Military Spouse Fellowship Program provides military spouses with professional training networking and hands-on experience in the civilian workforce. 
+																	The FINRA Foundation Military Spouse Fellowship program provides military spouses the opportunity to earn the AFC Accredited Financial Counselor certificationwhile providing financial counseling and education to the military community. 
+																	The Military Spouse Fellowship Program provides military spouses with professional training networking and hands-on experience in the civilian workforce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The FINRA Foundation Military Spouse Fellowship Program offers military spouses the opportunity to earn a career-enhancing credentialthe Accredited Financial Counselor certificatewhile providing financial counseling and education to the military community. 
+																	In 2011 Blue Star Families BSF commited to launch the Military Spouse Fellowship Program a program to provide professional and educational development and career enhancement for military spouses. 
+																	The FINRA Foundation Military Spouse Fellowship program first launched in 2006 is a collaborative partnership administered by the Association for Financial Counseling and Planning Education AFCPE the FINRA Investor Education Foundation and the National Military Family Association NMFA. 
+																	The military spouse fellowship program is a joint venture between afcpe the national military family association nmfa and the finra investor education foundation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Created in 2006 this opportunity is made possible through generous funding and support by FINRA Foundation and in partnership with the National Military. 
+																	While working toward the afc credential spouse fellows have provided financial counseling and education to more than 228 892 service members and spent more than 494 559 hours helping. 
+																	The Salesforce Fellowship Program is an innovative program that provides the tools for veterans and military spouses to capitalize on employment opportunities. 
+																	The final cohort of 2020 will be completed in December. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Program consists of a two week intensive skills. 
+																	She manages the Fort Campbell Financial Readiness Programs Consumer Affairs Office. 
+																	Military Spouse Fellowship Program. 
+																	Through the fellowship three to five BSF fellows will receive a stipend and attend a series of trainings over a nine month period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The training will cover financial planning educational advocacy military service-specific support programs and an elective area of particular interest to the fellow. 
+																	The fellowship program exists to. 
+																	Salesforce a customer relationship management platform offers free online training through its. 
+																	The professional development and direct connection to local employers offered through the 6-week program enable military spouses to quickly build their networks and gain localized work experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salesforce fellowship program is open to veterans and spouses residing in the United States. 
+																	Today Christy and her husband are debt-freeafter paying off 80000 in debt including student loans car loans and credit card billsand are confident about their financial future. 
+																	Not only does the program fill the rapidly expanding digital skills gap it aims to connect veterans and military spouses with host companies on a deeper level than filling vacancies. 
+																	Patty Shinseki Spouse Scholarship Program is a need-based scholarship program established to assist Army spouses in obtaining an undergraduate degree or similar professional certification. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Session 1 March 8th Session 2 April 5th. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/corporate-fellowship-program.jpg" data-lightbox="roadtrip" data-title="Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/corporate-fellowship-program.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0R5cVVLZIIgAUtHfHYLN110A_OeOcJPaKQ&amp;ec=45774421';" alt="Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.boozallen.com/assets/boozallen_site/esg/images/body/landscape/improving-veteran-and-military-spouse-job-opportunities-.jpg" data-lightbox="roadtrip" data-title="Improving Veteran Military Spouse Job Opportunities">
+											<img class="card-img v-image ads-img " src="https://www.boozallen.com/assets/boozallen_site/esg/images/body/landscape/improving-veteran-and-military-spouse-job-opportunities-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6Jnt4Cb6AKdgVxAwCBBlA1vrk7pZ2pO3Gg&amp;ec=45774421';" alt="Improving Veteran Military Spouse Job Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Improving Veteran Military Spouse Job Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/best-bets.jpg" data-lightbox="roadtrip" data-title="Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/best-bets.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaiRYpB9nZQFvRsDV-FI-lQK1cTU08DmlGg&amp;ec=45774421';" alt="Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://workingnation.com/wp-content/uploads/2020/10/group-photo-military-spouse-event-768x347.jpeg" data-lightbox="roadtrip" data-title="Military Spouses Are Ready To Get To Work Workingnation">
+											<img class="card-img v-image ads-img " src="https://workingnation.com/wp-content/uploads/2020/10/group-photo-military-spouse-event-768x347.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYhAwX_DlbbxUpmp4JBbKeeb-8p_TxsWdHw&amp;ec=45774421';" alt="Military Spouses Are Ready To Get To Work Workingnation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Are Ready To Get To Work Workingnation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/05/northern-va-mseez.jpg" data-lightbox="roadtrip" data-title="Military Spouse Corporate Fellowship Program In Northern Virginia Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/05/northern-va-mseez.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgoLztZ7Rs65_3_TmTVgKLHuRpUpM7P10SQ&amp;ec=45774421';" alt="Military Spouse Corporate Fellowship Program In Northern Virginia Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Corporate Fellowship Program In Northern Virginia Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2020-11/fellowship%20to%20full%20time%20job.jpg?itok=87abVRYG" data-lightbox="roadtrip" data-title="Here S How One Military Spouse Used A Fellowship To Land A Full Time Job Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2020-11/fellowship%20to%20full%20time%20job.jpg?itok=87abVRYG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeDPEZsfMDiA4dW3xxBR58v3XLuEOo9Tm1g&amp;ec=45774421';" alt="Here S How One Military Spouse Used A Fellowship To Land A Full Time Job Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How One Military Spouse Used A Fellowship To Land A Full Time Job Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/32144148/1/500x640/letter-of-intent-finra-foundation-military-spouse-accredited-.jpg" data-lightbox="roadtrip" data-title="Letter Of Intent Finra Foundation Military Spouse Accredited">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/32144148/1/500x640/letter-of-intent-finra-foundation-military-spouse-accredited-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NG7G9MXx3iL4aFEtCG8d5BKzoSRX1Y64Gw&amp;ec=45774421';" alt="Letter Of Intent Finra Foundation Military Spouse Accredited">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Intent Finra Foundation Military Spouse Accredited</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/55/79/1d5579c147dd48937046121a82d6c121.png" data-lightbox="roadtrip" data-title="Finra Foundation Military Spouse Fellowship Afcpe In 2020 Military Spouse Financial Counseling Personal Financial Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/55/79/1d5579c147dd48937046121a82d6c121.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy6p1dbdy_ZJM8kbDrlbTRpmCAQ4iqJcoZWQ&amp;ec=45774421';" alt="Finra Foundation Military Spouse Fellowship Afcpe In 2020 Military Spouse Financial Counseling Personal Financial Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finra Foundation Military Spouse Fellowship Afcpe In 2020 Military Spouse Financial Counseling Personal Financial Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2020/06/milspouses-blue-300x171.jpg" data-lightbox="roadtrip" data-title="Career Community Fellowships Apprenticeships Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2020/06/milspouses-blue-300x171.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjwVRSV8XhcZIfN7ufZMAkRB9jAq7tKSMRQ&amp;ec=45774421';" alt="Career Community Fellowships Apprenticeships Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Community Fellowships Apprenticeships Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/10/Launching-Military-Spouse-Fellowship-Program.jpg" data-lightbox="roadtrip" data-title="Booz Allen Hamilton Archives Hiring Our Heroes Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/10/Launching-Military-Spouse-Fellowship-Program.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfotQcehRPKq4Zeh5DuBoN0SAtCx84TzNhHQ&amp;ec=45774421';" alt="Booz Allen Hamilton Archives Hiring Our Heroes Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Booz Allen Hamilton Archives Hiring Our Heroes Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/03/mten-banner.jpg" data-lightbox="roadtrip" data-title="Military Technician Education Network Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/03/mten-banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSw0pyxTuoGQYLLIusFZCvYhbzkGCeyduRzw&amp;ec=45774421';" alt="Military Technician Education Network Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Technician Education Network Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.saveandinvest.org/sites/saveandinvest/files/Image%20-%20Spouse%20Fellow%20-%20Kathy%20Hobbs.jpg?timestamp=1438697660" data-lightbox="roadtrip" data-title="Finra Foundation Military Spouse Fellow Profile Kathy Hobbs Save And Invest">
+											<img class="card-img v-image ads-img " src="https://www.saveandinvest.org/sites/saveandinvest/files/Image%20-%20Spouse%20Fellow%20-%20Kathy%20Hobbs.jpg?timestamp=1438697660" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-x5ppC40VOhUfd7czQXs84czUBzaSqe8r8Q&amp;ec=45774421';" alt="Finra Foundation Military Spouse Fellow Profile Kathy Hobbs Save And Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finra Foundation Military Spouse Fellow Profile Kathy Hobbs Save And Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/hiring100k.jpg" data-lightbox="roadtrip" data-title="Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/hiring100k.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOTEvRKvu-iuJcMydCFJLP-RqVQcEzdeR5A&amp;ec=45774421';" alt="Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wwwsscnbknkemenkumham.html">Wwwsscnbknkemenkumham</a></li>
+													<li class="list-group-item"><a href="/wwi-war-service-records.html">Wwi War Service Records</a></li>
+													<li class="list-group-item"><a href="/ww1-british-army-records-free.html">Ww1 British Army Records Free</a></li>
+													<li class="list-group-item"><a href="/ww1-army-service-corps-records.html">Ww1 Army Service Corps Records</a></li>
+													<li class="list-group-item"><a href="/ww1-war-memorial-records.html">Ww1 War Memorial Records</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-burned.html">Ww1 Service Records Burned</a></li>
+													<li class="list-group-item"><a href="/wwwmsn-uk-news.html">Wwwmsn Uk News</a></li>
+													<li class="list-group-item"><a href="/wwwmycambrianportal.html">Wwwmycambrianportal</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records.html">Ww1 Service Records</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-online-free.html">Ww1 Service Records Online Free</a></li>
+													<li class="list-group-item"><a href="/youth-military-hat.html">Youth Military Hat</a></li>
+													<li class="list-group-item"><a href="/ww1-british-army-service-records.html">Ww1 British Army Service Records</a></li>
+													<li class="list-group-item"><a href="/wwi-german-soldier-records.html">Wwi German Soldier Records</a></li>
+													<li class="list-group-item"><a href="/xxl-military-hats.html">Xxl Military Hats</a></li>
+													<li class="list-group-item"><a href="/ww1-german-army-service-records.html">Ww1 German Army Service Records</a></li>
+													<li class="list-group-item"><a href="/ww1-army-records-online.html">Ww1 Army Records Online</a></li>
+													<li class="list-group-item"><a href="/ww1-army-service-records-uk.html">Ww1 Army Service Records Uk</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-destroyed-in-ww2.html">Ww1 Service Records Destroyed In Ww2</a></li>
+													<li class="list-group-item"><a href="/ww1-british-army-personnel-records.html">Ww1 British Army Personnel Records</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-australian-archives.html">Ww1 Service Records Australian Archives</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Seal And His Wife Killed Couple - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Seal And His Wife Killed Couple",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/f9/83/6a/f9836addeade4c2d1c24e3a8fbc5e6c4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+seal+and+his+wife+killed+couple",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Seal And His Wife Killed Couple</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In 2003 both Sifrits were convicted in the murders. Benjamin Sifrit is currently serving 38 years at the Roxbury Correctional Institution in Hagerstown Maryland while Erika is serving a life sentence plus 20 years at the Maryland Correctional Institutio. Viral rumours spreading across social media claim that various media outlets cut out a reference to God when replaying an interview between a The Today Show host and the widow of Navy Seal Aaron Vaughn. <br>				
+			</p>
+										<a class="badge badge-info" href="/air-force-cost-per-man-hour.html">air force cost per man hour</a>
+											<a class="badge badge-secondary" href="/air-force-chrome-dome.html">air force chrome dome</a>
+											<a class="badge badge-info" href="/air-force-enlisted-pilot-program.html">air force enlisted pilot program</a>
+											<a class="badge badge-warning" href="/air-force-boku-no-hero.html">air force boku no hero</a>
+											<a class="badge badge-secondary" href="/air-command-force-billy-hoyle.html">air command force billy hoyle</a>
+											<a class="badge badge-danger" href="/aetherian-archive-veteran-guide.html">aetherian archive veteran guide</a>
+											<a class="badge badge-danger" href="/air-force-1-custom-my-hero-academia.html">air force 1 custom my hero academia</a>
+											<a class="badge badge-danger" href="/air-force-chrome-luxe.html">air force chrome luxe</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal blog.  Our website gives you hints for viewing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/cf/fd/a3cffdbb6ac4c3e29258b866b251c9f1.jpg" data-lightbox="roadtrip" data-title="Chris Kyle S Widow Breaks Down On The Stand Describing The Last Time She Saw Him Agenda 21 Radio Chris Kyle American Sniper Chris Kyle Chris Kyle Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/cf/fd/a3cffdbb6ac4c3e29258b866b251c9f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTTGE7d6mlMcZXcWuu7ep0I0e_iwU3W6LiEA';" alt="Chris Kyle S Widow Breaks Down On The Stand Describing The Last Time She Saw Him Agenda 21 Radio Chris Kyle American Sniper Chris Kyle Chris Kyle Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chris Kyle S Widow Breaks Down On The Stand Describing The Last Time She Saw Him Agenda 21 Radio Chris Kyle American Sniper Chris Kyle Chris Kyle Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/99/72/c89972c87a4bc037575634ddb9f15075.jpg" data-lightbox="roadtrip" data-title="This Is A True American Hero Licensed Nurse Paramedic And Navy Seal Tyrone Woods Was Killed In Libya During Navy Seals Celebrity Siblings Celebrity Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/99/72/c89972c87a4bc037575634ddb9f15075.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgNMA5-8U-Dxt-4t8j3GBK9Cb9mKlUtoRGtg';" alt="This Is A True American Hero Licensed Nurse Paramedic And Navy Seal Tyrone Woods Was Killed In Libya During Navy Seals Celebrity Siblings Celebrity Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A True American Hero Licensed Nurse Paramedic And Navy Seal Tyrone Woods Was Killed In Libya During Navy Seals Celebrity Siblings Celebrity Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/82/62/c78262dc4740906226021b400b15e56c.jpg" data-lightbox="roadtrip" data-title="Navy Seal Lcdr Erik Kristensen Served With Me At Soceur For A Couple Months During My One Year Mobilizatio Navy Seals United States Navy Seals Killed In Action">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/82/62/c78262dc4740906226021b400b15e56c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5qsIIbxE5uibHWgqfhBySkSt27TxHUV2xA';" alt="Navy Seal Lcdr Erik Kristensen Served With Me At Soceur For A Couple Months During My One Year Mobilizatio Navy Seals United States Navy Seals Killed In Action">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Lcdr Erik Kristensen Served With Me At Soceur For A Couple Months During My One Year Mobilizatio Navy Seals United States Navy Seals Killed In Action</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nj.com/resizer/bS0VJwVJS5hNMeu32Z8iPkjdMqc=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/ledgerupdates_impact/photo/2011/05/kurdzukjpg-b21de84f1c433bfd.jpg" data-lightbox="roadtrip" data-title="Though Trained To Kill Navy Seals Blend Into Tranquil Beach Town In Virginia Nj Com">
+											<img class="card-img v-image ads-img " src="https://www.nj.com/resizer/bS0VJwVJS5hNMeu32Z8iPkjdMqc=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/ledgerupdates_impact/photo/2011/05/kurdzukjpg-b21de84f1c433bfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_tz8_SqGyL0yiqjN3Jc1u81JjO_oh5uQgQ';" alt="Though Trained To Kill Navy Seals Blend Into Tranquil Beach Town In Virginia Nj Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Though Trained To Kill Navy Seals Blend Into Tranquil Beach Town In Virginia Nj Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/c9/ec/a2c9ece005f7a496b7e01c38732c19ce.jpg" data-lightbox="roadtrip" data-title="Sealofhonor Honoring Navy Seal Charles Keating Who Selflessly Sacrificed His Life Three Years Ago Today In I Us Navy Seals Navy Seals Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/c9/ec/a2c9ece005f7a496b7e01c38732c19ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_w33dWfLrczPa-eF4fJWqaVZzTm30YygxQ';" alt="Sealofhonor Honoring Navy Seal Charles Keating Who Selflessly Sacrificed His Life Three Years Ago Today In I Us Navy Seals Navy Seals Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sealofhonor Honoring Navy Seal Charles Keating Who Selflessly Sacrificed His Life Three Years Ago Today In I Us Navy Seals Navy Seals Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/c3/75/9dc375c7a5f5908b9bcca53d071569f6.jpg" data-lightbox="roadtrip" data-title="Kit Up Holiday Exclusive American Sniper Interview Part 1 Of 2 Chris Kyle Navy Seals Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/c3/75/9dc375c7a5f5908b9bcca53d071569f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUUnjOne6ItGk8xC2WJ_mFXCQ-c9u_Q1Gueg';" alt="Kit Up Holiday Exclusive American Sniper Interview Part 1 Of 2 Chris Kyle Navy Seals Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kit Up Holiday Exclusive American Sniper Interview Part 1 Of 2 Chris Kyle Navy Seals Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/6a/81/81/6a818145006bd75b412cd63a0d9355d3--special-forces-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUUnjOne6ItGk8xC2WJ_mFXCQ-c9u_Q1Gueg';" alt="Kit Up Holiday Exclusive American Sniper Interview Part 1 Of 2 Chris Kyle Navy Seals Military">
+										<div class="card-body">
+						<h3 class="h5"><b>Navy SEAL and his wife smuggled ten kilos of cocaine worth 350000 into Miami Navy SEAL Angel Martinez-Ramos 35 left active duty in 2010 but continued to serve in Naval Reserves Was stopped by.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy seal and his wife killed couple</strong>. 
+								
+																	Sifrit 25 has been on trial since Monday for the May 26 2002 killings of Martha Margene Crutchley 51 and her companion Joshua E. 
+																	A young couple who did everything together -- including murder. 
+																	The Navy SEAL who claims he killed Osama bin Laden has spoken for the first time to reveal the US Government had no intention of capturing the worlds most wanted man alive. 
+																	Robert ONeill the Navy SEAL who said he killed Osama Bin Laden describes the moment he pulled the trigger and shot the worlds most wanted man in the head in his new book The Operator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	War didnt scare heroic Navy SEAL Michael Murphy. 
+																	US Navy SEAL on trial accused of murdering wounded Isis fighter. 
+																	They exchanged vows to love cherish -- and murder. 
+																	Rob ONeill the Navy SEAL who killed bin Laden and his new wife tell DailyMailTV of their romance and reveal their idyllic wedding - surrounded by armed guards and with Kid Rock as a guest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On August 6th 2011 NAVY Seal Aaron Vaughn was killed in Afghanistan when his Chinook helicopter was shot down. 
+																	Benjamin and Erika Sifrit were joined together in unholy matrimony. 
+																	The rumours claim this was to not offend other religions. 
+																	Prosecutors believe her account offers a window into the killings last Memorial Day weekend of Martha Margene Crutchley 51 and Joshua E. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ford 32 who lived together in Fairfax City. 
+																	By Craig Charles on March 31 2017. 
+																	Navy Special Operations Chief Edward Gallagher with his wife Andrea A US Navy Seal has been found not guilty of killing a young Islamic State group prisoner in Iraq and other murder charges in a. 
+																	What really scared him was popping the question to his girlfriend of five years Heather Duggan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Murphy a Long Islander who achieved his childhood. 
+																	And the two may never have been caught if werent for their strange obsession. 
+																	On 8 August 2011 Today Show host Matt Lauer conducted an interview with the grieving family of Aaron Vaughn one of the Navy SEALS killed in that incident speaking with Vaughns widow Kimberly. 
+																	Jurors Wednesday convicted a former Navy SEAL of killing one of two tourists whose dismembered bodies were found last year after they disappeared during a Memorial Day trip to the beach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Erika Elaine Sifrit and Benjamin Adam BJ Sifrit are an American couple convicted of murdering two tourists Joshua Edward Ford and Martha Margene Geney Crutchley in Ocean City Maryland in 2002. 
+																	President Trump hosts Navy SEAL who killed Osama bin Laden and his new wife at private dinner in the White House. 
+																	Navy SEAL killed by ISIS in Iraq married his fiancee in secret just before deploying to protect her in case anything happened to him Charles Keating IV was slain by ISIS fighters in. 
+																	Prosecutors said Sifrit and her husband Benjamin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Navy SEAL Special Operations Chief Edward Gallagher leaves court with his wife Andrea 17 June 2019. 
+																	He is on military trial at. 
+																	US Navy SEAL on trial accused of murdering wounded Isis fighter. 
+																	The case drew substantial media attention. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He is on military trial at. 
+																	During his four weeks of intense Navy SEAL training off the coast of San Diego staying awake for days at a time while running in the sand swimming for long. 
+																	02242016 1213 pm PST. 
+																	President Trump hosted former Navy SEAL Rob ONeill for dinner at the White House. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Navy SEAL Special Operations Chief Edward Gallagher leaves court with his wife Andrea 17 June 2019. 
+																	Charity he worked for say US NAVY SEALs raid destroyed everything His wife Yolande said his captors agreed to put him on a flight to Istanbul She had planned to leave South Africa today for. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/98/51/419851d1ef816723eb3f4b597a6660e9.jpg" data-lightbox="roadtrip" data-title="U S Navy Seals Anelite Maritime Force Military Rings Us Navy Seals Sellos De La Marina Heroe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/98/51/419851d1ef816723eb3f4b597a6660e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1xKmWgRa4Ls-YkJX7pDST35-btB4DgVo7A';" alt="U S Navy Seals Anelite Maritime Force Military Rings Us Navy Seals Sellos De La Marina Heroe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Seals Anelite Maritime Force Military Rings Us Navy Seals Sellos De La Marina Heroe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2018-11/logan-melgar-1200.jpg?itok=C-oDA7Mr" data-lightbox="roadtrip" data-title="Navy Seal Sentenced To 10 Years In Choking Death Of Green Beret Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2018-11/logan-melgar-1200.jpg?itok=C-oDA7Mr" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5hustrDjatReHnrjGJsNvuPQgtp46KauNGg';" alt="Navy Seal Sentenced To 10 Years In Choking Death Of Green Beret Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Sentenced To 10 Years In Choking Death Of Green Beret Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://detroit.cbslocal.com/wp-content/uploads/sites/15909782/2012/08/david-warsen-fb1.jpg?w=300" data-lightbox="roadtrip" data-title="Family Mich Navy Seal Killed In Afghanistan Helicopter Crash Cbs Detroit">
+											<img class="card-img v-image ads-img " src="https://detroit.cbslocal.com/wp-content/uploads/sites/15909782/2012/08/david-warsen-fb1.jpg?w=300" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOwEBj5hkiGBD-mR2LWMPJDqDz7wN1jUkGyg';" alt="Family Mich Navy Seal Killed In Afghanistan Helicopter Crash Cbs Detroit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Mich Navy Seal Killed In Afghanistan Helicopter Crash Cbs Detroit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6a/81/81/6a818145006bd75b412cd63a0d9355d3--special-forces-.jpg" data-lightbox="roadtrip" data-title="Seal Photo Album Page03 By Doc Riojas Vietnam War Photos Brown Water Navy Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6a/81/81/6a818145006bd75b412cd63a0d9355d3--special-forces-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhxn7aX9CJdK2mOodOFKAYy9RVjVYYWv2Hw';" alt="Seal Photo Album Page03 By Doc Riojas Vietnam War Photos Brown Water Navy Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seal Photo Album Page03 By Doc Riojas Vietnam War Photos Brown Water Navy Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/2d/3e/172d3e738c7c89064f5939c362b571ea.jpg" data-lightbox="roadtrip" data-title="Pin On Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/2d/3e/172d3e738c7c89064f5939c362b571ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNrX54dgRiLrlHmV-qBpGDgpOAg3v58yq0xQ';" alt="Pin On Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/6c/bd/1e6cbd8eb14694dcec80445107c20b59.jpg" data-lightbox="roadtrip" data-title="Us Navy Chief Special Warfare Operator Jason R Workman Right And Chief Explosive Ordnance Disposal Technician Ni Special Forces Gear Navy Seals Army Couple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/6c/bd/1e6cbd8eb14694dcec80445107c20b59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2X-u8UDAHal-ueOld4KmLPC_7VOeSLXFIOg';" alt="Us Navy Chief Special Warfare Operator Jason R Workman Right And Chief Explosive Ordnance Disposal Technician Ni Special Forces Gear Navy Seals Army Couple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Chief Special Warfare Operator Jason R Workman Right And Chief Explosive Ordnance Disposal Technician Ni Special Forces Gear Navy Seals Army Couple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/de/09/24de091b798896d4e2f54c121c0acd0e.jpg" data-lightbox="roadtrip" data-title="Danny Dietz Navy Seal Killed In Combat Lone Survivor Danny Dietz Navy Seals Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/de/09/24de091b798896d4e2f54c121c0acd0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL9E8T84zCY-OIWSW4kwsXghFXoH4lI_7EeA';" alt="Danny Dietz Navy Seal Killed In Combat Lone Survivor Danny Dietz Navy Seals Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Danny Dietz Navy Seal Killed In Combat Lone Survivor Danny Dietz Navy Seals Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/ed/96/88ed96e33aaf5b99b97672ee739ac0ca.jpg" data-lightbox="roadtrip" data-title="Navy Seal Erik Spider Kristensen Was Self Confident Without Being Boastful Strong Without Being Mean Navy Seals United States Navy Seals Operation Red Wings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/ed/96/88ed96e33aaf5b99b97672ee739ac0ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlOp-7ZJ9rAE2NmLMifGb5y32SecvWJaj6g';" alt="Navy Seal Erik Spider Kristensen Was Self Confident Without Being Boastful Strong Without Being Mean Navy Seals United States Navy Seals Operation Red Wings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Erik Spider Kristensen Was Self Confident Without Being Boastful Strong Without Being Mean Navy Seals United States Navy Seals Operation Red Wings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/e6/b6/9ae6b63057abda8d04f8feaaa3420307.jpg" data-lightbox="roadtrip" data-title="Soc Seal Jon Tumilson Pritzker Military Museum Library Chicago Navy Seals Military Museum Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/e6/b6/9ae6b63057abda8d04f8feaaa3420307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrv6cl2mqCiBdNfh0nRZKiqBG5sYbkqs_sxA';" alt="Soc Seal Jon Tumilson Pritzker Military Museum Library Chicago Navy Seals Military Museum Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soc Seal Jon Tumilson Pritzker Military Museum Library Chicago Navy Seals Military Museum Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/42/01/6742013200e17cb56853978a7d4cc152.jpg" data-lightbox="roadtrip" data-title="The Legend Of Chris Kyle American Sniper Chris Kyle Chris Kyle Chris Kyle Sniper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/42/01/6742013200e17cb56853978a7d4cc152.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNmRPHFftkh0kFcUsnO--gI0QvQms1mOpKw';" alt="The Legend Of Chris Kyle American Sniper Chris Kyle Chris Kyle Chris Kyle Sniper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Legend Of Chris Kyle American Sniper Chris Kyle Chris Kyle Chris Kyle Sniper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/24/c0/ce24c0463c8050274a7b2d097f8e2797.jpg" data-lightbox="roadtrip" data-title="Pin On Cute Costumes And Cosplays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/24/c0/ce24c0463c8050274a7b2d097f8e2797.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3zDhoAdladqOscyL78zK7PRDAb-edFQZLg';" alt="Pin On Cute Costumes And Cosplays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cute Costumes And Cosplays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/1e/c3/f21ec3d942cd1ba28da8d89a747e235f.jpg" data-lightbox="roadtrip" data-title="Navy Seal Who Killed Bin Laden Describes The Historic Raid Us Navy Seals Military Special Forces Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/1e/c3/f21ec3d942cd1ba28da8d89a747e235f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTmMet09ZXU0wJwKpDN1eVfpMoWqVN_QIS-A';" alt="Navy Seal Who Killed Bin Laden Describes The Historic Raid Us Navy Seals Military Special Forces Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Who Killed Bin Laden Describes The Historic Raid Us Navy Seals Military Special Forces Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/83/6a/f9836addeade4c2d1c24e3a8fbc5e6c4.jpg" data-lightbox="roadtrip" data-title="Watched Lone Survivor The Other Day Teared Up A Couple Times And Cried At The End When They Went To T The Fault In Our Stars Lone Survivor Movie Lone Survivor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/83/6a/f9836addeade4c2d1c24e3a8fbc5e6c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE-pDJgOkZee09gzWow9Xc2_DSF7t7Z19mg';" alt="Watched Lone Survivor The Other Day Teared Up A Couple Times And Cried At The End When They Went To T The Fault In Our Stars Lone Survivor Movie Lone Survivor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watched Lone Survivor The Other Day Teared Up A Couple Times And Cried At The End When They Went To T The Fault In Our Stars Lone Survivor Movie Lone Survivor</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/buy-black-military-hat.html">Buy Black Military Hat</a></li>
+													<li class="list-group-item"><a href="/california-army-national-guard-human-resources.html">California Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-nurse.html">Benefits Of Navy Nurse</a></li>
+													<li class="list-group-item"><a href="/campus-portal-gcms.html">Campus Portal Gcms</a></li>
+													<li class="list-group-item"><a href="/best-online-masters-programs-for-veterans.html">Best Online Masters Programs For Veterans</a></li>
+													<li class="list-group-item"><a href="/california-veterans-dependents-educational-benefits.html">California Veterans Dependents Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-savings-account.html">Benefits Of Navy Federal Savings Account</a></li>
+													<li class="list-group-item"><a href="/black-tactical-military-hat.html">Black Tactical Military Hat</a></li>
+													<li class="list-group-item"><a href="/campus-portal-barrow.html">Campus Portal Barrow</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-checking-account.html">Benefits Of Navy Federal Checking Account</a></li>
+													<li class="list-group-item"><a href="/birth-certificate-for-military-dependents-born-overseas.html">Birth Certificate For Military Dependents Born Overseas</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal.html">Benefits Of Navy Seal</a></li>
+													<li class="list-group-item"><a href="/best-military-hero-movies.html">Best Military Hero Movies</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal-workout.html">Benefits Of Navy Seal Workout</a></li>
+													<li class="list-group-item"><a href="/birth-certificates-for-military-dependents-born-overseas.html">Birth Certificates For Military Dependents Born Overseas</a></li>
+													<li class="list-group-item"><a href="/calculate-percentage-military-retirement-divorce.html">Calculate Percentage Military Retirement Divorce</a></li>
+													<li class="list-group-item"><a href="/camp-hero-air-force-base-montauk-ny.html">Camp Hero Air Force Base Montauk Ny</a></li>
+													<li class="list-group-item"><a href="/british-army-hr-contact.html">British Army Hr Contact</a></li>
+													<li class="list-group-item"><a href="/bought-by-many-login-to-my-account.html">Bought By Many Login To My Account</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-platinum-credit-card.html">Benefits Of Navy Federal Platinum Credit Card</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

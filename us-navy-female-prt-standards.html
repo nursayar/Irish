@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Navy Female Prt Standards - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Navy Female Prt Standards",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/a9/55/77/a9557773a1ab07b150db17b6561bab63.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+navy+female+prt+standards",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Navy Female Prt Standards</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">PRT Scoring The Navy PFT score is found by averaging the scores of the three fitness events. All recruits arriving at the Navys boot-camp will complete an initial 15 mile run. The Navy has strict height and weight standards that all service members are required to meet. <br>				
+			</p>
+										<a class="badge badge-light" href="/air-force-human-resources-number.html">air force human resources number</a>
+											<a class="badge badge-warning" href="/air-force-jobs-in-2019.html">air force jobs in 2019</a>
+											<a class="badge badge-success" href="/air-force-jobs-for-criminal-justice.html">air force jobs for criminal justice</a>
+											<a class="badge badge-warning" href="/air-force-jobs-for-disabled.html">air force jobs for disabled</a>
+											<a class="badge badge-success" href="/air-force-jobs-for-civilians.html">air force jobs for civilians</a>
+											<a class="badge badge-warning" href="/air-force-hq-structure.html">air force hq structure</a>
+											<a class="badge badge-dark" href="/air-force-jobs-for-diploma-mechanical.html">air force jobs for diploma mechanical</a>
+											<a class="badge badge-danger" href="/air-force-jobs-for-engineering-students.html">air force jobs for engineering students</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/c9/df/93c9df28258dea1d3bb60b093ae1aad8.png" data-lightbox="roadtrip" data-title="Female Prt Standards Navy Get In Shape Bootcamp Get Fit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/c9/df/93c9df28258dea1d3bb60b093ae1aad8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7no6N_6Y_aDdIlHe625jMz3nYsxnyMlEwg&amp;ec=45774421';" alt="Female Prt Standards Navy Get In Shape Bootcamp Get Fit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Female Prt Standards Navy Get In Shape Bootcamp Get Fit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/d7/2f/a3d72f63a368c81088dc184f9102b2b6.jpg" data-lightbox="roadtrip" data-title="Pin On Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/d7/2f/a3d72f63a368c81088dc184f9102b2b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSBPzB0Lsxy1_eAlfIX77dSEhSzcV9lm-Hg&amp;ec=45774421';" alt="Pin On Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/1c/b8/d81cb81e29ddcd49689b4f1127eb977e.jpg" data-lightbox="roadtrip" data-title="New Army Hair Regulations Ar 670 1 As Of 31 March 2014 Ponytail Physicaltraining Pt Military Hair Army Hair Regulations Long Length Hair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/1c/b8/d81cb81e29ddcd49689b4f1127eb977e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2G1BuCYlNLRrFPIRsccj4ewhGnTZ0tZBsuA&amp;ec=45774421';" alt="New Army Hair Regulations Ar 670 1 As Of 31 March 2014 Ponytail Physicaltraining Pt Military Hair Army Hair Regulations Long Length Hair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Army Hair Regulations Ar 670 1 As Of 31 March 2014 Ponytail Physicaltraining Pt Military Hair Army Hair Regulations Long Length Hair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/07/02/690702ac4849a9cefae87981f34de615.png" data-lightbox="roadtrip" data-title="12 Best Navy Jobs In 2019 United States Navy Women Navy Jobs Navy Sailor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/07/02/690702ac4849a9cefae87981f34de615.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjc7NZ30N9UfgBLF0x1MB0RLTzx3SVnEIvqA&amp;ec=45774421';" alt="12 Best Navy Jobs In 2019 United States Navy Women Navy Jobs Navy Sailor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Best Navy Jobs In 2019 United States Navy Women Navy Jobs Navy Sailor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/12/95/00/12950087c7ecab9ffbf0dd8ecf747643.jpg" data-lightbox="roadtrip" data-title="Male And Female Rtc Items Us Navy Women Navy Boots Navy Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/12/95/00/12950087c7ecab9ffbf0dd8ecf747643.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfZT8owPLrqsHpzqPqpuUxquI4Qi7lP4wcw&amp;ec=45774421';" alt="Male And Female Rtc Items Us Navy Women Navy Boots Navy Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Male And Female Rtc Items Us Navy Women Navy Boots Navy Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/75/60/627560e6d63cc09dfb7b5b51e6995c68.png" data-lightbox="roadtrip" data-title="Preparing For Navy Boot Camp 2020 Navy Military Women Navy Boots Navy Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/75/60/627560e6d63cc09dfb7b5b51e6995c68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJkg86TMYr_nbDZHJtnMKePgBk7SD-4HHPA&amp;ec=45774421';" alt="Preparing For Navy Boot Camp 2020 Navy Military Women Navy Boots Navy Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preparing For Navy Boot Camp 2020 Navy Military Women Navy Boots Navy Training</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/41/3b/0f/413b0fbbc31f153498f28516b15d3d7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJkg86TMYr_nbDZHJtnMKePgBk7SD-4HHPA&amp;ec=45774421';" alt="Preparing For Navy Boot Camp 2020 Navy Military Women Navy Boots Navy Training">
+										<div class="card-body">
+						<h3 class="h5"><b>57-80 inches Here are the Navy height and weight standard chart for applicants and officers on reserve and active duty both men and women Height in inches Men Maximum Weight in lbs Women Maximum Weight in lbs 57.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us navy female prt standards</strong>. 
+								
+																	The below information on the Female PRT Standards Age 20-24 are taken from Guide-5 of the 2020 Navy Physical Readiness program. 
+																	The New Navy Physical Fitness Assessment 2020 Changes are coming but you cannot think. 
+																	Female Standards The standards for physical fitness in women also vary by age. 
+																	In November the Navy released new PRT standards including the scores for planking. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Male recruits must complete the run in 16 minutes 10 seconds or less the female recruits in 18 minutes 37 seconds or less. 
+																	The highest score a Female age 65 can earn requires 22 pushups 250 plank a 1445 15 mile run or cardio alternative of 915 500yd swim or 850 min for the 2 km row. 
+																	Females ages 20 to 24 must complete 58 curl-ups 21 pushups a 15-mile run in 14 minutes and 15 seconds and a. 
+																	The Navy PRT standards are enforced to make sure new male and female recruits arrive at boot camp with basic physical conditions met. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Follow the age guidelines to determine the bare minimums in order to remain in boot camp and not get kicked out of the Navy. 
+																	Governmental Ethics policy on social media use and DOD 512205 PAO Guidance. 
+																	Navy PRT standard Male 45-49. 
+																	We have the new numbers listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check out the physical fitness testing requirements for the other military branches below. 
+																	Satisfactory has high and medium. 
+																	Navy PT Standards for Women PRT Changes are coming in 2020. 
+																	15 Mile Run 15mi run 2020 Administrative Separations ADSEP Army BCA BCA Failure BCA Waver Beta PRT bodyfat body fat standards calculator CFL Coaching Download elliptical energy drinks ERP Gram Fitness Reports Home Gym ISP NAVADMIN navy Navy Fitness Navy PRT New PFT New PRP New PRT OPNAV 61101 page 13 PARFQ PFA PFA Failure PFT Failures Physical Readiness Program Update PRIMS PRT PRT Coaching. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The minimum scores a female 20-24 can earn and still pass the PRT require 20 pushups 145 min plank 1500 15 mile run or cardio alternative of 1025 2 km row or 13. 
+																	DODReads Family of Sites. 
+																	A study conducted by Naval Health Research Center NHRC developed the initial forearm plank and 2000-meter row PRT performance standards which are available in PRP Guides 5 and 10. 
+																	Navy prt standards - female curl push 15 mile curl push 15 mile category level ups ups run 500-yd 450-m category level ups ups run 500-yd 450-m outstanding high 95 43 1051 745 735 outstanding high 92 41 1056 800 750 outstanding medium 93 42 1153 838 828 outstanding medium 90 40 1200 845 835. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest score a female age 20-24 can earn requires 48 pushups 335 plank a 947 15 mile run or cardio alternative of 715 500yd swim or 805 min for the 2 km row. 
+																	The PRT is broken down to 5 scoring categories within the outstanding excellent and good categories there are high medium and low levels. 
+																	Navy personnel are tested for physical fitness twice a year and even though the requirements get slightly easier the older you are theyre still too strict for you to slack off and stop eating right and exercising. 
+																	All other Navy grooming requirements will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keeping the US Navy Updated on the 2020 Physical Readiness Program Female Standards. 
+																	Female Sailors are authorized to wear their hair below the lower edge of the collar of the blouse jacket or coat of the Dinner Dress Uniform being worn. 
+																	Applicants cannot be below 57 inches and not above 80 inches. 
+																	More details on the standards for passing and maxing these new changes will be updated later with new charts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy PRT standards Female 40-40. 
+																	The below information on the Female PRT Standards Age 65 are taken from Guide-5 of the 2020 Navy Physical Readiness program. 
+																	For example lets say a 25-year-old female does 91 curl-ups sit ups 26 push-ups and completes the. 
+																	To ensure you meet the standards when you arrive at boot-camp adopt a healthy lifestyle which promotes proper nutrition and daily exercise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keeping the US Navy Updated on the 2020 Physical Readiness Program Female Standards. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e7/f9/6c/e7f96c77cb906e392353b0876362fafe.jpg" data-lightbox="roadtrip" data-title="Army Apft Standards For Males And Females Updated 2020 In 2020 Military Workout Military Training Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e7/f9/6c/e7f96c77cb906e392353b0876362fafe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJllc3NAAOA32MMMYtt9sFa9zQvhdIywYHQ&amp;ec=45774421';" alt="Army Apft Standards For Males And Females Updated 2020 In 2020 Military Workout Military Training Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Apft Standards For Males And Females Updated 2020 In 2020 Military Workout Military Training Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/3b/0f/413b0fbbc31f153498f28516b15d3d7b.jpg" data-lightbox="roadtrip" data-title="Whichever Career You Decided To Pursue In The Navy The Training And Experience Gained Will Become Inva Navy Boots Navy Military Women United States Navy Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/3b/0f/413b0fbbc31f153498f28516b15d3d7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-7MZv3crqoA-OFqAYNzTUmiZ-JWtGQps-w&amp;ec=45774421';" alt="Whichever Career You Decided To Pursue In The Navy The Training And Experience Gained Will Become Inva Navy Boots Navy Military Women United States Navy Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whichever Career You Decided To Pursue In The Navy The Training And Experience Gained Will Become Inva Navy Boots Navy Military Women United States Navy Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/aa/80/46/aa80469d98f7beb651b72493bbbc8d0a.jpg" data-lightbox="roadtrip" data-title="How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/aa/80/46/aa80469d98f7beb651b72493bbbc8d0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEfgROCtIrX4t8UtAgPwHT-_GSm6caHTXzg&amp;ec=45774421';" alt="How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/1c/14/7a1c14c8b83fb17ee637f3d6635a36fe.gif" data-lightbox="roadtrip" data-title="Army Physical Readiness Training Prt Information Army Workout Police Workout Police Officer Requirements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/1c/14/7a1c14c8b83fb17ee637f3d6635a36fe.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWI647W_5O-TZwhg7uBFBHcc9VcFkm8WLUPg&amp;ec=45774421';" alt="Army Physical Readiness Training Prt Information Army Workout Police Workout Police Officer Requirements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Physical Readiness Training Prt Information Army Workout Police Workout Police Officer Requirements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ed/51/a7/ed51a73295488932f7aaecbad89bb878.jpg" data-lightbox="roadtrip" data-title="Female Officer Raf In London By Lord Storm Flight Attendant Fashion Work Wear Outfits Royal Navy Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ed/51/a7/ed51a73295488932f7aaecbad89bb878.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0wOIJwZrd7bzWVI-MB0c7OrUgVdu2E6VkQ&amp;ec=45774421';" alt="Female Officer Raf In London By Lord Storm Flight Attendant Fashion Work Wear Outfits Royal Navy Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Female Officer Raf In London By Lord Storm Flight Attendant Fashion Work Wear Outfits Royal Navy Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/fd/41/18fd41fc719ad131294502a296f48c37.png" data-lightbox="roadtrip" data-title="Women In The Military Serving Overseas Airman To Mom Military Military Spouse Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/fd/41/18fd41fc719ad131294502a296f48c37.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6TsxQHB1nWhtamipi6H2_G0A065m1SoLrZg&amp;ec=45774421';" alt="Women In The Military Serving Overseas Airman To Mom Military Military Spouse Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military Serving Overseas Airman To Mom Military Military Spouse Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/55/77/a9557773a1ab07b150db17b6561bab63.jpg" data-lightbox="roadtrip" data-title="Pin By Hannah Vanden Branden On Fit Life Army Workout Military Workout Air Force Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/55/77/a9557773a1ab07b150db17b6561bab63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFT9BI-iZuIppInt-znDQlOnQHn3GYa5oEA&amp;ec=45774421';" alt="Pin By Hannah Vanden Branden On Fit Life Army Workout Military Workout Air Force Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hannah Vanden Branden On Fit Life Army Workout Military Workout Air Force Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/e6/13/53e613cd5e3ff30608ba423d3c57fd62.png" data-lightbox="roadtrip" data-title="U S Navy Seal Inspired Summer Boot Camp Total Gym Pulse Navy Seal Workout Navy Seal Workout Plan Navy Seal Workout Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/e6/13/53e613cd5e3ff30608ba423d3c57fd62.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvceSqxpwNn4cxmnCTPeQNCUZsOdONa-Mnw&amp;ec=45774421';" alt="U S Navy Seal Inspired Summer Boot Camp Total Gym Pulse Navy Seal Workout Navy Seal Workout Plan Navy Seal Workout Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Seal Inspired Summer Boot Camp Total Gym Pulse Navy Seal Workout Navy Seal Workout Plan Navy Seal Workout Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3a/f2/49/3af2498dae99a79a55056213414c4c8c.jpg" data-lightbox="roadtrip" data-title="Navy Boot Camp Physical Fitness In 2020 Physical Fitness Navy Boots Bootcamp">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3a/f2/49/3af2498dae99a79a55056213414c4c8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2PU2c3hwBR-pCnggY3KlT01P4I1FO-PRalQ&amp;ec=45774421';" alt="Navy Boot Camp Physical Fitness In 2020 Physical Fitness Navy Boots Bootcamp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Boot Camp Physical Fitness In 2020 Physical Fitness Navy Boots Bootcamp</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/f0/59/62f059f5a1336e695ae1417255fe0a7e.png" data-lightbox="roadtrip" data-title="Joining The Us Navy Can Be A Fun Fulfilling And Rewarding Career Choice At The Same Time It Can Also Be A M Navy Jobs Us Navy Women United States Navy Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/f0/59/62f059f5a1336e695ae1417255fe0a7e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS_WIdBCP00aqhSWxCTohywTRSRgk7F00q7Q&amp;ec=45774421';" alt="Joining The Us Navy Can Be A Fun Fulfilling And Rewarding Career Choice At The Same Time It Can Also Be A M Navy Jobs Us Navy Women United States Navy Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joining The Us Navy Can Be A Fun Fulfilling And Rewarding Career Choice At The Same Time It Can Also Be A M Navy Jobs Us Navy Women United States Navy Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/d8/7c/acd87ce384d914b89e2dc83d84f2eaae.png" data-lightbox="roadtrip" data-title="If You Have Ever Considered Whether The Navy Is A Good Option For Your Career You Probably Wondered About The Benefits Joining The Navy Navy Military Navy Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/d8/7c/acd87ce384d914b89e2dc83d84f2eaae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZ_jGeCOxAXl1oqlOU4rFtbbWdrSJVqlFiw&amp;ec=45774421';" alt="If You Have Ever Considered Whether The Navy Is A Good Option For Your Career You Probably Wondered About The Benefits Joining The Navy Navy Military Navy Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Have Ever Considered Whether The Navy Is A Good Option For Your Career You Probably Wondered About The Benefits Joining The Navy Navy Military Navy Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/fa/b9/72fab955c1fcea8302d92927291d3b64.jpg" data-lightbox="roadtrip" data-title="Physical Training Navy Com Navy Basic Training Navy Training Navy Nursing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/fa/b9/72fab955c1fcea8302d92927291d3b64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4puKHrmioeWBuPMD5VvcmiraMoACx0ALrmg&amp;ec=45774421';" alt="Physical Training Navy Com Navy Basic Training Navy Training Navy Nursing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Physical Training Navy Com Navy Basic Training Navy Training Navy Nursing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/e8/2b/e6e82b49150bd297503930bd5b2297de.jpg" data-lightbox="roadtrip" data-title="Start Sending Navy Boot Camp Letters Do You Know Someone At Navy Boot Camp Get The Address And Letter Ideas To Start Writi Navy Boots Camp Letters Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/e8/2b/e6e82b49150bd297503930bd5b2297de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefmLGHfTQA_tLeoIivHsmD9QK5qLrS33-Ng&amp;ec=45774421';" alt="Start Sending Navy Boot Camp Letters Do You Know Someone At Navy Boot Camp Get The Address And Letter Ideas To Start Writi Navy Boots Camp Letters Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Start Sending Navy Boot Camp Letters Do You Know Someone At Navy Boot Camp Get The Address And Letter Ideas To Start Writi Navy Boots Camp Letters Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-a-navy-wife.html">Benefits Of A Navy Wife</a></li>
+													<li class="list-group-item"><a href="/being-a-nurse-as-a-military-spouse.html">Being A Nurse As A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-vs-navy.html">Benefits Of Army Vs Navy</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-nurse.html">Benefits Of Army Nurse</a></li>
+													<li class="list-group-item"><a href="/benefits-for-married-couples-in-the-navy.html">Benefits For Married Couples In The Navy</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-nursing.html">Benefits Of Air Force Nursing</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-career.html">Benefits Of A Military Career</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-crawl.html">Benefits Of Army Crawl</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-vs-air-force.html">Benefits Of Army Vs Air Force</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-rotc-in-college.html">Benefits Of Air Force Rotc In College</a></li>
+													<li class="list-group-item"><a href="/being-a-swo-in-the-navy.html">Being A Swo In The Navy</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-leadership.html">Benefits Of Army Leadership</a></li>
+													<li class="list-group-item"><a href="/being-a-soldiers-wife-quotes.html">Being A Soldiers Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/benefits-for-surviving-spouses-of-retired-military.html">Benefits For Surviving Spouses Of Retired Military</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-canteen.html">Benefits Of Army Canteen</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-doctor.html">Benefits Of Air Force Doctor</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-army-wife.html">Benefits Of A Army Wife</a></li>
+													<li class="list-group-item"><a href="/benefits-in-air-force-reserves.html">Benefits In Air Force Reserves</a></li>
+													<li class="list-group-item"><a href="/benefits-for-army-national-guard-veterans.html">Benefits For Army National Guard Veterans</a></li>
+													<li class="list-group-item"><a href="/benefits-for-divorced-military-spouse.html">Benefits For Divorced Military Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

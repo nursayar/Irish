@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Military Spouses Pay In State Tuition - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Military Spouses Pay In State Tuition",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/55/e1/6e/55e16e4a93dd39fed19a1b58c981d8b1.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+military+spouses+pay+in+state+tuition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Military Spouses Pay In State Tuition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you do not submit sufficient documentation within the deadline your tuition rate will be changed to the out-of-state rate unless you have submitted the Residency Questionnaire in your student portal and qualify for in-state tuition in which case your tuition rate will be changed to the in-state rate. As a military spouse on the move meeting state residency requirements and qualifying for in-state tuition rates will allow you to obtain a first-class education for a reasonable cost. Been a Kansas resident. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-24-hour-clock-time.html">army 24 hour clock time</a>
+											<a class="badge badge-dark" href="/amazon-hiring-military-spouses.html">amazon hiring military spouses</a>
+											<a class="badge badge-warning" href="/army-careers-contact-us.html">army careers contact us</a>
+											<a class="badge badge-info" href="/air-force-shadow-hrvatska.html">air force shadow hrvatska</a>
+											<a class="badge badge-light" href="/air-force-rop.html">air force rop</a>
+											<a class="badge badge-primary" href="/amazon-remote-jobs-military-spouse.html">amazon remote jobs military spouse</a>
+											<a class="badge badge-danger" href="/are-contacts-allowed-in-the-army.html">are contacts allowed in the army</a>
+											<a class="badge badge-secondary" href="/air-strike-force-heroes-2-unblocked.html">air strike force heroes 2 unblocked</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c5/56/40/c556407affafd0cc9a4bb836bd498eb0--military-spouse-military-style.jpg" data-lightbox="roadtrip" data-title="Where Do Military Kids Get In State Tuition Katehorrell Military Kids Military Spouse Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c5/56/40/c556407affafd0cc9a4bb836bd498eb0--military-spouse-military-style.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Glo_inl7zhUxu05uVoDQk5JYgmSUz-08hg';" alt="Where Do Military Kids Get In State Tuition Katehorrell Military Kids Military Spouse Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Do Military Kids Get In State Tuition Katehorrell Military Kids Military Spouse Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.png" data-lightbox="roadtrip" data-title="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAeUST7F4ffBMpPc6wqYWzKcegu1Ra4S92Bg';" alt="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" data-lightbox="roadtrip" data-title="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Hw0GxaTPloApJvD-Czf_lHOAjda3Qu-yqA';" alt="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/08/d0/3108d0c643b64bf959d6046d561868cc.png" data-lightbox="roadtrip" data-title="Home Of Record And State Of Legal Residence Things You Need To Know Katehorrell Life Insurance Policy Moving To Another State Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/08/d0/3108d0c643b64bf959d6046d561868cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7tI8OYOUYn854Dwq4ku0JA4GHIWAzqODzDQ';" alt="Home Of Record And State Of Legal Residence Things You Need To Know Katehorrell Life Insurance Policy Moving To Another State Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Of Record And State Of Legal Residence Things You Need To Know Katehorrell Life Insurance Policy Moving To Another State Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2b/5a/89/2b5a8953f492e72dd4809adccb5007f2.jpg" data-lightbox="roadtrip" data-title="2020 Military Pay Rates For Active Duty Money Grunt Military Pay Military Pay Chart Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2b/5a/89/2b5a8953f492e72dd4809adccb5007f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBC_vIapYw3kMrNE5QF8EBK06I40UVIsme5g';" alt="2020 Military Pay Rates For Active Duty Money Grunt Military Pay Military Pay Chart Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Military Pay Rates For Active Duty Money Grunt Military Pay Military Pay Chart Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/ac/c6/b6acc6e3df13dd9854571231d351a544.jpg" data-lightbox="roadtrip" data-title="Military Spouse Tuition Is Free For E5 And Below Through Mycaa Military Spouse Career Military Spouse Career Advancement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/ac/c6/b6acc6e3df13dd9854571231d351a544.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn9m3eGSIt-gbmfZN-rKnhqb4vX1lyZuoYg';" alt="Military Spouse Tuition Is Free For E5 And Below Through Mycaa Military Spouse Career Military Spouse Career Advancement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Tuition Is Free For E5 And Below Through Mycaa Military Spouse Career Military Spouse Career Advancement</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b1/4d/49/b14d493425d6d0ccc9c315ef5345356f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn9m3eGSIt-gbmfZN-rKnhqb4vX1lyZuoYg';" alt="Military Spouse Tuition Is Free For E5 And Below Through Mycaa Military Spouse Career Military Spouse Career Advancement">
+										<div class="card-body">
+						<h3 class="h5"><b>The waiver applies to Kansas public institutions including technical schoolscolleges community colleges Washburn University and state universities.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do military spouses pay in state tuition</strong>. 
+								
+																	If any service member is a TX resident when they enter military service they their spouse and their children receive 150 hours of paid tuition at any TX State University. 
+																	However not every military spouse will be eligible. 
+																	In the case of a member of the armed forces who is on active duty for a period of more than 30 days and whose domicile or permanent duty station is in a State that receives assistance under this chapter and part C of subchapter I of chapter 34 of title 42 such State shall not charge such member or the spouse or dependent child of such member tuition for attendance at a public institution of higher education in the State at a rate that is greater than the rate charged for residents of. 
+																	If a member of the armed forces or the spouse or dependent child of a member pays tuition at a public institution of higher education in a State at a rate determined by subsection a the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Aimed primarily at improving veterans access to health care the law allows any veteran who has served at least 90 days of active service to pay resident tuition rates in any state within three. 
+																	ALL undergraduate students regardless of military status attending UMSL who are Illinois residents will pay in-state tuition rate. 
+																	My question is though is will I have to pay out of state tuition since I havent been a resident for a year in the new state or is that waived due to being a military spouse. 
+																	Most postsecondary institutions have lower tuition rates for students who have established state residency in the same state as the school compared to students who have residency in another state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im supposed to be getting married to my military boyfriend soon and transferring colleges. 
+																	Im supposed to be getting married to my military boyfriend soon and transferring colleges. 
+																	The State of Kansas provides a tuition and fee waiver for dependents and spouses of deceased military personnel. 
+																	Do you qualify for in-state tuition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To qualify the veteran parent or spouse must have. 
+																	Effective October 1 2016 the Code of Virginia section 231-500--510 provides the following benefit. 
+																	This is not entirely true. 
+																	According to the North Carolina Department of Revenue NCDOR tax-exempt status for a military spouse can only be acquired if the spouses domicile is the same state as that of the service member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The condition is that the GI Bill must be already used so this works great for families with multiple children. 
+																	Specifically MyCAA will provide up to 4000 in tuition assistance for spouses seeking monetary assistance for licenses certifications certificates or associate degree. 
+																	To learn more about the required documentation for military servicemembers and their spouses and dependent children view Steps to Apply for Military and Veteran Students. 
+																	Active duty military activated guard or reservist members or guard or reservist members mobilized or on temporary active orders for six months or more who are residing in Virginia are eligible for the in-state tuition rateTo be eligible the active duty military member must apply for the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do military spouses have to pay out of state tuition. 
+																	This means that for any active duty service member his or her spouse and dependents at any public college or university where they are stationed for 30 days should be able to receive the in-state tuition rate. 
+																	Current Members of the Armed Forces. 
+																	Because of the Higher Education Opportunity Act of 2008 states need to offer in-state tuition to military family members who live in the state due to their active duty military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Higher Education Opportunity Act states that public colleges cannot charge military spouses or dependent children more than in-state tuition rates so long as the service member is on active duty for more than 30 days and is stationed in the state of the relevant public college. 
+																	My question is though is will I have to pay out of state tuition since I havent been a resident for a year in the new state or is that waived due to being a military spouse. 
+																	This item has a rating of 3 stars. 
+																	For example your service member must be on active Title 10 orders and fall within the ranks of E1-E5 W1-W2 or O1-O2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a military spouse you may have been told that you do not have to pay North Carolina income taxes due to The Military Spouses Residency Relief Act of 2009. 
+																	Do military spouses have to pay out of state tuition. 
+																	Military personnel when stationed within the state under military orders their spouses and their unemancipated children under twenty-four years. 
+																	1 - Individuals not eligible for in-state tuition based on not meeting the eligiblity requirments of the state education laws above will be charged out-of-state tuition under 8 NYCRR 302 2 - Must have attended the approved NY high school for a minimum of 2 years 3 - Federal law requires in-state rate in these circumstances 38 USC Sec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All dependents of military service members stationed in Virginia are eligible for in-state college tuition rates a move that should save military families thousands of dollars in higher education. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/e1/6e/55e16e4a93dd39fed19a1b58c981d8b1.png" data-lightbox="roadtrip" data-title="What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/e1/6e/55e16e4a93dd39fed19a1b58c981d8b1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSes6kTKmglG2ZhDA2GtGPYEjjZmp_mtGrq2A';" alt="What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/ec/ed/44ecedac3eea55e64c9467c59fa2f5bf.jpg" data-lightbox="roadtrip" data-title="Military Spouse Health Hacks Military Personnel Military Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/ec/ed/44ecedac3eea55e64c9467c59fa2f5bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhrN9RrLrh9HFkbxP0J-5IiDUSmMj1WiYig';" alt="Military Spouse Health Hacks Military Personnel Military Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Health Hacks Military Personnel Military Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/8c/ff/748cffb70d060872252005ba7f933a6e.jpg" data-lightbox="roadtrip" data-title="New York Says No Free Tuition To Gold Star Families Daily Mom Military Free Tuition Tuition Star Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/8c/ff/748cffb70d060872252005ba7f933a6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQAuKjkBam1eFP6kQ5QwAcTxV3hypr34_w1w';" alt="New York Says No Free Tuition To Gold Star Families Daily Mom Military Free Tuition Tuition Star Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Says No Free Tuition To Gold Star Families Daily Mom Military Free Tuition Tuition Star Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/40/63/784063bb9ec129e59d0c08f7ca94c6c8.png" data-lightbox="roadtrip" data-title="Gi Bill Benefits Tuition Assistance Military Education Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/40/63/784063bb9ec129e59d0c08f7ca94c6c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJKB5mPCT87ZZgWJ4UYa2dKY1IDkGNYPNCA';" alt="Gi Bill Benefits Tuition Assistance Military Education Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Benefits Tuition Assistance Military Education Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/57/af/1157afd81fb80dc2b5a0e8ee18753571.png" data-lightbox="roadtrip" data-title="Making The Decision To Be A Military Spouse Is One Thing Choosing Military Life For Your Kids Can Feel Far More O Military Kids Military Life Military Parents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/57/af/1157afd81fb80dc2b5a0e8ee18753571.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsDH5PjaIP48lEo1nDMTEjUlJYmRGrPwOwQ';" alt="Making The Decision To Be A Military Spouse Is One Thing Choosing Military Life For Your Kids Can Feel Far More O Military Kids Military Life Military Parents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making The Decision To Be A Military Spouse Is One Thing Choosing Military Life For Your Kids Can Feel Far More O Military Kids Military Life Military Parents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/20/9d/6b209d267c5bfa2784cc76dc0457dfd0.png" data-lightbox="roadtrip" data-title="2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/20/9d/6b209d267c5bfa2784cc76dc0457dfd0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMdVjJaR-jDvgShnVXN-aNZ-3IE1fYmSWLQ';" alt="2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/ca/51/dcca51372fa928f579fd1313c7ba6a64.jpg" data-lightbox="roadtrip" data-title="Image Result For Military Facts Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/ca/51/dcca51372fa928f579fd1313c7ba6a64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUgFQDQs0o6DYD9C7-YEMf2iooc7Mlv-br0A';" alt="Image Result For Military Facts Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Military Facts Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/4d/49/b14d493425d6d0ccc9c315ef5345356f.png" data-lightbox="roadtrip" data-title="Pin On Remote Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/4d/49/b14d493425d6d0ccc9c315ef5345356f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRgboPD_ZFGbIRYtOwhtidZExbkj81kjt4uQ';" alt="Pin On Remote Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Remote Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/09/61/f5/0961f581003c23842ca0b3995570efd8--online-degree-programs-online-degrees.jpg" data-lightbox="roadtrip" data-title="Get Exclusive Military Tuition Rates For 100 Online Degree Programs Online Degree Programs College Fun Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/09/61/f5/0961f581003c23842ca0b3995570efd8--online-degree-programs-online-degrees.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9k4ANMUgEeHnASVI3ByhJMp8a8dJvFzxYQ';" alt="Get Exclusive Military Tuition Rates For 100 Online Degree Programs Online Degree Programs College Fun Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Exclusive Military Tuition Rates For 100 Online Degree Programs Online Degree Programs College Fun Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/04/8a/74048a9fa6eede585e4eebd5b2541d68.png" data-lightbox="roadtrip" data-title="My Shop Seasoned Spouse Military Spouse Deployment Military Spouse Deployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/04/8a/74048a9fa6eede585e4eebd5b2541d68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIcpzB7rY5YNmeCKmq-WaoNjwibveIPM2IQ';" alt="My Shop Seasoned Spouse Military Spouse Deployment Military Spouse Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Shop Seasoned Spouse Military Spouse Deployment Military Spouse Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4e/00/a2/4e00a2f19cc3d70e40dfd7b88f4934f3.jpg" data-lightbox="roadtrip" data-title="How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4e/00/a2/4e00a2f19cc3d70e40dfd7b88f4934f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzkKi3GvcrgwmhC379rWON2M3s1EgaMFJnQ';" alt="How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/0f/cb/a40fcbb11d756a75f2f126befb6bf57f.jpg" data-lightbox="roadtrip" data-title="Pin By Judy Acosta On Prayer In 2020 Heavenly Father Biblical Quotes Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/0f/cb/a40fcbb11d756a75f2f126befb6bf57f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBGvBomlicJ1SVcyxmXwYus5wiCgMpIV7GsA';" alt="Pin By Judy Acosta On Prayer In 2020 Heavenly Father Biblical Quotes Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Judy Acosta On Prayer In 2020 Heavenly Father Biblical Quotes Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/47/fc/52/47fc525ffb1b862bcf4f55ddf4809044--polarized-sunglasses-smoke.jpg" data-lightbox="roadtrip" data-title="Revision Military Hellfly Ballistic Sunglasses Black Frame Smoke Lenses Http Ridingjerseys Com Revision Military Sunglasses Revision Military Sunglasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/47/fc/52/47fc525ffb1b862bcf4f55ddf4809044--polarized-sunglasses-smoke.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDJssbd5gPk34ds7mnIi9wa19CWeqtxbPUg';" alt="Revision Military Hellfly Ballistic Sunglasses Black Frame Smoke Lenses Http Ridingjerseys Com Revision Military Sunglasses Revision Military Sunglasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Revision Military Hellfly Ballistic Sunglasses Black Frame Smoke Lenses Http Ridingjerseys Com Revision Military Sunglasses Revision Military Sunglasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wgu-mycaa.html">Wgu Mycaa</a></li>
+													<li class="list-group-item"><a href="/war-heroes-rpg.html">War Heroes Rpg</a></li>
+													<li class="list-group-item"><a href="/war-heroes-nicknames.html">War Heroes Nicknames</a></li>
+													<li class="list-group-item"><a href="/what-benefits-does-army-reserve-get.html">What Benefits Does Army Reserve Get</a></li>
+													<li class="list-group-item"><a href="/what-are-the-army-core-competencies.html">What Are The Army Core Competencies</a></li>
+													<li class="list-group-item"><a href="/war-heroes-next-crate.html">War Heroes Next Crate</a></li>
+													<li class="list-group-item"><a href="/war-heroes-mod-apk.html">War Heroes Mod Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-play-store.html">War Heroes Play Store</a></li>
+													<li class="list-group-item"><a href="/what-are-the-different-styles-of-hats.html">What Are The Different Styles Of Hats</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-marine-biologist.html">What Are The Benefits Of Being A Marine Biologist</a></li>
+													<li class="list-group-item"><a href="/war-heroes-play-online.html">War Heroes Play Online</a></li>
+													<li class="list-group-item"><a href="/war-heroes-game-hacked.html">War Heroes Game Hacked</a></li>
+													<li class="list-group-item"><a href="/war-heroes-download.html">War Heroes Download</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-a-military-wife.html">What Are The Benefits Of A Military Wife</a></li>
+													<li class="list-group-item"><a href="/war-heroes-in-ww1.html">War Heroes In Ww1</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tier-list.html">War Heroes Tier List</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-army-officers-get.html">What Benefits Do Army Officers Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-military-spouses-receive.html">What Benefits Do Military Spouses Receive</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-married-to-a-marine.html">What Are The Benefits Of Being Married To A Marine</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-ww2.html">War Heroes Of Ww2</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

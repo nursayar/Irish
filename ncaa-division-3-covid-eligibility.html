@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Division 3 Covid Eligibility - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Division 3 Covid Eligibility",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/37/65/8e/37658e972fbb0e778b46583c77956e28.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+division+3+covid+eligibility",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Division 3 Covid Eligibility</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">14 to allow winter athletes to receive an additional year of eligibility. Protect the health and safety of college athletes. Along with its decision to cancel the winter and spring championships the NCAA Board of Governors last week directed all three divisions to enact legislative modifications and waivers to provide relief to student-athletes and schools impacted by COVID-19. <br>				
+			</p>
+										<a class="badge badge-success" href="/sscnverifikasibkngoid-login.html">sscnverifikasibkngoid login</a>
+											<a class="badge badge-success" href="/sscn-bkn-log-out.html">sscn bkn log out</a>
+											<a class="badge badge-danger" href="/sscnbkngoid-2020-skb.html">sscnbkngoid 2020 skb</a>
+											<a class="badge badge-success" href="/sscn-bkn-yogyakarta.html">sscn bkn yogyakarta</a>
+											<a class="badge badge-light" href="/sscn-verifikator-bkn.html">sscn verifikator bkn</a>
+											<a class="badge badge-danger" href="/starbucks-army-spouse-apron.html">starbucks army spouse apron</a>
+											<a class="badge badge-secondary" href="/sscnbknid-login.html">sscnbknid login</a>
+											<a class="badge badge-light" href="/sscnbkngoid-login-2019-pengumuman.html">sscnbkngoid login 2019 pengumuman</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the right site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/8d/a9/74/8da9747e9eeee6c667123970a5340a14.jpg" data-lightbox="roadtrip" data-title="Pin On Admit Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/8d/a9/74/8da9747e9eeee6c667123970a5340a14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYaNCYH8jwhQh-VnH_Y-V0-_VWzltqXVNgQg&amp;ec=45774421';" alt="Pin On Admit Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Admit Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/80/cc/3280cc44e6624b47fc4ed6dfdf80f729.jpg" data-lightbox="roadtrip" data-title="Pin On Covid19 Corona Virus Protection">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/80/cc/3280cc44e6624b47fc4ed6dfdf80f729.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4MB1y3dCXPk6mT-kb2iEo3cRtMa6k1oGdzQ&amp;ec=45774421';" alt="Pin On Covid19 Corona Virus Protection">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Covid19 Corona Virus Protection</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" data-lightbox="roadtrip" data-title="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RhxSm64a3h9GgSUU5UOzKzk2Nru3P9YX9Q&amp;ec=45774421';" alt="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Extra Year Of Eligibility Coronavirus Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/91/91/8e919182632378b32f4a7683318196b0.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/91/91/8e919182632378b32f4a7683318196b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXorWQPfeWibZsKYdnhQZOrd0aFRiftNFuig&amp;ec=45774421';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8a/f1/9c/8af19ca388ded7b2eb61f9532047a3a5.jpg" data-lightbox="roadtrip" data-title="Play School Class Room Decoration And Wall Decoration And Wall Charts School Wall Art School Wall Decoration Teacher Classroom Decorations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8a/f1/9c/8af19ca388ded7b2eb61f9532047a3a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_FHHYtwSP7gnMUEYvKfO0wxFlCmFe2Nkjw&amp;ec=45774421';" alt="Play School Class Room Decoration And Wall Decoration And Wall Charts School Wall Art School Wall Decoration Teacher Classroom Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play School Class Room Decoration And Wall Decoration And Wall Charts School Wall Art School Wall Decoration Teacher Classroom Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/de/4f/b3de4fb24d86f9e402de3b9476a34104.jpg" data-lightbox="roadtrip" data-title="Ncaa National Office Staff To Work Remotely In 2020 Remote Work Basketball Tournament Indoor Track">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/de/4f/b3de4fb24d86f9e402de3b9476a34104.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssDAvNk1kC01QMMVvhP6-2Qc_2rtRw0Uvzw&amp;ec=45774421';" alt="Ncaa National Office Staff To Work Remotely In 2020 Remote Work Basketball Tournament Indoor Track">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa National Office Staff To Work Remotely In 2020 Remote Work Basketball Tournament Indoor Track</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6f/8a/04/6f8a0461f4a8620981ff8d56c1afe89f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssDAvNk1kC01QMMVvhP6-2Qc_2rtRw0Uvzw&amp;ec=45774421';" alt="Ncaa National Office Staff To Work Remotely In 2020 Remote Work Basketball Tournament Indoor Track">
+										<div class="card-body">
+						<h3 class="h5"><b>Student-athletes who expected to participate in the spring 2020 fall 2020 and winter 2020-21 seasons received an additional year of eligibility due to the pandemic.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa division 3 covid eligibility</strong>. 
+								
+																	The NCAA Division I Council voted Monday to grant an extra year of eligibility to all student-athletes in spring sports whose seasons were canceled because of the coronavirus pandemic. 
+																	The NCAA Division I Board of Directors approved a plan on Tuesday to conduct 2020 fall championships in the spring of 2021. 
+																	WAFF - Morgan Limestone and Lawrence Counties account for 40 of local COVID-19 deaths in nursing home residents. 
+																	Division III playing season and eligibility standards minimize conflicts between athletics and academics allowing student-athletes to focus on their academic programs and the achievement of a degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division 3 committee took this ruling a step further and announced that 2020-21 spring sport athletes are also eligible for an extra year of eligibility. 
+																	When it comes to decision-making our commitment is this. 
+																	Athletes at Division II and Division III schools received this eligibility waiver if their teams compete in 50 or fewer of the sports maximum number of contests. 
+																	According to Nicole Auerbach of The Athletic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division I Council on Monday voted to allow schools to provide spring-sport student-athletes an additional season of competition and an extension of their period of eligibility. 
+																	The NCAAs Division II administrative. 
+																	The Division III measures approved on Friday March 13 include an additional semester and season of eligibility for all student-athletes participating in spring sports the removal of a minimum threshold of sponsored spring sports and. 
+																	This page is experiencing technical difficulties and we are working on it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Board of Directors approved a blanket waiver Friday which will allow fall sports athletes to retain their eligibility for the 2021-22 season. 
+																	Nursing home residents were getting vaccinated as early as late December but now. 
+																	This means athletes have the flexibility to both compete freely in the 2020-21 season and return for an additional year of competition. 
+																	NCAA Division I athletes who participate in winter sports will be given another year of eligibility and football teams will be allowed to compete in bowl games regardless of record in one-time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The pandemic will continue to impact winter sport seasons in ways we cant predict. 
+																	At the same time nursing home residents make up 03 of the overall population. 
+																	NCAA creates expanded COVID-19 Medical Advisory Group Braly Keller relishes impact through leading Division III SAAC NCAA summit focuses on mental health and well-being of student-athletes of color. 
+																	Due to COVID-19 complications the NCAA will extend the same extra eligibility to winter student-athletes that it previously offered to spring and fall student-athletes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Board of Governors took a landmark step on Friday by approving a measure that will grant an extra year of eligibility to all fall sports athletes. 
+																	The NCAA is also looking into what to do with athletes who played in winter sports. 
+																	Due to low participation numbers among member schools NCAA Division III winter championships are canceled for the 2020-21 academic year. 
+																	The NCAA Division I Council voted on Oct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Friday the NCAA obliged according to reports. 
+																	The NCAA continues to closely monitor COVID-19 and is taking proactive measures to mitigate the impact of the virus. 
+																	Due to the displacement the COVID-19 pandemic has caused college sports athletes will be able to make up for the season that was lost to them. 
+																	Spring sports athletes will get another year of eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division III Administrative Committee acting on. 
+																	At least some college athletes will be able to get an extra year of eligibility if their final seasons were canceled because of the COVID-19 outbreak. 
+																	The sports included in the decision are mens and womens cross country. 
+																	College-bound student-athletes preparing to enroll in a Division I or Division II school need to register with the NCAA Eligibility Center to ensure they have met amateurism standards and are academically prepared for college coursework. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA granted this exception for Division I. 
+																	Even athletes who compete this fall will. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/69/02/a96902bfff08ba595529f5e215cd7c38.jpg" data-lightbox="roadtrip" data-title="Angles Learning Chart Math Methods Math Learning Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/69/02/a96902bfff08ba595529f5e215cd7c38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFm9l6tRD1iP820eDqnq5QcVeaA4GdR7R8vQ&amp;ec=45774421';" alt="Angles Learning Chart Math Methods Math Learning Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angles Learning Chart Math Methods Math Learning Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/3a/94/923a946ef92cdd8543b5b14abb541980.jpg" data-lightbox="roadtrip" data-title="Lexus Is The Luxury Vehicle Divison Of Which Japanese Automaker In 2020 Lexus Luxury Cars Japanese">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/3a/94/923a946ef92cdd8543b5b14abb541980.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSum5lfBGKx6CkWuxS7Ep1FA4Sh_d2tsFCFkw&amp;ec=45774421';" alt="Lexus Is The Luxury Vehicle Divison Of Which Japanese Automaker In 2020 Lexus Luxury Cars Japanese">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexus Is The Luxury Vehicle Divison Of Which Japanese Automaker In 2020 Lexus Luxury Cars Japanese</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/d6/65/f4d665535748d1c74ebd19e9d8aa8131.jpg" data-lightbox="roadtrip" data-title="Browse Our Image Of Direct Deposit Form Social Security Benefits For Free Separation Agreement Template Contract Template Separation Agreement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/d6/65/f4d665535748d1c74ebd19e9d8aa8131.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHOFiIaxZxi5toYGRR3Dk6AWKJuNr1khLu5A&amp;ec=45774421';" alt="Browse Our Image Of Direct Deposit Form Social Security Benefits For Free Separation Agreement Template Contract Template Separation Agreement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Browse Our Image Of Direct Deposit Form Social Security Benefits For Free Separation Agreement Template Contract Template Separation Agreement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/71/da/1e71da9f97db791998ed7e734322d446.png" data-lightbox="roadtrip" data-title="Speed Can Kill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/71/da/1e71da9f97db791998ed7e734322d446.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPReeVlo5N8_bWxKvGo_ZX8UGAsA0IYzBng&amp;ec=45774421';" alt="Speed Can Kill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Speed Can Kill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/f4/42/d3f4426d5b863e368cf9c734a997e980.jpg" data-lightbox="roadtrip" data-title="Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/f4/42/d3f4426d5b863e368cf9c734a997e980.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlXlBs28gQEgnEr2VyI16TSWkgrmirqhd_Q&amp;ec=45774421';" alt="Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/65/8e/37658e972fbb0e778b46583c77956e28.jpg" data-lightbox="roadtrip" data-title="Ugmac Registrations For The State Based Quota Counseling Begins Exam Examination Board Registration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/65/8e/37658e972fbb0e778b46583c77956e28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjRbQFQPmIdd_WYc7-dG8FDTxSBb5Y3I9OTQ&amp;ec=45774421';" alt="Ugmac Registrations For The State Based Quota Counseling Begins Exam Examination Board Registration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ugmac Registrations For The State Based Quota Counseling Begins Exam Examination Board Registration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/79/35/7f/79357f3d1c38b222c0b8982770dbcd35.jpg" data-lightbox="roadtrip" data-title="Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/79/35/7f/79357f3d1c38b222c0b8982770dbcd35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrjgVjgZuqhdjAR9sS6NaaueI217rECgerA&amp;ec=45774421';" alt="Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cake Order Form For Bakery Business Custom Printable Etsy Cake Order Forms Order Form Template Invoice Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/48/28/3c4828a0c7bff968f2689bbbcf84b767.png" data-lightbox="roadtrip" data-title="Building The Next Generation Car With Intel Iot Autonomous Vehicle Iot Self Driving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/48/28/3c4828a0c7bff968f2689bbbcf84b767.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LskoUS0nu9OlwPpVIxjxUn2pM73ZJQCm3Q&amp;ec=45774421';" alt="Building The Next Generation Car With Intel Iot Autonomous Vehicle Iot Self Driving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building The Next Generation Car With Intel Iot Autonomous Vehicle Iot Self Driving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/70/a7/d270a734b94ddc6b50531ca13f15584d.png" data-lightbox="roadtrip" data-title="Track And Field Pr Requirement Estimates For Each Division Scholarships Track And Field College Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/70/a7/d270a734b94ddc6b50531ca13f15584d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPr5F62OzmogLl9oKu_hHHzQMx4p73OaNOHA&amp;ec=45774421';" alt="Track And Field Pr Requirement Estimates For Each Division Scholarships Track And Field College Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Track And Field Pr Requirement Estimates For Each Division Scholarships Track And Field College Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/ee/80/0fee80883b131766bec3e512821dc260.jpg" data-lightbox="roadtrip" data-title="Standard Form Using 9 Points 9 Features Of Standard Form Using 9 Points That Make Everyone L Standard Form Writing Standards Passport Application Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/ee/80/0fee80883b131766bec3e512821dc260.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_6WynPLcIpd8tM-Mt-qObNYKSGM5jlbo8Rg&amp;ec=45774421';" alt="Standard Form Using 9 Points 9 Features Of Standard Form Using 9 Points That Make Everyone L Standard Form Writing Standards Passport Application Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Standard Form Using 9 Points 9 Features Of Standard Form Using 9 Points That Make Everyone L Standard Form Writing Standards Passport Application Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/8a/04/6f8a0461f4a8620981ff8d56c1afe89f.gif" data-lightbox="roadtrip" data-title="Great Phonics Charts Teaching Phonics Phonics Words Phonics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/8a/04/6f8a0461f4a8620981ff8d56c1afe89f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1yM5sjeWpsq-v6P_bGkbozk8cIcssu-nEg&amp;ec=45774421';" alt="Great Phonics Charts Teaching Phonics Phonics Words Phonics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Phonics Charts Teaching Phonics Phonics Words Phonics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/3f/74/143f74b73b224ea73888154a60fc63e5.png" data-lightbox="roadtrip" data-title="Pin On College Entrance Exams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/3f/74/143f74b73b224ea73888154a60fc63e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4MMlB7qXEZtkwdIJ-kppN4Oyry2HKiWrZQ&amp;ec=45774421';" alt="Pin On College Entrance Exams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Entrance Exams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/a8/64/01a8642989f9aa054939ab052da89a42.png" data-lightbox="roadtrip" data-title="Easy To Use Free Resources Kids Discover Plant Science Photosynthesis Teaching Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/a8/64/01a8642989f9aa054939ab052da89a42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11pzb2zV9Aff_cYuKadypYr59wd-Ur0kFlQ&amp;ec=45774421';" alt="Easy To Use Free Resources Kids Discover Plant Science Photosynthesis Teaching Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Easy To Use Free Resources Kids Discover Plant Science Photosynthesis Teaching Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wwwmsn-uk-news.html">Wwwmsn Uk News</a></li>
+													<li class="list-group-item"><a href="/ww1-war-records-british.html">Ww1 War Records British</a></li>
+													<li class="list-group-item"><a href="/wwwsscnbkn-logingoid.html">Wwwsscnbkn Logingoid</a></li>
+													<li class="list-group-item"><a href="/ww2-veteran-service-records.html">Ww2 Veteran Service Records</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-abbreviations.html">Ww1 Service Records Abbreviations</a></li>
+													<li class="list-group-item"><a href="/ww1-war-service-records.html">Ww1 War Service Records</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-england-free.html">Ww1 Service Records England Free</a></li>
+													<li class="list-group-item"><a href="/ww1-army-service-records-uk.html">Ww1 Army Service Records Uk</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-new-zealand.html">Ww1 Service Records New Zealand</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-awm.html">Ww1 Service Records Awm</a></li>
+													<li class="list-group-item"><a href="/zambia-air-force-hq-address.html">Zambia Air Force Hq Address</a></li>
+													<li class="list-group-item"><a href="/wwwmycambrianportal.html">Wwwmycambrianportal</a></li>
+													<li class="list-group-item"><a href="/ww2-veteran-records-search.html">Ww2 Veteran Records Search</a></li>
+													<li class="list-group-item"><a href="/ww1-soldiers-records-nz.html">Ww1 Soldiers Records Nz</a></li>
+													<li class="list-group-item"><a href="/your-spouse-quotes.html">Your Spouse Quotes</a></li>
+													<li class="list-group-item"><a href="/zambia-air-force-headquarters-address.html">Zambia Air Force Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/wyoming-vs-air-force-hoy.html">Wyoming Vs Air Force Hoy</a></li>
+													<li class="list-group-item"><a href="/wwi-war-records-british.html">Wwi War Records British</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-uk-free.html">Ww1 Service Records Uk Free</a></li>
+													<li class="list-group-item"><a href="/yale-executive-mba-scholarships.html">Yale Executive Mba Scholarships</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msc Shipping India Careers - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msc Shipping India Careers",
+  "datePublished": "2021-02-14",
+  "image": "https://images.wsj.net/im-128079?width=620&amp;size=1.5",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msc+shipping+india+careers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msc Shipping India Careers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Apply quickly to various Msc Shipping job openings in top companies. This cookie is typically written to the browser upon the first visit to your site from that web browser. If the cookie has been deleted by the browser operator and the browser subsequently visits your site a new __utma cookie is written with a different unique ID. <br>				
+			</p>
+										<a class="badge badge-info" href="/campus-portal-hsu.html">campus portal hsu</a>
+											<a class="badge badge-primary" href="/cara-membuat-akun-sscn-bkn-2020.html">cara membuat akun sscn bkn 2020</a>
+											<a class="badge badge-secondary" href="/canadian-military-records-ww1-online.html">canadian military records ww1 online</a>
+											<a class="badge badge-light" href="/can-my-spouse-use-first-time-home-buyer.html">can my spouse use first time home buyer</a>
+											<a class="badge badge-danger" href="/campus-portal-henry.html">campus portal henry</a>
+											<a class="badge badge-danger" href="/can-the-salvation-army-help-me.html">can the salvation army help me</a>
+											<a class="badge badge-info" href="/can-you-go-to-college-as-a-military-spouse.html">can you go to college as a military spouse</a>
+											<a class="badge badge-primary" href="/can-military-spouse-get-va-loan.html">can military spouse get va loan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mscshipmanagement.com/templates/yootheme/cache/msc_zoe-6b89694f.jpeg" data-lightbox="roadtrip" data-title="Msccs India About Us">
+											<img class="card-img v-image ads-img " src="https://mscshipmanagement.com/templates/yootheme/cache/msc_zoe-6b89694f.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-BrvqhBzvyhvthN089oOseis4CIgashcA7w';" alt="Msccs India About Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msccs India About Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mscshipmanagement.com/images/india/cruise%20ad2.jpg" data-lightbox="roadtrip" data-title="Msccs India Vacancies">
+											<img class="card-img v-image ads-img " src="https://mscshipmanagement.com/images/india/cruise%20ad2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZRaMdWWv4wsCr5eFKPMGJ-ofJ7NqLmmiZug';" alt="Msccs India Vacancies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msccs India Vacancies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C4E1BAQFJvod0ozvZeQ/company-background_10000/0/1598472341612?e=2159024400&amp;v=beta&amp;t=yIBEOjBV-9JlmkrZIXQ7IV2p-rV8Kwhg1J5iA9-_o8Y" data-lightbox="roadtrip" data-title="Msc Mediterranean Shipping Company Jobs Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C4E1BAQFJvod0ozvZeQ/company-background_10000/0/1598472341612?e=2159024400&amp;v=beta&amp;t=yIBEOjBV-9JlmkrZIXQ7IV2p-rV8Kwhg1J5iA9-_o8Y" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjUNNC_n5z6PMzAmzYFm6_8_u5ZnJIQdmvOA';" alt="Msc Mediterranean Shipping Company Jobs Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Mediterranean Shipping Company Jobs Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mscshipmanagement.com/templates/yootheme/cache/02-ea6705d1.jpeg" data-lightbox="roadtrip" data-title="Home">
+											<img class="card-img v-image ads-img " src="https://mscshipmanagement.com/templates/yootheme/cache/02-ea6705d1.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwY41jrutwxbr-U9mlbPy5Y_2ze__7kW23AA';" alt="Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mscshipmanagement.com/templates/yootheme/cache/MSC_Shipmanagement_Christmas_2019_eCard_thu-96264d5d.jpeg" data-lightbox="roadtrip" data-title="Msc Shipmanagement News">
+											<img class="card-img v-image ads-img " src="https://mscshipmanagement.com/templates/yootheme/cache/MSC_Shipmanagement_Christmas_2019_eCard_thu-96264d5d.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8hmUBKnVOhZRzD3tRirk3GfYCW4hljDoU_w';" alt="Msc Shipmanagement News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Shipmanagement News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msc.com/getattachment/efde28c9-77f6-4f1a-9a17-2651efa0d9f5/637245538269801728?width=370" data-lightbox="roadtrip" data-title="Msc Supports Cargo Shippers With New Trade Finance Offering In India Msc">
+											<img class="card-img v-image ads-img " src="https://www.msc.com/getattachment/efde28c9-77f6-4f1a-9a17-2651efa0d9f5/637245538269801728?width=370" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2FzfbxnMyY8gitqd0WwcRYoxSq6szD2GcQ';" alt="Msc Supports Cargo Shippers With New Trade Finance Offering In India Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Supports Cargo Shippers With New Trade Finance Offering In India Msc</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/92/14/99/9214999087436b57502f7747d5ba9eb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2FzfbxnMyY8gitqd0WwcRYoxSq6szD2GcQ';" alt="Msc Supports Cargo Shippers With New Trade Finance Offering In India Msc">
+										<div class="card-body">
+						<h3 class="h5"><b>As one of the worlds leading container shipping line at MSC we have an established fleet of over 490 container vessels sailing on 200 trade routes and offices in more than 155.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msc shipping india careers</strong>. 
+								
+																	-Non-Refundable Fee to MSC Rs 15000-Cost of 1 Year IMU Pre-sea course As per institute norms-Selected cadets will be assigned to DG Shipping Approved Institutes via MSC TRAINING ACADEMY on the basis of Final results. 
+																	Currently MSC Crewing Services Pvt. 
+																	Msc Shipping jobs in India - Check out latest Msc Shipping job vacancies in India with eligibility salary companies etc. 
+																	We train over 250 Indian Deck Cadets Junior Engineers trainee Electrical Officers and other Trainees on our ships per year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Msc shipping jobs is easy to find. 
+																	MSC is a world leader in global container shipping and a company offering global service with local knowledge. 
+																	As one of the worlds leading container shipping lines with headquarters in Geneva Switzerland MSC operates in over 493 offices across more than 155 countries worldwide with over 70000 employees. 
+																	Msc Shipping jobs in Noida - Check out latest Msc Shipping job vacancies in Noida with eligibility salary companies etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for Msc shipping jobs. 
+																	Full-time temporary and part-time jobs. 
+																	Has around 2500 officers and around 5500 crew from India serving on our vessels. 
+																	Start your new career right now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any demand of payment in the course of your application with MSC Shipmanagement Llimited must make you mistrustful and we invite you to refuse ANY payment. 
+																	There are currently no local vacancies To view the latest job openings at MSC Geneva HQ please check out the careers section of our Linkedin page. 
+																	HOTEL depDepartment DECK depDepartment ENGINE depDepartment OFFICE JOBS depDepartment HOW TO APPLY. 
+																	MSC is a privately owned global shipping company founded in 1970 by Gianluigi Aponte. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We use cookies to give you the best possible experience on our site. 
+																	MSC is the worlds largest shipping line in terms of container vessel capacity. 
+																	Explore all 289000 current Jobs in India and abroad. 
+																	By continuing to use the site you agree to our use of cookiesFind out more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following months of repeated appeals by MSC Mediterranean Shipping Company to allow a change of crew on ANASTASIA a cargo ship which had been stuck off the coast of China since September MSC has effectively resolved the matter avoided a humanitarian crisis onboard and mitigated the related safety risks. 
+																	MSC is a privately owned global shipping company founded in 1970 by Gianluigi Aponte. 
+																	MSC is a privately owned global shipping company founded in 1970 by Gianluigi Aponte. 
+																	As one of the worlds leading container. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC Ship Management Ltd. 
+																	Captain Gianluigi Aponte Group Chairman MSC Mediterranean Shipping Company SA. 
+																	As one of the worlds leading container shipping lines with headquarters in Geneva Switzerland MSC operates in over 493 offices across more than 155 countries worldwide with over 70000 employees. 
+																	MSC Mediterranean Shipping Company 407481 followers on LinkedIn. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC Shipmanagement Limtied is not asking its candidates to pay any kind of fee for their applications or for so-called visa passport costs. 
+																	MSC Jobs - Mediterranean Shipping Company SA. 
+																	Candidate holding previous experience from ROPAX Ferries RO-RO Passenger Vessel are preferred. 
+																	CAREERS People have to love what they do and the company where they work Captain Gianluigi Aponte Group Executive Chairman MSC Mediterranean Shipping Company SA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC also provides integrated network of road rail and sea transport resources which stretches across the globe. 
+																	Take your career to new horizons with Mediterranean Shipping Company. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/41/8f/e4418f335a159df95384c0767b82b90b.jpg" data-lightbox="roadtrip" data-title="The 2m Alliance Led By Maersk Line And Mediterranean Shipping Company Msc Offers Shared Vessels Over 44 Maersk Line Mediterranean Shipping Company Alliance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/41/8f/e4418f335a159df95384c0767b82b90b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-7K9puI8rjkwTqhF7AjfJbyyF8iPLDv4fw';" alt="The 2m Alliance Led By Maersk Line And Mediterranean Shipping Company Msc Offers Shared Vessels Over 44 Maersk Line Mediterranean Shipping Company Alliance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2m Alliance Led By Maersk Line And Mediterranean Shipping Company Msc Offers Shared Vessels Over 44 Maersk Line Mediterranean Shipping Company Alliance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msc.com/getattachment/d4568dd7-1ba8-4bbd-a5f4-d3f2182c1dea/635919207860400000" data-lightbox="roadtrip" data-title="About Us Msc">
+											<img class="card-img v-image ads-img " src="https://www.msc.com/getattachment/d4568dd7-1ba8-4bbd-a5f4-d3f2182c1dea/635919207860400000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwA0NbpXYKz6_zYQ1-cNjDf3HP5yaeF5nX8Q';" alt="About Us Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Us Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gcaptain.com/wp-content/uploads/2012/01/Picture-230.png" data-lightbox="roadtrip" data-title="Mediterranean Shipping Company Msc Issues Piracy Risk Surcharge Gcaptain">
+											<img class="card-img v-image ads-img " src="https://gcaptain.com/wp-content/uploads/2012/01/Picture-230.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoir6fdS809ILs0uU7mK2AJ4X3i1VWpvM7w';" alt="Mediterranean Shipping Company Msc Issues Piracy Risk Surcharge Gcaptain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mediterranean Shipping Company Msc Issues Piracy Risk Surcharge Gcaptain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.shiphub.co/wp-content/uploads/MSC-768x432.jpg" data-lightbox="roadtrip" data-title="Msc One Of The Biggest Shipowner In The World Shiphub">
+											<img class="card-img v-image ads-img " src="https://www.shiphub.co/wp-content/uploads/MSC-768x432.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS584oKlL2CNXb3ZN5yPzd-03YMvRl2Man6SQ';" alt="Msc One Of The Biggest Shipowner In The World Shiphub">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc One Of The Biggest Shipowner In The World Shiphub</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/zxxgNQ0nRBw/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Careers Msc">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/zxxgNQ0nRBw/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6VtLWp-IaX4MXLQuo_UNRKCcHitf6zfXyAw';" alt="Careers Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Careers Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/61/e5/7661e5d21097dae1565a3178320c8302.jpg" data-lightbox="roadtrip" data-title="Msc Container Ship In The Port Of Felixstowe Suffolk Aerial Image Aerial Images Aerial Aerial View">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/61/e5/7661e5d21097dae1565a3178320c8302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdiu_EaV66z_sN7m3w3o1frpIGGOQra2jXQ';" alt="Msc Container Ship In The Port Of Felixstowe Suffolk Aerial Image Aerial Images Aerial Aerial View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Container Ship In The Port Of Felixstowe Suffolk Aerial Image Aerial Images Aerial Aerial View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/b1/9c/66b19cf2147fec5d4930fe1392f63eec.jpg" data-lightbox="roadtrip" data-title="Join The Leading Careers Of Tomorow Phd Clinical Research Bsc Clinical Research Msc Clinical Research 100 Placement Jo Clinical Research Clinic Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/b1/9c/66b19cf2147fec5d4930fe1392f63eec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneVSgDwWPV1iGzcXkpoJl0QfUDqvmx3y5HQ';" alt="Join The Leading Careers Of Tomorow Phd Clinical Research Bsc Clinical Research Msc Clinical Research 100 Placement Jo Clinical Research Clinic Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join The Leading Careers Of Tomorow Phd Clinical Research Bsc Clinical Research Msc Clinical Research 100 Placement Jo Clinical Research Clinic Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.wsj.net/im-128079?width=620&amp;size=1.5" data-lightbox="roadtrip" data-title="Soren Toft Becomes Mediterranean Shipping Ceo Wsj">
+											<img class="card-img v-image ads-img " src="https://images.wsj.net/im-128079?width=620&amp;size=1.5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWOeA1VaL2ejSe4FvAzjHb66nIGdpzlqzsg';" alt="Soren Toft Becomes Mediterranean Shipping Ceo Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soren Toft Becomes Mediterranean Shipping Ceo Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ocean-insights.com/wp-content/uploads/2018/09/msc-vessel.png" data-lightbox="roadtrip" data-title="Msc 2018 Golden Week Blank Sailing Updates Announced">
+											<img class="card-img v-image ads-img " src="https://www.ocean-insights.com/wp-content/uploads/2018/09/msc-vessel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcaFUhXDBOAAFGNLflaJU-4R_FTkweGfw07Q';" alt="Msc 2018 Golden Week Blank Sailing Updates Announced">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc 2018 Golden Week Blank Sailing Updates Announced</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://safety4sea.com/wp-content/uploads/2020/03/msc-joanna-440x264.jpg" data-lightbox="roadtrip" data-title="Mediterranean Shipping Company Archives Safety4sea">
+											<img class="card-img v-image ads-img " src="https://safety4sea.com/wp-content/uploads/2020/03/msc-joanna-440x264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YbOemb9Glt8H5JvtqPpEYhWeNuJdPvA76g';" alt="Mediterranean Shipping Company Archives Safety4sea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mediterranean Shipping Company Archives Safety4sea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/14/99/9214999087436b57502f7747d5ba9eb9.jpg" data-lightbox="roadtrip" data-title="Inspiring Career How To Become A Merchant Navy Officer In India Cargo Shipping Merchant Navy Ship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/14/99/9214999087436b57502f7747d5ba9eb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNec9FQHEQZAHondEwL2sC0YGS_t3tG8ENw';" alt="Inspiring Career How To Become A Merchant Navy Officer In India Cargo Shipping Merchant Navy Ship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inspiring Career How To Become A Merchant Navy Officer In India Cargo Shipping Merchant Navy Ship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://safety4sea.com/wp-content/uploads/2020/06/MSC-Sveva_TTI-Long-Beach-volume-record.jpg" data-lightbox="roadtrip" data-title="Msc South Pole To Boost Carbon Neutral Initiative Safety4sea">
+											<img class="card-img v-image ads-img " src="https://safety4sea.com/wp-content/uploads/2020/06/MSC-Sveva_TTI-Long-Beach-volume-record.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1l6OFrJQ-Ygi0MLJXx_XerlMqB1wD70sCg';" alt="Msc South Pole To Boost Carbon Neutral Initiative Safety4sea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc South Pole To Boost Carbon Neutral Initiative Safety4sea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.go-uk.in/images/gouk-uk-education-consultancy-msc-in-shipping-management-uk.png" data-lightbox="roadtrip" data-title="Masters In Shipping Management In Uk Msc In Shipping Management In Uk Study Shipping Management In London For Indian Students Gouk">
+											<img class="card-img v-image ads-img " src="https://www.go-uk.in/images/gouk-uk-education-consultancy-msc-in-shipping-management-uk.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFREl5mwcMLYhWj2FABgou15DnyeP4s3QjFg';" alt="Masters In Shipping Management In Uk Msc In Shipping Management In Uk Study Shipping Management In London For Indian Students Gouk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masters In Shipping Management In Uk Msc In Shipping Management In Uk Study Shipping Management In London For Indian Students Gouk</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msncom-usa-m.html">Msncom Usa M</a></li>
+													<li class="list-group-item"><a href="/msn-us-sports.html">Msn Us Sports</a></li>
+													<li class="list-group-item"><a href="/my-campus-portal-ontario-tech.html">My Campus Portal Ontario Tech</a></li>
+													<li class="list-group-item"><a href="/my-career-excel.html">My Career Excel</a></li>
+													<li class="list-group-item"><a href="/my-career-cyberface-nba-2k14.html">My Career Cyberface Nba 2k14</a></li>
+													<li class="list-group-item"><a href="/my-career-exploration.html">My Career Exploration</a></li>
+													<li class="list-group-item"><a href="/my-car-is-not-starting.html">My Car Is Not Starting</a></li>
+													<li class="list-group-item"><a href="/my-career-is-ruined.html">My Career Is Ruined</a></li>
+													<li class="list-group-item"><a href="/my-career-fifa-21.html">My Career Fifa 21</a></li>
+													<li class="list-group-item"><a href="/msn-usa-news-english.html">Msn Usa News English</a></li>
+													<li class="list-group-item"><a href="/my-campus-portal-elmhurst.html">My Campus Portal Elmhurst</a></li>
+													<li class="list-group-item"><a href="/my-care-corner-patient-portal.html">My Care Corner Patient Portal</a></li>
+													<li class="list-group-item"><a href="/my-career-future-sg.html">My Career Future Sg</a></li>
+													<li class="list-group-item"><a href="/my-car-trade-in-value.html">My Car Trade In Value</a></li>
+													<li class="list-group-item"><a href="/my-campus-portal-fh-potsdam.html">My Campus Portal Fh Potsdam</a></li>
+													<li class="list-group-item"><a href="/my-car-quotes.html">My Car Quotes</a></li>
+													<li class="list-group-item"><a href="/my-car-quest.html">My Car Quest</a></li>
+													<li class="list-group-item"><a href="/my-career-goal-is-to-become.html">My Career Goal Is To Become</a></li>
+													<li class="list-group-item"><a href="/my-care-portal-acn.html">My Care Portal Acn</a></li>
+													<li class="list-group-item"><a href="/my-career-in-2k20.html">My Career In 2k20</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

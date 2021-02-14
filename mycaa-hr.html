@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycaa Hr - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycaa Hr",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/5d/19/7f/5d197fc00c94c023749590334dfbf50d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycaa+hr",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycaa Hr</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Unfortunately most of the training managers miss out minor yet important. Previously these divisions handled mainly administrative functions like managing employee benefits recruiting interviewing and hiring new staff as directed by management. The Military Spouse Career Advancement Account MyCAA Scholarship is a workforce development program that provides up to 4000 of tuition assistance to eligible military spouses. <br>				
+			</p>
+										<a class="badge badge-info" href="/navy-hospital-in-san-diego-california.html">navy hospital in san diego california</a>
+											<a class="badge badge-info" href="/navy-federal-credit-union-add-spouse-to-account.html">navy federal credit union add spouse to account</a>
+											<a class="badge badge-primary" href="/navy-power-of-attorney-website.html">navy power of attorney website</a>
+											<a class="badge badge-light" href="/navy-power-of-attorney-worksheet.html">navy power of attorney worksheet</a>
+											<a class="badge badge-warning" href="/navy-baseball-cap-outfit.html">navy baseball cap outfit</a>
+											<a class="badge badge-success" href="/navy-face-mask-disposable.html">navy face mask disposable</a>
+											<a class="badge badge-light" href="/navy-domestic-abuse-instruction.html">navy domestic abuse instruction</a>
+											<a class="badge badge-danger" href="/navy-face-mask-policy.html">navy face mask policy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/ca/f8/d7caf8930095493526aea3f74bb0e825.jpg" data-lightbox="roadtrip" data-title="Start Your Elearning At Http Mycaa Milspouse Com For Militaryspouses Experience A Hassle Free Learning Military Spouse Free Learning Learning Environments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/ca/f8/d7caf8930095493526aea3f74bb0e825.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqHp3iOBnodt1o3Raf6AEiajHmTKfvNkQLDw';" alt="Start Your Elearning At Http Mycaa Milspouse Com For Militaryspouses Experience A Hassle Free Learning Military Spouse Free Learning Learning Environments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Start Your Elearning At Http Mycaa Milspouse Com For Militaryspouses Experience A Hassle Free Learning Military Spouse Free Learning Learning Environments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/d5/a5/82d5a5f3ae04519c57b242c47ed249c3.jpg" data-lightbox="roadtrip" data-title="Having Certifications Will Help You Get A Job For Militaryspouses Who Want To Enroll Visit Http Mycaa Milspouse Com Military Spouse Mycaa Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/d5/a5/82d5a5f3ae04519c57b242c47ed249c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_JkydbcKgjLdglmVoG19poeAuStVBrYf8Q';" alt="Having Certifications Will Help You Get A Job For Militaryspouses Who Want To Enroll Visit Http Mycaa Milspouse Com Military Spouse Mycaa Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Having Certifications Will Help You Get A Job For Militaryspouses Who Want To Enroll Visit Http Mycaa Milspouse Com Military Spouse Mycaa Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/69/7e/cb697e5815dce420eda2da8112408057.jpg" data-lightbox="roadtrip" data-title="Image Of A Mycaa Program For Military Spouses Student Mycaa Programs Mycaa Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/69/7e/cb697e5815dce420eda2da8112408057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIxh6JIoqxQ09gAQRpGq8RvszBl4jLyW9Gw';" alt="Image Of A Mycaa Program For Military Spouses Student Mycaa Programs Mycaa Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Of A Mycaa Program For Military Spouses Student Mycaa Programs Mycaa Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/cf/f4/cacff454844f5bcb5e009221567a448c.jpg" data-lightbox="roadtrip" data-title="Mycaa Education Funding Infographic E Learning Infographics In 2020 Education Funding Military Spouse Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/cf/f4/cacff454844f5bcb5e009221567a448c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGAvwgyewizHHMCkNSFKz7YlYtWm_XlGHYw';" alt="Mycaa Education Funding Infographic E Learning Infographics In 2020 Education Funding Military Spouse Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycaa Education Funding Infographic E Learning Infographics In 2020 Education Funding Military Spouse Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/19/7f/5d197fc00c94c023749590334dfbf50d.jpg" data-lightbox="roadtrip" data-title="Employers Are More Inclined To Hire A Medical Assistant Who Possesses A Certification As A Phleboto Military Spouse Military Spouse Career Career Advancement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/19/7f/5d197fc00c94c023749590334dfbf50d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYt_kd8nJtuaXrByUeTnf7txKwcOAeYxZdkw';" alt="Employers Are More Inclined To Hire A Medical Assistant Who Possesses A Certification As A Phleboto Military Spouse Military Spouse Career Career Advancement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employers Are More Inclined To Hire A Medical Assistant Who Possesses A Certification As A Phleboto Military Spouse Military Spouse Career Career Advancement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" data-lightbox="roadtrip" data-title="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/dc/5a/c6dc5a27d8e76d2c3b7f89a5655758ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ZRUAkUqkzJ-gGLNdK_nuWJowOI2pG-rUQ';" alt="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e2/c2/d5/e2c2d5966797c988378031995e28c05d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ZRUAkUqkzJ-gGLNdK_nuWJowOI2pG-rUQ';" alt="Skilled Assets The Career Management Experts Military Spouse Career Management Military Wife Life">
+										<div class="card-body">
+						<h3 class="h5"><b>MyCAA is a workforce development program that provides up to 4000 in financial assistance for military spouses.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycaa hr</strong>. 
+								
+																	MyCAA Funding Guide for Military Spouses. 
+																	The Human Resources Professional Formerly known as Personnel Human Resources HR departments are fast-becoming a significant player in organizations across the country. 
+																	Search Programs Schools. 
+																	This program will outline for students the roles and responsibilities of members of a typical HR department educating the staff that make up a particular firm in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These days the wives of military men are going away from only the higher school education since they are interested to come about to serve their family members and standing out with the spouses. 
+																	Find GI Bill-Approved Colleges For Military and Veterans. 
+																	These funds pay for degree programs licensure or credentials leading to employment. 
+																	Formerly known as Personnel Human Resources HR departments are fast -becoming a significant player in organizations across the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Log in or Sign up Get Started. 
+																	The Associate Professional in Human Resources Program introduces human resources HR functions and related elements and activities to students wishing to enter a career in this field or anyone who runs or may start a business of their own. 
+																	This program will outline for students the roles and responsibilities of members of a typical HR department educating the staff that make up a particular. 
+																	To amend title 10 United States Code to codify the Military Spouse Career Advancement Account program MyCAA conducted by the Department of Defense to assist spouses of members of the Armed Forces serving on active duty to pursue educational opportunities and career training to ensure that such educational opportunities and training are available to all military spouses and for other purposes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Associate Professional in Human Resources Program introduces human resources HR functions and related elements and activities to students wishing to enter a career in this field or anyone who runs or may start a business of their own. 
+																	Find the high-growth high-demand field that best fits your military life. 
+																	Browse a list of career fields that have been approved for MyCAA funding. 
+																	The Department of Defenses expanded Military Spouse Career Advancement Accounts program MyCAA will provide up to 4000 of financial assistance for military spouses who are pursuing training licenses or credentials leading to employment in portable career fields. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our Human Resource Management Associate program is perfect for the individual interested in working in an organizations workforce or human resources. 
+																	Training plays a vital role in improving the profits and performance of a business in addition to increasing the morale of the employees. 
+																	When they are trying out their luck with the program of MyCAA the career guidance analyst of the MyCAA select the best-suited career pathway. 
+																	The Military Spouse Career Advancement Accounts Program MyCAA a component of the Department of Defenses DoD Spouse Education and Career Opportunities SECO program is a career development and employment assistance program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skip to Main Content. 
+																	The Human Resources Professional Program introduces human resources HR functions and related elements and activities to students wishing to enter a career in this field or anyone who runs or may start a business of their own. 
+																	The My Career Advancement Account Scholarship Program is a workforce development program that provides up to 4000 of financial assistance for licenses certifications or Associates degrees to pursue an occupation or career field. 
+																	They record data for each company employee such as their address weekly earnings absences amount of sales or production supervisory reports and date ofreason for termination. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Human Resources Professional Program introduces human resources HR functions and related elements and activities to students wishing to enter a career in this field or anyone who runs or may start a business of their own. 
+																	MYCAA Military Spouse Scholarship Career Training at No-Cost Get 4000 in MyCAA funding to train for a portable career which is ideal for military spouses. 
+																	This program will outline for students the roles and responsibilities of members of a typical HR department educating the staff that make up a particular firm in. 
+																	The Military Spouse Career Advancement Accounts MyCAA program provides up to 4000 over 2 years of Financial Assistance for military spouses who are continuing their education by pursuing a license certification or Associates degree in a portable career field and occupation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Previously these divisions handled mainly administrative functions like managing employee benefits recruiting interviewing and hiring new staff as directed by management. 
+																	Human resource assistants compile and keep personnel records. 
+																	If you have a passion for flying or working with aircraft then an occupation. 
+																	39990000 The Human Resources Professional Program introduces human resources HR functions and related elements and activities to students wishing to enter a career in this field or anyone who runs or may start a business of their own. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A typical training plan involves identifying key areas of training setting goals and execution of the plan with a follow up. 
+																	Individuals who work in HR are responsible for the attraction selection training assessment and rewarding of employees while also overseeing organizational leadership and culture and ensuring compliance with employment and. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/95/a3/e8/95a3e88a6b109d0787585bc16c180fdf.jpg" data-lightbox="roadtrip" data-title="Image Result For Assistant Front Office Manager Military Spouse Office Manager Mycaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/95/a3/e8/95a3e88a6b109d0787585bc16c180fdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6mqMma8fOl0W9ZyG1ROYqZhEDQ4bQk-dCg';" alt="Image Result For Assistant Front Office Manager Military Spouse Office Manager Mycaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Assistant Front Office Manager Military Spouse Office Manager Mycaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/31/94/5d3194110b3e4434ec2e903283201b80.jpg" data-lightbox="roadtrip" data-title="Pin On Brand Management Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/31/94/5d3194110b3e4434ec2e903283201b80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrd6q9aBboaDtFPV264yZ6JltSrrMGoy6aQ';" alt="Pin On Brand Management Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brand Management Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/c2/d5/e2c2d5966797c988378031995e28c05d.jpg" data-lightbox="roadtrip" data-title="One Of The Most Important Lifelines Of Commerce And Business Is Accounting Accounting Is Not Only Keeping The Records O Us Data Recruitment Change Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/c2/d5/e2c2d5966797c988378031995e28c05d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShPzX_eGEVPOG1-Hbq8F5C0F54w_xeKrUSA';" alt="One Of The Most Important Lifelines Of Commerce And Business Is Accounting Accounting Is Not Only Keeping The Records O Us Data Recruitment Change Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of The Most Important Lifelines Of Commerce And Business Is Accounting Accounting Is Not Only Keeping The Records O Us Data Recruitment Change Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/f6/36/57f6366951701f361a983c54821925b8.png" data-lightbox="roadtrip" data-title="Infographic The Summer Job Search Blog Summer Jobs Job Search Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/f6/36/57f6366951701f361a983c54821925b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKAsY4ZWd8tiiTvOYb-PlWByD8KGxqzVCOw';" alt="Infographic The Summer Job Search Blog Summer Jobs Job Search Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic The Summer Job Search Blog Summer Jobs Job Search Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/23/88/fb2388905fd7be5f47ad083e2a8823d1.jpg" data-lightbox="roadtrip" data-title="Milspouse Hiring Events Scott Afb Il Military Spouse Hiring Fair And Career Forum Job Fair Military Spouse Military Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/23/88/fb2388905fd7be5f47ad083e2a8823d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgj7aKapi-T_QHkSDVs1-BUfQH0tSBJJQvSQ';" alt="Milspouse Hiring Events Scott Afb Il Military Spouse Hiring Fair And Career Forum Job Fair Military Spouse Military Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milspouse Hiring Events Scott Afb Il Military Spouse Hiring Fair And Career Forum Job Fair Military Spouse Military Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/5f/a4/81/5fa481440e5c5f4ab31a434c149af008.jpg" data-lightbox="roadtrip" data-title="How Much Should I Charge For My Services Military Spouse Benefits Online Education Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/5f/a4/81/5fa481440e5c5f4ab31a434c149af008.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK8winjieckWZb4lonOKmZOQGzdE2IXWLKGA';" alt="How Much Should I Charge For My Services Military Spouse Benefits Online Education Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Should I Charge For My Services Military Spouse Benefits Online Education Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/f0/a6/28f0a687397289b6df12938b629ef9b8--communication-images-human-resources.jpg" data-lightbox="roadtrip" data-title="Job Interview Questions And Answers How To Be Successful With Ngo Job Interview Human Resources Internet Marketing Plan Job Interview Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/f0/a6/28f0a687397289b6df12938b629ef9b8--communication-images-human-resources.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5e8eCtYkT1dA8qQkDwxyQ6xDOXRFGr042Bg';" alt="Job Interview Questions And Answers How To Be Successful With Ngo Job Interview Human Resources Internet Marketing Plan Job Interview Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Interview Questions And Answers How To Be Successful With Ngo Job Interview Human Resources Internet Marketing Plan Job Interview Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/ad/ef/76adefce5c2af0cf95890fa5363adddf--military-spouse-benefits-online-schooling.jpg" data-lightbox="roadtrip" data-title="Sit Comfortably On Your Couch At Home And Study Online Enroll In A Certificate Program Right Away Photo By Online Programs Online School Best Online Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/ad/ef/76adefce5c2af0cf95890fa5363adddf--military-spouse-benefits-online-schooling.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1dArepmK4DtS49ziDbJvHTq-lu3Z6kpRSg';" alt="Sit Comfortably On Your Couch At Home And Study Online Enroll In A Certificate Program Right Away Photo By Online Programs Online School Best Online Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sit Comfortably On Your Couch At Home And Study Online Enroll In A Certificate Program Right Away Photo By Online Programs Online School Best Online Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/cd/85/02cd85621eb952f19d4c54c05f6893e7.jpg" data-lightbox="roadtrip" data-title="What Are You Doing To Create A Flexible Workspace That Works Networking Infographic Remote Work Flexible Working">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/cd/85/02cd85621eb952f19d4c54c05f6893e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNtzKhK7phzXSAulqrnRKBTYbs3SBctCRrA';" alt="What Are You Doing To Create A Flexible Workspace That Works Networking Infographic Remote Work Flexible Working">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are You Doing To Create A Flexible Workspace That Works Networking Infographic Remote Work Flexible Working</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/63/11/166311ba65f566346acd4e02d84c5bb3.jpg" data-lightbox="roadtrip" data-title="Right Career Hr Consulting Maureen Farmer Cover Letter Career Cuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/63/11/166311ba65f566346acd4e02d84c5bb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyY2JmChj9Vt8SfqxYBdUHRxQyR2t5wyGB1A';" alt="Right Career Hr Consulting Maureen Farmer Cover Letter Career Cuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Right Career Hr Consulting Maureen Farmer Cover Letter Career Cuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/d8/4b/3ed84b823147765b9c75d08912469390.png" data-lightbox="roadtrip" data-title="Women Exercising Png Image Exercise Fit Women La Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/d8/4b/3ed84b823147765b9c75d08912469390.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPviZF6e2Jwq7RFk0Gi4Snm-Zrc8LoLRegw';" alt="Women Exercising Png Image Exercise Fit Women La Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Exercising Png Image Exercise Fit Women La Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s-media-cache-ak0.pinimg.com/236x/31/14/eb/3114eba4900bef32cbf83feda50fad80.jpg" data-lightbox="roadtrip" data-title="Hi Everyone Customer Service Which Brands Really Get It It S Been Effectively Outsourced By Many Companies Intent Only On Cost Containment B Pinteres">
+											<img class="card-img v-image ads-img " src="https://s-media-cache-ak0.pinimg.com/236x/31/14/eb/3114eba4900bef32cbf83feda50fad80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK6gqCnewnkKewe1AhU8WpVdAhMv3vAgAcbg';" alt="Hi Everyone Customer Service Which Brands Really Get It It S Been Effectively Outsourced By Many Companies Intent Only On Cost Containment B Pinteres">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hi Everyone Customer Service Which Brands Really Get It It S Been Effectively Outsourced By Many Companies Intent Only On Cost Containment B Pinteres</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7b/6a/ed/7b6aed97349621d919ed191cfe200cb5.jpg" data-lightbox="roadtrip" data-title="Would Excellent Spoken English Make You A Better Ceo Teacher Inspiration Free Training Programs Business Person">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7b/6a/ed/7b6aed97349621d919ed191cfe200cb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpjl9r260dXb1N9p_gztyBPFt1yEUxyrmwQ';" alt="Would Excellent Spoken English Make You A Better Ceo Teacher Inspiration Free Training Programs Business Person">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Would Excellent Spoken English Make You A Better Ceo Teacher Inspiration Free Training Programs Business Person</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-us-immigration.html">Msn Us Immigration</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-live.html">Msn Uk News Live</a></li>
+													<li class="list-group-item"><a href="/msn-uk-not-working.html">Msn Uk Not Working</a></li>
+													<li class="list-group-item"><a href="/msn-uk-create-new-account.html">Msn Uk Create New Account</a></li>
+													<li class="list-group-item"><a href="/msn-uk-live-sign-in.html">Msn Uk Live Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-uk-sport.html">Msn Uk Sport</a></li>
+													<li class="list-group-item"><a href="/msn-uk-phone-number.html">Msn Uk Phone Number</a></li>
+													<li class="list-group-item"><a href="/msn-us-corona.html">Msn Us Corona</a></li>
+													<li class="list-group-item"><a href="/msn-salary-in-uk.html">Msn Salary In Uk</a></li>
+													<li class="list-group-item"><a href="/msn-uk-celebrity-news.html">Msn Uk Celebrity News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-world-news.html">Msn Uk World News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-horoscope-russell-grant.html">Msn Uk Horoscope Russell Grant</a></li>
+													<li class="list-group-item"><a href="/msn-uk-tech.html">Msn Uk Tech</a></li>
+													<li class="list-group-item"><a href="/msn-uk-puzzle.html">Msn Uk Puzzle</a></li>
+													<li class="list-group-item"><a href="/msn-us-elections.html">Msn Us Elections</a></li>
+													<li class="list-group-item"><a href="/msn-pharmaceuticals-usa.html">Msn Pharmaceuticals Usa</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-canada.html">Msn Uk News Canada</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-homepage.html">Msn Uk News Homepage</a></li>
+													<li class="list-group-item"><a href="/msn-news-usa-today.html">Msn News Usa Today</a></li>
+													<li class="list-group-item"><a href="/msn-uk-twitter.html">Msn Uk Twitter</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

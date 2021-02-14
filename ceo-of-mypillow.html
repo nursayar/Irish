@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ceo Of Mypillow - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ceo Of Mypillow",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/44/c3/85/44c3859ee45ae8bf9e45a024234d9742.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ceo+of+mypillow",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ceo Of Mypillow</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">He gained notoriety as an avid supporter of and advisor to the 45th United States President Donald Trump beginning with his 2016 campaign and continuing after Trump left office. Twitter made its decision based on a new policy it enacted after the. MyPillow CEO Mike Lindell has announced plans to release a three-hour film called Absolute Proof falsely claiming a Chinese cyberattack flipped the election. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-hat-korea.html">military hat korea</a>
+											<a class="badge badge-danger" href="/military-hat-uk.html">military hat uk</a>
+											<a class="badge badge-primary" href="/military-hat-medals.html">military hat medals</a>
+											<a class="badge badge-danger" href="/military-hat-outfits.html">military hat outfits</a>
+											<a class="badge badge-dark" href="/military-hatchet.html">military hatchet</a>
+											<a class="badge badge-light" href="/military-hats-crossword-puzzle-clue.html">military hats crossword puzzle clue</a>
+											<a class="badge badge-warning" href="/military-hat-crossword-solver.html">military hat crossword solver</a>
+											<a class="badge badge-light" href="/military-hat-names.html">military hat names</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/f2/ac/d3f2ac4143ccf66b1a422c3d3997e851.png" data-lightbox="roadtrip" data-title="Official My Pillow Site Best Pillow Pillows Mypillow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/f2/ac/d3f2ac4143ccf66b1a422c3d3997e851.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8HGdpsy-Qf-NlqDeVfVPj-HYOv-xRb9DSg';" alt="Official My Pillow Site Best Pillow Pillows Mypillow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official My Pillow Site Best Pillow Pillows Mypillow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/de/05/73de05a8b58de55cad34da52e02887ef.jpg" data-lightbox="roadtrip" data-title="Mike Lindell Mypillow Ceo Tweets Then Deletes Call For Trump To Impose Martial Law One America News Mypillow Trump">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/de/05/73de05a8b58de55cad34da52e02887ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8oim8f_6HVSgK0vDGNgtCn4co88h9EtJfA';" alt="Mike Lindell Mypillow Ceo Tweets Then Deletes Call For Trump To Impose Martial Law One America News Mypillow Trump">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Lindell Mypillow Ceo Tweets Then Deletes Call For Trump To Impose Martial Law One America News Mypillow Trump</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8d/9f/e5/8d9fe5eb6a17a41d0fdb63ade9949965.jpg" data-lightbox="roadtrip" data-title="My Pillow Ceo Says Bed Bath And Beyond Kohl S To Stop Selling His Products In 2021 Bed Bath And Beyond Bath And Beyond Bed Bath">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8d/9f/e5/8d9fe5eb6a17a41d0fdb63ade9949965.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjs8aW4EhifK3Ps9tDhX5mGm-zBlM8QLXVQ';" alt="My Pillow Ceo Says Bed Bath And Beyond Kohl S To Stop Selling His Products In 2021 Bed Bath And Beyond Bath And Beyond Bed Bath">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Pillow Ceo Says Bed Bath And Beyond Kohl S To Stop Selling His Products In 2021 Bed Bath And Beyond Bath And Beyond Bed Bath</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/95/f4/c295f4dc7b1e89e5d0bb9c050ab1c37d.jpg" data-lightbox="roadtrip" data-title="Geatbgnac5pp3m">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/95/f4/c295f4dc7b1e89e5d0bb9c050ab1c37d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIJNP-YOLcsYUA7Dqhduuzvf5vg_4KZQ1lA';" alt="Geatbgnac5pp3m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Geatbgnac5pp3m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/fc/24/04fc244d5a6bc88ed64b3dbb3a617201.jpg" data-lightbox="roadtrip" data-title="N8s7qrywnzyesm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/fc/24/04fc244d5a6bc88ed64b3dbb3a617201.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyueueiRvSrvUZ5I4tDzwOHaD8BAZfk0GbYg';" alt="N8s7qrywnzyesm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">N8s7qrywnzyesm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/7e/1e/4a7e1e66adde1daf284ddd845bd3dffa.jpg" data-lightbox="roadtrip" data-title="Mike Lindell The My Pillow Guy Takes Bold Pro Life Stance Youtube Pro Life Life Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/7e/1e/4a7e1e66adde1daf284ddd845bd3dffa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PPe3VAhof00_p4f0Uy5twOY0jeaFsntYww';" alt="Mike Lindell The My Pillow Guy Takes Bold Pro Life Stance Youtube Pro Life Life Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Lindell The My Pillow Guy Takes Bold Pro Life Stance Youtube Pro Life Life Guys</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/8d/9f/e5/8d9fe5eb6a17a41d0fdb63ade9949965.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PPe3VAhof00_p4f0Uy5twOY0jeaFsntYww';" alt="Mike Lindell The My Pillow Guy Takes Bold Pro Life Stance Youtube Pro Life Life Guys">
+										<div class="card-body">
+						<h3 class="h5"><b>MIKE Lindell a Minnesota native is the founder and CEO of My Pillow.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ceo of mypillow</strong>. 
+								
+																	MyPillow CEO Mike Lindell brings notes to White House that suggest calling for martial law if necessary It comes after Mr Lindell tweeted then deleted calls for Donald Trump to impose martial. 
+																	Published Tuesday January 26 2021 710AM EST Mike Lindell the CEO of MyPillow was banned from Twitter Monday night according to a Twitter spokesperson. 
+																	Far-right network OAN aired the video on repeat. 
+																	MINNEAPOLIS WCCO Mike Lindell the CEO of Minnesota-based company MyPillow was suspended from Twitter Monday night. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Twitter has permanently banned Mike Lindell CEO of MyPillow and one of former President Donald Trumps staunchest supporters in the business world. 
+																	The 59-year-old American businessman and a self-made millionaire is also a vocal champion of former President Donald Trump. 
+																	MyPillow CEO Mike Lindell has become the subject of a flurry of memes as he stands firm in his insistence that Joe Biden did not win the election. 
+																	He has been using his Twitter account to spread disinformation about the 2020 election including false. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyPillow CEO Mike Lindell could face potential legal consequences for continuing to spread baseless allegations about election fraudincluding at a recent meeting Friday at the White Houseas. 
+																	According to CBS News it is a permanent suspension. 
+																	New York CNN Business Bed Bath Beyond has stopped selling MyPillow products following CEO Mike Lindells support of the January 6 insurrection and his continued false statements questioning the. 
+																	He is the founder and CEO of My Pillow Inc and is sometimes referred to as the My Pillow guy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Allum Bokhari 26 Jan 2021. 
+																	Twitter has suspended Mike Lindell the CEO of My Pillow from the social media platform. 
+																	CNN Business Mike Lindell the CEO of MyPillow was banned from Twitter Monday night according to a Twitter spokesperson. 
+																	Lindell CEO of MyPillow Inc speaks during the daily briefing on the novel coronavirus COVID-19 in the Rose Garden of the White House in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A host on the conservative channel Newsmax recently walked out of an interview as the pillow salesman. 
+																	US President Donald Trump listens as Michael J. 
+																	Michael James Lindell born June 28 1961 is an American businessman. 
+																	Lindell said retailers such as Bed Bath Beyond and Kohls have dropped his products in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mike Lindell the founder of MyPillow and a prominent ally of former President Donald Trump was suspended from Twitter for promoting election conspiracies. 
+																	MyPillow is a major supporter of conservative media. 
+																	Newsmax anchor Bob Sellers issued an apology after storming out of a live interview with MyPillow CEO Mike Lindell as the pro-Trump guest refused to stop pushing conspiracy theories about voter. 
+																	The brand appeared on 16 TV networks from Wednesday through Friday with 44 percent of its spending going to Fox News Fox Business and Fox. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyPillow CEO Mike Lindell has apparently spent a feverish five days making a three hour documentary that he claims will prove definitively that the 2020 election was stolen. 
+																	Many of the posts highlighted Lindells pure. 
+																	MIKE Lindell is the founder and CEO of MyPillow - and a vocal supporter of former President Donald Trump. 
+																	MyPillow CEO Mike Lindell waits outside the West Wing of the White House before entering in Washington on Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Donald Trumpsupporter said the. 
+																	MyPillow CEO Mike Lindell Releases Absurd Conspiracy Infomercial. 
+																	Twitter Blacklists MyPillow CEO Mike Lindell 52924 Greg Nash-PoolGetty Images. 
+																	Twitter made its decision based on a new. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Twitter spokesperson confirmed to the media that Lindell had been banned for violations of the platforms civic integrity policy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/8a/60/f08a6050d715afe218932fef198eaaf7.jpg" data-lightbox="roadtrip" data-title="Pin On Different Materials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/8a/60/f08a6050d715afe218932fef198eaaf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveJ5FDVGaVOW0WDnasveogiF7pyXTmng37A';" alt="Pin On Different Materials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Different Materials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/49/19/dd491966f64cc197cc8c4830765984e2.jpg" data-lightbox="roadtrip" data-title="Pin On Trump Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/49/19/dd491966f64cc197cc8c4830765984e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb3pn8oZUyLp4zsxYlNwzeitUYFtDGibyJJw';" alt="Pin On Trump Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trump Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/72/d1/df/72d1df003135af500f5b7470cd9206da.jpg" data-lightbox="roadtrip" data-title="Pin On Movies Inspirational">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/72/d1/df/72d1df003135af500f5b7470cd9206da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdv4iOjE7-fHlAdsAp93VVDpHRTYoEiu7YA';" alt="Pin On Movies Inspirational">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Movies Inspirational</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/0a/9a/9d0a9a7e49632eee1efa4a685359ca3e.png" data-lightbox="roadtrip" data-title="The American Icon Mike Lindell With My Pillow Co Promotes Chebar Ministries In Atlanta Ga Usa Mypillow Atlanta Ga Legacy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/0a/9a/9d0a9a7e49632eee1efa4a685359ca3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLB95xxtH8V0SoggGPf5quu3YLmfpQxhzdA';" alt="The American Icon Mike Lindell With My Pillow Co Promotes Chebar Ministries In Atlanta Ga Usa Mypillow Atlanta Ga Legacy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The American Icon Mike Lindell With My Pillow Co Promotes Chebar Ministries In Atlanta Ga Usa Mypillow Atlanta Ga Legacy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/c3/85/44c3859ee45ae8bf9e45a024234d9742.jpg" data-lightbox="roadtrip" data-title="Police Perform Welfare Check On Cardboard Cutout Of Mypillow Ceo Cardboard Cutout Mypillow Cutout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/c3/85/44c3859ee45ae8bf9e45a024234d9742.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhIMrIsCq3MKlAyNUVlaHQpb6-Yu8umzyQjw';" alt="Police Perform Welfare Check On Cardboard Cutout Of Mypillow Ceo Cardboard Cutout Mypillow Cutout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Perform Welfare Check On Cardboard Cutout Of Mypillow Ceo Cardboard Cutout Mypillow Cutout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/1b/da/4d1bda1a697a876fc03527a13ef50464.png" data-lightbox="roadtrip" data-title="9 Slnnrvrq2qmm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/1b/da/4d1bda1a697a876fc03527a13ef50464.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Yhe8LUenF7aFI7PEqBQaYDdNay4KhkqF3Q';" alt="9 Slnnrvrq2qmm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Slnnrvrq2qmm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/1c/f5/551cf59c656d9215833be3ed9e16fdaa.png" data-lightbox="roadtrip" data-title="Jane Krakowski Insists She S Not Dating The Mypillow Ceo Because She S Never Met Him Vanity Fair In 2021 Jane Krakowski Kim Kardashian And Kanye Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/1c/f5/551cf59c656d9215833be3ed9e16fdaa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBr_nc107I9aBanjBDSXGPQZL52XK2NaQ3Q';" alt="Jane Krakowski Insists She S Not Dating The Mypillow Ceo Because She S Never Met Him Vanity Fair In 2021 Jane Krakowski Kim Kardashian And Kanye Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jane Krakowski Insists She S Not Dating The Mypillow Ceo Because She S Never Met Him Vanity Fair In 2021 Jane Krakowski Kim Kardashian And Kanye Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/80/85/8280852cde44d82c4c00050e1bac342b.png" data-lightbox="roadtrip" data-title="Rajkqhgu9qlnhm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/80/85/8280852cde44d82c4c00050e1bac342b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUa-9X4QbyaSya0bJAv36V2NtXXTxBxs6V7w';" alt="Rajkqhgu9qlnhm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rajkqhgu9qlnhm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/d5/37/69d537ef27c5b94a7d437309129a8084.jpg" data-lightbox="roadtrip" data-title="Cramax0wwuugzm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/d5/37/69d537ef27c5b94a7d437309129a8084.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnk1JjrW4Ih6LzNwijeN618YNCp57RGezMA';" alt="Cramax0wwuugzm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cramax0wwuugzm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/2e/55/bf2e55e3ed52858e5669a6db67c5bf75.jpg" data-lightbox="roadtrip" data-title="Michael J Lindell My Pellow Trump Love Mypillow Pillows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/2e/55/bf2e55e3ed52858e5669a6db67c5bf75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBILMxsoUHZNqx_-8ygIiQ6FmWyTs2AxVDw';" alt="Michael J Lindell My Pellow Trump Love Mypillow Pillows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michael J Lindell My Pellow Trump Love Mypillow Pillows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/2b/00/462b006ac6351057d2010cc9a6c4b6d3.jpg" data-lightbox="roadtrip" data-title="Police Get Call To Check On Deranged Person Standing Outside Holding A Pillow It Was Actually A Cardboard Cutout Of The M Cardboard Cutout Standing Mypillow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/2b/00/462b006ac6351057d2010cc9a6c4b6d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-I8QMZBGg9-h-ye8nU5aTeOjRo5Bxh9pR9Q';" alt="Police Get Call To Check On Deranged Person Standing Outside Holding A Pillow It Was Actually A Cardboard Cutout Of The M Cardboard Cutout Standing Mypillow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Get Call To Check On Deranged Person Standing Outside Holding A Pillow It Was Actually A Cardboard Cutout Of The M Cardboard Cutout Standing Mypillow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/57/f1/f357f1d75525fe1c76b0f9e0f04954e3.jpg" data-lightbox="roadtrip" data-title="Pin On Politics Money Corruption">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/57/f1/f357f1d75525fe1c76b0f9e0f04954e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhccxxzzjsJmHxU6iWX0z6cBQmRwTxYwIbA';" alt="Pin On Politics Money Corruption">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Politics Money Corruption</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/3c/80/653c80beef3f017f9bb2c809692ebe09.jpg" data-lightbox="roadtrip" data-title="Pin On Health Coronavirus Vaccines Greed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/3c/80/653c80beef3f017f9bb2c809692ebe09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSV25FWtfeX9mDzc3W9DNP11YzFgIri26BA';" alt="Pin On Health Coronavirus Vaccines Greed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Coronavirus Vaccines Greed</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/free-online-courses-for-military-spouses.html">Free Online Courses For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/golden-star-ganesh-wedding-photos.html">Golden Star Ganesh Wedding Photos</a></li>
+													<li class="list-group-item"><a href="/hari-ultah-army.html">Hari Ultah Army</a></li>
+													<li class="list-group-item"><a href="/french-military-cap-crossword-solver.html">French Military Cap Crossword Solver</a></li>
+													<li class="list-group-item"><a href="/govt-scholarship-for-mba-students.html">Govt Scholarship For Mba Students</a></li>
+													<li class="list-group-item"><a href="/hardest-thing-about-being-a-military-spouse.html">Hardest Thing About Being A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/half-hour-in-military-time.html">Half Hour In Military Time</a></li>
+													<li class="list-group-item"><a href="/ged-programs-for-military-spouses.html">Ged Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/gifts-for-wife-before-deployment.html">Gifts For Wife Before Deployment</a></li>
+													<li class="list-group-item"><a href="/hari-army-day.html">Hari Army Day</a></li>
+													<li class="list-group-item"><a href="/hari-terbentuknya-army.html">Hari Terbentuknya Army</a></li>
+													<li class="list-group-item"><a href="/guardian-review-of-military-wives.html">Guardian Review Of Military Wives</a></li>
+													<li class="list-group-item"><a href="/french-military-cap-crossword-clue-4-letters.html">French Military Cap Crossword Clue 4 Letters</a></li>
+													<li class="list-group-item"><a href="/free-premium-linkedin-for-military-spouses.html">Free Premium Linkedin For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/hari-army-indonesia.html">Hari Army Indonesia</a></li>
+													<li class="list-group-item"><a href="/grants-or-scholarships-for-military-spouses.html">Grants Or Scholarships For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/hari-singh-army.html">Hari Singh Army</a></li>
+													<li class="list-group-item"><a href="/georgia-civil-war-service-records-of-confederate-soldiers.html">Georgia Civil War Service Records Of Confederate Soldiers</a></li>
+													<li class="list-group-item"><a href="/harga-saham-army-hari-ini.html">Harga Saham Army Hari Ini</a></li>
+													<li class="list-group-item"><a href="/hari-jadi-bts-dan-army.html">Hari Jadi Bts Dan Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

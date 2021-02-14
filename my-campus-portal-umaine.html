@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Campus Portal Umaine - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Campus Portal Umaine",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/96/c6/e8/96c6e8fbccc45aa1b3443a0f35a61343.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+campus+portal+umaine",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Campus Portal Umaine</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Has multiple layers of fabric which cover the nose mouth and chin. Links to the new Portal boards are located just above the right column on the Portal homepage. You can reach the University Technology Support Center at 800-696-4357 or submit a support request. <br>				
+			</p>
+										<a class="badge badge-primary" href="/air-force-jobs-karachi-2019.html">air force jobs karachi 2019</a>
+											<a class="badge badge-light" href="/air-force-jobs-near-me.html">air force jobs near me</a>
+											<a class="badge badge-dark" href="/air-force-jobs-for-mechanical-engineers.html">air force jobs for mechanical engineers</a>
+											<a class="badge badge-info" href="/air-force-iraq-ribbon.html">air force iraq ribbon</a>
+											<a class="badge badge-dark" href="/air-force-jobs-for-btech-cse-students.html">air force jobs for btech cse students</a>
+											<a class="badge badge-light" href="/air-force-jobs-for-civil-engineers.html">air force jobs for civil engineers</a>
+											<a class="badge badge-primary" href="/air-force-jobs-for-disabled.html">air force jobs for disabled</a>
+											<a class="badge badge-success" href="/air-force-jobs-for-math-majors.html">air force jobs for math majors</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for viewing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/wp-content/uploads/sites/2/2016/02/Portal-header2.jpg" data-lightbox="roadtrip" data-title="Myumaine Portal The University Of Maine University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/wp-content/uploads/sites/2/2016/02/Portal-header2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmEN3wbZT-FBjZe2qiDfk8nEhqFGGtkFxTw';" alt="Myumaine Portal The University Of Maine University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Myumaine Portal The University Of Maine University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mycs.staticweb.maine.edu/o/ums-v7-theme/images/custom/UMSLogoWeb.png" data-lightbox="roadtrip" data-title="Umaine Mycampus Portal">
+											<img class="card-img v-image ads-img " src="https://mycs.staticweb.maine.edu/o/ums-v7-theme/images/custom/UMSLogoWeb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53sARYwq1ygMKu2rPJYQJADFDVbCymkLvfw';" alt="Umaine Mycampus Portal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Umaine Mycampus Portal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/c6/e8/96c6e8fbccc45aa1b3443a0f35a61343.jpg" data-lightbox="roadtrip" data-title="Emera Astronomy Center Is Umaine S Portal To The Stars With Weekend Shows Open To The Public Tours Marina Bay Sands Astronomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/c6/e8/96c6e8fbccc45aa1b3443a0f35a61343.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKlaRqMMpw0Z66WTr-7URl_f9Z2llSGehuQ';" alt="Emera Astronomy Center Is Umaine S Portal To The Stars With Weekend Shows Open To The Public Tours Marina Bay Sands Astronomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emera Astronomy Center Is Umaine S Portal To The Stars With Weekend Shows Open To The Public Tours Marina Bay Sands Astronomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/it/wp-content/uploads/sites/210/2017/11/Portal-Page-1024x402.jpeg" data-lightbox="roadtrip" data-title="New Umaine Mycampus Portal Announcement And Community Boards Information Technology University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/it/wp-content/uploads/sites/210/2017/11/Portal-Page-1024x402.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStrrhT_4AWdGVhh-r5Azx0nftT3bubWTfq3A';" alt="New Umaine Mycampus Portal Announcement And Community Boards Information Technology University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Umaine Mycampus Portal Announcement And Community Boards Information Technology University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/it/wp-content/uploads/sites/210/2018/01/Portal-New-1024x230.jpeg" data-lightbox="roadtrip" data-title="Umaine Mycampus Portal Announcements And Alerts And All Community Boards Information Technology University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/it/wp-content/uploads/sites/210/2018/01/Portal-New-1024x230.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStjamyZ8DkAgOzphwbL9HSk3KrUm0tdMSO_g';" alt="Umaine Mycampus Portal Announcements And Alerts And All Community Boards Information Technology University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Umaine Mycampus Portal Announcements And Alerts And All Community Boards Information Technology University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://online.umaine.edu/wp-content/uploads/sites/72/2020/08/Screen-Shot-2020-08-11-at-2.31.37-PM.png" data-lightbox="roadtrip" data-title="Getting Started Umaine Online University Of Maine">
+											<img class="card-img v-image ads-img " src="https://online.umaine.edu/wp-content/uploads/sites/72/2020/08/Screen-Shot-2020-08-11-at-2.31.37-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lKnGt9T_9t7THnW2sB7Eve6MRHXu5fQ7AQ';" alt="Getting Started Umaine Online University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Started Umaine Online University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://mycs.staticweb.maine.edu/o/ums-v7-theme/images/custom/UMSLogoWeb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lKnGt9T_9t7THnW2sB7Eve6MRHXu5fQ7AQ';" alt="Getting Started Umaine Online University Of Maine">
+										<div class="card-body">
+						<h3 class="h5"><b>The MyCampus Portal is a single sign-on for students faculty and staff here at the University of Maine that is integrated with BlackBoard MaineStreet and the individuals University-provided Google account allowing users to navigate quickly and efficiently to wherever they need to go on one of those systems or the University website.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My campus portal umaine</strong>. 
+								
+																	Is secured with ties or ear loops. 
+																	Type Description Meets the Universitys requirement. 
+																	Fits snugly but comfortably against the side of the face. 
+																	The Machias Portal is used to access internal information and forms from departments such as the Office of Human Resources Office of Student Financial Aid and information related to university operations and services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The portal has a single sign-on feature log in once and access MaineStreet Gmail BlackBoard and other apps. 
+																	Allows for breathing without restriction. 
+																	The UMaine Portal is used to access internal information and forms from departments such as the Office of Human Resources Office of Student Financial Aid and information related to university operations and services. 
+																	And is able to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The portal has a single sign-on feature log in once and access MaineStreet Gmail Brightspace and other apps. 
+																	When you log in to Brightspace you will see all of your courses right on the landing page. 
+																	Do you need help. 
+																	UMaine Brightspace Access Blank course shells have been created for all of your upcoming courses within Brightspace already. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check if MyCampus is back. 
+																	Since your browser does not support JavaScript you must press the Continue button once to proceed. 
+																	November 28 2017 Issue 5 IT Newsletter Uncategorized The new UMaine Portal announcement and community bulletin boards that replace FirstClass Conference boards will be open for business on December 1. 
+																	Cloth Face Covering Cloth Face Covering per Maine civil authorities is a protection that covers the nose and mouth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyCampus is currently unavailable. 
+																	You may access the following tools using the tiles below. 
+																	New UMaine MyCampus Portal Announcement and Community Boards. 
+																	The new UMaine MyCampus Portal Announcements Alerts and All Community Boards that replace FirstClass announcement and community boards are open for business. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/it/wp-content/uploads/sites/210/2020/10/Capture.png" data-lightbox="roadtrip" data-title="Welcome To The Umaine Student Brightspace Page Information Technology University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/it/wp-content/uploads/sites/210/2020/10/Capture.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3N19qZ-WHUiBt07Li10QHqa52Ii-dKUgvFQ';" alt="Welcome To The Umaine Student Brightspace Page Information Technology University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To The Umaine Student Brightspace Page Information Technology University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://studentrecords.umaine.edu/wp-content/themes/umaine/assets/images/default-og-image.png" data-lightbox="roadtrip" data-title="Home Student Records University Of Maine">
+											<img class="card-img v-image ads-img " src="https://studentrecords.umaine.edu/wp-content/themes/umaine/assets/images/default-og-image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ki3sPoZAVUJja7XUasTxDd_sWB-UsWdvuQ';" alt="Home Student Records University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Student Records University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/clasadvisingcenter/wp-content/uploads/sites/315/2020/04/CLAS-Logo_transparent-300x158.png" data-lightbox="roadtrip" data-title="Newly Accepted Students Advising Academic Services Center University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/clasadvisingcenter/wp-content/uploads/sites/315/2020/04/CLAS-Logo_transparent-300x158.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVy7_uOdSHxJGHzwq6HRkXTx723pXLYVaSSw';" alt="Newly Accepted Students Advising Academic Services Center University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newly Accepted Students Advising Academic Services Center University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/02/0f/a3020f2cb3a3c450ee4dbf6d7f0b364b.jpg" data-lightbox="roadtrip" data-title="The Collins Center For The Arts University Of Maine Brick Art New Center">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/02/0f/a3020f2cb3a3c450ee4dbf6d7f0b364b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzI9UAG_99STcOMiunFNi-kJyCXQgcFwsB5g';" alt="The Collins Center For The Arts University Of Maine Brick Art New Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Collins Center For The Arts University Of Maine Brick Art New Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/bd/49/dbbd498533c1215860eda728b3f065f3.png" data-lightbox="roadtrip" data-title="Page Farm And Home Museum University Of Maine Farmhouse Farm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/bd/49/dbbd498533c1215860eda728b3f065f3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnaArf8a9hO6682NvmfJbLmVUZOrjQhy8Sg';" alt="Page Farm And Home Museum University Of Maine Farmhouse Farm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Page Farm And Home Museum University Of Maine Farmhouse Farm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/53/8d/e4538dfc74fb9dcf6bc4392fc3b19ce7.jpg" data-lightbox="roadtrip" data-title="Colby College Waterville Maine Colby College University Of Maine Coastal Carolina University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/53/8d/e4538dfc74fb9dcf6bc4392fc3b19ce7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9t2yKT3kj23txjA5Emm00hLiRrZK6_kL9VA';" alt="Colby College Waterville Maine Colby College University Of Maine Coastal Carolina University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colby College Waterville Maine Colby College University Of Maine Coastal Carolina University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/international/wp-content/uploads/sites/94/2013/07/Mainstreet-login-300x200.jpg" data-lightbox="roadtrip" data-title="How To Check The Status Of Your Application In Mainestreet International Programs University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/international/wp-content/uploads/sites/94/2013/07/Mainstreet-login-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTne6krf7cKF-pgGvt2AeHVTG5CFRiub-weog';" alt="How To Check The Status Of Your Application In Mainestreet International Programs University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Check The Status Of Your Application In Mainestreet International Programs University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/43/82/664382d38210b881cc406955f01511d8.jpg" data-lightbox="roadtrip" data-title="At Fogler Library The Special Collections Section Is Home To Hundreds Of Original Resources Of Maine S History History The Originals Tours">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/43/82/664382d38210b881cc406955f01511d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVK8FPBWsSlMkrlhOeRLF-UYo5l4d51FQlkQ';" alt="At Fogler Library The Special Collections Section Is Home To Hundreds Of Original Resources Of Maine S History History The Originals Tours">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">At Fogler Library The Special Collections Section Is Home To Hundreds Of Original Resources Of Maine S History History The Originals Tours</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/mainecard/wp-content/uploads/sites/371/2020/01/OneCard-eAccount-logo.jpg" data-lightbox="roadtrip" data-title="Online Card Office The Mainecard Service Center University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/mainecard/wp-content/uploads/sites/371/2020/01/OneCard-eAccount-logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvR2fcl34PFsmnN-NAMSGBR7ZjXSb13FDVfQ';" alt="Online Card Office The Mainecard Service Center University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Card Office The Mainecard Service Center University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://umaine.edu/business/wp-content/uploads/sites/6/2020/02/UMaine-423x212.jpg" data-lightbox="roadtrip" data-title="Home Maine Business School University Of Maine">
+											<img class="card-img v-image ads-img " src="https://umaine.edu/business/wp-content/uploads/sites/6/2020/02/UMaine-423x212.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlyLmqP2nQK1rl1oGsPSnHrHo5vW6y1xpYQ';" alt="Home Maine Business School University Of Maine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Maine Business School University Of Maine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/e4/96/f1e4963aed351c9dbe4b6202c12bd23c.jpg" data-lightbox="roadtrip" data-title="Cutler Memorial Library Farmington Me Farmington University Of Maine National Register Of Historic Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/e4/96/f1e4963aed351c9dbe4b6202c12bd23c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943nx0sie9xPTFPAiB-rX64frHE9i85pHvQ';" alt="Cutler Memorial Library Farmington Me Farmington University Of Maine National Register Of Historic Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cutler Memorial Library Farmington Me Farmington University Of Maine National Register Of Historic Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.maine.edu/finance/wp-content/uploads/sites/39/2019/11/ums-logo-blue-field-new.png" data-lightbox="roadtrip" data-title="1098 T Information University Of Maine System">
+											<img class="card-img v-image ads-img " src="https://www.maine.edu/finance/wp-content/uploads/sites/39/2019/11/ums-logo-blue-field-new.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0x_SOtsPCWl3L-ovNg7NmN4YR42bOwk1_dA';" alt="1098 T Information University Of Maine System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1098 T Information University Of Maine System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/78/08/c178089940960b02722d128ceeb78bc7.jpg" data-lightbox="roadtrip" data-title="Colby College Waterville Me Colby College Visit Maine Coastal Carolina University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/78/08/c178089940960b02722d128ceeb78bc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjCy9dofAB4uOxYbcgKhV193DuhlA5bQKeQ';" alt="Colby College Waterville Me Colby College Visit Maine Coastal Carolina University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colby College Waterville Me Colby College Visit Maine Coastal Carolina University</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-military-experience.html">Benefits Of Military Experience</a></li>
+													<li class="list-group-item"><a href="/benefits-of-indian-air-force-officer.html">Benefits Of Indian Air Force Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-an-airforce-officer.html">Benefits Of Being An Airforce Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-hiring.html">Benefits Of Military Hiring</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-an-army-officer.html">Benefits Of Becoming An Army Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-retirement.html">Benefits Of Military Retirement</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-army-nurse.html">Benefits Of Being A Army Nurse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-army-recruiter.html">Benefits Of Being A Army Recruiter</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-exercises.html">Benefits Of Military Exercises</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-royal-navy-officer.html">Benefits Of Being A Royal Navy Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-training-for-students.html">Benefits Of Military Training For Students</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-license-plates-in-texas.html">Benefits Of Military License Plates In Texas</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-working-dogs.html">Benefits Of Military Working Dogs</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-marine-corps-officer.html">Benefits Of Being A Marine Corps Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-presses.html">Benefits Of Military Presses</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-married-in-the-army-reserves.html">Benefits Of Being Married In The Army Reserves</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-shoulder-press.html">Benefits Of Military Shoulder Press</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-navy-federal-credit-union-member.html">Benefits Of Being A Navy Federal Credit Union Member</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-military-spouse.html">Benefits Of Being A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-reserve-retirement.html">Benefits Of Military Reserve Retirement</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

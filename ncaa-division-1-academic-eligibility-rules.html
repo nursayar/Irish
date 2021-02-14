@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Division 1 Academic Eligibility Rules - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Division 1 Academic Eligibility Rules",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/b0/7e/02/b07e02b109eaea4d9ebc9c7b5834b583.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+division+1+academic+eligibility+rules",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Division 1 Academic Eligibility Rules</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The standards ensure student-athletes take the appropriate steps to earn their degree and include everything from grade-point average to term-by-term and annual credit hour requirements. NCAA student-athletes in Division I or II must meet minimum academic criteria that takes into account high school grades as well as scores on standardized tests the SAT or ACT. Learning disabilities or disorders. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-dependent-benefits-college.html">va dependent benefits college</a>
+											<a class="badge badge-warning" href="/va-dependent-military-id.html">va dependent military id</a>
+											<a class="badge badge-success" href="/va-disability-for-spousal-support.html">va disability for spousal support</a>
+											<a class="badge badge-success" href="/va-dependent-benefits-contact-number.html">va dependent benefits contact number</a>
+											<a class="badge badge-info" href="/va-chapter-35-dependents-educational-assistance.html">va chapter 35 dependents educational assistance</a>
+											<a class="badge badge-danger" href="/va-dependents-indemnity-compensation.html">va dependents indemnity compensation</a>
+											<a class="badge badge-secondary" href="/va-dependent-benefits-eligibility.html">va dependent benefits eligibility</a>
+											<a class="badge badge-primary" href="/va-disability-health-benefits-for-dependents.html">va disability health benefits for dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the right blog.  Our site provides you with hints for viewing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/3d/5f/503d5f280a11d2ddc56f5e17b477cf4e.jpg" data-lightbox="roadtrip" data-title="Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/3d/5f/503d5f280a11d2ddc56f5e17b477cf4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-C5BE5Q8De8cegTC9L1VKOl9Df3tnyQdsQ';" alt="Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/75/77/f8757764b529519732d6d843d7425669.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Student Athlete College Recruiting Life Hacks For School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/75/77/f8757764b529519732d6d843d7425669.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_0jchfO9g0gqR4J3cpKBhgDAuTEjHlvouQ';" alt="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Student Athlete College Recruiting Life Hacks For School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Student Athlete College Recruiting Life Hacks For School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/89/fa/ed89fa9fc3d1f210b878fc3c17225488.jpg" data-lightbox="roadtrip" data-title="Pin By Jessica Mccarthy On School Counseling School Counseling How To Plan High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/89/fa/ed89fa9fc3d1f210b878fc3c17225488.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYqFeT0WNAtXFvEwVQJaOWWkkrTMcqWFJzg';" alt="Pin By Jessica Mccarthy On School Counseling School Counseling How To Plan High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jessica Mccarthy On School Counseling School Counseling How To Plan High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/43/f9/f043f996ffff63d25c0e3cc0662555b5.png" data-lightbox="roadtrip" data-title="Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/43/f9/f043f996ffff63d25c0e3cc0662555b5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoFqH08VcOXMbYL8ieu0Zu01NhCx7_vrsRQ';" alt="Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/2e/2e/c82e2ef79e3716a3ebadf02287ee2153.jpg" data-lightbox="roadtrip" data-title="Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Http Ncaa Aau Basketball Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/2e/2e/c82e2ef79e3716a3ebadf02287ee2153.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaauC4A07lc_eHfqEv1FVNbIlNVSqts_-TiA';" alt="Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Http Ncaa Aau Basketball Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Http Ncaa Aau Basketball Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/50/18/e1501877528a2748f656031448f0ebef.jpg" data-lightbox="roadtrip" data-title="Episode 7 Athnet S Josh And David Talk About New Rules In Division Ii Sports How Twitter Impacted The Recruiti Athletic Scholarships Scholarships Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/50/18/e1501877528a2748f656031448f0ebef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhVu8I_TG25u6jK8c0mACajQFy4qYa6gakQ';" alt="Episode 7 Athnet S Josh And David Talk About New Rules In Division Ii Sports How Twitter Impacted The Recruiti Athletic Scholarships Scholarships Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Episode 7 Athnet S Josh And David Talk About New Rules In Division Ii Sports How Twitter Impacted The Recruiti Athletic Scholarships Scholarships Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ce/d2/43/ced243a9ad2bc97b71c420437c69a0d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhVu8I_TG25u6jK8c0mACajQFy4qYa6gakQ';" alt="Episode 7 Athnet S Josh And David Talk About New Rules In Division Ii Sports How Twitter Impacted The Recruiti Athletic Scholarships Scholarships Recruitment">
+										<div class="card-body">
+						<h3 class="h5"><b>Division I academic eligibility To be eligible to compete in NCAA sports during your first year at a Division I school you must graduate high school and meet ALL the following requirements.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa division 1 academic eligibility rules</strong>. 
+								
+																	Student-athletes at a Division I school must meet specific academic benchmarks called progress-toward-degree requirements to continue competing. 
+																	In addition to NCAA requirements they also must also meet the unique acceptance requirements of the university they plan to attend those requirements may exceed NCAA standards. 
+																	4-3 NCAA Integrity Model 27 Article 11 Conduct and Employment of Athletics Personnel 11-1 Coaches Compensation and Benefits 58 11-2 Coaches Reimbursable Expenses 59 Article 14 Academic Eligibility 14-1 Initial Eligibility 203 14-2 Academic Misconduct Analysis 205 14-3 New SAT to Old SAT Concordance Table 206 Article 15 Financial Aid. 
+																	1 additional year of English math or naturalphysical science. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After you graduate ask your counselor to submit your final official transcript with proof of graduation to the NCAA Eligibility Center. 
+																	In order to be eligible for NCAA competition you must be enrolled at least 12 credit hours in a term. 
+																	If a college-bound student-athlete does NOT meet all of the initial-eligibility standards core-course progression requirement minimum 23 core-course grade point average GPA for competition a separate certification is completed using the 16 core courses with the best grades in the students academic record no core-course progression requirement to calculate the core-course. 
+																	3 years of math Algebra 1 or higher 2 years of naturalphysical science 1 year must be lab science if your school offers it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some of the most common EIDs include. 
+																	Implemented in 2003 as part of an ambitious academic reform effort in Division I the Academic Progress Rate APR holds institutions accountable for the academic progress of their student-athletes through a team-based metric that accounts for the eligibility and retention of each student-athlete for each academic term. 
+																	Student-athletes who do not meet the requirements are not eligible for competition. 
+																	Those scores are weighted on a sliding scale to determine initial eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While its still uncertain how many Division 1 2 3 spring sport athletes will take advantage of an additional year to compete college coaches were split when asked if they expect seniors to return for an extra year of eligibility with 43 of spring sports coaches expecting seniors to return for an extra year of eligibility. 
+																	4 years of English. 
+																	All Division I programs are 4 year colleges and as explained by any high school guidance counselor the academic admittance requirements are fairly standard. 
+																	Earn a core course GPA of 23 or higher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division 1 Division 2 and Division 3 Committees. 
+																	College-bound student-athletes preparing to enroll in a Division I or Division II school need to register with the NCAA Eligibility Center to ensure they have met amateurism standards and are academically prepared for college coursework. 
+																	For academic eligibility purposes the NCAA defines an education-impacting disability EID as a current impairment that has a substantial educational impact on a students academic performance and requires accommodation. 
+																	The progress-toward-degree requirements guide student-athletes toward graduation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Incoming student-athletes in Divisions I and II are subject to academic initial-eligibility standards which take into account standardized test scores number of core courses taken in high school and the grades earned in those core courses. 
+																	The NCAA constantly refers to athletes as student athletes and have great cause as every athlete must qualify academically becoming a collegiate athlete. 
+																	Full qualifier competition athletics aid scholarship and practice the first year. 
+																	Ten of those courses seven in math science and English have to be completed by the seventh semester of high school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However a progress-toward-degree waiver may be filed to possibly regain eligibility Academic Waivers. 
+																	To encourage an academic focus the NCAA requires Division I student-athletes who transfer from a two-year school and do not meet transfer requirements or transfer from one four-year school to another four-year school to spend one academic year in residence before being eligible to play There are exceptions to the rule. 
+																	Typically you are a full-time student if you are enrolled for at least 12 credit hours in a term even though some NCAA schools define a full-time student as someone who takes fewer than 12 credit hours in a term. 
+																	In order to receive full NCAA academic eligibility to compete your freshman year you must achieve at least a 23 GPA in your core courses for Division 1 and a 22 GPA for Division 2 to fulfill the NCAA GPA requirements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NEW NCAA Division I Initial- Eligibility Academic Requirements For college-bound student-athletes enrolling full time at an NCAA Division I college or university on or after August 1 2016 there are three possible academic outcomes. 
+																	Attention deficit hyperactivity disorder. 
+																	Complete 16 core courses. 
+																	For student-athletes enrolling in a Division 1 college in the 202122 school year NCAA eligibility rules require a 23 grade-point average in 16 NCAA core courses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Standards include minimum grade-point average term-by-term and annual credit hour requirements and percentage-of-degree requirements. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Hot Topics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp8LUoZIBdgFJFUilSLsPKsrSN4_EM8hon9w';" alt="Pin On Ncaa Hot Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Hot Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/c4/78/e1c478f543b34fd66ab0325e420c4ce2.png" data-lightbox="roadtrip" data-title="Will The Same Rules Still Apply When Dealing With Academic Writing Online Academic Writing Good Essay Essay Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/c4/78/e1c478f543b34fd66ab0325e420c4ce2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-UPowUElnmi_6UK8Bg_WtG1MujIAo1Zhyg';" alt="Will The Same Rules Still Apply When Dealing With Academic Writing Online Academic Writing Good Essay Essay Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will The Same Rules Still Apply When Dealing With Academic Writing Online Academic Writing Good Essay Essay Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/7e/02/b07e02b109eaea4d9ebc9c7b5834b583.gif" data-lightbox="roadtrip" data-title="College Ncaa Football Field Dimension Diagrams Size Sportsknowhow Com Football Field Dimensions Nfl Football Field Football Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/7e/02/b07e02b109eaea4d9ebc9c7b5834b583.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZAnnEIrVORTrSMT9IWGFU0be9D3sR1Jh0g';" alt="College Ncaa Football Field Dimension Diagrams Size Sportsknowhow Com Football Field Dimensions Nfl Football Field Football Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Ncaa Football Field Dimension Diagrams Size Sportsknowhow Com Football Field Dimensions Nfl Football Field Football Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/67/21/16/672116a4b9ed2374bfc9f2f41ad135df.jpg" data-lightbox="roadtrip" data-title="Recruiting Corner Episode 2 This Week Josh Talks About The College Recruiting Process And Offers Basic Tips And Advic College Recruiting Recruitment College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/67/21/16/672116a4b9ed2374bfc9f2f41ad135df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVq8aavEkTMovm9tTM5A1C2IDrday50sdlg';" alt="Recruiting Corner Episode 2 This Week Josh Talks About The College Recruiting Process And Offers Basic Tips And Advic College Recruiting Recruitment College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting Corner Episode 2 This Week Josh Talks About The College Recruiting Process And Offers Basic Tips And Advic College Recruiting Recruitment College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5--bona.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Hot Topics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5--bona.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lNhcCJJ_qy0vlLbRx98mhUQcf3agFhL7Yg';" alt="Pin On Ncaa Hot Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Hot Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/ad/d0/f4add00a1de423ce5fdd7fd4094da831.jpg" data-lightbox="roadtrip" data-title="18 Recruiting Corner Andrew Luck Contacting Coaches When Is Enough Ncaa Eligibility Center Id S Andrew Luck Recruitment Athletic Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/ad/d0/f4add00a1de423ce5fdd7fd4094da831.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENVyJbG3_wAm_Hy6fKEXXJsxCbQOYdu-Gog';" alt="18 Recruiting Corner Andrew Luck Contacting Coaches When Is Enough Ncaa Eligibility Center Id S Andrew Luck Recruitment Athletic Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Recruiting Corner Andrew Luck Contacting Coaches When Is Enough Ncaa Eligibility Center Id S Andrew Luck Recruitment Athletic Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/b5/48/1fb548bfb1da3fc609965eadaf61e8a4.jpg" data-lightbox="roadtrip" data-title="Regional Fashion Trends For College Football Tailgaters Infographic College Football Ncaa College Football Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/b5/48/1fb548bfb1da3fc609965eadaf61e8a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4MithLQKhaJNLgSumWF1aq6HRZLqYHmHfw';" alt="Regional Fashion Trends For College Football Tailgaters Infographic College Football Ncaa College Football Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Regional Fashion Trends For College Football Tailgaters Infographic College Football Ncaa College Football Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/c1/df/f1c1df9c94006a6376dc471e4306d7c2.png" data-lightbox="roadtrip" data-title="What Are The Odds Of Going Pro Tableau Public Gopro High School Basketball College Athletics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/c1/df/f1c1df9c94006a6376dc471e4306d7c2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfU4Qfvt2qeMT0XERoNTR6jy2WrWn6_iChQ';" alt="What Are The Odds Of Going Pro Tableau Public Gopro High School Basketball College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Odds Of Going Pro Tableau Public Gopro High School Basketball College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/91/f6/6291f6314db31f26ff1d5e74e6684d5d.jpg" data-lightbox="roadtrip" data-title="Ncaa Clearinghouse How To Register With The Ncaa Eligibility Center Athletic Scholarships Cross Country Coaching Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/91/f6/6291f6314db31f26ff1d5e74e6684d5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYyotF3YOUa1ZYgRh24p6loy_MHaHGy4X3g';" alt="Ncaa Clearinghouse How To Register With The Ncaa Eligibility Center Athletic Scholarships Cross Country Coaching Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Clearinghouse How To Register With The Ncaa Eligibility Center Athletic Scholarships Cross Country Coaching Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/fb/ac/1efbac21eedca2a7a1e62257f00ad3ec.png" data-lightbox="roadtrip" data-title="Ncsa Recruitingtipoftheday Recruitingtips Recruitment School Coach Athletic Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/fb/ac/1efbac21eedca2a7a1e62257f00ad3ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWR1TIAOjwj9mU9RscwU-89ftqE23AtlDsTQ';" alt="Ncsa Recruitingtipoftheday Recruitingtips Recruitment School Coach Athletic Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncsa Recruitingtipoftheday Recruitingtips Recruitment School Coach Athletic Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/d8/f1/78d8f1cf88bb414ea9dba127ad076eb5.jpg" data-lightbox="roadtrip" data-title="Episode 10 Walk On Opportunities And Multi Year Scholarships Athnet S Josh And David Talk About Walk On Scholarships Athletic Scholarships College Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/d8/f1/78d8f1cf88bb414ea9dba127ad076eb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2VNRG_8MiLpayw9wnkzeFhDTFSaGeEw9MA';" alt="Episode 10 Walk On Opportunities And Multi Year Scholarships Athnet S Josh And David Talk About Walk On Scholarships Athletic Scholarships College Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Episode 10 Walk On Opportunities And Multi Year Scholarships Athnet S Josh And David Talk About Walk On Scholarships Athletic Scholarships College Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/65/66/656566b67698059637791544b14d9ac5.jpg" data-lightbox="roadtrip" data-title="Ms Word Cheat Sheet Shortcut Typing Tips Microsoft Studypk Computer Shortcut Keys Life Hacks For School Useful Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/65/66/656566b67698059637791544b14d9ac5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKFLDxNko-7MJQ_FTEO8SSWn0TThxGBFfZow';" alt="Ms Word Cheat Sheet Shortcut Typing Tips Microsoft Studypk Computer Shortcut Keys Life Hacks For School Useful Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ms Word Cheat Sheet Shortcut Typing Tips Microsoft Studypk Computer Shortcut Keys Life Hacks For School Useful Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/d2/43/ced243a9ad2bc97b71c420437c69a0d8.jpg" data-lightbox="roadtrip" data-title="Ignou Division Improvement Form Ignou Class Improvement Form Division Class Improve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/d2/43/ced243a9ad2bc97b71c420437c69a0d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdO3qbEaewHX9FWQ83LfFxGxR_5K9RzwMxw';" alt="Ignou Division Improvement Form Ignou Class Improvement Form Division Class Improve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ignou Division Improvement Form Ignou Class Improvement Form Division Class Improve</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-navy-shirt-colors.html">Us Navy Shirt Colors</a></li>
+													<li class="list-group-item"><a href="/us-navy-womens-hair-regulations.html">Us Navy Womens Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/va-benefits-for-dependents-agent-orange.html">Va Benefits For Dependents Agent Orange</a></li>
+													<li class="list-group-item"><a href="/us-navy-face-mask-with-filter.html">Us Navy Face Mask With Filter</a></li>
+													<li class="list-group-item"><a href="/us-navy-female-enlisted-uniforms.html">Us Navy Female Enlisted Uniforms</a></li>
+													<li class="list-group-item"><a href="/us-veterans-death-records.html">Us Veterans Death Records</a></li>
+													<li class="list-group-item"><a href="/us-navy-female-khaki-uniform.html">Us Navy Female Khaki Uniform</a></li>
+													<li class="list-group-item"><a href="/us-navy-womens-hoodie.html">Us Navy Womens Hoodie</a></li>
+													<li class="list-group-item"><a href="/va-benefits-for-spouse-in-assisted-living.html">Va Benefits For Spouse In Assisted Living</a></li>
+													<li class="list-group-item"><a href="/us-navy-shirt-walmart.html">Us Navy Shirt Walmart</a></li>
+													<li class="list-group-item"><a href="/usaf-benefits-fact-sheet-2020.html">Usaf Benefits Fact Sheet 2020</a></li>
+													<li class="list-group-item"><a href="/us-navy-veteran-service-records.html">Us Navy Veteran Service Records</a></li>
+													<li class="list-group-item"><a href="/using-my-card-abroad.html">Using My Card Abroad</a></li>
+													<li class="list-group-item"><a href="/using-manycam-on-facebook.html">Using Manycam On Facebook</a></li>
+													<li class="list-group-item"><a href="/usmc-spouse-tiktok.html">Usmc Spouse Tiktok</a></li>
+													<li class="list-group-item"><a href="/us-navy-shirts-amazon.html">Us Navy Shirts Amazon</a></li>
+													<li class="list-group-item"><a href="/us-navy-shirt-shop.html">Us Navy Shirt Shop</a></li>
+													<li class="list-group-item"><a href="/va-benefits-dependents-chapter-35.html">Va Benefits Dependents Chapter 35</a></li>
+													<li class="list-group-item"><a href="/us-womens-army-corps.html">Us Womens Army Corps</a></li>
+													<li class="list-group-item"><a href="/using-mysql-in-spring-boot.html">Using Mysql In Spring Boot</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

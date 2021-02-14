@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Usa Sport - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Usa Sport",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/41/30/49/413049105a6e932f755e77e2deab9517.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+usa+sport",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Usa Sport</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In farewell address Trump urges prayers for. MSN offers Internet subscriptions and services. On Sunday Super Bowl LV will be an exciting sporting event that mixes the mainstream appeal of. <br>				
+			</p>
+										<a class="badge badge-light" href="/ncaa-eligibility-for-homeschoolers.html">ncaa eligibility for homeschoolers</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-football-rules.html">ncaa eligibility football rules</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-requirements-chart.html">ncaa eligibility requirements chart</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-rules-multiple-sports.html">ncaa eligibility rules multiple sports</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-requirements-for-division-2.html">ncaa eligibility requirements for division 2</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-center-website.html">ncaa eligibility center website</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-requirements-2018.html">ncaa eligibility requirements 2018</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-center-transcript-code.html">ncaa eligibility center transcript code</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal site.  Our website gives you hints for viewing the highest quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/3b/47/183b471a169a0c349caf2eb80593cc24.jpg" data-lightbox="roadtrip" data-title="Pin On Lesean Mccoy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/3b/47/183b471a169a0c349caf2eb80593cc24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRv4U-IOiz1NicFq3ekzEFKbPzXFo3x5GcXQ';" alt="Pin On Lesean Mccoy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lesean Mccoy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/44/ce/0144ce8c01cd621ddd4b33d21556a353.jpg" data-lightbox="roadtrip" data-title="Pin On Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/44/ce/0144ce8c01cd621ddd4b33d21556a353.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigF5hsEGWiV4l4gmiAki8Miyi414pIHJXdQ';" alt="Pin On Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/9d/69/079d697779eb2e697aa1c33aa53cf4b8.jpg" data-lightbox="roadtrip" data-title="Bryan Fletcher Usa Olympics Olympics Hunter Boots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/9d/69/079d697779eb2e697aa1c33aa53cf4b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFNmBirdUrvBVHaPe8otAX29_31rVmqc93A';" alt="Bryan Fletcher Usa Olympics Olympics Hunter Boots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bryan Fletcher Usa Olympics Olympics Hunter Boots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/57/95/3457953dc463079331708a11e0d6097b.jpg" data-lightbox="roadtrip" data-title="Pin On Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/57/95/3457953dc463079331708a11e0d6097b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJschbJp7UQ44Ppw_ZoUdPIEmOGYHEd3J3CA';" alt="Pin On Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/7c/d3/4d7cd3185c71048668936adcf2c3efed.jpg" data-lightbox="roadtrip" data-title="Northwestern Unveils Usa Uniforms Football Uniforms Northwestern Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/7c/d3/4d7cd3185c71048668936adcf2c3efed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1kYumeS816owr-SiJJIy9IlqXnQd5azamCQ';" alt="Northwestern Unveils Usa Uniforms Football Uniforms Northwestern Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northwestern Unveils Usa Uniforms Football Uniforms Northwestern Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/29/a3/fc29a3a1dae57b380b8e697a07ab122a.jpg" data-lightbox="roadtrip" data-title="Pin On W A T E R P O L O">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/29/a3/fc29a3a1dae57b380b8e697a07ab122a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlHHBAhTqeFmJW8pEXKtfOn7_5paT8ZfRJg';" alt="Pin On W A T E R P O L O">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On W A T E R P O L O</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b3/79/71/b379719f253949f950a5a66a4c36ab44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlHHBAhTqeFmJW8pEXKtfOn7_5paT8ZfRJg';" alt="Pin On W A T E R P O L O">
+										<div class="card-body">
+						<h3 class="h5"><b>Longest Shortest TD The Super Bowl is a spectacle like no other in world sport.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn usa sport</strong>. 
+								
+																	USA Football the sports national governing body on youth and amateur levels announced today. 
+																	The MSN Sport app is packed with live scores and in-depth match experiences for more than 150 leagues. 
+																	MSN offers Internet subscriptions and services. 
+																	Read the latest news enjoy galleries and watch video highlights from across the best sporting news sources for your favourite teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Customise to add your favourite leagues and teams. 
+																	Your customizable and curated collection of the best in trusted news plus coverage of sports entertainment money weather travel health and lifestyle combined with OutlookHotmail Facebook. 
+																	He is actually worried. 
+																	MSN is the Microsoft information and entertainment network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the latest sports news opinion analysis player rankings scores standings and videos for NFL NBA MLB NCAA NHL Olympics and more. 
+																	12 National Guard Troops Removed for Inaugural. 
+																	Your customizable and curated collection of the best in trusted news plus coverage of sports entertainment money weather travel health and lifestyle combined with OutlookHotmail Facebook Twitter Bing Skype and more. 
+																	Access over 150 leagues and thousands of teams including NFL NBA MLB NHL NCAA MLS PGA NASCAR Formula 1 cricket tennis international soccer leagues like EPLPremier League La Liga. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tatupu named honorary captain for USA Footballs Team USA vs World game New England Patriots. 
+																	US Sports news results and comments on CNN International. 
+																	United States English Image of the day. 
+																	We did what we. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Doug Emhoffs kids describe his relationship. 
+																	CNBC host reveals why he left Fox News. 
+																	Browns Player Has Classy Response To Patrick. 
+																	This article describes how to contact MSN Customer Support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read todays top stories news weather sport entertainment lifestyle money cars and more all expertly curated from across top UK and global news providers. 
+																	Follow fixtures results rankings and match analysis. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/79/71/b379719f253949f950a5a66a4c36ab44.jpg" data-lightbox="roadtrip" data-title="Pin On Desktop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/79/71/b379719f253949f950a5a66a4c36ab44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4JkFpYsJ3pO2nAl7MOZSxeQ0YMW81VyYkg';" alt="Pin On Desktop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Desktop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/30/49/413049105a6e932f755e77e2deab9517.jpg" data-lightbox="roadtrip" data-title="Women S Curling Canada Routs Defending Champ Sweden Us Falls To Russia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/30/49/413049105a6e932f755e77e2deab9517.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHykkNmaiZAjoox7AcG4sqvAYa0GCp941FQ';" alt="Women S Curling Canada Routs Defending Champ Sweden Us Falls To Russia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Curling Canada Routs Defending Champ Sweden Us Falls To Russia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/bf/e4/65bfe4500dd0cdd38d893c1f61845ce8.jpg" data-lightbox="roadtrip" data-title="Pin On Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/bf/e4/65bfe4500dd0cdd38d893c1f61845ce8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXszj-u9fAfSNm87Iwns7SicGRw3phMpuVA';" alt="Pin On Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/f4/b8/e0f4b8eab09f99af9ee9f455cf9bedce.jpg" data-lightbox="roadtrip" data-title="London Olympics Monday S Best Photos Olympics Usa Water Polo Water Polo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/f4/b8/e0f4b8eab09f99af9ee9f455cf9bedce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DlRTSOTqKpH3zRD4z1Olj1zepwh0e_zyKg';" alt="London Olympics Monday S Best Photos Olympics Usa Water Polo Water Polo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">London Olympics Monday S Best Photos Olympics Usa Water Polo Water Polo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/51/43/9a/51439a8734507b79c8c125e14be14ee2--team-usa-portrait-photo.jpg" data-lightbox="roadtrip" data-title="Team Usa Official Portrait Photo Shoot Of Team Usa How To Stay Motivated Olympians Sport Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/51/43/9a/51439a8734507b79c8c125e14be14ee2--team-usa-portrait-photo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYYSe3pLo6BoJOvrxOeowdPUJTv1-ghmfiiQ';" alt="Team Usa Official Portrait Photo Shoot Of Team Usa How To Stay Motivated Olympians Sport Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Team Usa Official Portrait Photo Shoot Of Team Usa How To Stay Motivated Olympians Sport Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/c0/79/cec079dcd060a1d47c49db8fa0f51144.jpg" data-lightbox="roadtrip" data-title="Nfl Cornerbacks Trying To Top Each Other With Contracts Trash Talk Nfl Fantasy Football Fox Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/c0/79/cec079dcd060a1d47c49db8fa0f51144.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dG_Y7syRcls-fUXBVwz5rv-VCxfiPA1oWA';" alt="Nfl Cornerbacks Trying To Top Each Other With Contracts Trash Talk Nfl Fantasy Football Fox Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nfl Cornerbacks Trying To Top Each Other With Contracts Trash Talk Nfl Fantasy Football Fox Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/5b/0e/c85b0efb46978b2689e55ad2a766bfa0.jpg" data-lightbox="roadtrip" data-title="Why Russell Wilson Took A Shower During Halftime Of The Super Bowl Russell Wilson Super Bowl Seahawks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/5b/0e/c85b0efb46978b2689e55ad2a766bfa0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuC2E1YPy_uLkTUv8e0UDb6eXIXu2pF92icw';" alt="Why Russell Wilson Took A Shower During Halftime Of The Super Bowl Russell Wilson Super Bowl Seahawks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Russell Wilson Took A Shower During Halftime Of The Super Bowl Russell Wilson Super Bowl Seahawks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/77/94/f5/7794f58a1f2c684dc350010457dc34cd.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/77/94/f5/7794f58a1f2c684dc350010457dc34cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8YvtWoXx1DVs1gJcC4vuFfKi7abbO2TrsyA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/24/c5/1f24c52ded9f6100826d4c9d736e71cd.jpg" data-lightbox="roadtrip" data-title="College Football Action Week 11 College Football Football Sports Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/24/c5/1f24c52ded9f6100826d4c9d736e71cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnYT99bauOq7GWJzEQ100VnHOIMEhUi7FhQ';" alt="College Football Action Week 11 College Football Football Sports Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Action Week 11 College Football Football Sports Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/18/35/551835e76232dfc88768c2f439a41743.jpg" data-lightbox="roadtrip" data-title="Pin By T Harrell On Alabama In 2020 Michigan Football Alabama Alabama Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/18/35/551835e76232dfc88768c2f439a41743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJuT9QFRYOIpvljGiSsw21_GgzkEOl_rUPQ';" alt="Pin By T Harrell On Alabama In 2020 Michigan Football Alabama Alabama Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By T Harrell On Alabama In 2020 Michigan Football Alabama Alabama Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/fd/70/42fd70da56462b9ea777c6b1e7bfdffb.jpg" data-lightbox="roadtrip" data-title="Pin On Nfl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/fd/70/42fd70da56462b9ea777c6b1e7bfdffb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqH57PqvYH-PW8Nvc0lsGxQHtnDC6RGPs6Tg';" alt="Pin On Nfl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nfl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/a2/7b/1ca27bd7e482a7f99973cc4c7ba2d873.jpg" data-lightbox="roadtrip" data-title="Pin On Msn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/a2/7b/1ca27bd7e482a7f99973cc4c7ba2d873.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKUpIZzxWWDZoLZQPNoC4b719C2LtYRWeGQ';" alt="Pin On Msn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Msn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/fa/1a/40fa1aede3ebf7d08d9130e7c826ffbf.jpg" data-lightbox="roadtrip" data-title="Yosemite National Parks Rock Climbing Yosemite National Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/fa/1a/40fa1aede3ebf7d08d9130e7c826ffbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jP-VkiceBJ0TvgMErX0Kk8Ou728taZE0Jg';" alt="Yosemite National Parks Rock Climbing Yosemite National Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yosemite National Parks Rock Climbing Yosemite National Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-u23.html">Man Utd Vs Chelsea U23</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-on-sky-sports.html">Man Utd Vs Chelsea On Sky Sports</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-kenyan-time.html">Man Utd Vs Chelsea Kenyan Time</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-video-goals.html">Man Utd Vs Chelsea Video Goals</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-kick-off-time-today.html">Man Utd Vs Chelsea Kick Off Time Today</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-date.html">Man Utd Vs Chelsea Date</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-ball-possession.html">Man Utd Vs Chelsea Ball Possession</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-on-gotv.html">Man Utd Vs Chelsea On Gotv</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-premier-league.html">Man Utd Vs Chelsea Premier League</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-ronaldo7.html">Man Utd Vs Chelsea Ronaldo7</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-results.html">Man Utd Vs Chelsea Results</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-nonton.html">Man Utd Vs Chelsea Nonton</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-kick-off-time-uk.html">Man Utd Vs Chelsea Kick Off Time Uk</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-last-5-meetings.html">Man Utd Vs Chelsea Last 5 Meetings</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-bt-sport.html">Man Utd Vs Chelsea Bt Sport</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-betting-odds.html">Man Utd Vs Chelsea Betting Odds</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-prediksi.html">Man Utd Vs Chelsea Prediksi</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-ucl-final.html">Man Utd Vs Chelsea Ucl Final</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-jam-berapa.html">Man Utd Vs Chelsea Jam Berapa</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-audio.html">Man Utd Vs Chelsea Audio</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

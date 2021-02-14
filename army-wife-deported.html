@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Wife Deported - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Wife Deported",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/03/1e/3b/031e3b11f4fabeb5c830687e3fdc785a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+wife+deported",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Wife Deported</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Temo Juarez served as a Marine from 1995 to 1999 then deployed to Iraq as. 7 and plans to return to Washington on April 4 for Castros ICE check-in. Marine Temo Juarezs wife. <br>				
+			</p>
+										<a class="badge badge-light" href="/military-haircut-guide.html">military haircut guide</a>
+											<a class="badge badge-dark" href="/military-haircut-long-on-top.html">military haircut long on top</a>
+											<a class="badge badge-dark" href="/military-haircut-short.html">military haircut short</a>
+											<a class="badge badge-danger" href="/military-haircut.html">military haircut</a>
+											<a class="badge badge-light" href="/military-haircut-tumblr.html">military haircut tumblr</a>
+											<a class="badge badge-danger" href="/military-haircut-flat-top.html">military haircut flat top</a>
+											<a class="badge badge-secondary" href="/military-haircut-thin-hair.html">military haircut thin hair</a>
+											<a class="badge badge-light" href="/military-haircut-high-and-tight.html">military haircut high and tight</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the right blog.  Our site gives you hints for viewing the maximum quality video and image content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/c1/79/6cc179148daac3885b1407cba4984929.jpg" data-lightbox="roadtrip" data-title="Army Officer Rushes Home To See Mom Before She Is Deported To Mexico">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/c1/79/6cc179148daac3885b1407cba4984929.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0wt4e--x6Uf6GaHQrhLTPqCO5PJpkyvbtA';" alt="Army Officer Rushes Home To See Mom Before She Is Deported To Mexico">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Officer Rushes Home To See Mom Before She Is Deported To Mexico</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/36/5f/c3365fa58a961ec21b40df4e51609f2b.jpg" data-lightbox="roadtrip" data-title="A Us Army Officer S Mom Just Got Deported He Says He Feels Betrayed In 2020 Us Army Army Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/36/5f/c3365fa58a961ec21b40df4e51609f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYb_0sIykE6vhBCQLHbukvTZkCYWlia9c2w';" alt="A Us Army Officer S Mom Just Got Deported He Says He Feels Betrayed In 2020 Us Army Army Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Us Army Officer S Mom Just Got Deported He Says He Feels Betrayed In 2020 Us Army Army Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/03/e6/fe03e68185a6d0479dab02ceafd417eb.jpg" data-lightbox="roadtrip" data-title="Page Not Found Military Veterans Veteran Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/03/e6/fe03e68185a6d0479dab02ceafd417eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWsA9YDvNqIxsInjeRfM9u9z5hAW5PYQCw4A';" alt="Page Not Found Military Veterans Veteran Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Page Not Found Military Veterans Veteran Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/10/6b/ea106b6d094e879268eb0322ae312fd2.jpg" data-lightbox="roadtrip" data-title="Allow Deported Veteran To Return Home Veterans Benefits Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/10/6b/ea106b6d094e879268eb0322ae312fd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQohgRey0Cg3-K8YyJ82xZ1-4HEgosYobnD8g';" alt="Allow Deported Veteran To Return Home Veterans Benefits Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Allow Deported Veteran To Return Home Veterans Benefits Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/61/cb/28/61cb2850a2f3504c35819f8847788de2.jpg" data-lightbox="roadtrip" data-title="Courtesy Schreiber Family Army Veteran Adoption Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/61/cb/28/61cb2850a2f3504c35819f8847788de2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJgPdqqDzHhkHOBL1lwyI58foFGIpKSvZ6Q';" alt="Courtesy Schreiber Family Army Veteran Adoption Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Courtesy Schreiber Family Army Veteran Adoption Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/2a/af/ca2aaf3e96cec435559903c452e547ec.jpg" data-lightbox="roadtrip" data-title="My Biggest Pcs Regret And How You Can Avoid My Mistake Military Wife Life Army Wife Life Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/2a/af/ca2aaf3e96cec435559903c452e547ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG33K_I2ep5NzdOWrFaAS4H7n8FcjNsPV5w';" alt="My Biggest Pcs Regret And How You Can Avoid My Mistake Military Wife Life Army Wife Life Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Biggest Pcs Regret And How You Can Avoid My Mistake Military Wife Life Army Wife Life Military Move</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bb/c6/1a/bbc61af965f898504f4072befe8b1b05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG33K_I2ep5NzdOWrFaAS4H7n8FcjNsPV5w';" alt="My Biggest Pcs Regret And How You Can Avoid My Mistake Military Wife Life Army Wife Life Military Move">
+										<div class="card-body">
+						<h3 class="h5"><b>Apparently according to face book - she won her case.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army wife deported</strong>. 
+								
+																	She was slated for deportation after Trump was elected despite being a military wife. 
+																	Alejandra Juarez is the wife of a military veteran and mother of two daughters. 
+																	Military uniforms during a trip to Mexico. 
+																	She has been ordered to be deported to Mexico on August 3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Burlesque entertainer and Marilyn Mansons ex-wife wrote in a statement Wednesday. 
+																	Shreves wife 37-year-old Claudia left the US. 
+																	Log in Register. 
+																	Schwartz Federal Building in San Diego. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Government orders deportation of Bethel military wife and mother March 3 2020 by Jeff Landfield On February 10 Bethel resident Rebecca Trimble received a letter from the United States Citizenship and Immigration Services USCIS informing her she had 33 days to leave the country. 
+																	Military 3 times and voted for President Trump. 
+																	NowThis - YouTube Alejandra Juarezs husband served in the US. 
+																	Alejandra Juarez who lived in the Orlando area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Did you stop to consider that your leaving was actually adding to the problem. 
+																	Military Wife Says Goodbye As She Gets Deported From The US. 
+																	She attended the Congressional Hispanic Caucus meeting on Feb. 
+																	The original Exiled Wife Facebook page although no longer active has nearly 5000 followers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search Advanced search Menu. 
+																	In 2017 after being given the option to depart voluntarily or be deported. 
+																	She filed multiple appeals but they were all denied and she was deported in early 2019. 
+																	Army officers mother is deported as time runs out on her hope for a miracle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They support themselves they have family they are not criminals but. 
+																	Although her husband and four children are US. 
+																	She twice entered the United States from. 
+																	Prior to her depar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Citizens Veronica Castro fears being deported when she checks in with immigration authorities on April 4. 
+																	Rocio Rebollar Gomez 51 who has previously deported three times was driven to Tijuana on Thursday morning after attending the Edward R. 
+																	The wife of an Iraq War veteran wiped away tears and held her young daughters as she said goodbye to her family at Orlando International Airport on Friday morning not knowing. 
+																	The wife of a former US Marine is facing deportation to Mexico next week despite a congressmans efforts to stop her removal from central Florida. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military veteran from Polk County is asking lawmakers to help reunite his family after his wife was deported to Mexico more than a year ago. 
+																	Emma Lozano a Chicago church pastor began helping service members and their families with deportation cases three years ago after she noticed men in US. 
+																	I grew up there Jasmine says of the women she met through the Exiled Wife as well as the local. 
+																	The couple met while LCpl Crozier was stationed in Canada Soldiers welfare organisations and senior politicians are calling on the Home Office not to deport the wife of a serving British soldier. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cuauhtemoc Temo Juarez is shown with his wife Alejandra and their daughters now 8 and 16 years old. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/98/39/78/9839782a204940edc1c6bfd96e99f748.jpg" data-lightbox="roadtrip" data-title="Ten Ways You Know You Re A Military Parent Military Parents Parenting Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/98/39/78/9839782a204940edc1c6bfd96e99f748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNC8unoFzIR-Ywst4Oo6CrXCZY-8hhjDvBw';" alt="Ten Ways You Know You Re A Military Parent Military Parents Parenting Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ten Ways You Know You Re A Military Parent Military Parents Parenting Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/99/24/ec99247cdf11cd38dee523579e7a5144.jpg" data-lightbox="roadtrip" data-title="Pizza Deliveryman Turned Over To Immigration Authorities After Stop At Nyc Army Base Pizza Delivery Guy New York Pizza Pizza Delivery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/99/24/ec99247cdf11cd38dee523579e7a5144.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_GFlf3xF7hkmscMhG9n1xCSK2IUFQXn-og';" alt="Pizza Deliveryman Turned Over To Immigration Authorities After Stop At Nyc Army Base Pizza Delivery Guy New York Pizza Pizza Delivery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pizza Deliveryman Turned Over To Immigration Authorities After Stop At Nyc Army Base Pizza Delivery Guy New York Pizza Pizza Delivery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9f/ac/15/9fac155b0fceaf0117097d2dae7e4cbd.jpg" data-lightbox="roadtrip" data-title="U S Army Soldier Says Ice Tricked Him Deported His Mother To Mexico Army Intelligence Us Army Soldier Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9f/ac/15/9fac155b0fceaf0117097d2dae7e4cbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpwN8gDF9mL_-cVXuLNC8ALBYaNxNZJGC--A';" alt="U S Army Soldier Says Ice Tricked Him Deported His Mother To Mexico Army Intelligence Us Army Soldier Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Soldier Says Ice Tricked Him Deported His Mother To Mexico Army Intelligence Us Army Soldier Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/fe/a3/79fea3bbe91647b6910768ba13743a9d.jpg" data-lightbox="roadtrip" data-title="Pin On News By Earlene">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/fe/a3/79fea3bbe91647b6910768ba13743a9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDKp2aYSaMTNufCn6FkPf7-dnYEejM8OFZg';" alt="Pin On News By Earlene">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News By Earlene</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/4a/6f/974a6fd426c9ffb4fb7613e29062fca9.png" data-lightbox="roadtrip" data-title="Marine In 2020 Navy Military Girlfriend Marine Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/4a/6f/974a6fd426c9ffb4fb7613e29062fca9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrY64TSdupn3fMvvpXxzJOPNjvKcuVBLSx3w';" alt="Marine In 2020 Navy Military Girlfriend Marine Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine In 2020 Navy Military Girlfriend Marine Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/a6/66/54a666c84c0e50ab2334f72a3489df21.jpg" data-lightbox="roadtrip" data-title="Pin On I Am Powerful">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/a6/66/54a666c84c0e50ab2334f72a3489df21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVjXZpSZdKvLUYxZMNC3cY2HbJR5HzcY_Cw';" alt="Pin On I Am Powerful">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Am Powerful</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/aa/ee/44aaeeb27bb720bfcb95735d38d00ef9.jpg" data-lightbox="roadtrip" data-title="Should The Military Be A Family Business Themilitarymomcollective Military Militarylife Family Militaryf In 2020 Army Jobs Military Lifestyle Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/aa/ee/44aaeeb27bb720bfcb95735d38d00ef9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRub_UYpnisteGTYXjK67wOcFUMW9WYB_AQ';" alt="Should The Military Be A Family Business Themilitarymomcollective Military Militarylife Family Militaryf In 2020 Army Jobs Military Lifestyle Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should The Military Be A Family Business Themilitarymomcollective Military Militarylife Family Militaryf In 2020 Army Jobs Military Lifestyle Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/c6/1a/bbc61af965f898504f4072befe8b1b05.jpg" data-lightbox="roadtrip" data-title="Michael Blackson On Instagram No I M Not Being Deported Military Jacket Fashion Jackets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/c6/1a/bbc61af965f898504f4072befe8b1b05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT2sE-eTMQlX_9BxmXXk2QvGXRaIStvEAjxA';" alt="Michael Blackson On Instagram No I M Not Being Deported Military Jacket Fashion Jackets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michael Blackson On Instagram No I M Not Being Deported Military Jacket Fashion Jackets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/a0/90/e0a090a7c832b4f9c3875cd1f8d26d30.jpg" data-lightbox="roadtrip" data-title="Ice Tried To Deport This U S Citizen And Marine Veteran Marine Veteran Veteran Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/a0/90/e0a090a7c832b4f9c3875cd1f8d26d30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_yQgsSigbam3RZL0bmnKlb4IyOtwJK69fQ';" alt="Ice Tried To Deport This U S Citizen And Marine Veteran Marine Veteran Veteran Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ice Tried To Deport This U S Citizen And Marine Veteran Marine Veteran Veteran Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/44/25/5844259263481cbac2fe5cabada5833c.jpg" data-lightbox="roadtrip" data-title="It S A Start Military Families Will No Longer Be Deported Network For Good Military Family People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/44/25/5844259263481cbac2fe5cabada5833c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIgkIvd4FSRWWpbppRcWafzbbbj9xe28xpw';" alt="It S A Start Military Families Will No Longer Be Deported Network For Good Military Family People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S A Start Military Families Will No Longer Be Deported Network For Good Military Family People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cc/73/7a/cc737a3510509c69cd678d6d86f2f41e.jpg" data-lightbox="roadtrip" data-title="Pin On Wtf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cc/73/7a/cc737a3510509c69cd678d6d86f2f41e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0H19lexvIUAvXxO5An5PcfLtStt53Jn_1wA';" alt="Pin On Wtf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wtf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/03/1e/3b/031e3b11f4fabeb5c830687e3fdc785a.jpg" data-lightbox="roadtrip" data-title="Pin On License Plates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/03/1e/3b/031e3b11f4fabeb5c830687e3fdc785a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThemeYtWqivhqNwjtwBzVOWBJHNw9nhdZ0Pw';" alt="Pin On License Plates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On License Plates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/ab/61/1dab61cba13f3df14daffe837fbdd157.png" data-lightbox="roadtrip" data-title="Deported Veterans Veteran Military Veterans Citizen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/ab/61/1dab61cba13f3df14daffe837fbdd157.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSirFGANa4fEdihnI6r0ZytMDorJH2xE0rzyA';" alt="Deported Veterans Veteran Military Veterans Citizen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deported Veterans Veteran Military Veterans Citizen</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-medical-coverage-for-dependents.html">Va Medical Coverage For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-health-records-app.html">Va Health Records App</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-boise.html">Va Medical Records Boise</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-biloxi.html">Va Medical Records Biloxi</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependents-disability.html">Va Form For Dependents Disability</a></li>
+													<li class="list-group-item"><a href="/va-for-dependents.html">Va For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-on-cd.html">Va Medical Records On Cd</a></li>
+													<li class="list-group-item"><a href="/va-form-for-claiming-dependents.html">Va Form For Claiming Dependents</a></li>
+													<li class="list-group-item"><a href="/va-disability-spouse-survivor-benefits.html">Va Disability Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-little-rock-ar.html">Va Medical Records Little Rock Ar</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-with-dependents-2019.html">Va Disability Rates With Dependents 2019</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-management-center.html">Va Medical Records Management Center</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-colorado.html">Va Medical Records Colorado</a></li>
+													<li class="list-group-item"><a href="/va-health-coverage-for-dependents.html">Va Health Coverage For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-orlando.html">Va Medical Records Orlando</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-murfreesboro-tn.html">Va Medical Records Murfreesboro Tn</a></li>
+													<li class="list-group-item"><a href="/va-health-records-request.html">Va Health Records Request</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-center-st-louis.html">Va Medical Records Center St Louis</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-minneapolis.html">Va Medical Records Minneapolis</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-2021-with-dependents.html">Va Disability Rates 2021 With Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

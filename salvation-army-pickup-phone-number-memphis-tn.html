@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Salvation Army Pickup Phone Number Memphis Tn - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Salvation Army Pickup Phone Number Memphis Tn",
+  "datePublished": "2021-02-14",
+  "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10155875381276401",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=salvation+army+pickup+phone+number+memphis+tn",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Salvation Army Pickup Phone Number Memphis Tn</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">020 3657 7555 This line is for media enquiries only Email. The Salvation Army offers human services through its programs including disaster relief and public emergency services while taking an evangelical approach. See reviews photos directions phone numbers and more for Salvation Army locations in West Memphis AR. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/va-dependent-student-loans.html">va dependent student loans</a>
+											<a class="badge badge-dark" href="/va-death-certificate-online.html">va death certificate online</a>
+											<a class="badge badge-primary" href="/va-disability-health-insurance-for-dependents.html">va disability health insurance for dependents</a>
+											<a class="badge badge-dark" href="/va-dependent-pay-scale.html">va dependent pay scale</a>
+											<a class="badge badge-success" href="/va-child-home-alone-laws.html">va child home alone laws</a>
+											<a class="badge badge-success" href="/va-disability-for-dependents.html">va disability for dependents</a>
+											<a class="badge badge-success" href="/va-dependent-status-form.html">va dependent status form</a>
+											<a class="badge badge-primary" href="/va-disability-dependent-turns-18.html">va disability dependent turns 18</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559261609543-PHPPMW4WCK983XIP6FV8/ke17ZwdGBToddI8pDm48kI1qPzicBOpmgtpki_mE0AV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfpilfRbV4akG9y86Uk-vBw0Rn5H8eRVRQOwtPy1FEfHX10ExhOFxJP2vRBVSMQ6jg/arc-man2.jpg?format=2500w" data-lightbox="roadtrip" data-title="Copy Of Schedule A Pick Up The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559261609543-PHPPMW4WCK983XIP6FV8/ke17ZwdGBToddI8pDm48kI1qPzicBOpmgtpki_mE0AV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfpilfRbV4akG9y86Uk-vBw0Rn5H8eRVRQOwtPy1FEfHX10ExhOFxJP2vRBVSMQ6jg/arc-man2.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShyyyiM--aUIWfpnpnLXlIYPorUeuOwgVwLA';" alt="Copy Of Schedule A Pick Up The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copy Of Schedule A Pick Up The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://memphisaddictionhelp.org/wp-content/uploads/2018/03/3202_salv.png" data-lightbox="roadtrip" data-title="Salvation Army Adult Rehabilitation Center Memphis Addiction Help">
+											<img class="card-img v-image ads-img " src="https://memphisaddictionhelp.org/wp-content/uploads/2018/03/3202_salv.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQblJXrg4QrHwvU0bHUtTpNTpAWIEB099MXqw';" alt="Salvation Army Adult Rehabilitation Center Memphis Addiction Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Adult Rehabilitation Center Memphis Addiction Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1562014999359-TRP3G9DH8NH53XPZHS82/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/b-volunteer-aprons-dareker.jpg?format=2500w" data-lightbox="roadtrip" data-title="Volunteer The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1562014999359-TRP3G9DH8NH53XPZHS82/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/b-volunteer-aprons-dareker.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxVgV7sJoYMdribZuXR_8KDFkqGKzDTtcwg';" alt="Volunteer The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volunteer The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10155875381276401" data-lightbox="roadtrip" data-title="Salvation Army Family Stores Memphis Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10155875381276401" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2kTOySNHeoi1nN6egDKYYNLbpPkoa2ua6g';" alt="Salvation Army Family Stores Memphis Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Family Stores Memphis Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559263424850-R0VR4PXRHJJ0TXGMIT1E/ke17ZwdGBToddI8pDm48kMtiXMEMZ8ID8MVhA-T_Qc9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIXpy3a2Cibo6eml5BpILeGX-BY3QvcZT7F317PmmzovI/HealMemphis-02.png" data-lightbox="roadtrip" data-title="Heal Memphis The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559263424850-R0VR4PXRHJJ0TXGMIT1E/ke17ZwdGBToddI8pDm48kMtiXMEMZ8ID8MVhA-T_Qc9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIXpy3a2Cibo6eml5BpILeGX-BY3QvcZT7F317PmmzovI/HealMemphis-02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdF1lN20Euyn327S0Z6YLOxHGrqm5IyCARyA';" alt="Heal Memphis The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heal Memphis The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559252498453-C66T03FB6SQOTZVOAGQT/ke17ZwdGBToddI8pDm48kPmLlvCIXgndBxNq9fzeZb1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIFMLRh9LbupWL4Bv1SDYZc4lRApws2Snwk0j_RSxbNHMKMshLAGzx4R3EDFOm1kBS/Canteen-Harvey-2017-2.jpg" data-lightbox="roadtrip" data-title="Disaster Recovery The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1559252498453-C66T03FB6SQOTZVOAGQT/ke17ZwdGBToddI8pDm48kPmLlvCIXgndBxNq9fzeZb1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIFMLRh9LbupWL4Bv1SDYZc4lRApws2Snwk0j_RSxbNHMKMshLAGzx4R3EDFOm1kBS/Canteen-Harvey-2017-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWQQAivtYuElGMNzT3Q7jk7xDkNJc1_FLwQ';" alt="Disaster Recovery The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disaster Recovery The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1562014999359-TRP3G9DH8NH53XPZHS82/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/b-volunteer-aprons-dareker.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWQQAivtYuElGMNzT3Q7jk7xDkNJc1_FLwQ';" alt="Disaster Recovery The Salvation Army Memphis">
+										<div class="card-body">
+						<h3 class="h5"><b>2649 Kirby Whitten Parkway.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Salvation army pickup phone number memphis tn</strong>. 
+								
+																	Adult Rehabilitation Center 2649 Kirby Whitten Rd. 
+																	See reviews photos directions phone numbers and more for Salvation Army Donation Pickup locations in Memphis TN. 
+																	Please notify me when pickup services resume in my area. 
+																	For any local enquiries such as volunteering or if you are in need of assistance please contact your nearest Salvation Army which can be found using our map. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Area Command Purdue Center of Hope. 
+																	Due to COVID-19 many locations have suspended pickups but most locations are accepting drop-offs. 
+																	Provides truck that picks up items that people want to donate in the Memphis area. 
+																	For Questions About In-Kind Donations or Pickups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Memphis TN 38133 901 531-1750. 
+																	Your Angel tag will provide you with the Angels first name age gender sizes and the items they would like or need. 
+																	Salvation Army - Memphis - Donations Pick-Up Service. 
+																	2649 Kirby Whitten Parkway Adult Rehab Center Donations Pickup Service Memphis TN 38133 901 531-1750. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Memphis TN 38133 901 531-1750. 
+																	For More Information On Any Issues. 
+																	Shop for your Angel from our Walmart Registry for Good and either have their new unwrapped gifts shipped to the address below or drop them off at our Kroc Center. 
+																	Mailing list and financial donation enquiries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spiritual social and emotional assistance are provided for those who have lost the ability to cope with their problems and provide for themselves. 
+																	Select An Option I Want To Donate I Want To Volunteer I Need Help Other. 
+																	500 PM Bible Study. 
+																	Please call 1-800-SA-TRUCK 1-800-728-7825 to find or schedule your donation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Salvation Army Pick Up Service locations in Memphis TN. 
+																	Salvation Army - Memphis - Donations Pick-Up Service. 
+																	Adult Rehabilitation Center 2649 Kirby Whitten Rd. 
+																	Send him a message. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salvation Armys Adult Rehabilitation Center ARC is a residential work-therapy program for men and women suffering from a chemical addiction. 
+																	The Salvation Army Memphis located in Memphis TN is a branch office of the Christian non-profit Salvation Army whose mission emphasizes aiding the poor and people in need. 
+																	The Salvation Army Clarksville TN. 
+																	Additional Donation Centers Donation Drop Boxes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adult Rehab Center Donations Pickup Service. 
+																	The Salvation Army PLEASE CONTACT Aaron Keegan. 
+																	Online pick-ups and donations are not available for the zip code you searched. 
+																	Related To Donating To. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Salvation Army Thrift Store locations in Memphis TN. 
+																	Monday Friday 800 AM 400 PM. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://static1.squarespace.com/static/5cdd939f65a70796c07973ba/t/5ce3f9ac390bca0001a25839/1558444461921/TSA+Shield.png?format=1500w" data-lightbox="roadtrip" data-title="Youth Development The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="http://static1.squarespace.com/static/5cdd939f65a70796c07973ba/t/5ce3f9ac390bca0001a25839/1558444461921/TSA+Shield.png?format=1500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jrsyXHfgl1oAkxM7CA8rzdcalCmqWDwHrA';" alt="Youth Development The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youth Development The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-media0.fl.yelpcdn.com/bphoto/dnJZFX87oghY8r6tv9d3Dw/l.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Family Store Donation Center 2679 Kirby Whitten Rd Memphis Tn Clothes Posts Mapquest">
+											<img class="card-img v-image ads-img " src="https://s3-media0.fl.yelpcdn.com/bphoto/dnJZFX87oghY8r6tv9d3Dw/l.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGH5YUVZnI0uxm5P3W0onj56PHZXUqNk3RyQ';" alt="The Salvation Army Family Store Donation Center 2679 Kirby Whitten Rd Memphis Tn Clothes Posts Mapquest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Family Store Donation Center 2679 Kirby Whitten Rd Memphis Tn Clothes Posts Mapquest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1584985958733-3X0HYX05XGL6SEPSEZA6/ke17ZwdGBToddI8pDm48kD2IJ1rlHFxntUSZYFP3letZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwPAuk4QAFxXKbI13gMktFk-EvvqekfYIZA_3Wtpyz-f3IxLSMNYqhQzXQRZ9c9Kog/Asset%2B10%402x.png" data-lightbox="roadtrip" data-title="Food Needs The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1584985958733-3X0HYX05XGL6SEPSEZA6/ke17ZwdGBToddI8pDm48kD2IJ1rlHFxntUSZYFP3letZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwPAuk4QAFxXKbI13gMktFk-EvvqekfYIZA_3Wtpyz-f3IxLSMNYqhQzXQRZ9c9Kog/Asset%2B10%402x.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZwfhPNRE64qre0GvkgkI8yyeTklC_JITbgA';" alt="Food Needs The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Food Needs The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/uss-cache.salvationarmy.org/3cac0573-43fc-42e2-91d6-d6e2a7012a8b_left_mobile_banner.png" data-lightbox="roadtrip" data-title="Memphis Tn Sales">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/uss-cache.salvationarmy.org/3cac0573-43fc-42e2-91d6-d6e2a7012a8b_left_mobile_banner.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZYfJFE1neBWRFvFhCiFVOou4M97S9jN3kA';" alt="Memphis Tn Sales">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memphis Tn Sales</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1560967000328-TQPXDYUFPJWDPUXGO0AO/ke17ZwdGBToddI8pDm48kBbCNk4QTHjTbZqMXSIJyyFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVE72b8UOSgJnKBmH7f7cdhEv0tEIsBQZCLFBe6FOupV5-Hn2gk3LrhfTmxFQo57KB0/renewal-place.jpg" data-lightbox="roadtrip" data-title="Renewal Place The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1560967000328-TQPXDYUFPJWDPUXGO0AO/ke17ZwdGBToddI8pDm48kBbCNk4QTHjTbZqMXSIJyyFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVE72b8UOSgJnKBmH7f7cdhEv0tEIsBQZCLFBe6FOupV5-Hn2gk3LrhfTmxFQo57KB0/renewal-place.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDE4q_ZaJwYs4iFYtf7Ko4ZWEG8eHWJc6ew';" alt="Renewal Place The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Renewal Place The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1584982974261-NFEFU8LC3M5RMLH43JR4/ke17ZwdGBToddI8pDm48kBCqBdk2BMsHcqdTzFgfSC5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxYP3lOpwGvMLjbOtEAKhLsFEqV0-oU-XxTJcil57vRAtdMKIdWG5O3AIxOjiYYOrM/Asset+9%402x.png" data-lightbox="roadtrip" data-title="Information Hub The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5cdd939f65a70796c07973ba/1584982974261-NFEFU8LC3M5RMLH43JR4/ke17ZwdGBToddI8pDm48kBCqBdk2BMsHcqdTzFgfSC5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxYP3lOpwGvMLjbOtEAKhLsFEqV0-oU-XxTJcil57vRAtdMKIdWG5O3AIxOjiYYOrM/Asset+9%402x.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xb78LcshgfiugZs3Zq7DSx3T1lamMTvOrw';" alt="Information Hub The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Information Hub The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=113881537055768" data-lightbox="roadtrip" data-title="The Salvation Army Memphis Adult Rehabilitation Center Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=113881537055768" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRh3g8KUo-c-AIQCjQ4Si6d0bvFClUswcQg';" alt="The Salvation Army Memphis Adult Rehabilitation Center Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Memphis Adult Rehabilitation Center Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.freerehabcenters.org/gallery/8280_the-salvation-army-adult-rehabilitation-center-memphis_lvx.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Adult Rehabilitation Center Memphis Free Rehab Centers">
+											<img class="card-img v-image ads-img " src="https://www.freerehabcenters.org/gallery/8280_the-salvation-army-adult-rehabilitation-center-memphis_lvx.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGPoLuAtAkaBUyEnepmAEoP9gvWjO6cj8VKw';" alt="The Salvation Army Adult Rehabilitation Center Memphis Free Rehab Centers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Adult Rehabilitation Center Memphis Free Rehab Centers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf.ltkcdn.net/charity/images/std/220560-675x450-men-lifting-dresser-onto-van.jpg" data-lightbox="roadtrip" data-title="Salvation Army Pick Up Lovetoknow">
+											<img class="card-img v-image ads-img " src="https://cf.ltkcdn.net/charity/images/std/220560-675x450-men-lifting-dresser-onto-van.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBvnrZOLPQHUASVx_wf--TDSbfLrUx3IVoA';" alt="Salvation Army Pick Up Lovetoknow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Pick Up Lovetoknow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/eastmemphismoms.com/wp-content/uploads/2011/08/restore.jpg" data-lightbox="roadtrip" data-title="Where To Donate Your Stuff East Memphis Moms">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/eastmemphismoms.com/wp-content/uploads/2011/08/restore.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtW4uRzdt99ElknRFhU6jLzp0TRknR_3dCg';" alt="Where To Donate Your Stuff East Memphis Moms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where To Donate Your Stuff East Memphis Moms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1930830080263387" data-lightbox="roadtrip" data-title="The Salvation Army Memphis Purdue Corps Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1930830080263387" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuG0oVBfpko84zApahrZ59TB7XNGDQXAKMUQ';" alt="The Salvation Army Memphis Purdue Corps Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Memphis Purdue Corps Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://static1.squarespace.com/static/5cdd939f65a70796c07973ba/5cfaf8904342210001d6552f/5eda5af0cd926639d85aa380/1591369564591/A+Special+Message.png?format=1500w" data-lightbox="roadtrip" data-title="The Salvation Army Memphis Positional Statement On Racism The Salvation Army Memphis">
+											<img class="card-img v-image ads-img " src="http://static1.squarespace.com/static/5cdd939f65a70796c07973ba/5cfaf8904342210001d6552f/5eda5af0cd926639d85aa380/1591369564591/A+Special+Message.png?format=1500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZi1BlsVHDHalrNKtobv9e3i7ogZAhfYNzg';" alt="The Salvation Army Memphis Positional Statement On Racism The Salvation Army Memphis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Memphis Positional Statement On Racism The Salvation Army Memphis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.tegna-media.com/assets/WATN/images/87535ca8-c0ca-484b-bf30-cb22d2969374/87535ca8-c0ca-484b-bf30-cb22d2969374_1920x1080.jpg" data-lightbox="roadtrip" data-title="4 Million Renovation Underway At Salvation Army S Purdue Center Of Hope Localmemphis Com">
+											<img class="card-img v-image ads-img " src="https://media.tegna-media.com/assets/WATN/images/87535ca8-c0ca-484b-bf30-cb22d2969374/87535ca8-c0ca-484b-bf30-cb22d2969374_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUIed5s8xiOb5sUIl6vol9Z6wuDwsuE4Hdw';" alt="4 Million Renovation Underway At Salvation Army S Purdue Center Of Hope Localmemphis Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Million Renovation Underway At Salvation Army S Purdue Center Of Hope Localmemphis Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-records-uk-ww1.html">Military Records Uk Ww1</a></li>
+													<li class="list-group-item"><a href="/military-records-ww1-australia.html">Military Records Ww1 Australia</a></li>
+													<li class="list-group-item"><a href="/military-real-heroes.html">Military Real Heroes</a></li>
+													<li class="list-group-item"><a href="/military-ptsd-support-groups-uk.html">Military Ptsd Support Groups Uk</a></li>
+													<li class="list-group-item"><a href="/military-pay-for-spouse-college.html">Military Pay For Spouse College</a></li>
+													<li class="list-group-item"><a href="/military-records-archive-in-st-louis-mo.html">Military Records Archive In St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/military-records-request-st-louis.html">Military Records Request St Louis</a></li>
+													<li class="list-group-item"><a href="/military-pension-divorce-and-remarriage.html">Military Pension Divorce And Remarriage</a></li>
+													<li class="list-group-item"><a href="/military-records-ww2-canada.html">Military Records Ww2 Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-request-address.html">Military Records Request Address</a></li>
+													<li class="list-group-item"><a href="/military-records-of-canada.html">Military Records Of Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-canada-ww1.html">Military Records Canada Ww1</a></li>
+													<li class="list-group-item"><a href="/military-records-canada.html">Military Records Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-national-archives.html">Military Records National Archives</a></li>
+													<li class="list-group-item"><a href="/military-pay-chart-without-dependents.html">Military Pay Chart Without Dependents</a></li>
+													<li class="list-group-item"><a href="/military-pension-on-divorce.html">Military Pension On Divorce</a></li>
+													<li class="list-group-item"><a href="/military-records-held-by-library-and-archives-canada.html">Military Records Held By Library And Archives Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-from-ww2.html">Military Records From Ww2</a></li>
+													<li class="list-group-item"><a href="/military-records-ww2-free-uk.html">Military Records Ww2 Free Uk</a></li>
+													<li class="list-group-item"><a href="/military-pay-chart-2019-enlisted-with-dependents.html">Military Pay Chart 2019 Enlisted With Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

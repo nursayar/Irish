@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Uk Recipes - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Uk Recipes",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/d6/87/82/d687829bb7f28dc089b5da728b92d9ff.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+uk+recipes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Uk Recipes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A standard crust recipe calls for a mix of flour sugar and salt. Boost your Omega-3 intake with our super simple salmon recipes. Master cooking with how-to videos. <br>				
+			</p>
+										<a class="badge badge-success" href="/hill-air-force-base-gate-hours.html">hill air force base gate hours</a>
+											<a class="badge badge-dark" href="/hiring-our-heroes-military-spouse-fellowship.html">hiring our heroes military spouse fellowship</a>
+											<a class="badge badge-success" href="/hill-air-force-base-id-office.html">hill air force base id office</a>
+											<a class="badge badge-warning" href="/hill-air-force-base-ticket-office.html">hill air force base ticket office</a>
+											<a class="badge badge-warning" href="/hotline-military-meaning.html">hotline military meaning</a>
+											<a class="badge badge-info" href="/hk-hk416-military.html">hk hk416 military</a>
+											<a class="badge badge-light" href="/how-do-i-find-world-war-1-service-records.html">how do i find world war 1 service records</a>
+											<a class="badge badge-danger" href="/hong-kong-military-guns.html">hong kong military guns</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/a7/00/f8a700d7511219e6467f943a8b2d9ca0.jpg" data-lightbox="roadtrip" data-title="The 6 Best Foodie Destinations In Europe Food Best Places To Eat Eat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/a7/00/f8a700d7511219e6467f943a8b2d9ca0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnyNGmAkxrsyYbyw_l-iFyhJXwKllDVxOEg';" alt="The 6 Best Foodie Destinations In Europe Food Best Places To Eat Eat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 6 Best Foodie Destinations In Europe Food Best Places To Eat Eat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/75/bb/2775bbaab70cac1d644f3105118c6e5a.jpg" data-lightbox="roadtrip" data-title="Chefs Recipes Inspired By Their Mums Food Recipes Lancashire Hot Pot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/75/bb/2775bbaab70cac1d644f3105118c6e5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIifQwtgJvsEnaPM-WyZN6i1cjf21lFi28Ug';" alt="Chefs Recipes Inspired By Their Mums Food Recipes Lancashire Hot Pot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chefs Recipes Inspired By Their Mums Food Recipes Lancashire Hot Pot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6e/60/aa/6e60aafda9554553deb6e6e6069b9802.jpg" data-lightbox="roadtrip" data-title="Macarrones Con Queso Super Cremosos Receta Recipe Food Receipes Yummy Food Food Recipies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6e/60/aa/6e60aafda9554553deb6e6e6069b9802.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLIZLuZst2TVKzDboSvo0uk_LcVZaVEN0ow';" alt="Macarrones Con Queso Super Cremosos Receta Recipe Food Receipes Yummy Food Food Recipies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Macarrones Con Queso Super Cremosos Receta Recipe Food Receipes Yummy Food Food Recipies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/22/93/f2/2293f24c1401de49794d1c1e7e4342de.jpg" data-lightbox="roadtrip" data-title="Pin On Julia Child Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/22/93/f2/2293f24c1401de49794d1c1e7e4342de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU5ikRjZsdLBIOrxr0vWpsxSK8-di4-ZuPA';" alt="Pin On Julia Child Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Julia Child Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/a7/f8/faa7f8a87b8e665b071fccebf9fd8e2a.png" data-lightbox="roadtrip" data-title="Jaded With Red And White Sauce Pasta You Can T Live A Full Life Have The Same Dish Again And Again Choose From Italian Recipes White Sauce Pasta Pasta Sauce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/a7/f8/faa7f8a87b8e665b071fccebf9fd8e2a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlB9HGun-utyw9paEUqA0b_3B7ypVUyE4nw';" alt="Jaded With Red And White Sauce Pasta You Can T Live A Full Life Have The Same Dish Again And Again Choose From Italian Recipes White Sauce Pasta Pasta Sauce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jaded With Red And White Sauce Pasta You Can T Live A Full Life Have The Same Dish Again And Again Choose From Italian Recipes White Sauce Pasta Pasta Sauce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/20/46/ae204648e1ef8e601d6cf8edc735fdc4.jpg" data-lightbox="roadtrip" data-title="Breakfast Lunch Dinner Rachael S Antipasti Frittata Rachael Ray Recipes Recipes Frittata">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/20/46/ae204648e1ef8e601d6cf8edc735fdc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLKHlwPS9aiB8pKhg90hswIX_L5ZsuJQDXNA';" alt="Breakfast Lunch Dinner Rachael S Antipasti Frittata Rachael Ray Recipes Recipes Frittata">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breakfast Lunch Dinner Rachael S Antipasti Frittata Rachael Ray Recipes Recipes Frittata</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/83/56/e9/8356e90e100294a226ba20d66fdb5dbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLKHlwPS9aiB8pKhg90hswIX_L5ZsuJQDXNA';" alt="Breakfast Lunch Dinner Rachael S Antipasti Frittata Rachael Ray Recipes Recipes Frittata">
+										<div class="card-body">
+						<h3 class="h5"><b>When it resembles coarse cornmeal add water with a fork just until the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn uk recipes</strong>. 
+								
+																	Cut cold unsalted cubes of butter into the dry mixture. 
+																	Save favourites share your recipes reviews on the biggest network for home cooks. 
+																	Filter This Page Filter Clear All. 
+																	2021 Hearst UK is the trading name of the National Magazine Company Ltd 30 Panton Street Leicester Square London SW1Y 4AJ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Try these Turkish recipes including lamb koftas chicken shish and syrup-soaked baklava. 
+																	Our latest recipes Chilli Sweet Corn Fritters by Mary McCartney. 
+																	Msn back to msn home lifestyle. 
+																	Browse the BBC Food recipe archive by ingredients and learn more about the storage preparation and purchasing of your foods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Msn back to msn home lifestyle recipes. 
+																	Browse the BBC Food recipe archive by dishes and learn more about the storage preparation and purchasing of your foods. 
+																	New recipes added every day. 
+																	Use as a dip or in a stir-fry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our latest recipes Open-Faced Sandwich by Mary McCartney. 
+																	Find the Top Ice Cream Recipes with the MSN Buying Guides Compare Products and Brands by Quality Popularity and Pricing Updated 2021. 
+																	Perfect for a quick midweek meal. 
+																	Search over 20000 recipes from home cooks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To make the cheats teriyaki sauce mix together the soy sauce and honey in a small bowl. 
+																	You cant be a master chef every night. 
+																	These quick and easy recipes are just what you need in your arsenal to stave off the temptation of a ready-meal. 
+																	Good Housekeeping UK 57 mins ago The Good Housekeeping Cookery Team These rolled pizzas are stuffed with cured meats peppers and olives and are freezable so batch cook a load of these and always. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To make the easy sweet and sour sauce mix the cornflour with 2. 
+																	Hoisin salmon with broccoli and noodles. 
+																	Seasonal occasion-specific diet-sensitive or just plain tasty. 
+																	Check out below the latest dishes were loving or you can search all our recipes here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Showing 1-12 of 85 recipes. 
+																	The classic spaghetti carbonara - without cream just plenty of egg and Parmesan cheese. 
+																	Lenzo Spaghetti carbonara 1277 reviews. 
+																	Fillet steak with peppercorn sauce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Instantly play your favourite free online games including card games puzzles brain games dozens of others brought to you by MSN UK. 
+																	Registered in England 112955. 
+																	Delicious recipe ideas from some of the best food publications across the UK and US. 
+																	Find inspiration and meal ideas based on the latest food and nutrition trends seasonal and festive food news and top chef recipes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Turkish cuisine is a fantastic celebration of big flavours and plenty of spice. 
+																	Read todays top stories news weather sport entertainment lifestyle money cars and more all expertly curated from across top UK and global news providers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/56/e9/8356e90e100294a226ba20d66fdb5dbd.jpg" data-lightbox="roadtrip" data-title="Pin By Theresa Fullerton On Recipe Ideas Easy Meals Recipes Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/56/e9/8356e90e100294a226ba20d66fdb5dbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpMGD3MTIMuQenJYgptVvuVNiBlNSRxM6Lg';" alt="Pin By Theresa Fullerton On Recipe Ideas Easy Meals Recipes Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Theresa Fullerton On Recipe Ideas Easy Meals Recipes Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/a0/85/75a085045ba0b4102e868cb96303d5d5.png" data-lightbox="roadtrip" data-title="Pin On Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/a0/85/75a085045ba0b4102e868cb96303d5d5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgv6CU0YnuqHCOIiinWccVKwfVlfMP8hW8Q';" alt="Pin On Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/16/d2/5816d21f2720687ef6c785cc8c7f2d26.jpg" data-lightbox="roadtrip" data-title="1950s Advertisements Vintage Recipes Food Canned Meats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/16/d2/5816d21f2720687ef6c785cc8c7f2d26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVdrHni6yfhWvXfX7AKfd6rZbxX9h6MIDhw';" alt="1950s Advertisements Vintage Recipes Food Canned Meats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1950s Advertisements Vintage Recipes Food Canned Meats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/2e/10/3a2e106025e6e045ca2dcd514edb44e0.png" data-lightbox="roadtrip" data-title="Pin On Diet Plans To Lose Weight For Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/2e/10/3a2e106025e6e045ca2dcd514edb44e0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8bXh5HYQOu87frWDfOUTopm5OmYMplUj8w';" alt="Pin On Diet Plans To Lose Weight For Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Diet Plans To Lose Weight For Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/66/a5/2d66a5c9fe51d71ba26cf352db091801.png" data-lightbox="roadtrip" data-title="Pin On Sj All Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/66/a5/2d66a5c9fe51d71ba26cf352db091801.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT84Fi8lpcf07TGoZkaD5s_M-xGD5CrQZVoQ';" alt="Pin On Sj All Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sj All Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/e8/80/39e88017c0749372928810c221908b52.jpg" data-lightbox="roadtrip" data-title="The Sprouted Kitchen A Tastier Take On Whole Foods Anthropologie Com Whole Food Recipes Food Real Food Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/e8/80/39e88017c0749372928810c221908b52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9ZjN2E081Ldsb0PPiTk9fvOr1ixTrl-Fcg';" alt="The Sprouted Kitchen A Tastier Take On Whole Foods Anthropologie Com Whole Food Recipes Food Real Food Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sprouted Kitchen A Tastier Take On Whole Foods Anthropologie Com Whole Food Recipes Food Real Food Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/d6/64/19d664bf42d6cb9799d404009f4e4513.jpg" data-lightbox="roadtrip" data-title="Sign In Best Pizza Dough New York Style Pizza Dough Recipe Pizza Recipes Dough">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/d6/64/19d664bf42d6cb9799d404009f4e4513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDynW_wea0G8705Xtz0_fB2ywj5nM7oL0LA';" alt="Sign In Best Pizza Dough New York Style Pizza Dough Recipe Pizza Recipes Dough">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In Best Pizza Dough New York Style Pizza Dough Recipe Pizza Recipes Dough</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/87/82/d687829bb7f28dc089b5da728b92d9ff.png" data-lightbox="roadtrip" data-title="Pin On Cute Animals Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/87/82/d687829bb7f28dc089b5da728b92d9ff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzi3kverN9WZeEQg4k_AivzrVPiXenE9cDg';" alt="Pin On Cute Animals Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cute Animals Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/65/da/cb/65dacbc9d575d3cf73c81f681473e7a7.jpg" data-lightbox="roadtrip" data-title="Turkey Sausage Hotpot Britishturkey Co Uk Sausage Hotpot Sausage Dishes Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/65/da/cb/65dacbc9d575d3cf73c81f681473e7a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFl81D1887r8LXPnvn0JolBafNz8krsqEkA';" alt="Turkey Sausage Hotpot Britishturkey Co Uk Sausage Hotpot Sausage Dishes Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turkey Sausage Hotpot Britishturkey Co Uk Sausage Hotpot Sausage Dishes Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/8b/ea/438bea6f1f1c6b56a7ab5a62f3bc302a.jpg" data-lightbox="roadtrip" data-title="Pin On Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/8b/ea/438bea6f1f1c6b56a7ab5a62f3bc302a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGP3sK42h4zk8A4n44P0Fmkb5MtAyfXXvV1Q';" alt="Pin On Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/9c/2a/109c2a1a30636483a081bd65ed766aab.jpg" data-lightbox="roadtrip" data-title="Regional Treats You Ve Probably Never Heard Of Food Recipes Top Chef Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/9c/2a/109c2a1a30636483a081bd65ed766aab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9hAYn7V8y2l-kdZ1j-VDUY45y-tPmbqVAIw';" alt="Regional Treats You Ve Probably Never Heard Of Food Recipes Top Chef Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Regional Treats You Ve Probably Never Heard Of Food Recipes Top Chef Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/e0/50/2ce05058861b942186720dc13e32fc92.jpg" data-lightbox="roadtrip" data-title="Moreish Meals With Prawns Clodagh S Weeknight Kitchen Kyle Books Best Prawn Recipe Dinners To Make Prawn Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/e0/50/2ce05058861b942186720dc13e32fc92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7NP2U2mzg0l8MEVtrL9pXSANEfp61i1DsQQ';" alt="Moreish Meals With Prawns Clodagh S Weeknight Kitchen Kyle Books Best Prawn Recipe Dinners To Make Prawn Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moreish Meals With Prawns Clodagh S Weeknight Kitchen Kyle Books Best Prawn Recipe Dinners To Make Prawn Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/16/4d/48164dc97010c64185dffd3c172dc0d2.jpg" data-lightbox="roadtrip" data-title="Weight No Longer Llc Ideal Protein Of Niantic Ct Ideal Protein Recipes Ideal Protein Diet Ideal Protein">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/16/4d/48164dc97010c64185dffd3c172dc0d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhIxadMFsQbH-2qkDbLs91l1AdBBoHuxTew';" alt="Weight No Longer Llc Ideal Protein Of Niantic Ct Ideal Protein Recipes Ideal Protein Diet Ideal Protein">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weight No Longer Llc Ideal Protein Of Niantic Ct Ideal Protein Recipes Ideal Protein Diet Ideal Protein</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hk-droid-military-base.html">Hk Droid Military Base</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-ticket-office.html">Hill Air Force Base Ticket Office</a></li>
+													<li class="list-group-item"><a href="/hk-military-discount.html">Hk Military Discount</a></li>
+													<li class="list-group-item"><a href="/hk-usa-military-discount.html">Hk Usa Military Discount</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-my-ancestors-military-records.html">How Do I Find My Ancestors Military Records</a></li>
+													<li class="list-group-item"><a href="/hk-military-use.html">Hk Military Use</a></li>
+													<li class="list-group-item"><a href="/hk-protest-military.html">Hk Protest Military</a></li>
+													<li class="list-group-item"><a href="/hong-kong-military-ranks.html">Hong Kong Military Ranks</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-cid.html">How Do I Contact Cid</a></li>
+													<li class="list-group-item"><a href="/hong-kong-military-budget.html">Hong Kong Military Budget</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-my-british-army-service-records.html">How Do I Find My British Army Service Records</a></li>
+													<li class="list-group-item"><a href="/hk-military-rifles.html">Hk Military Rifles</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-barber-shop-hours.html">Hill Air Force Base Barber Shop Hours</a></li>
+													<li class="list-group-item"><a href="/hk-g28-military.html">Hk G28 Military</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-the-us-military.html">How Do I Contact The Us Military</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-death-records-uk.html">How Do I Find Death Records Uk</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-the-british-army.html">How Do I Contact The British Army</a></li>
+													<li class="list-group-item"><a href="/hk-military-discount-pricing.html">Hk Military Discount Pricing</a></li>
+													<li class="list-group-item"><a href="/hong-kong-military-reddit.html">Hong Kong Military Reddit</a></li>
+													<li class="list-group-item"><a href="/how-do-i-apply-for-mycaa.html">How Do I Apply For Mycaa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Whats The Meaning Of Military Expedition - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Whats The Meaning Of Military Expedition",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/e2/93/4c/e2934cfca8c9eaabeb15efaa63fc9d9b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=whats+the+meaning+of+military+expedition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Whats The Meaning Of Military Expedition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It can be one day or multi day expedition it is dependent on the operation that soldiers are executing. Military campaign campaign - several related operations aimed at achieving a particular goal usually within geographical and temporal constraints Crusade - any of the more or less continuous military expeditions in the 11th to 13th centuries when Christian powers of Europe tried to recapture the Holy Land from the Muslims. The only military expedition in 1624 ended in a fiasco. <br>				
+			</p>
+										<a class="badge badge-info" href="/using-my-card-abroad.html">using my card abroad</a>
+											<a class="badge badge-danger" href="/us-navy-womens-peacoat.html">us navy womens peacoat</a>
+											<a class="badge badge-primary" href="/using-mycaa.html">using mycaa</a>
+											<a class="badge badge-dark" href="/using-my-card-abroad-barclays.html">using my card abroad barclays</a>
+											<a class="badge badge-warning" href="/us-navy-womens-cap.html">us navy womens cap</a>
+											<a class="badge badge-danger" href="/us-navy-womens-shirts.html">us navy womens shirts</a>
+											<a class="badge badge-secondary" href="/using-my-card-abroad-natwest.html">using my card abroad natwest</a>
+											<a class="badge badge-light" href="/us-navy-shirt-colors.html">us navy shirt colors</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/5f/43/b55f43824835c6b677ec63acba261489.jpg" data-lightbox="roadtrip" data-title="List Of 180 Popular Military Terms You Should Know Esl Teachers Military Terms English Vocabulary Words Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/5f/43/b55f43824835c6b677ec63acba261489.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjhYdB801utjs9PBV3_m7JxUCa3yKU724vog';" alt="List Of 180 Popular Military Terms You Should Know Esl Teachers Military Terms English Vocabulary Words Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of 180 Popular Military Terms You Should Know Esl Teachers Military Terms English Vocabulary Words Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/2f/77/462f77032755541fc6a29310f5be837c.jpg" data-lightbox="roadtrip" data-title="Casspir Mk6 Trucks Vehicles Bug Out Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/2f/77/462f77032755541fc6a29310f5be837c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_ARsOsCDI8aMsl-uwjpwl9WfpmhrCCWvbA';" alt="Casspir Mk6 Trucks Vehicles Bug Out Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Casspir Mk6 Trucks Vehicles Bug Out Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/32/d9/f532d9becd46feec6b8b973ffbd2ad02.jpg" data-lightbox="roadtrip" data-title="Cop 4x4 The Diesel Brothers What An Amazing Vehicle The Ultimate In Expedition And Exploration Overland Vehicles Diesel Trucks Trucks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/32/d9/f532d9becd46feec6b8b973ffbd2ad02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuho-ZxWeNu5-EoKHgREUHpSwBUjNe4Re8w';" alt="Cop 4x4 The Diesel Brothers What An Amazing Vehicle The Ultimate In Expedition And Exploration Overland Vehicles Diesel Trucks Trucks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cop 4x4 The Diesel Brothers What An Amazing Vehicle The Ultimate In Expedition And Exploration Overland Vehicles Diesel Trucks Trucks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/12/ba/9a12baa3f9d6ee2df31a884b524df040.jpg" data-lightbox="roadtrip" data-title="The Art Of Apex Legends Military Vehicles Futuristic Cars Expedition Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/12/ba/9a12baa3f9d6ee2df31a884b524df040.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi6fIIWB2fHD8yXvKe0-IR_FeSAectZTZXcw';" alt="The Art Of Apex Legends Military Vehicles Futuristic Cars Expedition Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Art Of Apex Legends Military Vehicles Futuristic Cars Expedition Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/d1/83/3dd18315ea99e62d4e12897e6f964ec5.jpg" data-lightbox="roadtrip" data-title="Picture Of Ural 43206 4x4 Light Cargo Military Truck Army Vehicles Military Vehicles Armored Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/d1/83/3dd18315ea99e62d4e12897e6f964ec5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDzm6-eWoG3bH9s5Eo9fRE2RzovzbqDDQjg';" alt="Picture Of Ural 43206 4x4 Light Cargo Military Truck Army Vehicles Military Vehicles Armored Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Picture Of Ural 43206 4x4 Light Cargo Military Truck Army Vehicles Military Vehicles Armored Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/3b/64/ae3b649dd2cd79485a975b312082df2f.jpg" data-lightbox="roadtrip" data-title="File Tracked Transport Vehicle Sisu Na 110 Jpg Military Vehicles Vehicles Armoured Personnel Carrier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/3b/64/ae3b649dd2cd79485a975b312082df2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5kybXd9B1bQYWOYykUZ5ZAMjmUwxPBSOSg';" alt="File Tracked Transport Vehicle Sisu Na 110 Jpg Military Vehicles Vehicles Armoured Personnel Carrier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Tracked Transport Vehicle Sisu Na 110 Jpg Military Vehicles Vehicles Armoured Personnel Carrier</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3e/12/5d/3e125dcbce4f9957eb5daa723aaaf7e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5kybXd9B1bQYWOYykUZ5ZAMjmUwxPBSOSg';" alt="File Tracked Transport Vehicle Sisu Na 110 Jpg Military Vehicles Vehicles Armoured Personnel Carrier">
+										<div class="card-body">
+						<h3 class="h5"><b>Military expedition n 1.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Whats the meaning of military expedition</strong>. 
+								
+																	A large expedition of scientists and military personnel. 
+																	Countable noun An expedition is an organized journey that is made for a particular purpose such as explorationByrds 1928 expedition to Antarctica. 
+																	Definition of Military expedition. 
+																	Expedition - a military campaign designed to achieve a specific objective in a foreign country hostile expedition military expedition military campaign campaign - several related operations aimed at achieving a particular goal usually within geographical and temporal constraints. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MILITARY EXPEDITION used as a noun is very rare. 
+																	- In any case the. 
+																	The expedition which began earlier this month aims to maintain the long tradition of the Armed Forces involvement in exploration and in particular polar science exploration and it will seek. 
+																	A military campaign designed to achieve a specific objective in a foreign country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military expedition - a military campaign designed to achieve a specific objective in a foreign country. 
+																	An example of an expedition is when Lewis and Clark went to explore newly acquired land in America. 
+																	In the mid-1960s accompanying a military expedition. 
+																	The noun MILITARY EXPEDITION has 1 sense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Journey exploration mission voyage More Synonyms of expedition. 
+																	A military campaign designed to achieve a specific objective in a foreign country. 
+																	The purpose of military expeditions can be training humanitarian aid rescue exploration setting up a military base or any other reasons related with geopolitical movements country security and United Nations. 
+																	Expedition military expedition hostile expedition noun a military campaign designed to achieve a specific objective in a foreign country How to pronounce military expedition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Promptness or speed in accomplishing something. 
+																	Definition noun a military campaign designed to achieve a specific objective in a foreign country Synonyms. 
+																	The definition of an expedition is a journey that is taken to accomplish a specific goal or the people who go on the journey. 
+																	The book definition of expedition is an excursion journey or voyage made for some specific purpose as of war or exploration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Translation and definition military expedition Dictionary English-English online. 
+																	To Synonyms. 
+																	Plwordnet-defs noun a military campaign designed to achieve a specific objective in a foreign country. 
+																	The people vehicles animals etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An organized journey for a particular purpose. 
+																	An excursion journey or voyage made for some specific purpose as of war or exploration. 
+																	A military campaign designed to achieve a specific objective in a foreign country. 
+																	He worked with great expedition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Examples of military expedition in a sentence how to use it. 
+																	Expedition hostile expedition Connect with us on Facebook. 
+																	The group of persons ships etc engaged in such an activity. 
+																	Expedition military expedition hostile expedition noun a military campaign designed to achieve a specific objective in a foreign country How to pronounce military expedition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military campaign designed to achieve a specific objective in a foreign country. 
+																	Military expedition - Dictionary definition and meaning for word military expedition. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/12/5d/3e125dcbce4f9957eb5daa723aaaf7e8.jpg" data-lightbox="roadtrip" data-title="Avtoros Shaman 8x8 Atv On Behance Expedition Vehicle Military Vehicles Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/12/5d/3e125dcbce4f9957eb5daa723aaaf7e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZeA4QmNn2YJDhwre-uLbInw5qBWU0KQJi5Q';" alt="Avtoros Shaman 8x8 Atv On Behance Expedition Vehicle Military Vehicles Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Avtoros Shaman 8x8 Atv On Behance Expedition Vehicle Military Vehicles Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/74/a0/ff74a0124b053c733951025fcbd426de.jpg" data-lightbox="roadtrip" data-title="Pin On Military Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/74/a0/ff74a0124b053c733951025fcbd426de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyE9-6DWAYXcXK46vdrZzMHnckx3yoiTsDvA';" alt="Pin On Military Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c1/29/ff/c129fffa5af446893a12daf653b45fec.jpg" data-lightbox="roadtrip" data-title="This Couple Lives With Their Dogs In A Converted Military Truck And It S Tiny Home Goals Expedition Vehicle Trucks Expedition Truck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c1/29/ff/c129fffa5af446893a12daf653b45fec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2j9UCOuzBYS0sOXzaCgyDn4H0Ha3xh2ehQ';" alt="This Couple Lives With Their Dogs In A Converted Military Truck And It S Tiny Home Goals Expedition Vehicle Trucks Expedition Truck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Couple Lives With Their Dogs In A Converted Military Truck And It S Tiny Home Goals Expedition Vehicle Trucks Expedition Truck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/55/65/185565757489d4eb6500743266326b96.jpg" data-lightbox="roadtrip" data-title="Pin By Giga Moseshvili On Military Vehicles Military Vehicles Army Vehicles Armored Truck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/55/65/185565757489d4eb6500743266326b96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5G1MKgfQEtw6G3nSUvLGwNCSikXuiCxj8Eg';" alt="Pin By Giga Moseshvili On Military Vehicles Military Vehicles Army Vehicles Armored Truck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Giga Moseshvili On Military Vehicles Military Vehicles Army Vehicles Armored Truck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/dd/52/5fdd52619075e00dd387319160684e71.jpg" data-lightbox="roadtrip" data-title="Pin On Viktor Nikiforov Daisuke Kanbe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/dd/52/5fdd52619075e00dd387319160684e71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx734_F7wRL8Q3K6NRC-yY0gU8l2Jv69AmFg';" alt="Pin On Viktor Nikiforov Daisuke Kanbe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Viktor Nikiforov Daisuke Kanbe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/2d/cb/b92dcb9752add7d25b47303ad3974cf4.jpg" data-lightbox="roadtrip" data-title="Military Hummer H1 In Dubai Uae Hummer Truck Hummer H1 Hummer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/2d/cb/b92dcb9752add7d25b47303ad3974cf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUmhz4iZOiLbJN9Ila8shfDnh8iCPMP943w';" alt="Military Hummer H1 In Dubai Uae Hummer Truck Hummer H1 Hummer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Hummer H1 In Dubai Uae Hummer Truck Hummer H1 Hummer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/85/c9/a585c98a5fd620a8b30a550f2b499595.jpg" data-lightbox="roadtrip" data-title="Anfibio Amphibious Vehicle Vehicles Military Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/85/c9/a585c98a5fd620a8b30a550f2b499595.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJwoD14C_Nk9CwtvvWxl_xY_r8SlCTbB0ew';" alt="Anfibio Amphibious Vehicle Vehicles Military Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anfibio Amphibious Vehicle Vehicles Military Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/14/e0/9614e01e345c36b1c0ac82da90752cbd.jpg" data-lightbox="roadtrip" data-title="Hippo Brv Military Vehicles Tanks Military Army Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/14/e0/9614e01e345c36b1c0ac82da90752cbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREPw2ZOPlHABtXpfMMiS2sXR5mQDoNgZyvfA';" alt="Hippo Brv Military Vehicles Tanks Military Army Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hippo Brv Military Vehicles Tanks Military Army Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/67/f5/2167f53ab1214255b32f76fd479f9812.jpg" data-lightbox="roadtrip" data-title="Artstation Titanfall 2 Samson Truck Danny Gardner Military Vehicles Futuristic Cars Expedition Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/67/f5/2167f53ab1214255b32f76fd479f9812.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSvIvCl_IvW3OMevaREKWzejS_qLDAW5HPA';" alt="Artstation Titanfall 2 Samson Truck Danny Gardner Military Vehicles Futuristic Cars Expedition Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Artstation Titanfall 2 Samson Truck Danny Gardner Military Vehicles Futuristic Cars Expedition Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/f2/82/34f28241b3906d2ff76065371be1a9f7.jpg" data-lightbox="roadtrip" data-title="Here The Oshkosh Hemtt 8x8 A Custom Expedition Vehicle From The Oshkosh Corporation Formerly Oshkosh Truck An Oshkosh Truck Built Truck Expedition Vehicle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/f2/82/34f28241b3906d2ff76065371be1a9f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuIwVggx7eQkdKyAKB8CEkmkHxfW5MoNrMw';" alt="Here The Oshkosh Hemtt 8x8 A Custom Expedition Vehicle From The Oshkosh Corporation Formerly Oshkosh Truck An Oshkosh Truck Built Truck Expedition Vehicle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here The Oshkosh Hemtt 8x8 A Custom Expedition Vehicle From The Oshkosh Corporation Formerly Oshkosh Truck An Oshkosh Truck Built Truck Expedition Vehicle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/93/4c/e2934cfca8c9eaabeb15efaa63fc9d9b.jpg" data-lightbox="roadtrip" data-title="Picture By Freedomautorussia Actros Bus Setra Unimog Truck Mercedes Mbhess Overland Truck Expedition Vehicle Mercedes Truck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/93/4c/e2934cfca8c9eaabeb15efaa63fc9d9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDN8Jyi0ePj89X1H59UiEHtqpUR7hLfBmE_g';" alt="Picture By Freedomautorussia Actros Bus Setra Unimog Truck Mercedes Mbhess Overland Truck Expedition Vehicle Mercedes Truck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Picture By Freedomautorussia Actros Bus Setra Unimog Truck Mercedes Mbhess Overland Truck Expedition Vehicle Mercedes Truck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/b9/e2/21b9e2fa3a07f7b03b86c73bcca661d9.jpg" data-lightbox="roadtrip" data-title="The Chindits In 1943 Army Ranks British Army Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/b9/e2/21b9e2fa3a07f7b03b86c73bcca661d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAWCjotim7k6_zS01SnJmyo2hhZ_PCMgLZg';" alt="The Chindits In 1943 Army Ranks British Army Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Chindits In 1943 Army Ranks British Army Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/57/1b/ae571be8107ccf4be58f5aa8776ae4a3.jpg" data-lightbox="roadtrip" data-title="Cargo Troop Carrying Vehicle Tcv Canadian Armed Forces Canadian Army Canadian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/57/1b/ae571be8107ccf4be58f5aa8776ae4a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24-jwl3ZceanO6VkN9hvpJRDL9pctGVCVdA';" alt="Cargo Troop Carrying Vehicle Tcv Canadian Armed Forces Canadian Army Canadian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cargo Troop Carrying Vehicle Tcv Canadian Armed Forces Canadian Army Canadian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycar-figtree.html">Mycar Figtree</a></li>
+													<li class="list-group-item"><a href="/mycaa-yoga.html">Mycaa Yoga</a></li>
+													<li class="list-group-item"><a href="/mycar-brisbane.html">Mycar Brisbane</a></li>
+													<li class="list-group-item"><a href="/mycaa-universities.html">Mycaa Universities</a></li>
+													<li class="list-group-item"><a href="/mycambrian-login.html">Mycambrian Login</a></li>
+													<li class="list-group-item"><a href="/mycar-lilydale.html">Mycar Lilydale</a></li>
+													<li class="list-group-item"><a href="/mycaa-spouse-tuition-assistance.html">Mycaa Spouse Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/mycaa-umuc.html">Mycaa Umuc</a></li>
+													<li class="list-group-item"><a href="/mycaar.html">Mycaar</a></li>
+													<li class="list-group-item"><a href="/mycaa-ultrasound-technician.html">Mycaa Ultrasound Technician</a></li>
+													<li class="list-group-item"><a href="/mycaa-tax-form.html">Mycaa Tax Form</a></li>
+													<li class="list-group-item"><a href="/mycar-fountain-gate.html">Mycar Fountain Gate</a></li>
+													<li class="list-group-item"><a href="/mycar-driver-email.html">Mycar Driver Email</a></li>
+													<li class="list-group-item"><a href="/mycar-registration-for-driver.html">Mycar Registration For Driver</a></li>
+													<li class="list-group-item"><a href="/mycaa-usmc.html">Mycaa Usmc</a></li>
+													<li class="list-group-item"><a href="/mycaa-spouse-portal.html">Mycaa Spouse Portal</a></li>
+													<li class="list-group-item"><a href="/mycaa-withdrawal.html">Mycaa Withdrawal</a></li>
+													<li class="list-group-item"><a href="/mycaa-texas-am.html">Mycaa Texas Am</a></li>
+													<li class="list-group-item"><a href="/mycar-neutral-bay.html">Mycar Neutral Bay</a></li>
+													<li class="list-group-item"><a href="/mycar-cairns.html">Mycar Cairns</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

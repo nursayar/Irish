@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Us Election Live - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Us Election Live",
+  "datePublished": "2021-02-14",
+  "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aOjh1.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=781&amp;y=350",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+us+election+live",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Us Election Live</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Your customizable and curated collection of the best in trusted news plus coverage of sports entertainment money weather travel health and lifestyle combined with OutlookHotmail Facebook Twitter Bing Skype and more. Watch MSNBC live election night coverage. US election results live. <br>				
+			</p>
+										<a class="badge badge-info" href="/tennessee-civil-war-service-records-of-confederate-soldiers.html">tennessee civil war service records of confederate soldiers</a>
+											<a class="badge badge-primary" href="/the-air-force-hero.html">the air force hero</a>
+											<a class="badge badge-success" href="/summary-of-va-dependents-and-survivors-benefits.html">summary of va dependents and survivors benefits</a>
+											<a class="badge badge-secondary" href="/the-navy-wife-handbook.html">the navy wife handbook</a>
+											<a class="badge badge-success" href="/survivors-and-dependents-educational-assistance-chapter-35-va.html">survivors and dependents educational assistance chapter 35 va</a>
+											<a class="badge badge-warning" href="/strike-air-force-heroes-3-unblocked.html">strike air force heroes 3 unblocked</a>
+											<a class="badge badge-light" href="/the-kitchen-life-of-a-navy-wife-recipes.html">the kitchen life of a navy wife recipes</a>
+											<a class="badge badge-dark" href="/texas-college-tuition-fee-waivers-for-veterans-dependents.html">texas college tuition fee waivers for veterans dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our site gives you hints for viewing the highest quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c5BcM.img?h=351&amp;w=624&amp;m=6&amp;q=60&amp;o=f&amp;l=f&amp;x=654&amp;y=398" data-lightbox="roadtrip" data-title="Fox News Is Debunking Election Fraud Claims Made By Its Own Anchors In Response To A Legal Threat">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c5BcM.img?h=351&amp;w=624&amp;m=6&amp;q=60&amp;o=f&amp;l=f&amp;x=654&amp;y=398" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBRfs3amkO0TMo25fucqyu8zZ1a5r-Rmn7CA';" alt="Fox News Is Debunking Election Fraud Claims Made By Its Own Anchors In Response To A Legal Threat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fox News Is Debunking Election Fraud Claims Made By Its Own Anchors In Response To A Legal Threat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aEIgD.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f" data-lightbox="roadtrip" data-title="Vox Live Results Republicans Are Leading In Several Close Senate Elections">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aEIgD.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiYCIB4W5epoqv5hn6ZV75akeCLFz9TkTIzw';" alt="Vox Live Results Republicans Are Leading In Several Close Senate Elections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vox Live Results Republicans Are Leading In Several Close Senate Elections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Famitchowdhry%2Ffiles%2F2014%2F08%2FMSN-Messenger-1940x1341.jpg" data-lightbox="roadtrip" data-title="Msn Messenger Is Completely Shutting Down On October 31st">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Famitchowdhry%2Ffiles%2F2014%2F08%2FMSN-Messenger-1940x1341.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUD-moKj4fJ6aBB66hNQ-57FowDYr67ywZcQ';" alt="Msn Messenger Is Completely Shutting Down On October 31st">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Messenger Is Completely Shutting Down On October 31st</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1bH9Mt.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=3097&amp;y=924" data-lightbox="roadtrip" data-title="Trump News Live President Shares Photo Of Amy Coney Barrett As He Champions Scotus Lawsuit Against Election">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1bH9Mt.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=3097&amp;y=924" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7NAAXSH07zUJYHGP2pU7mVdeiZ_HPF-lpA';" alt="Trump News Live President Shares Photo Of Amy Coney Barrett As He Champions Scotus Lawsuit Against Election">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump News Live President Shares Photo Of Amy Coney Barrett As He Champions Scotus Lawsuit Against Election</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aGQ7X.img?h=630&amp;w=1200&amp;m=6&amp;q=60&amp;o=t&amp;l=f&amp;f=jpg&amp;x=161&amp;y=319" data-lightbox="roadtrip" data-title="Map Shows How Election Results Shifted Towards Biden">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aGQ7X.img?h=630&amp;w=1200&amp;m=6&amp;q=60&amp;o=t&amp;l=f&amp;f=jpg&amp;x=161&amp;y=319" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5ied3ZAPWS-Y6f0u4CPYCYjVgYuxPftdkQ';" alt="Map Shows How Election Results Shifted Towards Biden">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Shows How Election Results Shifted Towards Biden</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1bxire.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=367&amp;y=127" data-lightbox="roadtrip" data-title="Breaking News Stories From Us And Around The World Msn News">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1bxire.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=367&amp;y=127" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4Z4RggQa5PFcdGpYVBTPTTl9VzFGzXX8fw';" alt="Breaking News Stories From Us And Around The World Msn News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking News Stories From Us And Around The World Msn News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB12rVbC.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=704&amp;y=541" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4Z4RggQa5PFcdGpYVBTPTTl9VzFGzXX8fw';" alt="Breaking News Stories From Us And Around The World Msn News">
+										<div class="card-body">
+						<h3 class="h5"><b>The California senator is the first female first black and first Asian-American US vice-president-elect.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn us election live</strong>. 
+								
+																	Share of expected votes counted reflects recorded votes and the best estimate of the total number of votes cast according to Edison ResearchMethodology. 
+																	Watch for live results and in-depth analysis. 
+																	Get the latest news coverage live stream video and photos on the 2020 Presidential Election. 
+																	2020 election results. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep up with the latest in the 2016 presidential election. 
+																	Its been nearly a week since the 3 November election day and there are another 10 weeks to go until Joe Biden is sworn in as the 46th US president. 
+																	Live democratic and republican delegate counts caucuses and primary results by state. 
+																	Share this - copied. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Msn back to msn home. 
+																	The results are trickling in for the 2020 US presidential election as the race remains on a knife-edge as of Wednesday afternoon. 
+																	Twitter has revealed that changes to the platform designed to combat misinformation ahead of the US election had resulted in a small but measurable hit to user numbers. 
+																	The US 2020 election results live. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Barr authorises DOJ to investigate election fraud as Georgia fights allegations Jon SharmanSamuel Osborne and Danielle Zoellner 10112020. 
+																	Election results November 3 2020. 
+																	Httpsbitly2HkY1BUFollow us on Twitter. 
+																	If you are living in the UK and do not want to miss any of the US election results coverage on TV here are some of the choices on offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This live page was brought to you by our teams. 
+																	The results of the 2020 US presidential election continue to stream in as President Donald Trump faces the possibility of becoming a single-term president. 
+																	Msn back to msn. 
+																	Subscribe for the live update. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join MSNBCs Rachel Maddow Joy Reid Nicole Wallace and Brian Williams for election night coverage. 
+																	Who is Kamala Harris vice-president-elect. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aOjh1.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=781&amp;y=350" data-lightbox="roadtrip" data-title="Sidney Powell People With Links To Powerful Democrats Using Dominion Voting Machines To Steal Votes">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aOjh1.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=781&amp;y=350" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupREy6SFcNNl9s4FAlNXWJMUnSoyfRoh76w';" alt="Sidney Powell People With Links To Powerful Democrats Using Dominion Voting Machines To Steal Votes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sidney Powell People With Links To Powerful Democrats Using Dominion Voting Machines To Steal Votes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/d9/e4/56d9e42271d089c634e4e38b8237e261.png" data-lightbox="roadtrip" data-title="Pin On Brands And Businesses I Have Launched And Managed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/d9/e4/56d9e42271d089c634e4e38b8237e261.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhmxeLbqfNEzpkz5b3S9LMB71E1ORKNvPnDA';" alt="Pin On Brands And Businesses I Have Launched And Managed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brands And Businesses I Have Launched And Managed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c8QM0.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=477&amp;y=178" data-lightbox="roadtrip" data-title="Gingrich Won T Accept Biden As President Says Democrats Republicans Live In Alternative Worlds">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c8QM0.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=477&amp;y=178" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HDMUT4P5-a05QUD5FZuL5FEQLtO595jTzw';" alt="Gingrich Won T Accept Biden As President Says Democrats Republicans Live In Alternative Worlds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gingrich Won T Accept Biden As President Says Democrats Republicans Live In Alternative Worlds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1cuTm3.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=560&amp;y=352" data-lightbox="roadtrip" data-title="Cnn Anchor Shreds Gop Congressman S Claim Of Preponderance Of Evidence Of Voter Fraud">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1cuTm3.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=560&amp;y=352" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8w3ZgFaI8WjrGLEb7r3binmJQAYSRlSOwGw';" alt="Cnn Anchor Shreds Gop Congressman S Claim Of Preponderance Of Evidence Of Voter Fraud">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cnn Anchor Shreds Gop Congressman S Claim Of Preponderance Of Evidence Of Voter Fraud</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media3.s-nbcnews.com/j/newscms/2020_06/3221426/tve-og-image_b1bba3286a8753ed3325794109ad2a63.nbcnews-fp-1200-630.png" data-lightbox="roadtrip" data-title="Msnbc Live Stream The Latest Tv Shows">
+											<img class="card-img v-image ads-img " src="https://media3.s-nbcnews.com/j/newscms/2020_06/3221426/tve-og-image_b1bba3286a8753ed3325794109ad2a63.nbcnews-fp-1200-630.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Kk4-3dhCg_DHVMcFXZc9bXrtDNRkU09byw';" alt="Msnbc Live Stream The Latest Tv Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msnbc Live Stream The Latest Tv Shows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/hbf_SY1teaY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Journalist Breaks Down On Live Tv After Biden Win Us Election 9 News Australia Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/hbf_SY1teaY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9isDKBWjPJq_-0IaR_cpzKyPwNVnEKxjTA';" alt="Journalist Breaks Down On Live Tv After Biden Win Us Election 9 News Australia Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Journalist Breaks Down On Live Tv After Biden Win Us Election 9 News Australia Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dtL4r.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=535&amp;y=322" data-lightbox="roadtrip" data-title="Hdomgfjx2koavm">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dtL4r.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=535&amp;y=322" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_s38NC_ASGAARhYKojlNZ4sK7yqK3acDlg';" alt="Hdomgfjx2koavm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hdomgfjx2koavm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ZQsHwitfT_g/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Election 2020 What The Data Tell Us The Economist Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ZQsHwitfT_g/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxsKUbmsaR5X3KGw4LsbjfeDT9vPtnvUlZA';" alt="Election 2020 What The Data Tell Us The Economist Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Election 2020 What The Data Tell Us The Economist Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.mos.cms.futurecdn.net/wNWXSrEWwVZzKoNKQRBzDX-320-80.jpg" data-lightbox="roadtrip" data-title="How To Watch 2020 Us Presidential Election Results Live Stream From Anywhere Today Techradar">
+											<img class="card-img v-image ads-img " src="https://cdn.mos.cms.futurecdn.net/wNWXSrEWwVZzKoNKQRBzDX-320-80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgyWch-e0hydIRXcTSQmdiiSgV2wgVpBxug';" alt="How To Watch 2020 Us Presidential Election Results Live Stream From Anywhere Today Techradar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Watch 2020 Us Presidential Election Results Live Stream From Anywhere Today Techradar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB12rVbC.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=704&amp;y=541" data-lightbox="roadtrip" data-title="Latest Us Politics News Coverage And Analysis Msn News">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB12rVbC.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=704&amp;y=541" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54U5JhbkR4BOkl4eBYZo2LcWtEM4zCneSsQ';" alt="Latest Us Politics News Coverage And Analysis Msn News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Us Politics News Coverage And Analysis Msn News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/83/92/b983920f7f9f5317e04ec696697f804e.jpg" data-lightbox="roadtrip" data-title="Pin On For Home Sellers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/83/92/b983920f7f9f5317e04ec696697f804e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXis0Z1Lwk5-0rDr2Ngo56OyN_-PKR5NtPlg';" alt="Pin On For Home Sellers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On For Home Sellers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aMlTJ.img?h=169&amp;w=300&amp;m=6&amp;q=60&amp;o=f&amp;l=f&amp;x=236&amp;y=95" data-lightbox="roadtrip" data-title="Gop Claims Glitch In Michigan Incorrectly Gave 6 000 Votes To Biden">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1aMlTJ.img?h=169&amp;w=300&amp;m=6&amp;q=60&amp;o=f&amp;l=f&amp;x=236&amp;y=95" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAvrvrZ3oDjNtgdztEtmu7Nc1tIwYDRQetg';" alt="Gop Claims Glitch In Michigan Incorrectly Gave 6 000 Votes To Biden">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gop Claims Glitch In Michigan Incorrectly Gave 6 000 Votes To Biden</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/0d/69/8c0d690cdc07ba7dd425a3de5197d629.png" data-lightbox="roadtrip" data-title="Comey Memo Says Trump Asked Him To End Flynn Investigation Investigations Trump Cnn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/0d/69/8c0d690cdc07ba7dd425a3de5197d629.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslG0FGA8KWNrxAhfgp7Zn6HR4UgPupleEzg';" alt="Comey Memo Says Trump Asked Him To End Flynn Investigation Investigations Trump Cnn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comey Memo Says Trump Asked Him To End Flynn Investigation Investigations Trump Cnn</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/black-fur-military-hat-crossword-clue.html">Black Fur Military Hat Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/best-mycaa-programs.html">Best Mycaa Programs</a></li>
+													<li class="list-group-item"><a href="/campus-portal-bulloch.html">Campus Portal Bulloch</a></li>
+													<li class="list-group-item"><a href="/campus-portal-grossmont.html">Campus Portal Grossmont</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-reserve-retirement.html">Benefits Of Navy Reserve Retirement</a></li>
+													<li class="list-group-item"><a href="/campus-portal-gilbert.html">Campus Portal Gilbert</a></li>
+													<li class="list-group-item"><a href="/california-veterans-dependents-educational-benefits.html">California Veterans Dependents Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-retirement.html">Benefits Of Navy Retirement</a></li>
+													<li class="list-group-item"><a href="/black-hat-military-meaning.html">Black Hat Military Meaning</a></li>
+													<li class="list-group-item"><a href="/benefits-of-us-military-draft.html">Benefits Of Us Military Draft</a></li>
+													<li class="list-group-item"><a href="/best-military-spouse-scholarships.html">Best Military Spouse Scholarships</a></li>
+													<li class="list-group-item"><a href="/british-army-marriage-benefits.html">British Army Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/campus-portal-aps.html">Campus Portal Aps</a></li>
+													<li class="list-group-item"><a href="/best-colleges-for-army-tuition-assistance.html">Best Colleges For Army Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/campus-portal-grades.html">Campus Portal Grades</a></li>
+													<li class="list-group-item"><a href="/best-masters-programs-for-military-spouses.html">Best Masters Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/british-army-benefits-for-family.html">British Army Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/best-colleges-for-military-tuition-assistance.html">Best Colleges For Military Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/calculate-percentage-military-retirement-divorce.html">Calculate Percentage Military Retirement Divorce</a></li>
+													<li class="list-group-item"><a href="/campus-portal-gpa.html">Campus Portal Gpa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

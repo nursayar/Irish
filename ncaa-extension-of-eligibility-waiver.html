@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Extension Of Eligibility Waiver - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Extension Of Eligibility Waiver",
+  "datePublished": "2021-02-14",
+  "image": "https://www.ketr.org/sites/ketr/files/styles/medium/public/202003/NCAA-D2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+extension+of+eligibility+waiver",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Extension Of Eligibility Waiver</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Athletes at Division II and Division III schools received this eligibility waiver if their teams compete in 50 or fewer of the. We provide confidential phone consultations to answer questions and discuss your specific situation. The Councils decision allows schools to self-apply waivers to restore one of those seasons of competition for student-athletes who had competed while eligible in the COVID-19-shortened 2020 spring season. <br>				
+			</p>
+										<a class="badge badge-success" href="/air-force-iran.html">air force iran</a>
+											<a class="badge badge-light" href="/air-force-jobs-for-reserves.html">air force jobs for reserves</a>
+											<a class="badge badge-primary" href="/air-force-jobs-for-sociology-majors.html">air force jobs for sociology majors</a>
+											<a class="badge badge-dark" href="/air-force-jobs-karachi-2019.html">air force jobs karachi 2019</a>
+											<a class="badge badge-secondary" href="/air-force-jobs-for-high-asvab-scores.html">air force jobs for high asvab scores</a>
+											<a class="badge badge-primary" href="/air-force-jobs-australia.html">air force jobs australia</a>
+											<a class="badge badge-dark" href="/air-force-jobs-in-2020.html">air force jobs in 2020</a>
+											<a class="badge badge-light" href="/air-force-hq-structure.html">air force hq structure</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ketr.org/sites/ketr/files/styles/medium/public/202003/NCAA-D2.jpg" data-lightbox="roadtrip" data-title="Ncaa Provides Eligibility Releif For D2 Athletes Seniors May Come Back For Canceled Season S 88 9 Ketr">
+											<img class="card-img v-image ads-img " src="https://www.ketr.org/sites/ketr/files/styles/medium/public/202003/NCAA-D2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mH4aLHzqg4CIQKGh66FRTQHnwjcxtPR1Kw';" alt="Ncaa Provides Eligibility Releif For D2 Athletes Seniors May Come Back For Canceled Season S 88 9 Ketr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Provides Eligibility Releif For D2 Athletes Seniors May Come Back For Canceled Season S 88 9 Ketr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="-xu8MPy9y1VxwM" data-lightbox="roadtrip" data-title="Https Ncaaorg S3 Amazonaws Com Committees D2 Reinstate Dec2018d2sar Report Pdf">
+											<img class="card-img v-image ads-img " src="-xu8MPy9y1VxwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_6mms1lhsSgQ-hf3UPClf6PU5lCTPtokEg';" alt="Https Ncaaorg S3 Amazonaws Com Committees D2 Reinstate Dec2018d2sar Report Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ncaaorg S3 Amazonaws Com Committees D2 Reinstate Dec2018d2sar Report Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.swimswam.com/wp-content/uploads/2019/03/NCAA-Stock-By-Jack-Spitser-CD8I1063.jpg" data-lightbox="roadtrip" data-title="Ncaa Division Ii Approves Eligibility Extension For Winter Sport Athletes">
+											<img class="card-img v-image ads-img " src="https://cdn.swimswam.com/wp-content/uploads/2019/03/NCAA-Stock-By-Jack-Spitser-CD8I1063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-3U2KYgPTFR8PiAZUtJ4kmAPqBdHkePTJAw';" alt="Ncaa Division Ii Approves Eligibility Extension For Winter Sport Athletes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division Ii Approves Eligibility Extension For Winter Sport Athletes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wesleyanbobcats.com/images/2020/3/30/granted_eligibility.png" data-lightbox="roadtrip" data-title="Breaking Spring Eligibility Waivers Approved By Ncaa West Virginia Wesleyan College Athletics">
+											<img class="card-img v-image ads-img " src="https://wesleyanbobcats.com/images/2020/3/30/granted_eligibility.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7KkFO6-WgjrJ8KjtTiWFr3o11J7QtWLQlA';" alt="Breaking Spring Eligibility Waivers Approved By Ncaa West Virginia Wesleyan College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking Spring Eligibility Waivers Approved By Ncaa West Virginia Wesleyan College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hilltopviewsonline.com/wp-content/uploads/2020/11/Sports-NCAA_DII_logo_c-900x386.jpg" data-lightbox="roadtrip" data-title="Approved Athletics Waivers Grant Athletes Additional Season Of Competition Hilltop Views">
+											<img class="card-img v-image ads-img " src="https://www.hilltopviewsonline.com/wp-content/uploads/2020/11/Sports-NCAA_DII_logo_c-900x386.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd_hz-xciZhRWFeI4fwhP_mBhfOrVOneLqkA';" alt="Approved Athletics Waivers Grant Athletes Additional Season Of Competition Hilltop Views">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Approved Athletics Waivers Grant Athletes Additional Season Of Competition Hilltop Views</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thelantern.com/files/2020/03/sipausa_15771544.jpg" data-lightbox="roadtrip" data-title="Ncaa Division I Council Votes To Extend Eligibility For Spring Sport Athletes The Lantern">
+											<img class="card-img v-image ads-img " src="https://www.thelantern.com/files/2020/03/sipausa_15771544.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQyW8_lktM_F7BH2pN8oSybq3z3DKbGS6MQ';" alt="Ncaa Division I Council Votes To Extend Eligibility For Spring Sport Athletes The Lantern">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division I Council Votes To Extend Eligibility For Spring Sport Athletes The Lantern</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.swimswam.com/wp-content/uploads/2019/03/NCAA-Stock-By-Jack-Spitser-CD8I1063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQyW8_lktM_F7BH2pN8oSybq3z3DKbGS6MQ';" alt="Ncaa Division I Council Votes To Extend Eligibility For Spring Sport Athletes The Lantern">
+										<div class="card-body">
+						<h3 class="h5"><b>In fact the student-athlete IS eligible for a Medical Hardship Waiver.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa extension of eligibility waiver</strong>. 
+								
+																	2 October 2020 114 pm 3-min read Tiana Mangakahia will return to the court for the Syracuse Orange this womens basketball season after the NCAA approved her Extension of Eligibility Waiver. 
+																	The first waiver still applies for winter and spring sports. 
+																	If approved by the NCAA this would give her the opportunity for another season of eligibility. 
+																	In anticipation of the impacts COVID-19 will continue to have on college sports on October 15 the NCAA Division 1 committee agreed to grant winter sport student-athletes who compete during the 2020-21 season an extra year of eligibility and an additional year to complete their eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Board of Governors took a landmark step on Friday by approving a measure that will grant an extra year of eligibility to all fall sports athletes. 
+																	The waiver the Administrative Committee passed is similar to a pair of waivers it approved July 22 which granted all student-athletes additional eligibility and season-of-competition opportunities if their team completes 50 or less of the sports Bylaw 17 maximum contestsdates of competition. 
+																	The NCAA has accepted Tiana Mangakahias extension of eligibility request to compete in the upcoming. 
+																	Many times student-athletes dont realize they qualify for waivers or appeals that could possibly extend their eligibility make them immediately eligible for competition or even allow for a scholarship or appeal hearing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Morgan will have to sit out the 2021 season due to NCAA transfer rules but could become eligible pending adoption of the NCAA transfer legislation or extension of the blanket waiver. 
+																	Both blanket waivers will apply to all sports during the 2020-21 academic year. 
+																	The NCAAs Division I Council voted to give eligibility relief to winter-sport athletes regardless of how many games they play during the 2020-21 academic year. 
+																	The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its only right Breast Cancer Awareness month begins with exciting news about a survivor. 
+																	If a student-athlete has missed the opportunity to participate in two different seasons due to injury or other circumstances outside their control they might qualify for an Extension of Eligibility Waiver. 
+																	Athletes now have the opportunity to. 
+																	To submit an application for an Initial-Eligibility Waiver. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This action does not impact the current contest and participant minimums for NCAA championship eligibility however. 
+																	The reason is that the applicable NCAA rule was changed last year. 
+																	Log in to My Apps using your single-source sign-on credentials. 
+																	2020-21 academic year provided the replaced student-athlete would have graduated in 2020 fall term but is returning in the 2021 spring or fall term to exhaust eligibility directly resulting from the NCAA Division I Board of Directors action allowing institutions to self-apply season of competition and extension of eligibility waivers due to the COVID-19 pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. 
+																	Division I rules limit student-athletes to four seasons of competition in a five-year period. 
+																	NCAA Extension of Eligibility Waiver Prep Assistance. 
+																	By approving a two-semesterthree-quarter extension schools no longer would need to file an additional extension of eligibility waiver if a student-athlete seeks to maintain full-time enrollment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a student-athlete meets all the required criteria they could apply for an Extension of Eligibility Waiver and if approved by the NCAA receive a 6 th year of competition in their sport. 
+																	Its only right Breast Cancer Awareness month begins with exciting news about a survivor. 
+																	Even athletes who compete this fall will. 
+																	This story isnt shared to fault the athletic trainer but to point out that the NCAA rules can change. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA granted this exception for Division I. 
+																	He will have. 
+																	Student-athletes who expected to participate in the spring 2020 fall 2020 and winter 2020-21 seasons received an additional year of eligibility due to the pandemic. 
+																	NCAA Division I just passed a new rule effective in the 2018-19 school year that can benefit student-athletes who redshirted in their freshman year and then in a subsequent season are deprived of a season of competition for reasons beyond their or their schools control illness injury etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA has accepted Tiana Mangakahias extension of eligibility request to compete in the upcoming 2020-21 season. 
+																	Mangakahia was diagnosed with Stage 2 breast cancer Grade 3 Invasive Ductal Carcinoma in June 2019. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.wsj.net/im-168855?width=620&amp;size=1.5" data-lightbox="roadtrip" data-title="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+											<img class="card-img v-image ads-img " src="https://images.wsj.net/im-168855?width=620&amp;size=1.5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdZSqhAvzgbNVkC4zgXfl-h2QTPv3R_cxtA';" alt="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/862/102/hi-res-33d4f410c71596c0f0f9fbd2adb29593_crop_north.jpg" data-lightbox="roadtrip" data-title="Wisconsin Won T Seek Eligibility Waiver For Seniors Despite Ncaa Covid 19 Ruling Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/862/102/hi-res-33d4f410c71596c0f0f9fbd2adb29593_crop_north.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4cT-gAcxutUeHwLPkJLAju9EclUIv4_BNw';" alt="Wisconsin Won T Seek Eligibility Waiver For Seniors Despite Ncaa Covid 19 Ruling Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wisconsin Won T Seek Eligibility Waiver For Seniors Despite Ncaa Covid 19 Ruling Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wruf.com/wp-content/uploads/2020/03/NCAA-Logo-660x330.jpg" data-lightbox="roadtrip" data-title="Ncaa Approves Another Year Of Eligibility For Spring Athletes Espn 98 1 Fm 850 Am Wruf">
+											<img class="card-img v-image ads-img " src="https://www.wruf.com/wp-content/uploads/2020/03/NCAA-Logo-660x330.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm6rHnb5vi2eN5qjO_1xnXBO144twQJn1dNw';" alt="Ncaa Approves Another Year Of Eligibility For Spring Athletes Espn 98 1 Fm 850 Am Wruf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Approves Another Year Of Eligibility For Spring Athletes Espn 98 1 Fm 850 Am Wruf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.natlawreview.com/sites/default/files/NCAA%20building%20Sign_5.jpg" data-lightbox="roadtrip" data-title="Ncaa Division Iii Blanket Student Athlete Covid 19 Waivers">
+											<img class="card-img v-image ads-img " src="https://www.natlawreview.com/sites/default/files/NCAA%20building%20Sign_5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNGENVVrhxHvLso7QxpdEa5JKirihEHsJew';" alt="Ncaa Division Iii Blanket Student Athlete Covid 19 Waivers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division Iii Blanket Student Athlete Covid 19 Waivers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/Hzm_G_MeaoheykfsEf8_V7xR678=/0x0:3183x3648/1200x800/filters:focal(1588x1250:2462x2124)/cdn.vox-cdn.com/uploads/chorus_image/image/66577836/1210820897.jpg.0.jpg" data-lightbox="roadtrip" data-title="Ncaa To Allow Extra Year Of Eligibility For Spring Athletes A Sea Of Blue">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/Hzm_G_MeaoheykfsEf8_V7xR678=/0x0:3183x3648/1200x800/filters:focal(1588x1250:2462x2124)/cdn.vox-cdn.com/uploads/chorus_image/image/66577836/1210820897.jpg.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9WEg4dho-0h36XGXpAgSRIStuMNiFxZzm9Q';" alt="Ncaa To Allow Extra Year Of Eligibility For Spring Athletes A Sea Of Blue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa To Allow Extra Year Of Eligibility For Spring Athletes A Sea Of Blue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="d81f5YTPWfn0HM" data-lightbox="roadtrip" data-title="Https Www Ncaa Org Sites Default Files 2018diicomp Divisioniiwaivertipsheet 20180815 Pdf">
+											<img class="card-img v-image ads-img " src="d81f5YTPWfn0HM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWbSZMC9z4WDaYhIvzLQHAfZONy4DmT0kbJw';" alt="Https Www Ncaa Org Sites Default Files 2018diicomp Divisioniiwaivertipsheet 20180815 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ncaa Org Sites Default Files 2018diicomp Divisioniiwaivertipsheet 20180815 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nationalfootballpost.com/wp-content/uploads/2020/10/12475663.jpg" data-lightbox="roadtrip" data-title="Ncaa Waives Record Requirement For 2020 21 Bowls National Football Post">
+											<img class="card-img v-image ads-img " src="https://www.nationalfootballpost.com/wp-content/uploads/2020/10/12475663.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsa3NWgX8dAtO8urtJQM96k5Pf6lKpjy6lw';" alt="Ncaa Waives Record Requirement For 2020 21 Bowls National Football Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Waives Record Requirement For 2020 21 Bowls National Football Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.abc10.com/assets/WTSP/images/a28078c4-5482-49fb-9716-c85af7526367/a28078c4-5482-49fb-9716-c85af7526367_1920x1080.jpg" data-lightbox="roadtrip" data-title="Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Abc10 Com">
+											<img class="card-img v-image ads-img " src="https://media.abc10.com/assets/WTSP/images/a28078c4-5482-49fb-9716-c85af7526367/a28078c4-5482-49fb-9716-c85af7526367_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRW2WXphUWkrF5x4nfImJY3fjw32TKdIf2rw';" alt="Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Abc10 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Abc10 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="dgcql7sUa8aNQM" data-lightbox="roadtrip" data-title="Https Www Ncaa Org Sites Default Files Oct2017dicouncil Report 20171012 Pdf">
+											<img class="card-img v-image ads-img " src="dgcql7sUa8aNQM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5EKtfNJVnLBdVx4kjLLhljQHmiywhqFDeYg';" alt="Https Www Ncaa Org Sites Default Files Oct2017dicouncil Report 20171012 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ncaa Org Sites Default Files Oct2017dicouncil Report 20171012 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="obcXjEGX1zshlM" data-lightbox="roadtrip" data-title="Https Ncaaorg S3 Amazonaws Com Compliance Waivers D3 D3comp Waivertipsheet Pdf">
+											<img class="card-img v-image ads-img " src="obcXjEGX1zshlM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuv5dPeA3bsAKz_CC183qkazIyd54ueQZRA';" alt="Https Ncaaorg S3 Amazonaws Com Compliance Waivers D3 D3comp Waivertipsheet Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ncaaorg S3 Amazonaws Com Compliance Waivers D3 D3comp Waivertipsheet Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" data-lightbox="roadtrip" data-title="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RhxSm64a3h9GgSUU5UOzKzk2Nru3P9YX9Q';" alt="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Extra Year Of Eligibility Coronavirus Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www1.villanova.edu/content/villanova/law/academics/sportslaw/commentary/mslj_blog/2020/ASecondChanceTheNCAAsOneYearEligibilityExtension/_jcr_content/pagecontent/image.img.jpg/1603277183299.jpg" data-lightbox="roadtrip" data-title="A Second Chance The Ncaa S One Year Eligibility Extension For College Athletes Villanova University">
+											<img class="card-img v-image ads-img " src="https://www1.villanova.edu/content/villanova/law/academics/sportslaw/commentary/mslj_blog/2020/ASecondChanceTheNCAAsOneYearEligibilityExtension/_jcr_content/pagecontent/image.img.jpg/1603277183299.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsEqOdbM1gCThvWudL18pJryUlc93Z5_mvIg';" alt="A Second Chance The Ncaa S One Year Eligibility Extension For College Athletes Villanova University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Second Chance The Ncaa S One Year Eligibility Extension For College Athletes Villanova University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/7243675cc80f4db2a9d726ef968fb9d8/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Ncaa Grants Extra Year Of Eligibility For Spring Athletes In Wake Of Pandemic">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/7243675cc80f4db2a9d726ef968fb9d8/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSxzBAyKI2V04iG8-qtpNYOKfqNljpRwnV5A';" alt="Ncaa Grants Extra Year Of Eligibility For Spring Athletes In Wake Of Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Grants Extra Year Of Eligibility For Spring Athletes In Wake Of Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-issue-hats.html">Military Issue Hats</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-technician-job-description.html">Military Medical Records Technician Job Description</a></li>
+													<li class="list-group-item"><a href="/military-love-quotes-for-her.html">Military Love Quotes For Her</a></li>
+													<li class="list-group-item"><a href="/military-kangol-hats.html">Military Kangol Hats</a></li>
+													<li class="list-group-item"><a href="/military-leave-240-hours.html">Military Leave 240 Hours</a></li>
+													<li class="list-group-item"><a href="/military-id-for-divorced-spouse.html">Military Id For Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/military-leather-hat.html">Military Leather Hat</a></li>
+													<li class="list-group-item"><a href="/military-id-card-pensacola-fl.html">Military Id Card Pensacola Fl</a></li>
+													<li class="list-group-item"><a href="/military-id-card-scheduler.html">Military Id Card Scheduler</a></li>
+													<li class="list-group-item"><a href="/military-marriage-overseas.html">Military Marriage Overseas</a></li>
+													<li class="list-group-item"><a href="/military-id-card-warner-robins.html">Military Id Card Warner Robins</a></li>
+													<li class="list-group-item"><a href="/military-id-card-renewal-for-dependent.html">Military Id Card Renewal For Dependent</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-st-louis.html">Military Medical Records St Louis</a></li>
+													<li class="list-group-item"><a href="/military-loan-forgiveness-officers.html">Military Loan Forgiveness Officers</a></li>
+													<li class="list-group-item"><a href="/military-id-card-phoenix-az.html">Military Id Card Phoenix Az</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-national-archives.html">Military Medical Records National Archives</a></li>
+													<li class="list-group-item"><a href="/military-of-the-hero.html">Military Of The Hero</a></li>
+													<li class="list-group-item"><a href="/military-induction-haircut-videos.html">Military Induction Haircut Videos</a></li>
+													<li class="list-group-item"><a href="/military-loan-forgiveness-program.html">Military Loan Forgiveness Program</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-request-st-louis.html">Military Medical Records Request St Louis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

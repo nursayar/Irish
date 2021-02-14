@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycaa Seco - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycaa Seco",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/52/a8/9e/52a89e248b9f3a504bc620998287facb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycaa+seco",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycaa Seco</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The program provides eligible military spouses with up to 4000 in financial assistance for licenses certifications or associate degrees to pursue an occupation or career field. Spouse Education and Career Opportunities Program - SECO. Thanks to all the SECO people for being there for metoday tomorrow and whenever I need them MySECO offers great resume-building and career-planning tools If military spouses are interested in growing and advancing their career or learning a new skill set this is the way to do it. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/how-to-order-military-records-from-the-national-archives.html">how to order military records from the national archives</a>
+											<a class="badge badge-primary" href="/how-to-survive-being-a-military-girlfriend.html">how to survive being a military girlfriend</a>
+											<a class="badge badge-danger" href="/how-to-find-death-records-on-ancestry.html">how to find death records on ancestry</a>
+											<a class="badge badge-secondary" href="/how-to-find-korean-war-service-records.html">how to find korean war service records</a>
+											<a class="badge badge-warning" href="/how-to-go-cid-army.html">how to go cid army</a>
+											<a class="badge badge-primary" href="/hq-air-force-space-command-address.html">hq air force space command address</a>
+											<a class="badge badge-info" href="/how-to-request-army-medical-records.html">how to request army medical records</a>
+											<a class="badge badge-warning" href="/how-to-request-medical-records-from-military.html">how to request medical records from military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/17/72/141772936cdafa536ca6c6cc20272513.jpg" data-lightbox="roadtrip" data-title="Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/17/72/141772936cdafa536ca6c6cc20272513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcDcGlnIUgNYvdpCln6xas-WBChInTW2d6Q';" alt="Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/f5/3e/6bf53eff76a230cb55d5b8f2e3f229e7.jpg" data-lightbox="roadtrip" data-title="The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/f5/3e/6bf53eff76a230cb55d5b8f2e3f229e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1MXYXQmOHFzUzz5BWMWcBJmLWqQOEFi6Jw';" alt="The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/65/a6/6865a6395dea2ef8846a5273cf79d0c6.gif" data-lightbox="roadtrip" data-title="Spouses Scholarships Scholarships Military Spouse Scholarships Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/65/a6/6865a6395dea2ef8846a5273cf79d0c6.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXQCGxA4TjMtUueDwjoErZpxf-pcQ96H3Xw';" alt="Spouses Scholarships Scholarships Military Spouse Scholarships Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouses Scholarships Scholarships Military Spouse Scholarships Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/dc/49/2edc4992e1eb6581db3e3bf15868df62.jpg" data-lightbox="roadtrip" data-title="Spouse Scholarships Military Spouse Scholarships Scholarships School Fund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/dc/49/2edc4992e1eb6581db3e3bf15868df62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpbIzpO5lMvSwZaCalkrw1X78dPSuJ0FFzw';" alt="Spouse Scholarships Military Spouse Scholarships Scholarships School Fund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Scholarships Military Spouse Scholarships Scholarships School Fund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/a8/9e/52a89e248b9f3a504bc620998287facb.jpg" data-lightbox="roadtrip" data-title="Oleo Leve Reparador Tratamiento Para Cabello Seco Natura Maquillaje Natura Cosmetico">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/a8/9e/52a89e248b9f3a504bc620998287facb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtYqPDyTCi9DlyBR4d6MrUEXg_3YQAzEEDw';" alt="Oleo Leve Reparador Tratamiento Para Cabello Seco Natura Maquillaje Natura Cosmetico">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oleo Leve Reparador Tratamiento Para Cabello Seco Natura Maquillaje Natura Cosmetico</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/6a/ad/6d6aad91099ddf0354bf740bc7e91fdd.png" data-lightbox="roadtrip" data-title="A Un Clic American Express Platinum Tarjetas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/6a/ad/6d6aad91099ddf0354bf740bc7e91fdd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3Xtv8eTIt9NMoqQ8lpXZx6l417kX9mEZlA';" alt="A Un Clic American Express Platinum Tarjetas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Un Clic American Express Platinum Tarjetas</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2e/dc/49/2edc4992e1eb6581db3e3bf15868df62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3Xtv8eTIt9NMoqQ8lpXZx6l417kX9mEZlA';" alt="A Un Clic American Express Platinum Tarjetas">
+										<div class="card-body">
+						<h3 class="h5"><b>The MyCAA Scholarship is a workforce development program that provides up to 4000 of tuition assistance to eligible military spouses.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycaa seco</strong>. 
+								
+																	The scholarship helps military spouses pursue licenses certificates certifications or associate degrees necessary to gain employment in high demand high growth portable career fields and occupations. 
+																	The information accessed and displayed through this system must be protected in accordance with the Privacy Act DoDD 540011 and DoD 540011-R. 
+																	The My Career Advancement Account Scholarship Program is a workforce development program that provides up to 4000 of financial assistance for licenses certifications or Associates degrees to pursue an occupation or career field. 
+																	Call Military OneSource at 800-342-9647 to schedule an appointment with a SECO career coach and determine a plan of action. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Seco Tools is carefully monitoring the COVID-19 situation globally and following guidance and precautionary measures provided by health authorities and the local governments. 
+																	MyCAA Vet Tech Spouse Education and Career Opportunities Program - SECO 4 hrs Dont paws your education because of funding. 
+																	The My Career Advancement Account Scholarship is a workforce development program. 
+																	COVID-19 Update December 16. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Live with MSEP Partner SkillStorm. 
+																	SECO is the way to go when needing assistance in making your career decisions. 
+																	MyCAA Occupational Therapy Assistant. 
+																	Find GI Bill-Approved Colleges For Military and Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The MyICP or individual career plan is an interactive tool you can use as a road map to achieve your career goals. 
+																	MYCAA Military Spouse Scholarship Career Training at No-Cost Get 4000 in MyCAA funding to train for a portable career which is ideal for military spouses. 
+																	409 views December 17 2020. 
+																	The Military Spouse Career Advancement Account MyCAA Scholarship is a workforce development program that provides up to 4000 of tuition assistance to eligible military spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These funds pay for degree programs licensure or credentials leading to employment. 
+																	The Military Spouse Career Advancement Accounts Program MyCAA a component of the Department of Defenses DoD Spouse Education and Career Opportunities SECO program is a career development and employment assistance program. 
+																	The My Career Advancement Account Scholarship provides a maximum tuition benefit of 4000 with an annual fiscal year cap of 2000 to assist eligible military spouses who need professional credentials to meet their portable career goals. 
+																	Details of the agreement Users must consent to in regard to their use and conduct within this US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	525 views December 16 2020. 
+																	The counselors. 
+																	Contact Military OneSource and ask for the Spouse Education and Career Opportunities Center. 
+																	147 views December 23 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Military OneSource to receive assistance with. 
+																	The Military Spouse Career Advancement Accounts Program MyCAA a component of the Department of Defenses DoD Spouse Education and Career Opportunities SECO program is a career development and employment assistance program. 
+																	Career Coaches are available Monday through Friday from seven am until ten pm 7am-10pm eastern time and Saturday from ten am until five pm 10am-5pm eastern time at 1-800-342-9647 or by email at MyCAAHelpmilitaryonesourcemil. 
+																	Spouse Education and Career Opportunities Program - SECO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyCAA is a workforce development program that provides up to 4000 in financial assistance for military spouses. 
+																	The My Career Advancement Account Scholarship is a workforce development program that provides eligible military spouses with up to 4000 in financial assistance for licenses certifications or associate degrees to pursue an occupation or career field. 
+																	Our top priority relative to the outbreak is to protect our people operations and customers from adverse impacts. 
+																	The MyICP Wizard asks you to identify your current education or career goal and answer a few basic questions to help customize a plan specifically for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouse Education and Career Opportunities Program - SECO. 
+																	About The MyCAA Scholarship. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/63/a8/e763a8ae1721c4a50c5744c4cca70d39.png" data-lightbox="roadtrip" data-title="Dod Launches Financial Education Website For Military Spouses Financial Education Financial Decisions Financial Calculators">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/63/a8/e763a8ae1721c4a50c5744c4cca70d39.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTIaw9Y0WmRhHhvSywSgqnknNU7SqeS8BC_w';" alt="Dod Launches Financial Education Website For Military Spouses Financial Education Financial Decisions Financial Calculators">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Launches Financial Education Website For Military Spouses Financial Education Financial Decisions Financial Calculators</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/93/b0/a9/93b0a9a6a527a859a4d14799f1a3b7fc.jpg" data-lightbox="roadtrip" data-title="Pin By Ashley Meissner On Military Mycaa In 2021 Mycaa Women Women S Top">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/93/b0/a9/93b0a9a6a527a859a4d14799f1a3b7fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBi1Ee8MgLOckEaE834lrKSgh6d_vNWPDBzg';" alt="Pin By Ashley Meissner On Military Mycaa In 2021 Mycaa Women Women S Top">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ashley Meissner On Military Mycaa In 2021 Mycaa Women Women S Top</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6b/c6/79/6bc679a15d225bac9a978fe723eff8aa.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6b/c6/79/6bc679a15d225bac9a978fe723eff8aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7rgEgvXydc7VMt4AAJRZ1huR91bQhboxZA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/5a/71/3a5a712ff1f3c06b10f8e255b573acb4.jpg" data-lightbox="roadtrip" data-title="Eudora Cabelo Oleoso Produtos De Beleza Produtos De Maquiagem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/5a/71/3a5a712ff1f3c06b10f8e255b573acb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwMWqj7W-_5KPYek0-ZuI0dR2eD4JugWapQ';" alt="Eudora Cabelo Oleoso Produtos De Beleza Produtos De Maquiagem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eudora Cabelo Oleoso Produtos De Beleza Produtos De Maquiagem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/17/e9/c117e923ad5255dbabe4026c6e0cf597.jpg" data-lightbox="roadtrip" data-title="En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/17/e9/c117e923ad5255dbabe4026c6e0cf597.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67unHF0EJsAXMxGfMfQb-_nR8WtNpJKtx9g';" alt="En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c7/06/65/c70665b25681eea07a65a30187afa723.jpg" data-lightbox="roadtrip" data-title="Pin On کنفرانس">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c7/06/65/c70665b25681eea07a65a30187afa723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20elUSsU3bYF0P_O4lNPWILGOVV2ikogA-Q';" alt="Pin On کنفرانس">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On کنفرانس</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/16/88/1a1688144a99d5ba667c76e2572c4af1.jpg" data-lightbox="roadtrip" data-title="Natura Todo Dia Manga Rosa Venda De Cosmeticos Agua De Coco Kits Presentes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/16/88/1a1688144a99d5ba667c76e2572c4af1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqIGpLq4X8qe-tI8139fpqIrAwrFNRrBumQ';" alt="Natura Todo Dia Manga Rosa Venda De Cosmeticos Agua De Coco Kits Presentes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Natura Todo Dia Manga Rosa Venda De Cosmeticos Agua De Coco Kits Presentes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/5b/31/e95b312c1a9c34623e1213f9c92fec65.jpg" data-lightbox="roadtrip" data-title="Pin En Natura Una">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/5b/31/e95b312c1a9c34623e1213f9c92fec65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03Yj9XaG8kOhIjfUGSPK1bm7gzrGF_CHBIg';" alt="Pin En Natura Una">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Natura Una</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ba/ea/ca/baeacae70a6ce34e529358665d7a6c01.jpg" data-lightbox="roadtrip" data-title="Pin By Carol Studdert Sizemore On Work Ceus In 2020 Job Search Job Search Tips Job Posting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ba/ea/ca/baeacae70a6ce34e529358665d7a6c01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwNSkKuVN6ivO1dgzXxgJJ3s6jlogP3CrePQ';" alt="Pin By Carol Studdert Sizemore On Work Ceus In 2020 Job Search Job Search Tips Job Posting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Carol Studdert Sizemore On Work Ceus In 2020 Job Search Job Search Tips Job Posting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/c3/ea/26c3eacc1ebdea9cc0d06e1631a2a456.png" data-lightbox="roadtrip" data-title="Volunteer Military Veterans Veteran Volunteer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/c3/ea/26c3eacc1ebdea9cc0d06e1631a2a456.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRM6zFkI6irCufS12L7UdiKtkRUUFWPRR94Q';" alt="Volunteer Military Veterans Veteran Volunteer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volunteer Military Veterans Veteran Volunteer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/a6/d1/d3a6d16a0b5971317b1fc5097e712335.jpg" data-lightbox="roadtrip" data-title="Conheca Mais Sobre A Nossa Linha De Perfumes Feminina Da Amakha Paris Com Uma Fixacao De Incriveis 24 Hs Na Pe Paris Perfumes Femininos Perfumaria E Cosmeticos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/a6/d1/d3a6d16a0b5971317b1fc5097e712335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDN8PCNV84Uy6hAUdBhVrKv-tAb1MEYCC6w';" alt="Conheca Mais Sobre A Nossa Linha De Perfumes Feminina Da Amakha Paris Com Uma Fixacao De Incriveis 24 Hs Na Pe Paris Perfumes Femininos Perfumaria E Cosmeticos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conheca Mais Sobre A Nossa Linha De Perfumes Feminina Da Amakha Paris Com Uma Fixacao De Incriveis 24 Hs Na Pe Paris Perfumes Femininos Perfumaria E Cosmeticos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/15/0b/a7/150ba7ddbae3a9b3c7b4cfd7d26e2646.jpg" data-lightbox="roadtrip" data-title="En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/15/0b/a7/150ba7ddbae3a9b3c7b4cfd7d26e2646.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3DXCoKhrbFBFo-vuPLtZFXZIho8RP70mM5g';" alt="En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">En Natura Tendras Una Entrega Segura De Tus Productos Favoritos Mobile Boarding Pass Instagram Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/54/18/db54184f6a2eece0eaf42f5165a32be2.png" data-lightbox="roadtrip" data-title="Pin De Terramarbrand Rossie En Tips Natura Natura Maquillaje Natura Cosmetico Natura Cosmetics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/54/18/db54184f6a2eece0eaf42f5165a32be2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiaIvlZqeaZqIiQAgeH_OrDqOtsJlpPAsbQ';" alt="Pin De Terramarbrand Rossie En Tips Natura Natura Maquillaje Natura Cosmetico Natura Cosmetics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin De Terramarbrand Rossie En Tips Natura Natura Maquillaje Natura Cosmetico Natura Cosmetics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/sscnverifikasibkngoid-login.html">Sscnverifikasibkngoid Login</a></li>
+													<li class="list-group-item"><a href="/sscnbknrohil.html">Sscnbknrohil</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-untuk-sma.html">Sscn Bkn Untuk Sma</a></li>
+													<li class="list-group-item"><a href="/starbucks-jobs-roanoke-va.html">Starbucks Jobs Roanoke Va</a></li>
+													<li class="list-group-item"><a href="/sscn-login-bkn-go-id-registrasi.html">Sscn Login Bkn Go Id Registrasi</a></li>
+													<li class="list-group-item"><a href="/sscnbkngoid-2019-verifikasi.html">Sscnbkngoid 2019 Verifikasi</a></li>
+													<li class="list-group-item"><a href="/sscnbkngoid-way-kanan.html">Sscnbkngoid Way Kanan</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-rokan-hulu.html">Sscn Bkn Rokan Hulu</a></li>
+													<li class="list-group-item"><a href="/sscnbkngoid-2018-login-formasi.html">Sscnbkngoid 2018 Login Formasi</a></li>
+													<li class="list-group-item"><a href="/starbucks-careers-richmond-va.html">Starbucks Careers Richmond Va</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-log-out.html">Sscn Bkn Log Out</a></li>
+													<li class="list-group-item"><a href="/sscn-bpk-ri.html">Sscn Bpk Ri</a></li>
+													<li class="list-group-item"><a href="/stokke-mycarrier-cool.html">Stokke Mycarrier Cool</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-ntt.html">Sscn Bkn Ntt</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-tutup.html">Sscn Bkn Tutup</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-oki.html">Sscn Bkn Oki</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-tapteng.html">Sscn Bkn Tapteng</a></li>
+													<li class="list-group-item"><a href="/stateside-spouse-education-assistance-program.html">Stateside Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/states-with-free-tuition-for-dependents-of-disabled-veterans.html">States With Free Tuition For Dependents Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-muaro-jambi.html">Sscn Bkn Muaro Jambi</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

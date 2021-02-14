@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Kitchen Life Of A Navy Wife Chicken And Dumplings - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Kitchen Life Of A Navy Wife Chicken And Dumplings",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/2d/61/08/2d6108d28a5d94548237951acc13c313.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kitchen+life+of+a+navy+wife+chicken+and+dumplings",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Kitchen Life Of A Navy Wife Chicken And Dumplings</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Drizzle chicken with sauce and serve. The Kitchen Life of a Navy Wife. Once hot add a little oil or butter and the vegetables. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-hat-indoors.html">military hat indoors</a>
+											<a class="badge badge-light" href="/military-hat-drawing.html">military hat drawing</a>
+											<a class="badge badge-success" href="/military-hat-synonym.html">military hat synonym</a>
+											<a class="badge badge-danger" href="/military-hat-fashion.html">military hat fashion</a>
+											<a class="badge badge-info" href="/military-hat-with-a-plume-at-the-front.html">military hat with a plume at the front</a>
+											<a class="badge badge-dark" href="/military-hat-velcro-patches.html">military hat velcro patches</a>
+											<a class="badge badge-primary" href="/military-hat-symbols.html">military hat symbols</a>
+											<a class="badge badge-warning" href="/military-hat-rain-cover.html">military hat rain cover</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right site.  Our site provides you with hints for viewing the highest quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/74/ff/7174ff662c2a6932d40195cb7641f03f.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Recipes Slow Cooker Chicken Cooker Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/74/ff/7174ff662c2a6932d40195cb7641f03f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmk0AXLzQsJyiueywdLVkKawh6gSoievvwPA';" alt="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Recipes Slow Cooker Chicken Cooker Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Recipes Slow Cooker Chicken Cooker Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/c5/63/9ec56350b5babbac36ad142f1b0b7eb1.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Slow Cooker Chicken Recipes Cooker Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/c5/63/9ec56350b5babbac36ad142f1b0b7eb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZ9jAZsl-uKVi9K7sgbBZs9Bh2yu6wSBMcQ';" alt="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Slow Cooker Chicken Recipes Cooker Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Slow Cooker Chicken Recipes Cooker Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/72/ca/5172cafcf8e1ee244c301955bad623a7.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Homemade Chicken And Dumplings Homemade Chicken And Dumplings Chicken And Dumplings Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/72/ca/5172cafcf8e1ee244c301955bad623a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIlvOu3n7cRZ7QLR4P2FjaMMSvtg1oFdumQ';" alt="The Kitchen Life Of A Navy Wife Homemade Chicken And Dumplings Homemade Chicken And Dumplings Chicken And Dumplings Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Homemade Chicken And Dumplings Homemade Chicken And Dumplings Chicken And Dumplings Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/49/ae/c849ae3dbbbf9126813b3e9c3bfea904.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Stove Top Chicken Chicken Entrees Chicken And Dumplings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/49/ae/c849ae3dbbbf9126813b3e9c3bfea904.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrkv_-mnobUKexE6GeE6Kg0SoQaY3zbZujw';" alt="The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Stove Top Chicken Chicken Entrees Chicken And Dumplings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Stove Top Chicken Chicken Entrees Chicken And Dumplings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/e2/77/11e277a3bf5d45921851e0d33571c319.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Cooking Cooking Recipes Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/e2/77/11e277a3bf5d45921851e0d33571c319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3hYfYQGg2CnRtJKgc4acM-RdgeFdP7ez6A';" alt="The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Cooking Cooking Recipes Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Stove Top Chicken And Dumplings Cooking Cooking Recipes Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/d1/4e/62d14ef4536eb5993285d6a2fc323705.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Buttermilk Roast Chicken Recipes Roast Chicken Recipes Chicken Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/d1/4e/62d14ef4536eb5993285d6a2fc323705.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM7QOxC34yTztYMACV55EtnU7ueW6Ic0RDtw';" alt="The Kitchen Life Of A Navy Wife Buttermilk Roast Chicken Recipes Roast Chicken Recipes Chicken Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Buttermilk Roast Chicken Recipes Roast Chicken Recipes Chicken Recipes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/76/a6/21/76a6212a873f4038060f04c6b68bacd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM7QOxC34yTztYMACV55EtnU7ueW6Ic0RDtw';" alt="The Kitchen Life Of A Navy Wife Buttermilk Roast Chicken Recipes Roast Chicken Recipes Chicken Recipes">
+										<div class="card-body">
+						<h3 class="h5"><b>1 shredded rotisserie Chicken.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Kitchen life of a navy wife chicken and dumplings</strong>. 
+								
+																	See more ideas about recipes food favorite recipes. 
+																	Another trick on the dumplingsis to buy layered biscuits. 
+																	The Kitchen Life of a Navy Wife. 
+																	Oct 26 2013 - The Kitchen Life of a Navy Wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Place each bread slice butter side down onto a baking sheet. 
+																	Slow Cooker Chicken and Dumplings. 
+																	Home Broiled Cajun Shrimp Candy Corn Fruit Cups Kentucky Fried Chicken. 
+																	The dumplings turn out excellent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+																	1870s Macaroni and Cheese. 
+																	Fry chicken on both sides for 3 to 5 minutes or until chicken is cooked through. 
+																	Repeat process until all chicken is cooked. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Slow Cooker Chicken and Dumplings. 
+																	Place the chicken butter soup and onion in a greased slow cooker and fill with enough water to cover. 
+																	May 24 2013 - Explore Tammy Saunderss board The Kitchen Life of a Navy Wife followed by 454 people on Pinterest. 
+																	Baked Coconut Chicken with Apricot Sauce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Saute until tender and the onions become translucent about 2-3 minutes. 
+																	Sprinkle it with shredded fontina. 
+																	2 lbs chicken strips you can cut breasts into strips or buy them pre-cut 2 cups buttermilk. 
+																	Secure lid and cook for 5 to 6 hours on High. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+																	Butter one side of each bread slice with the herbed butter. 
+																	Jan 26 2013 - This is the recipe Ive usedits very good. 
+																	Separate them into three layers then tear into 3-4 pieces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remove pieces to a paper towel lined plate to drain any excess oil. 
+																	1 package of white gravy 3 oz milk. 
+																	Baked Chicken and Artichokes. 
+																	Baked Chicken Green Beans and Potatoes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heat oven to 450. 
+																	About 30 minutes before serving roll. 
+																	1 can Cream of Chicken Soup 10 oz 1 can layer biscuits. 
+																	In a large pot or dutch oven bring the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then place a large soup pot over a mediumhigh heat. 
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/5d/ac/f45dac896e52e80a79b013b47d360b24.png" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Chicken And Dumplings Slow Cooker Chicken Slow Cooker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/5d/ac/f45dac896e52e80a79b013b47d360b24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTc_BF9UcznSx4LHdse2Eodnh6QvC0CzkXwg';" alt="The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Chicken And Dumplings Slow Cooker Chicken Slow Cooker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Slow Cooker Chicken And Dumplings Chicken And Dumplings Slow Cooker Chicken Slow Cooker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/65/f7/b365f7775ad0a5988db031403aedff0d.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife The Best Chicken Fried Steak Seriously Recipes Food Chicken Fried Steak">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/65/f7/b365f7775ad0a5988db031403aedff0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtUME8SeeVhX__bSjeGxV7PHd-mOEVuq8PA';" alt="The Kitchen Life Of A Navy Wife The Best Chicken Fried Steak Seriously Recipes Food Chicken Fried Steak">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife The Best Chicken Fried Steak Seriously Recipes Food Chicken Fried Steak</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/d3/da/40d3da06fbef0affa17895b84b018082.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife World S Easiest Baked Chicken Baked Chicken Easy Baked Chicken Chicken Drumstick Recipes Oven">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/d3/da/40d3da06fbef0affa17895b84b018082.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4g-3pRmnhKj5Ei3a1wArbA_qQD1jltw5JsA';" alt="The Kitchen Life Of A Navy Wife World S Easiest Baked Chicken Baked Chicken Easy Baked Chicken Chicken Drumstick Recipes Oven">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife World S Easiest Baked Chicken Baked Chicken Easy Baked Chicken Chicken Drumstick Recipes Oven</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/84/9d/e8849da99c4fffbd0d72d645694f6c77.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Cinnamon Chicken Cinnamon Chicken Chicken Recipes Cinnamon Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/84/9d/e8849da99c4fffbd0d72d645694f6c77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1T9rmup8wz6oKow81LCFzWvnKQW69wY28w';" alt="The Kitchen Life Of A Navy Wife Cinnamon Chicken Cinnamon Chicken Chicken Recipes Cinnamon Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Cinnamon Chicken Cinnamon Chicken Chicken Recipes Cinnamon Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/5b/3f/0b5b3f54707939692b44f68977c37aa3.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Wonton Soup Delicious Soup Recipes Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/5b/3f/0b5b3f54707939692b44f68977c37aa3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyQfm1ul84TDy-HOn2lqH1-BKy1fL909Ylg';" alt="The Kitchen Life Of A Navy Wife Wonton Soup Delicious Soup Recipes Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Wonton Soup Delicious Soup Recipes Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/da/d6/c2dad68ac37ab67e8afc82cbca9212ea.jpg" data-lightbox="roadtrip" data-title="Pin On Food E Licious Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/da/d6/c2dad68ac37ab67e8afc82cbca9212ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtfz1bH3A009wqTjnNm-l265DKMIZ8TeA-w';" alt="Pin On Food E Licious Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Food E Licious Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/61/08/2d6108d28a5d94548237951acc13c313.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Butter Chicken Butter Chicken Eat More Chicken Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/61/08/2d6108d28a5d94548237951acc13c313.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfXMi3sOwx1pPkZeVBhf-Pps1ZYUr3Z1hXg';" alt="The Kitchen Life Of A Navy Wife Butter Chicken Butter Chicken Eat More Chicken Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Butter Chicken Butter Chicken Eat More Chicken Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/04/b8/6704b8c19f604b8548cfaffcfd2af652.jpg" data-lightbox="roadtrip" data-title="Pinterest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/04/b8/6704b8c19f604b8548cfaffcfd2af652.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVrfWRcMSNsYPSrH6GxAkKk4BXckg_DVLB9g';" alt="Pinterest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/fc/57/b9/fc57b941164cafc1fb8140d364c6c04b.jpg" data-lightbox="roadtrip" data-title="Pin By Lilia Rice On Recipes Homemade Chicken And Dumplings Dumpling Recipe Chicken And Dumplings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/fc/57/b9/fc57b941164cafc1fb8140d364c6c04b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-9ivAWp9JmxUP6O82SdZVcPI0KtClrH-JA';" alt="Pin By Lilia Rice On Recipes Homemade Chicken And Dumplings Dumpling Recipe Chicken And Dumplings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lilia Rice On Recipes Homemade Chicken And Dumplings Dumpling Recipe Chicken And Dumplings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f4/45/a8/f445a84700cf09f0922141a6e42188c4--navy-wife-cheeseburgers.jpg" data-lightbox="roadtrip" data-title="Cheeseburger Soup The Kitchen Life Of A Navy Wife Cheeseburger Soup Recipes Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f4/45/a8/f445a84700cf09f0922141a6e42188c4--navy-wife-cheeseburgers.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtncqtLI7TOVjMexqqYrfr6Ncx_Cl7Vkh-sg';" alt="Cheeseburger Soup The Kitchen Life Of A Navy Wife Cheeseburger Soup Recipes Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cheeseburger Soup The Kitchen Life Of A Navy Wife Cheeseburger Soup Recipes Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/f3/dc/c8f3dc2daf69431470724bfaf14a6e56.jpg" data-lightbox="roadtrip" data-title="John Wayne Casserole Recipes Food Yummy Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/f3/dc/c8f3dc2daf69431470724bfaf14a6e56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb3SWS8FTHqpUDIXJIg6d-PF0BImCMxz6Mgw';" alt="John Wayne Casserole Recipes Food Yummy Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">John Wayne Casserole Recipes Food Yummy Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/19/46/1d/19461d11660a1a0e2d986e5553600d5d.jpg" data-lightbox="roadtrip" data-title="Sausage And Egg Crescent Ring With Gravy The Kitchen Life If A Navy Wife Food Breakfast Recipes Casserole Breakfast Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/19/46/1d/19461d11660a1a0e2d986e5553600d5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzTkbHkufemZQ6zZc3RTkUT5jnh6oC0LtiQw';" alt="Sausage And Egg Crescent Ring With Gravy The Kitchen Life If A Navy Wife Food Breakfast Recipes Casserole Breakfast Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sausage And Egg Crescent Ring With Gravy The Kitchen Life If A Navy Wife Food Breakfast Recipes Casserole Breakfast Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/a6/21/76a6212a873f4038060f04c6b68bacd5.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife New England Clam Chowder Clam Chowder Recipes Clam Chowder Recipe Easy Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/a6/21/76a6212a873f4038060f04c6b68bacd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKoCwKjmjmQoasghUinK9NnDl12x6bw3Omg';" alt="The Kitchen Life Of A Navy Wife New England Clam Chowder Clam Chowder Recipes Clam Chowder Recipe Easy Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife New England Clam Chowder Clam Chowder Recipes Clam Chowder Recipe Easy Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-for-surviving-military-spouse.html">Benefits For Surviving Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-marriage.html">Benefits Of Army Marriage</a></li>
+													<li class="list-group-item"><a href="/being-a-soldiers-wife-quotes.html">Being A Soldiers Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-doctor-in-pakistan.html">Benefits Of Army Doctor In Pakistan</a></li>
+													<li class="list-group-item"><a href="/benefits-do-navy-spouses-get.html">Benefits Do Navy Spouses Get</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-crawl.html">Benefits Of Army Crawl</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-rotc.html">Benefits Of Army Rotc</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-training.html">Benefits Of Army Training</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-commissary.html">Benefits Of A Military Commissary</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reserve-retirement.html">Benefits Of Army Reserve Retirement</a></li>
+													<li class="list-group-item"><a href="/benefits-as-a-military-wife.html">Benefits As A Military Wife</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reservist-philippines.html">Benefits Of Army Reservist Philippines</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-jrotc.html">Benefits Of Army Jrotc</a></li>
+													<li class="list-group-item"><a href="/being-a-teacher-as-a-military-spouse.html">Being A Teacher As A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-training-and-experience.html">Benefits Of Army Training And Experience</a></li>
+													<li class="list-group-item"><a href="/benefits-for-divorced-military-spouse.html">Benefits For Divorced Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-a-marine-biologist.html">Benefits Of Becoming A Marine Biologist</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-cadets.html">Benefits Of Army Cadets</a></li>
+													<li class="list-group-item"><a href="/benefits-for-army-reserve-veterans.html">Benefits For Army Reserve Veterans</a></li>
+													<li class="list-group-item"><a href="/being-a-military-officers-wife.html">Being A Military Officers Wife</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

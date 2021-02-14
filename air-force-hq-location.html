@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Hq Location - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Hq Location",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/26/ea/89/26ea89ba93985cadcb4dcf589c020eab.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+hq+location",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Hq Location</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Space Command headquarters according to Gov. Colorado Springs Colorado remains the location for the provisional headquarters for US. Learn about great opportunities for enlisted airmen officers and health care professionals. <br>				
+			</p>
+										<a class="badge badge-dark" href="/student-loan-forgiveness-for-active-duty-military-spouses.html">student loan forgiveness for active duty military spouses</a>
+											<a class="badge badge-info" href="/the-navy-wife-creed.html">the navy wife creed</a>
+											<a class="badge badge-secondary" href="/student-loans-and-spouse-income.html">student loans and spouse income</a>
+											<a class="badge badge-light" href="/survivors-and-dependents-educational-assistance-dea-program.html">survivors and dependents educational assistance dea program</a>
+											<a class="badge badge-info" href="/the-navy-wife-retirement-poem.html">the navy wife retirement poem</a>
+											<a class="badge badge-danger" href="/surviving-spouse-benefits-va-loan.html">surviving spouse benefits va loan</a>
+											<a class="badge badge-secondary" href="/taxes-military-spouse-residency-relief-act.html">taxes military spouse residency relief act</a>
+											<a class="badge badge-primary" href="/student-loan-consolidation-for-military-spouses.html">student loan consolidation for military spouses</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with hints for viewing the maximum quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/a7/27/eba7278b82e963acffb25f058fd087a7.png" data-lightbox="roadtrip" data-title="Pin On Mod Apk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/a7/27/eba7278b82e963acffb25f058fd087a7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQGTam00rwooJNArxry8TXlkFl20ALCG7mhFSS8GtzxhH-1R08cDp5TZqaB_VyjJypI_RAyO8bS-XxoFxp4kw&amp;ec=45774424';" alt="Pin On Mod Apk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mod Apk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/c5/fa/f7c5fa7602b05b86ae7e6c22f91ea7f2.jpg" data-lightbox="roadtrip" data-title="U S Fighter Jet Cockpits From 1945 To Modern Day 43 Hq Photos Fighter Jets Aircraft Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/c5/fa/f7c5fa7602b05b86ae7e6c22f91ea7f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd2Q-QDlaUZuMax9pTvqCw1F-0iGhJrZJEC8Sl-dEboh6nUT03mQY4OxNEZyWToD8xIwMfNF4deu92qMucRXg&amp;ec=45774424';" alt="U S Fighter Jet Cockpits From 1945 To Modern Day 43 Hq Photos Fighter Jets Aircraft Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Fighter Jet Cockpits From 1945 To Modern Day 43 Hq Photos Fighter Jets Aircraft Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/d6/18/b6d618ccf6481287893cec463c3ce4b4.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Fighter Planes Fighter Jets Phantom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/d6/18/b6d618ccf6481287893cec463c3ce4b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzuMqnAWTGJ9SmwkIRSRkUhNd8fJJTP25YmJjSUP0pybAH0ueEgWFd-CyYWZjzswVK-5fQ_mHdq3bjqRWyZPI&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Fighter Planes Fighter Jets Phantom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Fighter Planes Fighter Jets Phantom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/63/d3/a563d37ac693e45c0f55e3b345861c5e.jpg" data-lightbox="roadtrip" data-title="Pin On Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/63/d3/a563d37ac693e45c0f55e3b345861c5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmWXiEzfcZCjrRdHH2SraQXw1xzkpMbbS6rGM9u8qtCvt7wITdCOKDEChnaexSPKUb7itdRJDW5zr3L1c-Nw&amp;ec=45774424';" alt="Pin On Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/a2/c9/22a2c98165db04c224ca34d81c53cc1b.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Fighter Jets Fighter Planes Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/a2/c9/22a2c98165db04c224ca34d81c53cc1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiF5Jjh0xdH-QjvJntpNIrCTHzjNzLQueEzzlhA5Zz6KDvzzmPbmAp5B2AeVMLCjvFmbGJAbquuVp_JWMEaMU&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Fighter Jets Fighter Planes Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Fighter Jets Fighter Planes Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/af/9e/acaf9e027b0e214dfff7ca51d3b17aea.jpg" data-lightbox="roadtrip" data-title="Pin On Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/af/9e/acaf9e027b0e214dfff7ca51d3b17aea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTog39IKIfavgwXNz6KrDRoV2YNZ-otzSIrn69fWW7s5ZV7eYjEhjvr7pZyeP5gMuGN0-rgOvNRZ1VmOUFeSN8&amp;ec=45774424';" alt="Pin On Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/eb/a7/27/eba7278b82e963acffb25f058fd087a7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTog39IKIfavgwXNz6KrDRoV2YNZ-otzSIrn69fWW7s5ZV7eYjEhjvr7pZyeP5gMuGN0-rgOvNRZ1VmOUFeSN8&amp;ec=45774424';" alt="Pin On Military Aircraft">
+										<div class="card-body">
+						<h3 class="h5"><b>In addition to the Secretariat and the Air Staff the SECAF may establish.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force hq location</strong>. 
+								
+																	Numbered Air Forces First Air Force or Air Forces Northern with headquarters at Tyndall AFB Fla has responsibility for ensuring the air sovereignty and air defense of the continental United States US. 
+																	The six locations include four Air Force installations Kirtland Air Force Base in New Mexico Offutt AFB in Nebraska Patrick AFB in Florida and Peterson AFB in Colorado as well as Redstone. 
+																	Those locations include four Air Force bases Kirtland in. 
+																	As the location for the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Air Force Secretary has selected Huntsville Alabama as the USs preferred location for Space Commands permanent home. 
+																	Patrick Air Force Base Located near Cocoa Beach on Floridas Space Coast the base is the home of the 45th Space Wing and the site of the Eastern Launch Range including Cape Canaveral Station. 
+																	The decision prompted an angry response from a Colorado representative who called on President-elect Biden to rethink the decision when he takes office. 
+																	A final decision is expected in early. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Pentagon has narrowed its choices on the permanent headquarters location for US. 
+																	Finalists include Kirtland Air Force Base NM a space technology hub for the Air Force Research Laboratory. 
+																	Royal Air Force Royal Navy. 
+																	The Department of the Air Force in November unveiled the slate of six locations that made the first cut for Space Command headquarters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Space Command headquarters until a permanent headquarters location is selected and facilities are ready in approximately six years. 
+																	The governor said she was informed of the decision Wednesday. 
+																	Air Force has announced Huntsville Ala. 
+																	Peterson Air Force Base Colo home to the current SPACECOM headquarters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Peterson Air Force Base Colorado is one of six candidate locations the Department of the Air Force selected for US. 
+																	Virgin Islands and Puerto Rico. 
+																	It controls aircraft covering a wide variety of roles including StrikeAttack Offensive Support Reconnaissance Airborne-Early-Warning Maritime Air-to-Air Refueling and Strategic and Tactical Transport. 
+																	Offutt Air Force Base Neb the headquarters of US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Space Command to six finalists Air Force officials announced Thursday. 
+																	The Headquarters Air Force HAF consists of two major entities created by 10 USC -- the Secretariat and the Air Staff. 
+																	1 Group RAF Location. 
+																	The six locations include Kirtland Air Force Base in New Mexico Offutt Air Force Base in Nebraska Patrick Air Force Base in Florida Peterson Air Force Base in Colorado Port San Antonio Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Place this envelope in a larger envelope with your check or money order for 350 made payable to DAO-DE JBSA-R and mail to the locator address at HQ AFPCDP1ORM 550 C St West Joint Base San Antonio-Randolph TX 78150. 
+																	HQ Air Command with its Headquarters based at RAF High Wycombe in Buckinghamshire is the main Command in the Royal Air Force which controls the RAFs frontline aircraft. 
+																	Coordination of UK F-35B Lighting operations. 
+																	The military has narrowed its search for the future home of US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the United States Air Force. 
+																	Air Force Materiel Commands headquarters is located at Wright-Patterson Air Force Base Ohio. 
+																	Patrick Air Force Base Fla which manages space launches at Cape Canaveral Air Force Station. 
+																	The headquarters staff ensures the command successfully manages its research development acquisition test and logistics services that keep Air Force weapon systems and warfighters ready for combat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Department of the Air Force DAF is one of the three military departments within the Department of Defense of the United States of AmericaThe Department of the Air Force was formed on September 18 1947 per the National Security Act of 1947 and is the military department for the United States Air Force and the United States Space Force. 
+																	Space Command to six locations across the country the Air Force said Nov. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b3/e1/18/b3e11879237a05ea3b0be921b2572163.jpg" data-lightbox="roadtrip" data-title="Air Force Thechive Fighter Jets Aircraft Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b3/e1/18/b3e11879237a05ea3b0be921b2572163.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGKYAWXCMq5_j2Ng1ds4_wzdAaMC1ry0mbv_vyvxqSDtEBbWwkdOrV31Yqf0qKt8T5AiysplAHoFb6xu54cE&amp;ec=45774424';" alt="Air Force Thechive Fighter Jets Aircraft Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thechive Fighter Jets Aircraft Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/e2/13/75e2135e002b11860c7ced13ae3d434f.jpg" data-lightbox="roadtrip" data-title="Pin On Planes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/e2/13/75e2135e002b11860c7ced13ae3d434f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOXZTDyTcYVrLiuCi27XEfcmpBkTgvcLr02lRs9sRTvKWl8T7pYApmzrYFGfZ1GILb4HPOnMrRCKgqCXdC3I&amp;ec=45774424';" alt="Pin On Planes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Planes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/ff/26/bcff26927de3f5c9eaf80f4f8099cead.png" data-lightbox="roadtrip" data-title="Pin On Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/ff/26/bcff26927de3f5c9eaf80f4f8099cead.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6jwsNTmUTt64XQ8YhAhvy0Pdh0zyCTbavugL4nFnniRo07wt6TV3jz9QvzkSBrUuwYp8Qd-cz-1ZQWA5MhI&amp;ec=45774424';" alt="Pin On Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/fd/08/abfd08745cc3aff6479aa116b816dfc1.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Photo Phantom Photo Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/fd/08/abfd08745cc3aff6479aa116b816dfc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2v5sN1Lx73y58n2JJep0BXPOOxHrhXKOsKRwXDfEj-hRELsbID_KG3DMpfJhwSgpRfjWGhuxKjnAfyAlMMZ0&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Photo Phantom Photo Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Photo Phantom Photo Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/43/2a/9a432a080733335b6195c447cd29bbb7.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2021 Photo Photo Facts Phantom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/43/2a/9a432a080733335b6195c447cd29bbb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabKzktb6PNvxJqaR4Cue3GINaMlWklB6YjCOztTUJaXv_CFw1vgwvoNixaUOGFAAZhttowJARue_DB7fiFt8&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2021 Photo Photo Facts Phantom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2021 Photo Photo Facts Phantom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/03/96/6f0396ea54ec91c9076384e8f1c3320e.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Phantom Photo Facts Air Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/03/96/6f0396ea54ec91c9076384e8f1c3320e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3EUU8Ak8dnDTXcqFSQmPqqLYvUH0uckTE7r_quA0VnlTneriqZJpDUGPEVhoXQ-TJeeEjjkBOFRBbTJNqUFc&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Phantom Photo Facts Air Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos In 2020 Phantom Photo Facts Air Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/ea/89/26ea89ba93985cadcb4dcf589c020eab.png" data-lightbox="roadtrip" data-title="Nato Hq Aircom Italy To Assure Nato Air Mission In Iceland 2017 An Italian Air Force Eurofighter Typhoon Jet At Keflavik Air Bas Italian Air Force Air Italy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/ea/89/26ea89ba93985cadcb4dcf589c020eab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZX5c0sH4lttFO9X8IBiGBk4L8BHqjurU5MOylcRvYrWeq-FYnwu4Mj5_-xV6jPFA18nQr2nuRjjpkEScqDg&amp;ec=45774424';" alt="Nato Hq Aircom Italy To Assure Nato Air Mission In Iceland 2017 An Italian Air Force Eurofighter Typhoon Jet At Keflavik Air Bas Italian Air Force Air Italy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nato Hq Aircom Italy To Assure Nato Air Mission In Iceland 2017 An Italian Air Force Eurofighter Typhoon Jet At Keflavik Air Bas Italian Air Force Air Italy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bd/62/d1bd624801e3a4aa7f8f8e5c72a0638e.jpg" data-lightbox="roadtrip" data-title="Air Force Thechive Fighter Jets Aircraft Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bd/62/d1bd624801e3a4aa7f8f8e5c72a0638e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIj5ws3_3Z_OyyuOiMYziJ0cDqUgtx0Cye4xPMZbMgiudsSpuq_SIKmIZ6IVjMzUfNy3hFQNvmSMP-19cl4rs&amp;ec=45774424';" alt="Air Force Thechive Fighter Jets Aircraft Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thechive Fighter Jets Aircraft Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/44/e5/fe44e5c8531edcd6c8bd3f70fbb9eba3.jpg" data-lightbox="roadtrip" data-title="F 16 Falcon Gamblers F 16 Fighting Falcon Fighter Jets Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/44/e5/fe44e5c8531edcd6c8bd3f70fbb9eba3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadSsSsgh1_6MHh3ku8G2kehrZ6VavewbBhtCMKxaNdtFeLzpj4U_O7M3Ny-VfmcAKuWdsP5111VY3tqEOid4&amp;ec=45774424';" alt="F 16 Falcon Gamblers F 16 Fighting Falcon Fighter Jets Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F 16 Falcon Gamblers F 16 Fighting Falcon Fighter Jets Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/52/a3/0c/52a30cf97ed761f070b78cc260e5ff02.jpg" data-lightbox="roadtrip" data-title="High Res Snow Day For These Aircraft 252 High Res Snow Day For These Aircraft 58 Hq Photos Military Pictures Aircraft Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/52/a3/0c/52a30cf97ed761f070b78cc260e5ff02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZAODYhK7Of6JBK2cRYt7FwC1K6CVAhxrd2uD1pzuG4es_vuXiw_w0vXsqiu6SgBcYpckvWYX7Y0RakpXbKU&amp;ec=45774424';" alt="High Res Snow Day For These Aircraft 252 High Res Snow Day For These Aircraft 58 Hq Photos Military Pictures Aircraft Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High Res Snow Day For These Aircraft 252 High Res Snow Day For These Aircraft 58 Hq Photos Military Pictures Aircraft Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/20/7f/de207f8fd6dbc7bd6836c5c41abac5ce.jpg" data-lightbox="roadtrip" data-title="Funny Military Pictures And Videos Cool Military Gifs Air Fighter Military Pictures Air Force Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/20/7f/de207f8fd6dbc7bd6836c5c41abac5ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwo3g9HbFzvK8098ZTNWjJ3GCbQU05YlaTcJRQbKzTYkg5_5yS8XgcvH1rT1PSK1SKtZ-XBMuecoQHbCkgHs&amp;ec=45774424';" alt="Funny Military Pictures And Videos Cool Military Gifs Air Fighter Military Pictures Air Force Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funny Military Pictures And Videos Cool Military Gifs Air Fighter Military Pictures Air Force Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/31/df/4131df6cf96fa5d2a002ab1077e1c07f.jpg" data-lightbox="roadtrip" data-title="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Aircraft Fighter Jets Fighter Planes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/31/df/4131df6cf96fa5d2a002ab1077e1c07f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VzMOtDSdVoFc9uJ8tvyyO_UwCHeoEeC_8ggtMcXmH0E7TdXRy3TGwoA0U6fOjHzvhDZ6xxLZGZcTBV8u9Y8&amp;ec=45774424';" alt="Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Aircraft Fighter Jets Fighter Planes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grandpa S Eye Candy F 4 Phantom In High Res 49 Hq Photos Aircraft Fighter Jets Fighter Planes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/31/b8/9231b87d14143b1b3bc14f66cf08b5ba.jpg" data-lightbox="roadtrip" data-title="This Is The Panavia Tornado In High Res 72 Hq Photos Fighter Jets Air Force Aircraft Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/31/b8/9231b87d14143b1b3bc14f66cf08b5ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzxsOARs_flbpy9ntQy_AVPR_zgSgCiTbola5AHTU7S1jTw3g4AGuD4YStP8iqTmh86DoFzeWwhFREt6qWZ8&amp;ec=45774424';" alt="This Is The Panavia Tornado In High Res 72 Hq Photos Fighter Jets Air Force Aircraft Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The Panavia Tornado In High Res 72 Hq Photos Fighter Jets Air Force Aircraft Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-i-claim-military-tuition-assistance-on-my-taxes.html">Can I Claim Military Tuition Assistance On My Taxes</a></li>
+													<li class="list-group-item"><a href="/can-a-military-wife-go-to-college.html">Can A Military Wife Go To College</a></li>
+													<li class="list-group-item"><a href="/campus-portal-guhsd.html">Campus Portal Guhsd</a></li>
+													<li class="list-group-item"><a href="/campus-portal-tuebingen.html">Campus Portal Tuebingen</a></li>
+													<li class="list-group-item"><a href="/cara-membuat-akun-sscn-bkn-2020.html">Cara Membuat Akun Sscn Bkn 2020</a></li>
+													<li class="list-group-item"><a href="/can-i-become-a-navy-seal-at-age-34.html">Can I Become A Navy Seal At Age 34</a></li>
+													<li class="list-group-item"><a href="/can-you-get-deployed-with-your-spouse.html">Can You Get Deployed With Your Spouse</a></li>
+													<li class="list-group-item"><a href="/can-you-find-death-records-online-for-free.html">Can You Find Death Records Online For Free</a></li>
+													<li class="list-group-item"><a href="/campus-portal-mcpasd.html">Campus Portal Mcpasd</a></li>
+													<li class="list-group-item"><a href="/campus-portal-moore.html">Campus Portal Moore</a></li>
+													<li class="list-group-item"><a href="/can-you-get-food-stamps-if-your-spouse-is-in-the-military.html">Can You Get Food Stamps If Your Spouse Is In The Military</a></li>
+													<li class="list-group-item"><a href="/can-i-view-my-military-medical-records-online.html">Can I View My Military Medical Records Online</a></li>
+													<li class="list-group-item"><a href="/can-salvation-army-pick-up-furniture.html">Can Salvation Army Pick Up Furniture</a></li>
+													<li class="list-group-item"><a href="/can-spouses-use-military-tuition-assistance.html">Can Spouses Use Military Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/can-military-spouses-get-in-state-tuition.html">Can Military Spouses Get In State Tuition</a></li>
+													<li class="list-group-item"><a href="/can-you-have-no-dependents-listed-on-an-award-at-this-time.html">Can You Have No Dependents Listed On An Award At This Time</a></li>
+													<li class="list-group-item"><a href="/can-you-be-an-lpn-in-the-military.html">Can You Be An Lpn In The Military</a></li>
+													<li class="list-group-item"><a href="/can-civilians-buy-hk416.html">Can Civilians Buy Hk416</a></li>
+													<li class="list-group-item"><a href="/can-i-change-my-fitbit-to-military-time.html">Can I Change My Fitbit To Military Time</a></li>
+													<li class="list-group-item"><a href="/campus-portal-hart.html">Campus Portal Hart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

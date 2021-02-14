@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Texas College Tuition Fee Waivers For Veterans Dependents - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Texas College Tuition Fee Waivers For Veterans Dependents",
+  "datePublished": "2021-02-14",
+  "image": "https://studentloanhero.com/wp-content/uploads/texas-grants-1-640x300.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=texas+college+tuition+fee+waivers+for+veterans+dependents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Texas College Tuition Fee Waivers For Veterans Dependents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A waiver is a type of financial assistance that allows certain nonresidents of Texas to pay the in-state tuition rate. According to CollegeBoard the average tuition and fees for public four-year institutions rose from 10210 in 2018 to 10440 in 2019. California State University San Bernardino 5500 University Parkway San Bernardino CA 92407 1 909 537-5000. <br>				
+			</p>
+										<a class="badge badge-dark" href="/can-military-spouses-get-tuition-assistance.html">can military spouses get tuition assistance</a>
+											<a class="badge badge-success" href="/campus-portal-mcpasd.html">campus portal mcpasd</a>
+											<a class="badge badge-primary" href="/can-you-wear-contact-lenses-in-the-army.html">can you wear contact lenses in the army</a>
+											<a class="badge badge-secondary" href="/can-a-spouse-waive-military-retirement.html">can a spouse waive military retirement</a>
+											<a class="badge badge-info" href="/can-salvation-army-pick-up-furniture.html">can salvation army pick up furniture</a>
+											<a class="badge badge-dark" href="/career-after-msc-finance.html">career after msc finance</a>
+											<a class="badge badge-warning" href="/can-i-view-death-records-online.html">can i view death records online</a>
+											<a class="badge badge-light" href="/can-army-wives-live-on-base.html">can army wives live on base</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal site.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="H21uz-vTZ5L84M" data-lightbox="roadtrip" data-title="Https Www Nctc Edu Documents Financial Aid Tuition Waiver Request Pdf">
+											<img class="card-img v-image ads-img " src="H21uz-vTZ5L84M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQt8BymV10pXD-1arOJ0igIxubQZmiiIdmpXUxh_IxUUzkjYN12aFL7jhH8FN4z_6RZV4syZCI4zg6Jv9m-Vw&amp;ec=45774424';" alt="Https Www Nctc Edu Documents Financial Aid Tuition Waiver Request Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Nctc Edu Documents Financial Aid Tuition Waiver Request Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/b4/16/a4b41652f96b1e1e42e553d3dfbf1650.png" data-lightbox="roadtrip" data-title="Pin On College Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/b4/16/a4b41652f96b1e1e42e553d3dfbf1650.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzeFEY5jdVtuInBqx8TjolSDboatV_01M-1F6p4uXhMaszHkZurk-yjcaorwGjGhyUmwkL09PwvY7IbXCHNU&amp;ec=45774424';" alt="Pin On College Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/7860286/1/500x640/2002-2004-college-catalogs-central-texas-college.jpg" data-lightbox="roadtrip" data-title="2002 2004 College Catalogs Central Texas College">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/7860286/1/500x640/2002-2004-college-catalogs-central-texas-college.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2nkx_MvZmwNnqFU2Bw5jf0KILLUVO1JILVK49ZobYz8s-2mfnE3W86wQV3GUrOCFKh3kjpqJdp1g7tgmwoY&amp;ec=45774424';" alt="2002 2004 College Catalogs Central Texas College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2002 2004 College Catalogs Central Texas College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.myhoustondivorce.lawyer/wp-content/uploads/2019/02/when-does-child-support-end-in-texas_1.jpg?resize=500%2C750&amp;ssl=1" data-lightbox="roadtrip" data-title="Child Support For College Students In Texas">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.myhoustondivorce.lawyer/wp-content/uploads/2019/02/when-does-child-support-end-in-texas_1.jpg?resize=500%2C750&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkdC6rUsWvL__nAsRT0DI2Q530HaWndsSfF8XFCEos_K2l4BHmK888f8YibUH6kC52EE-ZEujIQoNMyi-K6rk&amp;ec=45774424';" alt="Child Support For College Students In Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Child Support For College Students In Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="bMUB6qDx7ZUhSM" data-lightbox="roadtrip" data-title="Http Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Archives Ci Ctc Catalog 10 11 Ci Sp11 Pdf">
+											<img class="card-img v-image ads-img " src="bMUB6qDx7ZUhSM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2aCwOlX5cHPHGmnPe5UDQqROJ2mBP-idHTn0ZYvCdkb1Y0UPwzzuWjMgGaJidFNIxl4FAA3xTjc_H8koj2A&amp;ec=45774424';" alt="Http Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Archives Ci Ctc Catalog 10 11 Ci Sp11 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Archives Ci Ctc Catalog 10 11 Ci Sp11 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/hazelwood-act-military-benefits.jpg" data-lightbox="roadtrip" data-title="Hazelwood Act Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/hazelwood-act-military-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDwT0i_Q2b1LUYsE5tuqDFsiBbZba9XsvSFJebMERvArPbRu_a9RBdtx1_aG_JnM75G9616w-I1YgqURUaLI&amp;ec=45774424';" alt="Hazelwood Act Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hazelwood Act Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="YXl9l8vW4qU0nM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDwT0i_Q2b1LUYsE5tuqDFsiBbZba9XsvSFJebMERvArPbRu_a9RBdtx1_aG_JnM75G9616w-I1YgqURUaLI&amp;ec=45774424';" alt="Hazelwood Act Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>The College Fee Waiver for Veteran Dependents benefit waives mandatory system-wide tuition and fees at any State of California Community College California State University or University of California campus.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Texas college tuition fee waivers for veterans dependents</strong>. 
+								
+																	The veteran must have been declared missing in action or a prisoner of war while serving in the armed forces after January 1 1960. 
+																	Get more information about the DEA program. 
+																	Some academic programs at these institutions that are considered self-supported commonly referred to as extension courses or extended. 
+																	Partnering with the State of Texas to ensure affordability of higher education for all students Collin offers numerous State and local Board authorized tuition andor fee exemptions and waivers for eligible students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are eligible to receive a waiver of all tuition and fees if your parent or spouse was an eligible veteran or National Guard member who. 
+																	Learn More About the CalVet College Fee Waiver Find Your Local County Veteran Service Officers. 
+																	The College Tuition Fee Waiver for Veteran Dependents benefit waives mandatory system-wide tuition and fees at any State of California Community College California State University or University of California campus. 
+																	The College Tuition Fee Waiver for the Dependents of Veterans -- sometimes called the CalVet Fee Waiver -- is a state benefit that provides a tuition-free education at the CSU and the other state public post-secondary colleges and universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Services or National Guard go on to college. 
+																	This benefit provides qualified veterans an education benefit of up to 150 hours of tuition exemption including most fee charges at public institutions of higher education in Texas. 
+																	College tuition can be waived for veterans and their kids in Texas A state program you may not know about can make a difference not only for veterans but their kids when it comes to paying for. 
+																	The tuition will be limited to 250 per semester hour and textbooks and applicable fees will be limited to a combined 1000 total per student for each semester. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A dependent child under 23 years of age or spouse in the state is entitled to receive free tuition maintenance fees student activity fees registration fees and to be admitted without cost to any of the colleges or universities owned operated and maintained by the. 
+																	The exemption does not include living expenses books or supply fees. 
+																	If youre serving in the military and seeking higher education at a Texas college or university this section will walk you through some important information on special benefits and rules. 
+																	Dependent children of a Connecticut veteran qualify for a tuition waiver if attending a state public college or university. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Exemptions and Waiver An exemption is a type of financial assistance that exempts certain Texas residents from the payment of partial or full tuition and in some cases mandatory fees. 
+																	Over the same year the average cost of four-year private schools rose from 35680 to 36880. 
+																	Not the entire fee package is waived but this program usually waives about 90 percent of the fees. 
+																	This program does not cover the expense of books parking or room and board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are three additional tuition fee waiver programs that qualify veterans under CTFW including Plans A C and D. 
+																	Tuition Waivers Exemptions and Rebate. 
+																	Fortunately for veterans and dependents the GI Bill helps cover a significant portion of college-related costs. 
+																	This plan entitles the children natural adopted and step children of disabled veterans at any percentage for a waiver of most of the fees also referred to as tuition at the aforementioned institutions of higher learning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plan A includes the children and spouse unmarried widow andor registered domestic partner of a 100 percent disabled veteran to receive the tuition fee waiver under certain circumstances. 
+																	If eligibility criteria are met use of the CalVet College Fee Waiver for Veterans Dependents may be applied to state-supported programs in the CCC CSU and UC systems. 
+																	Many Texans in the US. 
+																	This program does not cover the expense of books parking or room and board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The scholarship amount will depend on the disability rating of the veteran and both the veteran and qualifying dependent or spouse must meet Alabama residency and age requirements. 
+																	Please click the link below to access the tuition waivers and exemptions offered at Collin. 
+																	The Survivors and Dependents Educational Assistance DEA program offers education and training to qualified dependents of Veterans who are permanently and totally disabled because of a service-related condition or who died while on active duty or as a result of a service-related condition. 
+																	They also waive undergraduate tuition and fees up to 200 quarter credits or equivalent semester credits for dependents of 100 disabled veterans who are eligible at state community colleges colleges and universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependents Tuition Waiver Dependents of Certain Veterans Tuition Fees. 
+																	Became totally disabled a person who has been determined to be 100 percent disabled by the Federal Department of Veteran Affairs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="SkO2atLRGc82NM" data-lightbox="roadtrip" data-title="Https Www Nctc Edu Catalog All Catalogs Nctc 17 18 Catalog Pdf">
+											<img class="card-img v-image ads-img " src="SkO2atLRGc82NM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1uTyFfM7ofqamhCszoSIzuBLjgLv32PDCiX0BCg5MMuVvHBOtLIFn6ohFW9OIcAFKhXB5_eEJD5VreGOYBM&amp;ec=45774424';" alt="Https Www Nctc Edu Catalog All Catalogs Nctc 17 18 Catalog Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Nctc Edu Catalog All Catalogs Nctc 17 18 Catalog Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.collegescholarships.org/images/texas-grants.jpg" data-lightbox="roadtrip" data-title="Texas College Grants Free School Grants For Students In Tx">
+											<img class="card-img v-image ads-img " src="http://www.collegescholarships.org/images/texas-grants.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6NvKQYG5d-Qqi9VmFcUywW6XDIlo8hKI4p-gZiqRPgkdvBn_HxNEQzUavodetU63I2E6CsrYD9uP97cdKy8&amp;ec=45774424';" alt="Texas College Grants Free School Grants For Students In Tx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas College Grants Free School Grants For Students In Tx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/texas-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Texas Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/texas-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_2PJ55F_Sz6r6aV04as2iwDQ763NtOJoSvPIgPg3iHLPFs2GHyBn42ZVbisVVovrMfLy6_eyab3sholdv7E&amp;ec=45774424';" alt="Texas Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="tLUb1h56qV4ZRM" data-lightbox="roadtrip" data-title="Http Www Thecb State Tx Us Docid Pdf 12818 Pdf">
+											<img class="card-img v-image ads-img " src="tLUb1h56qV4ZRM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwI17g6t6PsN1Xqm_7onpQUvlpelENaXGfEgyrfeBziQi8qykTAUGs7yUI6PXEtdGTBSin62MWfWOYmB4d1yA&amp;ec=45774424';" alt="Http Www Thecb State Tx Us Docid Pdf 12818 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Thecb State Tx Us Docid Pdf 12818 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://studentloanhero.com/wp-content/uploads/texas-grants-1-640x300.jpg" data-lightbox="roadtrip" data-title="Texas Grants Best Options And How To Apply Student Loan Hero">
+											<img class="card-img v-image ads-img " src="https://studentloanhero.com/wp-content/uploads/texas-grants-1-640x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zxkU9VijRdKcom-V_CMFrPw3x-sfU177FlEukZZSuRb-VjW77a6f4tMLSmDSj1eBNIp2vkkB1wfp8Y5kEV4&amp;ec=45774424';" alt="Texas Grants Best Options And How To Apply Student Loan Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Grants Best Options And How To Apply Student Loan Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="i1WIj9wZoDB-8M" data-lightbox="roadtrip" data-title="Http Www Txcollegetobaccopolicy Org File 424 Download">
+											<img class="card-img v-image ads-img " src="i1WIj9wZoDB-8M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM35QIrSLH-cMbqNzVxhJb3Kr5JCMi1m7qvYiM2RZxDy7JJ8vZt4RvpU6moAokK8xwdqmgqE9eSyjvvtKXagg&amp;ec=45774424';" alt="Http Www Txcollegetobaccopolicy Org File 424 Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Txcollegetobaccopolicy Org File 424 Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="3KmTCIyN2zsZFM" data-lightbox="roadtrip" data-title="Https Nah Southtexascollege Edu Pdf Nah Student Handbook Pdf">
+											<img class="card-img v-image ads-img " src="3KmTCIyN2zsZFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIZuN8ZtXXYU7icUr5EjldVW1BVJCGhc9081JJ8K2b67bxebCzrYVP1a6mXCDB992hBhBeD9kg1ekVTIenVQ&amp;ec=45774424';" alt="Https Nah Southtexascollege Edu Pdf Nah Student Handbook Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Nah Southtexascollege Edu Pdf Nah Student Handbook Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.collegeaffordabilityguide.org/wp-content/themes/cag-2016/images/badges/states/2018/badge-texas.png" data-lightbox="roadtrip" data-title="15 Cheap Colleges In Texas 2020 Texas College Rankings">
+											<img class="card-img v-image ads-img " src="https://www.collegeaffordabilityguide.org/wp-content/themes/cag-2016/images/badges/states/2018/badge-texas.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmVQOeWdDQD7rVsEGZ7SZTQvctJtoRlq3NRfhZt7rLS_RLBTz92wKTDYzdfTAA4Tosf4Ba7HTX85OVxIPA6Nk&amp;ec=45774424';" alt="15 Cheap Colleges In Texas 2020 Texas College Rankings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Cheap Colleges In Texas 2020 Texas College Rankings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="9jFm3sBQPxBurM" data-lightbox="roadtrip" data-title="Https Hr Southtexascollege Edu Pdf Employeehandbook Pdf">
+											<img class="card-img v-image ads-img " src="9jFm3sBQPxBurM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFxntDdrLgS7ZTmyYDRtAvU9Wgu228HVfETqjSvlgF60-qTu2oTDecE20jARELhV88jzByLao08821qxReV0E&amp;ec=45774424';" alt="Https Hr Southtexascollege Edu Pdf Employeehandbook Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Hr Southtexascollege Edu Pdf Employeehandbook Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YXl9l8vW4qU0nM" data-lightbox="roadtrip" data-title="Http Library Com Edu Comhistory Catalogs 19841985catalog Pdf">
+											<img class="card-img v-image ads-img " src="YXl9l8vW4qU0nM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDITRTYUqqDadKVxveKq4-UkQbCBhxFJ-densiwe2863BjfqPa6Bb9GfKQ0sTj9jVgMbQq0NZ9XHK-UwoWuws&amp;ec=45774424';" alt="Http Library Com Edu Comhistory Catalogs 19841985catalog Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Library Com Edu Comhistory Catalogs 19841985catalog Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="9GTF0e0Zwnsf1M" data-lightbox="roadtrip" data-title="Https Www Uh Edu Pharmacy Prospective Students Pharmd Docs Uh Stc 2017 Pdf">
+											<img class="card-img v-image ads-img " src="9GTF0e0Zwnsf1M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbgKcDsRwgTYzW8aaXXf-3GzA833eNHVvbpd-rqDKEECGZOaiE22xtvJnddC8W8zTDUqFKoIcuK8RdzXdi5M&amp;ec=45774424';" alt="Https Www Uh Edu Pharmacy Prospective Students Pharmd Docs Uh Stc 2017 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Uh Edu Pharmacy Prospective Students Pharmd Docs Uh Stc 2017 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gw-APLDz5tdUFM" data-lightbox="roadtrip" data-title="Https Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Ci Ci Catalog 2020 Pdf">
+											<img class="card-img v-image ads-img " src="gw-APLDz5tdUFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTru5q7xSWgLEXFeDlEdQ8l7pBDj607tjZXzl2d3zhwIHc8kCsomNjwjByPBYfQTwJihf4t4iTQkLu5kZgczEM&amp;ec=45774424';" alt="Https Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Ci Ci Catalog 2020 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ctcd Edu Sites Ctcd Assets File Academics Catalogs Ci Ci Catalog 2020 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="JovAeSWAqBNqYM" data-lightbox="roadtrip" data-title="Http Www Ctcd Edu Students Current Ctc Students Student Handbook Texas">
+											<img class="card-img v-image ads-img " src="JovAeSWAqBNqYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_k2oxd2RzuFw1zALlWOtolceuSkSZGVJAtZPVJFbTsefowH3AxVYmjbCOdBdFMLdNF_iAPV-_73MaoQcrLOk&amp;ec=45774424';" alt="Http Www Ctcd Edu Students Current Ctc Students Student Handbook Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Ctcd Edu Students Current Ctc Students Student Handbook Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/deployment-quotes-for-brother.html">Deployment Quotes For Brother</a></li>
+													<li class="list-group-item"><a href="/department-of-veteran-affairs-records-management-center.html">Department Of Veteran Affairs Records Management Center</a></li>
+													<li class="list-group-item"><a href="/dallas-va-medical-records-request.html">Dallas Va Medical Records Request</a></li>
+													<li class="list-group-item"><a href="/dental-insurance-active-duty-military-dependents.html">Dental Insurance Active Duty Military Dependents</a></li>
+													<li class="list-group-item"><a href="/death-benefits-for-military-spouses.html">Death Benefits For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/dependent-va-benefits-for-education.html">Dependent Va Benefits For Education</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-records-management-center-phone-number.html">Department Of Veterans Affairs Records Management Center Phone Number</a></li>
+													<li class="list-group-item"><a href="/convert-military-time-to-regular-hours.html">Convert Military Time To Regular Hours</a></li>
+													<li class="list-group-item"><a href="/deers-military-dependent-eligibility.html">Deers Military Dependent Eligibility</a></li>
+													<li class="list-group-item"><a href="/crs-points-for-spouse-education.html">Crs Points For Spouse Education</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-records-retention-schedule.html">Department Of Veterans Affairs Records Retention Schedule</a></li>
+													<li class="list-group-item"><a href="/dental-insurance-for-retired-military-spouse.html">Dental Insurance For Retired Military Spouse</a></li>
+													<li class="list-group-item"><a href="/dependent-visa-in-japan-age-limit.html">Dependent Visa In Japan Age Limit</a></li>
+													<li class="list-group-item"><a href="/deployment-survival-kit-for-spouses.html">Deployment Survival Kit For Spouses</a></li>
+													<li class="list-group-item"><a href="/cost-of-ncaa-eligibility-center.html">Cost Of Ncaa Eligibility Center</a></li>
+													<li class="list-group-item"><a href="/deployed-spouses-benefit-card.html">Deployed Spouses Benefit Card</a></li>
+													<li class="list-group-item"><a href="/deployment-gifts-for-daughter.html">Deployment Gifts For Daughter</a></li>
+													<li class="list-group-item"><a href="/davenport-florida-military-wife-deported.html">Davenport Florida Military Wife Deported</a></li>
+													<li class="list-group-item"><a href="/deployed-military-spouse-benefits.html">Deployed Military Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/convert-military-time-to-hours-in-excel.html">Convert Military Time To Hours In Excel</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

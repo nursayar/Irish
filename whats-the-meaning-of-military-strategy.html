@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Whats The Meaning Of Military Strategy - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Whats The Meaning Of Military Strategy",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/cb/46/49/cb4649af0867cda4da5432198783634f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=whats+the+meaning+of+military+strategy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Whats The Meaning Of Military Strategy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Often contrasted with tactics see tactic he was a genius when it came to military strategy. National Military Strategy The National Military Strategy is issued by the Chairman of the Joint Chiefs of Staff as a deliverable to the Secretary of Defense briefly outlining the strategic aims of the armed services. 1 a 1. <br>				
+			</p>
+										<a class="badge badge-primary" href="/air-force-academy-human-resources.html">air force academy human resources</a>
+											<a class="badge badge-success" href="/air-force-1-hrvatska.html">air force 1 hrvatska</a>
+											<a class="badge badge-info" href="/1973-fire-that-destroyed-military-records.html">1973 fire that destroyed military records</a>
+											<a class="badge badge-warning" href="/advantages-of-being-a-navy-officer.html">advantages of being a navy officer</a>
+											<a class="badge badge-info" href="/1965-war-air-force-heroes.html">1965 war air force heroes</a>
+											<a class="badge badge-info" href="/air-force-college-scholarship-program.html">air force college scholarship program</a>
+											<a class="badge badge-light" href="/air-force-1-blue-hero.html">air force 1 blue hero</a>
+											<a class="badge badge-info" href="/24-hour-analog-military-time-clock.html">24 hour analog military time clock</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/97/22/3e97226c0559f06c9543f608e3bddd50.jpg" data-lightbox="roadtrip" data-title="Acg S Basic Guide To Military Unit Symbols Military Tactics Military Units Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/97/22/3e97226c0559f06c9543f608e3bddd50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEBE6lSuKGFgKkCLsrZXy90FSCOVklgvB-A';" alt="Acg S Basic Guide To Military Unit Symbols Military Tactics Military Units Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acg S Basic Guide To Military Unit Symbols Military Tactics Military Units Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/dd/d0/d5ddd0ef9ad0c9ed5bd6a1513d69f548.gif" data-lightbox="roadtrip" data-title="Maniple Meaning Handful Was A Tactical Unit Formation It Was Also The Name Of The Military Insignia Carried By S Roman Legion Ancient Warfare Military Units">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/dd/d0/d5ddd0ef9ad0c9ed5bd6a1513d69f548.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLWvngWZNgCkppm9L3AvrPpASPhbUHVGqwg';" alt="Maniple Meaning Handful Was A Tactical Unit Formation It Was Also The Name Of The Military Insignia Carried By S Roman Legion Ancient Warfare Military Units">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maniple Meaning Handful Was A Tactical Unit Formation It Was Also The Name Of The Military Insignia Carried By S Roman Legion Ancient Warfare Military Units</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/d3/6b/efd36b9481a36fe63fb8c56b6500542d.jpg" data-lightbox="roadtrip" data-title="Spoilers Cersei Better Use Basic Military Strategy In Ep 5 Music Indieartist Chicago Cersei Malcom Tyrion Lannister">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/d3/6b/efd36b9481a36fe63fb8c56b6500542d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQNcDB6pPIwcILlG4nc9HTfwCt-XH4MykyA';" alt="Spoilers Cersei Better Use Basic Military Strategy In Ep 5 Music Indieartist Chicago Cersei Malcom Tyrion Lannister">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spoilers Cersei Better Use Basic Military Strategy In Ep 5 Music Indieartist Chicago Cersei Malcom Tyrion Lannister</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/61/a4/8d61a4acdf3f24d7f55cf30b26c74824.jpg" data-lightbox="roadtrip" data-title="18 Quotes From Sun Tzu Art Of War For Politics Business And Sports War Quotes Art Of War Quotes Battle Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/61/a4/8d61a4acdf3f24d7f55cf30b26c74824.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMDPZaE4IoF3DzxPMnFkciJSPXtSOL2exvg';" alt="18 Quotes From Sun Tzu Art Of War For Politics Business And Sports War Quotes Art Of War Quotes Battle Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Quotes From Sun Tzu Art Of War For Politics Business And Sports War Quotes Art Of War Quotes Battle Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/98/7d/16987d26653a9d4a7ed17e581b66ba8e.png" data-lightbox="roadtrip" data-title="Formations Of The Legion Strategy Tactics Military Tactics Roman History Roman Legion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/98/7d/16987d26653a9d4a7ed17e581b66ba8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQevZk3K9sen0Tb8DO0aMQFun1NB4h2b9a_qA';" alt="Formations Of The Legion Strategy Tactics Military Tactics Roman History Roman Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Formations Of The Legion Strategy Tactics Military Tactics Roman History Roman Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/15/e3/f415e3ce5532ea7e0a11f98c913dc3e1.jpg" data-lightbox="roadtrip" data-title="Here Are The Types Of Nato Type Military Unit Symbols Fielded In 2025 2070 Map Symbols Military Units Weather Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/15/e3/f415e3ce5532ea7e0a11f98c913dc3e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKHG_V9bGb2RVhW2VcKB25MLwgsKedExWVQ';" alt="Here Are The Types Of Nato Type Military Unit Symbols Fielded In 2025 2070 Map Symbols Military Units Weather Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are The Types Of Nato Type Military Unit Symbols Fielded In 2025 2070 Map Symbols Military Units Weather Map</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3e/97/22/3e97226c0559f06c9543f608e3bddd50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKHG_V9bGb2RVhW2VcKB25MLwgsKedExWVQ';" alt="Here Are The Types Of Nato Type Military Unit Symbols Fielded In 2025 2070 Map Symbols Military Units Weather Map">
+										<div class="card-body">
+						<h3 class="h5"><b>This page contains a list of military tactics.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Whats the meaning of military strategy</strong>. 
+								
+																	Ends objectives ways courses of action means resources and risk. 
+																	Strategy is the art of planning the best way to gain an advantage or achieve success especially in war. 
+																	A prudent idea or set of ideas for employing the instruments of national power in a synchronized and integrated fashion to achieve theater national andor multinational objectives. 
+																	A detailed plan for achieving success in situations such as war politics business industry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Strategy is the utilization during both war and peace of all the nations forces through large scale long range planning and development to ensure large scale victory and to ensure security. 
+																	National Military Strategy refers to a document that is approved by the Chairman of the Joint Chiefs of Staff for distributing and applying military power to attain national security strategy and national defense strategy objectivesAlso called NMS. 
+																	Ive just been explaining the basic principles of strategy to my generals. 
+																	DEFINITION MILITARY STRATEGY IS THE SET OF STRATEGIES IMPLEMENTED BY MILITARY TO PURSUE THEIR DESIRED STRATEGIC GOALS MILITARY THEORY OF STRATEGY DEFINES. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Exploiting prevailing weather the tactical use of weather as a force multiplier has influenced many important. 
+																	Military strategy is a set of ideas implemented by military organizations to pursue desired strategic goals. 
+																	The strategoi were mainly military leaders with. 
+																	The science and art of employing the political economic psychological and military forces of a nation or group of nations to afford the maximum support to adopted policies in peace or war. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It takes place in wartime and peacetime and may involve using force directly or indirectly as a threat. 
+																	Military strategy definition meaning English dictionary synonym see also military academymilitary engineeringmilitary honoursmilitary law Reverso. 
+																	In this sense strategy refers Once the enemy has been engaged attention shifts to tactics. 
+																	Strategy easily leaves the rigours of a military connection because today it is very largely naked of inherent meaning instead being deployable in aid of my number of purposes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military strategies are methods of arranging and maneuvering large bodies of military forces during armed conflicts. 
+																	Military strategy deals with problems in the theory and practice of preparing armed forces for war and with the planning and conduct of war. 
+																	Military strategy The art and science of employing the armed forces of a nation to secure the objectives of national policy by the application of force or the threat of force. 
+																	The science and art of military command exercised to meet the enemy in combat under advantageous conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 mass noun The art of planning and directing overall military operations and movements in a war or battle. 
+																	Strategy in warfare the science or art of employing all the military economic political and other resources of a country to achieve the objects of war. 
+																	Military strategy is the practice of reducing an adversarys physical capacity and willingness to fight and continuing to do so until ones aim is achieved. 
+																	Plan approach scheme manoeuvring More Synonyms of strategy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Strategy a component of the art of war and the highest level thereof. 
+																	Derived from the Greek word strategos the term strategy when it appeared in use during the 18th century was seen in its narrow sense as the art of the general or the art of arrangement of troops. 
+																	Military strategy is often divided into four components. 
+																	Strategy is the development and use of power The official American military doctrinal definition of the word strategy is as follows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the military context from whence it came there is always the spur to performance provided by an adversary. 
+																	The meaning of the phrase is context sensitive and has varied over time like the difference between strategy and tactics. 
+																	It is closely linked with state policy upon which it directly depends and corresponds to the requirements of military doctrine. 
+																	Strategy is a term that comes from the Greek strategia meaning generalship In the military strategy often refers to maneuvering troops into position before the enemy is actually engaged. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The term strategy derives from the Greek strategos an elected general in ancient Athens. 
+																	The NMSs chief source of guidance is the National Security Strategy document. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/46/49/cb4649af0867cda4da5432198783634f.jpg" data-lightbox="roadtrip" data-title="Advanced Tactics Discussion Page 2 Total War Forums Military Tactics Ancient Warfare Ancient War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/46/49/cb4649af0867cda4da5432198783634f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGZH0JEiV4r9ezzF5WG-QiM7daWccgVIIzw';" alt="Advanced Tactics Discussion Page 2 Total War Forums Military Tactics Ancient Warfare Ancient War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advanced Tactics Discussion Page 2 Total War Forums Military Tactics Ancient Warfare Ancient War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/d9/af/63d9afbda8b75138f2f6fc7bfd22ac03.jpg" data-lightbox="roadtrip" data-title="All Warfare Is Based On Deception Therefore When Capable Feign Incapacity When Active Inactivity When Near Make It Ap War Quotes Sun Tzu Strategy Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/d9/af/63d9afbda8b75138f2f6fc7bfd22ac03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6owDmBAKt77QaYuvHJryvteAP9iG-z406vQ';" alt="All Warfare Is Based On Deception Therefore When Capable Feign Incapacity When Active Inactivity When Near Make It Ap War Quotes Sun Tzu Strategy Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Warfare Is Based On Deception Therefore When Capable Feign Incapacity When Active Inactivity When Near Make It Ap War Quotes Sun Tzu Strategy Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/6d/0d/0f6d0d38fa1d47d31d517840b8c2c2dc.jpg" data-lightbox="roadtrip" data-title="The Latest In Military Strategy Mindfulness Mindfulness Training Mindfulness Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/6d/0d/0f6d0d38fa1d47d31d517840b8c2c2dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCutS_UnkmO9wUurSDmZgpquhNy3Q_D-NbTQ';" alt="The Latest In Military Strategy Mindfulness Mindfulness Training Mindfulness Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Latest In Military Strategy Mindfulness Mindfulness Training Mindfulness Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/41/8d/c8418dae849a74e149493c20ae8d5945.jpg" data-lightbox="roadtrip" data-title="Military Sign Language Hand Signals Military Signs Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/41/8d/c8418dae849a74e149493c20ae8d5945.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrWKTODz8wmL6BJI8R4CvFugEQ3EY6BmQjDg';" alt="Military Sign Language Hand Signals Military Signs Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Sign Language Hand Signals Military Signs Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Battle_issus_decisive.png/220px-Battle_issus_decisive.png" data-lightbox="roadtrip" data-title="List Of Military Tactics Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Battle_issus_decisive.png/220px-Battle_issus_decisive.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojEUY8pyfKdrGWFx1AO16gmpMdtcoR2yfdQ';" alt="List Of Military Tactics Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Military Tactics Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/18/16/c818169cc8a8cac6de7e2d44c60d4bca.jpg" data-lightbox="roadtrip" data-title="Army Patches Us Army Patches Army Patches Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/18/16/c818169cc8a8cac6de7e2d44c60d4bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlcI63eboPW4DqJhCeHFzN3NqIqJIhH82lw';" alt="Army Patches Us Army Patches Army Patches Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Patches Us Army Patches Army Patches Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/2c/91/412c91cc2a07c0fff932656f75395174.jpg" data-lightbox="roadtrip" data-title="Us Airforce Wings United States Air Force Military Insignia Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/2c/91/412c91cc2a07c0fff932656f75395174.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqShDVNmRmKxh--QVSf6zJiEO40KwA94oWA';" alt="Us Airforce Wings United States Air Force Military Insignia Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Airforce Wings United States Air Force Military Insignia Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/ae/86/f6ae862ae8d30153c91a8000a7a2441c.png" data-lightbox="roadtrip" data-title="Encouraging Words For Someone Joining The Military Training The Military Is Faithful To The Consti Words Of Encouragement Funny Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/ae/86/f6ae862ae8d30153c91a8000a7a2441c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWO4f29OtDMzpPfPXttmMiDHeAS5p9vjNZ0Q';" alt="Encouraging Words For Someone Joining The Military Training The Military Is Faithful To The Consti Words Of Encouragement Funny Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Encouraging Words For Someone Joining The Military Training The Military Is Faithful To The Consti Words Of Encouragement Funny Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9f/31/c9/9f31c9fe55c32c58aa776aed34996700.jpg" data-lightbox="roadtrip" data-title="Victory Applying The Proven Principles Of Military Strategy To Achieve Greater Success In Your Business And Personal Brian Tracy How To Apply Self Help Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9f/31/c9/9f31c9fe55c32c58aa776aed34996700.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawo8eO65o7QXWGHX3spFPgdVzZEVBmgJFhw';" alt="Victory Applying The Proven Principles Of Military Strategy To Achieve Greater Success In Your Business And Personal Brian Tracy How To Apply Self Help Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victory Applying The Proven Principles Of Military Strategy To Achieve Greater Success In Your Business And Personal Brian Tracy How To Apply Self Help Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/b1/df/d2b1dfea53499ac79faf65526ea7562a.png" data-lightbox="roadtrip" data-title="Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Warfare In 2020 War Quotes Inspirational Military Quotes Military Appreciation Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/b1/df/d2b1dfea53499ac79faf65526ea7562a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxVihd6pKSUTN-syyq5IjVfrCRskfgkN1u-g';" alt="Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Warfare In 2020 War Quotes Inspirational Military Quotes Military Appreciation Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Warfare In 2020 War Quotes Inspirational Military Quotes Military Appreciation Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/b8/46/1db846f6ef52f66c53047f99f97c369d.jpg" data-lightbox="roadtrip" data-title="Pin On Military Insignia Symbols Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/b8/46/1db846f6ef52f66c53047f99f97c369d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEKaJhOz9-KUt5B-DmiodByigRofIZN1GylA';" alt="Pin On Military Insignia Symbols Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Insignia Symbols Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/b0/5b/59b05bb6de34fecccdfa1e239d9b3dbc.jpg" data-lightbox="roadtrip" data-title="Basic Military Hand Signals Hand Signals Survival Skills Survival Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/b0/5b/59b05bb6de34fecccdfa1e239d9b3dbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2rFr094GHu_TAgsbIaaW3VKlZ2wiDYL2ivw';" alt="Basic Military Hand Signals Hand Signals Survival Skills Survival Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basic Military Hand Signals Hand Signals Survival Skills Survival Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/04/f1/7804f1b5509327dc9f5d38b7b822586b.png" data-lightbox="roadtrip" data-title="Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Enemy Fi War Quotes Military Appreciation Quotes Inspirational Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/04/f1/7804f1b5509327dc9f5d38b7b822586b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOC1Hpc46nPWKYKaRilkxaCulTbjNTmGrfxQ';" alt="Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Enemy Fi War Quotes Military Appreciation Quotes Inspirational Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sun Tzu Art Of War Quotes On Enemy Strategy Leadership Sun Tzu Quotes About Enemy Fi War Quotes Military Appreciation Quotes Inspirational Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/life-as-an-army-wife-uk.html">Life As An Army Wife Uk</a></li>
+													<li class="list-group-item"><a href="/life-of-army-dental-corps.html">Life Of Army Dental Corps</a></li>
+													<li class="list-group-item"><a href="/life-of-army-doctor-quora.html">Life Of Army Doctor Quora</a></li>
+													<li class="list-group-item"><a href="/login-to-my-time-warner-cable-email.html">Login To My Time Warner Cable Email</a></li>
+													<li class="list-group-item"><a href="/life-of-army-doctor.html">Life Of Army Doctor</a></li>
+													<li class="list-group-item"><a href="/liberty-university-military-spouse-tuition.html">Liberty University Military Spouse Tuition</a></li>
+													<li class="list-group-item"><a href="/life-of-a-navy-officer-wife.html">Life Of A Navy Officer Wife</a></li>
+													<li class="list-group-item"><a href="/man-u-uk.html">Man U Uk</a></li>
+													<li class="list-group-item"><a href="/little-rock-air-force-base-gym-hours.html">Little Rock Air Force Base Gym Hours</a></li>
+													<li class="list-group-item"><a href="/login-sscn-bkn-data-go-id-2019.html">Login Sscn Bkn Data Go Id 2019</a></li>
+													<li class="list-group-item"><a href="/login-to-my-car-tax.html">Login To My Car Tax</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-4-0.html">Man Utd Vs Chelsea 4 0</a></li>
+													<li class="list-group-item"><a href="/lums-scholarship-for-mba.html">Lums Scholarship For Mba</a></li>
+													<li class="list-group-item"><a href="/life-of-army-medical-doctor.html">Life Of Army Medical Doctor</a></li>
+													<li class="list-group-item"><a href="/life-of-army-soldier.html">Life Of Army Soldier</a></li>
+													<li class="list-group-item"><a href="/login-to-my-hikvision-cameras.html">Login To My Hikvision Cameras</a></li>
+													<li class="list-group-item"><a href="/login-to-my-google-classroom.html">Login To My Google Classroom</a></li>
+													<li class="list-group-item"><a href="/life-of-army-reserve.html">Life Of Army Reserve</a></li>
+													<li class="list-group-item"><a href="/man-kills-wife-at-navy-federal.html">Man Kills Wife At Navy Federal</a></li>
+													<li class="list-group-item"><a href="/korean-war-veteran-service-records.html">Korean War Veteran Service Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

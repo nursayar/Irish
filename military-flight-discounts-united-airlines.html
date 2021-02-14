@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Flight Discounts United Airlines - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Flight Discounts United Airlines",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/84/31/70/8431700a89ab3520586b0593815e94e8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+flight+discounts+united+airlines",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Flight Discounts United Airlines</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">United Airlines Honors You. Another option with comparable military discounts and perks is United Airlines. Do you want to use a recent search. <br>				
+			</p>
+										<a class="badge badge-danger" href="/military-cap-loan.html">military cap loan</a>
+											<a class="badge badge-info" href="/mfa-programs-with-full-scholarships.html">mfa programs with full scholarships</a>
+											<a class="badge badge-dark" href="/military-boots-in-hk.html">military boots in hk</a>
+											<a class="badge badge-danger" href="/military-benefits-for-a-divorced-spouse.html">military benefits for a divorced spouse</a>
+											<a class="badge badge-warning" href="/military-claiming-parents-as-dependents.html">military claiming parents as dependents</a>
+											<a class="badge badge-secondary" href="/military-cap-crossword-dan.html">military cap crossword dan</a>
+											<a class="badge badge-secondary" href="/military-benefits-for-child-college.html">military benefits for child college</a>
+											<a class="badge badge-light" href="/military-cap-xl.html">military cap xl</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/6b/3d/456b3d360611794c7fb4c35032342d22.jpg" data-lightbox="roadtrip" data-title="Book Flights Tickets From United Airlines Number Book Flight Tickets United Airlines The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/6b/3d/456b3d360611794c7fb4c35032342d22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-FoD53eQN7jxhNDzeUND9lWSislekS7SXQ';" alt="Book Flights Tickets From United Airlines Number Book Flight Tickets United Airlines The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Flights Tickets From United Airlines Number Book Flight Tickets United Airlines The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/b8/ca/a2b8cad900e0e73342cd5d44c9fbb297.jpg" data-lightbox="roadtrip" data-title="Pin By Military Discounts Central On Aviation Inspiration Aviation United Airlines Airbus A380">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/b8/ca/a2b8cad900e0e73342cd5d44c9fbb297.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2gJg9slDIhkpIBO2uHvZW9U6xGf4xADFwA';" alt="Pin By Military Discounts Central On Aviation Inspiration Aviation United Airlines Airbus A380">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Discounts Central On Aviation Inspiration Aviation United Airlines Airbus A380</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/0c/a4/900ca4007d8714831c6b1a3f3801c1e6.jpg" data-lightbox="roadtrip" data-title="What Are The Discounts Freebies And Boarding Tips For Military Fares In 2020 Military United Airlines Airline Deals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/0c/a4/900ca4007d8714831c6b1a3f3801c1e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscpjTJHt1yYplVuGNDPYUb_pAfgeouvjwUA';" alt="What Are The Discounts Freebies And Boarding Tips For Military Fares In 2020 Military United Airlines Airline Deals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Discounts Freebies And Boarding Tips For Military Fares In 2020 Military United Airlines Airline Deals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/da/e5/a2dae5c33c40d9a71c4915fc7701d3bd.jpg" data-lightbox="roadtrip" data-title="Airlines Flights Booking Always Supports You In The Ticket Booking Process United Airlines France Airlines Airline Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/da/e5/a2dae5c33c40d9a71c4915fc7701d3bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTReBBFfeZ70jhuu48a8tvHabCObhSR-Hsueg';" alt="Airlines Flights Booking Always Supports You In The Ticket Booking Process United Airlines France Airlines Airline Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airlines Flights Booking Always Supports You In The Ticket Booking Process United Airlines France Airlines Airline Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/fd/6f/1afd6fee5ca00d7fa9234b362df9d53c.png" data-lightbox="roadtrip" data-title="You Can Call On United Airlines Toll Free Number And Book Your United Airlines Flights Do United Airlines United Airlines Airline Reservations Airline Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/fd/6f/1afd6fee5ca00d7fa9234b362df9d53c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjM4ka_rm9_WuOZC7McFzjKC6Pm01VW2U6pw';" alt="You Can Call On United Airlines Toll Free Number And Book Your United Airlines Flights Do United Airlines United Airlines Airline Reservations Airline Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Can Call On United Airlines Toll Free Number And Book Your United Airlines Flights Do United Airlines United Airlines Airline Reservations Airline Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/a0/11/6fa0113d6ab5e8bd202b0b01efe45c14.jpg" data-lightbox="roadtrip" data-title="United Airlines Toll Free Number United Airlines Flight Ticket Book Flight Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/a0/11/6fa0113d6ab5e8bd202b0b01efe45c14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnha5h1dsd3vVz5mbV-5SMiH6b-yDBkH1X7w';" alt="United Airlines Toll Free Number United Airlines Flight Ticket Book Flight Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Airlines Toll Free Number United Airlines Flight Ticket Book Flight Tickets</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/69/26/4f/69264fe123aba2f27a279ff7ede48cee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnha5h1dsd3vVz5mbV-5SMiH6b-yDBkH1X7w';" alt="United Airlines Toll Free Number United Airlines Flight Ticket Book Flight Tickets">
+										<div class="card-body">
+						<h3 class="h5"><b>See the Veterans Advantage.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military flight discounts united airlines</strong>. 
+								
+																	Access is available to active duty military members and family members with gate passes or traveling on the same flight as the military member and is subject to each locations capacity and seating availability. 
+																	Book a government or military flight. 
+																	It includes United as well as United Express flights. 
+																	It has refundable ticket options no blackout periods and dependents are eligible for discounted military rates as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Veterans and their Families Save Up to 5 Every Day on United Airlines Enroll in Veterans Advantage Member Plan. 
+																	Service members can save up to 5 off airfare by taking advantage of the Veterans Advantage promo offer. 
+																	Just enter your military or veterans ID to get an exclusive military travel discount of 18 off. 
+																	We will only accept authorized US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The discount is available to active duty military veterans National Guard and Reserve service members. 
+																	United offer Military and federal government personnel discounts in select markets and routes. 
+																	We are able to offer you exclusive airfare financing with no down payment required. 
+																	Locations and dates Locations and dates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A-ha thats the tricky part. 
+																	Over 30 Years Experience Supporting the Military Community BEST FLIGHT FARES. 
+																	For more information about our United Club locations. 
+																	Often you wont find military discounts online so youll need to call the airlines number for reservations and ask an actual live person about their military discounts on flights. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United Airlines offers deals for military veterans active duty National Guard and Reserve members and their families with a 5 discount on tickets for those who sign up for the Veterans Advantage program. 
+																	Do you want to use a recent search. 
+																	Active duty service members arent the only ones eligible for military discounts. 
+																	So go on take that trip youve been thinking about and thank you for your service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We always verify if a military. 
+																	5 OFF As a Veterans Advantage member enrolled in VetRewards you are eligible for 5 OFF VetRewards Exclusive savings on First Business and Premium Economy Class tickets on United-operated flights without blackout dates. 
+																	You may redeem an unlimited number of discounted tickets for your travel year round. 
+																	Get up to five percent off airfares with Veterans Advantage for travel in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	City or airport Search for nearby departure airports within Search for nearby arrival. 
+																	United Airlines features Veterans Advantage members with up to a 5 percent discount on airfare. 
+																	United Airlines Military Discount 6 days ago With the United Airlines Military Discount you get. 
+																	United Airlines strictly enforces rules regarding the correct form of payment for federal government contract YCA -CA and DG fares. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Government contractors of any kind do not qualify for federal. 
+																	City or airport To. 
+																	Get your cheapest ticket here - with price guarantee. 
+																	However you must be a member of Veterans Advantage in order to receive the discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In most not all markets the discount will apply to any active member of the military including dependents ID will be required at check-in. 
+																	Or Canada to destinations in the US Canada Mexico Central America the Caribbean and Europe. 
+																	Handily weve put together a list of major airlines and their discount military fares below. 
+																	United Airlines military travel benefits are for Active duty military their dependents and veterans enrolled in Veterans Advantage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Advantage 5 Discount on Flights - United Airlines. 
+																	We search all airlines for cheap flights and show you the most discounted airfares. 
+																	CODES 2 days ago United honors Americas veterans To thank US. 
+																	Our goal is to provide military families with the best available fares rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do you need a flight home for leave or need an emergency plane ticket somewhere. 
+																	United has teamed up with Veterans Advantage to offer up to a 5 percent discount on our fares. 
+																	Veterans those on reserve and national guard members youre covered too. 
+																	To take advantage of these discounts or to check on fares you will need to contact United Reservations at 1-800-UNITED-1 1-800-864-8331 where specialists are available 24 hours a day 7 days a week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However this airline does not offer refundable tickets or free cancellations. 
+																	The United Airlines military discount on airfare is available to active duty military as well as those that have been discharged within the last seven days. 
+																	Recent searches No recent searches Trip type Trip type. 
+																	There are also many benefits for military personnel that dont require signing up for the Veterans Advantage program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United Military Travel offers the best rates on airfare loans for active duty and retired military as well as government personnel. 
+																	Only here youll get the cheapest airline ticket deals available. 
+																	8 United Airlines To thank US. 
+																	Military veterans active duty military National Guard and Reserve members and their families for their service United is proud to provide Veterans Advantagemembers with up to a 5 percent discount on tickets for United- and United Express-operated flights. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Government-issued Visa and MasterCard accounts as payment and only employees of the federal government traveling on official business are eligible for these fares. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/55/af/c755af32ac700f33de320ba3381a2467.jpg" data-lightbox="roadtrip" data-title="United Airlines Flights For Cheap Flight Ticket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/55/af/c755af32ac700f33de320ba3381a2467.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScPFUANkwqexVLQEE0p1eWlnipnjcIkdbKTg';" alt="United Airlines Flights For Cheap Flight Ticket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Airlines Flights For Cheap Flight Ticket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/ec/c7/1decc7a3e695d66ac5c3c70dabfcfb7c.jpg" data-lightbox="roadtrip" data-title="Call For United Flights Reservation Call Toll Free United Airlines Luxury Services The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/ec/c7/1decc7a3e695d66ac5c3c70dabfcfb7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIgE_64KJQolTWRgrZ6xx_pLikTaHQYw8Wg';" alt="Call For United Flights Reservation Call Toll Free United Airlines Luxury Services The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call For United Flights Reservation Call Toll Free United Airlines Luxury Services The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/0b/38/9b0b382a039b262a289b947e659707c2.jpg" data-lightbox="roadtrip" data-title="United Airlines Contact Number United Airlines Book Flight Tickets The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/0b/38/9b0b382a039b262a289b947e659707c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJmxAb72pS9WIwbJmb_jHGO7rDwSIYe1lMw';" alt="United Airlines Contact Number United Airlines Book Flight Tickets The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Airlines Contact Number United Airlines Book Flight Tickets The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/d2/58/0dd25844d7a85d5da8af32beb8ff04ed.jpg" data-lightbox="roadtrip" data-title="Know All The In Flight Services And Amenities With United Airlines United Airlines The Unit United Airlines Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/d2/58/0dd25844d7a85d5da8af32beb8ff04ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4l0ZqyptOpsimTR-1lwl9Kgk2juRhSdk77A';" alt="Know All The In Flight Services And Amenities With United Airlines United Airlines The Unit United Airlines Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Know All The In Flight Services And Amenities With United Airlines United Airlines The Unit United Airlines Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/26/4f/69264fe123aba2f27a279ff7ede48cee.jpg" data-lightbox="roadtrip" data-title="With Just 22 Words This United Airlines Flight Attendant Brilliantly Explained What S At Stake With The Boe United Airlines Airline Deals Airline Reservations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/26/4f/69264fe123aba2f27a279ff7ede48cee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoKXZf0hbzbVoGSzO2kPqhww7Yo9OxKZRPPQ';" alt="With Just 22 Words This United Airlines Flight Attendant Brilliantly Explained What S At Stake With The Boe United Airlines Airline Deals Airline Reservations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With Just 22 Words This United Airlines Flight Attendant Brilliantly Explained What S At Stake With The Boe United Airlines Airline Deals Airline Reservations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/44/d7/e244d709641cf89ad4a600644cdb06bf.png" data-lightbox="roadtrip" data-title="Book Your Dream Trip Today Call United Airlines Reservations Number Now Airline Reservations United Airlines The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/44/d7/e244d709641cf89ad4a600644cdb06bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2Nhs5huCrF4KObU6c-T1Bn6UZYVIZbRI9g';" alt="Book Your Dream Trip Today Call United Airlines Reservations Number Now Airline Reservations United Airlines The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Your Dream Trip Today Call United Airlines Reservations Number Now Airline Reservations United Airlines The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/ba/d8/18bad85936a0e4a929673281fd148c98.jpg" data-lightbox="roadtrip" data-title="Book Online Flights Tickets And Reservation On United Webs Deals And Get Up To 70 Discount On Every Flight T United Airlines United Airlines Tickets The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/ba/d8/18bad85936a0e4a929673281fd148c98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfSdvalLzxeyutB87zEX6aEcYIbhVtB_-Tw';" alt="Book Online Flights Tickets And Reservation On United Webs Deals And Get Up To 70 Discount On Every Flight T United Airlines United Airlines Tickets The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Online Flights Tickets And Reservation On United Webs Deals And Get Up To 70 Discount On Every Flight T United Airlines United Airlines Tickets The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/46/2c/73462c013e2a02b6d76870a3ac896f43.png" data-lightbox="roadtrip" data-title="United Airlines Contact Number United Airlines The Unit Flight Schedule">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/46/2c/73462c013e2a02b6d76870a3ac896f43.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLF5fvsU7CDTwlW4v9BQleEz_Vtk4emPM0g';" alt="United Airlines Contact Number United Airlines The Unit Flight Schedule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Airlines Contact Number United Airlines The Unit Flight Schedule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/fd/35/f4fd35a96bcababe82872462205b0b3f.jpg" data-lightbox="roadtrip" data-title="What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/fd/35/f4fd35a96bcababe82872462205b0b3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_D0Oo_PBGIdo-EcWcKNa8oNx3nrtetjA6w';" alt="What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/7a/77/097a7702c1c5f78b8a1b43ff7c45ca2b.jpg" data-lightbox="roadtrip" data-title="Know The Steps To Change The Same Day Flight With United Airlines United Airlines Airline Flights Online Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/7a/77/097a7702c1c5f78b8a1b43ff7c45ca2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfMPHeRjpeqGtoSZlhUrJcQEPaR3Ptlkfq_A';" alt="Know The Steps To Change The Same Day Flight With United Airlines United Airlines Airline Flights Online Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Know The Steps To Change The Same Day Flight With United Airlines United Airlines Airline Flights Online Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/e3/6e/30e36ebd17d586bae4a88adb916a7ff9.jpg" data-lightbox="roadtrip" data-title="Get Reserved Seats At Affordable Cost Only With United Airlines Reservations Affordable Airlines Co Airline Reservations United Airlines Travel Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/e3/6e/30e36ebd17d586bae4a88adb916a7ff9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61PkSL9kzfS_FGHEXEcZLszJcvcPB94mVUA';" alt="Get Reserved Seats At Affordable Cost Only With United Airlines Reservations Affordable Airlines Co Airline Reservations United Airlines Travel Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Reserved Seats At Affordable Cost Only With United Airlines Reservations Affordable Airlines Co Airline Reservations United Airlines Travel Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/31/70/8431700a89ab3520586b0593815e94e8.jpg" data-lightbox="roadtrip" data-title="Boeing 777 200er United Airlines N77012 United Airlines Aviation Civil Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/31/70/8431700a89ab3520586b0593815e94e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qvlXFXCjZ4YhfIivd-pv1GHuboPmDWQkpw';" alt="Boeing 777 200er United Airlines N77012 United Airlines Aviation Civil Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boeing 777 200er United Airlines N77012 United Airlines Aviation Civil Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/81/91/bb81917cbadb7aba73f85d96d60787f6.jpg" data-lightbox="roadtrip" data-title="United Airlines Fare Calendar United Airlines Traveling By Yourself The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/81/91/bb81917cbadb7aba73f85d96d60787f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn38MxvBDYEHK8g2QNRyhUmrVbw1XsHg9yjQ';" alt="United Airlines Fare Calendar United Airlines Traveling By Yourself The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United Airlines Fare Calendar United Airlines Traveling By Yourself The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/best-colleges-for-army-tuition-assistance.html">Best Colleges For Army Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/big-black-military-hat.html">Big Black Military Hat</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-outfit.html">Black Military Hat Outfit</a></li>
+													<li class="list-group-item"><a href="/british-army-hr-specialist.html">British Army Hr Specialist</a></li>
+													<li class="list-group-item"><a href="/british-army-ww1-service-records-free.html">British Army Ww1 Service Records Free</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-nurse.html">Benefits Of Navy Nurse</a></li>
+													<li class="list-group-item"><a href="/campus-portal-bettendorf.html">Campus Portal Bettendorf</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-roblox.html">Black Military Hat Roblox</a></li>
+													<li class="list-group-item"><a href="/best-mycaa-programs.html">Best Mycaa Programs</a></li>
+													<li class="list-group-item"><a href="/best-online-university-for-military-spouse.html">Best Online University For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-card.html">Benefits Of Navy Federal Credit Card</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-band.html">Black Military Hat Band</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-amazon.html">Black Military Hat Amazon</a></li>
+													<li class="list-group-item"><a href="/best-military-spouse-college.html">Best Military Spouse College</a></li>
+													<li class="list-group-item"><a href="/british-army-combat-hr-specialist.html">British Army Combat Hr Specialist</a></li>
+													<li class="list-group-item"><a href="/black-wool-hat-military.html">Black Wool Hat Military</a></li>
+													<li class="list-group-item"><a href="/best-mycaa-schools.html">Best Mycaa Schools</a></li>
+													<li class="list-group-item"><a href="/birth-certificate-for-military-dependents-born-overseas.html">Birth Certificate For Military Dependents Born Overseas</a></li>
+													<li class="list-group-item"><a href="/best-black-military-hat.html">Best Black Military Hat</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-membership.html">Benefits Of Navy Federal Membership</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

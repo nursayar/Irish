@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Hard Part Regulation - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Hard Part Regulation",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/600x315/33/4b/af/334bafdddc830d9834940dc7c1b4bd7d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+hard+part+regulation",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Hard Part Regulation</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Regulations 31 and 2 specify the competent air force authority for the purpose of authorising the discharge of an airman the postponement of discharge and call out from the reserve. The Air Force specifies that they must be conservative moderate being within reasonable limits not excessive or extreme and will not extend downward beyond the lip line of the upper lip Air Force mustache regulations also note that the facial hair must not extend sideways beyond a vertical line drawn upward from both corners of the mouth. Prior to acceptance into the DTS air mail terminals or designated representatives will ensure that. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-spouse-education-discounts.html">military spouse education discounts</a>
+											<a class="badge badge-dark" href="/military-spouse-education-statistics.html">military spouse education statistics</a>
+											<a class="badge badge-light" href="/military-scholarships-to-college.html">military scholarships to college</a>
+											<a class="badge badge-success" href="/military-shako-hats-for-sale.html">military shako hats for sale</a>
+											<a class="badge badge-light" href="/military-spouse-benefits-after-10-years-of-marriage.html">military spouse benefits after 10 years of marriage</a>
+											<a class="badge badge-info" href="/military-service-records-at-the-national-archives.html">military service records at the national archives</a>
+											<a class="badge badge-success" href="/military-spouse-citizenship.html">military spouse citizenship</a>
+											<a class="badge badge-danger" href="/military-spouse-demands-free-drinks.html">military spouse demands free drinks</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the right blog.  Our website provides you with hints for viewing the maximum quality video and picture content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1f/d4/be/1fd4be0aaa569947fba1c9de084b1f85.jpg" data-lightbox="roadtrip" data-title="Air Force Haircut Regulation Haircuts For Men Air Force Haircut Forced Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1f/d4/be/1fd4be0aaa569947fba1c9de084b1f85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3sq-fw1eMZtMfzyG4CFbaruX2fa2UhFRJg';" alt="Air Force Haircut Regulation Haircuts For Men Air Force Haircut Forced Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Haircut Regulation Haircuts For Men Air Force Haircut Forced Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/ppjhbkgkwvpy.jpg" data-lightbox="roadtrip" data-title="Would This Haircut Be Acceptable I Understand The Top Will Need Less To Meet The 1 1 4 Bulk Rule But Is The Line Cut Acceptable In The Afi Wasn T Very Clear">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/ppjhbkgkwvpy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEAunyd4Hco922BPy4Axqu-CPGogULHhLQg';" alt="Would This Haircut Be Acceptable I Understand The Top Will Need Less To Meet The 1 1 4 Bulk Rule But Is The Line Cut Acceptable In The Afi Wasn T Very Clear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Would This Haircut Be Acceptable I Understand The Top Will Need Less To Meet The 1 1 4 Bulk Rule But Is The Line Cut Acceptable In The Afi Wasn T Very Clear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/d4/97/3ed49709db16764acc3bf0b265451b2f.jpg" data-lightbox="roadtrip" data-title="Pin By Tanya Aanderaa On Military Air Force Dress Uniform Air Force Dress Force Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/d4/97/3ed49709db16764acc3bf0b265451b2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmTdlX6qzveMdLG2huxG0a9SzW1a6_wO0rBw';" alt="Pin By Tanya Aanderaa On Military Air Force Dress Uniform Air Force Dress Force Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tanya Aanderaa On Military Air Force Dress Uniform Air Force Dress Force Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/91/e1/f5/91e1f5a0dbf887e58ec6493721f781e2.jpg" data-lightbox="roadtrip" data-title="After Being At Air Force Basic Military Training For About Two Weeks With Short Hair That Would Just Not Stay Up Military Hair Air Force Women Military Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/91/e1/f5/91e1f5a0dbf887e58ec6493721f781e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwGeiwhm4NnRtdANEGurhNZOmCX6oGL4Uxw';" alt="After Being At Air Force Basic Military Training For About Two Weeks With Short Hair That Would Just Not Stay Up Military Hair Air Force Women Military Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Being At Air Force Basic Military Training For About Two Weeks With Short Hair That Would Just Not Stay Up Military Hair Air Force Women Military Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/04/2002190770/780/780/0/190907-Z-FC733-104.JPG" data-lightbox="roadtrip" data-title="Rule Change Lets More Airmen Become Officers Air National Guard Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/04/2002190770/780/780/0/190907-Z-FC733-104.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyLVh16-Vkpx9TPr8Kbe9cQsGvXNJR9JmeQ';" alt="Rule Change Lets More Airmen Become Officers Air National Guard Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rule Change Lets More Airmen Become Officers Air National Guard Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.operationmilitarykids.org/wp-content/uploads/2019/04/air-force-mustache-and-hair-regulations-graphic.png?resize=640%2C395&amp;ssl=1" data-lightbox="roadtrip" data-title="Air Force Grooming Standards For 2021 Haircut And Beard Regulations">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.operationmilitarykids.org/wp-content/uploads/2019/04/air-force-mustache-and-hair-regulations-graphic.png?resize=640%2C395&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNWZhWVSr5eLy68bl-Jiehh4JbMJemDoWrg';" alt="Air Force Grooming Standards For 2021 Haircut And Beard Regulations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Grooming Standards For 2021 Haircut And Beard Regulations</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/10/35/ae/1035ae99c3b2068bd1061fc2eb303271.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNWZhWVSr5eLy68bl-Jiehh4JbMJemDoWrg';" alt="Air Force Grooming Standards For 2021 Haircut And Beard Regulations">
+										<div class="card-body">
+						<h3 class="h5"><b>Learn about great opportunities for enlisted airmen officers and health care professionals.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force hard part regulation</strong>. 
+								
+																	Welcome to the United States Air Force. 
+																	The Air Force specific procedures and requirements in this part are intended to be used by Air Force decision-makers to fully comply with NEPA and the EIAP. 
+																	Individually ticketed scheduled-service basis only and will not apply to DoD charter operations or group travel. 
+																	Members will wear only the uniform items prescribed by AFI 36-2903 Dress and Personal Appearance of the Air Force Personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SECRETARY OF THE AIR FORCE AIR FORCE INSTRUCTION 36-2903 2 AUGUST 2006 Incorporating Change 1 6 August 2007 Personnel DRESS AND PERSONAL APPEARANCE OF AIR FORCE PERSONNEL COMPLIANCE WITH THIS PUBLICATION IS MANDATORY ACCESSIBILITY. 
+																	A This part provides a framework on how to comply with NEPA and EO. 
+																	The hair must also not interfere with properly worn headgear. 
+																	2 See footnote 1 to 9891. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You do mean a hard part as to when a barber shaves a line into your head right. 
+																	Regulation EU 20181139 of the European Parliament and of the Council of 4 July 2018 on common rules in the field of civil aviation and establishing a European Union Aviation Safety Agency and amending Regulations EC No 21112005 EC No 10082008 EU No 9962010 EU No 3762014 and Directives 201430EU and 201453EU of the European Parliament and of the Council and repealing. 
+																	Publications and forms are available on the e-Publishing website at wwwe-publishingafmil for downloading or. 
+																	Like the regulations in the Air Force the hair of those who serve in the Navy must not touch the ears collar and must not extend below the eyebrows when headgear is removed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These Regulations make provision in respect of enlistment of recruits and generally for the carrying into effect of Part 1 of the Air Force Act 1955. 
+																	They revoke and replace the Air Force Act 1955 Part 1 Regulations 2001 as amended which Regulations were not made by statutory instrument but were amended by statutory instrument in 2003 SI. 
+																	For a complete list of Category 2 prohibited civil aviation authorities countriesairlines refer to httpswwwmilsuitemilbookgroupsdod-commercial-airlift-division- amca and select Foreign Air Carriers. 
+																	Once proposed text has been validated by coordination it is approved and updated in Air Force library. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This chapter outlines personal grooming while wearing any Air Force uniform or civilian clothing in an official capacity. 
+																	The Air Force prohibits men from wearing their hair in what it deems to be extreme or fad hairstyles particularly in such a way that exceeds length or bulk standards or violates safety requirements. 
+																	How is Air Force Doctrine updated. 
+																	Doctrine is updated in a collaborative manner with all Air Force MAJCOMs and Headquarters HQ Air Staff agencies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hair cannot touch the ears and only closely cut or shaved hair on the back of the neck may touch the collar. 
+																	Defense Transportation Regulation Part I 21 December 2020 Passenger Movement. 
+																	Learn about great opportunities for enlisted airmen officers and health care professionals. 
+																	The authority for the existence of the air force 1 is the Air Force Constitution Act 1917 which authorises the Crown to raise and maintain a force to be called the Air Force 2 and empowers Her Majesty and the Defence Council 3 to make orders and regulations with respect to all matters except pay and allowances relating to that force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Work with the Supported CCDR to establish procedures for the management and recovery of System 463L pallets and nets in the theater. 
+																	Officials at HQ United States Air Force Deputy Chief of Staff Logistics Installations and. 
+																	12114 according to Air Force Policy Directive AFPD 32-70 2. 
+																	WASHINGTON AFNS -- The Air Force announced a series of uniform updates to Air Force Instruction 36-2903 Dress and Personal Appearance of Air Force Personnel effective July 13 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Personnel who violate the specific prohibitions and requirements of that regulation may be subject to appropriate administrative action or prosecuted under the Uniform Code of Military Justice UCMJ. 
+																	A copy of the TCMD will also be attached to the shipment IAW Chapter 203 for SUs forwarded to CCPs and for ISO containers. 
+																	Manage System 463L pallet and net procedures in this regulation. 
+																	Defense Transportation Regulation Part II 10 October 2018 Cargo Movement II-208-4 shipment IAW MIL-STD-129. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the United States Air Force. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.rosecoloredwater.com/wp-content/uploads/2017/06/Air-Force-Hair.jpg?ssl=1" data-lightbox="roadtrip" data-title="Air Force Hair Regulations For Females Rose Colored Water">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.rosecoloredwater.com/wp-content/uploads/2017/06/Air-Force-Hair.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeJb9VtBwFlIHPmcDNMlB02p1_KGoviDgpw';" alt="Air Force Hair Regulations For Females Rose Colored Water">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Hair Regulations For Females Rose Colored Water</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/67/a7/7d/67a77d1a2c5384c011e94c0958cd4d27.jpg" data-lightbox="roadtrip" data-title="Army Unauthorized Hairstyles For Women I Still Try To Match My Hair Accessories To My Hair Color Many Years L Military Hair Womens Hairstyles Military Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/67/a7/7d/67a77d1a2c5384c011e94c0958cd4d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO8v65DMSGRsHh-Vkbq4rXp5GEpHg_weJdkg';" alt="Army Unauthorized Hairstyles For Women I Still Try To Match My Hair Accessories To My Hair Color Many Years L Military Hair Womens Hairstyles Military Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Unauthorized Hairstyles For Women I Still Try To Match My Hair Accessories To My Hair Color Many Years L Military Hair Womens Hairstyles Military Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/14/94/0a1494d059e1c1e25f7a73a04a567391.jpg" data-lightbox="roadtrip" data-title="Http Www Stripes Com Hair Styles Military Hair Womens Hairstyles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/14/94/0a1494d059e1c1e25f7a73a04a567391.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxW5dMGsxUIpmpKYwla-Zq5Y0dWsr2or_Nw';" alt="Http Www Stripes Com Hair Styles Military Hair Womens Hairstyles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Stripes Com Hair Styles Military Hair Womens Hairstyles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/38/65/3f3865e4e81805cb570eca61a6bd0c78.png" data-lightbox="roadtrip" data-title="Air Force Hair Regulations For Females Rose Colored Water Air Force Quotes Air Force Women Air Force Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/38/65/3f3865e4e81805cb570eca61a6bd0c78.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKO_biY1cToS1rBoKyRbdMNAjr7BT5S-pb2Q';" alt="Air Force Hair Regulations For Females Rose Colored Water Air Force Quotes Air Force Women Air Force Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Hair Regulations For Females Rose Colored Water Air Force Quotes Air Force Women Air Force Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/d2/87/42d287c88ecacaa0eaa87ac94a1ced31.png" data-lightbox="roadtrip" data-title="Minimum Requirements To Join The Air Force Air Force Air Force Basic Training Basic Military Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/d2/87/42d287c88ecacaa0eaa87ac94a1ced31.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhnbS2qu4pa44_pCDyGXzaqDloNiObq75mg';" alt="Minimum Requirements To Join The Air Force Air Force Air Force Basic Training Basic Military Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minimum Requirements To Join The Air Force Air Force Air Force Basic Training Basic Military Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/28/ba/5528bab8794d3383240d4f66463cd149.png" data-lightbox="roadtrip" data-title="Hair Styles Army Hair Military Hair Hair Styles Army Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/28/ba/5528bab8794d3383240d4f66463cd149.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkKLDKJNBdkdG0DaUm5xJ3iBFu5O_63js8w';" alt="Hair Styles Army Hair Military Hair Hair Styles Army Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hair Styles Army Hair Military Hair Hair Styles Army Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/c0/ab/a3c0ab88ea5588bf758c3664db7c5576.jpg" data-lightbox="roadtrip" data-title="Royal Air Force Harrier Gr9 By Darren Dawson On 500px Dusenjager Flugzeug Militarflugzeug">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/c0/ab/a3c0ab88ea5588bf758c3664db7c5576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGESjN9q53x5EMoB9MBFwA8uEIXMuj7cYhQ';" alt="Royal Air Force Harrier Gr9 By Darren Dawson On 500px Dusenjager Flugzeug Militarflugzeug">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Air Force Harrier Gr9 By Darren Dawson On 500px Dusenjager Flugzeug Militarflugzeug</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/d2/f2/70d2f2f03a832416fb8bf0391a912987.jpg" data-lightbox="roadtrip" data-title="Ar Da Pam 670 1 Military Hair Womens Hairstyles Military Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/d2/f2/70d2f2f03a832416fb8bf0391a912987.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbELbP10gIjlPKsMeEi78DV1fT-WOttkgKGg';" alt="Ar Da Pam 670 1 Military Hair Womens Hairstyles Military Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ar Da Pam 670 1 Military Hair Womens Hairstyles Military Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/d4/83/f1d4837a77544be1361cbd007c605f42.png" data-lightbox="roadtrip" data-title="I Almost Didn T Become An Air Force Officer Airman To Mom Air Force Basic Training Air Force Women Officer Training School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/d4/83/f1d4837a77544be1361cbd007c605f42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-1ueK1NGPi59YjpcWnPZfDK7PyVdc_mo-g';" alt="I Almost Didn T Become An Air Force Officer Airman To Mom Air Force Basic Training Air Force Women Officer Training School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Almost Didn T Become An Air Force Officer Airman To Mom Air Force Basic Training Air Force Women Officer Training School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/35/ae/1035ae99c3b2068bd1061fc2eb303271.jpg" data-lightbox="roadtrip" data-title="20 Bob Haircuts Fur Madchen Frisuren Stil Haar Military Hair Bob Haircut For Girls Girl Haircuts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/35/ae/1035ae99c3b2068bd1061fc2eb303271.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElGETdm3iOoBjhvqxjqfI_CJgONK4gjjvOw';" alt="20 Bob Haircuts Fur Madchen Frisuren Stil Haar Military Hair Bob Haircut For Girls Girl Haircuts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Bob Haircuts Fur Madchen Frisuren Stil Haar Military Hair Bob Haircut For Girls Girl Haircuts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/33/4b/af/334bafdddc830d9834940dc7c1b4bd7d.jpg" data-lightbox="roadtrip" data-title="Oman Receives First Eurofighter Typhoon Fighter Jets Aircraft Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/33/4b/af/334bafdddc830d9834940dc7c1b4bd7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNiSpf7owXcMqwsN2mMGzlijArqSptsYttMg';" alt="Oman Receives First Eurofighter Typhoon Fighter Jets Aircraft Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oman Receives First Eurofighter Typhoon Fighter Jets Aircraft Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/ca/f9/08caf9bf35e08a84c6926f684cde562b.jpg" data-lightbox="roadtrip" data-title="Why I Joined The Air Force Tally One Course Class Military Aircraft Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/ca/f9/08caf9bf35e08a84c6926f684cde562b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2Piy200CDLI_igVECGMtqbF0tnqcGVI_ew';" alt="Why I Joined The Air Force Tally One Course Class Military Aircraft Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why I Joined The Air Force Tally One Course Class Military Aircraft Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/df/8c/3fdf8cdebf4d9bf21c51e040a853de69.jpg" data-lightbox="roadtrip" data-title="Yeah This Is What Happens With Army Or Air Force Marine Navy Barbies Military Female Pilot Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/df/8c/3fdf8cdebf4d9bf21c51e040a853de69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eC1N_F8QNogKyhpSYOFeb7h1o6Tsnd_gig';" alt="Yeah This Is What Happens With Army Or Air Force Marine Navy Barbies Military Female Pilot Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yeah This Is What Happens With Army Or Air Force Marine Navy Barbies Military Female Pilot Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-education-assistance.html">Military Spouse Education Assistance</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-benefits.html">Military Spouse College Benefits</a></li>
+													<li class="list-group-item"><a href="/military-spouse-career-assistance.html">Military Spouse Career Assistance</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-grants.html">Military Spouse College Grants</a></li>
+													<li class="list-group-item"><a href="/military-scholarships-for-veterans.html">Military Scholarships For Veterans</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-online.html">Military Spouse College Online</a></li>
+													<li class="list-group-item"><a href="/military-spouse-baggage.html">Military Spouse Baggage</a></li>
+													<li class="list-group-item"><a href="/military-spouse-education-and-career-opportunities.html">Military Spouse Education And Career Opportunities</a></li>
+													<li class="list-group-item"><a href="/military-spouse-career-help.html">Military Spouse Career Help</a></li>
+													<li class="list-group-item"><a href="/military-spouse-education-funding.html">Military Spouse Education Funding</a></li>
+													<li class="list-group-item"><a href="/military-spouse-deported.html">Military Spouse Deported</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-air-force.html">Military Spouse Benefits Air Force</a></li>
+													<li class="list-group-item"><a href="/military-spouse-degree-programs.html">Military Spouse Degree Programs</a></li>
+													<li class="list-group-item"><a href="/military-spouse-education-loan.html">Military Spouse Education Loan</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-tuition-assistance.html">Military Spouse College Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/military-spouse-employment-initiative.html">Military Spouse Employment Initiative</a></li>
+													<li class="list-group-item"><a href="/military-spouse-education-grants.html">Military Spouse Education Grants</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-help.html">Military Spouse College Help</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-programs.html">Military Spouse College Programs</a></li>
+													<li class="list-group-item"><a href="/military-service-records-a-select-catalog-of-national-archives-microfilm-publications.html">Military Service Records A Select Catalog Of National Archives Microfilm Publications</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

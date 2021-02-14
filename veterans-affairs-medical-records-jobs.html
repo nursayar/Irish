@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Affairs Medical Records Jobs - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Affairs Medical Records Jobs",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/90/88/08/9088088f5cb6f7d10e82e992ac5e443e.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+affairs+medical+records+jobs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Affairs Medical Records Jobs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">15 US Department of Veterans Affairs Medical records coder jobs. Full-time temporary and part-time jobs. We provide free support for veterans and their families including a helpline Veterans Welfare Service and injurybereavement compensation scheme payments. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/a-navy-seal-knife.html">a navy seal knife</a>
+											<a class="badge badge-light" href="/air-force-college-rotc-scholarships.html">air force college rotc scholarships</a>
+											<a class="badge badge-success" href="/advantages-of-having-a-military-draft.html">advantages of having a military draft</a>
+											<a class="badge badge-danger" href="/air-force-1-low-hero.html">air force 1 low hero</a>
+											<a class="badge badge-dark" href="/air-force-enlisted-aide-program.html">air force enlisted aide program</a>
+											<a class="badge badge-warning" href="/42a-mos-salary.html">42a mos salary</a>
+											<a class="badge badge-light" href="/age-of-military-dependent-id-card.html">age of military dependent id card</a>
+											<a class="badge badge-primary" href="/air-force-civilian-human-resources.html">air force civilian human resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right site.  Our site gives you hints for seeing the highest quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/14/d4/e114d4520a962680ddac00ddc779a197.jpg" data-lightbox="roadtrip" data-title="Cover Letter For Residency Sponsorship Cards Sample Internal Position The Job Posting Cover Letter Job Cover Letter Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/14/d4/e114d4520a962680ddac00ddc779a197.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfQbmQKQQ3a0iaH094RqQWNV_N2cPi90f0g';" alt="Cover Letter For Residency Sponsorship Cards Sample Internal Position The Job Posting Cover Letter Job Cover Letter Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cover Letter For Residency Sponsorship Cards Sample Internal Position The Job Posting Cover Letter Job Cover Letter Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/7d/88/2b7d884b685706f9efd0b1ab1affb2e1.png" data-lightbox="roadtrip" data-title="Electronic Prescribing Health Information Systems Medical Prescription Electronic Health Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/7d/88/2b7d884b685706f9efd0b1ab1affb2e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-jbkpcnd7i8OdIz83yIet2mbjPz71EYXaDg';" alt="Electronic Prescribing Health Information Systems Medical Prescription Electronic Health Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Electronic Prescribing Health Information Systems Medical Prescription Electronic Health Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/04/1f/51/041f519198fa0bee8d1516841c20fc81.jpg" data-lightbox="roadtrip" data-title="Pin On A Bit Of This And That">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/04/1f/51/041f519198fa0bee8d1516841c20fc81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1tlCCMzc6ixeFD8FLco7AHdYBSxVPEHwkQ';" alt="Pin On A Bit Of This And That">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On A Bit Of This And That</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/c7/6c/a4c76c847671f1d2cdeecbcaf1af4bb9.png" data-lightbox="roadtrip" data-title="Medical Record Redesign Medical Medical Ultrasound Medical Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/c7/6c/a4c76c847671f1d2cdeecbcaf1af4bb9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREC-9fyGbIVowM1_vSBEQh2pWT5y5TAbMxDg';" alt="Medical Record Redesign Medical Medical Ultrasound Medical Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Record Redesign Medical Medical Ultrasound Medical Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/dc/70/93dc705e5222584ef1cd3149128ff65e.png" data-lightbox="roadtrip" data-title="A Salary Comparison Chart Template Is Made To Compare And Contrast The Salaries Being Paid In The Market For Specific Job Positions By D Templates Chart Salary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/dc/70/93dc705e5222584ef1cd3149128ff65e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEVeapFGrjrjUcGDoiLRtt_JW8mVBL6KTSQ';" alt="A Salary Comparison Chart Template Is Made To Compare And Contrast The Salaries Being Paid In The Market For Specific Job Positions By D Templates Chart Salary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Salary Comparison Chart Template Is Made To Compare And Contrast The Salaries Being Paid In The Market For Specific Job Positions By D Templates Chart Salary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/74/f1/ac74f17bd283772154e95bd3c85a49a9.jpg" data-lightbox="roadtrip" data-title="Business Intelligence Analyst Resume Beautiful Nice High Quality Data Analyst Resume Sample From Business Analyst Resume Business Analyst Data Analyst">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/74/f1/ac74f17bd283772154e95bd3c85a49a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvjPoveMA-rV3g09PNDXTZqMfnFYSp7cysQ';" alt="Business Intelligence Analyst Resume Beautiful Nice High Quality Data Analyst Resume Sample From Business Analyst Resume Business Analyst Data Analyst">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Business Intelligence Analyst Resume Beautiful Nice High Quality Data Analyst Resume Sample From Business Analyst Resume Business Analyst Data Analyst</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/93/dc/70/93dc705e5222584ef1cd3149128ff65e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvjPoveMA-rV3g09PNDXTZqMfnFYSp7cysQ';" alt="Business Intelligence Analyst Resume Beautiful Nice High Quality Data Analyst Resume Sample From Business Analyst Resume Business Analyst Data Analyst">
+										<div class="card-body">
+						<h3 class="h5"><b>Medical Records Technician Coder Auditor Outpatient Inpatient US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans affairs medical records jobs</strong>. 
+								
+																	MRAs manage preserve analyze and supervise the use of diagnostic and therapeutic health recordshealth information mgmt. 
+																	Apply to Medical Technician Coding Specialist Medical Records Supervisor and more. 
+																	Apply to Medical Office Assistant Patient Access Manager Medical Technician and more. 
+																	51 open jobs for Medical records clerk in Portsmouth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs. 
+																	Search and apply for the latest Medical records manager jobs in Roanoke VA. 
+																	Veterans UK is part of the Ministry of. 
+																	Download your VA letters get Veteran ID Cards get your VA medical records request your DD214 view your payment history and learn how to apply for a certificate of eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Records Coordinator Patient Services Representative Office Coordinator and more. 
+																	Search and apply for the latest Medical records jobs in Fort Belvoir VA. 
+																	Access your VA records and documents online to manage your health and benefits. 
+																	Free fast and easy way find a job of 674000 postings in Roanoke VA and other big cities in USA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Full-time temporary and part-time jobs. 
+																	Search and apply for the latest Medical records jobs in Gloucester VA. 
+																	Department of Veterans Affairs. 
+																	Search job openings see if they fit - company salaries reviews and more posted by US Department of Veterans Affairs employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Health Care Careers - VA JOBS. 
+																	Free fast and easy way find a job of 686000 postings in Fort Belvoir VA and other big cities in USA. 
+																	Free fast and easy way find a job of 687000 postings in Gloucester VA and other big cities in USA. 
+																	Apply to Medical Technician Medical Support Assistant Medical Records Supervisor and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Clinical Data Abstractor Medical Technician Patient Services Representative and more. 
+																	Apply to Medical Records Supervisor Medical Support Assistant Patient Services Representative and more. 
+																	Search Medical records clerk jobs in Portsmouth VA with company ratings salaries. 
+																	1 US Department of Veterans Affairs Medical records reviewer jobs in Chicago IL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Medical Receptionist Records Coordinator Patient Registration Representative and more. 
+																	Search job openings see if they fit - company salaries reviews and more posted by US Department of Veterans Affairs employees. 
+																	Department of Veterans Affairs. 
+																	Medical Records Technician Cancer Registrar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Audiologists apply advanced clinical skills such as hearing conservation advanced audiologic and electrophysiologic assessment and interpretation comprehensive tinnitus evaluation treatment and retraining therapies advanced central auditory function assessment and treatment assessment and treatment of patients with surgically-implanted bio-electric or cochlear implants intraoperative surgical monitoring advanced vestibular assessment. 
+																	Full-time temporary and part-time jobs. 
+																	Apply to Medical Technician Medical Records Clerk Records Coordinator and more. 
+																	Medical Record Technician Coder Inpatient Clinical Documentation Integrity CDI AUDITOR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medical Records Administrator MRAs in VHA perform or supervise work concerned with the management of a health record program or the provision of services related to medical record administrationhealth information services. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/9c/3f/569c3f9dae21e5a933865dd88ff2e450.jpg" data-lightbox="roadtrip" data-title="One Page Professional Resume Highlighting The Professional Competences Of Bernie Sanders Create Y Free Resume Builder Resume Builder Free Resume Template Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/9c/3f/569c3f9dae21e5a933865dd88ff2e450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuT8X-1EKY1w4r5mWN0DazmuSaE2ddx5-cPA';" alt="One Page Professional Resume Highlighting The Professional Competences Of Bernie Sanders Create Y Free Resume Builder Resume Builder Free Resume Template Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Page Professional Resume Highlighting The Professional Competences Of Bernie Sanders Create Y Free Resume Builder Resume Builder Free Resume Template Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/3e/3c/5e3e3cb554df96553904c1474de2864f.png" data-lightbox="roadtrip" data-title="Free Traditional Sports Coach Resume Template Resumenow Sports Coach Resume Template Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/3e/3c/5e3e3cb554df96553904c1474de2864f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwp6V-yQURQ__e_B6DfUNl9KJuWbkhbJTSg';" alt="Free Traditional Sports Coach Resume Template Resumenow Sports Coach Resume Template Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Traditional Sports Coach Resume Template Resumenow Sports Coach Resume Template Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/6d/6b/076d6bf08eb9a631b1996e4703cca368.png" data-lightbox="roadtrip" data-title="Work From Home Job Options For Registered Nurses Registered Nurse Jobs Nurse Case Manager Nursing Jobs Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/6d/6b/076d6bf08eb9a631b1996e4703cca368.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvOyxZOnDJQzOII08BxZvtyvqnxZrAxntiA';" alt="Work From Home Job Options For Registered Nurses Registered Nurse Jobs Nurse Case Manager Nursing Jobs Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work From Home Job Options For Registered Nurses Registered Nurse Jobs Nurse Case Manager Nursing Jobs Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/a7/e2/94a7e2120af82f8c15838e938b3d941d.jpg" data-lightbox="roadtrip" data-title="Medical Office Manager Resumes Examples Resumesdesign Office Manager Resume Medical Assistant Job Description Medical Assistant Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/a7/e2/94a7e2120af82f8c15838e938b3d941d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbpCt3khkUhIC-9eTTJk9QOf4pr2o3CVb_g';" alt="Medical Office Manager Resumes Examples Resumesdesign Office Manager Resume Medical Assistant Job Description Medical Assistant Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Office Manager Resumes Examples Resumesdesign Office Manager Resume Medical Assistant Job Description Medical Assistant Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/28/36/422836cd2b03e33f87587c381e67ddda.jpg" data-lightbox="roadtrip" data-title="Hr Assistant Job Description Resume Lovely Human Resources Assistant Resume Human Resources Resume Resume Objective Statement General Objective For Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/28/36/422836cd2b03e33f87587c381e67ddda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh_kz2iz9fXlE8XJG0aHxQZjnq5fhj5flX6Q';" alt="Hr Assistant Job Description Resume Lovely Human Resources Assistant Resume Human Resources Resume Resume Objective Statement General Objective For Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hr Assistant Job Description Resume Lovely Human Resources Assistant Resume Human Resources Resume Resume Objective Statement General Objective For Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/88/08/9088088f5cb6f7d10e82e992ac5e443e.png" data-lightbox="roadtrip" data-title="Vista Architecture Health Information Systems Electronic Health Records Healthcare System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/88/08/9088088f5cb6f7d10e82e992ac5e443e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXWOZeNWxDlVooo_qm5ynobaT3nfpo_VJntA';" alt="Vista Architecture Health Information Systems Electronic Health Records Healthcare System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vista Architecture Health Information Systems Electronic Health Records Healthcare System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/10/4c/af104cc03da5f5631c6a84f53040c4c8.jpg" data-lightbox="roadtrip" data-title="Veterans Service Representative Resume Luxury Resume Resume Objective For Customer Service New Kavya Cover Letter Sample Cover Letter For Resume Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/10/4c/af104cc03da5f5631c6a84f53040c4c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FbXzehCxbioCNmIeP2ZlhX6hpDtlYSh-iA';" alt="Veterans Service Representative Resume Luxury Resume Resume Objective For Customer Service New Kavya Cover Letter Sample Cover Letter For Resume Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Service Representative Resume Luxury Resume Resume Objective For Customer Service New Kavya Cover Letter Sample Cover Letter For Resume Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/00/25/330025f1579d0b480d663edc05e17766.jpg" data-lightbox="roadtrip" data-title="Generic Medical Records Release Form Beautiful Download Generic Authorization Medical Release Form For Medical Records Medical Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/00/25/330025f1579d0b480d663edc05e17766.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2k1phma9JQz65T1EMqY3RHln-vSx8Y7LYGw';" alt="Generic Medical Records Release Form Beautiful Download Generic Authorization Medical Release Form For Medical Records Medical Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Generic Medical Records Release Form Beautiful Download Generic Authorization Medical Release Form For Medical Records Medical Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/b8/be/7db8be0e3f45bbf30ada3bfc128b68da.jpg" data-lightbox="roadtrip" data-title="The Future Of Medical Records Medical Records Medical Medical History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/b8/be/7db8be0e3f45bbf30ada3bfc128b68da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gckwfvFBw0xITJ-JEu6OQwBUtudZ_OPH8A';" alt="The Future Of Medical Records Medical Records Medical Medical History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Future Of Medical Records Medical Records Medical Medical History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/0b/fd/af0bfd67420a824924495c86980302a4.jpg" data-lightbox="roadtrip" data-title="Salesforce Business Analyst Resume Inspirational Salesforce Spreadsheet Then Valid Salesforce Business Business Analyst Resume Data Analyst Business Analyst">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/0b/fd/af0bfd67420a824924495c86980302a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSmhqiBFcr44FNtUpw47-L1OfafLRL688bg';" alt="Salesforce Business Analyst Resume Inspirational Salesforce Spreadsheet Then Valid Salesforce Business Business Analyst Resume Data Analyst Business Analyst">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salesforce Business Analyst Resume Inspirational Salesforce Spreadsheet Then Valid Salesforce Business Business Analyst Resume Data Analyst Business Analyst</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/a2/a1/69a2a1d5420dbcda980b443741790ab3.png" data-lightbox="roadtrip" data-title="The Standard Electronic Medical Record Is A Confusing Text Heavy Computer Read Out But The Winners Of Designer Fund And Health Design Medical Medical Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/a2/a1/69a2a1d5420dbcda980b443741790ab3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVEF_7owgdhKagtYZmyMDEPUh358NHzCP9Q';" alt="The Standard Electronic Medical Record Is A Confusing Text Heavy Computer Read Out But The Winners Of Designer Fund And Health Design Medical Medical Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Standard Electronic Medical Record Is A Confusing Text Heavy Computer Read Out But The Winners Of Designer Fund And Health Design Medical Medical Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/0d/5d/c00d5dc4a933b54bc0ac7245f07ddd0a.jpg" data-lightbox="roadtrip" data-title="Photo About Doctor Viewing Medical App On Tablet Innovations In Health Care Services Stock Photo Image Of Recommend Medical App Health Care Services Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/0d/5d/c00d5dc4a933b54bc0ac7245f07ddd0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBW9UZ7Rm2c0JRmMHbOhIvg_uiLNosB9rXA';" alt="Photo About Doctor Viewing Medical App On Tablet Innovations In Health Care Services Stock Photo Image Of Recommend Medical App Health Care Services Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo About Doctor Viewing Medical App On Tablet Innovations In Health Care Services Stock Photo Image Of Recommend Medical App Health Care Services Medical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/14/8f/99148f8d13a4e72f248a71614898503e.png" data-lightbox="roadtrip" data-title="Icu Nurse Resume Example Template Concept In 2020 Resume Examples Medical Assistant Resume Job Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/14/8f/99148f8d13a4e72f248a71614898503e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNSlxJKWFiYaMXlKOP6xhPRfgYAkwOpmGw4Q';" alt="Icu Nurse Resume Example Template Concept In 2020 Resume Examples Medical Assistant Resume Job Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Icu Nurse Resume Example Template Concept In 2020 Resume Examples Medical Assistant Resume Job Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/human-resources-for-military.html">Human Resources For Military</a></li>
+													<li class="list-group-item"><a href="/indian-army-officer-wife-etiquette.html">Indian Army Officer Wife Etiquette</a></li>
+													<li class="list-group-item"><a href="/images-of-navy-officer-and-wife.html">Images Of Navy Officer And Wife</a></li>
+													<li class="list-group-item"><a href="/indian-army-haircut.html">Indian Army Haircut</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-dies-before-retirement-age.html">If My Spouse Dies Before Retirement Age</a></li>
+													<li class="list-group-item"><a href="/i-love-my-spouse-quotes.html">I Love My Spouse Quotes</a></li>
+													<li class="list-group-item"><a href="/hr-recruitment-salvation-army.html">Hr Recruitment Salvation Army</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-hq-address.html">Indian Air Force Hq Address</a></li>
+													<li class="list-group-item"><a href="/hr-manager-air-force.html">Hr Manager Air Force</a></li>
+													<li class="list-group-item"><a href="/hrc-army-reserve-promotions.html">Hrc Army Reserve Promotions</a></li>
+													<li class="list-group-item"><a href="/i-miss-being-a-military-spouse.html">I Miss Being A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/huron-park-air-force-base.html">Huron Park Air Force Base</a></li>
+													<li class="list-group-item"><a href="/human-resources-tinker-air-force-base.html">Human Resources Tinker Air Force Base</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-scholarship-for-college-students.html">Indian Air Force Scholarship For College Students</a></li>
+													<li class="list-group-item"><a href="/indian-army-wife-book-pdf.html">Indian Army Wife Book Pdf</a></li>
+													<li class="list-group-item"><a href="/indian-army-love-quotes-in-hindi.html">Indian Army Love Quotes In Hindi</a></li>
+													<li class="list-group-item"><a href="/indian-army-officer-with-wife.html">Indian Army Officer With Wife</a></li>
+													<li class="list-group-item"><a href="/husband-in-the-army-national-guard.html">Husband In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/indian-army-wife-status.html">Indian Army Wife Status</a></li>
+													<li class="list-group-item"><a href="/i-am-thankful-for-my-wife-quotes.html">I Am Thankful For My Wife Quotes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

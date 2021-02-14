@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Seal Gallagher Hulu - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Seal Gallagher Hulu",
+  "datePublished": "2021-02-14",
+  "image": "https://i.ytimg.com/vi/Nn1zKL3z5tI/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+seal+gallagher+hulu",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Seal Gallagher Hulu</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Former Navy SEAL Eddie Gallagher is suing the Navy claiming they leaked 500 pages of confidential documents from the Navys criminal investigation against him in an attempt to influence his. After Trump restored Gallaghers rank the Navy moved to strip Gallagher of his SEAL Trident and boot him from the elite community. The SEAL didnt think Gallagher. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/myco-z-untuk-eksim.html">myco z untuk eksim</a>
+											<a class="badge badge-dark" href="/mycarx431com-updating-download.html">mycarx431com updating download</a>
+											<a class="badge badge-light" href="/mycareer-offline.html">mycareer offline</a>
+											<a class="badge badge-secondary" href="/mycareer-locker-codes-2k20-vc.html">mycareer locker codes 2k20 vc</a>
+											<a class="badge badge-info" href="/national-archives-request-for-military-records.html">national archives request for military records</a>
+											<a class="badge badge-danger" href="/mycar-upper-coomera.html">mycar upper coomera</a>
+											<a class="badge badge-primary" href="/national-military-family-association-joanne-holbrook-patton-military-spouse-scholarship-program.html">national military family association joanne holbrook patton military spouse scholarship program</a>
+											<a class="badge badge-light" href="/mycar-x431-launch.html">mycar x431 launch</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-full-169.jpg" data-lightbox="roadtrip" data-title="Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-full-169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1Xt339vQ8qHXhn0kP_B3zNXMYySpNSrmRw';" alt="Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nypost.com/wp-content/uploads/sites/2/2019/06/guy.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" data-lightbox="roadtrip" data-title="Trial Set For Navy Seal In Islamic State Prisoner S Killing">
+											<img class="card-img v-image ads-img " src="https://nypost.com/wp-content/uploads/sites/2/2019/06/guy.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09ZxthPpqaljmgW355aO347f3DX5HK0JB_Q';" alt="Trial Set For Navy Seal In Islamic State Prisoner S Killing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trial Set For Navy Seal In Islamic State Prisoner S Killing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/cc/7c/70cc7ca3d27e75dd9b81446b6192a0a3.png" data-lightbox="roadtrip" data-title="Pin By Rebecca Salter On Whoopi Goldberg Movies Plus Talk Show The View Tim Robbins Robert Altman Julia Roberts Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/cc/7c/70cc7ca3d27e75dd9b81446b6192a0a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFf3NpOiFak43JToWKwqKoRpTMPHWsCoh7A';" alt="Pin By Rebecca Salter On Whoopi Goldberg Movies Plus Talk Show The View Tim Robbins Robert Altman Julia Roberts Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rebecca Salter On Whoopi Goldberg Movies Plus Talk Show The View Tim Robbins Robert Altman Julia Roberts Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Nn1zKL3z5tI/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Navy Seals Speak Out About Eddie Gallagher In Newly Obtained Interviews Today Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Nn1zKL3z5tI/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpIKmCXwUFP3_VZjpPXNysLqasVtUEKcFsHA';" alt="Navy Seals Speak Out About Eddie Gallagher In Newly Obtained Interviews Today Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Speak Out About Eddie Gallagher In Newly Obtained Interviews Today Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/ff/70/82ff70b593f823d6e902b5ac485d66a2.jpg" data-lightbox="roadtrip" data-title="Pin By Dale Evonne Higdon Newsom On Us Navy Navy Quotes Navy Humor Navy Chief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/ff/70/82ff70b593f823d6e902b5ac485d66a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKm-aATlKrj_NO88BPFK0CnrpQ8aAebMYCQ';" alt="Pin By Dale Evonne Higdon Newsom On Us Navy Navy Quotes Navy Humor Navy Chief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dale Evonne Higdon Newsom On Us Navy Navy Quotes Navy Humor Navy Chief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/4f/c8/d14fc8cd38f776e06a345700f525b126.jpg" data-lightbox="roadtrip" data-title="Pin By Beautylover1987 On Pablo Shreiber Pablo Schreiber Pablo Gorgeous Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/4f/c8/d14fc8cd38f776e06a345700f525b126.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG46qUWEmYzWUfzFS8B9Eou6rfRO-yr6G1jg';" alt="Pin By Beautylover1987 On Pablo Shreiber Pablo Schreiber Pablo Gorgeous Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Beautylover1987 On Pablo Shreiber Pablo Schreiber Pablo Gorgeous Men</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/45/b6/11/45b611449ea05a0b05b710be0072671f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG46qUWEmYzWUfzFS8B9Eou6rfRO-yr6G1jg';" alt="Pin By Beautylover1987 On Pablo Shreiber Pablo Schreiber Pablo Gorgeous Men">
+										<div class="card-body">
+						<h3 class="h5"><b>FXHulu episode by the NYT on the case of Navy SEAL Operator Eddie Gallagher and his outing of War.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy seal gallagher hulu</strong>. 
+								
+																	The Weekly Season 1 Ep. 
+																	With more than 1550 journalists scattered across 160 countries The Times produces 2500 stories a week investigative reports political scoops cultural dispatches. 
+																	The Times is releasing a trove of video evidence that includes interviews with the fellow Navy SEALs who turned Gallagher. 
+																	By Joel Keller Sep 27 2017 CBSs entry in the military drama genre is one we actually want to watch. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SEAL Team on CBS A Patriotic Drama Where Navy SEALs Kill Bad Guys. 
+																	The Weekly Season 1 Ep. 
+																	Elite Navy SEALs who served in Iraq alongside Special Operations Chief Edward Eddie Gallagher told investigators they viewed him as an evil leader who committed what they considered to be obvious war crimes according to newly released video and text messages obtained by The New York Times. 
+																	Navy Seal Edward Gallagher and his wife Andrea meet with President Trump and his wife Melania at Mar-a-Lago in Palm Beach Fla in a photo posted to Gallaghers Instagram account on Dec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The video interviews are part of the Hulu streaming program The. 
+																	In the video used in a New York Times documentary called The weekly on hulu the teenage ISIS fighter appears to be barely conscious. 
+																	Stream It Or Skip It. 
+																	The Weekly Streaming Now on Hulu Special Operations Chief Edward Gallaghers case continues to roil the Navy even after his acquittal on most charges after another SEAL surprised prosecutors on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	START YOUR FREE TRIAL Log In. 
+																	Each half-hour episode features a Times journalist investigating one of the most pressing issues of the day. 
+																	Gallagher born May 29 1979 is a former United States Navy SEAL who came to national attention in the United States after he was charged in September 2018 with ten offenses under the Uniform Code of Military Justice over accusations that he had stabbed to death an injured sedated 17-year-old ISIS prisoner photographing himself with the corpse and sending the photo to friends. 
+																	FXHulu episode by the NYT on the case of Navy SEAL Operator Eddie Gallagher and his outing of War Crimes by other members of SEAL Team 7. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vin Diesel is a Navy SEAL who finds himself in unfamiliar territory--taking care of five demanding children hes been assigned to protect. 
+																	After Trump restored Gallaghers rank the Navy moved to strip Gallagher of his SEAL trident and boot him from the elite community. 
+																	The president pushed back in Gallaghers favor and before all. 
+																	The Weekly brings the unparalleled journalism of The New York Times to the screen for the first time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Weekly brings the unparalleled journalism of The New York Times to the screen for the first timeEach half-hour episode features a Times journalist investigating one of the most pressing issues of the day. 
+																	It was Gallagher a Navy corpsman assigned to Marines before he became a SEAL who began treating the wounded Iraqi which the SO1 assumed was a shrapnel wound. 
+																	And Gallagher seen over the teen and then a hand turns up. 
+																	START YOUR FREE TRIAL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its all on Hulu. 
+																	A new documentary from TheWeeklyNYT now on Hulu. 
+																	Posted by 11 months ago. 
+																	S pecial Warfare Chief Edward Gallagher has not announced any plans after being acquitted of war crimes charges but fellow Navy SEALs say hell have no problem embarking on a new career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The president pushed back in Gallaghers favor and before all. 
+																	The video recordings as well as text messages sent between the SEALs are part of a New York Times documentary airing on Hulu that the Times says reveals the anguish and anger the members of SEAL Team 7 experienced when speaking about Gallaghers actions during their deployment. 
+																	With more than 1550 journalists scattered across 160 countries the Times produces 2500 stories a week investigative reports political. 
+																	Videos reveal new details about the case of Edward Gallagher a Navy SEAL accused by his own men of war crimes and whose defenders include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Start your free trial to watch The Pacifier and other popular TV shows and movies including new releases classics Hulu Originals and more. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/958/2019/12/27192850/GettyImages_Gallagher_122719.jpg" data-lightbox="roadtrip" data-title="Navy Seals Call Eddie Gallagher Toxic And Evil In Newly Released Video Interviewsmyclallamcounty Com Myclallamcounty Com">
+											<img class="card-img v-image ads-img " src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/958/2019/12/27192850/GettyImages_Gallagher_122719.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVaC29OnU5CpHsHEfqGYTkhw0x_TRFVbXSw';" alt="Navy Seals Call Eddie Gallagher Toxic And Evil In Newly Released Video Interviewsmyclallamcounty Com Myclallamcounty Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Call Eddie Gallagher Toxic And Evil In Newly Released Video Interviewsmyclallamcounty Com Myclallamcounty Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/9a/7f/489a7f08683db42d463791a7ab33d76d.jpg" data-lightbox="roadtrip" data-title="Latest Posters Jack Ryan Series Jack Ryan Tv Series John Krasinski">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/9a/7f/489a7f08683db42d463791a7ab33d76d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYantFgghSJPAWpR2nYsuXyPa4UORxUqt6tA';" alt="Latest Posters Jack Ryan Series Jack Ryan Tv Series John Krasinski">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Posters Jack Ryan Series Jack Ryan Tv Series John Krasinski</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EMb-_bWWsAAMies.jpg" data-lightbox="roadtrip" data-title="Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EMb-_bWWsAAMies.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5sI_qYBcIdiBNviv933GK5ZBB_i7hhHT_A';" alt="Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/ea/da/2feada62e860d6bd6a41fb8263d9c330.jpg" data-lightbox="roadtrip" data-title="For You Writers Out There Army Ranks Military Ranks Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/ea/da/2feada62e860d6bd6a41fb8263d9c330.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTQM0CMQvY1DvUjNMn6uKyRZglIC0mLCPqA';" alt="For You Writers Out There Army Ranks Military Ranks Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For You Writers Out There Army Ranks Military Ranks Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/nypost.com/wp-content/uploads/sites/2/2019/11/eddie-gallagher-index-1.jpg?quality=80&amp;strip=all&amp;ssl=1" data-lightbox="roadtrip" data-title="Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/nypost.com/wp-content/uploads/sites/2/2019/11/eddie-gallagher-index-1.jpg?quality=80&amp;strip=all&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdd7_exUOQTJ-vGU_rOPVYhDjMoj_KUKmB2g';" alt="Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/HkT6ifS45Z8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Why Navy Seal Eddie Gallagher Was Found Not Guilty Of Murdering Iraqi Captive Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/HkT6ifS45Z8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPGEdJWfmyss3pbtIZgTdPcTLfPdhongBoQ';" alt="Why Navy Seal Eddie Gallagher Was Found Not Guilty Of Murdering Iraqi Captive Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Navy Seal Eddie Gallagher Was Found Not Guilty Of Murdering Iraqi Captive Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/f6/67/52f66760f6b790cca5640a8209ab7f2b.jpg" data-lightbox="roadtrip" data-title="About Chad Navy Seals Us Navy Seals Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/f6/67/52f66760f6b790cca5640a8209ab7f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVSo-B9YXVRlO7Sg0nPlIDWfoVck317tBEA';" alt="About Chad Navy Seals Us Navy Seals Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Chad Navy Seals Us Navy Seals Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/PmxFMphdC4A/maxresdefault.jpg" data-lightbox="roadtrip" data-title="The Real Story Behind The Charges Against Eddie Gallagher Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/PmxFMphdC4A/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9FTKmIbtHytv7l-XwkzCwBAB5kIs_liRzg';" alt="The Real Story Behind The Charges Against Eddie Gallagher Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Real Story Behind The Charges Against Eddie Gallagher Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EMb-FITXUAI0Y21.jpg" data-lightbox="roadtrip" data-title="The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EMb-FITXUAI0Y21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IRWzREe1lOf6A2WftZQBncTlAvIJETTYog';" alt="The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media14.s-nbcnews.com/j/MSNBC/Components/Video/201907/nn_spa_navy_war_crimes_190702_1562116116253.focal-760x428.jpg" data-lightbox="roadtrip" data-title="Navy Seal Edward Gallagher Acquitted Of Murder In Isis Fighter Case">
+											<img class="card-img v-image ads-img " src="https://media14.s-nbcnews.com/j/MSNBC/Components/Video/201907/nn_spa_navy_war_crimes_190702_1562116116253.focal-760x428.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__OKXTNfsldNDcpukhPQB2OOmD2QwjMmVDg';" alt="Navy Seal Edward Gallagher Acquitted Of Murder In Isis Fighter Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Edward Gallagher Acquitted Of Murder In Isis Fighter Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cd/8a/c5/cd8ac595b303739583f77792894794f1.jpg" data-lightbox="roadtrip" data-title="Gms Racing Names Chad Norris As 2018 Nascar Xfinity Series Crew Chief For Spencer Gallagher Nascar Arca Racing Racing Kansas Speedway">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cd/8a/c5/cd8ac595b303739583f77792894794f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe8TdKsqGas7bxPaKtkIwPb6LYfjjh85zVrA';" alt="Gms Racing Names Chad Norris As 2018 Nascar Xfinity Series Crew Chief For Spencer Gallagher Nascar Arca Racing Racing Kansas Speedway">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gms Racing Names Chad Norris As 2018 Nascar Xfinity Series Crew Chief For Spencer Gallagher Nascar Arca Racing Racing Kansas Speedway</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/b6/11/45b611449ea05a0b05b710be0072671f.jpg" data-lightbox="roadtrip" data-title="American Gods Pablo Schreiber And Ricky Whittle Photo Via Pablo S Instagram Pablo Schreiber American Gods Mad Sweeney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/b6/11/45b611449ea05a0b05b710be0072671f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNgzV62wZg-Oz9grGjOk6u0ZpxsICeFD-MbA';" alt="American Gods Pablo Schreiber And Ricky Whittle Photo Via Pablo S Instagram Pablo Schreiber American Gods Mad Sweeney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Gods Pablo Schreiber And Ricky Whittle Photo Via Pablo S Instagram Pablo Schreiber American Gods Mad Sweeney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/c7/73/bec773caa2226e4470a60182b98e08f3.jpg" data-lightbox="roadtrip" data-title="Minor Accessories Dog Diy Pets Dogged Dogsaccessorieswebsite Tactical Dog Harness Dog Equipment Tactical Dog Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/c7/73/bec773caa2226e4470a60182b98e08f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxwm4mIJvx7Ea7W3nlCPTUfDDgsV-jT3skg';" alt="Minor Accessories Dog Diy Pets Dogged Dogsaccessorieswebsite Tactical Dog Harness Dog Equipment Tactical Dog Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minor Accessories Dog Diy Pets Dogged Dogsaccessorieswebsite Tactical Dog Harness Dog Equipment Tactical Dog Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-career-hub-bournemouth.html">My Career Hub Bournemouth</a></li>
+													<li class="list-group-item"><a href="/msn-usa-world-news.html">Msn Usa World News</a></li>
+													<li class="list-group-item"><a href="/my-bipolar-spouse-hates-me.html">My Bipolar Spouse Hates Me</a></li>
+													<li class="list-group-item"><a href="/msn-usa-search.html">Msn Usa Search</a></li>
+													<li class="list-group-item"><a href="/my-boyfriend-lacks-compassion.html">My Boyfriend Lacks Compassion</a></li>
+													<li class="list-group-item"><a href="/my-car-wont-start.html">My Car Wont Start</a></li>
+													<li class="list-group-item"><a href="/msn-usa-breaking.html">Msn Usa Breaking</a></li>
+													<li class="list-group-item"><a href="/my-care-portal-tricare.html">My Care Portal Tricare</a></li>
+													<li class="list-group-item"><a href="/my-air-force-benefits-website.html">My Air Force Benefits Website</a></li>
+													<li class="list-group-item"><a href="/my-campus-portal-link.html">My Campus Portal Link</a></li>
+													<li class="list-group-item"><a href="/msn-usa-phone-number.html">Msn Usa Phone Number</a></li>
+													<li class="list-group-item"><a href="/my-car-was-stolen.html">My Car Was Stolen</a></li>
+													<li class="list-group-item"><a href="/my-car-queanbeyan.html">My Car Queanbeyan</a></li>
+													<li class="list-group-item"><a href="/my-cambrian-portal-log-in.html">My Cambrian Portal Log In</a></li>
+													<li class="list-group-item"><a href="/my-campus-portal-umaine.html">My Campus Portal Umaine</a></li>
+													<li class="list-group-item"><a href="/my-car-wash.html">My Car Wash</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-in-cartoons.html">Msn Us News In Cartoons</a></li>
+													<li class="list-group-item"><a href="/my-career-goal-is-to-become.html">My Career Goal Is To Become</a></li>
+													<li class="list-group-item"><a href="/msn-usa-english-news.html">Msn Usa English News</a></li>
+													<li class="list-group-item"><a href="/my-career-goals-essay-examples.html">My Career Goals Essay Examples</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

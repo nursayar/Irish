@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Indian Army Wife Welfare Association - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Indian Army Wife Welfare Association",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/ff/80/f3/ff80f3d5acaf00ba92c7e301ab4c906d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=indian+army+wife+welfare+association",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Indian Army Wife Welfare Association</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army spouses also run the high-profile Army Wives Welfare Association or AWWA. Indian Army Chief General Manoj Mukund Naravanes wife delivered gifts from Gorkha soldiers to their wives living in Kathmandu. Veena Naravane who is president of the Army Wives Welfare Association received the gift parcels from four Gorkha soldiers working with her husband -- Army Chief General MM Naravane -- in the Army Headquarters in South Block. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-wife-t-shirt.html">army wife t shirt</a>
+											<a class="badge badge-warning" href="/army-wife-hoodie.html">army wife hoodie</a>
+											<a class="badge badge-secondary" href="/army-welfare-support-service.html">army welfare support service</a>
+											<a class="badge badge-secondary" href="/army-welfare-contact-number.html">army welfare contact number</a>
+											<a class="badge badge-success" href="/army-wives-streaming-saison-2.html">army wives streaming saison 2</a>
+											<a class="badge badge-warning" href="/asu-military-spouse-tuition.html">asu military spouse tuition</a>
+											<a class="badge badge-dark" href="/badr-hari-army-hoodie.html">badr hari army hoodie</a>
+											<a class="badge badge-secondary" href="/army-vs-air-force-education-benefits.html">army vs air force education benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the right site.  Our site gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/44/88/704488a11581db8ca49c184d2adfc948.png" data-lightbox="roadtrip" data-title="Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/44/88/704488a11581db8ca49c184d2adfc948.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8DpMHsndJtYXJEdZ7vDeliR5ZXi3NJq9nA&amp;ec=45774421';" alt="Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/80/f3/ff80f3d5acaf00ba92c7e301ab4c906d.jpg" data-lightbox="roadtrip" data-title="Happy Women Day Army Indianarmy Indian Army Quotes Army Quotes Navy Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/80/f3/ff80f3d5acaf00ba92c7e301ab4c906d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSICIP0VHJlTn_AIwtGiWYkvfWBVn6LlYWfIg&amp;ec=45774421';" alt="Happy Women Day Army Indianarmy Indian Army Quotes Army Quotes Navy Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Women Day Army Indianarmy Indian Army Quotes Army Quotes Navy Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg" data-lightbox="roadtrip" data-title="Adg Pi Indian Army On Twitter Army Wives Army Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReMo2yRwbn6MAgsclNjq9NrK8IBp2MS42LA&amp;ec=45774421';" alt="Adg Pi Indian Army On Twitter Army Wives Army Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adg Pi Indian Army On Twitter Army Wives Army Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.awesindia.com/templates/colourful-world/images/blue/header.jpg" data-lightbox="roadtrip" data-title="Welcome To Awes">
+											<img class="card-img v-image ads-img " src="http://www.awesindia.com/templates/colourful-world/images/blue/header.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVknSGO_hDmWZtXSp1aALm79ULjBhbn8OnQ&amp;ec=45774421';" alt="Welcome To Awes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Awes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202011/unnamed_3_1200x768.jpeg?sYMNtoAMvNeIqNxeaVhBQRmNTisR7jTm&amp;size=770:433" data-lightbox="roadtrip" data-title="Indian Army Chief S Wife Delivered Gifts From Gorkha Soldiers To Their Wives In Nepal India News">
+											<img class="card-img v-image ads-img " src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202011/unnamed_3_1200x768.jpeg?sYMNtoAMvNeIqNxeaVhBQRmNTisR7jTm&amp;size=770:433" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRc2oIExYfc5WztcVpwGuL5_d8TSY1eSfoKg&amp;ec=45774421';" alt="Indian Army Chief S Wife Delivered Gifts From Gorkha Soldiers To Their Wives In Nepal India News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Chief S Wife Delivered Gifts From Gorkha Soldiers To Their Wives In Nepal India News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://indianarmy.nic.in/writereaddata/images/Bages08042019-1.jpg" data-lightbox="roadtrip" data-title="The Official Home Page Of The Indian Army">
+											<img class="card-img v-image ads-img " src="https://indianarmy.nic.in/writereaddata/images/Bages08042019-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepGBlOFScqa6dXUDWqYl3vErqMzs0vcAflg&amp;ec=45774421';" alt="The Official Home Page Of The Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Official Home Page Of The Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepGBlOFScqa6dXUDWqYl3vErqMzs0vcAflg&amp;ec=45774421';" alt="The Official Home Page Of The Indian Army">
+										<div class="card-body">
+						<h3 class="h5"><b>AFWWA is a forum to exchange ideas interact and provide innumerable benefits to its members.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Indian army wife welfare association</strong>. 
+								
+																	Army Wives Welfare Association AWWA. 
+																	The Army Wives Welfare Association AWWA is a non-government organistation NGO headed by the army chiefs wife. 
+																	011- 23018183 and Address is 210 South Block Integrated HQ of Defence Army DHQ PO New Delhi 110011 Army wives welfare association founded in 1996 for welfare of India n army wives. 
+																	This Portal is a Mission Mode Project under the National E-Governance Plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Membership is mandatory for all wives of serving officers. 
+																	Ex - Army Wife Welfare Association. 
+																	Air Force Wives Welfare Association is a welfare organisation for the wives of all personnel in the Air Force. 
+																	The Association has been officially registered as a Welfare Society with the Registrar of Societies Delhi Administration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As the association works for the welfare of the spouses children and dependents of the Army personnel it is aptly referred as the invisiblehands that shape the punch of the Indian Army. 
+																	It is mandatory for the wife of every serving army officer and jawan to be a member and take part in the activities of the Association. 
+																	Other than that the association organises vocational trainings and empower the beneficiaries. 
+																	Army Wives Welfare Association Army Wives Welfare Association. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From providing young entrepreneurs a platform to showcase their talents to. 
+																	The wife of a Major in the Indian Army posted in an artillery unit in Faridkot has shot off a complaint to the General Officer Commanding-in-Chief of the South Western Command alleging that she. 
+																	AWWA was founded in 1966. 
+																	User can get the information on the history of the Indian Republic Indias national flag national anthem and the general knowledge information Presidents Address to the Nation Parade Beating Retreat Ceremony is about informationPadma Awards the Correctional. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Wives Welfare Association AWWA has been making a difference to the society in their own little way. 
+																	Its a welfare organization headed by the army chiefs wife that was set up to keep an eye out for the families of the troops. 
+																	Ex-Army Wife Welfare Association looks for the women welfare and empowerment where empowerment refers the spiritual social of individual communities. 
+																	Ex - Army Wife Welfare Association. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Wives Welfare Association Army Wives Welfare Association. 
+																	The association aims to rehabilitate war widows and battle casualties. 
+																	It can be a. 
+																	The Associations activities are meant to be for the well-being of Army wives and children apart from helping in the rehabilitation of war widows and special children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AWWA is a non-government organistation NGO headed by the Army chiefs wife and it is mandatory for the wife of every serving Army officer and jawan to be a member and take part in the activities of the Association. 
+																	Developed with an objective to enable a single window access to information and services being provided by the various Indian Government entities. 
+																	Founded in 1966 and headed by the serving chiefs wife AWWA is tasked with furthering the welfare of army personnel. 
+																	Army Wives Welfare Association Contact Phone Number is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army wives welfare association also registered as an NGO. 
+																	Army Wives Welfare Association AWWA is an nonIndian non-profit organisation that works for the spouse children or any dependants of Army Personnel. 
+																	The aim of the Army Wives Welfare Association therefore is to support and augment the official welfare efforts within the Indian Army focusing primarily on the welfare of families children and widows of all ranks including those of retired personnel of the Army. 
+																	Army wives welfare association Indian Army Chief General MM Naravane arrives in Kathmandu Security has been heightened in Kathmandu and due to the security reason the details of Navaranes visit including his local accommodation and routes for travelling to the Nepal Army headquarters the Presidents Office and the Prime Ministers Residence have not been disclosed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This after Col Loomba made adverse remarks in her husbands annual confidential report ACR because of her non-participation in the Army Wives Welfare Association AWWA activities during their. 
+																	Ex-Army Wife Welfare Association looks for the women welfare and empowerment where empowerment refers the spiritual social of individual communities. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/c0/78/fec0785d677fa9cb28168fe28a659ae3.jpg" data-lightbox="roadtrip" data-title="Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/c0/78/fec0785d677fa9cb28168fe28a659ae3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBheY0rL9fYCddqX8q0KBByBLlwnU5wTBGg&amp;ec=45774421';" alt="Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/4d/89/824d899661af8831bb1681d80cfba9e1.jpg" data-lightbox="roadtrip" data-title="Sena Jal Army Water Not For Common Man Army Water Bottle Drinking Water Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/4d/89/824d899661af8831bb1681d80cfba9e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpRE5OiCsbnYKP0WExGM2MwyLdAVJx16uxg&amp;ec=45774421';" alt="Sena Jal Army Water Not For Common Man Army Water Bottle Drinking Water Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sena Jal Army Water Not For Common Man Army Water Bottle Drinking Water Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://indianarmy.nic.in/writereaddata/Images/GOCNC17820.jpg" data-lightbox="roadtrip" data-title="The Official Home Page Of The Indian Army">
+											<img class="card-img v-image ads-img " src="https://indianarmy.nic.in/writereaddata/Images/GOCNC17820.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1JJMMpWnp3y6iYGPaGTf-AZNzt1wHRtHzA&amp;ec=45774421';" alt="The Official Home Page Of The Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Official Home Page Of The Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.thequint.com/thequint%2F2017-04%2Fcbd799b5-eb93-4d67-8358-974577f7c080%2FINDIAN%20ARMY%20HERO.jpg?rect=0%2C0%2C2000%2C1125&amp;auto=format%2Ccompress&amp;fmt=webp&amp;format=webp&amp;w=480&amp;dpr=2.6" data-lightbox="roadtrip" data-title="Love The Army Here Are 6 Ways You Can Actually Show Your Passion">
+											<img class="card-img v-image ads-img " src="https://images.thequint.com/thequint%2F2017-04%2Fcbd799b5-eb93-4d67-8358-974577f7c080%2FINDIAN%20ARMY%20HERO.jpg?rect=0%2C0%2C2000%2C1125&amp;auto=format%2Ccompress&amp;fmt=webp&amp;format=webp&amp;w=480&amp;dpr=2.6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEAGcVTeQ70jPhDzWd5eQaxSjEm63leBafA&amp;ec=45774421';" alt="Love The Army Here Are 6 Ways You Can Actually Show Your Passion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love The Army Here Are 6 Ways You Can Actually Show Your Passion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/41/e3/3441e3e41f55ce0980a4d191a3101a12.jpg" data-lightbox="roadtrip" data-title="A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/41/e3/3441e3e41f55ce0980a4d191a3101a12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-JvhiLa-nNa1t2JLiCaaTGq3qYz7VjtVbA&amp;ec=45774421';" alt="A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.news18.com/ibnlive/uploads/2020/07/1595737564_kargil-diwas.jpg?impolicy=website&amp;width=534&amp;height=356" data-lightbox="roadtrip" data-title="Bowing My Head In Reverence Indian Sportspersons Salute Soldiers On 21st Kargil Vijay Diwas">
+											<img class="card-img v-image ads-img " src="https://images.news18.com/ibnlive/uploads/2020/07/1595737564_kargil-diwas.jpg?impolicy=website&amp;width=534&amp;height=356" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRx83gTzQLGY7xZYxSn1cdZFA6kV_cygcKQ&amp;ec=45774421';" alt="Bowing My Head In Reverence Indian Sportspersons Salute Soldiers On 21st Kargil Vijay Diwas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bowing My Head In Reverence Indian Sportspersons Salute Soldiers On 21st Kargil Vijay Diwas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/12/4f/c9124fa336d2ef9cf2e0883c0b4957ce.jpg" data-lightbox="roadtrip" data-title="Pin On Indian Express">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/12/4f/c9124fa336d2ef9cf2e0883c0b4957ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwniDrhhP_2NXgE0QfNvmPIpHeqtR9Cea-A&amp;ec=45774421';" alt="Pin On Indian Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indian Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/2e/2c/e82e2c718d9280328e4df1f0e693564e.jpg" data-lightbox="roadtrip" data-title="Top 20 Best Quotes From Indian Army Soldiers Saying Reckon Talk Kargil War Army Quotes Indian Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/2e/2c/e82e2c718d9280328e4df1f0e693564e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZh7Zn3Y4OCnqFQ-7LH70gDzxX3czy5lpbUQ&amp;ec=45774421';" alt="Top 20 Best Quotes From Indian Army Soldiers Saying Reckon Talk Kargil War Army Quotes Indian Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 20 Best Quotes From Indian Army Soldiers Saying Reckon Talk Kargil War Army Quotes Indian Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/fa/fe/8bfafe5c213454aa33e23a36cea883fa.jpg" data-lightbox="roadtrip" data-title="Pin By Avantika Kaushik On Patriotic India Indian Army Wallpapers Indian Air Force Indian Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/fa/fe/8bfafe5c213454aa33e23a36cea883fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-GC5krT6-VP8yn--zLXyWTLT8fqWPbzmeg&amp;ec=45774421';" alt="Pin By Avantika Kaushik On Patriotic India Indian Army Wallpapers Indian Air Force Indian Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Avantika Kaushik On Patriotic India Indian Army Wallpapers Indian Air Force Indian Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/4b/5c/b54b5ce0dc9a2b273fc43930615a5436.jpg" data-lightbox="roadtrip" data-title="Pin By Meera Vaitheeswaran On Znamenitosti Mahesh Babu Wallpapers Indian Army Wallpapers Photoshop Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/4b/5c/b54b5ce0dc9a2b273fc43930615a5436.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwomt8KDiey35EqdHObu3zO3kjhvTbFFC89Q&amp;ec=45774421';" alt="Pin By Meera Vaitheeswaran On Znamenitosti Mahesh Babu Wallpapers Indian Army Wallpapers Photoshop Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Meera Vaitheeswaran On Znamenitosti Mahesh Babu Wallpapers Indian Army Wallpapers Photoshop Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/fa/54/fcfa54e87506b9005cdab2f106912f90.jpg" data-lightbox="roadtrip" data-title="Salute To Indian Soldier In 2020 Social Media Post Motivation Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/fa/54/fcfa54e87506b9005cdab2f106912f90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoA0gOMReuppWJl_jcgTjce4CJexfHL3fiwg&amp;ec=45774421';" alt="Salute To Indian Soldier In 2020 Social Media Post Motivation Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salute To Indian Soldier In 2020 Social Media Post Motivation Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/ed/2a/45ed2a8a039de98bcb9defc7eb26c300.jpg" data-lightbox="roadtrip" data-title="Pakistan Again Violates Ceasefire India Retaliates Http Bdc Tv Com Pakistan Violates Ceasefire India Retaliate Army Quotes Indian Army Quotes Service Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/ed/2a/45ed2a8a039de98bcb9defc7eb26c300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mQ4rqF8rPz2PEC-T-FeTEa7y7uOHgDChPA&amp;ec=45774421';" alt="Pakistan Again Violates Ceasefire India Retaliates Http Bdc Tv Com Pakistan Violates Ceasefire India Retaliate Army Quotes Indian Army Quotes Service Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Again Violates Ceasefire India Retaliates Http Bdc Tv Com Pakistan Violates Ceasefire India Retaliate Army Quotes Indian Army Quotes Service Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/25/a6/d325a6da03809926ae63fc11d797e935.jpg" data-lightbox="roadtrip" data-title="Stories Instagram Mahesh Babu Mahesh Babu Wallpapers Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/25/a6/d325a6da03809926ae63fc11d797e935.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSphzu1jnUR4lM2_F6M8N96lmFQQMwY1nz15w&amp;ec=45774421';" alt="Stories Instagram Mahesh Babu Mahesh Babu Wallpapers Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stories Instagram Mahesh Babu Mahesh Babu Wallpapers Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-do-i-find-world-war-2-service-records.html">How Do I Find World War 2 Service Records</a></li>
+													<li class="list-group-item"><a href="/hk-military-contracts.html">Hk Military Contracts</a></li>
+													<li class="list-group-item"><a href="/hotline-number-of-army.html">Hotline Number Of Army</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-the-us-military.html">How Do I Contact The Us Military</a></li>
+													<li class="list-group-item"><a href="/hk416-us-military.html">Hk416 Us Military</a></li>
+													<li class="list-group-item"><a href="/hong-kong-military-ranks.html">Hong Kong Military Ranks</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-housing-office.html">Hill Air Force Base Housing Office</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-death-records-uk.html">How Do I Find Death Records Uk</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-deers-office.html">Hill Air Force Base Deers Office</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-fire-department.html">Hill Air Force Base Fire Department</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-eeo-office.html">Hill Air Force Base Eeo Office</a></li>
+													<li class="list-group-item"><a href="/how-can-i-access-my-va-medical-records-online.html">How Can I Access My Va Medical Records Online</a></li>
+													<li class="list-group-item"><a href="/heroes-war-easy-gold.html">Heroes War Easy Gold</a></li>
+													<li class="list-group-item"><a href="/how-do-i-contact-human-resources.html">How Do I Contact Human Resources</a></li>
+													<li class="list-group-item"><a href="/hk-military-discount-pricing.html">Hk Military Discount Pricing</a></li>
+													<li class="list-group-item"><a href="/hk-usa-military-discount.html">Hk Usa Military Discount</a></li>
+													<li class="list-group-item"><a href="/hill-air-force-base-pharmacy-hours.html">Hill Air Force Base Pharmacy Hours</a></li>
+													<li class="list-group-item"><a href="/highest-paying-mycaa-jobs.html">Highest Paying Mycaa Jobs</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-my-territorial-army-number.html">How Do I Find My Territorial Army Number</a></li>
+													<li class="list-group-item"><a href="/heroes-war-and-magic.html">Heroes War And Magic</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

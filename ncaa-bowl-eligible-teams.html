@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Bowl Eligible Teams - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Bowl Eligible Teams",
+  "datePublished": "2021-02-14",
+  "image": "https://kentuckysportsradio.com/wp-content/uploads/2020/01/82227765_2942392325794161_3279837520593944576_o.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+bowl+eligible+teams",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Bowl Eligible Teams</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">That means any of the 127 FBS teams can play in a game. Pac-12 commissioner Larry Scott announced the conference will keep its postseason eligibility in. North Carolina State 6-5. <br>				
+			</p>
+										<a class="badge badge-light" href="/civil-war-service-index-union-pennsylvania.html">civil war service index union pennsylvania</a>
+											<a class="badge badge-light" href="/colleges-that-offer-military-spouse-discounts.html">colleges that offer military spouse discounts</a>
+											<a class="badge badge-info" href="/college-tuition-for-retired-military-dependents.html">college tuition for retired military dependents</a>
+											<a class="badge badge-light" href="/civil-war-service-records-national-archives.html">civil war service records national archives</a>
+											<a class="badge badge-primary" href="/colleges-that-match-military-tuition-assistance.html">colleges that match military tuition assistance</a>
+											<a class="badge badge-warning" href="/careers-in-msc-geology.html">careers in msc geology</a>
+											<a class="badge badge-light" href="/check-va-medical-records-online.html">check va medical records online</a>
+											<a class="badge badge-success" href="/chances-of-being-a-navy-seal.html">chances of being a navy seal</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our site provides you with hints for viewing the highest quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.saturdaydownsouth.com/wp-content/uploads/2019/12/EK-1yShUwAE3DzH.jpeg" data-lightbox="roadtrip" data-title="Sec Tied For Second Among Power 5 Conferences In Number Of Bowl Eligible Teams">
+											<img class="card-img v-image ads-img " src="https://www.saturdaydownsouth.com/wp-content/uploads/2019/12/EK-1yShUwAE3DzH.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJzR-kY2VdkXD3sYICtzmYZEfXN-ZFFh2DQ';" alt="Sec Tied For Second Among Power 5 Conferences In Number Of Bowl Eligible Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sec Tied For Second Among Power 5 Conferences In Number Of Bowl Eligible Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fbschedules.com/wp-content/uploads/2020/07/USATSI_13844805.jpg" data-lightbox="roadtrip" data-title="Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020">
+											<img class="card-img v-image ads-img " src="https://fbschedules.com/wp-content/uploads/2020/07/USATSI_13844805.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjR0afn9imXfbJsfJO18pOO_TWOo2Z4zZt-A';" alt="Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.heartlandcollegesports.com/wp-content/uploads/2019/12/USATSI_9028070.jpg" data-lightbox="roadtrip" data-title="All 127 Fbs Teams Eligible For Bowl Games In 2020">
+											<img class="card-img v-image ads-img " src="https://www.heartlandcollegesports.com/wp-content/uploads/2019/12/USATSI_9028070.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf73TtQlpn_xjLpMOG_VZF1P4y3N-ZmV-pxg';" alt="All 127 Fbs Teams Eligible For Bowl Games In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All 127 Fbs Teams Eligible For Bowl Games In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kentuckysportsradio.com/wp-content/uploads/2020/01/82227765_2942392325794161_3279837520593944576_o.jpg" data-lightbox="roadtrip" data-title="Every College Football Team Is Bowl Eligible Kentucky Sports Radio">
+											<img class="card-img v-image ads-img " src="https://kentuckysportsradio.com/wp-content/uploads/2020/01/82227765_2942392325794161_3279837520593944576_o.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIY2gGBjmMmwwbBYVuAeCvRMv0IPqQyy3RsA';" alt="Every College Football Team Is Bowl Eligible Kentucky Sports Radio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Every College Football Team Is Bowl Eligible Kentucky Sports Radio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://volswire.usatoday.com/wp-content/uploads/sites/19/2020/11/img_0043.jpg" data-lightbox="roadtrip" data-title="Latest Bowl Projection For Vols Football">
+											<img class="card-img v-image ads-img " src="https://volswire.usatoday.com/wp-content/uploads/sites/19/2020/11/img_0043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxKUHV_y75gxCEPovfY1asZGcPOLtFqIk6A';" alt="Latest Bowl Projection For Vols Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Bowl Projection For Vols Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aseaofred.com/wp-content/uploads/2019/12/49154561898_037ffe835e_c-800x640.jpg" data-lightbox="roadtrip" data-title="Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020 A Sea Of Red">
+											<img class="card-img v-image ads-img " src="https://www.aseaofred.com/wp-content/uploads/2019/12/49154561898_037ffe835e_c-800x640.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqib8V25R4YFXI-cKU97kXIGkSXkVBvibxg';" alt="Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020 A Sea Of Red">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020 A Sea Of Red</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Ffansided.com%2Ffiles%2F2016%2F11%2F9692149-ncaa-football-mississippi-vanderbilt-850x560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqib8V25R4YFXI-cKU97kXIGkSXkVBvibxg';" alt="Ncaa Allows Fbs Teams To Count Two Fcs Wins For Bowl Eligibility In 2020 A Sea Of Red">
+										<div class="card-body">
+						<h3 class="h5"><b>NCAA will be forced to adjust college football bowl eligibility standards if games are played in 2020 Shortened schedules will make it near-impossible to find 84 teams with 500 records and six wins.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa bowl eligible teams</strong>. 
+								
+																	After all bowl-eligible teams are selected the 5-7 teams which will be considered alternates will be deemed eligible in descending order from the highest multiyear Academic Progress Rate. 
+																	EUGENE Pac-12 teams will still need to have at least a 500 record to be bowl eligible in 2020. 
+																	There are 53 teams that are bowl eligible so far. 
+																	And this is the big one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bowl Location Team 1 Team 2. 
+																	Only 78 teams are needed to fill 39 bowls this year. 
+																	Bowl-Eligible Teams Air Force Mountain West Alabama SEC Appalachian State Sun Belt Arizona State Pac-12 Arkansas State Sun Belt Auburn SEC Baylor Big 12 Boise State Mountain West. 
+																	An eligible team is defined as one that has won a number of games against Football Bowl Subdivision FBS opponents that is equal to or greater than the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bowl-eligible teams ACC 10. 
+																	Heres the official rule from the NCAA. 
+																	Air Force Alabama Appalachian State Auburn Baylor Boise State Central Florida Central Michigan Cincinnati Clemson Florida Florida Atlantic Georgia Georgia State Illinois Indiana Iowa Kansas State Louisiana-Lafayette Louisiana Tech LSU Marshall. 
+																	The NCAAs Division I Council announced on Wednesday that it has waived bowl eligibility requirements for the 2020-21 bowl season only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Normally bowl eligibility is reserved for teams with at least six wins though there are exceptions. 
+																	Boston College Clemson Florida State Louisville Miami FL North Carolina Pittsburgh Virginia Virginia. 
+																	Bowl eligibility in college football at the NCAA Division I FBS level is the standard through which teams become available for selection to participate in postseason bowl games. 
+																	A total of 78 teams are needed to fill all of the bowl spots. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Sunday the Kansas City Chiefs and Tampa Bay Buccaneers will battle in Super Bowl LV. 
+																	In the case of a scenario where there are fewer six-win teams than bowl spots teams with a. 
+																	So 78 teams will earn bowl bids. 
+																	Every single team in America is eligible for the 39 bowl games being played. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When a team achieves this state it is described as bowl-eligible. 
+																	Illinois Indiana Iowa Michigan Michigan State Minnesota Ohio State. 
+																	All 127 FBS teams playing this fall are immediately bowl eligible as NCAA officially approves no win requirements to play in a bowl sources told Stadium. 
+																	The Council met by videoconference Tuesday and Wednesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Division I Council waived bowl eligibility requirements for the 2020-21 bowl season and waived the minimum number of contests for all football teams. 
+																	At present there are 39 bowl games including the first round of the College Football Playoff. 
+																	One last matchup one last game plan for victory. 
+																	Every FBS team is eligible to play in a bowl game in 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How can each team win the final. 
+																	Celebrating the win Best of Chiefs vs. 
+																	Cincinnati Memphis Navy SMU Temple Tulane UCF Big Ten 9. 
+																	For nearly a century bowl games were the purview of only the very best teams but a steady proliferation of new bowl games required 70 participating teams by the 201011 bowl season then 80 participating teams by the 201516 bowl season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order for an FBS team to officially become bowl-eligible it needs at least six wins with a minimum winning percentage of500. 
+																	The greatest rivalry in college basketball lacks its usual Super Bowl-like hype with each team struggling to build a case for an NCAA Tournament bid. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thespun.com/wp-content/uploads/2019/12/GettyImages-1196385576-775x465.jpg" data-lightbox="roadtrip" data-title="The Ncaa Has Made A Change To Its Bowl Eligibility Rules">
+											<img class="card-img v-image ads-img " src="https://thespun.com/wp-content/uploads/2019/12/GettyImages-1196385576-775x465.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5P4dfDM6YkCuiNS_2JSgvCUqF_UNOlToTNQ';" alt="The Ncaa Has Made A Change To Its Bowl Eligibility Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ncaa Has Made A Change To Its Bowl Eligibility Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fbschedules.com/wp-content/uploads/2020/12/USATSI_13905351.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Games 2020 21 Selections Schedule">
+											<img class="card-img v-image ads-img " src="https://fbschedules.com/wp-content/uploads/2020/12/USATSI_13905351.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyL0IwFpCumr0bRuxQw4eSMiTqXEA-_uIvbw';" alt="College Football Bowl Games 2020 21 Selections Schedule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Games 2020 21 Selections Schedule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Ffansided.com%2Ffiles%2F2016%2F11%2F9692149-ncaa-football-mississippi-vanderbilt-850x560.jpg" data-lightbox="roadtrip" data-title="How Many Wins Do You Need For Bowl Eligibility">
+											<img class="card-img v-image ads-img " src="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Ffansided.com%2Ffiles%2F2016%2F11%2F9692149-ncaa-football-mississippi-vanderbilt-850x560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtK7Hppo900o3ejH3ApEs3DQcPcr44B6YgQ';" alt="How Many Wins Do You Need For Bowl Eligibility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Many Wins Do You Need For Bowl Eligibility</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kslsports.com/wp-content/uploads/2019/08/Joe-Williams-vs.-BYU-768x432.jpg" data-lightbox="roadtrip" data-title="Ncaa Allowing Cfb Teams To Schedule Own Bowl Game After December 19 Ksl Sports">
+											<img class="card-img v-image ads-img " src="https://kslsports.com/wp-content/uploads/2019/08/Joe-Williams-vs.-BYU-768x432.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXD3YRJuN-qzfNgu_VSU8aSa9-eN3V8vjdA';" alt="Ncaa Allowing Cfb Teams To Schedule Own Bowl Game After December 19 Ksl Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Allowing Cfb Teams To Schedule Own Bowl Game After December 19 Ksl Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sportshub.cbsistatic.com/i/r/2018/12/30/ac4a3941-7507-4b08-88ce-377642566fba/thumbnail/1200x675/056aea2925b3663e1a5fab7788d26ec2/sun-bowl-stadium.jpg" data-lightbox="roadtrip" data-title="Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com">
+											<img class="card-img v-image ads-img " src="https://sportshub.cbsistatic.com/i/r/2018/12/30/ac4a3941-7507-4b08-88ce-377642566fba/thumbnail/1200x675/056aea2925b3663e1a5fab7788d26ec2/sun-bowl-stadium.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8Rxw8HDKm2KQkcoRJ6POrMIv_DpvWlKXCQ';" alt="Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Will Be Forced To Adjust College Football Bowl Eligibility Standards If Games Are Played In 2020 Cbssports Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.yardbarker.com/media/6/e/6ef2b3a761e0e7d967b44f099a9d1cfc1b79efb9/thumb_16x9/college-football-bowl-matchups-picks-preview.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Matchups Picks And Preview Yardbarker">
+											<img class="card-img v-image ads-img " src="http://www.yardbarker.com/media/6/e/6ef2b3a761e0e7d967b44f099a9d1cfc1b79efb9/thumb_16x9/college-football-bowl-matchups-picks-preview.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mO-hhuKoyNoBeLmFjlaOad-MS83apbxAkw';" alt="College Football Bowl Matchups Picks And Preview Yardbarker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Matchups Picks And Preview Yardbarker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/VzB2GV247mN7PxG1SM8kVw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MC4wODU3MjE5Mzk0NTg4/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/976ec280-0e6b-11eb-a5f2-476808f0d013" data-lightbox="roadtrip" data-title="Ncaa Waives Eligibility Requirements For Bowl Games For 2020">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/VzB2GV247mN7PxG1SM8kVw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MC4wODU3MjE5Mzk0NTg4/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/976ec280-0e6b-11eb-a5f2-476808f0d013" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyoAygStyXL17JmxpY2w7a7Z4Sw3LcsSAKw';" alt="Ncaa Waives Eligibility Requirements For Bowl Games For 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Waives Eligibility Requirements For Bowl Games For 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tulanehullabaloo.com/wp-content/uploads/2020/09/DSC_9239.jpg" data-lightbox="roadtrip" data-title="Pac 12 Votes To Play Fall Season All Ncaa Teams Bowl Eligible">
+											<img class="card-img v-image ads-img " src="https://tulanehullabaloo.com/wp-content/uploads/2020/09/DSC_9239.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIFcOPRXN9tnqNYQzLwJR8typoLwB49IP3A';" alt="Pac 12 Votes To Play Fall Season All Ncaa Teams Bowl Eligible">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pac 12 Votes To Play Fall Season All Ncaa Teams Bowl Eligible</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.heartlandcollegesports.com/wp-content/uploads/2018/12/USATSI_10513216.jpg" data-lightbox="roadtrip" data-title="Big 12 Bowl Game Bracketology Where Teams Stand After 12 Weeks">
+											<img class="card-img v-image ads-img " src="https://www.heartlandcollegesports.com/wp-content/uploads/2018/12/USATSI_10513216.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO7xF5JBDotA2OF_zd5qcUG9HyLO8ILmdWxA';" alt="Big 12 Bowl Game Bracketology Where Teams Stand After 12 Weeks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big 12 Bowl Game Bracketology Where Teams Stand After 12 Weeks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/b/b5/2007_Bowls-USA-states.png" data-lightbox="roadtrip" data-title="2007 08 Ncaa Football Bowl Games Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/b/b5/2007_Bowls-USA-states.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzscCqxt4nIpS65ix50UP8XJfpqoSLusXoyg';" alt="2007 08 Ncaa Football Bowl Games Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2007 08 Ncaa Football Bowl Games Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sportshub.cbsistatic.com/i/r/2017/05/10/49ad367e-c26a-4e26-87c8-ecd986b06554/thumbnail/1200x675/c628d36f01549d36718af11d02870efa/cfp-field-american-flag-bowl-games.jpg" data-lightbox="roadtrip" data-title="College Football Bowl Projections Team Eligibility Tracker For 2019 20 Bowl Games Cbssports Com">
+											<img class="card-img v-image ads-img " src="https://sportshub.cbsistatic.com/i/r/2017/05/10/49ad367e-c26a-4e26-87c8-ecd986b06554/thumbnail/1200x675/c628d36f01549d36718af11d02870efa/cfp-field-american-flag-bowl-games.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzM7gzqrUu3kxwQOcIZi0ElxHBJ-OzGhdog';" alt="College Football Bowl Projections Team Eligibility Tracker For 2019 20 Bowl Games Cbssports Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Bowl Projections Team Eligibility Tracker For 2019 20 Bowl Games Cbssports Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/51/a5/8b/51a58b610ecc76b0e5a33c79b94d894b.jpg" data-lightbox="roadtrip" data-title="In A Year That Started 1 5 Mizzou Won The Next 6 Games And Became Bowl Eligible They Did Not Beat Anyone With A Winning R Texas Bowl Mizzou Football Mizzou">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/51/a5/8b/51a58b610ecc76b0e5a33c79b94d894b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xsNmwy_8ESlH3FWW9w5Z7cvW2ZbiBwpHzg';" alt="In A Year That Started 1 5 Mizzou Won The Next 6 Games And Became Bowl Eligible They Did Not Beat Anyone With A Winning R Texas Bowl Mizzou Football Mizzou">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In A Year That Started 1 5 Mizzou Won The Next 6 Games And Became Bowl Eligible They Did Not Beat Anyone With A Winning R Texas Bowl Mizzou Football Mizzou</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.toledoblade.com/image/2019/11/04/1140x_a10-7_cTC/E-Michigan-Cent-Michigan-Football.jpg" data-lightbox="roadtrip" data-title="Central Michigan Is 1st Mac Team To Become Bowl Eligible The Blade">
+											<img class="card-img v-image ads-img " src="https://www.toledoblade.com/image/2019/11/04/1140x_a10-7_cTC/E-Michigan-Cent-Michigan-Football.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxG7Q2FMyy5A5_ur5PdbJ2pUzPTGsj6tYRQ';" alt="Central Michigan Is 1st Mac Team To Become Bowl Eligible The Blade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Central Michigan Is 1st Mac Team To Become Bowl Eligible The Blade</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-army-job.html">Benefits Of Army Job</a></li>
+													<li class="list-group-item"><a href="/benefits-for-a-divorced-military-spouse.html">Benefits For A Divorced Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-for-divorced-spouses-of-veterans.html">Benefits For Divorced Spouses Of Veterans</a></li>
+													<li class="list-group-item"><a href="/benefits-for-widows-of-military-retirees.html">Benefits For Widows Of Military Retirees</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-service.html">Benefits Of Army Service</a></li>
+													<li class="list-group-item"><a href="/benefits-for-married-couples-in-the-navy.html">Benefits For Married Couples In The Navy</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-vs-army.html">Benefits Of Air Force Vs Army</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reserve-vs-active-duty.html">Benefits Of Army Reserve Vs Active Duty</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-life.html">Benefits Of Army Life</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-national-guard.html">Benefits Of Air Force National Guard</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-a-marine-biologist.html">Benefits Of Becoming A Marine Biologist</a></li>
+													<li class="list-group-item"><a href="/being-a-military-wife-quotes.html">Being A Military Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/benefits-for-divorced-military-spouse.html">Benefits For Divorced Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reserve.html">Benefits Of Army Reserve</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-leadership.html">Benefits Of Army Leadership</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-pension.html">Benefits Of A Military Pension</a></li>
+													<li class="list-group-item"><a href="/benefits-for-families-of-deployed-soldiers.html">Benefits For Families Of Deployed Soldiers</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-health-professions.html">Benefits Of Air Force Health Professions</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-cut.html">Benefits Of Army Cut</a></li>
+													<li class="list-group-item"><a href="/being-a-military-wife-uk.html">Being A Military Wife Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

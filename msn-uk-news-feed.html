@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msn Uk News Feed - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msn Uk News Feed",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/44/24/12/442412045e25bbde38f74447f1e18568.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msn+uk+news+feed",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msn Uk News Feed</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Become informed about UK news local news international stories and opinion. The Guardian view on UK arts policy. Get the latest news from around the UK via the most trusted and authoritative news sources in Great Britain. <br>				
+			</p>
+										<a class="badge badge-danger" href="/scra-benefits-while-deployed.html">scra benefits while deployed</a>
+											<a class="badge badge-primary" href="/scholarship-for-mba-students-in-india-2020.html">scholarship for mba students in india 2020</a>
+											<a class="badge badge-success" href="/soldier-wife-quotes.html">soldier wife quotes</a>
+											<a class="badge badge-secondary" href="/scholarship-for-mba-programs.html">scholarship for mba programs</a>
+											<a class="badge badge-warning" href="/soldier-kills-pregnant-wife.html">soldier kills pregnant wife</a>
+											<a class="badge badge-success" href="/scra-benefits-auto-loan.html">scra benefits auto loan</a>
+											<a class="badge badge-danger" href="/salvation-army-phone-number-joplin-missouri.html">salvation army phone number joplin missouri</a>
+											<a class="badge badge-success" href="/shaw-cable-login-to-my-account.html">shaw cable login to my account</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the ideal blog.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/cd/eb/dacdebe59cb68f0610f88895c3f1f26e.png" data-lightbox="roadtrip" data-title="Pin On Ads In Action">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/cd/eb/dacdebe59cb68f0610f88895c3f1f26e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToJ5-QCh-0Jo9uZaguzG1qK-FSRRo6ivQJw';" alt="Pin On Ads In Action">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ads In Action</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dyaQH.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" data-lightbox="roadtrip" data-title="Lrturi8nm Rgxm">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dyaQH.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4g0L1dsjdANHqGDoS8PEjUirn7po5tqO2A';" alt="Lrturi8nm Rgxm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lrturi8nm Rgxm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c5w2O.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" data-lightbox="roadtrip" data-title="Uk News Latest News And Today S Top Stories Msn Uk">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1c5w2O.img?h=350&amp;w=624&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1jX79WFRmpN402CRTjKuaQ2dvkNb9zM8Vg';" alt="Uk News Latest News And Today S Top Stories Msn Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uk News Latest News And Today S Top Stories Msn Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBgEXZH.img?h=552&amp;w=750&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f" data-lightbox="roadtrip" data-title="Msn Apps Now Available On Ios And Android">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBgEXZH.img?h=552&amp;w=750&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEP_EMUe4ELxEaoMgyFFj-bWNinqEZxPmTA';" alt="Msn Apps Now Available On Ios And Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Apps Now Available On Ios And Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://filestore.community.support.microsoft.com/api/images/b2d11efb-f262-46ac-b43f-7069b32a6927" data-lightbox="roadtrip" data-title="Why Has The Msn Page Suddenly Taken Over When I Open A New Tab Microsoft Community">
+											<img class="card-img v-image ads-img " src="https://filestore.community.support.microsoft.com/api/images/b2d11efb-f262-46ac-b43f-7069b32a6927" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwnwUB3tlegZWC-h3C1eRbyTN2J6pfbEggg';" alt="Why Has The Msn Page Suddenly Taken Over When I Open A New Tab Microsoft Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Has The Msn Page Suddenly Taken Over When I Open A New Tab Microsoft Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.s-msn.com/tenant/amp/entityid/BBgDyxF.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=601&amp;y=405" data-lightbox="roadtrip" data-title="Get Current Download The Msn News App">
+											<img class="card-img v-image ads-img " src="https://img.s-msn.com/tenant/amp/entityid/BBgDyxF.img?h=0&amp;w=600&amp;m=6&amp;q=60&amp;u=t&amp;o=f&amp;l=f&amp;x=601&amp;y=405" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqEpdgdEnF8PK_jIF8NN9xg2B6VGTLCo4ig';" alt="Get Current Download The Msn News App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Current Download The Msn News App</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/da/cd/eb/dacdebe59cb68f0610f88895c3f1f26e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqEpdgdEnF8PK_jIF8NN9xg2B6VGTLCo4ig';" alt="Get Current Download The Msn News App">
+										<div class="card-body">
+						<h3 class="h5"><b>The latest breaking news comment and features from The Independent.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msn uk news feed</strong>. 
+								
+																	- Our editors curate the most trusted important interesting and trending news - You choose which topics matter most to you. 
+																	There are a few simple things that you can do to resolve most issues with MSN apps. 
+																	If you are on a mobile device and away from Wi-Fi hotspots be sure that you have allowed the device to use your cellular service. 
+																	First be sure that you have a connection to the internet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Microsoft News delivers breaking news and trusted in-depth reporting from the worlds best journalists. 
+																	On the msn site even if you turn off the news feed you still get the website showing when you close the edge tab with information you dont want and never asked for. 
+																	South Africa Says AstraZeneca Vaccine Less. 
+																	Google has begun rolling out its News Showcase tool which offers personalised news content to users in the UK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We can only hope that MS give us the flexibility to do the same with Edge on Android as we can with Windows 10. 
+																	If youre having issues with the News app youve come to the right place. 
+																	Americans earning 60000 should get stimulus checks. 
+																	In his first network news interview since the inauguration the president discusses relations with Iran and China. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	- Microsoft News updates you with notifications of breaking news quickly and accurately 247 - Sync your preferences across the app and the web. 
+																	Msn back to msn home news uk news powered by Microsoft News. 
+																	All stories are expertly selected from across the best UK and global newspapers. 
+																	The most eye-catching of the measures proposed by Irelands cultural recovery taskforce set up last November was a three-year pilot of a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Treasury Secretary Janet Yellen said on Sunday that American workers who earn 60000 per year should receive stimulus. 
+																	The tech giant has signed up more than 120 national and local publications in. 
+																	Read todays top stories news weather sport entertainment lifestyle money cars and more all expertly curated from across top UK and global news providers. 
+																	MSN - Microsoft News. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Msn Getting it all and getting it NOW From Royal Babies to Referendums and X-Factor tears to England footballers getting back to winning ways there is lots happening right now. 
+																	All about the MSN News app. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/QLQNsD9YU_M/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Disable Remove Msn News Feed From Microsoft Edge Browser Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/QLQNsD9YU_M/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2POYKQmkD49X17MiWGclHGxzusFuzhyE9g';" alt="Disable Remove Msn News Feed From Microsoft Edge Browser Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disable Remove Msn News Feed From Microsoft Edge Browser Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.guim.co.uk/img/media/4a940b4e9ff074072b8b52695f3baac6031c2b1d/0_290_5254_3154/master/5254.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=36d7665835078642c284ad33600a3d0c" data-lightbox="roadtrip" data-title="Microsoft Sacks Journalists To Replace Them With Robots Microsoft The Guardian">
+											<img class="card-img v-image ads-img " src="https://i.guim.co.uk/img/media/4a940b4e9ff074072b8b52695f3baac6031c2b1d/0_290_5254_3154/master/5254.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=36d7665835078642c284ad33600a3d0c" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjplX-m5gp2rfhItlu-FF5BSYILkXLYUJXgw';" alt="Microsoft Sacks Journalists To Replace Them With Robots Microsoft The Guardian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Microsoft Sacks Journalists To Replace Them With Robots Microsoft The Guardian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB15YsVx.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=1273&amp;y=394" data-lightbox="roadtrip" data-title="Breaking Sport News And Opinion Msn News Uk">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB15YsVx.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=1273&amp;y=394" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTktrUsRYWi3tXy_DDD0PXvx10gYA4h9FRh8A';" alt="Breaking Sport News And Opinion Msn News Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking Sport News And Opinion Msn News Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://store-images.s-microsoft.com/image/apps.33561.9007199266247846.b5c49955-e050-4553-b8e4-0e223ed6c5a1.a6d25753-d40a-4a54-ba54-cd26ed29e2b1" data-lightbox="roadtrip" data-title="Get Microsoft News Microsoft Store En Gb">
+											<img class="card-img v-image ads-img " src="https://store-images.s-microsoft.com/image/apps.33561.9007199266247846.b5c49955-e050-4553-b8e4-0e223ed6c5a1.a6d25753-d40a-4a54-ba54-cd26ed29e2b1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZr8Sa8zsvAvBleDaqRu5cHj0fFWKAESRVQ';" alt="Get Microsoft News Microsoft Store En Gb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Microsoft News Microsoft Store En Gb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/0f/87/f00f87012131b7ec6a1fdc53ed3a9806.jpg" data-lightbox="roadtrip" data-title="Pin On Account Microsoft Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/0f/87/f00f87012131b7ec6a1fdc53ed3a9806.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRZP-F7cut6OsSqFZR2rrb66o4_irWpMxoQ';" alt="Pin On Account Microsoft Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Account Microsoft Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dwnfj.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=510&amp;y=226" data-lightbox="roadtrip" data-title="N Fpo6qbyzcw8m">
+											<img class="card-img v-image ads-img " src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1dwnfj.img?h=206&amp;w=320&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=510&amp;y=226" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8Fz9LkDRhlScanYRE-KuOZeGUTEBpi9rtw';" alt="N Fpo6qbyzcw8m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">N Fpo6qbyzcw8m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://filestore.community.support.microsoft.com/api/images/e3668c3e-0da6-46dd-8799-d98ed70863c9" data-lightbox="roadtrip" data-title="Msn Coming Up In French Microsoft Community">
+											<img class="card-img v-image ads-img " src="https://filestore.community.support.microsoft.com/api/images/e3668c3e-0da6-46dd-8799-d98ed70863c9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa-KnGHUPw_sk_zfPakzqcmF_p924MH27UmA';" alt="Msn Coming Up In French Microsoft Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Coming Up In French Microsoft Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d1/a6/e3/d1a6e3247a1d87b4dc498dfb5c015249--vintage-school.jpg" data-lightbox="roadtrip" data-title="Pin On Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d1/a6/e3/d1a6e3247a1d87b4dc498dfb5c015249--vintage-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR55R7cfyv6emL4KmWkOxvFl9tH7MlQP_tLng';" alt="Pin On Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB1dwZzJ.img?h=368&amp;w=622&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=793&amp;y=336" data-lightbox="roadtrip" data-title="Wogvfbik4l8gbm">
+											<img class="card-img v-image ads-img " src="https://static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB1dwZzJ.img?h=368&amp;w=622&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;f=jpg&amp;x=793&amp;y=336" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiUvaVW85UzxpvEn3MXzagq87MhUcsE9zOw';" alt="Wogvfbik4l8gbm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wogvfbik4l8gbm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://filestore.community.support.microsoft.com/api/images/ext?url=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FBBlsqgM.img%3Fh%3D374%26amp%3Bw%3D624%26amp%3Bm%3D6%26amp%3Bq%3D60%26amp%3Bu%3Dt%26amp%3Bo%3Dt%26amp%3Bl%3Df%26amp%3Bf%3Djpg%26amp%3Bx%3D1696%26amp%3By%3D1065" data-lightbox="roadtrip" data-title="How Do I Change The My News Feed To Something Other Than Msn Microsoft Community">
+											<img class="card-img v-image ads-img " src="https://filestore.community.support.microsoft.com/api/images/ext?url=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FBBlsqgM.img%3Fh%3D374%26amp%3Bw%3D624%26amp%3Bm%3D6%26amp%3Bq%3D60%26amp%3Bu%3Dt%26amp%3Bo%3Dt%26amp%3Bl%3Df%26amp%3Bf%3Djpg%26amp%3Bx%3D1696%26amp%3By%3D1065" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQJcUrjslZ4n61DLLZEyZo_5t2DltwB-b8w';" alt="How Do I Change The My News Feed To Something Other Than Msn Microsoft Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do I Change The My News Feed To Something Other Than Msn Microsoft Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/mediabiasfactcheck.com/wp-content/uploads/2018/11/MSN-Bias.png?resize=472%2C283&amp;ssl=1" data-lightbox="roadtrip" data-title="Msn Com Msn News Media Bias Fact Check">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/mediabiasfactcheck.com/wp-content/uploads/2018/11/MSN-Bias.png?resize=472%2C283&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-0RkZmYFrFPgHUPjTZCGbRB74SA6bMIutQ';" alt="Msn Com Msn News Media Bias Fact Check">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msn Com Msn News Media Bias Fact Check</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/24/12/442412045e25bbde38f74447f1e18568.png" data-lightbox="roadtrip" data-title="Pin On Brands Logos Branding Advertising">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/24/12/442412045e25bbde38f74447f1e18568.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHYRvk482TlYuQaBNRz5sLs9eZSEji-g0Ag';" alt="Pin On Brands Logos Branding Advertising">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brands Logos Branding Advertising</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/14/a7/7814a7f0dd68bb3688022efbba9f9b32.png" data-lightbox="roadtrip" data-title="Is Internet Explorer 12 Download For Windows 10 64 Bit Offline Installer Real When Is Its Release Date And How To Get Ie 12 For Wi Windows 10 Windows Internet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/14/a7/7814a7f0dd68bb3688022efbba9f9b32.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6khL7OT64Gpovb63WKAumUDRhlqQccDqhQ';" alt="Is Internet Explorer 12 Download For Windows 10 64 Bit Offline Installer Real When Is Its Release Date And How To Get Ie 12 For Wi Windows 10 Windows Internet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Internet Explorer 12 Download For Windows 10 64 Bit Offline Installer Real When Is Its Release Date And How To Get Ie 12 For Wi Windows 10 Windows Internet</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-division-2-age-eligibility.html">Ncaa Division 2 Age Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-d1-athlete-eligibility.html">Ncaa D1 Athlete Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-bowl-game-eligibility.html">Ncaa Bowl Game Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-d1-eligibility-age.html">Ncaa D1 Eligibility Age</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-eligibility-clock.html">Ncaa Division 2 Eligibility Clock</a></li>
+													<li class="list-group-item"><a href="/ncaa-basketball-eligibility-requirements.html">Ncaa Basketball Eligibility Requirements</a></li>
+													<li class="list-group-item"><a href="/ncaa-d3-eligibility-clock.html">Ncaa D3 Eligibility Clock</a></li>
+													<li class="list-group-item"><a href="/ncaa-college-basketball-eligibility.html">Ncaa College Basketball Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-athlete-eligibility.html">Ncaa Division 1 Athlete Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-d3-football-eligibility-rules.html">Ncaa D3 Football Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/nba-2k21-my-career-modifier.html">Nba 2k21 My Career Modifier</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-lacrosse-eligibility.html">Ncaa Division 2 Lacrosse Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-basketball-eligibility-2020.html">Ncaa Basketball Eligibility 2020</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-eligibility-requirements-transfer.html">Ncaa Division 2 Eligibility Requirements Transfer</a></li>
+													<li class="list-group-item"><a href="/ncaa-bowl-eligibility-requirements-2020.html">Ncaa Bowl Eligibility Requirements 2020</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-transfer-eligibility-rules.html">Ncaa Division 1 Transfer Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-baseball-eligibility.html">Ncaa Division 1 Baseball Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-transfer-eligibility-rules.html">Ncaa Division 2 Transfer Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-clearinghouse-eligibility-center-questions.html">Ncaa Clearinghouse Eligibility Center Questions</a></li>
+													<li class="list-group-item"><a href="/nc-military-spouse-tax-exemption-form.html">Nc Military Spouse Tax Exemption Form</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

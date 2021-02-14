@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Lyrics To Military Wives Wherever You Are - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Lyrics To Military Wives Wherever You Are",
+  "datePublished": "2021-02-14",
+  "image": "https://s.mxmcdn.net/images-storage/albums4/0/1/8/8/9/2/48298810_800_800.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lyrics+to+military+wives+wherever+you+are",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Lyrics To Military Wives Wherever You Are</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">May the stars shine all around you may your courage never cease Oh Wherever I am I will love you day by day I will keep you safe cling on to faith along the dark dark way Wherever I am I will hold on through the night I will pray each day a safe return will look now to the light Light up the darkness my wondrous star. FREE Singing Tips Video. I hold you in my dreams each night until your task is done. <br>				
+			</p>
+										<a class="badge badge-danger" href="/my-car-location.html">my car location</a>
+											<a class="badge badge-secondary" href="/msn-us-news-politics.html">msn us news politics</a>
+											<a class="badge badge-secondary" href="/my-car-is-a-lemon.html">my car is a lemon</a>
+											<a class="badge badge-primary" href="/msn-us-news-headlines.html">msn us news headlines</a>
+											<a class="badge badge-info" href="/my-career-dream-essay.html">my career dream essay</a>
+											<a class="badge badge-info" href="/msn-usa-latino.html">msn usa latino</a>
+											<a class="badge badge-danger" href="/my-car-worth.html">my car worth</a>
+											<a class="badge badge-light" href="/my-campus-portal-uarts.html">my campus portal uarts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the right site.  Our website gives you hints for viewing the highest quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.flashlyrics.com/image/tw/military-wives-gareth-malone/wherever-you-are-12" data-lightbox="roadtrip" data-title="Wherever You Are Lyrics By Military Wives Gareth Malone Ahhhhhh Wherever You Are">
+											<img class="card-img v-image ads-img " src="https://www.flashlyrics.com/image/tw/military-wives-gareth-malone/wherever-you-are-12" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kvojTOHCY9hqpEB0E8dWIA_BR4S6EmzQz3RUIBryTugUU6-_UGUuUVOZoMsZtAiOknK7CrOOZmH38nSjUhA&amp;ec=45774424';" alt="Wherever You Are Lyrics By Military Wives Gareth Malone Ahhhhhh Wherever You Are">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wherever You Are Lyrics By Military Wives Gareth Malone Ahhhhhh Wherever You Are</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F7efb87d6ad71dca4c04adaf518a5f78c.600x600x1.jpg" data-lightbox="roadtrip" data-title="Military Wives Wherever You Are Lyrics Genius Lyrics">
+											<img class="card-img v-image ads-img " src="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F7efb87d6ad71dca4c04adaf518a5f78c.600x600x1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGRQSvn8xeivYjoxV3mFOhBp5fwItOhN0RNHDLycVypqaJXvUvdOloJg65Hnz0DdrAb3MKjPuD6cL9YfgqaE&amp;ec=45774424';" alt="Military Wives Wherever You Are Lyrics Genius Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Wherever You Are Lyrics Genius Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/30/e1/eb30e15c8a1b98f7eeedccaf537f93f3.jpg" data-lightbox="roadtrip" data-title="The Military Wives Choir Wherever You Are Military Wife Choir Music Interest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/30/e1/eb30e15c8a1b98f7eeedccaf537f93f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxsBJoe0cEhU18UV8lp6Req5z8W-s5yfODsd00FIr7b-k8_fQrWwo7Iu0sGvm37IyIxIg9FlGEzlNgone3Fvg&amp;ec=45774424';" alt="The Military Wives Choir Wherever You Are Military Wife Choir Music Interest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Wives Choir Wherever You Are Military Wife Choir Music Interest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.mxmcdn.net/images-storage/albums4/0/1/8/8/9/2/48298810_800_800.jpg" data-lightbox="roadtrip" data-title="Military Wives Choirs Only You Lyrics Musixmatch">
+											<img class="card-img v-image ads-img " src="https://s.mxmcdn.net/images-storage/albums4/0/1/8/8/9/2/48298810_800_800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarpKOqBHZ8z1kOvi-ZlEHBtG--VU-ZmW_LoUpaQ3gAbqn7AT5G6228s5-apSFPEKIUUHc-ka9j2DL94nJz3Y&amp;ec=45774424';" alt="Military Wives Choirs Only You Lyrics Musixmatch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choirs Only You Lyrics Musixmatch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images-na.ssl-images-amazon.com/images/I/710zcqYXP8L._SX355_.jpg" data-lightbox="roadtrip" data-title="Military Wives Wherever You Are Amazon Com Music">
+											<img class="card-img v-image ads-img " src="https://images-na.ssl-images-amazon.com/images/I/710zcqYXP8L._SX355_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48O-CoYzGmJZiNGtygVBgc5imir3vsqeOpqZUvS_a9WvX3MPRvJkaCLvRf-Bpp9EA_i4OgeThHgt2v1qZRlw&amp;ec=45774424';" alt="Military Wives Wherever You Are Amazon Com Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Wherever You Are Amazon Com Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/53/4e/08534e2e45bd09577beef867feecc201.jpg" data-lightbox="roadtrip" data-title="Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/53/4e/08534e2e45bd09577beef867feecc201.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqeSa4b7vuftV-3ZeocpDyL5ZheFxSZjkGCnSv98FKP7-UTBzxzstCFr0l7bvpBl_LMTss4plxdkK3Xficaw&amp;ec=45774424';" alt="Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.flashlyrics.com/image/tw/military-wives-gareth-malone/wherever-you-are-12" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqeSa4b7vuftV-3ZeocpDyL5ZheFxSZjkGCnSv98FKP7-UTBzxzstCFr0l7bvpBl_LMTss4plxdkK3Xficaw&amp;ec=45774424';" alt="Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military">
+										<div class="card-body">
+						<h3 class="h5"><b>Top Lyrics of 2010.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Lyrics to military wives wherever you are</strong>. 
+								
+																	Light up the darkness my prince of peace. 
+																	Features Song Lyrics for Military Wivess Wherever You Are Single album. 
+																	The Military Wives choir grew its fanbase through the BBC series The Choir. 
+																	MILITARY WIVES GARETH MALONE lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wherever you are our hearts still beat as one. 
+																	Wherever you are my love will keep you safe. 
+																	Military Wives led by. 
+																	Top Lyrics of 2009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wherever You Are is a song written by Paul Mealor and performed by the Military Wives Choir sung by ladies from Chivenor and Plymouth under the direction of Gareth Malone. 
+																	There are times I need somewhere that I belong Something that I can call my own Like I have always known Safe secure and feels like home Heard a voice A. 
+																	I hold you in my dreams each night. 
+																	My heart will build a bridge of love across both time and space. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May the stars shine all around you. 
+																	Wherever you are our hearts still beat as one I hold you in my dreams each night until your task is done Light after darkness my wondrous star Our hopes and dreams my heart and yours forever shining far Light up the darkness my prince of peace May the stars shine all around you May your courage never cease Ooh. 
+																	Light up the darkness my wondrous star. 
+																	Wherever you are my love will keep you safe My heart will build a bridge of love across both time and space Wherever you are our hearts still beat as one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top Lyrics of 2011. 
+																	Wherever you are our hearts still beat as one. 
+																	Wherever you are my love will keep you safe My heart will build a bridge of light across both time and space. 
+																	Wherever you are our hearts still beat as one I hold you in my dreams each night until your task is done Light after darkness my wondrous star Our hopes and dreams my heart and yours forever. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ah Wherever you are my love will keep you safe My heart will build a bridge of light across both time and space Wherever you are our hearts still beat as one I hold you in my dreams each night until your task is done Light up the darkness my wondrous star Our hopes and dreams my heart and yours forever shining far Light up the darkness my prince of peace May the stars shine all around you may your courage never cease Oh Wherever I am I will love you day by day I will keep you safe. 
+																	Military Wives Wherever You Are Lyrics. 
+																	Includes Album Cover Release Year and User Reviews. 
+																	Light after darkness my wondrous star. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following the broadcast of the series and the release of the single Wherever You Are three more choirs were added at CTCRM Lympstone HMNB Portsmouth and at Catterick Garrison. 
+																	It is a spin-off of the BBC Two television series The Choir. 
+																	Me playing this years Christmas Number 1 - Wherever You Are - by the Military Wives on piano. 
+																	Update this biography Complete biography of Military Wives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These additional three groups contributed to the album In My Dreams under the name Military Wives. 
+																	Wherever you are our hearts still beat as one. 
+																	Festival of Remembrance 2011 at the Royal Albert Hall. 
+																	Our hopes and dreams my heart and yours forever shining far. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wherever You Are lyrics performed by Military Wives. 
+																	I hold you in my dreams each night until your task is done. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/aa/c4/c6aac4ccc8c3eb057ae05a521dabbcba.jpg" data-lightbox="roadtrip" data-title="Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/aa/c4/c6aac4ccc8c3eb057ae05a521dabbcba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEohRii2zX2xBNclxkABlYNohIb0WtakEwZHcewViXo6Q5fBcgggimoJtozWGpzNF99hPMieP50MAG03nBMY0&amp;ec=45774424';" alt="Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/e6/84/38e68408239d0afe85f297efd8942902.jpg" data-lightbox="roadtrip" data-title="In December 2011 As The Nation Watched The Military Wives Single Was Named Christmas Number One A Few Weeks Earlier They Had Military Wife Army Love Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/e6/84/38e68408239d0afe85f297efd8942902.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhmb9wHRsjE7bIqTCp72oEFa-9l-Veq2dEYlnLUIdAeyXHIADUp0HNI7HeHzCL13UX4wf070_cR6vPEt9HjI&amp;ec=45774424';" alt="In December 2011 As The Nation Watched The Military Wives Single Was Named Christmas Number One A Few Weeks Earlier They Had Military Wife Army Love Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In December 2011 As The Nation Watched The Military Wives Single Was Named Christmas Number One A Few Weeks Earlier They Had Military Wife Army Love Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/7b/af/f97baf236f940ef6423f7ff42da55630.jpg" data-lightbox="roadtrip" data-title="Wherever You Are Military Wives With Gareth Malone Official Video I Loved The First Series With The Boys I Will Definit Beautiful Songs Military Wife Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/7b/af/f97baf236f940ef6423f7ff42da55630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmDB-xp_Zcke6A7E8fUXnKhrMMYWRmQm9ojYSrMqxLYIQdCGEZOvocBfcqxi4GrFr_ZUvH5Eae1zfu7MHB8Q&amp;ec=45774424';" alt="Wherever You Are Military Wives With Gareth Malone Official Video I Loved The First Series With The Boys I Will Definit Beautiful Songs Military Wife Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wherever You Are Military Wives With Gareth Malone Official Video I Loved The First Series With The Boys I Will Definit Beautiful Songs Military Wife Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c6/aa/c4/c6aac4ccc8c3eb057ae05a521dabbcba.jpg" data-lightbox="roadtrip" data-title="Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c6/aa/c4/c6aac4ccc8c3eb057ae05a521dabbcba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5Q9m2MssCcnhWtV8JsPQioWWA1kG2LIxj3ZyhQTa3Ie9psTA-rIt7iGkzAct0EshOa2A70umoPQXJ87_9es&amp;ec=45774424';" alt="Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sing Gary Barlow And The Commonwealth Band Featuring The Military Wive Sing Gary Barlow Gary Barlow Singing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/35/30/553530626e657e9fbe5516499fa3eee5.jpg" data-lightbox="roadtrip" data-title="I Maked This Sign Currently It S Out Of Stock On My Etsy Page If You Would Like One They Are 25 Sh Send Me A Message And Navy Girlfriend Love Notes Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/35/30/553530626e657e9fbe5516499fa3eee5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNkgVCd2Ps1vGwABuA8HVo-L1ap_FIu1pASpzY7WF8gJOC2B5IJkZNZR5m34hOKraI2qDvBWhCqawdbyepf8&amp;ec=45774424';" alt="I Maked This Sign Currently It S Out Of Stock On My Etsy Page If You Would Like One They Are 25 Sh Send Me A Message And Navy Girlfriend Love Notes Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Maked This Sign Currently It S Out Of Stock On My Etsy Page If You Would Like One They Are 25 Sh Send Me A Message And Navy Girlfriend Love Notes Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e2/7c/81/e27c811653bb17c1549bc45697fb20c8.jpg" data-lightbox="roadtrip" data-title="Military Wives Sing Abbas Thank You For The Music Military Wife Singing Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e2/7c/81/e27c811653bb17c1549bc45697fb20c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfXxu_z1tXdTCKPDI8KF0bSi5V3zqCmINGAJdE-yX8DuOSYsnAL-zcV2AffJN6cytoccJvzV9rxPzJjVf1G4&amp;ec=45774424';" alt="Military Wives Sing Abbas Thank You For The Music Military Wife Singing Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Sing Abbas Thank You For The Music Military Wife Singing Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/9c/40/119c40374e60fe9a117b4ffbb38a3c54.jpg" data-lightbox="roadtrip" data-title="Stronger Together Military Wives Gareth Malone Official Video Military Wife Sing Gary Barlow Gary Barlow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/9c/40/119c40374e60fe9a117b4ffbb38a3c54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiatkpS3RPnyo6nLV76GCwhpV8-ryHSQ80Dh4mnVWAZmwATLbq2qLHG99yfGj302yxrUwlrh33M_OnJN763yQ&amp;ec=45774424';" alt="Stronger Together Military Wives Gareth Malone Official Video Military Wife Sing Gary Barlow Gary Barlow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stronger Together Military Wives Gareth Malone Official Video Military Wife Sing Gary Barlow Gary Barlow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/ca/5e/2cca5ea54f8c88a37478bd244387eef2.jpg" data-lightbox="roadtrip" data-title="The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Army Life Military Wife Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/ca/5e/2cca5ea54f8c88a37478bd244387eef2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsEp21WKKzIp0eL8vLJldheVDqgVYhFbj5UT5Ta1n5s3SmRgcP-uhmCFPPOfJOQ_RIIGSU2FGyUPFDMuyxaE&amp;ec=45774424';" alt="The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Army Life Military Wife Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Army Life Military Wife Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/db/45/ea/db45ea0eb993bf305ca3dd2a1fd9bc4a.jpg" data-lightbox="roadtrip" data-title="Eric Whitacre Sleep Lyrics Lyrics Eric Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/db/45/ea/db45ea0eb993bf305ca3dd2a1fd9bc4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYe3KPn9LnIqQOuwWUcIERsAJO9QxX_8raJ1vp008n9NKKLOpBsb8vU8UDUwVrPmWgx5gblucxl77hjgKkZAI&amp;ec=45774424';" alt="Eric Whitacre Sleep Lyrics Lyrics Eric Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eric Whitacre Sleep Lyrics Lyrics Eric Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/10/f7/a910f7ddcd131bf59954f44a9282d1a6.jpg" data-lightbox="roadtrip" data-title="Wherever I M With You By Spreadthelove On Etsy Words Edward Sharpe And The Magnetic Zeros Marine Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/10/f7/a910f7ddcd131bf59954f44a9282d1a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk04GzAcPCaw32Wtd1Dd74NLe1n6LuBUXdRX_AvyXrWObLFQ6TTzEWHVoGLthEeI7ITs314odFM38HOjk3EPY&amp;ec=45774424';" alt="Wherever I M With You By Spreadthelove On Etsy Words Edward Sharpe And The Magnetic Zeros Marine Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wherever I M With You By Spreadthelove On Etsy Words Edward Sharpe And The Magnetic Zeros Marine Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/2b/3a/76/2b3a7664279dbd72cd5cc885c8f54e82.jpg" data-lightbox="roadtrip" data-title="Michael Mitchell Land Of The Silver Birch Lyrics Youtube Teaching Second Grade Elementary Music Native Americans Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/2b/3a/76/2b3a7664279dbd72cd5cc885c8f54e82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBd6wIr5Qr4z4KXnVgA7bpkACPo_Oncf6VY78ephJ3DqKgoM9W6vEvXoG7AfLMlOMARyUssLofKQhqbNmia8&amp;ec=45774424';" alt="Michael Mitchell Land Of The Silver Birch Lyrics Youtube Teaching Second Grade Elementary Music Native Americans Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michael Mitchell Land Of The Silver Birch Lyrics Youtube Teaching Second Grade Elementary Music Native Americans Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/50/47/0150470b483b64179f53c2b2dd56b5d8.png" data-lightbox="roadtrip" data-title="Pin On Cast Council">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/50/47/0150470b483b64179f53c2b2dd56b5d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNWY29XkY1TgM3roJ8gJFToFu6hE7eTscAl7bA8oaEcSDH9CHa_9TFTh3P0117Vpo1Lo7t-fNWER22jYHGi-M&amp;ec=45774424';" alt="Pin On Cast Council">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cast Council</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/a2/e8/50a2e8f89f57bd35daa07184fc15c3fb.jpg" data-lightbox="roadtrip" data-title="The Wives Who Wait A Christmas Poem For Military Wives Christmas Poems Military Wife Poems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/a2/e8/50a2e8f89f57bd35daa07184fc15c3fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIqLpjlwsABhvTYo7kCQDfOOEU1adI_MB-9EnkOWBIwWr7kkptSU0U5YfqBjJ7lSotX2x97Zu3yWwE-2SSgU&amp;ec=45774424';" alt="The Wives Who Wait A Christmas Poem For Military Wives Christmas Poems Military Wife Poems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Wives Who Wait A Christmas Poem For Military Wives Christmas Poems Military Wife Poems</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-nursing-home.html">Veterans Benefits For Widows Nursing Home</a></li>
+													<li class="list-group-item"><a href="/veterans-service-records-dd214.html">Veterans Service Records Dd214</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-spouse-benefits.html">Vietnam Veterans Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-survivor-benefits.html">Veterans Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-compensation-rate-tables.html">Veterans Benefits Compensation Rate Tables</a></li>
+													<li class="list-group-item"><a href="/veterans-childrens-education-benefits.html">Veterans Childrens Education Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-release.html">Veterans Administration Records Release</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-scholarships-for-dependents.html">Veterans Affairs Scholarships For Dependents</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-of-wwii-vets.html">Veterans Benefits For Widows Of Wwii Vets</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-divorced-spouses.html">Veterans Benefits For Divorced Spouses</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-id-card.html">Veterans Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/war-heroes-and-generals.html">War Heroes And Generals</a></li>
+													<li class="list-group-item"><a href="/war-heroes-actors.html">War Heroes Actors</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-benefits-for-assisted-living.html">Veterans Spouse Benefits For Assisted Living</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-system-of-records.html">Veterans Affairs System Of Records</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-center-st-louis-missouri.html">Veterans Administration Records Center St Louis Missouri</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-dd214.html">Veterans Administration Records Dd214</a></li>
+													<li class="list-group-item"><a href="/walmart-hiring-military-spouses.html">Walmart Hiring Military Spouses</a></li>
+													<li class="list-group-item"><a href="/war-heroes-american.html">War Heroes American</a></li>
+													<li class="list-group-item"><a href="/veterans-day-national-archives.html">Veterans Day National Archives</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Wives Choir Movie Song - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Wives Choir Movie Song",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/ef/e4/c7/efe4c73c8a03ff35c7ae2bedfe5ee3ca.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+wives+choir+movie+song",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Wives Choir Movie Song</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">February 2016 saw legendary singer Lulu team up with the Military Wives Choirs for. Light up the darkness my wondrous star. The track is a festive recording of The Proclaimers hit song Im Gonna Be 500 miles and all proceeds from the single were donated to Walking With The Wounded and The Military Wives Choirs Foundation. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-hrc-reserve-officer.html">army hrc reserve officer</a>
+											<a class="badge badge-light" href="/army-hrc-records-portal-login.html">army hrc records portal login</a>
+											<a class="badge badge-secondary" href="/army-man-wife-jobs.html">army man wife jobs</a>
+											<a class="badge badge-primary" href="/army-medical-benefits-for-family.html">army medical benefits for family</a>
+											<a class="badge badge-warning" href="/army-navy-delivery-number-hotline.html">army navy delivery number hotline</a>
+											<a class="badge badge-danger" href="/army-hrc-self-service-portal.html">army hrc self service portal</a>
+											<a class="badge badge-info" href="/army-human-resources-branch.html">army human resources branch</a>
+											<a class="badge badge-warning" href="/army-human-resources-ess.html">army human resources ess</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/93/b6/9e93b68cf5e56b865f3f23b9d9882e66.jpg" data-lightbox="roadtrip" data-title="The Military Wives Choir Wherever You Are Military Wife Choir Music Interest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/93/b6/9e93b68cf5e56b865f3f23b9d9882e66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoA6vwzzrw_2Erw8yTmFFnoVf-S71ToYnCQ';" alt="The Military Wives Choir Wherever You Are Military Wife Choir Music Interest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Wives Choir Wherever You Are Military Wife Choir Music Interest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/e4/c7/efe4c73c8a03ff35c7ae2bedfe5ee3ca.jpg" data-lightbox="roadtrip" data-title="Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/e4/c7/efe4c73c8a03ff35c7ae2bedfe5ee3ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvjbFy98Rdz4WLXUtFGaKE9e9LYQbp8O63Q';" alt="Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/6e/e7/d36ee731476887fedc184a664f597cb5.jpg" data-lightbox="roadtrip" data-title="The Festival Of Choirs Singout The Festival Of Choirs Is Back With An Eclectic Mix Of Songs From Desmond Dekker To Les M Gospel Choir Choir Church Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/6e/e7/d36ee731476887fedc184a664f597cb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxj_wBZSiUMeO_gAPoQ9bbgFltZCB4SjI-g';" alt="The Festival Of Choirs Singout The Festival Of Choirs Is Back With An Eclectic Mix Of Songs From Desmond Dekker To Les M Gospel Choir Choir Church Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Festival Of Choirs Singout The Festival Of Choirs Is Back With An Eclectic Mix Of Songs From Desmond Dekker To Les M Gospel Choir Choir Church Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/4f/6b/fa4f6b32163a4c251f09632e8de64649.png" data-lightbox="roadtrip" data-title="Directed By Peter Cattaneo With Kristin Scott Thomas Sharon Horgan Emma Lowndes Gaby French With Their Part Military Wife Kristin Scott Thomas Wife Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/4f/6b/fa4f6b32163a4c251f09632e8de64649.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9LLr27RNqJD7i1BOxIilJjFu9aMMMwk_eA';" alt="Directed By Peter Cattaneo With Kristin Scott Thomas Sharon Horgan Emma Lowndes Gaby French With Their Part Military Wife Kristin Scott Thomas Wife Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directed By Peter Cattaneo With Kristin Scott Thomas Sharon Horgan Emma Lowndes Gaby French With Their Part Military Wife Kristin Scott Thomas Wife Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/53/4e/08534e2e45bd09577beef867feecc201.jpg" data-lightbox="roadtrip" data-title="Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/53/4e/08534e2e45bd09577beef867feecc201.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcWgDp6btBeVn9NHnaV_lz9iemYB19EARtw';" alt="Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives In My Dreams Piano Vocal Guitar 12 95 Military Wife My Dream Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/e8/ce/72e8ce5b0cbbb31da7105e38fa008344.jpg" data-lightbox="roadtrip" data-title="Military Wives Military Wife Kristin Scott Thomas Wife Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/e8/ce/72e8ce5b0cbbb31da7105e38fa008344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNy6IjkSOWReJeoxO61zAmGjtvTn-BhJUJFQ';" alt="Military Wives Military Wife Kristin Scott Thomas Wife Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Military Wife Kristin Scott Thomas Wife Movies</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5b/6e/c1/5b6ec1a50aae87457bbbf4b4af338833.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNy6IjkSOWReJeoxO61zAmGjtvTn-BhJUJFQ';" alt="Military Wives Military Wife Kristin Scott Thomas Wife Movies">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Wives choir singing at the films premiere in London last month Credit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military wives choir movie song</strong>. 
+								
+																	Listen to trailer music OST original score and the full list of popular songs in the film. 
+																	Military Wives tells a story of women who come together to help ease the stress involved with their partners being away serving in Afghanistan. 
+																	Let us know what you think in the comments below Want to be notified of all the. 
+																	A natural fit then to play the amateur choir director Kate in the new film telling the story of the real-life Military Wives Choirs first set up for the wives and girlfriends of military personnel serving in Afghanistan in 2010 and later featured in Gareth Malones The Choir TV series. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May the stars shine all around you. 
+																	We meet in a secluded suite at Soho Hotel Kristin fresh from her filming and ready to talk. 
+																	Getty Images The girls sang at Daves funeral SHERYL GODWIN found that singing in a choir helped her deal with the. 
+																	Military Wives soundtrack from 2020 composed by Various Artists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As well as choral favourites from the Military Wives Choirs back catalogue including well-loved single Brave the album features exclusive arrangements from the film performed by the choirs and the Military Wives cast including We Are Family and Time after Time celebrating the shared experiences of the women whose lives were changed forever by conflict. 
+																	Faced with their loved ones absences they come together to form the very first military wives choir helping each other through some of lifes most difficult moments and quickly find themselves on an international stage. 
+																	The film had its world premiere at the Toronto International Film Festival on 6 September 2019 and was released in the United Kingdom on 6 March 2020 by Lionsgate. 
+																	New film Military Wives starring Dame Kristin Scott Thomas is based on the inspirational choir of the same name. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Wives is a 2019 British comedy-drama film directed by Peter Cattaneo from a screenplay by Rosanne Flynn and Rachel TunnardIt stars Kristin Scott Thomas Sharon Horgan and Jason Flemyng. 
+																	A new film is on its way to cinemas that takes inspiration from the true story of the Military Wives choir with Kristen Scott Thomas and Sharon Horgan playing starring roles. 
+																	He remembers how moving it was. 
+																	Visit Tunefind for music from your favorite TV shows and movies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That credit goes to the women of Catterick Garrison in North. 
+																	And the music. 
+																	The Guns N Roses anthem took on an entirely different meaning sung in harmony by women. 
+																	Directed by Peter Cattaneo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Peter Cattaneos first encounter with a British military wives choir was hearing one of them sing Sweet Child of Mine on the radio. 
+																	With Kristin Scott Thomas Sharon Horgan Emma Lowndes Gaby French. 
+																	They end up creating a choir. 
+																	Light up the darkness my prince of peace. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The phenomenon bloomed into the Military Wives Choirs a charity which supports. 
+																	The real-life Military Wives Choir featured in the fourth season of Gareths series The Choir and the women went on to release the single Wherever You Are. 
+																	Check out the official trailer for Military Wives starring Sharon Horgan. 
+																	Find all 15 songs in Military Wives Soundtrack with scene descriptions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our hopes and dreams my heart and yours forever shining far. 
+																	MILITARY WIVES centers on a group of women from different backgrounds whose partners are away serving in Afghanistan. 
+																	Malones choir of wives from the Chivenor military base in Devon - joined later by those at Plymouth - was not in fact the first. 
+																	With their partners away serving in Afghanistan a group of women on the home front form a choir and quickly find themselves at the center of a media sensation and global movement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Released by Decca Classics in 2020 containing music from Military Wives 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/ca/5e/2cca5ea54f8c88a37478bd244387eef2.jpg" data-lightbox="roadtrip" data-title="The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Military Wife Army Life Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/ca/5e/2cca5ea54f8c88a37478bd244387eef2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8OXHOYyNy7vsR66AHRHt5t3jGNBElJn3NQ';" alt="The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Military Wife Army Life Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Wives Choir Just Got To No 1 In The British Charts With In My Dreams Posting This For Anyone With Loved O Military Wife Army Life Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/26/7b/ff267ba78a8f88260b70331da06e0ca0.jpg" data-lightbox="roadtrip" data-title="Song By The Military Wives Choirs Plymouth Tyrone Phillip Roth Piper Within My Mind Phillip Roth Tyrone Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/26/7b/ff267ba78a8f88260b70331da06e0ca0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ956sYfkMOVXdfv20yJayAjH3QVLTWISn1tQ';" alt="Song By The Military Wives Choirs Plymouth Tyrone Phillip Roth Piper Within My Mind Phillip Roth Tyrone Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Song By The Military Wives Choirs Plymouth Tyrone Phillip Roth Piper Within My Mind Phillip Roth Tyrone Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/23/0a/db230ad0c40fe7011d464f800dc120b8.jpg" data-lightbox="roadtrip" data-title="Military Wives Video Military Wife Amazon Prime Video Prime Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/23/0a/db230ad0c40fe7011d464f800dc120b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTDZ_YM5Y1-2k15FLWKy7vlhXDQAZo21bNA';" alt="Military Wives Video Military Wife Amazon Prime Video Prime Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Video Military Wife Amazon Prime Video Prime Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/aa/ac/6eaaac3f2ece3ef0edb57e26b065e5d1.jpg" data-lightbox="roadtrip" data-title="Military Wives Military Wife Kristin Scott Thomas Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/aa/ac/6eaaac3f2ece3ef0edb57e26b065e5d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQca91Ig8j1xfVr4rEcUfoEy8EFio0VBnfgHQ';" alt="Military Wives Military Wife Kristin Scott Thomas Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Military Wife Kristin Scott Thomas Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/f6/df/99f6df080421d02031e081b84b9762c2.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir Wherever You Are As An Ex Service Man I Cried The First Time I Heard This It Said Everything Really I Choir Military Wife Choir Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/f6/df/99f6df080421d02031e081b84b9762c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivCVmt1PMTyoWd9-bgU1MWr012ZQvXO6lAA';" alt="Military Wives Choir Wherever You Are As An Ex Service Man I Cried The First Time I Heard This It Said Everything Really I Choir Military Wife Choir Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Wherever You Are As An Ex Service Man I Cried The First Time I Heard This It Said Everything Really I Choir Military Wife Choir Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/6e/c1/5b6ec1a50aae87457bbbf4b4af338833.jpg" data-lightbox="roadtrip" data-title="Military Wives Military Wife Kristin Scott Kristin Scott Thomas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/6e/c1/5b6ec1a50aae87457bbbf4b4af338833.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZ4dJ4W01EbpbhlIoaknzhIjVXWR_957bcQ';" alt="Military Wives Military Wife Kristin Scott Kristin Scott Thomas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Military Wife Kristin Scott Kristin Scott Thomas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/50/d0/b450d0c3f1a76949d0454184a2671637.jpg" data-lightbox="roadtrip" data-title="Military Wives Stronger Together Album Sampler Military Wife Album Right Here Waiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/50/d0/b450d0c3f1a76949d0454184a2671637.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJB-Yvybt7CXuNFxXPIxkUOnZbkNUh0aR-A';" alt="Military Wives Stronger Together Album Sampler Military Wife Album Right Here Waiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Stronger Together Album Sampler Military Wife Album Right Here Waiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/69/90/d2/6990d263beb899264c76b226ac8c7bfd.jpg" data-lightbox="roadtrip" data-title="Military Wives Home Cinema Choice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/69/90/d2/6990d263beb899264c76b226ac8c7bfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZkaIaxdjQvpDjsMWu8FOatQr1kpO6dTSuQ';" alt="Military Wives Home Cinema Choice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Home Cinema Choice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b4/48/c2/b448c27fbe1384953b25b0d9e60ff430.jpg" data-lightbox="roadtrip" data-title="Pin On Guns Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b4/48/c2/b448c27fbe1384953b25b0d9e60ff430.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZ1pVP4aTCMSko7ohBfynGbf099-ZjGorQA';" alt="Pin On Guns Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guns Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9a/cf/32/9acf323aed3fe6a64d9c566edd1a42a6.jpg" data-lightbox="roadtrip" data-title="Be Inspired By Watching The God Bless The Broken Road Movie Bless The Broken Road Christian Movies New Christian Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9a/cf/32/9acf323aed3fe6a64d9c566edd1a42a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5eYTPZPyJ7IEiTh29orwQt88vWUUUqT-YtA';" alt="Be Inspired By Watching The God Bless The Broken Road Movie Bless The Broken Road Christian Movies New Christian Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be Inspired By Watching The God Bless The Broken Road Movie Bless The Broken Road Christian Movies New Christian Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/77/aa/5977aa1e2903025d27d437a3ad991d01.jpg" data-lightbox="roadtrip" data-title="What Do The African Children S Choir Annie Lennox Paul Mccartney Elton John Will I Am Stevie Wonder Military Wives C Sing Gary Barlow Gary Barlow Concert">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/77/aa/5977aa1e2903025d27d437a3ad991d01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TBWNFd3Sp4mHqNTLSXx9cnBE89LdILOljA';" alt="What Do The African Children S Choir Annie Lennox Paul Mccartney Elton John Will I Am Stevie Wonder Military Wives C Sing Gary Barlow Gary Barlow Concert">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Do The African Children S Choir Annie Lennox Paul Mccartney Elton John Will I Am Stevie Wonder Military Wives C Sing Gary Barlow Gary Barlow Concert</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/df/90/03df9041e878e67c11bae596f4d32c7f.jpg" data-lightbox="roadtrip" data-title="Stronger Together Military Wives Gareth Malone Official Video Youtube Choir Music Military Wife Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/df/90/03df9041e878e67c11bae596f4d32c7f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqh3Nuok-TT2vBzKJbmb7r53CDraq8E-29BQ';" alt="Stronger Together Military Wives Gareth Malone Official Video Youtube Choir Music Military Wife Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stronger Together Military Wives Gareth Malone Official Video Youtube Choir Music Military Wife Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b8/e5/11/b8e511c8f967112663d43365535b1e5a.jpg" data-lightbox="roadtrip" data-title="Reposting Rogersphilip101 Looking Forward To Watching The Comedy Drama Militarywives At Cineworld In Kristin Scott Thomas Pitch Perfect Scott Thomas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b8/e5/11/b8e511c8f967112663d43365535b1e5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXTPKDOw1DnSwC47v-QWwSTbSOz8KpQhTNg';" alt="Reposting Rogersphilip101 Looking Forward To Watching The Comedy Drama Militarywives At Cineworld In Kristin Scott Thomas Pitch Perfect Scott Thomas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reposting Rogersphilip101 Looking Forward To Watching The Comedy Drama Militarywives At Cineworld In Kristin Scott Thomas Pitch Perfect Scott Thomas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hats-for-sale.html">Military Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/military-hat-id-roblox.html">Military Hat Id Roblox</a></li>
+													<li class="list-group-item"><a href="/military-hat-roblox.html">Military Hat Roblox</a></li>
+													<li class="list-group-item"><a href="/military-hat-names.html">Military Hat Names</a></li>
+													<li class="list-group-item"><a href="/military-hat-names-crossword.html">Military Hat Names Crossword</a></li>
+													<li class="list-group-item"><a href="/military-hat-indoors.html">Military Hat Indoors</a></li>
+													<li class="list-group-item"><a href="/military-hat-uniform.html">Military Hat Uniform</a></li>
+													<li class="list-group-item"><a href="/military-hat-gift.html">Military Hat Gift</a></li>
+													<li class="list-group-item"><a href="/military-hat-emblems.html">Military Hat Emblems</a></li>
+													<li class="list-group-item"><a href="/military-hat-display-case.html">Military Hat Display Case</a></li>
+													<li class="list-group-item"><a href="/military-hats-brand.html">Military Hats Brand</a></li>
+													<li class="list-group-item"><a href="/military-hat-the-north-face.html">Military Hat The North Face</a></li>
+													<li class="list-group-item"><a href="/military-hat-with-feathers.html">Military Hat With Feathers</a></li>
+													<li class="list-group-item"><a href="/military-hat-target.html">Military Hat Target</a></li>
+													<li class="list-group-item"><a href="/military-hat-list.html">Military Hat List</a></li>
+													<li class="list-group-item"><a href="/military-hat-vector.html">Military Hat Vector</a></li>
+													<li class="list-group-item"><a href="/military-hat-restoration.html">Military Hat Restoration</a></li>
+													<li class="list-group-item"><a href="/military-hat-roblox-id.html">Military Hat Roblox Id</a></li>
+													<li class="list-group-item"><a href="/military-hat-with-plume-crossword.html">Military Hat With Plume Crossword</a></li>
+													<li class="list-group-item"><a href="/military-hats-called.html">Military Hats Called</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Marine Corps Spousal Support Order - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Marine Corps Spousal Support Order",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/a7/97/9e/a7979e5e7543eac7bc9820f96ed1753f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=marine+corps+spousal+support+order",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Marine Corps Spousal Support Order</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This support requirement extends to children. USMC Interim Support Standards. A child not related to the Marine. <br>				
+			</p>
+										<a class="badge badge-light" href="/spouse-and-dependents-educational-assistance-program.html">spouse and dependents educational assistance program</a>
+											<a class="badge badge-primary" href="/sscn-bkn-jumlah-pelamar.html">sscn bkn jumlah pelamar</a>
+											<a class="badge badge-warning" href="/sscn-bkn-go-id-kemenkumham-pengumuman.html">sscn bkn go id kemenkumham pengumuman</a>
+											<a class="badge badge-warning" href="/sscn-bkn-go-id-2020.html">sscn bkn go id 2020</a>
+											<a class="badge badge-light" href="/spousal-vs-survivor-social-security-benefits.html">spousal vs survivor social security benefits</a>
+											<a class="badge badge-warning" href="/sscn-bkn-cpns-login.html">sscn bkn cpns login</a>
+											<a class="badge badge-danger" href="/spouse-support-for-100-disabled-veterans.html">spouse support for 100 disabled veterans</a>
+											<a class="badge badge-success" href="/sscn-bkn-facebook.html">sscn bkn facebook</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="pdQfguQgtw7oeM" data-lightbox="roadtrip" data-title="Https Www Marines Mil Portals 1 Publications Mco 205580 2b 20 20w Ch 201 Pdf">
+											<img class="card-img v-image ads-img " src="pdQfguQgtw7oeM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS711OBVw0Fxsf57NOvVjc4zB2twAMVfo2LdA';" alt="Https Www Marines Mil Portals 1 Publications Mco 205580 2b 20 20w Ch 201 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Marines Mil Portals 1 Publications Mco 205580 2b 20 20w Ch 201 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/3864822/1/500x640/mco-p13008r-w-ch-1-8-marinesmil-marine-corps.jpg" data-lightbox="roadtrip" data-title="Mco P1300 8r W Ch 1 8 Marines Mil Marine Corps">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/3864822/1/500x640/mco-p13008r-w-ch-1-8-marinesmil-marine-corps.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-XX6b3QZcooUFX3A7M5IjoYNITPvvWPhqdg';" alt="Mco P1300 8r W Ch 1 8 Marines Mil Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mco P1300 8r W Ch 1 8 Marines Mil Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4zvtjz_p0UnhFM" data-lightbox="roadtrip" data-title="Https Www Marines Mil Portals 1 Mco 201000 6 Pdf">
+											<img class="card-img v-image ads-img " src="4zvtjz_p0UnhFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTsezmFAgBvZsiJC1G8TCxiFUsgyT6UYS4w';" alt="Https Www Marines Mil Portals 1 Mco 201000 6 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Marines Mil Portals 1 Mco 201000 6 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="E7IhJIsHe0_D3M" data-lightbox="roadtrip" data-title="Https Www Marines Mil Portals 1 Publications Mco 2011000 22 20ch 1 20v2 Pdf Ver 2018 07 03 085426 143">
+											<img class="card-img v-image ads-img " src="E7IhJIsHe0_D3M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3bUVui22P_1c_hENm70i-nkeIWl3qCNmaHw';" alt="Https Www Marines Mil Portals 1 Publications Mco 2011000 22 20ch 1 20v2 Pdf Ver 2018 07 03 085426 143">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Marines Mil Portals 1 Publications Mco 2011000 22 20ch 1 20v2 Pdf Ver 2018 07 03 085426 143</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/9116656/1/500x640/mco-10503jpdf-marine-corps.jpg" data-lightbox="roadtrip" data-title="Mco 1050 3j Pdf Marine Corps">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/9116656/1/500x640/mco-10503jpdf-marine-corps.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh-76BlQi-iVodsKHSnfQO431uDa0XyHBuw';" alt="Mco 1050 3j Pdf Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mco 1050 3j Pdf Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="EimV5z-HOliDEM" data-lightbox="roadtrip" data-title="Https Www Marines Mil Portals 59 Publications Mco 205800 16 20volume 209 Pdf Ver 2018 08 16 074544 840">
+											<img class="card-img v-image ads-img " src="EimV5z-HOliDEM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPzCLXhMJVg27-4b23qmFGmBCDpCbrPs_Yg';" alt="Https Www Marines Mil Portals 59 Publications Mco 205800 16 20volume 209 Pdf Ver 2018 08 16 074544 840">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Marines Mil Portals 59 Publications Mco 205800 16 20volume 209 Pdf Ver 2018 08 16 074544 840</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/6c/54/7d/6c547de31c179fc29758bdd9f8d35302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPzCLXhMJVg27-4b23qmFGmBCDpCbrPs_Yg';" alt="Https Www Marines Mil Portals 59 Publications Mco 205800 16 20volume 209 Pdf Ver 2018 08 16 074544 840">
+										<div class="card-body">
+						<h3 class="h5"><b>Under no circumstances may a marine be required to pay more than 13 of hisher gross military pay which includes base pay and all allowances.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Marine corps spousal support order</strong>. 
+								
+																	For example if a service member separates from his spouse and files for divorce his branchs family support order says what he must do or pay to support his spouse until the civilian court enters an order granting or denying spousal maintenance and determining child support if the couple has. 
+																	Commandant of the marine corps to. 
+																	Parris Island has been the site of Marine Corps recruit training since Nov. 
+																	This does NOT relieve the Marine from providing support to his minor children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Today approximately 20000 recruits come to Parris Island annually for the chance to become United States Marines by enduring 13 weeks of rigorous transformative training. 
+																	Navy and Marine Corps Family Support Rules The Naval Personnel Manual Section 1754-030 provides the following guidance to commanders for determining adequate support in the event of a nonsupport complaint where there is no court-ordered amount nor written agreement. 
+																	The CO may reduce or eliminate the interim spousal support requirement where the Marine is the victim. 
+																	MARINE CORPS ORDER P17513F. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Order does not authorize a commanding officer to divide marital property or allocate. 
+																	Ref c is maradmin 30102 that announces ch 1 to the marine corps individual records administration manual iram. 
+																	This Volume establishes Marine Corps policy regarding financial support of dependent family members. 
+																	YOUR MARRIAGE--YOU MAY BE A CANDIDATE FOR SPOUSAL SUPPORT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine corps order p580016a wch 1-3 from. 
+																	In most cases the support services youre entitled to are temporary so its a good idea to try to get a court order for support and maintenance. 
+																	The Marine Corps has joined the Army and Air Force in implementing a program that reimburses spouses for up to 500 in fees theyve paid to get a new license in the new state after they relocate on. 
+																	Ref b is the sja to cmc comment on ref a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It would be relevant that the spouse and the accused are MarinesDoes the adulterous relationship impact the ability of any of the three to perform their duties to support the armed forcesThis is a situation where two Marines in the same unit are having an affair or if one of the involved was a subordinate of the other Weston saidWas there misuse of government time and resources to. 
+																	California Child Support California Divorce and Legal Separation California Child Protection Agencies Divorce and Credit Predatory Lending Guardianship Involuntary Allotments Modification of Out-Of-State Child Custody And Child Support Orders Navy Family Support Marine-Corps Family Support Order to Show Cause Paternity California Spousal Support. 
+																	In the absence of a court order or a mutually agreed-upon signed written agreement between the spouses the Marine Corps has guidelines as to what constitutes an appropriate amount of support. 
+																	The Marine Corps requires all of its members to provide adequate and continuous financial support to their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example if the Marine is paying support for a child from a previous marriage and the current spouse requests support under this chapter there are two family members in need of. 
+																	5 MARINE CORPS RESERVISTS 6 DEPENDENT SUPPORT. 
+																	The Marine Corps guidelines on dependent support Chapter 15 of the Legal Admin Manual need not be accepted by a court. 
+																	Procedures in support of non-judicial punishment and courts-martial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the absence of an agreement or court order the regulation states that the Marine involved shall pay the greater of either the fixed amount of support for the requesting family member or else the fraction of BAHOHA3 based on the total number of eligible family members that exist. 
+																	Parris Island is home to entry-level enlisted training for 50 percent of males and 100 percent for females in the Marine Corps. 
+																	Divorced spouse of the Marine regardless of whether alimony was awarded. 
+																	Without a court order or similar administrative judgement the amount of support shall not exceed 13 of the Marines gross military pay per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The question is often asked If I am legally separated and start dating can I get in trouble in the military for adultery Since the formal legal process of divorce can last months or. 
+																	Each order applies to service members until the civilian court enters an order for family support. 
+																	While the obligation to support a spouse ends with a court order or agreement which either is silent or affirmatively provides for no support section 150013 curiously the same is not true for children. 
+																	If youre not receiving any financial support from the absent servicemember contact your spouses commander or a local judge advocate generals office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouse only 333 percent of gross pay. 
+																	Ref d is the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/40514012/1/500x640/mcrco-11001-headquarters-marine-corps.jpg" data-lightbox="roadtrip" data-title="Mcrco 1100 1 Headquarters Marine Corps">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/40514012/1/500x640/mcrco-11001-headquarters-marine-corps.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTphTmCsHl6umE2Io6D5YlaenmKL7ZrvZ7w';" alt="Mcrco 1100 1 Headquarters Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mcrco 1100 1 Headquarters Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MarineCeremony.jpg?itok=eTu14gsK" data-lightbox="roadtrip" data-title="Marine Corps Family Support Requirements Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MarineCeremony.jpg?itok=eTu14gsK" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FoiW4hghVxY9FE87uCMm7KeN5dJ1aFcrVw';" alt="Marine Corps Family Support Requirements Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Family Support Requirements Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/48044893/1/500x640/mco-p190016f-w-ch-1-2-marine-corps-separation-and-retirement.jpg" data-lightbox="roadtrip" data-title="Mco P1900 16f W Ch 1 2 Marine Corps Separation And Retirement">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/48044893/1/500x640/mco-p190016f-w-ch-1-2-marine-corps-separation-and-retirement.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9x7cWyCs8sBXVQqqMrrEfK-jmwTGQzI7C7w';" alt="Mco P1900 16f W Ch 1 2 Marine Corps Separation And Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mco P1900 16f W Ch 1 2 Marine Corps Separation And Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/e5/5d/20e55d254bdd3916fa0acdbb70aee009.png" data-lightbox="roadtrip" data-title="Pin By Teresa Kemper On Usmc Usmc Love Marine Deployment Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/e5/5d/20e55d254bdd3916fa0acdbb70aee009.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZjPBbKKiMyWp5lxI-e0P2dro3P9CLL08Yw';" alt="Pin By Teresa Kemper On Usmc Usmc Love Marine Deployment Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Teresa Kemper On Usmc Usmc Love Marine Deployment Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usmc-mccs.org/mccs/cache/file/6DA7D85E-F531-A1C1-E9F9944D6552140F_carouselimage.png" data-lightbox="roadtrip" data-title="Deployment Marine Corps Community">
+											<img class="card-img v-image ads-img " src="https://usmc-mccs.org/mccs/cache/file/6DA7D85E-F531-A1C1-E9F9944D6552140F_carouselimage.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwB9-fI2WBGX9Dl4r-7N9X5h9NVDb-zpQBKg';" alt="Deployment Marine Corps Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deployment Marine Corps Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/ff/47/23ff47eb486dca8d379c507ccc59d71f.jpg" data-lightbox="roadtrip" data-title="Freedom Is Not Free But The U S Marine Corps Will Pay Most Of Your Share Captain J E Ned Dolan Usmc Marine Quotes Marine Corps Quotes Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/ff/47/23ff47eb486dca8d379c507ccc59d71f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmHgNxq_umAOQmEcquNkhWnb_4jG_MnZV4g';" alt="Freedom Is Not Free But The U S Marine Corps Will Pay Most Of Your Share Captain J E Ned Dolan Usmc Marine Quotes Marine Corps Quotes Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Freedom Is Not Free But The U S Marine Corps Will Pay Most Of Your Share Captain J E Ned Dolan Usmc Marine Quotes Marine Corps Quotes Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/d2/c9/45d2c9128e8251745adebe64fca345de.jpg" data-lightbox="roadtrip" data-title="Pin On Two Magic Pixels On Zibbet C2c Sc Tss Hdc Dc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/d2/c9/45d2c9128e8251745adebe64fca345de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZEZL9-bA203OjIO1C2oO0E6QUyrjNW9K3w';" alt="Pin On Two Magic Pixels On Zibbet C2c Sc Tss Hdc Dc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Two Magic Pixels On Zibbet C2c Sc Tss Hdc Dc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/97/9e/a7979e5e7543eac7bc9820f96ed1753f.jpg" data-lightbox="roadtrip" data-title="Words To My Son Before The Crucible United States Marine Corp Marine Corps Mom Marine Mom Marine Corps Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/97/9e/a7979e5e7543eac7bc9820f96ed1753f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4o17evcFELyXg7uERAKAlUpudPqgPNL3c5w';" alt="Words To My Son Before The Crucible United States Marine Corp Marine Corps Mom Marine Mom Marine Corps Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Words To My Son Before The Crucible United States Marine Corp Marine Corps Mom Marine Mom Marine Corps Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/6b/6c/a06b6c9eb229384b8eb00505a22026d6.png" data-lightbox="roadtrip" data-title="Starfleet Command U F P Marine Corps Seal Star Trek Art Star Trek Universe Star Trek Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/6b/6c/a06b6c9eb229384b8eb00505a22026d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oNkKufVamTeI8EVXhhSX2L2y2QQvH_QrQ';" alt="Starfleet Command U F P Marine Corps Seal Star Trek Art Star Trek Universe Star Trek Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Starfleet Command U F P Marine Corps Seal Star Trek Art Star Trek Universe Star Trek Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybase.net/wp-content/uploads/2018/08/Marine-Corps-Base-Camp-Pendleton-California.jpg" data-lightbox="roadtrip" data-title="Marine Corps Base Camp Pendleton Military Base Guide">
+											<img class="card-img v-image ads-img " src="https://militarybase.net/wp-content/uploads/2018/08/Marine-Corps-Base-Camp-Pendleton-California.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEgBfA7I_DEDs4NWUXQ7qxg_YBhdbMYK40Q';" alt="Marine Corps Base Camp Pendleton Military Base Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Base Camp Pendleton Military Base Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/0d/3e/380d3eca56e97847c74b2a9a7b861306.jpg" data-lightbox="roadtrip" data-title="Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/0d/3e/380d3eca56e97847c74b2a9a7b861306.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7bHMPq0H8_Ba7DTSMGB_uaHFFLpQ5BcPvQ';" alt="Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/54/7d/6c547de31c179fc29758bdd9f8d35302.jpg" data-lightbox="roadtrip" data-title="Handmade Thank You Card Thank You For Your Service United Etsy Handmade Thank You Cards Thank You Cards Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/54/7d/6c547de31c179fc29758bdd9f8d35302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRryoVGKxjhxP5kQ6gGcINjs6705jN--l2Lwg';" alt="Handmade Thank You Card Thank You For Your Service United Etsy Handmade Thank You Cards Thank You Cards Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Handmade Thank You Card Thank You For Your Service United Etsy Handmade Thank You Cards Thank You Cards Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/8d/1f/de8d1f5a3effdbf57339975b0f5b002f.jpg" data-lightbox="roadtrip" data-title="22 Memes All About Military Marriage Military Wife Quotes Military Marriage Military Spouse Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/8d/1f/de8d1f5a3effdbf57339975b0f5b002f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCsm82UyvgbBeazLt8Kw54QPBi9g_2FYCX0A';" alt="22 Memes All About Military Marriage Military Wife Quotes Military Marriage Military Spouse Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Memes All About Military Marriage Military Wife Quotes Military Marriage Military Spouse Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-disability-pay-with-dependents.html">Military Disability Pay With Dependents</a></li>
+													<li class="list-group-item"><a href="/military-discount-haircuts-near-me.html">Military Discount Haircuts Near Me</a></li>
+													<li class="list-group-item"><a href="/military-dependent-pay.html">Military Dependent Pay</a></li>
+													<li class="list-group-item"><a href="/military-dependent-medical-coverage-age.html">Military Dependent Medical Coverage Age</a></li>
+													<li class="list-group-item"><a href="/military-dog-gets-heros-goodbye.html">Military Dog Gets Heros Goodbye</a></li>
+													<li class="list-group-item"><a href="/military-disability-pay-surviving-spouse.html">Military Disability Pay Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/military-german-haircut.html">Military German Haircut</a></li>
+													<li class="list-group-item"><a href="/military-extra-pay-for-dependents.html">Military Extra Pay For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-education-benefits-phone-number.html">Military Education Benefits Phone Number</a></li>
+													<li class="list-group-item"><a href="/military-haircut-and-beard.html">Military Haircut And Beard</a></li>
+													<li class="list-group-item"><a href="/military-dependent-turns-18.html">Military Dependent Turns 18</a></li>
+													<li class="list-group-item"><a href="/military-haircut-air-force.html">Military Haircut Air Force</a></li>
+													<li class="list-group-item"><a href="/military-divorce-child-custody-laws.html">Military Divorce Child Custody Laws</a></li>
+													<li class="list-group-item"><a href="/military-dependent-scholarships-2021.html">Military Dependent Scholarships 2021</a></li>
+													<li class="list-group-item"><a href="/military-dock-hk.html">Military Dock Hk</a></li>
+													<li class="list-group-item"><a href="/military-dependent-status.html">Military Dependent Status</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-tsa-precheck.html">Military Dependent Id Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/military-flight-discounts-delta.html">Military Flight Discounts Delta</a></li>
+													<li class="list-group-item"><a href="/military-dog-hero-isis.html">Military Dog Hero Isis</a></li>
+													<li class="list-group-item"><a href="/military-green-card-waiver.html">Military Green Card Waiver</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

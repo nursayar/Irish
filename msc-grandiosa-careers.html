@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Msc Grandiosa Careers - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Msc Grandiosa Careers",
+  "datePublished": "2021-02-14",
+  "image": "https://www.msccruises.com.lb/en-lb/Assets/GR_main-visual-new_tcm73-113214.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=msc+grandiosa+careers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Msc Grandiosa Careers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">From 14 February the cruise ship MSC Magnifica will also resume her operation departing from Genoa on 11-night cruises to the Western and Eastern Mediterranean in Italy with stops in Greece and Malta. Enjoy an exclusive cruise holiday to the Mediterranean with MSC Grandiosa. MSC Grandiosa was christened on final night of celebration in Hamburg with Special guests including international celebrities Michelle Hunziker Jochen Schropp Annemarie Wayne Carpendale Mousse T. <br>				
+			</p>
+										<a class="badge badge-warning" href="/military-of-the-hero.html">military of the hero</a>
+											<a class="badge badge-primary" href="/military-id-card-tallahassee-fl.html">military id card tallahassee fl</a>
+											<a class="badge badge-info" href="/military-id-card-walk-in-near-me.html">military id card walk in near me</a>
+											<a class="badge badge-danger" href="/military-medical-records-request-online.html">military medical records request online</a>
+											<a class="badge badge-warning" href="/military-operator-hats.html">military operator hats</a>
+											<a class="badge badge-danger" href="/military-id-cards-for-dependents-over-18.html">military id cards for dependents over 18</a>
+											<a class="badge badge-success" href="/military-leave-240-hours.html">military leave 240 hours</a>
+											<a class="badge badge-info" href="/military-id-card-virginia.html">military id card virginia</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.careers.msccruises.com/style/images/ship.jpg" data-lightbox="roadtrip" data-title="Msc Cruises Careers">
+											<img class="card-img v-image ads-img " src="https://www.careers.msccruises.com/style/images/ship.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqqYrCHAXOl8Dh3ot_iWjRRW2N-EfvFM4wg';" alt="Msc Cruises Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Cruises Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msccruises.com/en-gl/Assets/MSC%20GRANDIOSA%20NEWS_81770_996_293-206.jpg" data-lightbox="roadtrip" data-title="Msc Grandiosa Opening Sales">
+											<img class="card-img v-image ads-img " src="https://www.msccruises.com/en-gl/Assets/MSC%20GRANDIOSA%20NEWS_81770_996_293-206.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ggt1zHQ_THKa7uO_Ff-4zqkQ7-5Loxet4Q';" alt="Msc Grandiosa Opening Sales">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Grandiosa Opening Sales</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msccruises.com.lb/en-lb/Assets/GR_main-visual-new_tcm73-113214.jpg" data-lightbox="roadtrip" data-title="Cruise Ship Information Msc Grandiosa Msc Cruises">
+											<img class="card-img v-image ads-img " src="https://www.msccruises.com.lb/en-lb/Assets/GR_main-visual-new_tcm73-113214.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNTvqmkTze1fmXvci7V4vy0CEgeugIZx39JA';" alt="Cruise Ship Information Msc Grandiosa Msc Cruises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cruise Ship Information Msc Grandiosa Msc Cruises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://crew-center.com/sites/default/files/msc-cruises-crew.jpg" data-lightbox="roadtrip" data-title="Msc Cruises Is Hiring Thousands Of Crew And You Can Apply Online Crew Center">
+											<img class="card-img v-image ads-img " src="https://crew-center.com/sites/default/files/msc-cruises-crew.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJNsH2zseHzxwtxnXvaLTtcZEHHUQRKmGMg';" alt="Msc Cruises Is Hiring Thousands Of Crew And You Can Apply Online Crew Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Cruises Is Hiring Thousands Of Crew And You Can Apply Online Crew Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msccruises.co.uk/-/media/global-contents/news/msc-grandiosa-launch-event.jpg?bc=transparent&amp;as=1&amp;dmc=0&amp;mw=1440&amp;thn=0&amp;mediamode=desktop&amp;hash=8CDB5402FB77FAEB6A76FEC375B9A82D654F7067" data-lightbox="roadtrip" data-title="Msc Grandiosa Launch Event Msc Cruises">
+											<img class="card-img v-image ads-img " src="https://www.msccruises.co.uk/-/media/global-contents/news/msc-grandiosa-launch-event.jpg?bc=transparent&amp;as=1&amp;dmc=0&amp;mw=1440&amp;thn=0&amp;mediamode=desktop&amp;hash=8CDB5402FB77FAEB6A76FEC375B9A82D654F7067" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5LVJSQ4nZZ6MLWlHinEtEUBOMJOTmFJbSA';" alt="Msc Grandiosa Launch Event Msc Cruises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Grandiosa Launch Event Msc Cruises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://crew-center.com/sites/default/files/msc-stefan.jpg" data-lightbox="roadtrip" data-title="Cruise Career Day With Msc Cruises In Krakow Poland 21st September 2018 Crew Center">
+											<img class="card-img v-image ads-img " src="https://crew-center.com/sites/default/files/msc-stefan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaBy4ATHW8eiTwDs0Q7LOcAFySnSS5pwpIug';" alt="Cruise Career Day With Msc Cruises In Krakow Poland 21st September 2018 Crew Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cruise Career Day With Msc Cruises In Krakow Poland 21st September 2018 Crew Center</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://crew-center.com/sites/default/files/msc-cruises-crew.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaBy4ATHW8eiTwDs0Q7LOcAFySnSS5pwpIug';" alt="Cruise Career Day With Msc Cruises In Krakow Poland 21st September 2018 Crew Center">
+										<div class="card-body">
+						<h3 class="h5"><b>Mousse Ts career spans over 30 years and is arguably one of the best House producers to come out of Germany.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Msc grandiosa careers</strong>. 
+								
+																	Take advantage of great cruise deals and be one of the first to sail on MSC Grandiosa. 
+																	- OR - Track Another Cruise Ship. 
+																	See MSC Grandiosas 2021 to 2022 schedule and popular upcoming cruise itineraries on Cruise Critic. 
+																	Time is now 272021 71558 PM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chantiers de lAtlantique Saint-Nazaire France Yard number. 
+																	Discover the Mediterranean cruise destinations with MSC Grandiosa. 
+																	Enter the cruise ship name or cruise line name in the search box below. 
+																	The first MSC liners in his career were Symphony Rhapsody Melody Lirica Opera Sinfonia Musica Orchestra Poesia Fantasia Splendida Magnifica Divina also the 2008-built containership MSC Monterey IMO 9349796 max capacity 4860 TEU-containers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC is a privately owned global shipping company founded in 1970 by Gianluigi Aponte. 
+																	The MSC Grandiosa cruise ship cabins page is conveniently interlinked with its deck plans showing deck layouts combined with a legend. 
+																	MSC Grandiosa will offer these weekly itineraries until 21 March after which the cruise ship will remain in the Western Mediterranean with cruises from the summer program with a new itinerary. 
+																	An MSC Cruises career at sea or on land is filled with opportunities to progress and develop both personally and professionally. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC Grandiosa cabins and suites review at CruiseMapper provides detailed information on cruise accommodations including floor plans photos room types and categories cabin sizes furniture details and included by MSC Cruises en-suite amenities and services. 
+																	For the first time he was appointed Captain Master of MSC Musica 2012. 
+																	The current position of MSC GRANDIOSA is at East Mediterranean coordinates 3689773 N 1332742 E reported 2 mins ago by AIS. 
+																	Discover all the itineraries available and book now your next cruise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Msc grandiosa resumed service yesterday as planned departing from genoa for 7-night itineraries in the western mediterranean London United Kingdom 25 January 2021 - MSC Grandiosa MSC Cruises flagship departed last night from the port of Genoa in Italy to resume as planned regular 7-night cruises in the Mediterranean after a short pause of operations during the holiday period. 
+																	MSC Grandiosa cruise ship deck plan shows 2405 staterooms for 4888 passengers max capacity is 5772 guests served by 1536 crewstaff. 
+																	MSC Grandiosa MSC Cruises newest and most innovative ship to-date entered service on 31 October 2019 is one of the most environmentally-sound ships at sea and an energy-efficient role model for modern cruising. 
+																	The vessel is en route to LA VALLETTA MALTA sailing at a speed of 124 knots and expected to arrive there on Feb 4 0600. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Captain Gianluigi Aponte Group Chairman MSC Mediterranean Shipping Company SA. 
+																	Msc grandiosa cruise updates MARCH 14 2020 - MARCH 20 2021 CANCELED CRUISES Non-Schengen countries only. 
+																	MSC Grandiosa Cabins and Suites Whether youre looking for a duplex suite with private whirlpool bath a sea-view balcony cabin or a family option youll find it all on MSC Grandiosa. 
+																	Explore destinations to start your MSC Grandiosa cruise planning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSC Grandiosa built 2019 is the first Meraviglia Plus-class vessel in MSC Cruises fleet with sistershp MSC Virtuosa 2021. 
+																	View MSC Grandiosas Current Position In The Live Ship Tracker Below. 
+																	Guests who have paid in full automatically receive a 125 Future Cruise Credit sent to guest or travel advisor email on file. 
+																	MSC GRANDIOSAS GREAT RESTART MSC Grandiosa is the first ship from our fleet to welcome back on board guests from Schengen countries and the first ship to implement our health and safety protocol. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9803613 MMSI 215325000 is a Passenger Cruise Ship built in 2019 2 years old and currently. 
+																	Working in this fascinating atypical environment can be a hugely rewarding experience where teamwork and initiative are of equal importance and where no two days are the same. 
+																	The vessel MSC GRANDIOSA IMO. 
+																	As one of the worlds leading container shipping lines with headquarters in Geneva Switzerland MSC operates in over 493 offices across more than 155 countries worldwide with over 70000 employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The live ship tracker below will display MSC Grandiosas current position recent track speed course next port destination and more. 
+																	The MSC Grandiosa first welcomed guests back on board in August 2020 and feedback from the more than 30000 guests who have sailed so far onboard has been extremely positive so much so that some guests have chosen to extend their stay on board by one or more weeks the company said as the ship operates under a set of new and strict health and safety protocols. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=585936625544507" data-lightbox="roadtrip" data-title="Oceangoers Ltd We Re Hiring Navigate Your Future Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=585936625544507" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPcJ69KV25XyZmy3u5zzVkHuOHWpZYh8wwA';" alt="Oceangoers Ltd We Re Hiring Navigate Your Future Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oceangoers Ltd We Re Hiring Navigate Your Future Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/cruisejobdirectory.com/wp-content/uploads/2020/01/MSC-Virtuosa.jpg?ssl=1" data-lightbox="roadtrip" data-title="Msc Cruises Hiring Partners Cruise Job Directory">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/cruisejobdirectory.com/wp-content/uploads/2020/01/MSC-Virtuosa.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvWS_FtnvhkV2zR6b2AmwKNmWQskl6uZKkw';" alt="Msc Cruises Hiring Partners Cruise Job Directory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Cruises Hiring Partners Cruise Job Directory</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.msccruises.com.lb/en-lb/Assets/CHF_GR-reviews_hp_box_129488_2351_459-270_Images.jpg" data-lightbox="roadtrip" data-title="Msc Cruises Fleet Msc Cruise Ships Cruise Line">
+											<img class="card-img v-image ads-img " src="https://www.msccruises.com.lb/en-lb/Assets/CHF_GR-reviews_hp_box_129488_2351_459-270_Images.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ22zSv7RCtKU6Er6YzvNOasNQv8ZJEZc7ZQ';" alt="Msc Cruises Fleet Msc Cruise Ships Cruise Line">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Cruises Fleet Msc Cruise Ships Cruise Line</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.planetcruise.com/images/_i5021451.jpg?width=738&amp;keepratio=true" data-lightbox="roadtrip" data-title="Msc Grandiosa Msc Cruises Planet Cruise">
+											<img class="card-img v-image ads-img " src="https://content.planetcruise.com/images/_i5021451.jpg?width=738&amp;keepratio=true" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjS5FI_ch8TRlQ76kezKfLL1kt008jubx1w';" alt="Msc Grandiosa Msc Cruises Planet Cruise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Grandiosa Msc Cruises Planet Cruise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2280046488741047" data-lightbox="roadtrip" data-title="Msc Grandiosa 7 Nights Easter School Worldchoice Portrush Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2280046488741047" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscmczq_AQ0-5w_6lYLXeV26HGhzV9YLGvnw';" alt="Msc Grandiosa 7 Nights Easter School Worldchoice Portrush Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Grandiosa 7 Nights Easter School Worldchoice Portrush Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://photos.fleetmon.com/vessels/msc-grandiosa_9803613_2601377_Medium.jpg" data-lightbox="roadtrip" data-title="Vessel Msc Grandiosa Passenger Ship Imo 9803613 Mmsi 215325000">
+											<img class="card-img v-image ads-img " src="https://photos.fleetmon.com/vessels/msc-grandiosa_9803613_2601377_Medium.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-ZHxCUyLBBN8-gxE74Ugv_3OpHyumDFK7Q';" alt="Vessel Msc Grandiosa Passenger Ship Imo 9803613 Mmsi 215325000">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vessel Msc Grandiosa Passenger Ship Imo 9803613 Mmsi 215325000</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/2CCG5WG/the-cruise-ship-msc-grandiosa-in-maltas-grand-harbour-on-the-resumption-of-cruises-following-the-covid-19-outbreak-2CCG5WG.jpg" data-lightbox="roadtrip" data-title="The Cruise Ship Msc Grandiosa In Malta S Grand Harbour On The Resumption Of Cruises Following The Covid 19 Outbreak Stock Photo Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/2CCG5WG/the-cruise-ship-msc-grandiosa-in-maltas-grand-harbour-on-the-resumption-of-cruises-following-the-covid-19-outbreak-2CCG5WG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37SryXk6Kq-8sktF2he6jVhTYl0vw8WPhkQ';" alt="The Cruise Ship Msc Grandiosa In Malta S Grand Harbour On The Resumption Of Cruises Following The Covid 19 Outbreak Stock Photo Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Cruise Ship Msc Grandiosa In Malta S Grand Harbour On The Resumption Of Cruises Following The Covid 19 Outbreak Stock Photo Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wholesale.banking.societegenerale.com/fileadmin/user_upload/SGCIB/news/MSC_Grandiosa.jpg" data-lightbox="roadtrip" data-title="Msc Grandiosa Is Ready To Sail Societe Generale">
+											<img class="card-img v-image ads-img " src="https://wholesale.banking.societegenerale.com/fileadmin/user_upload/SGCIB/news/MSC_Grandiosa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YBoVfdhpUW3VUFhNExL3VGXg489LuiO6qg';" alt="Msc Grandiosa Is Ready To Sail Societe Generale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Grandiosa Is Ready To Sail Societe Generale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Dryuu8Q40FY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Msc Cruise Ship Jobs Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Dryuu8Q40FY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGW5feQmFx-6mNcaHYIgitIx5spYgWDdqphQ';" alt="Msc Cruise Ship Jobs Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Cruise Ship Jobs Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.worldofcruising.co.uk/uploads/images/MSC-Cruises-celebrates-the-christening-of-MSC-Grandiosa-in-Hamburg-Germany-1_2020-10-14-094154.jpg" data-lightbox="roadtrip" data-title="World Of Cruising Sophia Loren Christens Msc Cruises New Ship Msc">
+											<img class="card-img v-image ads-img " src="https://www.worldofcruising.co.uk/uploads/images/MSC-Cruises-celebrates-the-christening-of-MSC-Grandiosa-in-Hamburg-Germany-1_2020-10-14-094154.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPoQt-spTbKy5jfuukhKWaAb88x2n9_GbuQ';" alt="World Of Cruising Sophia Loren Christens Msc Cruises New Ship Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Of Cruising Sophia Loren Christens Msc Cruises New Ship Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.e-travel.ie/media/img/ships/MSC/Grandiosa/main_medium.jpg" data-lightbox="roadtrip" data-title="Cruises With Msc Grandiosa">
+											<img class="card-img v-image ads-img " src="https://www.e-travel.ie/media/img/ships/MSC/Grandiosa/main_medium.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PoCznkOCvPi-31a2yJTpxfeBUtsq_K3daw';" alt="Cruises With Msc Grandiosa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cruises With Msc Grandiosa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2897116623663154" data-lightbox="roadtrip" data-title="Spa Connectors Aesthetic Doctor For Msc Grandiosa Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2897116623663154" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0g97QUeJ6dl3YxLGm7s0OzOjCYc5K7SHMQ';" alt="Spa Connectors Aesthetic Doctor For Msc Grandiosa Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spa Connectors Aesthetic Doctor For Msc Grandiosa Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/rxr83y62hf041.jpg" data-lightbox="roadtrip" data-title="All Aboard Msc Grandiosa Cruise">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/rxr83y62hf041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1fqYkEWl48qLotjEJactJj0WX3GIRrmS6g';" alt="All Aboard Msc Grandiosa Cruise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Aboard Msc Grandiosa Cruise</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-to-air-force-reserves.html">Benefits To Air Force Reserves</a></li>
+													<li class="list-group-item"><a href="/best-schools-to-use-mycaa.html">Best Schools To Use Mycaa</a></li>
+													<li class="list-group-item"><a href="/black-womens-military-hat.html">Black Womens Military Hat</a></li>
+													<li class="list-group-item"><a href="/campus-portal-grades.html">Campus Portal Grades</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-savings-account.html">Benefits Of Navy Federal Savings Account</a></li>
+													<li class="list-group-item"><a href="/big-black-military-hat.html">Big Black Military Hat</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal-workout.html">Benefits Of Navy Seal Workout</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal-burpee.html">Benefits Of Navy Seal Burpee</a></li>
+													<li class="list-group-item"><a href="/campus-portal-bettendorf.html">Campus Portal Bettendorf</a></li>
+													<li class="list-group-item"><a href="/bhim-army-contact-number-up.html">Bhim Army Contact Number Up</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-officer.html">Benefits Of Navy Officer</a></li>
+													<li class="list-group-item"><a href="/campus-portal-grossmont.html">Campus Portal Grossmont</a></li>
+													<li class="list-group-item"><a href="/best-online-programs-for-military.html">Best Online Programs For Military</a></li>
+													<li class="list-group-item"><a href="/campus-portal-activation-key.html">Campus Portal Activation Key</a></li>
+													<li class="list-group-item"><a href="/british-army-combat-hr-specialist.html">British Army Combat Hr Specialist</a></li>
+													<li class="list-group-item"><a href="/campus-portal-bulloch.html">Campus Portal Bulloch</a></li>
+													<li class="list-group-item"><a href="/black-wool-hat-military.html">Black Wool Hat Military</a></li>
+													<li class="list-group-item"><a href="/best-mycaa-schools.html">Best Mycaa Schools</a></li>
+													<li class="list-group-item"><a href="/benefits-of-us-military-draft.html">Benefits Of Us Military Draft</a></li>
+													<li class="list-group-item"><a href="/campus-portal-aps.html">Campus Portal Aps</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

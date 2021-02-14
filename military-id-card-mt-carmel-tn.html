@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Id Card Mt Carmel Tn - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Id Card Mt Carmel Tn",
+  "datePublished": "2021-02-14",
+  "image": "https://media.glassdoor.com/sqll/41436/us-national-guard-squarelogo-1591206491737.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+id+card+mt+carmel+tn",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Id Card Mt Carmel Tn</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Regiments motto I Volunteer Sir is taken from a time in. Local Military ID card issuing offices. Get reviews hours directions coupons and more for Army National Guard Recruiting at 399 Highway 11 W Mount Carmel TN 37645. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/air-force-jobs-in-pakistan-2020.html">air force jobs in pakistan 2020</a>
+											<a class="badge badge-warning" href="/air-force-jobs-for-inter-qualification.html">air force jobs for inter qualification</a>
+											<a class="badge badge-warning" href="/air-force-jobs-for-arts-students.html">air force jobs for arts students</a>
+											<a class="badge badge-dark" href="/air-force-human-resources-department.html">air force human resources department</a>
+											<a class="badge badge-light" href="/air-force-jobs-for-disabled.html">air force jobs for disabled</a>
+											<a class="badge badge-secondary" href="/air-force-jobs-in-demand-2020.html">air force jobs in demand 2020</a>
+											<a class="badge badge-success" href="/air-force-iraq-campaign-medal.html">air force iraq campaign medal</a>
+											<a class="badge badge-light" href="/air-force-human-resources-number.html">air force human resources number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://esg1989.com/wp-content/uploads/2017/01/esg-projects-mt-carmel-armed-forces-reserve-center4.jpg" data-lightbox="roadtrip" data-title="Mt Carmel Armed Forces Reserve Center And Field Maintenance Shop Engineering Services Group">
+											<img class="card-img v-image ads-img " src="https://esg1989.com/wp-content/uploads/2017/01/esg-projects-mt-carmel-armed-forces-reserve-center4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wUnAyGnQ7rMrVcdeShXq0M6ozCyOwpP2AQ';" alt="Mt Carmel Armed Forces Reserve Center And Field Maintenance Shop Engineering Services Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mt Carmel Armed Forces Reserve Center And Field Maintenance Shop Engineering Services Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3lm3f8433wi61noqgmycv1xw-wpengine.netdna-ssl.com/wp-content/uploads/mt-carmel-logo.jpg" data-lightbox="roadtrip" data-title="Be A Member Horizon Credit Union">
+											<img class="card-img v-image ads-img " src="https://3lm3f8433wi61noqgmycv1xw-wpengine.netdna-ssl.com/wp-content/uploads/mt-carmel-logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNuQ0ESyYp2H36WJRtIuL5rEnIHN9i62GnA';" alt="Be A Member Horizon Credit Union">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be A Member Horizon Credit Union</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a7/6c/b8/a76cb8d541c0aef1a30c70dcc6bb2b99.jpg" data-lightbox="roadtrip" data-title="Tennessee State Police Police Patches State Police State Trooper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a7/6c/b8/a76cb8d541c0aef1a30c70dcc6bb2b99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSX3g-oi64gYCefSMVTCmBnK78EoeIb6dFNw';" alt="Tennessee State Police Police Patches State Police State Trooper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee State Police Police Patches State Police State Trooper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="6F8ysi_Y1UUhcM" data-lightbox="roadtrip" data-title="Http Www Mtas Tennessee Edu System Files Codes Combined Mountcarmel Code Pdf">
+											<img class="card-img v-image ads-img " src="6F8ysi_Y1UUhcM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-6DfQL3a_fCi9TcaraFCO-nZ79t4jEobZfQ';" alt="Http Www Mtas Tennessee Edu System Files Codes Combined Mountcarmel Code Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Mtas Tennessee Edu System Files Codes Combined Mountcarmel Code Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/86/17/de8617f14b925563e220a7d607176d7c.jpg" data-lightbox="roadtrip" data-title="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/86/17/de8617f14b925563e220a7d607176d7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Y9yeg_3INlXUZPlLlmy7CPzbGWiLsE_IUg';" alt="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nc.ng.mil/services/PublishingImages/Pages/ID-Cards-and-DEERS/army_mil-104075-2011-04-04-090414.png" data-lightbox="roadtrip" data-title="Pages Deers Rapids Id Card Service">
+											<img class="card-img v-image ads-img " src="https://nc.ng.mil/services/PublishingImages/Pages/ID-Cards-and-DEERS/army_mil-104075-2011-04-04-090414.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KzUwOpVYRiJDjxTN4TF82obSecmR1hpx4g';" alt="Pages Deers Rapids Id Card Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pages Deers Rapids Id Card Service</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://esg1989.com/wp-content/uploads/2017/01/esg-projects-mt-carmel-armed-forces-reserve-center4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KzUwOpVYRiJDjxTN4TF82obSecmR1hpx4g';" alt="Pages Deers Rapids Id Card Service">
+										<div class="card-body">
+						<h3 class="h5"><b>The DD 1172-2 feature is not functioning and users must schedule a RAPIDS appointment to add a family member or request reissuance of a family member ID card.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military id card mt carmel tn</strong>. 
+								
+																	A military ID card or dependent ID is a valuable card that can unlock a variety of valuable benefits such as health care through TRICARE education benefits and access base facilities including the commissary base exchange MWR centers and other support agencies. 
+																	At least one form of ID must be a valid state or federal government-issued picture identification for example passport drivers license or current DoD ID card. 
+																	The 278th Armored Cavalry Regiment ACR is one of two Heavy ACRs still in existence. 
+																	Search for other Armed Forces Recruiting in Mount Carmel on The Real Yellow Pages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Renewing military ID cards expiring on or after Jan. 
+																	Armed forces reserve center AFRC and a 17500 square ft. 
+																	The Office of the General Counsel for Tennessee Department of Military provides legal counsel to the Adjutant General and the departments major components including the Tennessee Emergency Management Agency. 
+																	Field maintenance shop FMS to be utilized by the Tennessee Army National Guard and the Tennessee Army Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See reviews photos directions phone numbers and more for Army National Guard Id Card locations in Kingsport TN. 
+																	Find out if youre eligible for a Veteran ID Card and how to apply. 
+																	View this and more full-time part-time jobs in Mount carmel TN on Snagajob. 
+																	Meta description for Lexus job view page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Carmel Veterans Service Center is a tax-exempt public charity federal tax ID 81-1652178All contributions are tax deductible to the extent allowable by law. 
+																	Mt Carmel Tennessee Designed for the Tennessee Dept. 
+																	Skip to main content Skip to navigation Skip to navigation. 
+																	1 2020 The DOD has expanded online ID card renewals and reissuances enrollment and eligibility updates and replacement of lost or stolen cards for military and their family members through June 30 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Httpsrapids-appointmentsdmdcosdmil Phone 865 336-3254. 
+																	ID Card issuing offices service all branches of the US Military. 
+																	Consolidated ID Card Office Online. 
+																	If you are a dependent you must. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find a list of dmv office locations in Mount Carmel Tennessee. 
+																	The ceremony will be held on May 29th at 1030 am. 
+																	Carmel TN The Tennessee Army National Guard will host a Ground Breaking Ceremony for a new 11 million dollar Armed Forces Reserve Center AFRC in Mt. 
+																	Apply for a Army National Guard 42A Human Resources Specialist job in Mount carmel TN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click on the Bulleted Links to access the websites. 
+																	Of the Military this project consisted of a 54000 square ft. 
+																	At 399 Highway 11 W Mt. 
+																	Provides a RAPIDS ID Card online tool to help locate a local RAPIDS ID card office near you update your CAC or manage sponsor or family member ID card information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether you are planning executing or a facilitating a Retirement everyone needs a good compass for benefits navigationNGATN is proud to present resources to guide benefits maximization for our valued TNNG VeteransResources are categorized by topic alphabetical order. 
+																	Other updates continuing through June 30 2021 include. 
+																	You can search for appointments based on location and a radius that you are willing to travel. 
+																	A Veteran ID Card VIC is a form of photo ID you can use to get discounts offered to Veterans at many restaurants hotels stores and other businesses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	McGhee Tyson Air National Guard Base 134 Brisco Drive Louisville TN 37777 To make an appointment please click on the following website. 
+																	The 278th ACR also known as the Tennessee Cavalry is the only ACR in the Army National Guard and is Headquartered in Knoxville Tennessee. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ap.rdcpix.com/a39e8c8b002e40b3f6f9389922c6eb64l-m1058910178xd-w1020_h770_q80.jpg" data-lightbox="roadtrip" data-title="2013 Ohio St Mount Carmel Tn 37645 Realtor Com">
+											<img class="card-img v-image ads-img " src="https://ap.rdcpix.com/a39e8c8b002e40b3f6f9389922c6eb64l-m1058910178xd-w1020_h770_q80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_hNos52mvg0-MzwS8r8eVdGBJIIgYonvl2g';" alt="2013 Ohio St Mount Carmel Tn 37645 Realtor Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Ohio St Mount Carmel Tn 37645 Realtor Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/timesnews.net/content/tncms/assets/v3/editorial/2/1e/21e35e52-82d1-5b29-be73-c431e6d80361/5ee27d3066524.image.jpg?resize=400%2C300" data-lightbox="roadtrip" data-title="National Guard Opens New Armory In Mount Carmel Local News Timesnews Net">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/timesnews.net/content/tncms/assets/v3/editorial/2/1e/21e35e52-82d1-5b29-be73-c431e6d80361/5ee27d3066524.image.jpg?resize=400%2C300" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUmf56vr15IbFwrVhYBvCzr9MvRZtAlRPnyg';" alt="National Guard Opens New Armory In Mount Carmel Local News Timesnews Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Opens New Armory In Mount Carmel Local News Timesnews Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.glassdoor.com/sqll/41436/us-national-guard-squarelogo-1591206491737.png" data-lightbox="roadtrip" data-title="Army National Guard 42a Human Resources Specialist Job In Mount Carmel Tn Glassdoor">
+											<img class="card-img v-image ads-img " src="https://media.glassdoor.com/sqll/41436/us-national-guard-squarelogo-1591206491737.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPZR3elHBkRdZwj-Mn4Bz3FTEalZhlMoMQQ';" alt="Army National Guard 42a Human Resources Specialist Job In Mount Carmel Tn Glassdoor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army National Guard 42a Human Resources Specialist Job In Mount Carmel Tn Glassdoor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/30/4e/66/304e66a3fbbefb1b13c3a8a1a41e0782.jpg" data-lightbox="roadtrip" data-title="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/30/4e/66/304e66a3fbbefb1b13c3a8a1a41e0782.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuxTxVdTrYZ6M_D_4dlsBierkcYSc0q7GPmw';" alt="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/6d/84/c36d849a23a5a547b82c5e2e5e8d98a5.jpg" data-lightbox="roadtrip" data-title="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/6d/84/c36d849a23a5a547b82c5e2e5e8d98a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0RnVQ1cmN6I7WCGgog1okwgK1iPJjWzs8ug';" alt="Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Christmas Ornament For Policeman Front Line Hero Etsy Personalized Christmas Ornaments Personalized Christmas Christmas Ornaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/16/ed/f416ed7f67926223c0e34e7adf94b81d.jpg" data-lightbox="roadtrip" data-title="Prince Free Online Coloring Pages Coloring Pages Free Online Coloring Coloring Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/16/ed/f416ed7f67926223c0e34e7adf94b81d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMTu_lre1QNkSmhvjlY0LLcDnjPj2TC0fijQ';" alt="Prince Free Online Coloring Pages Coloring Pages Free Online Coloring Coloring Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prince Free Online Coloring Pages Coloring Pages Free Online Coloring Coloring Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_D-oifA_L6CKKM" data-lightbox="roadtrip" data-title="Https Apps Northeaststate Edu Documents Repository Student 20needs 20project Northeast 20tennessee 20regional 20directory 20of 20services Pdf">
+											<img class="card-img v-image ads-img " src="_D-oifA_L6CKKM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4MFfn5wFs5iVbm7X2eecOZobJVr5gzoPiA';" alt="Https Apps Northeaststate Edu Documents Repository Student 20needs 20project Northeast 20tennessee 20regional 20directory 20of 20services Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Apps Northeaststate Edu Documents Repository Student 20needs 20project Northeast 20tennessee 20regional 20directory 20of 20services Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.isu.pub/180425131402-bb6f9bcd743a211dce7dc4905a3dc7d4/jpg/page_1.jpg" data-lightbox="roadtrip" data-title="Hawkins County Election Guide 2018 By Discover Hawkins County Issuu">
+											<img class="card-img v-image ads-img " src="https://image.isu.pub/180425131402-bb6f9bcd743a211dce7dc4905a3dc7d4/jpg/page_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_oHKx5XosOQ5N1L9Qc40ndRVLCHv0f0fzg';" alt="Hawkins County Election Guide 2018 By Discover Hawkins County Issuu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hawkins County Election Guide 2018 By Discover Hawkins County Issuu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qnyi8879U-WUlM" data-lightbox="roadtrip" data-title="Http Sgaus Org Wp Content Uploads 2016 05 Tnsg Newsletter Spring 2016 5 13 16 Final Ver1 Pdf">
+											<img class="card-img v-image ads-img " src="qnyi8879U-WUlM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUgyFYo0pHLySabVGRPZ_3RCiy73NBN0C9w';" alt="Http Sgaus Org Wp Content Uploads 2016 05 Tnsg Newsletter Spring 2016 5 13 16 Final Ver1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Sgaus Org Wp Content Uploads 2016 05 Tnsg Newsletter Spring 2016 5 13 16 Final Ver1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/f1/9d/edf19d824112a5f1da0d8f21efe9b37a.png" data-lightbox="roadtrip" data-title="Capital Crime Quinnipiac University S Logo Was Met With Immediate Friction Mostly Due To The Lack Of A Capit Crime Typography Layout Graphic Design Typography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/f1/9d/edf19d824112a5f1da0d8f21efe9b37a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmCefDjwzDreKY5VHSVfR3bq0G4D14cBiMA';" alt="Capital Crime Quinnipiac University S Logo Was Met With Immediate Friction Mostly Due To The Lack Of A Capit Crime Typography Layout Graphic Design Typography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Capital Crime Quinnipiac University S Logo Was Met With Immediate Friction Mostly Due To The Lack Of A Capit Crime Typography Layout Graphic Design Typography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://3.bp.blogspot.com/-JGNbIFrGsi4/T5dzxd1ZL4I/AAAAAAAAAKY/1zJASOvd-Q4/s1600/2wrestlefesttease.jpg" data-lightbox="roadtrip" data-title="King Of Kingsport Beau James 2012">
+											<img class="card-img v-image ads-img " src="http://3.bp.blogspot.com/-JGNbIFrGsi4/T5dzxd1ZL4I/AAAAAAAAAKY/1zJASOvd-Q4/s1600/2wrestlefesttease.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFErPuWJltQ2Q5488RUwJC6BeSrzwxQbk5A';" alt="King Of Kingsport Beau James 2012">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King Of Kingsport Beau James 2012</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/96/37/90/963790a5ae4035f69d8e908bbea35d68--travel-guide-real-estates.jpg" data-lightbox="roadtrip" data-title="How To Get To Big Run Falls In New Castle Pennsylvania Uncoveringpa Armed Forces Vacation Club Gurgaon Vacation Club">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/96/37/90/963790a5ae4035f69d8e908bbea35d68--travel-guide-real-estates.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRFsqpMNFm9YAEzcpPFwikGJxGxr75qPwlg';" alt="How To Get To Big Run Falls In New Castle Pennsylvania Uncoveringpa Armed Forces Vacation Club Gurgaon Vacation Club">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get To Big Run Falls In New Castle Pennsylvania Uncoveringpa Armed Forces Vacation Club Gurgaon Vacation Club</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/75/91/9275910a4c7e20b09ae84ac102694848.jpg" data-lightbox="roadtrip" data-title="Gallery Inspiration Picture 506488 Gift Table Our Wedding Wedding Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/75/91/9275910a4c7e20b09ae84ac102694848.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4e-uAT0krvo6NkIOve2rr4HtVKMvClulGhA';" alt="Gallery Inspiration Picture 506488 Gift Table Our Wedding Wedding Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gallery Inspiration Picture 506488 Gift Table Our Wedding Wedding Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hr-specialist-army-jobs.html">Hr Specialist Army Jobs</a></li>
+													<li class="list-group-item"><a href="/human-resources-air-force-officer.html">Human Resources Air Force Officer</a></li>
+													<li class="list-group-item"><a href="/indian-army-hr-song.html">Indian Army Hr Song</a></li>
+													<li class="list-group-item"><a href="/indian-army-husband-wife-status.html">Indian Army Husband Wife Status</a></li>
+													<li class="list-group-item"><a href="/indian-army-love-quotes-in-hindi.html">Indian Army Love Quotes In Hindi</a></li>
+													<li class="list-group-item"><a href="/human-resources-for-the-army.html">Human Resources For The Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-army-mos.html">Human Resources Army Mos</a></li>
+													<li class="list-group-item"><a href="/if-my-wife-wants-a-divorce-and-i-dont.html">If My Wife Wants A Divorce And I Dont</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-officer-benefits.html">Indian Air Force Officer Benefits</a></li>
+													<li class="list-group-item"><a href="/human-resources-robins-air-force-base.html">Human Resources Robins Air Force Base</a></li>
+													<li class="list-group-item"><a href="/human-resources-certification-army.html">Human Resources Certification Army</a></li>
+													<li class="list-group-item"><a href="/illinois-civil-war-soldiers-records.html">Illinois Civil War Soldiers Records</a></li>
+													<li class="list-group-item"><a href="/human-resources-army-jobs.html">Human Resources Army Jobs</a></li>
+													<li class="list-group-item"><a href="/indian-army-benefits-after-death.html">Indian Army Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/hrcapps-army-mil-ppw.html">Hrcapps Army Mil Ppw</a></li>
+													<li class="list-group-item"><a href="/independent-vs-dependent-requirements-sap.html">Independent Vs Dependent Requirements Sap</a></li>
+													<li class="list-group-item"><a href="/i-cant-login-to-my-cash-app.html">I Cant Login To My Cash App</a></li>
+													<li class="list-group-item"><a href="/indian-army-wife-book-pdf.html">Indian Army Wife Book Pdf</a></li>
+													<li class="list-group-item"><a href="/human-resources-for-army.html">Human Resources For Army</a></li>
+													<li class="list-group-item"><a href="/illinois-veteran-dependent-education-benefits.html">Illinois Veteran Dependent Education Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

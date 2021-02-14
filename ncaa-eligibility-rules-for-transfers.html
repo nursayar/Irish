@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Eligibility Rules For Transfers - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Eligibility Rules For Transfers",
+  "datePublished": "2021-02-14",
+  "image": "https://ncaa.egain.cloud/system/ws/v11/media/image/4003/6a44df37-e9fb-4e3c-a9cd-0b936329a3d5",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+eligibility+rules+for+transfers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Eligibility Rules For Transfers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I have been told it is a done deal one high-profile college coach said. The NCAA took a significant step toward allowing all Division I athletes to transfer one time without sitting out a season of competition. By Braden Keith 4 They must be enrolled full time at the school for the fall 2020 term. <br>				
+			</p>
+										<a class="badge badge-primary" href="/life-of-army-soldier.html">life of army soldier</a>
+											<a class="badge badge-dark" href="/login-to-my-carnival-cruise.html">login to my carnival cruise</a>
+											<a class="badge badge-dark" href="/living-on-base-as-an-army-wife.html">living on base as an army wife</a>
+											<a class="badge badge-success" href="/login-to-my-cardcom.html">login to my cardcom</a>
+											<a class="badge badge-dark" href="/kentucky-civil-war-soldiers-records.html">kentucky civil war soldiers records</a>
+											<a class="badge badge-danger" href="/login-sscn-bkn-error.html">login sscn bkn error</a>
+											<a class="badge badge-light" href="/loan-forgiveness-programs-for-military-spouses.html">loan forgiveness programs for military spouses</a>
+											<a class="badge badge-info" href="/lost-my-military-dependent-id.html">lost my military dependent id</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/26/fc/8126fcbdf21c3531b4d134bf1c3e5d3b.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/26/fc/8126fcbdf21c3531b4d134bf1c3e5d3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufCsx8k2wIuBwVBbHCHA3eFF03kL2iUe1OA';" alt="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" data-lightbox="roadtrip" data-title="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RhxSm64a3h9GgSUU5UOzKzk2Nru3P9YX9Q';" alt="Ncaa Extra Year Of Eligibility Coronavirus Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Extra Year Of Eligibility Coronavirus Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://res.cloudinary.com/smarthlete/image/upload/r_18/v1437072502/Slide2_aj16bc.jpg" data-lightbox="roadtrip" data-title="Want To Transfer School 4 4 Transfers Explained">
+											<img class="card-img v-image ads-img " src="http://res.cloudinary.com/smarthlete/image/upload/r_18/v1437072502/Slide2_aj16bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIvMB0LNfu135t1PYiK9_9biIGTnN4PSBGg';" alt="Want To Transfer School 4 4 Transfers Explained">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Transfer School 4 4 Transfers Explained</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/3d/5f/503d5f280a11d2ddc56f5e17b477cf4e.jpg" data-lightbox="roadtrip" data-title="Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/3d/5f/503d5f280a11d2ddc56f5e17b477cf4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-C5BE5Q8De8cegTC9L1VKOl9Df3tnyQdsQ';" alt="Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division I And Ii Academic Requirements Student Athlete College Bound Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/59/43/185943909f9c843e29ff485db1e47db0.png" data-lightbox="roadtrip" data-title="Ncaa And Naia Sports Student Athlete Life Skills Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/59/43/185943909f9c843e29ff485db1e47db0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgoKguaxIHcnJ7FFCu5SLxEGCpmkde9FSpMw';" alt="Ncaa And Naia Sports Student Athlete Life Skills Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa And Naia Sports Student Athlete Life Skills Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/1b/ee/f51bee094518f2b1348a92a32820a422.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility Center Refund Form Student Resources Student Athlete Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/1b/ee/f51bee094518f2b1348a92a32820a422.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST182f1rcWDlt0hNrfJLMVDHMGnTw39YzgBg';" alt="Ncaa Eligibility Center Refund Form Student Resources Student Athlete Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Center Refund Form Student Resources Student Athlete Student</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ncsasports.org/sites/default/files/1199177930374389.tuIPOLM2xIsOm7fddBmH_height640.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST182f1rcWDlt0hNrfJLMVDHMGnTw39YzgBg';" alt="Ncaa Eligibility Center Refund Form Student Resources Student Athlete Student">
+										<div class="card-body">
+						<h3 class="h5"><b>After revising the eligibility rules the Division 2 committee is now granting fall and winter athletes an extra year of eligibility regardless of if they participate in the 2020-21 sports season.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa eligibility rules for transfers</strong>. 
+								
+																	If a player transfers they have to sit out a season. 
+																	However when transferring from a two-year school to a four-year one higher GPAs are sometimes necessary or preferred. 
+																	A plan to change the waiver process is expected to be. 
+																	When you begin to think about going to a new school understand that the rules are different depending on whether you want to transfer to an NCAA Division I II or III school and whether you are currently enrolled at a two-year or a four-year school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Current NCAA rules state that players transferring must sit out a year. 
+																	For now the NCAA is not adjusting the initial counter limit. 
+																	The simplest way to get around the rule is to graduate first. 
+																	The NCAA Division 3 committee has not only announced plans to grant eligibility relief to winter sport athletes but they have revised their eligibility relief plans for all 2020-21 sports season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rule change would require the school receiving the transferring student-athlete to ensure that the student-athlete graduates with a post-baccalaureate degree or risk putting their future teams in competitive harm by limiting available scholarshipsEssentially while a graduate transfer would only have one year athletic eligibility remaining at his new school in most cases based upon degree requirements the institution would have to account for a scholarship on its roster for two years. 
+																	I dont know why the transfer rule in football is different than it is in lacrosse or womens track and field. 
+																	In 2018 the NCAA axed a rule that required players to get permission from their schools before other programs could contact them about transfers. 
+																	The NCAA would not impose limits on the number of transfer athletes that a D-I program may accept in a given year the legislation says. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It must be the first transfer from a four-year school. 
+																	The NCAA has to have a rule thats consistent for all sports. 
+																	If a player graduates with college eligibility remaining. 
+																	If you transfer from a four-year college to an NCAA school you must complete one academic year in residence at the new school before you can play for or receive travel expenses from the new school unless you qualify for a transfer exception or waiver. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That only went so far because many conferences. 
+																	NCAA transfer rules explained quickly and honestly The basic rule. 
+																	The athletes previous four-year college did not provide athletic scholarships OR. 
+																	Many players who transferred after last season and applied for an immediate eligibility waiver have already been granted. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College-bound student-athletes preparing to enroll in a Division I or Division II school need to register with the NCAA Eligibility Center to ensure they have met amateurism standards and are academically prepared for college coursework. 
+																	Both the head coach and the. 
+																	It all ought to be the. 
+																	NCAA graduate transfer rules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The student-athlete must have left their previous school in good standing academically and not facing disciplinary. 
+																	An athlete transferring as a graduate student to an NCAA Division I university in the sports of baseball basketball football and mens ice hockey next Fall will have the chance to be immediately eligible without need for a waiver from the NCAA as long as. 
+																	Minimum GPA Generally you need to have earned a minimum GPA of 20 in order to be eligible to play college sports at your current or any future institution. 
+																	NCAA grants extra year of eligibility for all winter sport athletes voids 500 rule for bowl teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The biggest issue to be resolved with the transfer rule is whether the NCAA will implement a. 
+																	The NCAA one-time transfer rule is expected to pass in January opening up a floodgate of transfers. 
+																	The NCAA Division I Council took a step toward eventually allowing one-time transfers immediate eligibility in basketball football baseball and hockey on Wednesday by approving a measure that. 
+																	They arent allowed to play in games for a full. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn the transfer and eligibility rules for the NCAA and the new conference and school you plan to join. 
+																	According to current rules transfers must register with their new school and then site a season leaving McBrides eligibility for 2020-21 in a potentially precarious position with the NCAA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/09/a5/4609a55d7d8012176cd5d4167b9db3f0.png" data-lightbox="roadtrip" data-title="Guidance Counselor2 College Visit Guidance Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/09/a5/4609a55d7d8012176cd5d4167b9db3f0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0vRz1yu5DtsPo21mItLfpGd4zR1L8SGYgzQ';" alt="Guidance Counselor2 College Visit Guidance Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guidance Counselor2 College Visit Guidance Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Hot Topics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp8LUoZIBdgFJFUilSLsPKsrSN4_EM8hon9w';" alt="Pin On Ncaa Hot Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Hot Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/Jan2020_MBBTransfersByNumbers.png" data-lightbox="roadtrip" data-title="Transfer Information Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/Jan2020_MBBTransfersByNumbers.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QE68Y7JXdLNV_7JtHdAhYaEKc2sX-OUs_w';" alt="Transfer Information Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transfer Information Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="F4NLNNXQfNH0tM" data-lightbox="roadtrip" data-title="Https Www Unlv Edu Sites Default Files Page Files 3 New Ncaa Transfer Eligibility Requirements For 2 4 And 4 2 4 Pdf">
+											<img class="card-img v-image ads-img " src="F4NLNNXQfNH0tM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5FO5dEbRJuNeUD38v0Hwcm08jfCL89o6kg';" alt="Https Www Unlv Edu Sites Default Files Page Files 3 New Ncaa Transfer Eligibility Requirements For 2 4 And 4 2 4 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Unlv Edu Sites Default Files Page Files 3 New Ncaa Transfer Eligibility Requirements For 2 4 And 4 2 4 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/74/c0/0874c0f02b40482f80d4afaa15d70dd2.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting Student Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/74/c0/0874c0f02b40482f80d4afaa15d70dd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTmnKqIYleo3w5VAfrnsE2kwSFax-KvoM5A';" alt="Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting Student Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility What You Need To Know So You Don T End Up On The Bench Student Athlete Connections Life Hacks For School College Recruiting Student Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ncaa.egain.cloud/system/ws/v11/media/image/4003/6a44df37-e9fb-4e3c-a9cd-0b936329a3d5" data-lightbox="roadtrip" data-title="I Want To Play A Sport At An Ncaa Division Iii School Do I Need To Register With The Ncaa Eligibility Center">
+											<img class="card-img v-image ads-img " src="https://ncaa.egain.cloud/system/ws/v11/media/image/4003/6a44df37-e9fb-4e3c-a9cd-0b936329a3d5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkxdWJTos5ktHEAw-sg2DSRnjTSCBPF1JBg';" alt="I Want To Play A Sport At An Ncaa Division Iii School Do I Need To Register With The Ncaa Eligibility Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Want To Play A Sport At An Ncaa Division Iii School Do I Need To Register With The Ncaa Eligibility Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5--bona.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Hot Topics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5--bona.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lNhcCJJ_qy0vlLbRx98mhUQcf3agFhL7Yg';" alt="Pin On Ncaa Hot Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Hot Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/43/f9/f043f996ffff63d25c0e3cc0662555b5.png" data-lightbox="roadtrip" data-title="Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/43/f9/f043f996ffff63d25c0e3cc0662555b5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoFqH08VcOXMbYL8ieu0Zu01NhCx7_vrsRQ';" alt="Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Education Impacting Disability Services Application Student Resources Student Athlete Graduation Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/95/6a/26956a5eafd6b7b729f0d712763f869f.png" data-lightbox="roadtrip" data-title="Naia Competitive Experience Chargeable Competition Faqs Competition Student Athlete National Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/95/6a/26956a5eafd6b7b729f0d712763f869f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgkAusnxpljl7gFXRTDUl4KU57SyezFE0Kw';" alt="Naia Competitive Experience Chargeable Competition Faqs Competition Student Athlete National Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naia Competitive Experience Chargeable Competition Faqs Competition Student Athlete National Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/85/4c/9c854c43508e161780fdda3f4cb0ea0e.png" data-lightbox="roadtrip" data-title="Sat Notebook Scholarships Application Student Exam Science Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/85/4c/9c854c43508e161780fdda3f4cb0ea0e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYKn0HthQD7sdUmdxS_Ju8bPu0LVIkArRc9Q';" alt="Sat Notebook Scholarships Application Student Exam Science Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sat Notebook Scholarships Application Student Exam Science Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://storage.googleapis.com/wzukusers/user-19753351/images/591dfa9a5fbc2dnv9JNd/Screen-Shot-2017-05-18-at-1.48.01-PM_d600.png" data-lightbox="roadtrip" data-title="Ncaa College Eligibility">
+											<img class="card-img v-image ads-img " src="https://storage.googleapis.com/wzukusers/user-19753351/images/591dfa9a5fbc2dnv9JNd/Screen-Shot-2017-05-18-at-1.48.01-PM_d600.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBn1__sjN4a3Lggg0bahNFqsiYsaatGHA6sQ';" alt="Ncaa College Eligibility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa College Eligibility</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/8b/9f/428b9fc0c2e8f2aa39ea140c28c471b2.png" data-lightbox="roadtrip" data-title="In Response To One Of Our Member Athlete S Questions Here Are Some Sports Related Majors You Can Pu Sport Management Sport Management Major Business Classes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/8b/9f/428b9fc0c2e8f2aa39ea140c28c471b2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBeVh1WP_7yiLm9BN7ROTkBOvbtOdUEVTE6g';" alt="In Response To One Of Our Member Athlete S Questions Here Are Some Sports Related Majors You Can Pu Sport Management Sport Management Major Business Classes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Response To One Of Our Member Athlete S Questions Here Are Some Sports Related Majors You Can Pu Sport Management Sport Management Major Business Classes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/Eligibility-Requirements-min.png" data-lightbox="roadtrip" data-title="Ncaa Eligibility Requirements And Academic Eligibility Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/Eligibility-Requirements-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5jL1xKAsp9QXyoMpNrlKXbwFG0w7loCVSg';" alt="Ncaa Eligibility Requirements And Academic Eligibility Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Requirements And Academic Eligibility Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-military-tuition-assistance-cover-masters-degree.html">Does Military Tuition Assistance Cover Masters Degree</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-military-spouses.html">Does Scra Apply To Military Spouses</a></li>
+													<li class="list-group-item"><a href="/divorcing-a-retired-military-member.html">Divorcing A Retired Military Member</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-financial-aid.html">Do Military Spouses Get Financial Aid</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-qualify-for-in-state-tuition.html">Do Military Dependents Qualify For In State Tuition</a></li>
+													<li class="list-group-item"><a href="/divorce-military-retirement-pay-calculator.html">Divorce Military Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/divorce-lawyers-for-retired-military.html">Divorce Lawyers For Retired Military</a></li>
+													<li class="list-group-item"><a href="/do-va-dependents-get-a-stimulus-check.html">Do Va Dependents Get A Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/does-mycaa-pay-for-associates.html">Does Mycaa Pay For Associates</a></li>
+													<li class="list-group-item"><a href="/divorce-in-the-army-regulation.html">Divorce In The Army Regulation</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-schooling.html">Do Military Spouses Get Free Schooling</a></li>
+													<li class="list-group-item"><a href="/division-of-military-retirement-in-divorce.html">Division Of Military Retirement In Divorce</a></li>
+													<li class="list-group-item"><a href="/divorce-with-a-military-spouse.html">Divorce With A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-have-to-pay-out-of-state-tuition.html">Do Military Spouses Have To Pay Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/disadvantages-of-being-a-military-child.html">Disadvantages Of Being A Military Child</a></li>
+													<li class="list-group-item"><a href="/does-fitbit-inspire-hr-have-24-hour-clock.html">Does Fitbit Inspire Hr Have 24 Hour Clock</a></li>
+													<li class="list-group-item"><a href="/does-military-pay-spouses-college.html">Does Military Pay Spouses College</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-get-free-dental.html">Do Military Dependents Get Free Dental</a></li>
+													<li class="list-group-item"><a href="/disadvantages-of-being-a-military-officer.html">Disadvantages Of Being A Military Officer</a></li>
+													<li class="list-group-item"><a href="/divorce-assistance-for-military-spouses.html">Divorce Assistance For Military Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

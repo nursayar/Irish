@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Rapids - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Rapids",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/e3/7b/cf/e37bcf16c493780591544020e50786e3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+rapids",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Rapids</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Due to COVID-19 Nagoya Komaki Air Force Base is closed to travellers from Grand Rapids for now check our live COVID-19 map for info on Japan travel restrictions. 8 definitions of RAPIDS. Currently were already forecasting billions in savings new initiatives such as certifying printers instead of the end-state product which will allow us to supply even more out-of-stock parts writes Will Roper Assistant Secretary of the Air Force for Acquisition Technology and Logistics. <br>				
+			</p>
+										<a class="badge badge-dark" href="/education-loan-for-marriage.html">education loan for marriage</a>
+											<a class="badge badge-dark" href="/edwards-air-force-base-museum-hours.html">edwards air force base museum hours</a>
+											<a class="badge badge-light" href="/federal-benefits-for-veterans-and-dependents-booklet-2020.html">federal benefits for veterans and dependents booklet 2020</a>
+											<a class="badge badge-danger" href="/free-college-for-dependents-of-veterans.html">free college for dependents of veterans</a>
+											<a class="badge badge-dark" href="/free-college-for-military-dependents.html">free college for military dependents</a>
+											<a class="badge badge-success" href="/free-college-for-disabled-veterans-dependents-texas.html">free college for disabled veterans dependents texas</a>
+											<a class="badge badge-info" href="/epic-ski-pass-military-dependent.html">epic ski pass military dependent</a>
+											<a class="badge badge-warning" href="/does-the-military-pay-for-college-for-spouses.html">does the military pay for college for spouses</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and image content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/7f/ba/457fbadf185df78f7b66fe7df7722bab.jpg" data-lightbox="roadtrip" data-title="Air Force One Landing In Grand Rapids Kgrr Air Force Ones Force One Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/7f/ba/457fbadf185df78f7b66fe7df7722bab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-qLRtj9Mh8962nctv21VcO9pXPulTTsR24g&amp;ec=45774421';" alt="Air Force One Landing In Grand Rapids Kgrr Air Force Ones Force One Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force One Landing In Grand Rapids Kgrr Air Force Ones Force One Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/b9/07/f3b9074b15132e6257d16294fe5112e4.jpg" data-lightbox="roadtrip" data-title="Cedar Rapids Iowa Pakistan Air Force Officials Are Upgrading Up To 11 C 130e And 5 C 130b Aircraft With The Flight2 Avionics System From Rockwell Colli Pesawat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/b9/07/f3b9074b15132e6257d16294fe5112e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCY2PY8i0nmtogYjuBA9gWwIdSicXNh1gbEw&amp;ec=45774421';" alt="Cedar Rapids Iowa Pakistan Air Force Officials Are Upgrading Up To 11 C 130e And 5 C 130b Aircraft With The Flight2 Avionics System From Rockwell Colli Pesawat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cedar Rapids Iowa Pakistan Air Force Officials Are Upgrading Up To 11 C 130e And 5 C 130b Aircraft With The Flight2 Avionics System From Rockwell Colli Pesawat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/ff/0f/faff0f65bebe6e525e9f40861b0d9a67.jpg" data-lightbox="roadtrip" data-title="A Blue Angels F 4 Phantom Does A Wheels Up Emergency Landing Us Navy Blue Angels Fighter Jets Blue Angels">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/ff/0f/faff0f65bebe6e525e9f40861b0d9a67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhA8nsd_1ccECLNMTx35mMwzI1NfwUO-mHg&amp;ec=45774421';" alt="A Blue Angels F 4 Phantom Does A Wheels Up Emergency Landing Us Navy Blue Angels Fighter Jets Blue Angels">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Blue Angels F 4 Phantom Does A Wheels Up Emergency Landing Us Navy Blue Angels Fighter Jets Blue Angels</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/ae/1e/fcae1edd4032fc2432ecb167ed06df7e.jpg" data-lightbox="roadtrip" data-title="Pin On Airforce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/ae/1e/fcae1edd4032fc2432ecb167ed06df7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vEytacjJmQtP2UXngNJe0ZSTvL9Gzrt9ew&amp;ec=45774421';" alt="Pin On Airforce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Airforce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/ef/43/58ef4331bc42059ebb13f9eb8a8042d1.png" data-lightbox="roadtrip" data-title="Nike Air Force 1 Just Do It Nike Air Force 1 Low Skate Shoes 36 44 68824733 Whatsapp 86 18059955283 Air Force Nike Air Nike Air Max">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/ef/43/58ef4331bc42059ebb13f9eb8a8042d1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK_8vD8dHTR-bVejpSrsuoyoMTQ4C9eFQbcA&amp;ec=45774421';" alt="Nike Air Force 1 Just Do It Nike Air Force 1 Low Skate Shoes 36 44 68824733 Whatsapp 86 18059955283 Air Force Nike Air Nike Air Max">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nike Air Force 1 Just Do It Nike Air Force 1 Low Skate Shoes 36 44 68824733 Whatsapp 86 18059955283 Air Force Nike Air Nike Air Max</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/af/83/22af83ec2339917159f096cdc1b26720.jpg" data-lightbox="roadtrip" data-title="Alquilaraviones First U S Air Force Rapid Response Hypersonic Weapon Agm 183a Kevelairamerica Air Force Air Charter Rapids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/af/83/22af83ec2339917159f096cdc1b26720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZHdXGcigpTVXIVR8CX2uioxQnTGXrfm1BDA&amp;ec=45774421';" alt="Alquilaraviones First U S Air Force Rapid Response Hypersonic Weapon Agm 183a Kevelairamerica Air Force Air Charter Rapids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alquilaraviones First U S Air Force Rapid Response Hypersonic Weapon Agm 183a Kevelairamerica Air Force Air Charter Rapids</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fa/ff/0f/faff0f65bebe6e525e9f40861b0d9a67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZHdXGcigpTVXIVR8CX2uioxQnTGXrfm1BDA&amp;ec=45774421';" alt="Alquilaraviones First U S Air Force Rapid Response Hypersonic Weapon Agm 183a Kevelairamerica Air Force Air Charter Rapids">
+										<div class="card-body">
+						<h3 class="h5"><b>Eglin Air Force Base Website httpsrapids-appointmentsdmdcosdmil.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force rapids</strong>. 
+								
+																	Consolidated ID Card Office Online. 
+																	Description Not Provided. 
+																	RAPIDS is a Special Forces tactic for quickly inserting and removing personnel into and out of an area. 
+																	The training was conducted to allow the Special Forces allows special forces members to maintain proficiency in the RAPIDS procedures. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eglin Air Force Base FL United States 32542-0000. 
+																	Once you find a location the RAPIDS site gives you hours of operation and contact information plus useful information such as what documents you will need how to add family members policies for. 
+																	HILL AIR FORCE BASE Utah -- The Defense Manpower Data Center recently released their DEERS appointment system known as ID Card Office Online With this new system rolling out faster than planned the previous RAPIDS Appointment Scheduler will now shut down with current appointments transferred into the new system. 
+																	Grand Rapids Central Mystery behind stolen Air Force ring closer to being solved The Kent County Sheriffs Office remains committed to finding out who an Air Force Pilot School ring belongs to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force One taxis after landing in Grand Rapids Michigan on June 7 2010. 
+																	We try to be as accurate as possible but things can change fast. 
+																	Sign up for updates via the. 
+																	Ford International Airport in Grand Rapids over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We try to be as accurate as possible but things can change fast. 
+																	Army photos by Staff Sgt. 
+																	Sign up for updates via the map and be the first to know if they. 
+																	The DD 1172-2 feature is not functioning and users must schedule a RAPIDS appointment to add a family member or request reissuance of a family member ID card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eric Trump left made a bet on board Air Force One after President Donald Trumps final pre-Election Day rally in Grand Rapids Michigan pictured saying he believed his father would win the. 
+																	Check our live COVID-19 map for United States travel restrictions and to find out if youll need to quarantine on arrival. 
+																	NFL NASA PSP HIPAArandom Words in meaning. 
+																	Advanced manufacturing plays a critical role in improving the Air Force sustainment process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military aircraft landed at a Michigan airport Sunday evening after mechanical issues. 
+																	It was closed in 1963. 
+																	HILL AIR FORCE BASE Utah -- The Defense Manpower Data Center recently released their DEERS appointment system known as ID Card Office Online With this new system rolling out faster than planned the previous RAPIDS Appointment Scheduler will now shut down with current appointments transferred into the new system. 
+																	The Boeing C-17 Globemaster III landed at the Gerald R. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Definition of RAPIDS in Military and Government. 
+																	What does RAPIDS stand for. 
+																	About an hour later my wife and I were given a private two-hour tour of the pl. 
+																	Chat global warming Postal codes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	RAPIDS Online Appointment Scheduler link NOAA UKLEY AIR FORE ASE 18401 E A-asin Ave ldg 606 Aurora appointments are not required but highly recommended. 
+																	It is located 07 miles 11 km east-northeast of Grand Rapids Minnesota. 
+																	Grand Rapids Air Force Station is a closed United States Air Force General Surveillance Radar station. 
+																	Roanoke Rapids AFS was established in 1954 by Air Defense Command as one of a planned deployment of forty-four Mobile radar stations to support the permanent ADC Radar network in the United States sited around the perimeter of the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This deployment was projected to be operational by mid-1952. 
+																	Grand Rapids is partially open to travellers from Nagoya Komaki Air Force Base. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/41/d4/6c41d49a5a3957185045df5e25c33682.jpg" data-lightbox="roadtrip" data-title="Grand Rapids Mi Wlav Fm Late 70 S Early 80 S Aor Aor Air Force 70s">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/41/d4/6c41d49a5a3957185045df5e25c33682.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkZEITKV6lkGFKjT-Rp8DY-U0Dvfl28icKw&amp;ec=45774421';" alt="Grand Rapids Mi Wlav Fm Late 70 S Early 80 S Aor Aor Air Force 70s">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grand Rapids Mi Wlav Fm Late 70 S Early 80 S Aor Aor Air Force 70s</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/10/0e/9a100e8bc1ce22de8f459aa0586770a2.jpg" data-lightbox="roadtrip" data-title="1953 Lear Aviation Ad Fairchild C 119 Flying Boxcar Air Force Cargo Plane Vintage Aircraft Aviation Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/10/0e/9a100e8bc1ce22de8f459aa0586770a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0las6fVaHInApj9cWGx8oVtVYbuS9cYvTTg&amp;ec=45774421';" alt="1953 Lear Aviation Ad Fairchild C 119 Flying Boxcar Air Force Cargo Plane Vintage Aircraft Aviation Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1953 Lear Aviation Ad Fairchild C 119 Flying Boxcar Air Force Cargo Plane Vintage Aircraft Aviation Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0e/b6/6d/0eb66da0b84f57c060e08a46bc98c13d.jpg" data-lightbox="roadtrip" data-title="The Ifl On Us Sports Net Week 8 Cedar Rapids River Kings At San Diego Strike Force Presented By Cars Direct Cedar Rapids Rapid River Coaching Techniques">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0e/b6/6d/0eb66da0b84f57c060e08a46bc98c13d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmCUT9JzKcILasEBB6JrwDjxKawSUf1vJ5w&amp;ec=45774421';" alt="The Ifl On Us Sports Net Week 8 Cedar Rapids River Kings At San Diego Strike Force Presented By Cars Direct Cedar Rapids Rapid River Coaching Techniques">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ifl On Us Sports Net Week 8 Cedar Rapids River Kings At San Diego Strike Force Presented By Cars Direct Cedar Rapids Rapid River Coaching Techniques</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/3a/9a/403a9aa9c8fc680bebdcb6143ef04394.png" data-lightbox="roadtrip" data-title="Us Armed Forces Wood Home Signs Military Crafts Army Crafts Military Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/3a/9a/403a9aa9c8fc680bebdcb6143ef04394.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Juorplpx7HmWtZrOYkI2ftWvbmzsSGVHFw&amp;ec=45774421';" alt="Us Armed Forces Wood Home Signs Military Crafts Army Crafts Military Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Armed Forces Wood Home Signs Military Crafts Army Crafts Military Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/86/f4/b686f4473c0ad7c01ab86139abb9cef2.png" data-lightbox="roadtrip" data-title="Pin On Best Pilots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/86/f4/b686f4473c0ad7c01ab86139abb9cef2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrFeRckhhG2MPfey1sfdmzvpMZMZ6xBFCvw&amp;ec=45774421';" alt="Pin On Best Pilots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Pilots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/56/cf/0856cfe0881eeab2f5679adebf40930a.jpg" data-lightbox="roadtrip" data-title="Us Army Nurses Boarding Ship History Grand Rapids Army Nurse Military Nurses Air Force Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/56/cf/0856cfe0881eeab2f5679adebf40930a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkGLe2622Ytag7MxE3YAv8Poue7OPDWpUzg&amp;ec=45774421';" alt="Us Army Nurses Boarding Ship History Grand Rapids Army Nurse Military Nurses Air Force Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Nurses Boarding Ship History Grand Rapids Army Nurse Military Nurses Air Force Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e3/7b/cf/e37bcf16c493780591544020e50786e3.jpg" data-lightbox="roadtrip" data-title="How To Survive An Airplane Rapid Decompression Accident Survival Accident Rapids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e3/7b/cf/e37bcf16c493780591544020e50786e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_lo_3jxdx4DdShLpFJd23fMGmju5KFlFpBw&amp;ec=45774421';" alt="How To Survive An Airplane Rapid Decompression Accident Survival Accident Rapids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Survive An Airplane Rapid Decompression Accident Survival Accident Rapids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8d/6d/a1/8d6da15748c9f9b0bdb08614d6899481.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8d/6d/a1/8d6da15748c9f9b0bdb08614d6899481.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfcjSdtc5JXBcnGMvpeHn9h6jbBCNE5BtPzA&amp;ec=45774421';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/44/f6/30/44f630a5a02de8f57661f3c9a016cd17.jpg" data-lightbox="roadtrip" data-title="Grand Rapids Industries B 17 Flying Fortress Vintage Ad In 2020 Vintage Ads B17 Vintage Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/44/f6/30/44f630a5a02de8f57661f3c9a016cd17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoGL1o-B5x5lCkAvd8H8e56cBYGyT8L73Exg&amp;ec=45774421';" alt="Grand Rapids Industries B 17 Flying Fortress Vintage Ad In 2020 Vintage Ads B17 Vintage Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grand Rapids Industries B 17 Flying Fortress Vintage Ad In 2020 Vintage Ads B17 Vintage Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/cd/92/85cd92527ea3a6dcf5adb3a89aa830a5.jpg" data-lightbox="roadtrip" data-title="Pin On F 18 Hornet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/cd/92/85cd92527ea3a6dcf5adb3a89aa830a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjH_Mzjs4gEPlhPzjR1JPdUHQhQcuh9ouiUQ&amp;ec=45774421';" alt="Pin On F 18 Hornet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On F 18 Hornet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ba/bb/77/babb7794d339d03e1390cbab75f2cb54.jpg" data-lightbox="roadtrip" data-title="Pin By Dean On Reading Material In 2020 Rapids Product Launch Air">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ba/bb/77/babb7794d339d03e1390cbab75f2cb54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ADiDYD-d5kgJfYot6VQOvdMsIx5FGCJznA&amp;ec=45774421';" alt="Pin By Dean On Reading Material In 2020 Rapids Product Launch Air">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dean On Reading Material In 2020 Rapids Product Launch Air</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7a/ae/cc/7aaeccfd24a1adef6efe6408463266d3.jpg" data-lightbox="roadtrip" data-title="The Top Commanders Will Meet This Week For The Two Days Commanders Conference Starting From July 22 The Iaf Brass Will Also Dis Deployment Fighter Jets Rapids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7a/ae/cc/7aaeccfd24a1adef6efe6408463266d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB6J6RwHbs8zZwKN55BgVEdIejAyCt5AVuA&amp;ec=45774421';" alt="The Top Commanders Will Meet This Week For The Two Days Commanders Conference Starting From July 22 The Iaf Brass Will Also Dis Deployment Fighter Jets Rapids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top Commanders Will Meet This Week For The Two Days Commanders Conference Starting From July 22 The Iaf Brass Will Also Dis Deployment Fighter Jets Rapids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/c1/14/a2c1142e782c305c18febcd190ddfc91.jpg" data-lightbox="roadtrip" data-title="Rapidevent Cincinnati Rapids Drafting Desk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/c1/14/a2c1142e782c305c18febcd190ddfc91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1r3o_fquhVKWMyDTUSqno-Y9zLYzSfPFEKg&amp;ec=45774421';" alt="Rapidevent Cincinnati Rapids Drafting Desk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rapidevent Cincinnati Rapids Drafting Desk</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycambrian-portal-login.html">Mycambrian Portal Login</a></li>
+													<li class="list-group-item"><a href="/mycar-lismore.html">Mycar Lismore</a></li>
+													<li class="list-group-item"><a href="/mycar-penrith.html">Mycar Penrith</a></li>
+													<li class="list-group-item"><a href="/mycar-gladstone.html">Mycar Gladstone</a></li>
+													<li class="list-group-item"><a href="/mycar-nissan.html">Mycar Nissan</a></li>
+													<li class="list-group-item"><a href="/mycar-north-bay.html">Mycar North Bay</a></li>
+													<li class="list-group-item"><a href="/mycampus-portal-hampton.html">Mycampus Portal Hampton</a></li>
+													<li class="list-group-item"><a href="/mycar-driver-registration-online.html">Mycar Driver Registration Online</a></li>
+													<li class="list-group-item"><a href="/mycampus-portal-yccd.html">Mycampus Portal Yccd</a></li>
+													<li class="list-group-item"><a href="/mycar-cannington.html">Mycar Cannington</a></li>
+													<li class="list-group-item"><a href="/mycar-eastgardens.html">Mycar Eastgardens</a></li>
+													<li class="list-group-item"><a href="/mycaa-yoga-teacher-training.html">Mycaa Yoga Teacher Training</a></li>
+													<li class="list-group-item"><a href="/mycar-auto-service.html">Mycar Auto Service</a></li>
+													<li class="list-group-item"><a href="/mycar-customer-service-contact-number.html">Mycar Customer Service Contact Number</a></li>
+													<li class="list-group-item"><a href="/mycaa-scholarship-requirements.html">Mycaa Scholarship Requirements</a></li>
+													<li class="list-group-item"><a href="/mycar-gungahlin.html">Mycar Gungahlin</a></li>
+													<li class="list-group-item"><a href="/mycaa-tax-info.html">Mycaa Tax Info</a></li>
+													<li class="list-group-item"><a href="/mycar-registration.html">Mycar Registration</a></li>
+													<li class="list-group-item"><a href="/mycaa-training-plan-template.html">Mycaa Training Plan Template</a></li>
+													<li class="list-group-item"><a href="/mycar-email-address.html">Mycar Email Address</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does Hong Kong Have Its Own Military - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does Hong Kong Have Its Own Military",
+  "datePublished": "2021-02-14",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hkhistory.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+hong+kong+have+its+own+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does Hong Kong Have Its Own Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hong Kong has never had its own military forces because it has never been a sovereign state except voluntary auxiliary force like The Royal Hong Kong Regiment The Volunteers. Although Hong Kong maintains certain freedoms from China since it was passed on from Britain in 1997 the region has never had a military force of its own. The chief of the Chinese military garrison in Hong Kong has spoken for the first time about the ongoing unrest in the city warning that violent clashes would not be tolerated and that the army was. <br>				
+			</p>
+										<a class="badge badge-dark" href="/becoming-a-navy-officer-with-prior-service.html">becoming a navy officer with prior service</a>
+											<a class="badge badge-warning" href="/badr-hari-army-merchandise.html">badr hari army merchandise</a>
+											<a class="badge badge-info" href="/army-wife-retirement-gift.html">army wife retirement gift</a>
+											<a class="badge badge-warning" href="/army-wife-haircut-story.html">army wife haircut story</a>
+											<a class="badge badge-warning" href="/army-tuition-assistance-deadline.html">army tuition assistance deadline</a>
+											<a class="badge badge-light" href="/becoming-an-army-ranger-after-college.html">becoming an army ranger after college</a>
+											<a class="badge badge-success" href="/army-wife-necklace.html">army wife necklace</a>
+											<a class="badge badge-success" href="/become-a-royal-navy-pilot.html">become a royal navy pilot</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/c1/b8/9ac1b8bc6d6d779e1196c80b1bf0ac2e.jpg" data-lightbox="roadtrip" data-title="Hong Kong Police Troops Constabulary British Empire 1910s Empire Games Hong Kong British Hong Kong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/c1/b8/9ac1b8bc6d6d779e1196c80b1bf0ac2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0wiieY5XtObW9AKU2huZysjMJT2T-e4eZg';" alt="Hong Kong Police Troops Constabulary British Empire 1910s Empire Games Hong Kong British Hong Kong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hong Kong Police Troops Constabulary British Empire 1910s Empire Games Hong Kong British Hong Kong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/23/91/a72391f3c6e8e29d673e8ecc829a3bb4.jpg" data-lightbox="roadtrip" data-title="China S Military Warns Hong Kong Protesters With Propaganda Video Army Video Breaking News Today Chinese Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/23/91/a72391f3c6e8e29d673e8ecc829a3bb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBsF4p7jzTH3MfPxAS8o5D01MGqBsMifH9pA';" alt="China S Military Warns Hong Kong Protesters With Propaganda Video Army Video Breaking News Today Chinese Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Military Warns Hong Kong Protesters With Propaganda Video Army Video Breaking News Today Chinese Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2019/07/25/08e1f45c-adc2-11e9-a61f-bc570b50c4e7_image_hires_071209.JPG?itok=RVEkZNsG&amp;v=1564009936" data-lightbox="roadtrip" data-title="Chinese Military Can Be Deployed At Hong Kong S Request To Contain Protests Beijing Says South China Morning Post">
+											<img class="card-img v-image ads-img " src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2019/07/25/08e1f45c-adc2-11e9-a61f-bc570b50c4e7_image_hires_071209.JPG?itok=RVEkZNsG&amp;v=1564009936" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT__QtFuNPlETYR-jJYnW3nSam7_FH95ioFdA';" alt="Chinese Military Can Be Deployed At Hong Kong S Request To Contain Protests Beijing Says South China Morning Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chinese Military Can Be Deployed At Hong Kong S Request To Contain Protests Beijing Says South China Morning Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/3d/0b/ef3d0b43f59f9b90b96f713e46f30a62.jpg" data-lightbox="roadtrip" data-title="A Group Of People Posing For The Camera Soldiers From The People S Liberation Army S Hong Kong Garrison In 2017 20 Years After Military China Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/3d/0b/ef3d0b43f59f9b90b96f713e46f30a62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzjzLmDAABc0Bn5kV4ZzCDsrpokQeVOOe4Lw';" alt="A Group Of People Posing For The Camera Soldiers From The People S Liberation Army S Hong Kong Garrison In 2017 20 Years After Military China Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Group Of People Posing For The Camera Soldiers From The People S Liberation Army S Hong Kong Garrison In 2017 20 Years After Military China Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static01.nyt.com/images/2015/05/08/world/08sino-PLA03/08sino-PLA03-tmagArticle.jpg" data-lightbox="roadtrip" data-title="Student Protest Derails Chinese Military Visit To Hong Kong Campus The New York Times">
+											<img class="card-img v-image ads-img " src="https://static01.nyt.com/images/2015/05/08/world/08sino-PLA03/08sino-PLA03-tmagArticle.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BCbeermI61LZg-dwQaHttp1Zt9djpFSoCg';" alt="Student Protest Derails Chinese Military Visit To Hong Kong Campus The New York Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Protest Derails Chinese Military Visit To Hong Kong Campus The New York Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/0f/b8/490fb80190a0e7de90b4f4cdf4a816ca.jpg" data-lightbox="roadtrip" data-title="Pin On 3 Illustration Military Uniform India It S Ally And Adversary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/0f/b8/490fb80190a0e7de90b4f4cdf4a816ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxYoiowhqZH4oMEvU0Vtss3JiXDrjccmKtw';" alt="Pin On 3 Illustration Military Uniform India It S Ally And Adversary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 3 Illustration Military Uniform India It S Ally And Adversary</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.i-scmp.com/sites/default/files/d8/yp/images/773fb28c-b285-11e9-8f9c-a6398a9f90a91280x720115841.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxYoiowhqZH4oMEvU0Vtss3JiXDrjccmKtw';" alt="Pin On 3 Illustration Military Uniform India It S Ally And Adversary">
+										<div class="card-body">
+						<h3 class="h5"><b>The article comes as Beijing sends its prized aircraft carrier to Hong Kong in a show of military might not seen since it made the territory a special administrative region with its own set of.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does hong kong have its own military</strong>. 
+								
+																	Hong Kong defers to mainland China in two primary areas. 
+																	As a result Hong Kong became a crown colony of the British Empire. 
+																	Washington should suspend the special economic status granted to Hong Kong if Beijing deploys its military forces in the city a congressional body warned on Thursday along with a range of other. 
+																	It allows the military to intervene when requested by Hong Kongs leaders to maintain order or assist in cases of natural disasters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hong Kong may not maintain its own military. 
+																	As a non-sovereign territory Hong Kong has never had a military force of its own. 
+																	25 1841 using it as a military staging point. 
+																	But foreign relations and national defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	40 members are elected by the public through a majority vote. 
+																	In the event of a conflict this is to push US military power as far away from its shores as. 
+																	All defence matters have been dependent on the state which controls Hong Kong. 
+																	The legislative council is headed by the speaker and its primary duties are to debate policies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mainland manages the military defense of Hong. 
+																	Beijing is responsible for the areas military defense. 
+																	Chinese military personnel have been stationed in Hong Kong since 1997 By law Hong Kongs Government must request the assistance of mainland troops Experts say a military intervention remains unlikely but cannot be ruled out. 
+																	If the military police does enter Hong Kong its effort will be integrated with the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The phrase coined to describe this arrangement was one country two systems signifying that Hong Kong enjoys its own autonomous system within the larger system of the nation as a whole. 
+																	Since Hong Kong sovereignty was handed over from the United Kingdom in 1997 China has deployed a garrison of the Peoples Liberation Army there while law enforcement and other administrative. 
+																	The garrison is headquartered in Chinese Peoples Liberation Army Forces Hong Kong Building in Central Hong Kong. 
+																	Hong Kong does not have its own standing army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The one country two systems model under which Hong Kong exists as a semiautonomous part of China lets the city operate its own local institutions. 
+																	In other terms think of this as the deployment of the 101st Airborne Division rather than a National Guard unit. 
+																	Hong Kong has only one legislative chamber composed of 70 members. 
+																	And China when the former stopped ruling Hong Kong stated that while China is in charge of Hong Kongs defense and foreign policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The combined size of the Hong Kong garrison is approximately 10000-12000 personnel. 
+																	The One Country Two Systems agreement signed by both the UK. 
+																	Britain invaded the Chinese mainland and occupied the island of Hong Kong on Jan. 
+																	The remaining members of the legislative council are elected by selected representatives from specific sectors in the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Peoples Liberation Army has for years maintained a. 
+																	China has one clear strategic aim in mind to which many of its new weapons systems are tailored. 
+																	China lost the war and had to cede Hong Kong to Britain in the Treaty of Nanking. 
+																	The members are elected every four years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military defense and international relations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Hkhistory.jpg" data-lightbox="roadtrip" data-title="Military History Of Hong Kong Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Hkhistory.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUof2mJsFpZq9Zbv0Ga8TeWc4vDp6YcvSBAw';" alt="Military History Of Hong Kong Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military History Of Hong Kong Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/d2/fd/94d2fd22086f43c6cf75a6388bfb8cdf.gif" data-lightbox="roadtrip" data-title="Japanese Army Battle Of Hong Kong China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/d2/fd/94d2fd22086f43c6cf75a6388bfb8cdf.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtqt1IYlbiQgagNzbDE8yy53qUqqcRJWyYw';" alt="Japanese Army Battle Of Hong Kong China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Japanese Army Battle Of Hong Kong China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/f1/e6/cdf1e6420b0cb5fcc868bf8207214f62.jpg" data-lightbox="roadtrip" data-title="Pin On Old Hong Kong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/f1/e6/cdf1e6420b0cb5fcc868bf8207214f62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROtzC51e3Gi4oqalPXWEnlggow3yKl5PewYQ';" alt="Pin On Old Hong Kong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Old Hong Kong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190724121958-01-chinese-military-hong-kong.jpg" data-lightbox="roadtrip" data-title="Pla Crackdown On Hong Kong Protests Would Backfire On China Economy Cnn Business">
+											<img class="card-img v-image ads-img " src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190724121958-01-chinese-military-hong-kong.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa0yHSCHGxLRS-BNEr7Ywnxm8jax9b-gRGHQ';" alt="Pla Crackdown On Hong Kong Protests Would Backfire On China Economy Cnn Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pla Crackdown On Hong Kong Protests Would Backfire On China Economy Cnn Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.i-scmp.com/sites/default/files/d8/yp/images/773fb28c-b285-11e9-8f9c-a6398a9f90a91280x720115841.jpg" data-lightbox="roadtrip" data-title="Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post">
+											<img class="card-img v-image ads-img " src="https://cdn.i-scmp.com/sites/default/files/d8/yp/images/773fb28c-b285-11e9-8f9c-a6398a9f90a91280x720115841.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1sat3sQjWONOp1AIWVQSP_Jbyw83tvMVcQ';" alt="Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/b0/99/3eb099efa4616e3e48a4cb0cd30fa6e8.jpg" data-lightbox="roadtrip" data-title="Chinese Laborers At A Roll Call In France During World War I The Coastal Towns Of China And Hong Kong Where Britain Still World War I World War China World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/b0/99/3eb099efa4616e3e48a4cb0cd30fa6e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNetJBX3P1YAJaDiDUX9OM-HnF1P0xEZxrw';" alt="Chinese Laborers At A Roll Call In France During World War I The Coastal Towns Of China And Hong Kong Where Britain Still World War I World War China World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chinese Laborers At A Roll Call In France During World War I The Coastal Towns Of China And Hong Kong Where Britain Still World War I World War China World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/191116194531-04-hong-kong-unrest-1116-live-video.jpg" data-lightbox="roadtrip" data-title="Chinese Military Seen On Hong Kong Streets Cleaning Up After Protests">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/191116194531-04-hong-kong-unrest-1116-live-video.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGs135Mkzlc03vjx-AU6AjVqbuRby3ynjwdQ';" alt="Chinese Military Seen On Hong Kong Streets Cleaning Up After Protests">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chinese Military Seen On Hong Kong Streets Cleaning Up After Protests</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/fc/2e/ccfc2e03ee0e91693a8422cd56facc1e.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/fc/2e/ccfc2e03ee0e91693a8422cd56facc1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY03hzpWwD7oR3O9WWRutMNuWckvWXRdVzTw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1a/26/e7/1a26e78b92766adc32453b702b9f7a90.jpg" data-lightbox="roadtrip" data-title="Pin On Amazing Pin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1a/26/e7/1a26e78b92766adc32453b702b9f7a90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWiVynhJaS373esCKcXD4FHALyYXMR8Aqh9A';" alt="Pin On Amazing Pin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amazing Pin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.i-scmp.com/sites/default/files/styles/square/public/d8/yp/images/gurkha_reunion.jpg?itok=ROnNzXbY" data-lightbox="roadtrip" data-title="Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post">
+											<img class="card-img v-image ads-img " src="https://cdn.i-scmp.com/sites/default/files/styles/square/public/d8/yp/images/gurkha_reunion.jpg?itok=ROnNzXbY" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0aGGIZiBI8GFbBVpclMDP78YUK6kMUXDGA';" alt="Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hong Kong Stories How Nepalese Gurkha Soldiers Helped Shape The History Of Our City Yp South China Morning Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/ae/35/1bae35c8e229b38bf46cb3894efb142c.jpg" data-lightbox="roadtrip" data-title="Pin On Colour Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/ae/35/1bae35c8e229b38bf46cb3894efb142c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADT6resLqb5F8V0W0O9F-2NC0hXeWsDcxog';" alt="Pin On Colour Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Colour Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/e5/2d/a8e52db11118c675f5f458f01747ab83.jpg" data-lightbox="roadtrip" data-title="The Hong Kong Street Photographers Facebook Group Was Launched In 2012 By Gary Tyson A Former Photographer And Videographer In The British Army Now With Profess">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/e5/2d/a8e52db11118c675f5f458f01747ab83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9Llp1lQZt1kJssKtZfIRE1BwEnmYSEGIZQ';" alt="The Hong Kong Street Photographers Facebook Group Was Launched In 2012 By Gary Tyson A Former Photographer And Videographer In The British Army Now With Profess">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hong Kong Street Photographers Facebook Group Was Launched In 2012 By Gary Tyson A Former Photographer And Videographer In The British Army Now With Profess</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/22/6c/eb226c15b8e2c1b70f4d89ad2f8d5799.jpg" data-lightbox="roadtrip" data-title="Dragon Royal Hong Kong Police Tactical Unit Display Ptu Hottoys Action Figures Hot Toys Military Figures Hong Kong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/22/6c/eb226c15b8e2c1b70f4d89ad2f8d5799.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCzNknI9G0XCck_B-bnOH2hUyBQ64EDtYYA';" alt="Dragon Royal Hong Kong Police Tactical Unit Display Ptu Hottoys Action Figures Hot Toys Military Figures Hong Kong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dragon Royal Hong Kong Police Tactical Unit Display Ptu Hottoys Action Figures Hot Toys Military Figures Hong Kong</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-support-during-deployment.html">Military Spouse Support During Deployment</a></li>
+													<li class="list-group-item"><a href="/military-spouses-benefits-for-education.html">Military Spouses Benefits For Education</a></li>
+													<li class="list-group-item"><a href="/military-spouse-working-remotely-taxes.html">Military Spouse Working Remotely Taxes</a></li>
+													<li class="list-group-item"><a href="/military-spouse-unemployment-benefits-virginia.html">Military Spouse Unemployment Benefits Virginia</a></li>
+													<li class="list-group-item"><a href="/military-spouses-meaning.html">Military Spouses Meaning</a></li>
+													<li class="list-group-item"><a href="/military-spouse-support-pay-chart.html">Military Spouse Support Pay Chart</a></li>
+													<li class="list-group-item"><a href="/military-spouse-wedding-dress.html">Military Spouse Wedding Dress</a></li>
+													<li class="list-group-item"><a href="/military-spouses-employment-act.html">Military Spouses Employment Act</a></li>
+													<li class="list-group-item"><a href="/military-spouses-letter-to-kurds.html">Military Spouses Letter To Kurds</a></li>
+													<li class="list-group-item"><a href="/military-spouses-association.html">Military Spouses Association</a></li>
+													<li class="list-group-item"><a href="/military-spouses-free-education.html">Military Spouses Free Education</a></li>
+													<li class="list-group-item"><a href="/military-spouse-va-benefits.html">Military Spouse Va Benefits</a></li>
+													<li class="list-group-item"><a href="/military-spouses-definition.html">Military Spouses Definition</a></li>
+													<li class="list-group-item"><a href="/military-spouse-state-tax-filing.html">Military Spouse State Tax Filing</a></li>
+													<li class="list-group-item"><a href="/military-spouse-tuition-reimbursement.html">Military Spouse Tuition Reimbursement</a></li>
+													<li class="list-group-item"><a href="/military-spouses-of-michigan.html">Military Spouses Of Michigan</a></li>
+													<li class="list-group-item"><a href="/military-spouse-support.html">Military Spouse Support</a></li>
+													<li class="list-group-item"><a href="/military-spouse-support-ptsd.html">Military Spouse Support Ptsd</a></li>
+													<li class="list-group-item"><a href="/military-spouse-survivor-benefits.html">Military Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/military-spouses-handbags.html">Military Spouses Handbags</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

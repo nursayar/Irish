@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of Being A British Army Officer - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of Being A British Army Officer",
+  "datePublished": "2021-02-14",
+  "image": "https://rppcdn.azureedge.net/-/media/images/army/marketingarmy/rowtiles/valuesandstandards.jpg?la=en&amp;hash=BD00B88607433E975F90FA5D0996BF739A5346C2",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+being+a+british+army+officer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of Being A British Army Officer</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Pay as a private starts at a little under 19000 and 25000 but the costs of. Youll get paid a day rate according to your rank starting from 6984 once you have passed Army Officer Selection and rising to 8690 per day once youve commissioned as a Second Lieutenant. Army Officers begin on a competitive starting salary of 31000 after training pension with contributions subsidised accommodation with free meals and free medicaldental cover. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/sscn-bkn-go-id-kemenkumham-pengumuman.html">sscn bkn go id kemenkumham pengumuman</a>
+											<a class="badge badge-warning" href="/spouse-of-military-tuition-assistance.html">spouse of military tuition assistance</a>
+											<a class="badge badge-primary" href="/sscn-bkn-jogja.html">sscn bkn jogja</a>
+											<a class="badge badge-primary" href="/sscn-bkn-go-id-login-2019-cetak-kartu-ujian.html">sscn bkn go id login 2019 cetak kartu ujian</a>
+											<a class="badge badge-dark" href="/spouse-tuition-assistance-program-air-force.html">spouse tuition assistance program air force</a>
+											<a class="badge badge-danger" href="/sscn-bkn-data.html">sscn bkn data</a>
+											<a class="badge badge-dark" href="/spouse-support-military-divorce.html">spouse support military divorce</a>
+											<a class="badge badge-danger" href="/spouses-of-deceased-marines-are-eligible-for-bah.html">spouses of deceased marines are eligible for bah</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/99/ea/5499eae44f84d58d4dcbd81b9dc32161.jpg" data-lightbox="roadtrip" data-title="Pin On Everyone Loves Tea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/99/ea/5499eae44f84d58d4dcbd81b9dc32161.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwzbn3g-xc7yVg-oZsgzDJUXRDMYt8LlN_8A';" alt="Pin On Everyone Loves Tea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Everyone Loves Tea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.army.mod.uk/media/4598/values-standards_page_04_image_0001.jpg?anchor=center&amp;mode=crop&amp;width=600&amp;height=500&amp;rnd=132467365040000000" data-lightbox="roadtrip" data-title="A Soldier S Values And Standards The British Army">
+											<img class="card-img v-image ads-img " src="https://www.army.mod.uk/media/4598/values-standards_page_04_image_0001.jpg?anchor=center&amp;mode=crop&amp;width=600&amp;height=500&amp;rnd=132467365040000000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ldKHY-heUMOvFfTVSn4lsM_00V5Z58vEDQ';" alt="A Soldier S Values And Standards The British Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Soldier S Values And Standards The British Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.forces.net/sites/default/files/styles/cover_image/public/Prince%20Charles%20Visit-160%20Wearing%20a%20Sam%20Browne%20and%20Lanyard.jpg?itok=KhTqwbde" data-lightbox="roadtrip" data-title="What S The Deal With British Military Uniforms">
+											<img class="card-img v-image ads-img " src="https://www.forces.net/sites/default/files/styles/cover_image/public/Prince%20Charles%20Visit-160%20Wearing%20a%20Sam%20Browne%20and%20Lanyard.jpg?itok=KhTqwbde" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOtA5M9JE2SHILgkRdnmMvuq5TezPZkn-Rw';" alt="What S The Deal With British Military Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S The Deal With British Military Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/2d/eb/242deb8f2b35e2468343527fcf082fbd.jpg" data-lightbox="roadtrip" data-title="Pin On War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/2d/eb/242deb8f2b35e2468343527fcf082fbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QZhEWcvsFoUZGZNppSp6_kERAGU3QD_Meg';" alt="Pin On War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/7f/81/287f817527fd8cc76462a4ccdd986111.jpg" data-lightbox="roadtrip" data-title="Pin On British Army Ww2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/7f/81/287f817527fd8cc76462a4ccdd986111.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjF4X9kiMEegosZERzZKjtoACCnFRVoHYZCg';" alt="Pin On British Army Ww2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On British Army Ww2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/82/00/188200f8f546c9b6cad2e4864fe616ad.jpg" data-lightbox="roadtrip" data-title="British Soldiers In Dress Uniform British Uniforms British Army Uniform Army Dress Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/82/00/188200f8f546c9b6cad2e4864fe616ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlmo4fdKf0ERAbsKnRNf4GUv7AXmPLKACPw';" alt="British Soldiers In Dress Uniform British Uniforms British Army Uniform Army Dress Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Soldiers In Dress Uniform British Uniforms British Army Uniform Army Dress Uniform</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5d/b1/65/5db165ccb08e7ad9b419a0480753629c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlmo4fdKf0ERAbsKnRNf4GUv7AXmPLKACPw';" alt="British Soldiers In Dress Uniform British Uniforms British Army Uniform Army Dress Uniform">
+										<div class="card-body">
+						<h3 class="h5"><b>How2Become decided to investigate The Benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of being a british army officer</strong>. 
+								
+																	For more information about benefits see our Benefits section. 
+																	Free dental and medical cover. 
+																	WO1 are the senior advisors of their units Commanding Officer with leadership discipline and welfare responsibilities of up to 650 officers and soldiers and equipment. 
+																	The benefit of this is that you can combine being in the TA with a civilian life although it is possible that you could be called to serve overseas as a TA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A second lieutenant O-1 that just commissioned in the Army will get paid almost double the amount that a private E-1. 
+																	Usually youll be treated by the Army medical team but if needed youll be referred for further treatment. 
+																	Youll get paid a day rate according to your rank starting from 6654 once you have passed Army Officer Selection and rising to 7998 per day once youve commissioned as a Second Lieutenant. 
+																	This doesnt go unrecognised thats why we offer a generous benefits package to match. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a Police Officer you would be responsible for safeguarding the residents of the community that you are policing and instilling a sense of trust. 
+																	Glassdoor is your resource for information about The British Army benefits and perks. 
+																	Benefits information above is provided anonymously by current and former The British Army employees and may include a summary provided by the employer. 
+																	The British Army until recently had been recruiting from Foreign and Commonwealth countries including Ghana Nigeria Sierra Leone Malawi Kenya etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Theres the likelihood that they will be reaching out to potential recruits across the globe again in the coming months if not earlier. 
+																	You get paid better. 
+																	The Pros and Cons of army life. 
+																	As part of the British Army the hard work you put in makes a huge difference to our people and our nation every single day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll get 30 days of annual leave plus bank holidays. 
+																	Paid in annual instalments of 10000 during your final three years of university then a lump sum of 45000 on successful completion of Officer training. 
+																	As well as providing medical care for sick and injured soldiers British Army doctors also treat Afghan locals requiring emergency care for limb or eyesight related injuries. 
+																	All Army jobs come with full training and development excellent pay and help with travel and accommodation too. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You will also receive an Army salary during one year of foundation period employment. 
+																	Most enlisted recruiting efforts focus on an occupational model and other benefits but recruiting material for would-be officers tends to be more ambiguous focusing on intangibles benefits like pride sense of duty and prestige. 
+																	If youve been on operations youll get extra time off on your return too. 
+																	In the course of his. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The forces pay packet does provide benefits such as Ministry of Defence housing a pension plan and a competitive salary. 
+																	When in the UK I live on an army estate where I know my neighbour and. 
+																	Some of them are less obvious than the others. 
+																	In the Army you only get a few days paid leave a year as a private you get 38 days as an officer it is 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warrant Officer Class 1. 
+																	This includes being paid for weekly drill nights. 
+																	Learn about The British Army including insurance benefits retirement benefits and vacation policy. 
+																	It has an excellent reputation across the World which is built on trust. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But what are the pros and cons of becoming a police officer. 
+																	This part-time experience of army life can also stand you in good stead if you later want to apply to become a regular soldier. 
+																	Youll receive free medical and dental care. 
+																	Subsidised food and accommodation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They also offer generous holiday of 30 days bank holidays and extra time in lieu from operations. 
+																	Recruitment has been paused temporarily. 
+																	This includes being paid for weekly drill nights. 
+																	The most senior soldier rank in the British Army typically reached after 18 years of outstanding service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The armed forces are well known for their wide-ranging benefits. 
+																	A lot is expected of you as a British Soldier. 
+																	There are many aspects to being an officer both good and bad. 
+																	EdexelBTEC certificate in Management Studies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free gym and sports facility. 
+																	The Police Service is one of the most respected and trusted organisations in the UK. 
+																	As an officer youll enjoy loads of benefits including. 
+																	Our Values and Standards are essential to the British Army they define what the British soldier is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paid leave is excellent as. 
+																	Benefits abroad If you are a veteran living abroad or you are serving in the Armed Forces abroad you and your dependants may still be able to claim some benefits in the UK. 
+																	Six weeks paid leave. 
+																	You will be required to serve in dangerous places risk your life for your teammates and put up with uncomfortable conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This may be a no brainer but it needs to be said anyway. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://rppcdn.azureedge.net/-/media/images/army/marketingarmy/rowtiles/valuesandstandards.jpg?la=en&amp;hash=BD00B88607433E975F90FA5D0996BF739A5346C2" data-lightbox="roadtrip" data-title="Army Core Values What We Stand For British Army British Army Jobs">
+											<img class="card-img v-image ads-img " src="https://rppcdn.azureedge.net/-/media/images/army/marketingarmy/rowtiles/valuesandstandards.jpg?la=en&amp;hash=BD00B88607433E975F90FA5D0996BF739A5346C2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9mmUCUmyDBACCnbQIktibFHH_69aKE4kbw';" alt="Army Core Values What We Stand For British Army British Army Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Core Values What We Stand For British Army British Army Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/6f/43/c36f43bbfd9d390691c5a52211534a9b.png" data-lightbox="roadtrip" data-title="Pin By Siarlot On Uniforme Military Uniform Military Museum Police Officer Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/6f/43/c36f43bbfd9d390691c5a52211534a9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcEZIWazui3A7dEcklCjeaP61lclX_8qZ3g';" alt="Pin By Siarlot On Uniforme Military Uniform Military Museum Police Officer Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Siarlot On Uniforme Military Uniform Military Museum Police Officer Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/ec/19/d2ec19c1f010d0ceb310d78a03bd5a74.jpg" data-lightbox="roadtrip" data-title="Yooniq Images Rm 102150041 English Army Online Printing Poster Prints">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/ec/19/d2ec19c1f010d0ceb310d78a03bd5a74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwQgt1BfurddD1MDaFWCG79LAQEr-kw4fjog';" alt="Yooniq Images Rm 102150041 English Army Online Printing Poster Prints">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yooniq Images Rm 102150041 English Army Online Printing Poster Prints</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/a4/63/faa46343b1a04a802ecdc0c63accdfdf.jpg" data-lightbox="roadtrip" data-title="Ww1 Doughboy Officer Pictures Ww1 Doughboy Officer Images Ww1 Doughboy Officer Photos Ww1 Doughboy Officer Videos World War One American War Ww1 Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/a4/63/faa46343b1a04a802ecdc0c63accdfdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nFKFxnteF1NpmtFWfmHIooh4Im-tyT_JqQ';" alt="Ww1 Doughboy Officer Pictures Ww1 Doughboy Officer Images Ww1 Doughboy Officer Photos Ww1 Doughboy Officer Videos World War One American War Ww1 Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ww1 Doughboy Officer Pictures Ww1 Doughboy Officer Images Ww1 Doughboy Officer Photos Ww1 Doughboy Officer Videos World War One American War Ww1 Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/86/d3/3a86d3ea95a09f8fed8be958753aae32.jpg" data-lightbox="roadtrip" data-title="World War 2 Allied Officers Rank Insignia Navy Ranks British Army Uniform Army Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/86/d3/3a86d3ea95a09f8fed8be958753aae32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfThfr0_o651Ozwum9qyN53Xv_TCRxVDDoqA';" alt="World War 2 Allied Officers Rank Insignia Navy Ranks British Army Uniform Army Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World War 2 Allied Officers Rank Insignia Navy Ranks British Army Uniform Army Ranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/51/37/035137fbc886cbbead4164ca1225aa0a.jpg" data-lightbox="roadtrip" data-title="Kar Five Officers L R Seth Smith Armstrong Reynolds Winderson And Keneally July 1916 Copyright Harry German East Africa History Posters East Africa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/51/37/035137fbc886cbbead4164ca1225aa0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBYAZwcgtoibNAENayPC4tFVaNFdnmugqPg';" alt="Kar Five Officers L R Seth Smith Armstrong Reynolds Winderson And Keneally July 1916 Copyright Harry German East Africa History Posters East Africa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kar Five Officers L R Seth Smith Armstrong Reynolds Winderson And Keneally July 1916 Copyright Harry German East Africa History Posters East Africa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/06/a8/1806a819694964e483a14cb3a6bdce9a.jpg" data-lightbox="roadtrip" data-title="British Pattern Five Button Jacket British Army Uniform British Uniforms British Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/06/a8/1806a819694964e483a14cb3a6bdce9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCNHP1z62YujZRFpTrY7mRJySneZVU95deQ';" alt="British Pattern Five Button Jacket British Army Uniform British Uniforms British Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Pattern Five Button Jacket British Army Uniform British Uniforms British Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/10/22/4e1022af514fc20f7c6f1be6bf0904ea.jpg" data-lightbox="roadtrip" data-title="British Highland Light Infantry Officer S Africa 1899 By Douglas N Anderson British Army Uniform British Army British Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/10/22/4e1022af514fc20f7c6f1be6bf0904ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXG1P6gRGBx8OmLGyIgJMUZH2rlPHBm7xQzg';" alt="British Highland Light Infantry Officer S Africa 1899 By Douglas N Anderson British Army Uniform British Army British Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Highland Light Infantry Officer S Africa 1899 By Douglas N Anderson British Army Uniform British Army British Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/61/d7/be61d7a0b5624e0438f5211ef4e2d334.jpg" data-lightbox="roadtrip" data-title="History By Zhukov The Military History Emporium Wwii Uniforms Military History British Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/61/d7/be61d7a0b5624e0438f5211ef4e2d334.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HF7Bt16Uip1oeW_rWkjs2DVyfDbu2b3M9Q';" alt="History By Zhukov The Military History Emporium Wwii Uniforms Military History British Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History By Zhukov The Military History Emporium Wwii Uniforms Military History British Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/b1/65/5db165ccb08e7ad9b419a0480753629c.jpg" data-lightbox="roadtrip" data-title="Sandhurst Military Dress Uniform British Army Uk Arms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/b1/65/5db165ccb08e7ad9b419a0480753629c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2sj_m-fkIOc7BdFeblLwpVhtdIlSai7v9A';" alt="Sandhurst Military Dress Uniform British Army Uk Arms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandhurst Military Dress Uniform British Army Uk Arms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/29/5d/1e/295d1e4cbcc5ff7b07f544b10ec1b195.jpg" data-lightbox="roadtrip" data-title="Pin On Invasion Of The Low Contries And France">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/29/5d/1e/295d1e4cbcc5ff7b07f544b10ec1b195.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStmVItxH8TDulwHAtE8MNbseWwcSi9N3_-GA';" alt="Pin On Invasion Of The Low Contries And France">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Invasion Of The Low Contries And France</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/89/42/6d894222a218252dd2e96bcd33164882.jpg" data-lightbox="roadtrip" data-title="All Colorized Photos On Instagram British Soldier Of The Wiltshire Regiment During A Re Enactment The Wi British Soldier British Army Uniform Wwii Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/89/42/6d894222a218252dd2e96bcd33164882.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpJ3RpXaJlOPBkjCqUqhFxipNVn-ZT8OzWmA';" alt="All Colorized Photos On Instagram British Soldier Of The Wiltshire Regiment During A Re Enactment The Wi British Soldier British Army Uniform Wwii Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Colorized Photos On Instagram British Soldier Of The Wiltshire Regiment During A Re Enactment The Wi British Soldier British Army Uniform Wwii Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/33/01/dd/3301ddc6d13747be5c28ef2dfaceb8d2.jpg" data-lightbox="roadtrip" data-title="Officier De L Armee Rouge 1941 1943 Red Army Military Figures Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/33/01/dd/3301ddc6d13747be5c28ef2dfaceb8d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FOYrdyCm3EdR4Zh9fZqnw81pQtDAwyZELg';" alt="Officier De L Armee Rouge 1941 1943 Red Army Military Figures Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Officier De L Armee Rouge 1941 1943 Red Army Military Figures Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-officer-killed-his-wife.html">Army Officer Killed His Wife</a></li>
+													<li class="list-group-item"><a href="/army-pension-contact-details.html">Army Pension Contact Details</a></li>
+													<li class="list-group-item"><a href="/army-online-portion-of-pha.html">Army Online Portion Of Pha</a></li>
+													<li class="list-group-item"><a href="/army-pay-contact-numbers.html">Army Pay Contact Numbers</a></li>
+													<li class="list-group-item"><a href="/army-spouse-education-assistance-program.html">Army Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/army-no-contact-order.html">Army No Contact Order</a></li>
+													<li class="list-group-item"><a href="/army-pay-contact.html">Army Pay Contact</a></li>
+													<li class="list-group-item"><a href="/army-time-to-24-hour.html">Army Time To 24 Hour</a></li>
+													<li class="list-group-item"><a href="/army-shrm-certification.html">Army Shrm Certification</a></li>
+													<li class="list-group-item"><a href="/army-pha-online-survey.html">Army Pha Online Survey</a></li>
+													<li class="list-group-item"><a href="/army-officer-life-in-india.html">Army Officer Life In India</a></li>
+													<li class="list-group-item"><a href="/army-pension-contact-phone-number.html">Army Pension Contact Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-reserve-hrc-login.html">Army Reserve Hrc Login</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-contact-uk.html">Army Recruitment Contact Uk</a></li>
+													<li class="list-group-item"><a href="/army-reserve-hrc-phone-number.html">Army Reserve Hrc Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-reserves-help-desk.html">Army Reserves Help Desk</a></li>
+													<li class="list-group-item"><a href="/army-regulation-covering-spousal-support.html">Army Regulation Covering Spousal Support</a></li>
+													<li class="list-group-item"><a href="/army-officer-wife-duties.html">Army Officer Wife Duties</a></li>
+													<li class="list-group-item"><a href="/army-reg-on-spousal-support.html">Army Reg On Spousal Support</a></li>
+													<li class="list-group-item"><a href="/army-pension-contact-number.html">Army Pension Contact Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Cons Of Being A Navy Seal - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Cons Of Being A Navy Seal",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/91/e2/94/91e29497a72e56ae7d37a8050123ccee.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cons+of+being+a+navy+seal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Cons Of Being A Navy Seal</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Out of all the Cons the only true Con is difficult family life. Cons of Being a Navy Nuke. The others build character patience and more discipline. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/navy-t-shirt-bras.html">navy t shirt bras</a>
+											<a class="badge badge-danger" href="/navy-spouse-memes.html">navy spouse memes</a>
+											<a class="badge badge-info" href="/navy-t-shirt-back.html">navy t shirt back</a>
+											<a class="badge badge-danger" href="/navy-t-shirt-what-color-pants.html">navy t shirt what color pants</a>
+											<a class="badge badge-danger" href="/navy-ship-in-san-diego-harbor.html">navy ship in san diego harbor</a>
+											<a class="badge badge-dark" href="/navy-t-shirt-river-island.html">navy t shirt river island</a>
+											<a class="badge badge-danger" href="/navy-t-shirt-plus-size.html">navy t shirt plus size</a>
+											<a class="badge badge-info" href="/navy-t-shirt-next.html">navy t shirt next</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the right site.  Our website gives you hints for seeing the maximum quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/a4/ed/c9a4ed62e6777efd07a2475cd398e765.jpg" data-lightbox="roadtrip" data-title="A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Leadership Skills Business Leadership Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/a4/ed/c9a4ed62e6777efd07a2475cd398e765.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XSkn0YOpxNdAhH4djwudJn3MbX7Wg5ml_w';" alt="A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Leadership Skills Business Leadership Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Leadership Skills Business Leadership Leadership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/e2/94/91e29497a72e56ae7d37a8050123ccee.jpg" data-lightbox="roadtrip" data-title="Marcusluttrell American Navyseal Lonesurvivor Soldier Military Battle Improvement Adversity Challenges Selfdetermination Strength Marcus Luttrell Navy Seals Quotes Marcus Luttrell Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/e2/94/91e29497a72e56ae7d37a8050123ccee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUg4hpaM1H3mukKOMpixjVZu9x-q4SxRdxXA';" alt="Marcusluttrell American Navyseal Lonesurvivor Soldier Military Battle Improvement Adversity Challenges Selfdetermination Strength Marcus Luttrell Navy Seals Quotes Marcus Luttrell Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marcusluttrell American Navyseal Lonesurvivor Soldier Military Battle Improvement Adversity Challenges Selfdetermination Strength Marcus Luttrell Navy Seals Quotes Marcus Luttrell Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/22/ee/3822eefa66bea7009fbca9ffc9572f77.png" data-lightbox="roadtrip" data-title="The Only Easy Day Was Yesterday It Pays To Be A Winner Us Navy Seal Navy Seals Us Navy Seals Navy Seal Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/22/ee/3822eefa66bea7009fbca9ffc9572f77.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KQG0sMNrlklpjc4mGEc6_ceJ1vDbeLi6yw';" alt="The Only Easy Day Was Yesterday It Pays To Be A Winner Us Navy Seal Navy Seals Us Navy Seals Navy Seal Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Only Easy Day Was Yesterday It Pays To Be A Winner Us Navy Seal Navy Seals Us Navy Seals Navy Seal Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/42/9a/c1429a26d617a9462c36c346925ea36d.jpg" data-lightbox="roadtrip" data-title="Navy Seal Gear Outfit Idea Obviously A Little Overboard But A Good Look At It All Nonetheless Navy Seal Gear Navy Seals Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/42/9a/c1429a26d617a9462c36c346925ea36d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpH89SA8fTiVzby9sjzH45L7X56hIgHq0Jg';" alt="Navy Seal Gear Outfit Idea Obviously A Little Overboard But A Good Look At It All Nonetheless Navy Seal Gear Navy Seals Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Gear Outfit Idea Obviously A Little Overboard But A Good Look At It All Nonetheless Navy Seal Gear Navy Seals Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/9f/86/a59f862c0d2d4f1e1ca21aa86594429c.jpg" data-lightbox="roadtrip" data-title="18 Things Navy Seals Won T Leave Home Without Navy Seals Military Men Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/9f/86/a59f862c0d2d4f1e1ca21aa86594429c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNuNH4p0CXJvCHtkHneC8QvTae5RbTPtFtJQ';" alt="18 Things Navy Seals Won T Leave Home Without Navy Seals Military Men Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Things Navy Seals Won T Leave Home Without Navy Seals Military Men Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/7d/45/247d45042ef4882e52cc98dded0ba11b.png" data-lightbox="roadtrip" data-title="A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Navy Seals Leadership Business Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/7d/45/247d45042ef4882e52cc98dded0ba11b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJiOXr7m8ZR82mhNlx3_yDTZy8VXabwXvDPA';" alt="A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Navy Seals Leadership Business Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Navy Seals Leadership Business Leadership</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/91/e2/94/91e29497a72e56ae7d37a8050123ccee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJiOXr7m8ZR82mhNlx3_yDTZy8VXabwXvDPA';" alt="A Retired Navy Seal Commander S 12 Rules For Being An Effective Leader Navy Seals Leadership Business Leadership">
+										<div class="card-body">
+						<h3 class="h5"><b>You will feel that nobody understands you because nobody will.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Cons of being a navy seal</strong>. 
+								
+																	You dont get to chose you missions. 
+																	Some of those who have once served military service including the Navy claim that despite the perks this patriotic and noble service offers there are also sacrifices that come with it. 
+																	The US Navy has strict requirements when applying to become a Navy SEAL. 
+																	A career as a Navy SEAL provides intangible and tangible benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You wont have a wife and children. 
+																	Navy SEALs spend a lot of time away from home so instead of wondering what theyre up to or being sad about missing them get out and do something. 
+																	You have very little free time for yourself. 
+																	Your fellow servicemen would become somewhat like your second family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They also put you way ahead of the civilian populous. 
+																	More is expected of you as a Sailor. 
+																	List of Disadvantages of Joining the Navy 1. 
+																	Wikimedia Commons SEAL teams act as a component of the Naval Special Warfare Command and therefore receive better pay compared to enlisted sailors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	List of Cons of Joining the Navy. 
+																	One of these is being away from family and friends most parts of the year. 
+																	It involves frequent and long deployments. 
+																	By enlisting in the Navy you can expect being separated from your loved ones for long periods of time on your deployments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They constantly learn and push their physical and mental limits living an unconventional and out-of-the-cubicle lifestyle. 
+																	If you fail in your training you will have spent a lot of time and suffering for nothing. 
+																	The 8 Benefits of Being a Navy SEAL demonstrate why so many recruits want to serve the country in special forces. 
+																	Cons of Joining the Navy Frequent and Long Deployment The Navy unlike other branches of government is always deploying sailors into the ocean. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You need to go through a rigorous qualification process in order to join the program. 
+																	Itll mean youre bringing something interesting to the table and itll help your partner feel less guilty about being away if youre not a mess without them. 
+																	Navy SEAL comes out of the shadows just long enough to accept the Medal of Honor. 
+																	Joining the Navy means being away from loved ones. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SEALs work closely with their teammates to innovatively accomplish missions important to national security. 
+																	Navy SEALs also receive medical and dental care at no cost and can purchase up to 200000 in term life insurance for as little as 18 per month. 
+																	Fill out this form to get started. 
+																	There are more than just tangible benefits to becoming a Navy SEAL because it is not about simply having a career it is about adopting a lifestyle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a sense of pride in being married to someone who has dedicated their life and career to defending our great nation. 
+																	This is because a constant presence is needed at all time to monitor this ocean channels. 
+																	The pros and cons of being a military spouse. 
+																	The warriors who prove they have what it takes to do the hardest job in the US military are awarded the exclusive honor of being called a US Navy SEAL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ready to see if you have what it takes to become a Navy SEAL. 
+																	The time from when you join the Delayed Entry Program to actually shipping to Boot Camp takes longer than other jobs because you need to wait for a Secret Clearance to be run. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/f1/43/5bf14320b21538f15fbcde9e32848889.jpg" data-lightbox="roadtrip" data-title="Us Navy Seals Quotes Quotesgram Navy Seals Quotes Seal Quotes Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/f1/43/5bf14320b21538f15fbcde9e32848889.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyROorvh726LzWN_2yhgm23ChalprHeVH6QA';" alt="Us Navy Seals Quotes Quotesgram Navy Seals Quotes Seal Quotes Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Seals Quotes Quotesgram Navy Seals Quotes Seal Quotes Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/8d/20/ed8d2038acacd2d6c707c87b0b171097.jpg" data-lightbox="roadtrip" data-title="How To Identify Your Strengths And Weaknesses In 5 Steps Https Www Lifehack Org 887330 Your Strengths And Weaknesses Becoming A Navy Seal Character Strengths">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/8d/20/ed8d2038acacd2d6c707c87b0b171097.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41R6TGgC75Up1Gy1wI5rEb3UimyQLLgnG_Q';" alt="How To Identify Your Strengths And Weaknesses In 5 Steps Https Www Lifehack Org 887330 Your Strengths And Weaknesses Becoming A Navy Seal Character Strengths">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Identify Your Strengths And Weaknesses In 5 Steps Https Www Lifehack Org 887330 Your Strengths And Weaknesses Becoming A Navy Seal Character Strengths</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/d4/b1/57d4b18e5abd718e4d6c2771b95b649b.jpg" data-lightbox="roadtrip" data-title="Matthew G Axelson Seal Bud S Class 237 Sdvt 1 Never Forget Operation Redwing 06 28 05 Operation End Navy Seals Us Navy Seals Naval Special Warfare Command">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/d4/b1/57d4b18e5abd718e4d6c2771b95b649b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN60qTXwUO-3HMMTGess05TtjeOMntn15nog';" alt="Matthew G Axelson Seal Bud S Class 237 Sdvt 1 Never Forget Operation Redwing 06 28 05 Operation End Navy Seals Us Navy Seals Naval Special Warfare Command">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Matthew G Axelson Seal Bud S Class 237 Sdvt 1 Never Forget Operation Redwing 06 28 05 Operation End Navy Seals Us Navy Seals Naval Special Warfare Command</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/ec/27/48ec2764c827f25fcce5f5f73da7b4c2.jpg" data-lightbox="roadtrip" data-title="Toyhaven Toyscity Navy Seal Recon Diver Coming Soon Military Action Figures Navy Seals Military Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/ec/27/48ec2764c827f25fcce5f5f73da7b4c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hx-0OT4G0MVwrOev2T76bzmU5OQUyGAp4A';" alt="Toyhaven Toyscity Navy Seal Recon Diver Coming Soon Military Action Figures Navy Seals Military Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toyhaven Toyscity Navy Seal Recon Diver Coming Soon Military Action Figures Navy Seals Military Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/11/95/7911950c38820c568be4da9d564cc6db.jpg" data-lightbox="roadtrip" data-title="Pin By Silvio Jose Dias On Men Women And Dogs Of The Military Navy Seals Us Navy Seals Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/11/95/7911950c38820c568be4da9d564cc6db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBduEaIMVJ5a9t21v7TyLJ3mEGYBaqlZ8VEw';" alt="Pin By Silvio Jose Dias On Men Women And Dogs Of The Military Navy Seals Us Navy Seals Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Silvio Jose Dias On Men Women And Dogs Of The Military Navy Seals Us Navy Seals Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/c9/e0/30c9e07025479425b55debcc1b55636d.jpg" data-lightbox="roadtrip" data-title="5 Leadership Lessons I Learned While Training With A Navy Seal Leadership Lessons Leadership Lesson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/c9/e0/30c9e07025479425b55debcc1b55636d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQhhMZE3HGXd4ncyFoSi9XORSGVzlXWew2Q';" alt="5 Leadership Lessons I Learned While Training With A Navy Seal Leadership Lessons Leadership Lesson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Leadership Lessons I Learned While Training With A Navy Seal Leadership Lessons Leadership Lesson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/65/05/ae/6505aed7dd830a7eeccff964c654a584.jpg" data-lightbox="roadtrip" data-title="Pin On Goggins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/65/05/ae/6505aed7dd830a7eeccff964c654a584.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzU5UxbdQnOM9uPtEw_lNXoK2EkHDG36ZFeQ';" alt="Pin On Goggins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Goggins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/27/8f/f1278fe0a0a4a7b704ee2220346b9f44.jpg" data-lightbox="roadtrip" data-title="Extreme Ownership How U S Navy Seals Lead And Win Willi Con Imagenes Libros De Desarrollo Personal Sellos De La Marina Libros">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/27/8f/f1278fe0a0a4a7b704ee2220346b9f44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCj-9n99rm9phfvnsvHGhCB0SYCeD74Cwug';" alt="Extreme Ownership How U S Navy Seals Lead And Win Willi Con Imagenes Libros De Desarrollo Personal Sellos De La Marina Libros">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Extreme Ownership How U S Navy Seals Lead And Win Willi Con Imagenes Libros De Desarrollo Personal Sellos De La Marina Libros</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/5b/4e/ef5b4e10e165ce9a2164e43c6033b36e.jpg" data-lightbox="roadtrip" data-title="Blackbeard Rainbow Six Wiki Fandom Powered By Wikia Rainbow 6 Seige Blackbeard Rainbow Six Siege Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/5b/4e/ef5b4e10e165ce9a2164e43c6033b36e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Od1Dx5krd9yIKIrOn6fXO_HkiPxZ9cCC0A';" alt="Blackbeard Rainbow Six Wiki Fandom Powered By Wikia Rainbow 6 Seige Blackbeard Rainbow Six Siege Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blackbeard Rainbow Six Wiki Fandom Powered By Wikia Rainbow 6 Seige Blackbeard Rainbow Six Siege Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/65/15/7565152043bdab94c688b3261f67abac.jpg" data-lightbox="roadtrip" data-title="Shino On Twitter Anime Warrior Anime Military Anime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/65/15/7565152043bdab94c688b3261f67abac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_ZxkgBfcZVRjHT9HtghCHZk1kguI_LNSLA';" alt="Shino On Twitter Anime Warrior Anime Military Anime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shino On Twitter Anime Warrior Anime Military Anime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/b2/ec/b8b2ec12d29854ca3beb708221aa0f3c.jpg" data-lightbox="roadtrip" data-title="Military The Punisher Navy Seals Tactical 1920x1200 Aircraft Military Hd Art Military The Punisher 10 Military Wallpaper Ghost Soldiers Navy Seal Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/b2/ec/b8b2ec12d29854ca3beb708221aa0f3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kDg39irtvYE1TVcTnINQ8hgnI_-fGqzy8g';" alt="Military The Punisher Navy Seals Tactical 1920x1200 Aircraft Military Hd Art Military The Punisher 10 Military Wallpaper Ghost Soldiers Navy Seal Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military The Punisher Navy Seals Tactical 1920x1200 Aircraft Military Hd Art Military The Punisher 10 Military Wallpaper Ghost Soldiers Navy Seal Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/70/66/9270665dd36443c60ad6561ec241e966.png" data-lightbox="roadtrip" data-title="Navy Seal Training Program Intense Workout Routine For Lean Muscles Navy Seal Workout Navy Seal Training Navy Seal Training Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/70/66/9270665dd36443c60ad6561ec241e966.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlE9PdeH17fKPVo3Hm-PxwtztURfL3AHjvIg';" alt="Navy Seal Training Program Intense Workout Routine For Lean Muscles Navy Seal Workout Navy Seal Training Navy Seal Training Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seal Training Program Intense Workout Routine For Lean Muscles Navy Seal Workout Navy Seal Training Navy Seal Training Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/a8/20/c2a8204d8dd79f400c9587090d45e0e5.jpg" data-lightbox="roadtrip" data-title="Pin On Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/a8/20/c2a8204d8dd79f400c9587090d45e0e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7vzAjueOc78j_RKSdV_wGDzBPKGzGP3F_cQ';" alt="Pin On Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-story.html">Navy Seal Edward Gallagher Story</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-hulu.html">Navy Seal Gallagher Hulu</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-commitment.html">Navy Seal Officer Commitment</a></li>
+													<li class="list-group-item"><a href="/navy-seal-benefits-for-family.html">Navy Seal Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-trial.html">Navy Seal Edward Gallagher Trial</a></li>
+													<li class="list-group-item"><a href="/navy-pros-and-cons.html">Navy Pros And Cons</a></li>
+													<li class="list-group-item"><a href="/navy-seal-marriage-benefits.html">Navy Seal Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-lateral-transfer.html">Navy Seal Officer Lateral Transfer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-medals.html">Navy Seal Edward Gallagher Medals</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-photo.html">Navy Seal Gallagher Photo</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-exchange.html">Navy San Diego Exchange</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-golf.html">Navy San Diego Golf</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-fleet.html">Navy San Diego Fleet</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-fire.html">Navy San Diego Fire</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-uniform-shop.html">Navy San Diego Uniform Shop</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-base.html">Navy San Diego Base</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-trial.html">Navy Seal Eddie Gallagher Trial</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-detailer.html">Navy Seal Officer Detailer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-picture.html">Navy Seal Edward Gallagher Picture</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-tour.html">Navy San Diego Tour</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

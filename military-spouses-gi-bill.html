@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouses Gi Bill - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouses Gi Bill",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/5c/ab/57/5cab577be1ae3a45db6bc5c4583522be.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouses+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouses Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Other than that dependents get the same benefit as a veteran using the Post-911 GI Bill would including a monthly housing allowance. The Post-911 GI Bill is an extraordinarily valuable benefit which provides a member or family member with up to 160K of benefits towards a college degree comprised of a monthly housing allowance tuition reimbursement and a booksupply stipend. Explore this often-overlooked way to save on your education. <br>				
+			</p>
+										<a class="badge badge-primary" href="/war-heroes-in-the-us.html">war heroes in the us</a>
+											<a class="badge badge-primary" href="/west-virginia-army-national-guard-human-resources.html">west virginia army national guard human resources</a>
+											<a class="badge badge-info" href="/what-benefits-does-army-reserve-get.html">what benefits does army reserve get</a>
+											<a class="badge badge-danger" href="/war-heroes-on-water.html">war heroes on water</a>
+											<a class="badge badge-danger" href="/war-heroes-y8.html">war heroes y8</a>
+											<a class="badge badge-warning" href="/war-heroes-name-list.html">war heroes name list</a>
+											<a class="badge badge-dark" href="/war-heroes-of-the-skies.html">war heroes of the skies</a>
+											<a class="badge badge-dark" href="/war-heroes-kris-paronto.html">war heroes kris paronto</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" data-lightbox="roadtrip" data-title="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIfTD-DCgHm3KDg2tbTDrXaVpVlp0gj8avw';" alt="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/bc/39/1fbc394f06b488bfcaf61c500b66247a.png" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits In 2020 Gi Bill Applied Science Crazy Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/bc/39/1fbc394f06b488bfcaf61c500b66247a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9bhGR2AtdRB7q-8HRDRGLmeAScAFZz_-Xg';" alt="Post 9 11 Gi Bill Benefits In 2020 Gi Bill Applied Science Crazy Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits In 2020 Gi Bill Applied Science Crazy Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/7e/9d/b17e9d6ee7db32324e71191b271b3eeb.jpg" data-lightbox="roadtrip" data-title="A Gi Bill Transfer Is Transfer Of Ownership Of Gi Bill Education Benefits From A Servicemember To Another Eligible Fam College Resources Gi Bill Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/7e/9d/b17e9d6ee7db32324e71191b271b3eeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4VemzWYd5JQqvY6Mr39gS3-irM0sqGiLzg';" alt="A Gi Bill Transfer Is Transfer Of Ownership Of Gi Bill Education Benefits From A Servicemember To Another Eligible Fam College Resources Gi Bill Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Gi Bill Transfer Is Transfer Of Ownership Of Gi Bill Education Benefits From A Servicemember To Another Eligible Fam College Resources Gi Bill Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e3/c5/15/e3c5157e85ebbfd3b283e8f8a26eab28.jpg" data-lightbox="roadtrip" data-title="While Military Servicemembers Often Get Access To Gi Bill Benefits That Isn T The Only Form Military Scholarships Scholarships For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e3/c5/15/e3c5157e85ebbfd3b283e8f8a26eab28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShCDMK5YXcYCIOuJ3bRaJqHBGCE9rE3cFa5Q';" alt="While Military Servicemembers Often Get Access To Gi Bill Benefits That Isn T The Only Form Military Scholarships Scholarships For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">While Military Servicemembers Often Get Access To Gi Bill Benefits That Isn T The Only Form Military Scholarships Scholarships For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/e1/6e/55e16e4a93dd39fed19a1b58c981d8b1.png" data-lightbox="roadtrip" data-title="What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/e1/6e/55e16e4a93dd39fed19a1b58c981d8b1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSes6kTKmglG2ZhDA2GtGPYEjjZmp_mtGrq2A';" alt="What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S Your Gi Bill Strategy Katehorrell Gi Bill Military Wife Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlbsQeOpNet48Wg3FbT16O4kAyhnObMuVgA';" alt="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/10/ef/22/10ef2270f2d2e890f8da77cd1d55d459.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlbsQeOpNet48Wg3FbT16O4kAyhnObMuVgA';" alt="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+										<div class="card-body">
+						<h3 class="h5"><b>Transferring Your GI Bill To Your Spouse or Dependents The Post-911 GI Bill allows service members to transfer unused education benefits to immediate family members spouse and children.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouses gi bill</strong>. 
+								
+																	Members with at least six years of military service before electing to transfer the benefits are eligible for this program. 
+																	Post 911 GI Bill Transferability Spouses of military men and women can achieve a dream career with online education at CSU. 
+																	Post 911 GI BillForever GI Bill. 
+																	Your spouses Post 911 GI Bill benefits may be transferrable to you if your spouse chooses not to use them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Children or spouses of service members who died in the line of duty on or after 911 may also be eligible to use the GI Bill to further their education through the Marine Gunnery John David Fry. 
+																	Military Spouse is your premiere online milspouse community with resources on all things military life marriage military spouse jobs and education pcs moves military discounts and more. 
+																	Here is how transferred benefits work for spouses. 
+																	Transfer Post-911 GI Bill to Spouse and Dependents - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Introduced in 2009 the Post 911 GI Bill Chapter 33 is probably the most common veterans program utilized by spouses and dependents. 
+																	If the member is on active duty the spouse cannot get a housing allowance or the book stipend even if they are divorced from the active duty member. 
+																	Service members can transfer their unused GI Bill benefits to their military spouses or one or more of their children. 
+																	There are myriad programs grouped by specific branch of military service offering financial assistance for military spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill benefits for Service members spouses and dependents have different features. 
+																	There are military education support programs created especially for you. 
+																	The transfer program was created to help mid-career servicemembers remain active when they are needed while allowing them to take advantage of their full GI Benefits. 
+																	Eligible service members have the option of transferring their benefit to their immediate family members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post-911 GI Bill Overview The Post-911 GI Bill offers greater benefits than ever but figuring out who gets what can be very confusing. 
+																	Explore this often-overlooked way to save on your education. 
+																	Members with at least six years of military service before electing to transfer the benefits are eligible for this program. 
+																	However as always there are rules and caveats and confusion associated with the transfer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post 911 GI Bill is one of the most popular benefits of military service and many families find that they get maximum benefit by transferring those benefits to the service members spouse. 
+																	Use the benefits immediately Use the benefits while their spouse remains in the Armed Forces or after separation from active duty Has no limit to use benefits if servicemembers last discharge is after January 1 2013. 
+																	Top 10 Things to Know About Using Your GI Bill in 2021. 
+																	If you are approved to transfer your unused Post-911 GI Bill to your spouse your spouse will be able to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The maximum benefit available is 36 months. 
+																	Effective immediately the law removes the 15-year time limit for the use of Post-911 GI Bill benefits for those whose last discharge or release from active duty was on or after January 1 2013 children of deceased servicemembers who became entitled to Post-911 GI Bill benefits on or after January 1 2013 and all spouses using Fry Scholarship. 
+																	GI Bill and Military Education MILITARY SPOUSES Education Options for Husbands and Wives. 
+																	This is your guide to understand how to transfer your GI Bill to your spouse and dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	Servicemembers who choose not to use their Post 911 GI Bill benefits or only use a portion of the benefits have the option of transferring them to a spouse or other dependent. 
+																	Good news for military spouses who want to further their education. 
+																	The post 9 11 gi bill is one of the most popular benefits of military service and many families find that they get maximum benefit by transferring those benefits to the service member s spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eligible military men and women may transfer 36 months or the portion of unused Post-911 GI Bill benefits to their spouses and children to help them reach their educational goals at CSU. 
+																	If you an active duty servicemember eligible for GI Bill education benefits the Post-911 GI Bill may allow you to transfer your benefits to your spouse or dependents. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbEdCYyDacb1wcQBz1jy5nIPnhMzscXmo2w';" alt="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/ea/d6/28ead60c92ccf516ea4385c774d842c9.jpg" data-lightbox="roadtrip" data-title="Pin On Classof2017">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/ea/d6/28ead60c92ccf516ea4385c774d842c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFp-m8cxZa-bgKqBnWeupQ7gy3BGZEbp5MxA';" alt="Pin On Classof2017">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Classof2017</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/93/fb/0693fb798f6e11385216aaddbbaee606.jpg" data-lightbox="roadtrip" data-title="Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/93/fb/0693fb798f6e11385216aaddbbaee606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEA3yvhF8WYJOLW81wuzai1qjVoLDUix3xjg';" alt="Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/85/83/3585839b93736a061c6fdb74e6ac254e.jpg" data-lightbox="roadtrip" data-title="Poll Have You Used The Gi Bill Spouse Spousebuzz Com Gi Bill Military Spouse Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/85/83/3585839b93736a061c6fdb74e6ac254e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2qqlxw5Mh9yudeeXpLu9P8PBZZOnhA4CKQ';" alt="Poll Have You Used The Gi Bill Spouse Spousebuzz Com Gi Bill Military Spouse Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poll Have You Used The Gi Bill Spouse Spousebuzz Com Gi Bill Military Spouse Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/89/64/cd896453ca2ab0d4c88a6abccced1ce0.jpg" data-lightbox="roadtrip" data-title="Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/89/64/cd896453ca2ab0d4c88a6abccced1ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-RSD_w0EGu4fkdLp3tXMv9vZRaiP65Fi0A';" alt="Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/a3/62/79a362dd49eeb498d0cdf9739e26fbbd.jpg" data-lightbox="roadtrip" data-title="Bill Aims To Draft Women Military Life Aim Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/a3/62/79a362dd49eeb498d0cdf9739e26fbbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4AZ57G08FNCs38Maf040YsNDGIQ2Fnvbng';" alt="Bill Aims To Draft Women Military Life Aim Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Aims To Draft Women Military Life Aim Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/40/63/784063bb9ec129e59d0c08f7ca94c6c8.png" data-lightbox="roadtrip" data-title="Gi Bill Benefits Tuition Assistance Military Education Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/40/63/784063bb9ec129e59d0c08f7ca94c6c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJKB5mPCT87ZZgWJ4UYa2dKY1IDkGNYPNCA';" alt="Gi Bill Benefits Tuition Assistance Military Education Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Benefits Tuition Assistance Military Education Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.jpg" data-lightbox="roadtrip" data-title="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFI2panmAIrBY9F15EdpxL6tSG-SkxVhUqQ';" alt="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/da/ac/57daacb93fa30922b154cb4d4ed66ab1.png" data-lightbox="roadtrip" data-title="These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/da/ac/57daacb93fa30922b154cb4d4ed66ab1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxG_S5W4cK7NpkRBO_W_6wkbUvEOB9lRUhQ';" alt="These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/3a/0c/673a0c6e2c6020d524d4bf21b4abcb7e.jpg" data-lightbox="roadtrip" data-title="How Spouses Use Transferred Gi Bill Benefits Http Militaryoneclick Com How Spouses Use Transferred Gi Bill Benefit Gi Bill Online Programs Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/3a/0c/673a0c6e2c6020d524d4bf21b4abcb7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFzp3Pknx_DzFYk3LW1dHs1ZM1CEuhGzwQGA';" alt="How Spouses Use Transferred Gi Bill Benefits Http Militaryoneclick Com How Spouses Use Transferred Gi Bill Benefit Gi Bill Online Programs Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Spouses Use Transferred Gi Bill Benefits Http Militaryoneclick Com How Spouses Use Transferred Gi Bill Benefit Gi Bill Online Programs Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/ab/57/5cab577be1ae3a45db6bc5c4583522be.jpg" data-lightbox="roadtrip" data-title="Tips For Using The Post 9 11 Gi Bill Get Ready For Some Paperwork Gi Bill Bills Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/ab/57/5cab577be1ae3a45db6bc5c4583522be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXarg1tyculpTjYif8UMTvTlxifjH-nZZYiw';" alt="Tips For Using The Post 9 11 Gi Bill Get Ready For Some Paperwork Gi Bill Bills Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips For Using The Post 9 11 Gi Bill Get Ready For Some Paperwork Gi Bill Bills Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/ef/22/10ef2270f2d2e890f8da77cd1d55d459.png" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/ef/22/10ef2270f2d2e890f8da77cd1d55d459.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6p_KlBVYQI3zeIYSXV13-tKfLDnr9f1Khg';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/36/bc/c7/36bcc72ba85344545e278a407b9ea125.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/36/bc/c7/36bcc72ba85344545e278a407b9ea125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRNhqJIfnstnueIemKbb04AF1HKp4cGN48g';" alt="Pin On Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-u18.html">Man Utd Vs Chelsea U18</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-man-of-the-match-today.html">Man Utd Vs Chelsea Man Of The Match Today</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-players-ratings.html">Man Utd Vs Chelsea Players Ratings</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-starting-xi.html">Man Utd Vs Chelsea Starting Xi</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-is-it-on-tv.html">Man Utd Vs Chelsea Is It On Tv</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-bbc-sport.html">Man Utd Vs Chelsea Bbc Sport</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-carabao-cup.html">Man Utd Vs Chelsea Carabao Cup</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-head-to-head-record.html">Man Utd Vs Chelsea Head To Head Record</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-fa-cup-live-streaming.html">Man Utd Vs Chelsea Fa Cup Live Streaming</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-in-champions-league.html">Man Utd Vs Chelsea In Champions League</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-live-dimana.html">Man Utd Vs Chelsea Live Dimana</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-champions-league-final-2008-penalty-shootout.html">Man Utd Vs Chelsea Champions League Final 2008 Penalty Shootout</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-champions-league-final-2008-full-match.html">Man Utd Vs Chelsea Champions League Final 2008 Full Match</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-net-tv.html">Man Utd Vs Chelsea Net Tv</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-channel-uk.html">Man Utd Vs Chelsea Channel Uk</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-live.html">Man Utd Vs Chelsea Live</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-var.html">Man Utd Vs Chelsea Var</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-news-now.html">Man Utd Vs Chelsea News Now</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-lfc.html">Man Utd Vs Chelsea Lfc</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-twitter.html">Man Utd Vs Chelsea Twitter</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Federal Benefits For Veterans Dependents And Survivors Updated Edition - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Federal Benefits For Veterans Dependents And Survivors Updated Edition",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/170x/bc/23/7e/bc237ef2c1c5cb1fb81dcdc427c8278a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=federal+benefits+for+veterans+dependents+and+survivors+updated+edition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Federal Benefits For Veterans Dependents And Survivors Updated Edition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Federal benefits for veterans dependents and survivors 2018 edition Charles George VA Medical Center Asheville NC. Federal benefits for veterans dependents and survivors 2018 edition Cortical Visual Impairment and Blindness PPT Hadley. Federal benefits for veterans dependents and survivors 2018 edition Atlanta VA Health Care System. <br>				
+			</p>
+										<a class="badge badge-primary" href="/online-colleges-that-accept-military-tuition-assistance.html">online colleges that accept military tuition assistance</a>
+											<a class="badge badge-light" href="/old-navy-mens-wife-beaters.html">old navy mens wife beaters</a>
+											<a class="badge badge-success" href="/pak-army-helpline-no.html">pak army helpline no</a>
+											<a class="badge badge-danger" href="/nike-air-force-shadow-grey-pink.html">nike air force shadow grey pink</a>
+											<a class="badge badge-dark" href="/online-colleges-that-accept-mycaa.html">online colleges that accept mycaa</a>
+											<a class="badge badge-danger" href="/online-msn-programs-usa.html">online msn programs usa</a>
+											<a class="badge badge-secondary" href="/pak-army-helpline-number-karachi.html">pak army helpline number karachi</a>
+											<a class="badge badge-warning" href="/ny-army-national-guard-human-resources.html">ny army national guard human resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/d8/a4/2bd8a4c03502f61c8216185b4ebe9d86.jpg" data-lightbox="roadtrip" data-title="Federal Benefits For Veterans Dependents And Survivors Updated Edition Disabled Veterans Benefits Life Coach Quotes Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/d8/a4/2bd8a4c03502f61c8216185b4ebe9d86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9HPY52XmL_Rcut4zks9-OdfKQNUR6BF7pg';" alt="Federal Benefits For Veterans Dependents And Survivors Updated Edition Disabled Veterans Benefits Life Coach Quotes Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Benefits For Veterans Dependents And Survivors Updated Edition Disabled Veterans Benefits Life Coach Quotes Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/86/eb/d9/86ebd9db88d0f76a02bdde353693d33f.jpg" data-lightbox="roadtrip" data-title="Federal Benefits For Veterans Dependents And Survivors 2016 Edition Paperback August 1 2016 Veterans Department Of Veterans Affairs Ebook Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/86/eb/d9/86ebd9db88d0f76a02bdde353693d33f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvTKyVN7G4AkxeSalaFGQyfLpneq0PIfcIw';" alt="Federal Benefits For Veterans Dependents And Survivors 2016 Edition Paperback August 1 2016 Veterans Department Of Veterans Affairs Ebook Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Benefits For Veterans Dependents And Survivors 2016 Edition Paperback August 1 2016 Veterans Department Of Veterans Affairs Ebook Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/74/5a/7c745a50705935d6bfe4ac8b80a6d266.png" data-lightbox="roadtrip" data-title="Federal Benefits For Veterans Dependents And Survivors 2011 Pdf Free In 2020 Department Of Veterans Affairs Veterans Affairs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/74/5a/7c745a50705935d6bfe4ac8b80a6d266.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEisdeVB5Gnd-YFTOD3c_XOvFmi-uNb6JMvQ';" alt="Federal Benefits For Veterans Dependents And Survivors 2011 Pdf Free In 2020 Department Of Veterans Affairs Veterans Affairs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Benefits For Veterans Dependents And Survivors 2011 Pdf Free In 2020 Department Of Veterans Affairs Veterans Affairs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bc/33/e7/bc33e78e34ef7256693d2356e9375227--military-veterans-military-families.jpg" data-lightbox="roadtrip" data-title="Pin On Resources For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bc/33/e7/bc33e78e34ef7256693d2356e9375227--military-veterans-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmemzk4EScHSjB1LpMVncz8s3YvgM0PluJXg';" alt="Pin On Resources For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Resources For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/3e/c1/89/3ec18963efe2abf0e08e9a01b11cc68a.jpg" data-lightbox="roadtrip" data-title="Get Started Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/3e/c1/89/3ec18963efe2abf0e08e9a01b11cc68a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHYfPdQOCoEPFtv-n6Xtadp4ikPr4DZ6DWsw';" alt="Get Started Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Started Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/33/95/863395b7e87eefa6b053e55481b927a0.jpg" data-lightbox="roadtrip" data-title="Benefits For Veterans Dependents And Survivors If You Are A Veteran Or Soon Will Become One This App Is For You T Department Of Veterans Affairs Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/33/95/863395b7e87eefa6b053e55481b927a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZp94GFYbqPy_PQ-rw5tGq87ejRV_Y6oFcw';" alt="Benefits For Veterans Dependents And Survivors If You Are A Veteran Or Soon Will Become One This App Is For You T Department Of Veterans Affairs Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits For Veterans Dependents And Survivors If You Are A Veteran Or Soon Will Become One This App Is For You T Department Of Veterans Affairs Army Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/170x/bc/23/7e/bc237ef2c1c5cb1fb81dcdc427c8278a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZp94GFYbqPy_PQ-rw5tGq87ejRV_Y6oFcw';" alt="Benefits For Veterans Dependents And Survivors If You Are A Veteran Or Soon Will Become One This App Is For You T Department Of Veterans Affairs Army Life">
+										<div class="card-body">
+						<h3 class="h5"><b>From Amazons Book Store.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Federal benefits for veterans dependents and survivors updated edition</strong>. 
+								
+																	Read Federal Benefits For Veterans Dependents And Survivors Updated Edition Uploaded By Corin Tellado the 2020 federal benefts handbook for veterans and dependents provides information on benefts and services currently available by law and regulation however due to vas ongoing response to covid 19 we encourage veterans. 
+																	From Amazons Book Store. 
+																	However due to VAs ongoing response to COVID-19 we encourage Veterans their families and caregivers to visit. 
+																	The US Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyday low prices and free delivery on eligible orders. 
+																	Everyday low prices and free delivery on eligible orders. 
+																	Federal Benefits for Veterans Dependents and Survivors 2014 Edition Department of Veterans Affairs 810 Vermont Ave NW. 
+																	Federal Benefits For Veterans Dependents and Survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9781629145792 from Amazons Book Store. 
+																	November 2014 by The Us Department of Veteran Affairs The Us Department of Veteran Affairs ISBN. 
+																	Buy Federal Benefits for Veterans Dependents and Survivors. 
+																	Updated Edition Federal Benefits For Veterans and Dependents eBook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2020 Federal Benefts Handbook for Veterans and Dependents provides information on benefts and services currently available by law and regulation. 
+																	For Veterans Dependents and. 
+																	Veterans of the United States armed forces may be eligible for a broad range of benefits and services provided by the US Department of Veterans Affairs VA. 
+																	Buy Federal Benefits for Veterans Dependents and Survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Department of Veterans Affairs. 
+																	Federal Benefits for Veterans Dependents and Survivors. 
+																	If youre looking for information on these benefits and services look no further than the newest edition of Federal Benefits for Veterans Dependents and Survivors. 
+																	Federal Benefits for Veterans Dependents and Survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Updated Edition Illustrated by The US Department of Veterans Affairs ISBN. 
+																	Federal benefits for veterans dependents and survivors updated edition Dec 09 2020 Posted By Alistair MacLean Library TEXT ID 0701eeba Online PDF Ebook Epub Library edition book reviews author details and more at amazonin free delivery on qualified orders federal benefits for veterans dependents and survivors 2018 edition high quality. 
+																	The Us Department of Veteran Affairs The Us Department of Veteran Affairs published. 
+																	Buy Federal Benefits for Veterans Dependents and Survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An official up-to-date government manual that covers everything from VA life insurance to survivor benefits. 
+																	Uncle Sam arguably the most popular personification of the United States was created by James Flagg in 1917 based on his own appearance. 
+																	Their mission is to fulfill President Lincolns promise to care for him who shall have borne the battle and for his widow and his orphan by serving and honoring the men and women who are Americas veterans. 
+																	The US Department of Veterans Affairs provides patient care and federal benefits to veterans and their dependents and survivors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Washington DC 20420 Cover. 
+																	Updated Edition By The Us Department of Veteran Affairs The Us Department of Veteran Affairs Author Paperback Nov - 2014 Paperback by The Us Department of Veteran Affairs The Us Department of Veteran Affairs ISBN. 
+																	Department of Veterans Affairs Va. 
+																	Federal benefits for veterans dependents and survivors updated edition Dec 08 2020 Posted By Edgar Wallace Ltd TEXT ID 270864a8 Online PDF Ebook Epub Library is only soon after i veterans of the united states armed forces may be eligible for a broad range of benefits and services provided by the us department of veterans affairs va. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyday low prices and free delivery on eligible orders. 
+																	The Department of Veterans Affairs most popular publication the Federal Benefits for Veterans Dependents and Survivors booklet provides brief descriptions of VA programs and benefits including compensation and pension benefits health care memorial and burial benefits facility phone numbers and addresses and more. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cf/02/26/cf022651c90d471fbe7910ca1b46115e.jpg" data-lightbox="roadtrip" data-title="Epub Free Principles Of Business Taxation 2019 Pdf Download Free Epub Mobi Ebooks Ebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cf/02/26/cf022651c90d471fbe7910ca1b46115e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVMX72wOmLBpLXsB3DuKvt4d4eK5NHQ52bg';" alt="Epub Free Principles Of Business Taxation 2019 Pdf Download Free Epub Mobi Ebooks Ebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epub Free Principles Of Business Taxation 2019 Pdf Download Free Epub Mobi Ebooks Ebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/1d/5c/6c1d5cc603aa899bc3edd2a707c13583.jpg" data-lightbox="roadtrip" data-title="Original Language English 240 Pp September 2019 2 Seas Represents World Excl North American Rights Rights Sold Free Reading Books To Read Pdf Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/1d/5c/6c1d5cc603aa899bc3edd2a707c13583.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnv9Yj40GDlNA0FOwad7WiVMTI0OWxIEGx4w';" alt="Original Language English 240 Pp September 2019 2 Seas Represents World Excl North American Rights Rights Sold Free Reading Books To Read Pdf Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Original Language English 240 Pp September 2019 2 Seas Represents World Excl North American Rights Rights Sold Free Reading Books To Read Pdf Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/5d/7b/e75d7b49968fd0a2a816438bb71df8ab.jpg" data-lightbox="roadtrip" data-title="Pin On Mobi Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/5d/7b/e75d7b49968fd0a2a816438bb71df8ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw85cUuIqpfriSRiAE6wNcL8R9g9fbYsjqsA';" alt="Pin On Mobi Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mobi Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/ba/6e/bcba6eb5c7800864ee6ce32d34ee334b.jpg" data-lightbox="roadtrip" data-title="Pin On Retirement Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/ba/6e/bcba6eb5c7800864ee6ce32d34ee334b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXuDhGqcC54Aq9M6orfk2PDshcYa_MRIkCA';" alt="Pin On Retirement Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Retirement Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/c6/81/0ac681e02655b21e7cd9c7f9ccfd637a.jpg" data-lightbox="roadtrip" data-title="Download Pdf For The People A Heartbreaking Memoir Of A Fight For Freedom Free Epub Mobi Ebooks Free Epub Books Pdf Books Download Free Ebooks Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/c6/81/0ac681e02655b21e7cd9c7f9ccfd637a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQflXwC24ewvyRK44nZDhcEiGE-d-jZ1V9Klw';" alt="Download Pdf For The People A Heartbreaking Memoir Of A Fight For Freedom Free Epub Mobi Ebooks Free Epub Books Pdf Books Download Free Ebooks Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf For The People A Heartbreaking Memoir Of A Fight For Freedom Free Epub Mobi Ebooks Free Epub Books Pdf Books Download Free Ebooks Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/8b/7b/088b7bf70162bc16ad621fb0936c1cc8.jpg" data-lightbox="roadtrip" data-title="Image Result For Veteran Owned Business Logo Veteran Owned Business Fancy Butter Business Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/8b/7b/088b7bf70162bc16ad621fb0936c1cc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tV91AY7zaLdVxH48RoXQ8g8AUxhUG9WcNA';" alt="Image Result For Veteran Owned Business Logo Veteran Owned Business Fancy Butter Business Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Veteran Owned Business Logo Veteran Owned Business Fancy Butter Business Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/6b/d7/176bd719802fa5bd159641617fee142a.png" data-lightbox="roadtrip" data-title="Pin On Veteran Helps Look At All These Helps For You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/6b/d7/176bd719802fa5bd159641617fee142a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzallZ5gvnXD_fvFyXqrKW76168cFsl5NSw';" alt="Pin On Veteran Helps Look At All These Helps For You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Helps Look At All These Helps For You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/bc/23/7e/bc237ef2c1c5cb1fb81dcdc427c8278a.jpg" data-lightbox="roadtrip" data-title="Pin On Mobi Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/bc/23/7e/bc237ef2c1c5cb1fb81dcdc427c8278a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZHuJ0POxfVFSBse_FRBsYdRiLXtTx4Nyw';" alt="Pin On Mobi Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mobi Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/36/fd/a1/36fda1efda8f45e3dd4939aa173a07ef.jpg" data-lightbox="roadtrip" data-title="Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/36/fd/a1/36fda1efda8f45e3dd4939aa173a07ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6jwLXw3o-6D2BW79UAWbUD-1upDKdJt5dA';" alt="Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Applying For Veterans Benefits 5 Tips For Caregivers And Spouses Veterans Benefits Heart Disease Prevention Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/23/64/21/236421aea5acc306308b25ff15df90ef.jpg" data-lightbox="roadtrip" data-title="Download Pdf Start Now Get Perfect Later Free Epub Mobi Ebooks Audio Books Free Free Kindle Books Audio Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/23/64/21/236421aea5acc306308b25ff15df90ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs4mONDXwHf2IGz6TXmAhemv2sjkU9u5yPaA';" alt="Download Pdf Start Now Get Perfect Later Free Epub Mobi Ebooks Audio Books Free Free Kindle Books Audio Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf Start Now Get Perfect Later Free Epub Mobi Ebooks Audio Books Free Free Kindle Books Audio Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/fa/49/76/fa49765aafd27cb9c7979924721d9726.jpg" data-lightbox="roadtrip" data-title="Download Pdf The Happy Hormone Guide A Plantbased Program To Balance Hormones Increase Energy Reduce Pms Happy Hormones How To Increase Energy Pms Symptoms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/fa/49/76/fa49765aafd27cb9c7979924721d9726.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBzZX9p9C7WO6YlH4Sba6E7VMbuPoR1IliA';" alt="Download Pdf The Happy Hormone Guide A Plantbased Program To Balance Hormones Increase Energy Reduce Pms Happy Hormones How To Increase Energy Pms Symptoms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf The Happy Hormone Guide A Plantbased Program To Balance Hormones Increase Energy Reduce Pms Happy Hormones How To Increase Energy Pms Symptoms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/62/7b/cd627b93ec3453e143508a8c8b0b37f7.jpg" data-lightbox="roadtrip" data-title="The Reality Of Islam Korean Edition Null Http Www Amazon Com Dp 8994170049 Ref Cm Sw R Pi Dp Juw7sb050nrkz0rj Reality Islam Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/62/7b/cd627b93ec3453e143508a8c8b0b37f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIdNT8TSWb4C-wNPWogJPaZGm3zBAu_6VyA';" alt="The Reality Of Islam Korean Edition Null Http Www Amazon Com Dp 8994170049 Ref Cm Sw R Pi Dp Juw7sb050nrkz0rj Reality Islam Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Reality Of Islam Korean Edition Null Http Www Amazon Com Dp 8994170049 Ref Cm Sw R Pi Dp Juw7sb050nrkz0rj Reality Islam Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/136x136/ac/f4/bb/acf4bb87b3c4a77cbef5e7fbf91a7f85.jpg" data-lightbox="roadtrip" data-title="Read Download Kid Food The Challenge Of Feeding Children In A Highly Processed World Free Epub Mobi Ebooks Feeding Kids Kids Meals Free Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/136x136/ac/f4/bb/acf4bb87b3c4a77cbef5e7fbf91a7f85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_BrBDTg9PoTA9IkzU4rO1GZW176GHnudUg';" alt="Read Download Kid Food The Challenge Of Feeding Children In A Highly Processed World Free Epub Mobi Ebooks Feeding Kids Kids Meals Free Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Read Download Kid Food The Challenge Of Feeding Children In A Highly Processed World Free Epub Mobi Ebooks Feeding Kids Kids Meals Free Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-medical-records-omaha-ne.html">Va Medical Records Omaha Ne</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependent-verification.html">Va Form For Dependent Verification</a></li>
+													<li class="list-group-item"><a href="/va-form-status-of-dependents-questionnaire.html">Va Form Status Of Dependents Questionnaire</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependent-over-18.html">Va Form For Dependent Over 18</a></li>
+													<li class="list-group-item"><a href="/va-for-dependents.html">Va For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-long-beach.html">Va Medical Records Long Beach</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-for-dependents.html">Va Disability Rates For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-to-add-college-dependents.html">Va Form To Add College Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-coverage-for-dependents.html">Va Medical Coverage For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependents.html">Va Form For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-dependent-verification.html">Va Form Dependent Verification</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-albuquerque.html">Va Medical Records Albuquerque</a></li>
+													<li class="list-group-item"><a href="/va-health-records-request-form.html">Va Health Records Request Form</a></li>
+													<li class="list-group-item"><a href="/va-form-to-remove-dependents.html">Va Form To Remove Dependents</a></li>
+													<li class="list-group-item"><a href="/va-home-loan-benefits-for-surviving-spouse.html">Va Home Loan Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/va-health-records-request.html">Va Health Records Request</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-houston.html">Va Medical Records Houston</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-indianapolis.html">Va Medical Records Indianapolis</a></li>
+													<li class="list-group-item"><a href="/va-health-coverage-for-dependents.html">Va Health Coverage For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-to-add-dependents.html">Va Form To Add Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Man Utd Vs Chelsea Fa Cup Semi Final - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Man Utd Vs Chelsea Fa Cup Semi Final",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/a2/1c/f9/a21cf9121b9aa0ab1463b6d0a67f1434.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=man+utd+vs+chelsea+fa+cup+semi+final",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Man Utd Vs Chelsea Fa Cup Semi Final</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sunday 19 July 2020 2126 Manchester Uniteds defensive ranks were depleted by another head injury on Sunday evening when Eric Bailly was forced to leave the field during the first half of the. Our longest run of consecutive semi-final appearances came in the 1960s when Sir. FA Cup semi-final score and latest updates Image. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-hat-velcro-patches.html">army hat velcro patches</a>
+											<a class="badge badge-info" href="/army-haircut-hd-images.html">army haircut hd images</a>
+											<a class="badge badge-light" href="/army-family-support.html">army family support</a>
+											<a class="badge badge-secondary" href="/army-hr-policies.html">army hr policies</a>
+											<a class="badge badge-dark" href="/army-hrc-enlisted-records.html">army hrc enlisted records</a>
+											<a class="badge badge-light" href="/army-civilian-human-resources-training-application-system.html">army civilian human resources training application system</a>
+											<a class="badge badge-light" href="/army-contact-number-lahore.html">army contact number lahore</a>
+											<a class="badge badge-primary" href="/army-hrc-awards-branch.html">army hrc awards branch</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/33/fb/3733fbab0c677d1d149248a1b97a4f48.jpg" data-lightbox="roadtrip" data-title="The Quarter Final Of Fa Cup Between Manchester United Vs Chelsea Match Will Be Played Tomorrow At Old Traff Manchester United Chelsea Manchester United Chelsea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/33/fb/3733fbab0c677d1d149248a1b97a4f48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Aq9FwIzUSj5BOfT2CC8R3hh-2pJufeawKg';" alt="The Quarter Final Of Fa Cup Between Manchester United Vs Chelsea Match Will Be Played Tomorrow At Old Traff Manchester United Chelsea Manchester United Chelsea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Quarter Final Of Fa Cup Between Manchester United Vs Chelsea Match Will Be Played Tomorrow At Old Traff Manchester United Chelsea Manchester United Chelsea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b4/8a/e9/b48ae91aa5a9700d4399364bc0217b04.jpg" data-lightbox="roadtrip" data-title="Entertainment Manchester United Vs Chelsea Fa Cup Semi Final Update Chelsea Fa Cup Fa Cup Manchester United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b4/8a/e9/b48ae91aa5a9700d4399364bc0217b04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPMVmoK7bvO7JV9PyvPkA8gaCLTde-hanzA';" alt="Entertainment Manchester United Vs Chelsea Fa Cup Semi Final Update Chelsea Fa Cup Fa Cup Manchester United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Entertainment Manchester United Vs Chelsea Fa Cup Semi Final Update Chelsea Fa Cup Fa Cup Manchester United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/c1/7d/02c17d8908a52f48d997ea3fc7198705.jpg" data-lightbox="roadtrip" data-title="Eric Cantona And Ruud Gullit After The 1996 Man Utd V Chelsea Fa Cup Semi Final At Villa Park Eric Cantona Chelsea Football Manchester United Football Club">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/c1/7d/02c17d8908a52f48d997ea3fc7198705.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqZH3P95f4lzNVqkuIx8qx-GP9f4qhEexlw';" alt="Eric Cantona And Ruud Gullit After The 1996 Man Utd V Chelsea Fa Cup Semi Final At Villa Park Eric Cantona Chelsea Football Manchester United Football Club">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eric Cantona And Ruud Gullit After The 1996 Man Utd V Chelsea Fa Cup Semi Final At Villa Park Eric Cantona Chelsea Football Manchester United Football Club</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/fc/40/ebfc4038ccb3472de900f42a76167435.jpg" data-lightbox="roadtrip" data-title="United 1 3 Chelsea F A Cup Semi Final In 2020 Manchester United Manchester The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/fc/40/ebfc4038ccb3472de900f42a76167435.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Swa3H-Xjf35XitTOYQiMVQlMIM7hv-ylDA';" alt="United 1 3 Chelsea F A Cup Semi Final In 2020 Manchester United Manchester The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United 1 3 Chelsea F A Cup Semi Final In 2020 Manchester United Manchester The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/4f/40/534f40b2e95fb8eff946f82d9d2e5984.jpg" data-lightbox="roadtrip" data-title="United 1 3 Chelsea F A Cup Semi Final Trong 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/4f/40/534f40b2e95fb8eff946f82d9d2e5984.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuAQhMidAjops3TgEQO-yBNiMn00a-ACeu9g';" alt="United 1 3 Chelsea F A Cup Semi Final Trong 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United 1 3 Chelsea F A Cup Semi Final Trong 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/1c/f9/a21cf9121b9aa0ab1463b6d0a67f1434.jpg" data-lightbox="roadtrip" data-title="Eden Hazard Photos Photos Chelsea Vs Manchester United The Emirates Fa Cup Final Cesc Fabregas Eden Hazard Cup Final">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/1c/f9/a21cf9121b9aa0ab1463b6d0a67f1434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUT3H1G6xMBimAPVrl2oq25UdcK2SvxyUUg';" alt="Eden Hazard Photos Photos Chelsea Vs Manchester United The Emirates Fa Cup Final Cesc Fabregas Eden Hazard Cup Final">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eden Hazard Photos Photos Chelsea Vs Manchester United The Emirates Fa Cup Final Cesc Fabregas Eden Hazard Cup Final</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/d8/93/ddd893f59386b6a32371c281621001c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUT3H1G6xMBimAPVrl2oq25UdcK2SvxyUUg';" alt="Eden Hazard Photos Photos Chelsea Vs Manchester United The Emirates Fa Cup Final Cesc Fabregas Eden Hazard Cup Final">
+										<div class="card-body">
+						<h3 class="h5"><b>The victors will look forward to the quarter-finals taking place on the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Man utd vs chelsea fa cup semi final</strong>. 
+								
+																	FA Cup semi-final as it happened David de Gea had a shocker and Harry Maguire scored an own goal as an impressive Chelsea hammered United to set up a final against. 
+																	The left-back was injured. 
+																	Manchester United 1-3 Chelsea. 
+																	Manchester United vs Chelsea FA Cup semi-final fixture details confirmed Man Utd will face Chelsea in the FA Cup semi-final fixture and the details and TV coverage of the match have been confirmed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United manager Ole Gunnar Solskjaer says defender Luke Shaw will miss Sundays Emirates FA Cup semi-final clash with Chelsea. 
+																	Manchester Uniteds hopes of joining neighbours Manchester City in the FA Youth Cup final were dashed when a single goal from Chelseas Bryan Fiabema just after half-time was enough for the. 
+																	FA Cup fifth-round games on TV this week. 
+																	Ole Gunnar Solskjaer has shuffled his Manchester United pack for the Emirates FA Cup semi-final clash with Chelsea at Wembley. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Blackburn Rovers v Chelsea at Old Trafford in 2007. 
+																	Saturday 18 July 2020 1019. 
+																	The 1994 FA Cup Final was the 49th FA Cup final to be held since the Second World War and was contested between Manchester United and Chelsea. 
+																	Watch BBC One coverage and follow live text and BBC Radio 5 Live commentary as Manchester United face Chelsea in the FA Cup semi-finals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United 1-3 Chelsea. 
+																	Manchester United went into the final as Premier League champions having won the title by eight points over Blackburn Rovers. 
+																	De Gea errors help settle FA Cup semi-final By Phil McNulty Chief football writer at Wembley Last updated on 19 July 2020 19 July 2020. 
+																	Man Utd 1-3 Chelsea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United need two unanswered goals in 30 minutes to force extra time. 
+																	Chelsea still in control. 
+																	Both Ole Gunnar Solskjaer and David Moyes - who makes a return to Old Trafford - will be desperate to continue their FA Cup dream with United falling short against Chelsea at the semi-final stage. 
+																	Man Utd clash with West Ham Barnsley vs Chelsea FREE with all games televised. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Of the 13 FA Cup semi-finals United reached from 1976 through to 2007 the Reds won all 13 of them. 
+																	The last FA Cup semi-final before the event was moved to the new Wembley Stadium. 
+																	Chelsea have won 12 of their last 15 FA Cup semi-final matches losing against Man Utd in 1996 Liverpool in 2006 and Man City in 2013 in that run. 
+																	Manchester United have progressed from 15 of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sunday 19 July 2020 1700. 
+																	201213 Man Utd won won Chelsea have won 12 including one on penalties of our last 13 FA Cup ties losing just to Man Utd in 2019. 
+																	Man Utd vs Chelsea LIVE. 
+																	Chelsea on the other hand were playing in their first FA Cup Final since 1970 and first major fina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They were bidding to become only the fourth team of the 20th century to complete the Double and the first in their own history. 
+																	Arsenal versus Chelsea in 2009 was one of several London derbies held at the national stadium Manchester clubs City and United have reached the FA Cup semi-final a combined 45 times. 
+																	David de Gea has semi-final to forget as Blues book FA Cup final date with Arsenal David De Gea allowed shots from Olivier Giroud and Mason Mount to beat him as Chelsea end. 
+																	The manager has made five. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chelseas season in the FA Cup R3 Nottingham Forest h W 2-0 R4 Hull a W 2-1 R5 Liverpool h W 2-0 QF Leicester a W 1-0. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/6f/9c/9b6f9cd2cc303842edf9bdce005dea2c.jpg" data-lightbox="roadtrip" data-title="Manchester United Have Been Drawn To Face Chelsea In The Semi Finals Of The Fa Cup With Arsenal Playing The Winners Of Newc In 2020 Fa Cup Manchester United Semi Final">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/6f/9c/9b6f9cd2cc303842edf9bdce005dea2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOonRrT8lcy24K0kNz7sBXcOxhg0iae1hnQ';" alt="Manchester United Have Been Drawn To Face Chelsea In The Semi Finals Of The Fa Cup With Arsenal Playing The Winners Of Newc In 2020 Fa Cup Manchester United Semi Final">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manchester United Have Been Drawn To Face Chelsea In The Semi Finals Of The Fa Cup With Arsenal Playing The Winners Of Newc In 2020 Fa Cup Manchester United Semi Final</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/65/73/736573a204ce9ea82662435051f7b7ac.jpg" data-lightbox="roadtrip" data-title="Official Manchester United Vs Chelsea In The Fa Cup Semifinal Will Take Place On The 19th Of July With Kick Off At 18 00 B Manchester United Fa Cup Man United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/65/73/736573a204ce9ea82662435051f7b7ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRayMA7alLj3AL8jcO790X0g5xB04y0xmqqYw';" alt="Official Manchester United Vs Chelsea In The Fa Cup Semifinal Will Take Place On The 19th Of July With Kick Off At 18 00 B Manchester United Fa Cup Man United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Manchester United Vs Chelsea In The Fa Cup Semifinal Will Take Place On The 19th Of July With Kick Off At 18 00 B Manchester United Fa Cup Man United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/63/2b/a1632b16ef7aa9d029feb5a2f45b4492.jpg" data-lightbox="roadtrip" data-title="David Beckam Celebrate Scoring In The 1996 Fa Cup Semi Final Vs Chelsea Manchester United Images Manchester United Fa Cup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/63/2b/a1632b16ef7aa9d029feb5a2f45b4492.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwfW9r4ZeQju4T5r2m4_3mIuOMrAV5vKaJQ';" alt="David Beckam Celebrate Scoring In The 1996 Fa Cup Semi Final Vs Chelsea Manchester United Images Manchester United Fa Cup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">David Beckam Celebrate Scoring In The 1996 Fa Cup Semi Final Vs Chelsea Manchester United Images Manchester United Fa Cup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/26/f0/9526f0c8104972a05453a4b67ced2e5d.jpg" data-lightbox="roadtrip" data-title="Matchday Fa Cup Semifinal Man Utd Chelsea Sun 19 July 18 00 Gmt1 Wembley St Manutdxyz Fernades Rashford Anthonymar Man United Fa Cup Wembley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/26/f0/9526f0c8104972a05453a4b67ced2e5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYgHwHcq0KlxLmrCGll8m45HHGFz1xDTNJvA';" alt="Matchday Fa Cup Semifinal Man Utd Chelsea Sun 19 July 18 00 Gmt1 Wembley St Manutdxyz Fernades Rashford Anthonymar Man United Fa Cup Wembley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Matchday Fa Cup Semifinal Man Utd Chelsea Sun 19 July 18 00 Gmt1 Wembley St Manutdxyz Fernades Rashford Anthonymar Man United Fa Cup Wembley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/cb/c7/f5cbc75e0c9fdb815593079fe6be2fc7.jpg" data-lightbox="roadtrip" data-title="Howto Howto News How To Watch Man United Vs Chelsea Fa Cup Semi Final Chelsea Fa Cup Man United Fa Cup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/cb/c7/f5cbc75e0c9fdb815593079fe6be2fc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSOiN8qmOI2O5CSUuOwS5M7_yMMvgnt38N8Q';" alt="Howto Howto News How To Watch Man United Vs Chelsea Fa Cup Semi Final Chelsea Fa Cup Man United Fa Cup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Howto Howto News How To Watch Man United Vs Chelsea Fa Cup Semi Final Chelsea Fa Cup Man United Fa Cup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/e8/02/72e8029d175b9f5d90e5c962fa141b9c.jpg" data-lightbox="roadtrip" data-title="Fa Cup Draw Live Man Utd Tottenham Southampton And Chelsea Learn Their Semi Final Fate Fa Cup Tottenham Semi Final">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/e8/02/72e8029d175b9f5d90e5c962fa141b9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKB9CYaXR8okWiEdFNzosbM45EZ-sD1KbOpg';" alt="Fa Cup Draw Live Man Utd Tottenham Southampton And Chelsea Learn Their Semi Final Fate Fa Cup Tottenham Semi Final">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fa Cup Draw Live Man Utd Tottenham Southampton And Chelsea Learn Their Semi Final Fate Fa Cup Tottenham Semi Final</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/50/fb/0350fbef453992b2f4e06e894d59c192.jpg" data-lightbox="roadtrip" data-title="Pin En Liverpool Fc Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/50/fb/0350fbef453992b2f4e06e894d59c192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9LFAoBR4oI2MeShE8dFApHPH6s2_QRA_Ycg';" alt="Pin En Liverpool Fc Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Liverpool Fc Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/ed/74/f7ed745e859a6fa91d2b8b6c01bfd0e0.jpg" data-lightbox="roadtrip" data-title="Chelsea S N Golo Kante And Manchester United S Paul Pogba During The Emirates Fa Cup Quarter Final Match At Stamford Brid Manchester United Manchester Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/ed/74/f7ed745e859a6fa91d2b8b6c01bfd0e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzoeoDZofmccez6gV5Vq19x3jUEbYaXQ4UaA';" alt="Chelsea S N Golo Kante And Manchester United S Paul Pogba During The Emirates Fa Cup Quarter Final Match At Stamford Brid Manchester United Manchester Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea S N Golo Kante And Manchester United S Paul Pogba During The Emirates Fa Cup Quarter Final Match At Stamford Brid Manchester United Manchester Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/b8/40/7cb84000c5c85975dd14ef00fd937ea8.jpg" data-lightbox="roadtrip" data-title="Kante S Strike Secured A Semi Final Place For Chelsea In The Facup After Man Utd S Herrera Was Sent Off Manchester United Fa Cup Manchester">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/b8/40/7cb84000c5c85975dd14ef00fd937ea8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4_mgcNZWCoK_epYNd-frslVe1OT96440vg';" alt="Kante S Strike Secured A Semi Final Place For Chelsea In The Facup After Man Utd S Herrera Was Sent Off Manchester United Fa Cup Manchester">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kante S Strike Secured A Semi Final Place For Chelsea In The Facup After Man Utd S Herrera Was Sent Off Manchester United Fa Cup Manchester</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/d8/93/ddd893f59386b6a32371c281621001c6.jpg" data-lightbox="roadtrip" data-title="It S Match Day And We Play Chelsea For The Final Spot In The Fa Cup Quarter Final Go Follow Justunitedstuff Mufc Ggmu Fa Cup Chelsea Match">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/d8/93/ddd893f59386b6a32371c281621001c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7p4Njf0IM28SLq_MjlIKnKEUPkTV7KOXJfg';" alt="It S Match Day And We Play Chelsea For The Final Spot In The Fa Cup Quarter Final Go Follow Justunitedstuff Mufc Ggmu Fa Cup Chelsea Match">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Match Day And We Play Chelsea For The Final Spot In The Fa Cup Quarter Final Go Follow Justunitedstuff Mufc Ggmu Fa Cup Chelsea Match</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/85/20/1185209afa5da8be5b6b2171e2bbb020.jpg" data-lightbox="roadtrip" data-title="Leicester Vs Chelsea Fa Cup Quarter Final The Coolest Morata S Goal Chelsea Fa Cup Fa Cup Leicester">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/85/20/1185209afa5da8be5b6b2171e2bbb020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L_BcKPrC6aMeO4UYKtj-nFPwOuxdHfenXA';" alt="Leicester Vs Chelsea Fa Cup Quarter Final The Coolest Morata S Goal Chelsea Fa Cup Fa Cup Leicester">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leicester Vs Chelsea Fa Cup Quarter Final The Coolest Morata S Goal Chelsea Fa Cup Fa Cup Leicester</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/59/b9/59/59b959767d34218e4bfa7c81041245b4.jpg" data-lightbox="roadtrip" data-title="Phil Jones Of Man Utd Celebrates During The Fa Cup Semi Final Between Phil Jones Fa Cup Manchester United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/59/b9/59/59b959767d34218e4bfa7c81041245b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDC92Ndhna1rG8ugE0qEAvnqLbxwUQ-Co10w';" alt="Phil Jones Of Man Utd Celebrates During The Fa Cup Semi Final Between Phil Jones Fa Cup Manchester United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phil Jones Of Man Utd Celebrates During The Fa Cup Semi Final Between Phil Jones Fa Cup Manchester United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/06/e7/7806e7b556ccb4abc41df53a7b5ac112.jpg" data-lightbox="roadtrip" data-title="Fa Cup Man Utd Face Tottenham Chelsea Play Southampton In Semi Finals Tottenham Fa Cup Transfer Rumours">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/06/e7/7806e7b556ccb4abc41df53a7b5ac112.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3s7_MKJmWOTGjGaNK8o6ZEjQEIrN_Q454Bw';" alt="Fa Cup Man Utd Face Tottenham Chelsea Play Southampton In Semi Finals Tottenham Fa Cup Transfer Rumours">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fa Cup Man Utd Face Tottenham Chelsea Play Southampton In Semi Finals Tottenham Fa Cup Transfer Rumours</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-benefits-do-army-soldiers-get.html">What Benefits Do Army Soldiers Get</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-ww2.html">War Heroes Of Ww2</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-spouses-get-from-the-military.html">What Benefits Do Spouses Get From The Military</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-military-dependents-get.html">What Benefits Do Military Dependents Get</a></li>
+													<li class="list-group-item"><a href="/what-are-the-core-competencies-of-human-resources.html">What Are The Core Competencies Of Human Resources</a></li>
+													<li class="list-group-item"><a href="/what-are-some-good-hr-metrics.html">What Are Some Good Hr Metrics</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-dependents-get.html">What Benefits Do Veterans Dependents Get</a></li>
+													<li class="list-group-item"><a href="/war-heroes-y8.html">War Heroes Y8</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tower-of-god.html">War Heroes Tower Of God</a></li>
+													<li class="list-group-item"><a href="/war-veterans-records-australia.html">War Veterans Records Australia</a></li>
+													<li class="list-group-item"><a href="/war-heroes-in-the-us.html">War Heroes In The Us</a></li>
+													<li class="list-group-item"><a href="/what-are-military-hats-called.html">What Are Military Hats Called</a></li>
+													<li class="list-group-item"><a href="/what-age-do-military-dependents-need-id.html">What Age Do Military Dependents Need Id</a></li>
+													<li class="list-group-item"><a href="/war-world-heroes-mod-apk.html">War World Heroes Mod Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tv-show.html">War Heroes Tv Show</a></li>
+													<li class="list-group-item"><a href="/war-heroes-who-were-actors.html">War Heroes Who Were Actors</a></li>
+													<li class="list-group-item"><a href="/war-heroes-dog-tags.html">War Heroes Dog Tags</a></li>
+													<li class="list-group-item"><a href="/war-heroes-kris-paronto.html">War Heroes Kris Paronto</a></li>
+													<li class="list-group-item"><a href="/what-are-the-army-core-competencies.html">What Are The Army Core Competencies</a></li>
+													<li class="list-group-item"><a href="/war-heroes-in-the-world.html">War Heroes In The World</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

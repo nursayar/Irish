@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouses And Covid Vaccine - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouses And Covid Vaccine",
+  "datePublished": "2021-02-14",
+  "image": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/12/23/Pictures/general-antarctica-base-chile-higgins-bernardo-army_3f7c1436-44be-11eb-bcf5-ed790659da7b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouses+and+covid+vaccine",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouses And Covid Vaccine</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In a straw poll of 810 active-duty military personnel spouses and veterans more than half of active-duty families or 53 said they did not plan to get the COVID-19 vaccine citing safety. 29 2021 in Bethesda Md. The results showed 54 percent of military spouses and 49 percent of service members who responded said they didnt plan to get the COVID-19 vaccination. <br>				
+			</p>
+										<a class="badge badge-light" href="/va-disability-rates-with-dependents-2019.html">va disability rates with dependents 2019</a>
+											<a class="badge badge-warning" href="/va-health-care-dependents.html">va health care dependents</a>
+											<a class="badge badge-dark" href="/va-hiring-military-spouses.html">va hiring military spouses</a>
+											<a class="badge badge-danger" href="/va-medical-records-form.html">va medical records form</a>
+											<a class="badge badge-danger" href="/va-medical-records-fire.html">va medical records fire</a>
+											<a class="badge badge-warning" href="/va-medical-benefits-for-divorced-spouse.html">va medical benefits for divorced spouse</a>
+											<a class="badge badge-dark" href="/va-medical-records-access.html">va medical records access</a>
+											<a class="badge badge-info" href="/va-medical-records-app.html">va medical records app</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right blog.  Our site provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Nov/17/2002549590/600/400/0/201117-F-FT687-003.JPG" data-lightbox="roadtrip" data-title="Dod Announces Covid 19 Vaccine Distribution Plan Joint Base San Antonio News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Nov/17/2002549590/600/400/0/201117-F-FT687-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpzTUgAjzLKwwoHwFVHR8NQBJB4E3Zg9pvJA';" alt="Dod Announces Covid 19 Vaccine Distribution Plan Joint Base San Antonio News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Announces Covid 19 Vaccine Distribution Plan Joint Base San Antonio News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/soldier-covid-testing-h.jpg" data-lightbox="roadtrip" data-title="Moaa What You Need To Know About The Military S Coronavirus Vaccine Rollout">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/soldier-covid-testing-h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfA6LzFcCDPVCTBYdQOwm_XrokD0exuos6PA';" alt="Moaa What You Need To Know About The Military S Coronavirus Vaccine Rollout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa What You Need To Know About The Military S Coronavirus Vaccine Rollout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2021/Jan/05/2002560316/780/780/0/210104-F-TR692-0001.JPG" data-lightbox="roadtrip" data-title="First Tinker Personnel Receive Covid 19 Vaccine Tinker Air Force Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2021/Jan/05/2002560316/780/780/0/210104-F-TR692-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyB7rI_1wGIHm1KFeMcDyHF01pPGTSP-PkZQ';" alt="First Tinker Personnel Receive Covid 19 Vaccine Tinker Air Force Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Tinker Personnel Receive Covid 19 Vaccine Tinker Air Force Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamilies.com/wp-content/uploads/2020/12/Screen-Shot-2020-12-09-at-1.43.24-PM-1024x548.png" data-lightbox="roadtrip" data-title="Dod Announces Distribution Plan For Covid 19 Vaccine Military News Military Families">
+											<img class="card-img v-image ads-img " src="https://militaryfamilies.com/wp-content/uploads/2020/12/Screen-Shot-2020-12-09-at-1.43.24-PM-1024x548.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRri-5qEqIlrftvStYopEjDQxiwac9WyujRZQ';" alt="Dod Announces Distribution Plan For Covid 19 Vaccine Military News Military Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Announces Distribution Plan For Covid 19 Vaccine Military News Military Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/EOJRtZ_Sw3n92tVDqWZI-jQtE1k=/500x385/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/ZZZCVHCSPVDLBPTK4RN7XOTOAQ.jpg" data-lightbox="roadtrip" data-title="Coronavirus Updates Army Times">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/EOJRtZ_Sw3n92tVDqWZI-jQtE1k=/500x385/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/ZZZCVHCSPVDLBPTK4RN7XOTOAQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmzJRAttIerbFrtk-e6DKyaNYChkZP5vldQ';" alt="Coronavirus Updates Army Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Updates Army Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/frames/video/2101/781453/486x274_q75.jpg" data-lightbox="roadtrip" data-title="Cquw408tovqlmm">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/frames/video/2101/781453/486x274_q75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2B-AgIy3F9bSZJUVnhAz6mj8k3su5hQCYUg';" alt="Cquw408tovqlmm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cquw408tovqlmm</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.defense.gov/2020/Apr/07/2002276255/1310/736/0/200406-D-HN545-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2B-AgIy3F9bSZJUVnhAz6mj8k3su5hQCYUg';" alt="Cquw408tovqlmm">
+										<div class="card-body">
+						<h3 class="h5"><b>Research studies test new vaccines to help determine if theyre truly safe and effective.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouses and covid vaccine</strong>. 
+								
+																	Every US medical treatment facility in the military will receive that vaccine he said. 
+																	Fifty-three percent of. 
+																	Deirdre SmithNaval Hospital Jacksonville If youre. 
+																	President Joe Biden listens as he tours the COVID-19 vaccine center at Walter Reed National Military Medical Center Friday Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy Aviation Boatswains Mate Airman Austin Pine of the Wasp-class amphibious assault ship Iwo Jima gets a COVID vaccination Jan. 
+																	Over 1 million military retirees and spouses over the age of 75 are now eligible to receive the COVID-19 vaccination as Tricare for Life beneficiaries. 
+																	Chinese military delivered a batch of Covid-19 vaccines to the Pakistan Army on Sunday days after Islamabad received 500000 doses of the coronavirus vaccine from its all-weather ally Beijing. 
+																	January 18 2021 Liz George. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More Than a Million Military Retirees Spouses Now Eligible for COVID Vaccination. 
+																	Research studies require special enrollment and consent. 
+																	They served in the military decades ago often putting their lives on the line for their country. 
+																	The vaccine made by Pfizer and BioNTech could hit DoD distribution sites as early as the end of the week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	McKean went to the VA to drop. 
+																	Officials took their case for the need to receive the coronavirus vaccine directly to military families on Thursday describing the pandemic as an issue of national security. 
+																	Medical experts answer questions about equity and COVID-19 vaccine He simply wanted the potentially lifesaving shot to keep he and his wife Olivia safe. 
+																	Outside of the continental United States three to four overseas locations will receive Modernas COVID. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to Tricares update on Thursday availability of the vaccine may depend on location and officials are working on multiple options to help military hospitals and clinics reach out to potential patients. 
+																	Eventually all beneficiaries will be able to get the vaccine from MTFs civilian providers and TRICARE network pharmacies. 
+																	The Department of Defense DoD in collaboration with the Department of Health and Human Services has launched a program to provide COVID-19 vaccines to service members retirees and their families. 
+																	MORE FROM MILITARY TIMES. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vaccine experts at the Food and Drug Administration meet Thursday to consider issuing an. 
+																	Once the initial phases of the vaccine distribution are completed the vaccines will be more broadly available. 
+																	A single-dose COVID-19 vaccine developed by Chinese firm CanSino Biologics and a team led by Beijings top military bio-warfare expert is reported to show 657 per cent efficacy in preventing. 
+																	The Peoples Liberation Army PLA said in a statement that the Pakistan Army has become the first foreign military to receive the COVID-19 vaccine aid from the Chinese military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Pentagon announced Thursday that the military hospitals will support testing of a COVID-19 vaccine developed by AstraZeneca which announced Aug. 
+																	Under this program the DoD will distribute the vaccines through a series of phases. 
+																	If youre eligible to get a COVID-19 vaccine at VA youll get an authorized vaccine. 
+																	More than half of active-duty military families wont get the COVID-19 vaccine according to a poll conducted among more than 800 military personnel spouses and veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But aging veterans are learning that their sacrifice may not guarantee them a COVID-19 vaccine at a. 
+																	In December defense officials announced that the COVID-19 vaccination program for roughly 11 million personnel would be voluntary because the vaccine had only been approved on an emergency use. 
+																	There were 613 spouses who responded to. 
+																	Military News Veterans Caregivers Are Getting COVID-19 Vaccine Priority VA Says Caregiver staff wave to family of veteran clients as they drive through the parking lot of the Arizona State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	31 that it was beginning widespread testing. 
+																	An authorized COVID-19 vaccine is one that the FDA has determined is safe and effective for public use. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/kSj_KxENZFoiVEFtvdpdjBFiToY=/500x385/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/VZDRXKE7RRHZZCRPQE6WBD3TEE.jpg" data-lightbox="roadtrip" data-title="Coronavirus Updates Army Times">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/kSj_KxENZFoiVEFtvdpdjBFiToY=/500x385/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/VZDRXKE7RRHZZCRPQE6WBD3TEE.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReR1IEMKm5Ap-fl8Iya3YTx4YE74xQ5hRSJw';" alt="Coronavirus Updates Army Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Updates Army Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/11/covid-19-vaccine-for-veterans.jpg" data-lightbox="roadtrip" data-title="Covid Vaccine For Veterans Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/11/covid-19-vaccine-for-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8-bhWlFbwFEfIzi8ymVMtZzBeqqGTwYAgQ';" alt="Covid Vaccine For Veterans Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid Vaccine For Veterans Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images03.military.com/sites/default/files/styles/full/public/2020-06/al-jaber-air-base-food-prep-3000.jpg?itok=CLZRZ6j5" data-lightbox="roadtrip" data-title="Cluster Of Covid 19 Cases In Us Troops Emerges At Kuwaiti Air Base Military Com">
+											<img class="card-img v-image ads-img " src="https://images03.military.com/sites/default/files/styles/full/public/2020-06/al-jaber-air-base-food-prep-3000.jpg?itok=CLZRZ6j5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05FCcmkwasFMVxkpRSmYho3JD84NK2aOb7Q';" alt="Cluster Of Covid 19 Cases In Us Troops Emerges At Kuwaiti Air Base Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cluster Of Covid 19 Cases In Us Troops Emerges At Kuwaiti Air Base Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/07/2002276255/1310/736/0/200406-D-HN545-0001.JPG" data-lightbox="roadtrip" data-title="Coronavirus">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/07/2002276255/1310/736/0/200406-D-HN545-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwAlXiiWIY3YhII3AIgTYzaB14dTEnolJZQ';" alt="Coronavirus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.newsy.com/images/videos/m/1601556742_eOakvG.jpg" data-lightbox="roadtrip" data-title="Surviving Military Spouse Loses Family To Covid 19 Video">
+											<img class="card-img v-image ads-img " src="https://cdn.newsy.com/images/videos/m/1601556742_eOakvG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4q7nMj7SoiK-ROsHNfV8_AcV4JRXqramRJQ';" alt="Surviving Military Spouse Loses Family To Covid 19 Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surviving Military Spouse Loses Family To Covid 19 Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/lab-prep-hands-h.jpg" data-lightbox="roadtrip" data-title="Moaa Va Releases Priority List For Covid 19 Vaccine Distribution">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/lab-prep-hands-h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxny9kcdcuGddlx9snnIkFdlAZ7Bup715bg';" alt="Moaa Va Releases Priority List For Covid 19 Vaccine Distribution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa Va Releases Priority List For Covid 19 Vaccine Distribution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.luke.af.mil/portals/58/AETC%20CAT%20PPT%20photo.jpg" data-lightbox="roadtrip" data-title="Covid 19">
+											<img class="card-img v-image ads-img " src="https://www.luke.af.mil/portals/58/AETC%20CAT%20PPT%20photo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJregKHfVg_HE1ZxbChmIEar12Vs85H2fMQ';" alt="Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5615998024001/1e4a3ace-25f1-41c6-82a6-9508e7d6aa41/564bc67d-5c63-4d81-93df-9c7ac450a4f2/480x270/match/image.jpg" data-lightbox="roadtrip" data-title="Military News The Olympian">
+											<img class="card-img v-image ads-img " src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5615998024001/1e4a3ace-25f1-41c6-82a6-9508e7d6aa41/564bc67d-5c63-4d81-93df-9c7ac450a4f2/480x270/match/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3s2pYFWr9BDhRr9x0XLgx4BcuBKtmwbsmg';" alt="Military News The Olympian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military News The Olympian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://madigan.tricare.mil/portals/104/Images/clinical%20JC/201209-A-OZ010-091.jpg?ver=7zwuyU2YX-6BzlF4879Okw%3D%3D" data-lightbox="roadtrip" data-title="Covid 19 Vaccine">
+											<img class="card-img v-image ads-img " src="https://madigan.tricare.mil/portals/104/Images/clinical%20JC/201209-A-OZ010-091.jpg?ver=7zwuyU2YX-6BzlF4879Okw%3D%3D" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXTlobMF2fn7VJkgRXpFfT-lJK5armEZC2A';" alt="Covid 19 Vaccine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Vaccine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/2020-03/Coronavirus.jpg" data-lightbox="roadtrip" data-title="The Us Military Coronavirus Response Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/2020-03/Coronavirus.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTIW1YR0Z7qQrlvATy65Zz5eOTMh21Dgq5NA';" alt="The Us Military Coronavirus Response Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Us Military Coronavirus Response Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/12/23/Pictures/general-antarctica-base-chile-higgins-bernardo-army_3f7c1436-44be-11eb-bcf5-ed790659da7b.jpg" data-lightbox="roadtrip" data-title="Coronavirus Reaches End Of Earth As First Outbreak Hits Antarctica Hindustan Times">
+											<img class="card-img v-image ads-img " src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/12/23/Pictures/general-antarctica-base-chile-higgins-bernardo-army_3f7c1436-44be-11eb-bcf5-ed790659da7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFZh2CIclwk8QMTCILWrJvrlHgEKeVsJ6fg';" alt="Coronavirus Reaches End Of Earth As First Outbreak Hits Antarctica Hindustan Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Reaches End Of Earth As First Outbreak Hits Antarctica Hindustan Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/2/7d/27d67cbf-3448-56c1-90d9-6bef3a1ab457/5e42f1fb365eb.image.jpg?resize=400%2C267" data-lightbox="roadtrip" data-title="Family And Friends Are Worried About Sc Military Members Health Amid Coronavirus Covid 19 Postandcourier Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/2/7d/27d67cbf-3448-56c1-90d9-6bef3a1ab457/5e42f1fb365eb.image.jpg?resize=400%2C267" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XM_Dw8jANh3Aswtew2OKnknE2vtwmMALww';" alt="Family And Friends Are Worried About Sc Military Members Health Amid Coronavirus Covid 19 Postandcourier Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family And Friends Are Worried About Sc Military Members Health Amid Coronavirus Covid 19 Postandcourier Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2021/Jan/28/2002572486/670/394/0/210126-F-BZ793-005.JPG" data-lightbox="roadtrip" data-title="Commentaries">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2021/Jan/28/2002572486/670/394/0/210126-F-BZ793-005.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVw22LQMF_YLdgkcqef09QogZI8iyvHDlNAw';" alt="Commentaries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commentaries</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-t-shirt-websites.html">Military T Shirt Websites</a></li>
+													<li class="list-group-item"><a href="/military-support-group-names.html">Military Support Group Names</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-brands.html">Military T Shirt Brands</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-for-sale.html">Military T Shirt For Sale</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-for-mens.html">Military T Shirt For Mens</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-design-maker.html">Military T Shirt Design Maker</a></li>
+													<li class="list-group-item"><a href="/military-t-shirts-made-in-usa.html">Military T Shirts Made In Usa</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-letter-template.html">Military Thank You Letter Template</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-with-name.html">Military T Shirt With Name</a></li>
+													<li class="list-group-item"><a href="/military-surplus-hats-for-sale.html">Military Surplus Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-maryland.html">Military Tax Exemption Maryland</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-companies.html">Military T Shirt Companies</a></li>
+													<li class="list-group-item"><a href="/military-surviving-spouse-scholarships.html">Military Surviving Spouse Scholarships</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-damen.html">Military T Shirt Damen</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-south-carolina.html">Military Tax Exemption South Carolina</a></li>
+													<li class="list-group-item"><a href="/military-time-by-half-hour.html">Military Time By Half Hour</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-in-virginia.html">Military Tax Exemption In Virginia</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-new-jersey.html">Military Tax Exemption New Jersey</a></li>
+													<li class="list-group-item"><a href="/military-survival-kit-for-sale.html">Military Survival Kit For Sale</a></li>
+													<li class="list-group-item"><a href="/military-tee-shirts-com.html">Military Tee Shirts Com</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

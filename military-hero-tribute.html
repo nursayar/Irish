@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Hero Tribute - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Hero Tribute",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/cb/b7/d4/cbb7d455554eb3a32b31179818801ae4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+hero+tribute",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Hero Tribute</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A fitting way to pay tribute to Zimbabwean liberation war hero Dumiso DD Dabengwa who has died aged 79 is to depict a snapshot history of the late 1970s and the 1980s that shows the. A military tribute song. Military Tribute Banners was created to do one thing - To honor the individuals serving and those who have served and sacrificed in defense of our nation. <br>				
+			</p>
+										<a class="badge badge-warning" href="/air-force-join-spouse-requirements.html">air force join spouse requirements</a>
+											<a class="badge badge-info" href="/air-force-joint-spouse-regulation.html">air force joint spouse regulation</a>
+											<a class="badge badge-danger" href="/air-force-joint-spouse-program-afi.html">air force joint spouse program afi</a>
+											<a class="badge badge-info" href="/air-force-marriage-laws.html">air force marriage laws</a>
+											<a class="badge badge-dark" href="/air-force-jobs-online-apply.html">air force jobs online apply</a>
+											<a class="badge badge-info" href="/air-force-officer-wife-life.html">air force officer wife life</a>
+											<a class="badge badge-secondary" href="/air-force-officer-programs-for-prior-enlisted.html">air force officer programs for prior enlisted</a>
+											<a class="badge badge-dark" href="/air-force-jobs-qualification-scores.html">air force jobs qualification scores</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/b7/d4/cbb7d455554eb3a32b31179818801ae4.jpg" data-lightbox="roadtrip" data-title="Military Tribute Casting Crowns If We Are The Body Military Quotes Military Heroes Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/b7/d4/cbb7d455554eb3a32b31179818801ae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKQuQNPczUksqXoEBT4p_4L1-_fU1jsp8iuQ';" alt="Military Tribute Casting Crowns If We Are The Body Military Quotes Military Heroes Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tribute Casting Crowns If We Are The Body Military Quotes Military Heroes Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/87/85/5e878563e479269dbbba8487c6d8d84f.jpg" data-lightbox="roadtrip" data-title="Here S To The Heroes A Military Tribute Soldier Songs Hero Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/87/85/5e878563e479269dbbba8487c6d8d84f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsd1d5gFvQJiCAApAdOfvgNqnlUsT9fM9CQw';" alt="Here S To The Heroes A Military Tribute Soldier Songs Hero Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S To The Heroes A Military Tribute Soldier Songs Hero Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/38/5f/92385fbc9027e72e73fd2b4fb1f0f4b8.png" data-lightbox="roadtrip" data-title="Stay Connected To Your Military Hero Military Tribute Bracelets Made For Military Families By A Military Military Jewelry Military Girlfriend Military Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/38/5f/92385fbc9027e72e73fd2b4fb1f0f4b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcajwUhggK5edTgsFX29nTmih4V_HSnMJ_A';" alt="Stay Connected To Your Military Hero Military Tribute Bracelets Made For Military Families By A Military Military Jewelry Military Girlfriend Military Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stay Connected To Your Military Hero Military Tribute Bracelets Made For Military Families By A Military Military Jewelry Military Girlfriend Military Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/71/f4/3e71f4099ad74f65891c3e237e9644ca.jpg" data-lightbox="roadtrip" data-title="Tribute To Our Armed Forces With I M Already Ther Message From Home By Lonestar I Do Not Own The Rights To Military Honor Military Heroes American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/71/f4/3e71f4099ad74f65891c3e237e9644ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPs95We0FC702LFgBObVPHc6oxfOQx8npqpw';" alt="Tribute To Our Armed Forces With I M Already Ther Message From Home By Lonestar I Do Not Own The Rights To Military Honor Military Heroes American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tribute To Our Armed Forces With I M Already Ther Message From Home By Lonestar I Do Not Own The Rights To Military Honor Military Heroes American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/a3/f5/b3a3f57247a9afc5a51bdbfac97ffe4e.jpg" data-lightbox="roadtrip" data-title="Skillet Hero Usmc Tribute Iraq War American Soldiers Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/a3/f5/b3a3f57247a9afc5a51bdbfac97ffe4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmeGi73ZXHkINO3shkWLYyZsWxcewPFQgJ-w';" alt="Skillet Hero Usmc Tribute Iraq War American Soldiers Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skillet Hero Usmc Tribute Iraq War American Soldiers Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/ef/eb/82efebd3d860298aba0c6710d8e9903d.jpg" data-lightbox="roadtrip" data-title="My Son My Hero Military My Hero Tribute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/ef/eb/82efebd3d860298aba0c6710d8e9903d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfTR6XDZynPf08EkfCu9AldcZuxVZLUGQ51A';" alt="My Son My Hero Military My Hero Tribute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Son My Hero Military My Hero Tribute</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/95/91/3e/95913ed87fed37e5389f1cb8c6a657b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfTR6XDZynPf08EkfCu9AldcZuxVZLUGQ51A';" alt="My Son My Hero Military My Hero Tribute">
+										<div class="card-body">
+						<h3 class="h5"><b>He rarely spoke about his exploits as a soldier but his daughter has paid tribute to him as a wonderful and inspirational fathe r who will be missed by many.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military hero tribute</strong>. 
+								
+																	Our Banners and Program Pricing Are the Best - Bar None. 
+																	The Tribute for Heroes Contest is open only to legal residents of the fifty 50 United States the District of Columbia and Canada excluding residents of Quebec who are at least eighteen 18 years of age as of 51713. 
+																	The best way is to call us directly or simply fill out the form below and we will reply as quickly as we can. 
+																	Tolulope Arotile who made history in October 2019 when she was winged as Nigerias first female combat helicopter pilot in the 55 years of existence of the Nigerian Air Force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Void in Quebec and. 
+																	Original song Hero performed by Forbidden Symphony. 
+																	News Opinion State funeral with full military honours - Readers discuss a fitting tribute to Captain Sir Tom Moore Sadly this week we had to say goodbye to one of the undoubted heroes of. 
+																	Last year Maisie Catt who lost her legs to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military heroes including RAF veterans and ex-Royal Marines are among those who have told their tales and shared how their tattoos remember the people that have left a mark on them. 
+																	In his tribute to the departed members of the Armed Forces the VP recalled the heroism of the late Ms. 
+																	Please feel free to contact us with any questions or comments you may have. 
+																	The White House and the US Embassy in London on Tuesday paid tribute to British war hero Captain Sir Tom Moore who died at the age of 100 after capturing the worlds hearts by walking 100 laps in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are a full-service military banner program company that can compete and beat all others when it comes to. 
+																	Going Home has become a standard bagpipe song played at funerals both military and civilian for years. 
+																	Eastern time ET on 4413 and ends at 1159 pm. 
+																	See more ideas about military tribute support our troops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Box 153107 Cape Coral FL 33915. 
+																	MILITARY TRIBUTE BANNERS PROGRAM PRICING with Cost-Match Guarantee - ensuring the absolute best value in Military Banners available. 
+																	In fact as we carried my own grandmum out of the fu. 
+																	We are not a cheap print shop where they quote you based on printing alone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To do our part in honoring those that sacrificed all for our nation we will print at no cost program banners for those who lost their lives in the recent Gulf Wars as well as those who died due to the inner struggles of those wars. 
+																	1136 NE Pine Island Road Unit 62 Cape Coral FL 33909. 
+																	Mr Kubis who died on Monday. 
+																	Wear the Never Forgotten Bracelet as your everyday reminder that your hero walks with you each and every day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This was made in memory of all those lost in war both past and present. 
+																	This is a tribute to the US Military. 
+																	A special military tribute bracelet that honors the service of your American hero who is gone but never forgotten. 
+																	May 1 2013 - Explore Buck Ayerss board Military Tribute on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I hope this video touches everyone who has lost someone in their lives. 
+																	The single Black Onyx center stone represents your hero who proudly served our country and who lives in your heart forever. 
+																	Hero by skillet i do not own the rights to the song and i did not make this all credit goes to xRogue23x. 
+																	Skill testing question required for residents of Canada. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An 11-year-old double leg amputee is paying tribute to her real-life hero Cpt Sir Tom Moore by walking an entire marathon in her garden in his memory. 
+																	Contest begins at 1201 am. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/09/a4/fc09a4fee841bd9e8e5c0c89b370dbeb.jpg" data-lightbox="roadtrip" data-title="A Hero S Welcome Prints Police Memorial Print Number 3 Police Memorial Soldier Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/09/a4/fc09a4fee841bd9e8e5c0c89b370dbeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7W77PrKZS4Jj3u3vQKCLFHkd_cvIvUl5yAQ';" alt="A Hero S Welcome Prints Police Memorial Print Number 3 Police Memorial Soldier Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Hero S Welcome Prints Police Memorial Print Number 3 Police Memorial Soldier Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/59/75/21597533715da4a4821d960de033933c.jpg" data-lightbox="roadtrip" data-title="A Tribute To The Real Heroes Of India Real Hero Hero Tribute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/59/75/21597533715da4a4821d960de033933c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNvlm4rIHIwt20gwOhAMeMTSul2HhPXsiNGA';" alt="A Tribute To The Real Heroes Of India Real Hero Hero Tribute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Tribute To The Real Heroes Of India Real Hero Hero Tribute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/f0/c4/caf0c46bf111d07b90aa7b55af92787e.jpg" data-lightbox="roadtrip" data-title="One Nation Strong Art Poster Print By Danny Hahlbohm A Tribute To Our American Heroes Of Military Police And Firefighters Art Art Gallery American Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/f0/c4/caf0c46bf111d07b90aa7b55af92787e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLym1AGc06xbQPlxVTqsT2QEl4xc8P1ltQPg';" alt="One Nation Strong Art Poster Print By Danny Hahlbohm A Tribute To Our American Heroes Of Military Police And Firefighters Art Art Gallery American Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Nation Strong Art Poster Print By Danny Hahlbohm A Tribute To Our American Heroes Of Military Police And Firefighters Art Art Gallery American Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/cb/70/39cb7014059e0f5a1432635035f35e23.jpg" data-lightbox="roadtrip" data-title="Afghanistan War 1and The War Rages On In Afghanistan The U S Government Should Do Our Soldiers A Favor And Bring Them An Afghanistan War Military Heroes War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/cb/70/39cb7014059e0f5a1432635035f35e23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd3-mUJoQyT6sC3nTsuV1mUBZ8uaGyNwpwMw';" alt="Afghanistan War 1and The War Rages On In Afghanistan The U S Government Should Do Our Soldiers A Favor And Bring Them An Afghanistan War Military Heroes War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan War 1and The War Rages On In Afghanistan The U S Government Should Do Our Soldiers A Favor And Bring Them An Afghanistan War Military Heroes War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/9b/b6/8c9bb609cf85bf897683936e90e52451.jpg" data-lightbox="roadtrip" data-title="Tribute To Our Fallen Soldiers Us Army Pfc Sarina N Butcher 19 Of Checotah Ok Military Heroes American Heroes Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/9b/b6/8c9bb609cf85bf897683936e90e52451.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0r3O--uKMm0-rJylbBGziVPuYMnQkAXuBLg';" alt="Tribute To Our Fallen Soldiers Us Army Pfc Sarina N Butcher 19 Of Checotah Ok Military Heroes American Heroes Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tribute To Our Fallen Soldiers Us Army Pfc Sarina N Butcher 19 Of Checotah Ok Military Heroes American Heroes Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/31/69/a831699d9924c9a4637e9e43523050b5.jpg" data-lightbox="roadtrip" data-title="Military Tribute Band Shinedown Military Honor Military Videos Eminem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/31/69/a831699d9924c9a4637e9e43523050b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdCIXtsetd4z75dezMzcYsAqSk0LFwRfseow';" alt="Military Tribute Band Shinedown Military Honor Military Videos Eminem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tribute Band Shinedown Military Honor Military Videos Eminem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/eb/e2/78ebe253fa49f0922bf3eecd08f6d191.jpg" data-lightbox="roadtrip" data-title="1 000 Mourners Pay Tribute To 25 Year Old Army Medic Channing Day Who Died In Firefight While Serving In Afghanistan Army Medic American Heroes Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/eb/e2/78ebe253fa49f0922bf3eecd08f6d191.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7XaggQfLRFug79Z7Et5haD-pkQQp8bxJGQ';" alt="1 000 Mourners Pay Tribute To 25 Year Old Army Medic Channing Day Who Died In Firefight While Serving In Afghanistan Army Medic American Heroes Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 000 Mourners Pay Tribute To 25 Year Old Army Medic Channing Day Who Died In Firefight While Serving In Afghanistan Army Medic American Heroes Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/9f/ab/4e9fab826de130f529c564f2ab751e56.jpg" data-lightbox="roadtrip" data-title="Sealofhonor Honoring Army Staff Sgt Carl E Hammar Who Selflessly Sacrificed His Life Four Years Ago Today Military Heroes American Soldiers War Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/9f/ab/4e9fab826de130f529c564f2ab751e56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2VyhQeX1_lRm1pIT0Wv4tKNEM3gIRQELZ7w';" alt="Sealofhonor Honoring Army Staff Sgt Carl E Hammar Who Selflessly Sacrificed His Life Four Years Ago Today Military Heroes American Soldiers War Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sealofhonor Honoring Army Staff Sgt Carl E Hammar Who Selflessly Sacrificed His Life Four Years Ago Today Military Heroes American Soldiers War Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/09/7e/82097e053c82a69bebe470b45589b862.jpg" data-lightbox="roadtrip" data-title="Military Heroes Military Heroes Hero Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/09/7e/82097e053c82a69bebe470b45589b862.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuhAyZhDx5z2zdY5-TAhfWhBHv_hnk3PtPg';" alt="Military Heroes Military Heroes Hero Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Heroes Military Heroes Hero Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/5f/30/975f30098b282ed5646302b7c390ea3a.jpg" data-lightbox="roadtrip" data-title="A Hero S Welcome Police 2 By Robert Longley In 2021 Soldier Quotes Police Memorial Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/5f/30/975f30098b282ed5646302b7c390ea3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSph9fiTOWtr1DpMe57gAVEV1GR38X50djgBw';" alt="A Hero S Welcome Police 2 By Robert Longley In 2021 Soldier Quotes Police Memorial Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Hero S Welcome Police 2 By Robert Longley In 2021 Soldier Quotes Police Memorial Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/a2/44/f6a244ae53a2724b32d5c812fcd6da2d.jpg" data-lightbox="roadtrip" data-title="As We Pay Tribute To Veterans Of The U S Armed Forces We Can T Forget The Famous Faces Who Served In The Mi American Heroes Military Heroes American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/a2/44/f6a244ae53a2724b32d5c812fcd6da2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU0uTaFV36U_rG4QFI0AYRO021cpoR9ycYA';" alt="As We Pay Tribute To Veterans Of The U S Armed Forces We Can T Forget The Famous Faces Who Served In The Mi American Heroes Military Heroes American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As We Pay Tribute To Veterans Of The U S Armed Forces We Can T Forget The Famous Faces Who Served In The Mi American Heroes Military Heroes American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/91/3e/95913ed87fed37e5389f1cb8c6a657b9.jpg" data-lightbox="roadtrip" data-title="A Hero Of The American Army Forever To Be Wounded But Proud Of His Tribute To His Country Hero Military Heroes Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/91/3e/95913ed87fed37e5389f1cb8c6a657b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7N66DX5tljPbwCc-P16AGLIYWZB9eu1kVfg';" alt="A Hero Of The American Army Forever To Be Wounded But Proud Of His Tribute To His Country Hero Military Heroes Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Hero Of The American Army Forever To Be Wounded But Proud Of His Tribute To His Country Hero Military Heroes Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/c3/29/05c329e71bd06bb177c5e08207de6c4b.jpg" data-lightbox="roadtrip" data-title="Born To Rise Us Military Tribute Military Heroes Military Music Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/c3/29/05c329e71bd06bb177c5e08207de6c4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0J4QtMPZBlMpsezhyT64pTyYVTI1sY1KLQ';" alt="Born To Rise Us Military Tribute Military Heroes Military Music Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Born To Rise Us Military Tribute Military Heroes Military Music Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-time-right-now-chicago.html">Military Time Right Now Chicago</a></li>
+													<li class="list-group-item"><a href="/military-wife-purse-company.html">Military Wife Purse Company</a></li>
+													<li class="list-group-item"><a href="/military-time-to-now.html">Military Time To Now</a></li>
+													<li class="list-group-item"><a href="/military-wife-killed.html">Military Wife Killed</a></li>
+													<li class="list-group-item"><a href="/military-time-now-in-uk.html">Military Time Now In Uk</a></li>
+													<li class="list-group-item"><a href="/military-wife-pregnant-husband-deployed.html">Military Wife Pregnant Husband Deployed</a></li>
+													<li class="list-group-item"><a href="/military-wife-vlogs.html">Military Wife Vlogs</a></li>
+													<li class="list-group-item"><a href="/military-wife-instagram-influencers.html">Military Wife Instagram Influencers</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-for-spouses.html">Military Tuition Assistance For Spouses</a></li>
+													<li class="list-group-item"><a href="/military-timesheet-minutes.html">Military Timesheet Minutes</a></li>
+													<li class="list-group-item"><a href="/military-wife-retirement-poem.html">Military Wife Retirement Poem</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-brize-norton.html">Military Wives Choir Brize Norton</a></li>
+													<li class="list-group-item"><a href="/military-time-for-half-hour.html">Military Time For Half Hour</a></li>
+													<li class="list-group-item"><a href="/military-time-now-az.html">Military Time Now Az</a></li>
+													<li class="list-group-item"><a href="/military-time-right-now-eastern.html">Military Time Right Now Eastern</a></li>
+													<li class="list-group-item"><a href="/military-time-right-now-pacific.html">Military Time Right Now Pacific</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-christmas-cards.html">Military Wives Choir Christmas Cards</a></li>
+													<li class="list-group-item"><a href="/military-time-pdt-now.html">Military Time Pdt Now</a></li>
+													<li class="list-group-item"><a href="/military-time-cheat-sheet-print.html">Military Time Cheat Sheet Print</a></li>
+													<li class="list-group-item"><a href="/military-velcro-hat.html">Military Velcro Hat</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

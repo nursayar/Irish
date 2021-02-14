@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Careers After Msc Botany - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Careers After Msc Botany",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/88/0a/0b/880a0ba3ac6789315a5e7296b28031ca.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=careers+after+msc+botany",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Careers After Msc Botany</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Careers Relevant to a Botany Degree. Amongst the prominent sought-after branches of Biology Botany encompasses the study of plants their structure classification amongst other factors. The common jobs in banks for MS. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/spouse-of-veteran-benefits-assisted-living.html">spouse of veteran benefits assisted living</a>
+											<a class="badge badge-secondary" href="/sscn-bkn-kalteng.html">sscn bkn kalteng</a>
+											<a class="badge badge-primary" href="/sscn-bkn-data.html">sscn bkn data</a>
+											<a class="badge badge-secondary" href="/sscn-bkn-formasi-cpns-2019.html">sscn bkn formasi cpns 2019</a>
+											<a class="badge badge-success" href="/sscn-bkn-jadwal-ujian.html">sscn bkn jadwal ujian</a>
+											<a class="badge badge-light" href="/southwest-airlines-military-dependents-baggage.html">southwest airlines military dependents baggage</a>
+											<a class="badge badge-dark" href="/spouses-of-deceased-marines-are-eligible-to-remain-in-on-base-quarters.html">spouses of deceased marines are eligible to remain in on base quarters</a>
+											<a class="badge badge-warning" href="/spousal-support-for-military-divorce.html">spousal support for military divorce</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our website provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/dc/5d/14dc5d9b36f949e0e6878beb17e5fb7a.png" data-lightbox="roadtrip" data-title="Image Careeroriented Lifesc Png Biotechnology Biology Science Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/dc/5d/14dc5d9b36f949e0e6878beb17e5fb7a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxSHtQpJVh_G_EAtxn36H-dEjY43HdBTVIg';" alt="Image Careeroriented Lifesc Png Biotechnology Biology Science Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Careeroriented Lifesc Png Biotechnology Biology Science Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/68/f4/d868f4cc62cd08d6ff20cdba996e88c7.jpg" data-lightbox="roadtrip" data-title="M Power S Career Path Finder Chart By Prof Vijay Navale And Mahesh Narke Career Counselling Karmayog Or Career Counseling Career Guidance Career Options">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/68/f4/d868f4cc62cd08d6ff20cdba996e88c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVogKtNHw8i3JxwHgO9-QAS7SVWUgtpK4yCw';" alt="M Power S Career Path Finder Chart By Prof Vijay Navale And Mahesh Narke Career Counselling Karmayog Or Career Counseling Career Guidance Career Options">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">M Power S Career Path Finder Chart By Prof Vijay Navale And Mahesh Narke Career Counselling Karmayog Or Career Counseling Career Guidance Career Options</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/d6/c8/a0d6c8ce35544af288d16cf7d8934172.gif" data-lightbox="roadtrip" data-title="I Wish To Take Biotechnology But Am Not Sure About The Career Prospects And Study Route After 12th Kindly Guide M Biotechnology Careers Biotechnology Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/d6/c8/a0d6c8ce35544af288d16cf7d8934172.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4l-AQoY7w7-S9AAMdbBob_aSrM8sZHlnHgA';" alt="I Wish To Take Biotechnology But Am Not Sure About The Career Prospects And Study Route After 12th Kindly Guide M Biotechnology Careers Biotechnology Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Wish To Take Biotechnology But Am Not Sure About The Career Prospects And Study Route After 12th Kindly Guide M Biotechnology Careers Biotechnology Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/91/dc/4091dc0b2102ad9508516b095c11d222.jpg" data-lightbox="roadtrip" data-title="Msc Botany Courses Botany Courses Botany Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/91/dc/4091dc0b2102ad9508516b095c11d222.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLGjMVwk2tz_bOjkHkgv1MKsCvXOMRxxJIFQ';" alt="Msc Botany Courses Botany Courses Botany Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Botany Courses Botany Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/5d/ca/b75dca49ab2b4e825307d9aa7ce56979.png" data-lightbox="roadtrip" data-title="Msc Botany Courses Botany Msc College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/5d/ca/b75dca49ab2b4e825307d9aa7ce56979.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMrclynKZ92wbQCA0d_Zh1B4jcFb9upYUU8A';" alt="Msc Botany Courses Botany Msc College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Botany Msc College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/0a/0b/880a0ba3ac6789315a5e7296b28031ca.jpg" data-lightbox="roadtrip" data-title="Msc Botany Courses Botany Courses Botany Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/0a/0b/880a0ba3ac6789315a5e7296b28031ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOVfR1Cm-mEtIXTAAo523Mo2YCWPpSKyHJQ';" alt="Msc Botany Courses Botany Courses Botany Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Botany Courses Botany Msc</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f8/0f/e7/f80fe720a16450e80e36e9aa13bc2dad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOVfR1Cm-mEtIXTAAo523Mo2YCWPpSKyHJQ';" alt="Msc Botany Courses Botany Courses Botany Msc">
+										<div class="card-body">
+						<h3 class="h5"><b>Possible Botany Careers Aside from botanist there are many other types of careers which could make use of an education in botany.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Careers after msc botany</strong>. 
+								
+																	Building a career in Botany you will gain an in-depth understanding of plant science and physiology and carry out further research in the same. 
+																	You can get a job role of Plant Taxonomy Weed Scientists Ethnobiology Plant Scientists Pathology Palynology Plant ecology and much more. 
+																	After the completion of MSc in botany you can work in public and government sector as well. 
+																	Agricultural Chemist Agricultural Consultant Agrologist Biologist Biostatistician Blogger. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jobs with a Bachelors Degree in Botany Academic Journal Assistant Editor. 
+																	Many of these careers will have a narrower focus such as working. 
+																	The teaching can be for Mathematics physics chemistry zoology botany etc. 
+																	A degree in botany serves as an excellent foundation for careers both in and out of science. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Owing to the rapid expansion of this sector a number of fields open up for botany graduates to excel in such as food companies forest services biotechnology educational institutions biological supply houses national parks plant resources laboratory arboretum chemical industry food companies plant health inspection services seed and nurseries companies and land management agencies. 
+																	Job Scope Salary Placements for Master of Science MSc Botany. 
+																	Application of science and technology in living organisms is the major objective of Biotechnology course. 
+																	Botany is a vast field of study that can lead to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Botany might just be one of the most preferred careers in India. 
+																	The graduates can go for many fields in botany such as Plant Taxonomy Ethnobiology Pathology Palaeobolagy and Palynology Plant cytology Plant geneticists Plant ecology Plant Scientists and Weed Scientists etc. 
+																	The option of working with private firms is often pursued by the graduates of MSc Botany. 
+																	KeySkills professor teaching NEET Biology Zoology Botany Tutor School University Full-Time Msc Jobs North East Bihar PGT Offline Joining Faculty Guwahati Raipur Kolkata 2 - 7 yrs Rs 420 - 1200 Lacs pa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is also a good option but has a good amount of dealing with the public. 
+																	You can get a job role of Plant Taxonomy Weed Scientists Ethnobiology Plant Scientists Pathology Palynology Plant ecology and much more. 
+																	After completing a Masters in Botany makes you will earn the title of a professional Botanist. 
+																	It can however be of particular benefit to you if youre interested in pursuing any of the following careers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medical coding job Medical Coder job Biotech job biotechnology job microbiology job Nursing job staff Nurse Job Pharmacy job dentist job physiotherapist jobs biochemistry jobs Anatomy Physiology Pathology Icd Cpt Life Science Paramedica. 
+																	Career After Msc Botany. 
+																	After the completion of MSc in botany you can work in public and government sector as well. 
+																	After dully completing their bachelors education in Botany a candidate can look forward to being a part of the industry by working as a technician whereas a candidate after completing hisher masters education can look forward to working with some industry giants or being a part of good research teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People include field officers to help in the evaluation of loan admissible to farmers based on irrigation yield crop type etc. 
+																	What can I do with a botany degree. 
+																	After the completion of MSc in botany you can work in public and government sector as well. 
+																	You can choose to work with the public or private sector. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Botany career jobs and salary - This career related video lecture explains what to do after BSc. 
+																	It is a different course from Botany where students are taught core concepts of Biotechnology. 
+																	If you are passionate about food and you want to contribute on mitigating major worldwide problems as Food security and Food safety our MSc course is your gateway for succeeding in this areaDeveloped with and for the industry our graduates are highly valued by different Agrifood businesses and thus we have a very high employment rate of 945 for our School. 
+																	You can get a job role of Plant Taxonomy Weed Scientists Ethnobiology Plant Scientists Pathology Palynology Plant ecology and much more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSc Biotechnology is the right choice for students who are looking for professional opportunities after BSc Botany. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/20/c8/d020c8944ccaf5227e23a2808542b736.jpg" data-lightbox="roadtrip" data-title="Do I Have Any Scope For Jobs Outside India After Msc In Biotechnology Biotechnology Science Biology Engineering Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/20/c8/d020c8944ccaf5227e23a2808542b736.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvnDjjbkN0Mupa9-VfvTZmsftXrwY76R2AA';" alt="Do I Have Any Scope For Jobs Outside India After Msc In Biotechnology Biotechnology Science Biology Engineering Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do I Have Any Scope For Jobs Outside India After Msc In Biotechnology Biotechnology Science Biology Engineering Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/a1/0b/38a10b67de960394ad0b93d749641759.jpg" data-lightbox="roadtrip" data-title="Choose One Of The Most Preferred Careers Botanist That Include The Study Of Plants Research Working With Industries And Being A Part Of Botany Msc College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/a1/0b/38a10b67de960394ad0b93d749641759.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdCtwH3PZFbXY-RoGg9h2I0BNgTVn3wih_qg';" alt="Choose One Of The Most Preferred Careers Botanist That Include The Study Of Plants Research Working With Industries And Being A Part Of Botany Msc College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choose One Of The Most Preferred Careers Botanist That Include The Study Of Plants Research Working With Industries And Being A Part Of Botany Msc College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/65/18/926518df1644919d1a7b8f6588cd5421.jpg" data-lightbox="roadtrip" data-title="Msc Botany Courses Botany Botany Courses Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/65/18/926518df1644919d1a7b8f6588cd5421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkatHcqZ_M9dBCHbJWSNeQh_3qMogyRXP-2g';" alt="Msc Botany Courses Botany Botany Courses Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Botany Botany Courses Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/df/d5/53dfd5bb9f02ffdadb097ab22e148af3.jpg" data-lightbox="roadtrip" data-title="Msc Chemistry Courses Chemistry Msc Life Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/df/d5/53dfd5bb9f02ffdadb097ab22e148af3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3neVXsqmGzYhX6m23a-AmuQXHxKvQTZsmnQ';" alt="Msc Chemistry Courses Chemistry Msc Life Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Chemistry Courses Chemistry Msc Life Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/1c/fa/231cfa5a3d81150ea2d743e91142bde2.png" data-lightbox="roadtrip" data-title="I Have Attended The Exam Of T Y Bsc Botany So I Do M Sc Biotechnology And Which Kind Of Job I Will Get In Which Kind Of Co Biotechnology Botany College Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/1c/fa/231cfa5a3d81150ea2d743e91142bde2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb28_lviwjczkekPDaTq2nPqIHbGpvkXloFw';" alt="I Have Attended The Exam Of T Y Bsc Botany So I Do M Sc Biotechnology And Which Kind Of Job I Will Get In Which Kind Of Co Biotechnology Botany College Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Have Attended The Exam Of T Y Bsc Botany So I Do M Sc Biotechnology And Which Kind Of Job I Will Get In Which Kind Of Co Biotechnology Botany College Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/36/ec/b236ecf484224d6b42a54b486c762acc.jpg" data-lightbox="roadtrip" data-title="Image Result For Botany Botany Planting Flowers Garden Plants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/36/ec/b236ecf484224d6b42a54b486c762acc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0YT7freYqfuN0UpprQcHl1hT5zFx_YTvbQ';" alt="Image Result For Botany Botany Planting Flowers Garden Plants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Botany Botany Planting Flowers Garden Plants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/0f/e7/f80fe720a16450e80e36e9aa13bc2dad.png" data-lightbox="roadtrip" data-title="Various Career Opportunities In Msc Chemistry Course Chemistry Career Opportunities Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/0f/e7/f80fe720a16450e80e36e9aa13bc2dad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfFD8LMVSHDO7D0ppHQnnsDts0Dwa-6hc-g';" alt="Various Career Opportunities In Msc Chemistry Course Chemistry Career Opportunities Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Various Career Opportunities In Msc Chemistry Course Chemistry Career Opportunities Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/12/a8/7a/12a87a71e318e2b8b137eb562176748b.jpg" data-lightbox="roadtrip" data-title="A Career In Msc Botany Courses In India Botany Msc Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/12/a8/7a/12a87a71e318e2b8b137eb562176748b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyhKjDkJ2RI2VCEE0x3q0TNRgsGOvoqwjJw';" alt="A Career In Msc Botany Courses In India Botany Msc Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Career In Msc Botany Courses In India Botany Msc Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/82/a8/83/82a8833099c6f08c46367a3b8533f6fe.jpg" data-lightbox="roadtrip" data-title="Msc Botany Courses Msc Botany Life Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/82/a8/83/82a8833099c6f08c46367a3b8533f6fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHoeQrFs97MksGC-bcVej9jOSxMV8RcvhrJQ';" alt="Msc Botany Courses Msc Botany Life Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Msc Botany Life Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/1d/e4/9d1de4ade91bafe1738d5a470f196588.jpg" data-lightbox="roadtrip" data-title="Msc Botany Courses Dolphin Pg College Of Science Agriculture Botany Msc College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/1d/e4/9d1de4ade91bafe1738d5a470f196588.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM31hOM10iarVQpkiCHJNTZwAI4IZKzU0PDQ';" alt="Msc Botany Courses Dolphin Pg College Of Science Agriculture Botany Msc College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msc Botany Courses Dolphin Pg College Of Science Agriculture Botany Msc College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/cc/a6/2dcca6c49ed3afdf52d3cb39bf71c4c6.jpg" data-lightbox="roadtrip" data-title="Pin By عالم التذوق الفنى On قص ولصق Biotechnology College Fun Msc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/cc/a6/2dcca6c49ed3afdf52d3cb39bf71c4c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOgeh4F2jUjFHvzgKgGXDtQEkoI7_lR7TtHw';" alt="Pin By عالم التذوق الفنى On قص ولصق Biotechnology College Fun Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By عالم التذوق الفنى On قص ولصق Biotechnology College Fun Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/b0/4b/89b04bc221568eb78a9ea0777aa3d484.jpg" data-lightbox="roadtrip" data-title="Career Options After Msc Microbiology Job Prospects Scope In 2020 Microbiology Career Options Career Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/b0/4b/89b04bc221568eb78a9ea0777aa3d484.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJO7MXMtex05NK4014Oo37EqcxScJMe6XAA';" alt="Career Options After Msc Microbiology Job Prospects Scope In 2020 Microbiology Career Options Career Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Options After Msc Microbiology Job Prospects Scope In 2020 Microbiology Career Options Career Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/94/9e/de949e3924755492753f308d4a493526.png" data-lightbox="roadtrip" data-title="Professional Botany Assignment Help And Writing Services Botany Branches Of Biology Assignment Writing Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/94/9e/de949e3924755492753f308d4a493526.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ZtFfyj6t6RUIRhmJwo0B-nT9h33JNt7pKQ';" alt="Professional Botany Assignment Help And Writing Services Botany Branches Of Biology Assignment Writing Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional Botany Assignment Help And Writing Services Botany Branches Of Biology Assignment Writing Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-disability-dependent-education-benefits.html">Veterans Disability Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-records-fire-st-louis.html">Veterans Records Fire St Louis</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-system-of-records.html">Veterans Affairs System Of Records</a></li>
+													<li class="list-group-item"><a href="/war-heroes-bunker-stats.html">War Heroes Bunker Stats</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-survivor-benefits.html">Veterans Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-dependent-education-assistance.html">Veterans Affairs Dependent Education Assistance</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-of-world-war-2.html">Veterans Benefits For Widows Of World War 2</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-for-surviving-spouse.html">Veterans Disability Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-benefits-assisted-living.html">Veterans Spouse Benefits Assisted Living</a></li>
+													<li class="list-group-item"><a href="/veterans-service-records-uk.html">Veterans Service Records Uk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-alliance.html">War Heroes Alliance</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-scholarships-for-dependents.html">Veterans Affairs Scholarships For Dependents</a></li>
+													<li class="list-group-item"><a href="/veterans-ptsd-support-uk.html">Veterans Ptsd Support Uk</a></li>
+													<li class="list-group-item"><a href="/virginia-divorce-laws-military-retirement.html">Virginia Divorce Laws Military Retirement</a></li>
+													<li class="list-group-item"><a href="/vetrecsarchivesgovveteran-requesthomehtml.html">Vetrecsarchivesgovveteran Requesthomehtml</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-id-card.html">Veterans Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/vietnam-veteran-dependent-college-scholarship.html">Vietnam Veteran Dependent College Scholarship</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-benefits-after-death.html">Veterans Spouse Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-of-wwii-vets.html">Veterans Benefits For Widows Of Wwii Vets</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-divorce-rights.html">Veterans Benefits Divorce Rights</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

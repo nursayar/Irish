@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Student Loans For Dependents - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Student Loans For Dependents",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+student+loans+for+dependents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Student Loans For Dependents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military Dependent Financial Aid. ITT Technical Institute has shut the doors on all of its 130 locations in 38 states a move that affects thousands of military veterans or their dependents. Income-based repayment programs are available to any person with student loan debt and are great options for military spouses family members veterans and as an additional support for service members. <br>				
+			</p>
+										<a class="badge badge-warning" href="/navy-t-shirt-pack.html">navy t shirt pack</a>
+											<a class="badge badge-success" href="/navy-t-shirt-mockup.html">navy t shirt mockup</a>
+											<a class="badge badge-secondary" href="/navy-t-shirt-black-jeans.html">navy t shirt black jeans</a>
+											<a class="badge badge-primary" href="/navy-social-worker-requirements.html">navy social worker requirements</a>
+											<a class="badge badge-warning" href="/navy-seal-officer-timeline.html">navy seal officer timeline</a>
+											<a class="badge badge-success" href="/navy-seal-officer-physical-requirements.html">navy seal officer physical requirements</a>
+											<a class="badge badge-warning" href="/navy-t-shirt-template.html">navy t shirt template</a>
+											<a class="badge badge-primary" href="/navy-t-shirt-bras.html">navy t shirt bras</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" data-lightbox="roadtrip" data-title="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/ab/34/0dab3413c3cadba268d9f23dd39d4a1d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ewK8xkXgpDqhfP0uUyzRjwFzHpq4bwT03w';" alt="Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Guide To Military Scholarships For Veterans Dependents And Spouses The Scholarship System Military Scholarships Scholarships For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e1/23/f5/e123f540dc8d5351a45260497845e099.jpg" data-lightbox="roadtrip" data-title="Military Dependent Scholarship For College Easy Application Scholarships For College Military Dependent Scholarships Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e1/23/f5/e123f540dc8d5351a45260497845e099.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIG5qcJu_BfKkKiuCPUIMLF7rr7_UY2O8k2A';" alt="Military Dependent Scholarship For College Easy Application Scholarships For College Military Dependent Scholarships Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Dependent Scholarship For College Easy Application Scholarships For College Military Dependent Scholarships Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fc/a5/ca/fca5ca1da4ba7195b25d8882cd4a081f.jpg" data-lightbox="roadtrip" data-title="A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fc/a5/ca/fca5ca1da4ba7195b25d8882cd4a081f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKIBX0RRRIXZV5Q4WIJgTnr_Z93U87Jw9G_w';" alt="A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/5a/7c/ca5a7c031d092e956322e9aa99b71c45.jpg" data-lightbox="roadtrip" data-title="Our New Scholarship Helps Military Veteran Spouses And Dependents Complete Their Degree Http Financial Aid For College Scholarships For College Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/5a/7c/ca5a7c031d092e956322e9aa99b71c45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDSkUrsvKrv6xwzxqYv56GJA4da2FCYWZE0Q';" alt="Our New Scholarship Helps Military Veteran Spouses And Dependents Complete Their Degree Http Financial Aid For College Scholarships For College Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our New Scholarship Helps Military Veteran Spouses And Dependents Complete Their Degree Http Financial Aid For College Scholarships For College Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" data-lightbox="roadtrip" data-title="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdINLWaGEcRo1qrV_MT1svRfYBuBgVr6fhDQ';" alt="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" data-lightbox="roadtrip" data-title="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTW6g7sr74WR1t0tHTb4LlDMVu1ydmwdu1zw';" alt="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/03/27/54/032754b543a8230af792ccc38399b7d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTW6g7sr74WR1t0tHTb4LlDMVu1ydmwdu1zw';" alt="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Some programs also offer student aid and scholarships to help veterans complete their own educations.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military student loans for dependents</strong>. 
+								
+																	Providing fast financing fixed rates and flexible terms military spouse loans give you cash for any need from school supplies to a post-deployment family vacation. 
+																	Public Service Loan Forgiveness PSLF Program. 
+																	Supplemental Education Loan Program - This loan is open only to dependents of regular Active Duty some reservists and retired members who applied for the General Henry H. 
+																	Individual colleges may also provide scholarships to the spouses and children of servicemembers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Survivors and Dependents Educational Assistance Program DEA Transferability. 
+																	Military Officers Association of America MOAA MOAA offers several educational assistance programs including interest-free loans grants and the American Patriot Scholarship. 
+																	Enrolling new students who used. 
+																	Other Ways to Help with Student Loans If youve already taken out federal student loans there are a few ways that you can make your payments more manageable and even have a portion of the balance forgiven. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Officers Association of America MOAA MOAA offers several educational assistance programs including interest-free loans grants and the American Patriot Scholarship. 
+																	As a military spouse you might be wondering if there is help for you and your student loans. 
+																	Unsubsidized Stafford Loans are not need-based student loans but the school determines how much you may borrow. 
+																	And the transferability option of the Post-911 GI Bill allows service members to assign all or some of their unused benefits to a spouse or dependent children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal State Assistance. 
+																	The Montgomery GI Bill is the most common source of education funding for military dependents although a number of. 
+																	Providing fast financing fixed rates and flexible terms military spouse loans give you cash for any need from school supplies to a post-deployment family vacation. 
+																	Military Spouse Military Dependent Loans Spouses and dependents of military members are eligible to apply for a personal loan of up to 40000 at rates starting from 668. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other organizations that offer educational assistance to military personnel veterans and their dependents include. 
+																	Military student aid such as the Montgomery GI Bill is one of the many reasons people enlist in the armed forces. 
+																	Subsidized Stafford Direct Loans are need-based student loans that charge no interest for students with at least half-time college attendance. 
+																	Department of Education has four programs to lower your monthly payments if the monthly payments are too burdensome at your income level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other organizations that offer educational assistance to military personnel veterans and their dependents include. 
+																	Those who serve in the military can use SCRA Servicemembers Civil Relief Act to cap the interest rates on student loan payments to 6 however since the military spouse isnt on their spouses student loan it will not apply to them. 
+																	Interest begins on these loans from the moment they are paid. 
+																	Unfortunately there isnt a specific program for military spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And as a benefit the government offers military aid to those who wish to attend school before during and after their service. 
+																	Those benefits dont cover past college debt however. 
+																	Student Loans for Veterans Military Dependents Grants and scholarships are a great way to pay for college but they arent always enough to cover tuitions fees housing and all of the other expenses that come with a college education. 
+																	Your student loan servicer will proactively apply a waiver if they have information that you are actively serving in the military and qualify for the waiver. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There isnt a designated military spouse student loan forgiveness program or a military spouse school loan repayment plan. 
+																	Department of Defense DOD Repayment of Your Loans In certain circumstances as determined by the DOD all or. 
+																	S tudent Loan Forgiveness for Military Spouses. 
+																	Military Spouse Military Dependent Loans Can spouses or partners of a reservist a veteran or an active duty military member get a military loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enlisting in the military requires a great deal of sacrifice. 
+																	Military personal loans Student loans for military families Military families can pay for college with the help of several forms of financial aid offered to dependents of service members including children stepchildren and spouses. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/3d/66/573d66cff07796c9fc6ba953d9d7e440.jpg" data-lightbox="roadtrip" data-title="The Armed Forces Offer Eligible Military Members Their Dependents And Veterans Several Program Benefit Student Loan Forgiveness Student Loans Wedding Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/3d/66/573d66cff07796c9fc6ba953d9d7e440.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BQ9mr9rWn0yWFQ2gBEsk0zRyrsGUpJK0hA';" alt="The Armed Forces Offer Eligible Military Members Their Dependents And Veterans Several Program Benefit Student Loan Forgiveness Student Loans Wedding Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Armed Forces Offer Eligible Military Members Their Dependents And Veterans Several Program Benefit Student Loan Forgiveness Student Loans Wedding Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/1d/b4/411db484e59c7aef357b665501d6f915.jpg" data-lightbox="roadtrip" data-title="Pin On Health Wellness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/1d/b4/411db484e59c7aef357b665501d6f915.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwNuHbcjCF8lYpN_ukloZobYaE4CdxcJQFQ';" alt="Pin On Health Wellness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Wellness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/4e/ab/5f4eabdd82facf80d27aa5b4a4740747.png" data-lightbox="roadtrip" data-title="Pin On Scholarships And Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/4e/ab/5f4eabdd82facf80d27aa5b4a4740747.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZjLfC8mtggw0TBS16svU8utNjEbB00pikw';" alt="Pin On Scholarships And Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Scholarships And Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" data-lightbox="roadtrip" data-title="Military Scholarships Weird Scholarships Military Financial Aid For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBFDiPIDzeYlK9HckGp1ZaDj2bgxnxEay_w';" alt="Military Scholarships Weird Scholarships Military Financial Aid For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Scholarships Weird Scholarships Military Financial Aid For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/2a/32/792a32917539143d9ff586fd0d329c5e.png" data-lightbox="roadtrip" data-title="Scholarships For Military Personnel Veterans And Their Dependents Financial Aid For College Military Scholarships Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/2a/32/792a32917539143d9ff586fd0d329c5e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYcptGjD99PbfgEAL8NUAswNV_Mfes31ymw';" alt="Scholarships For Military Personnel Veterans And Their Dependents Financial Aid For College Military Scholarships Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships For Military Personnel Veterans And Their Dependents Financial Aid For College Military Scholarships Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/fd/66/81fd66bcbeee93c5f688fac6f88473d5.jpg" data-lightbox="roadtrip" data-title="Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/fd/66/81fd66bcbeee93c5f688fac6f88473d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVHgJy-cMaf-TQ-JDhU3P3z3v4uIiaH8dgA';" alt="Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" data-lightbox="roadtrip" data-title="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcHw46-vuCHeRqr_Xc4vs9LemcHvkK1PHkw';" alt="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/10/81/fc1081a1f2ccfad631a7ce4e5eb693fd.jpg" data-lightbox="roadtrip" data-title="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/10/81/fc1081a1f2ccfad631a7ce4e5eb693fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjB0eDH9XqUJ4A01qgX1jCFJLLWfkhHAisQg';" alt="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/37/86/ca3786236a06c863f3de5852b3775d8f.png" data-lightbox="roadtrip" data-title="The Biggest List Of Military Scholarships For Service Members Veterans Spouses And Kids Katehorrell Military Scholarships Scholarships For College Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/37/86/ca3786236a06c863f3de5852b3775d8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgQ8lbi01377rz_gMhwAt_lrhiuRfkR3sPg';" alt="The Biggest List Of Military Scholarships For Service Members Veterans Spouses And Kids Katehorrell Military Scholarships Scholarships For College Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Biggest List Of Military Scholarships For Service Members Veterans Spouses And Kids Katehorrell Military Scholarships Scholarships For College Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/34/09/db3409bd9dac01ee48c731689e14385f.png" data-lightbox="roadtrip" data-title="Financial Aid For Military Service Military Financial Aid For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/34/09/db3409bd9dac01ee48c731689e14385f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8ipekWAG6wSoD0I_WIklID1E0NeGx_gIpg';" alt="Financial Aid For Military Service Military Financial Aid For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid For Military Service Military Financial Aid For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/f8/60/46f860f03ecb40999bc8d3e8aee0dc9f.jpg" data-lightbox="roadtrip" data-title="Scholarship Opportunities For Veterans Scholarship Opportunities Scholarships Vets Military Scholarships Veteran Scholarships College Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/f8/60/46f860f03ecb40999bc8d3e8aee0dc9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9dKtQk6Y_eVVXMpj_oTLUVeRw95WQBOugg';" alt="Scholarship Opportunities For Veterans Scholarship Opportunities Scholarships Vets Military Scholarships Veteran Scholarships College Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarship Opportunities For Veterans Scholarship Opportunities Scholarships Vets Military Scholarships Veteran Scholarships College Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/5f/4e/ab/5f4eabdd82facf80d27aa5b4a4740747.jpg" data-lightbox="roadtrip" data-title="Pin On Scholarships And Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/5f/4e/ab/5f4eabdd82facf80d27aa5b4a4740747.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDx42gdkbkHE-31W1tYR613dVeSx_iWUUpMw';" alt="Pin On Scholarships And Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Scholarships And Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/27/54/032754b543a8230af792ccc38399b7d9.jpg" data-lightbox="roadtrip" data-title="Busch Gardens Waves Of Honor Program Military Family Scholarships Military Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/27/54/032754b543a8230af792ccc38399b7d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBPMXmS1KLXJyXU5EaZ8XA9zEyzcE0Jovew';" alt="Busch Gardens Waves Of Honor Program Military Family Scholarships Military Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Busch Gardens Waves Of Honor Program Military Family Scholarships Military Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/programs-to-help-military-spouses-find-jobs.html">Programs To Help Military Spouses Find Jobs</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-military-recruiter.html">Pros And Cons Of Being A Military Recruiter</a></li>
+													<li class="list-group-item"><a href="/philippine-air-force-personnel-management-center-contact-number.html">Philippine Air Force Personnel Management Center Contact Number</a></li>
+													<li class="list-group-item"><a href="/portal-campus-management.html">Portal Campus Management</a></li>
+													<li class="list-group-item"><a href="/prayer-for-military-wife.html">Prayer For Military Wife</a></li>
+													<li class="list-group-item"><a href="/portal-sscn-bkn-2021.html">Portal Sscn Bkn 2021</a></li>
+													<li class="list-group-item"><a href="/request-va-medical-records-st-louis.html">Request Va Medical Records St Louis</a></li>
+													<li class="list-group-item"><a href="/retired-military-dependent-education-benefits.html">Retired Military Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/retired-military-dependent-id-card-age.html">Retired Military Dependent Id Card Age</a></li>
+													<li class="list-group-item"><a href="/retired-dependent-military-id-card-expiration-date.html">Retired Dependent Military Id Card Expiration Date</a></li>
+													<li class="list-group-item"><a href="/phone-number-for-ncaa-eligibility-center.html">Phone Number For Ncaa Eligibility Center</a></li>
+													<li class="list-group-item"><a href="/retired-military-dependent-dental-insurance.html">Retired Military Dependent Dental Insurance</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-navy-recruiter.html">Pros And Cons Of Being A Navy Recruiter</a></li>
+													<li class="list-group-item"><a href="/rae-dunn-navy-wife-mug.html">Rae Dunn Navy Wife Mug</a></li>
+													<li class="list-group-item"><a href="/philippine-air-force-hrmis-login.html">Philippine Air Force Hrmis Login</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-being-a-marine-mammal-trainer.html">Pros And Cons Of Being A Marine Mammal Trainer</a></li>
+													<li class="list-group-item"><a href="/pink-dependent-military-id.html">Pink Dependent Military Id</a></li>
+													<li class="list-group-item"><a href="/programs-for-military-spouses-education.html">Programs For Military Spouses Education</a></li>
+													<li class="list-group-item"><a href="/rebirth-of-little-military-wife-boxnovel.html">Rebirth Of Little Military Wife Boxnovel</a></li>
+													<li class="list-group-item"><a href="/prayer-for-a-military-wife.html">Prayer For A Military Wife</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Retired Military College Benefits For Dependents In California - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Retired Military College Benefits For Dependents In California",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/c3/54/ac/c354ac06be81cb32b6902a83e0f5680d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=retired+military+college+benefits+for+dependents+in+california",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Retired Military College Benefits For Dependents In California</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">VA education benefits for dependents include options under the GI Bill Yellow Ribbon program and scholarship funds. Financial education benefits can pay for up to 100 of fees at most Universities of California California State Universities for Veterans or survivors. California residents as determined by UC Enrolled in a degree program Dependents or survivors of a disabled or deceased California veteran as certified by the VA. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/navy-t-shirt-ralph-lauren.html">navy t shirt ralph lauren</a>
+											<a class="badge badge-primary" href="/navy-t-shirt-dress-uk.html">navy t shirt dress uk</a>
+											<a class="badge badge-info" href="/navy-seal-officer-pst.html">navy seal officer pst</a>
+											<a class="badge badge-primary" href="/navy-seal-officer-service-commitment.html">navy seal officer service commitment</a>
+											<a class="badge badge-success" href="/navy-t-shirt-folding.html">navy t shirt folding</a>
+											<a class="badge badge-secondary" href="/navy-t-shirt-dresses.html">navy t shirt dresses</a>
+											<a class="badge badge-info" href="/navy-spouse-memes.html">navy spouse memes</a>
+											<a class="badge badge-warning" href="/navy-t-shirt-slim-fit.html">navy t shirt slim fit</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our website provides you with hints for seeing the highest quality video and image content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/9e/64/b99e6453f4e0275115a3f9690ccbc0b5.jpg" data-lightbox="roadtrip" data-title="Scholarships For Dependents Of The Retired Military Scholarships Military Dependent Scholarships Scholarships For College Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/9e/64/b99e6453f4e0275115a3f9690ccbc0b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEUNbyTEQd-tei6HH8ML-9EHobtFgyupZIuA';" alt="Scholarships For Dependents Of The Retired Military Scholarships Military Dependent Scholarships Scholarships For College Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships For Dependents Of The Retired Military Scholarships Military Dependent Scholarships Scholarships For College Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/06/c3/1206c3c10d4a6d1a18e379a51f15e1bd.png" data-lightbox="roadtrip" data-title="Tricare Healthcare Information For Military Spouses Usmc Life Army Wife Life Marine Wife Life Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/06/c3/1206c3c10d4a6d1a18e379a51f15e1bd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEOh2lM9eAXVI0vMX8f1BuNufI0kmqVZYDA';" alt="Tricare Healthcare Information For Military Spouses Usmc Life Army Wife Life Marine Wife Life Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tricare Healthcare Information For Military Spouses Usmc Life Army Wife Life Marine Wife Life Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" data-lightbox="roadtrip" data-title="Military Spouse Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_72tPrpqxaEs4K7BYfkApdd_P1WqFb3CrQ';" alt="Military Spouse Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/reports/RL31663.png" data-lightbox="roadtrip" data-title="Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/reports/RL31663.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrhNurhkH8aVAn1n4QQrvix6a4yU0YIwlOA';" alt="Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_GIBill2.jpg?itok=LcH_lCLE" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_GIBill2.jpg?itok=LcH_lCLE" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuphAxmRLzjNgcIdD5_084KqUB34qjo-b4w';" alt="Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuphAxmRLzjNgcIdD5_084KqUB34qjo-b4w';" alt="Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide">
+										<div class="card-body">
+						<h3 class="h5"><b>Air Force Aid Society AFAS Navy-Marine Corps Relief.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Retired military college benefits for dependents in california</strong>. 
+								
+																	Dependents can take advantage of the benefit until the age of 26. 
+																	The Marine Gunnery Sergeant John David Fry Scholarship Fry Scholarship is for children and spouses of service members who died in the line of duty after September 10 2001. 
+																	In truth military dependents still qualify for a variety of benefits even after their military mothers or fathers enter retirement. 
+																	If youre active duty or serving in the National Guard or Reserves and using Veterans Benefits Administration VBA educational benefits read on to learn more about how to make the most of this aid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The College Tuition Fee Waiver for the Dependents of Veterans -- sometimes called the CalVet Fee Waiver -- is a state benefit that provides a tuition-free education at the CSU and the other state public post-secondary colleges and universities. 
+																	Learn More About the CalVet College Fee Waiver. 
+																	The Cal Vet fee exemption officially known as the College Tuition Fee Waiver for Veteran Dependents waives systemwide tuition and fees 12804 in 2015-16 for students who are. 
+																	California College Tuition Fee Waiver for Veterans Dependents Waiver of mandatory system-wide tuition and fees at any State of California Community College California State University or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The requirements vary considerably and some scholarships are restricted to a particular branch of the Armed Forces. 
+																	This veteran benefit program will not cover expenses related to books housing or meals. 
+																	The changes allow service members to transfer benefits while serving on active duty. 
+																	There are 2 main GI Bill programs offering educational assistance to survivors and dependents of Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans can exercise many of their educational benefits at California Community Colleges. 
+																	Learn more about the programs grants and scholarships available to help pay for a college degree or a vocational training certificate of your choice. 
+																	College Benefits for Children of Retired Military. 
+																	They also waive undergraduate tuition and fees up to 200 quarter credits or equivalent semester credits for dependents of 100 disabled veterans who are eligible at state community colleges colleges and universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouses are eligible for several benefits that offer aid in pursuing a postsecondary degree and advancing career goals. 
+																	Most veterans use the Post-911 GI Bill which offers tuition a housing allowance and a book stipend. 
+																	There is no time limit for members discharged after that date. 
+																	Get more information about the Fry Scholarship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California College Tuition Fee Waivers for Veterans Dependents Waiver of mandatory system-wide tuition and fees at any State of California Community College California State University or. 
+																	Grants and scholarships for dependents of retired military personnel can help them defray the costs of a college education. 
+																	Read about the CalVet education benefits under which you may be eligible. 
+																	The College Tuition Fee Waiver for Veteran Dependents benefit waives mandatory system-wide tuition and fees at any State of California Community College California State University or University of California campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prospective students searching for Military College Benefits for Dependents found the links articles and information on this page helpful. 
+																	Benefits can be used for up to 15 years after separation for members discharged prior to 1113. 
+																	MG James Ursano Scholarship Program. 
+																	Dependents of retired military personnel are offered financial assistance for school and discounts on life insurance and health care benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	General John Paul Ratay Educational Fund Grants. 
+																	Eligible California veterans and qualifying military dependents may be eligible for a waiver of statewide tuition and fees for California State University University of California and any State of California community college. 
+																	If you are a military dependent wondering what your options from the VA might be much depends on the nature of the military members service time spent in uniform and what GI Bill program the member signed up for at the start of their military career. 
+																	The General John Paul Ratay Educational Fund Grants are available for children of a retired military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Qualifying military dependents may be eligible for a waiver of statewide tuition and fees excluding books housing and meals for California State University University of California and any State of California community college. 
+																	Check each scholarship proposal carefully for requirements and due dates. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/ad/df/d2addff5208c21ae9ab464623d7224c4.jpg" data-lightbox="roadtrip" data-title="News Navy News Reader Grabs The Top Stories From The Navy And Delivers Them To Your Iphone Itouch Free Ww Special Education Schools Navy News Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/ad/df/d2addff5208c21ae9ab464623d7224c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9BComXulchW3ooNS9SllZoBM7_lA9B6wfuA';" alt="News Navy News Reader Grabs The Top Stories From The Navy And Delivers Them To Your Iphone Itouch Free Ww Special Education Schools Navy News Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Navy News Reader Grabs The Top Stories From The Navy And Delivers Them To Your Iphone Itouch Free Ww Special Education Schools Navy News Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/02/9e/29029e79fa4ce06fc60c712c532934c0.jpg" data-lightbox="roadtrip" data-title="Military Space A Lodging Eligibility And Reservation Tips Poppin Smoke Military Military Family Life Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/02/9e/29029e79fa4ce06fc60c712c532934c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6lf2GT82VOgNmrTq2TBKAE_xoRE3B6vvAug';" alt="Military Space A Lodging Eligibility And Reservation Tips Poppin Smoke Military Military Family Life Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Space A Lodging Eligibility And Reservation Tips Poppin Smoke Military Military Family Life Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b5/75/f4/b575f4bdc77e2f2f955b64bcee114b93--resume-help-sample-resume.jpg" data-lightbox="roadtrip" data-title="Military Resume Resume Examples Job Resume Template Sample Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b5/75/f4/b575f4bdc77e2f2f955b64bcee114b93--resume-help-sample-resume.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3LfXrvaS5nOzaeni7IXhpp9lVnyIBktPjQ';" alt="Military Resume Resume Examples Job Resume Template Sample Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Resume Resume Examples Job Resume Template Sample Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/10/MilitaryBenefitslogohome.png" data-lightbox="roadtrip" data-title="State Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/10/MilitaryBenefitslogohome.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfucfBIQnkSziZ-9bJuQZ6fJn9jKIbbljYQA';" alt="State Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/c9/c1/dec9c1fd04481ce199417fecd0cd32e6.jpg" data-lightbox="roadtrip" data-title="11 4 2013 Pall Bearers Fold An American Flag During The Military Honors Ceremony For Retired Cmdr Scott Ca Military Honors American Veterans Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/c9/c1/dec9c1fd04481ce199417fecd0cd32e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG86R5f7TjsNKWxEYOwniY7gxAbrM9pwbi6A';" alt="11 4 2013 Pall Bearers Fold An American Flag During The Military Honors Ceremony For Retired Cmdr Scott Ca Military Honors American Veterans Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 4 2013 Pall Bearers Fold An American Flag During The Military Honors Ceremony For Retired Cmdr Scott Ca Military Honors American Veterans Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" data-lightbox="roadtrip" data-title="5 Top Military Spouse Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Military Spouse Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/12/cf/6512cfd7b2e6b91d800d3f39b90e3944.jpg" data-lightbox="roadtrip" data-title="Pin On Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/12/cf/6512cfd7b2e6b91d800d3f39b90e3944.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD7l3vMAs0vANoWailvu2XC4PlWVs32mUdAw';" alt="Pin On Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" data-lightbox="roadtrip" data-title="Differences Between Military Va Disability Ratings Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEaAMZYjFChCdhkbvL7eY3IWtu1uth4c1Dw';" alt="Differences Between Military Va Disability Ratings Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Differences Between Military Va Disability Ratings Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" data-lightbox="roadtrip" data-title="Benefits Of Dual Military Couples Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDagF0AVys9NFmdRFKIr4xbtqrYe7nAB4Gaw';" alt="Benefits Of Dual Military Couples Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Of Dual Military Couples Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/fd/5f/fcfd5fdb4fcba0ed8c5e6cb7d3335b98.jpg" data-lightbox="roadtrip" data-title="Breathe A Sigh Of Relief Welcome Home Airman To Mom Military Couples Military Spouse Military Spouse Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/fd/5f/fcfd5fdb4fcba0ed8c5e6cb7d3335b98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfOqCp8Obm3sIrKiYaHIKGHYMfezRqvk7f4w';" alt="Breathe A Sigh Of Relief Welcome Home Airman To Mom Military Couples Military Spouse Military Spouse Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breathe A Sigh Of Relief Welcome Home Airman To Mom Military Couples Military Spouse Military Spouse Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statesidelegal.org/sites/default/files/styles/2020_content_list/public/2020-12/shutterstock_237847402.jpg?itok=suGgc4DO" data-lightbox="roadtrip" data-title="Child Support And Veterans Benefits Faqs Stateside Legal">
+											<img class="card-img v-image ads-img " src="https://www.statesidelegal.org/sites/default/files/styles/2020_content_list/public/2020-12/shutterstock_237847402.jpg?itok=suGgc4DO" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjN846-wqGb6njqlHsN1ACqnSI4lAZ8ze7dQ';" alt="Child Support And Veterans Benefits Faqs Stateside Legal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Child Support And Veterans Benefits Faqs Stateside Legal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/88/7d/6a887dadd2d4b39a11e86c7c58709a46.jpg" data-lightbox="roadtrip" data-title="Photo By Petty Officer 2nd Class Ace Rheaume Military Retirement Pay Military Retirement Retired Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/88/7d/6a887dadd2d4b39a11e86c7c58709a46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb97bQcb4PDsYZE-ATzPT3rN1qEAs4xX291w';" alt="Photo By Petty Officer 2nd Class Ace Rheaume Military Retirement Pay Military Retirement Retired Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo By Petty Officer 2nd Class Ace Rheaume Military Retirement Pay Military Retirement Retired Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/54/ac/c354ac06be81cb32b6902a83e0f5680d.jpg" data-lightbox="roadtrip" data-title="49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/54/ac/c354ac06be81cb32b6902a83e0f5680d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9ErYRbofv8z5OT5N5PGxIVpX7O-Bn0SV-w';" alt="49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">49 Reference Of Table Decoration Ideas For Farewell Party Deployment Party Farewell Parties Military Send Off Party Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-wives-choir-vue.html">Military Wives Choir Vue</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-where-are-they-now.html">Military Wives Choir Where Are They Now</a></li>
+													<li class="list-group-item"><a href="/montana-army-national-guard-human-resources.html">Montana Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-innsworth.html">Military Wives Choir Innsworth</a></li>
+													<li class="list-group-item"><a href="/military-wives-funeral-song.html">Military Wives Funeral Song</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-tour-2019.html">Military Wives Choir Tour 2019</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-one-year-on.html">Military Wives Choir One Year On</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-lympstone.html">Military Wives Choir Lympstone</a></li>
+													<li class="list-group-item"><a href="/minimum-act-score-for-ncaa-eligibility.html">Minimum Act Score For Ncaa Eligibility</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-marham.html">Military Wives Choir Marham</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-valley.html">Military Wives Choir Valley</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-history.html">Military Wives Choir History</a></li>
+													<li class="list-group-item"><a href="/msc-business-management-careers.html">Msc Business Management Careers</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-logo.html">Military Wives Choir Logo</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-film-locations.html">Military Wives Choir Film Locations</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-york.html">Military Wives Choir York</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-warminster.html">Military Wives Choir Warminster</a></li>
+													<li class="list-group-item"><a href="/military-wives-divorce-rights.html">Military Wives Divorce Rights</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-new-song.html">Military Wives Choir New Song</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-portsmouth.html">Military Wives Choir Portsmouth</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Complaint Contact Number - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Complaint Contact Number",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/8d/52/52/8d5252a38427301452c104e118a7009b.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+complaint+contact+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Complaint Contact Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Indian Army Application Form Correction Feedback Form Registration Enquiry Contact Number and Compliant cell details. Pakistan Army has launched emergency complain number to counter terrorism in the country. For media enquiries please contact us by. <br>				
+			</p>
+										<a class="badge badge-success" href="/us-air-force-spouse-education-benefits.html">us air force spouse education benefits</a>
+											<a class="badge badge-light" href="/tuition-waiver-for-dependents-of-disabled-veterans.html">tuition waiver for dependents of disabled veterans</a>
+											<a class="badge badge-primary" href="/tuition-assistance-for-spouse-of-disabled-veteran.html">tuition assistance for spouse of disabled veteran</a>
+											<a class="badge badge-success" href="/tripler-army-medical-center-human-resources-phone-number.html">tripler army medical center human resources phone number</a>
+											<a class="badge badge-secondary" href="/update-military-dependent-id-card.html">update military dependent id card</a>
+											<a class="badge badge-success" href="/tinker-air-force-base-commissary-phone-number.html">tinker air force base commissary phone number</a>
+											<a class="badge badge-info" href="/us-army-asap-online-training.html">us army asap online training</a>
+											<a class="badge badge-light" href="/us-air-force-civilian-human-resources.html">us air force civilian human resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our website gives you hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/95/f5/7d95f5c0cf27d2295ca8ea1f9e820bf4.jpg" data-lightbox="roadtrip" data-title="Pin By Nikos Xanthopoulos On Fun Military Humor Military Jokes Army Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/95/f5/7d95f5c0cf27d2295ca8ea1f9e820bf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhoes5doDxuq0_E6tD4cSIXR6PIoJgcbeZA';" alt="Pin By Nikos Xanthopoulos On Fun Military Humor Military Jokes Army Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nikos Xanthopoulos On Fun Military Humor Military Jokes Army Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/32/6b/b2326b1ef4baa4c8e37cd515b61c2420.jpg" data-lightbox="roadtrip" data-title="Cybersafety Cybersextortion Cybersecurity Helpline Cyberhelpline Cyber Safety Cyber Cyber Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/32/6b/b2326b1ef4baa4c8e37cd515b61c2420.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIhsqAH4YXQSudcZHVJtSm9f_fbo1tBnnxw';" alt="Cybersafety Cybersextortion Cybersecurity Helpline Cyberhelpline Cyber Safety Cyber Cyber Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cybersafety Cybersextortion Cybersecurity Helpline Cyberhelpline Cyber Safety Cyber Cyber Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d9/eb/bc/d9ebbccced8df3ddd55531c6b5e54968.jpg" data-lightbox="roadtrip" data-title="Formal Complaints Letter Business Letter Format Business Letter Format Example Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d9/eb/bc/d9ebbccced8df3ddd55531c6b5e54968.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb76WQGijYb0Xly2C6w5TIYtYOTcPXCoweHA';" alt="Formal Complaints Letter Business Letter Format Business Letter Format Example Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Formal Complaints Letter Business Letter Format Business Letter Format Example Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/24/fb/b024fbcd2a2b99e67b3a0ac019bafa41.jpg" data-lightbox="roadtrip" data-title="Pin On Cyber Crime Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/24/fb/b024fbcd2a2b99e67b3a0ac019bafa41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeS5Mr06OL9JBSSccSDNyF1dVqZSWajzhWiw';" alt="Pin On Cyber Crime Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cyber Crime Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/d0/e8/66d0e888179dd25a5a579eb5f7bce3c1.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/d0/e8/66d0e888179dd25a5a579eb5f7bce3c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Clkhvvw3m5beUEyJOO0w_Sq2lCI1ojCQ5A';" alt="Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Inspirational 3 4 Army Memo Template Memorandum Template Memorandum Memo Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/f5/e3/50f5e30b8f40700d14d80313d5a84070.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Unique 6 Memorandum For Record Army Memorandum Resume Cover Letter Design Memo Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/f5/e3/50f5e30b8f40700d14d80313d5a84070.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFmW0IwAi6WofdGFZcS1N9yDU8XW3W49lyQ';" alt="Army Memorandum For Record Template Unique 6 Memorandum For Record Army Memorandum Resume Cover Letter Design Memo Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Unique 6 Memorandum For Record Army Memorandum Resume Cover Letter Design Memo Template</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/0b/8a/97/0b8a979e5c3ebe340f95388d32fd675c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFmW0IwAi6WofdGFZcS1N9yDU8XW3W49lyQ';" alt="Army Memorandum For Record Template Unique 6 Memorandum For Record Army Memorandum Resume Cover Letter Design Memo Template">
+										<div class="card-body">
+						<h3 class="h5"><b>A complaint is defined as any expression of dissatisfaction about the service provided which is not resolved by operational staff as normal business.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army complaint contact number</strong>. 
+								
+																	0800 970 6363 Free from most landlines Fax Customer Services 01204375768 Email Customer Service Centre. 
+																	A complaint or compliment about the service you have received. 
+																	Church Army Wilson Carlile Centre 50 Cavendish Street Sheffield S3 7RZ. 
+																	Join Indian Army Helpline Number 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service personnel occupying a substitute accommodation property should now contact Mears for all occupation queries including out of hours emergencies on the following telephone number 0800 032. 
+																	Contact us by phone or in writing or alternatively fill in the form below. 
+																	900am 430pm Weekends Bank Holidays. 
+																	Any general enquiries on community engagement andor the Armys representation on Open Days can be directed at RC-OpsEngt-CE-MailboxModgovuk This does not include engineering tasks For advice on placements andor work experience please get in touch with RG-NRC Outreach Admin MULTIUSER RG-NRCOutreachAdminmodgovuk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pakistan Army Emergency Complain Number 1125 1135. 
+																	If you wish to make a complaint about the MOD Police please complete the Complaints Form PDF 17MB 5 pages and forward via email to mdp-psd-groupmodgovuk or send the completed form to. 
+																	91 11 2309 3682. 
+																	Discover more on our British Army Supporting Education website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	020 3657 7555 This line is for media enquiries only Email. 
+																	94391 2714 01264 382714. 
+																	In a recent advertisement by ISPR in leading newspapers of Pakistan administrative military media department of Pakistan Army has asked all the citizens of Pakistan to keep emergency complain numbers with them. 
+																	250 Max Characters Allowed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salvation Army International Headquarters 101 Queen Victoria Street London EC4V 4EH United Kingdom. 
+																	Submit your complaint or review on Indian Army customer care. 
+																	94391 2005 01264 382005 SO3 Ops Service Complaints Secretariat. 
+																	Phone saha Customer Service Centre. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Service Complaints Ombudsman provides independent and impartial scrutiny of the handling of service complaints made by members of the UK armed forces. 
+																	900am 500pm Phone Line Hours. 
+																	Indian Army reviews and complaints. 
+																	SO2 Ops Service Complaints Secretariat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service Complaints Ombudsman works with. 
+																	If youre interested in talking to us about what we could offer your school or college please contact our outreach team on RG-NRCOutreachAdminmodgovuk or call us on 0345 600 8080. 
+																	This information is submitted for the basic purpose of requesting assistance correcting injustices affecting the individual or eliminating conditions considered detrimental to the efficiency or reputation of the Army. 
+																	According to the official rules the candidates who want to participate in Indian Army Recruitment have to fill the application form and then. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Want to delete join Indian army account and dont know howThen there are all the details. 
+																	For any local enquiries such as volunteering or if you are in need of assistance please contact your nearest Salvation Army which can be found using our map. 
+																	Who else do you believe has information regarding your complaint name phone number email etc. 
+																	For enquiries about The Salvation Armys International Headquarters or where your country is not listed our contact details are as follows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Personnel Centre Helpdesk 0345 600 9663 provides assistance to Army units outside agencies and the general public who are enquiring about the disclosure of information held on officers and soldiers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/51/52/e6/5152e6736f283d9cc7a8626a39c24ce3.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Best Of How To Write Memorandums Memorandum Book Template Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/51/52/e6/5152e6736f283d9cc7a8626a39c24ce3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXplAVN7MOrZkDB9WRdi_NPunLQkm-hA8ozw';" alt="Army Memorandum For Record Template Best Of How To Write Memorandums Memorandum Book Template Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Best Of How To Write Memorandums Memorandum Book Template Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/4e/b4/6c4eb46911493c924de0e2fb990516c5.jpg" data-lightbox="roadtrip" data-title="Army Board Biography Example Fresh Army Promotion Board Biography Format Business Card Pattern List Of Jobs Document Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/4e/b4/6c4eb46911493c924de0e2fb990516c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-Qd9bEJ9zIkN_qP1QPGQqWRdTFwV5e_ZgQ';" alt="Army Board Biography Example Fresh Army Promotion Board Biography Format Business Card Pattern List Of Jobs Document Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Board Biography Example Fresh Army Promotion Board Biography Format Business Card Pattern List Of Jobs Document Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0b/8a/97/0b8a979e5c3ebe340f95388d32fd675c.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Luxury Army Memorandum For Record Template Memorandum Memorandum Template Memo Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0b/8a/97/0b8a979e5c3ebe340f95388d32fd675c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-IL5rk2wSEUwu4_2D5_wYj3DuSpdlONRFA';" alt="Army Memorandum For Record Template Luxury Army Memorandum For Record Template Memorandum Memorandum Template Memo Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Luxury Army Memorandum For Record Template Memorandum Memorandum Template Memo Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/89/00/2f8900705a0283b6b6afc9140f169004.png" data-lightbox="roadtrip" data-title="Soldier Coming Home Military Wife Life Military Love Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/89/00/2f8900705a0283b6b6afc9140f169004.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4zg0jqTGBym9RWMHqifQk8Hl2gwqKu7asSQ';" alt="Soldier Coming Home Military Wife Life Military Love Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Coming Home Military Wife Life Military Love Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/94/52/0e9452e90d05469a5a41f4089d34f1a3.jpg" data-lightbox="roadtrip" data-title="16 Marvelous Department Of The Army Memorandum For Record Template With Photos Memorandum Memorandum Template Memo Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/94/52/0e9452e90d05469a5a41f4089d34f1a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCqT1O4DUe8KK71lSMuzxWU-jDd0Ukib0Ig';" alt="16 Marvelous Department Of The Army Memorandum For Record Template With Photos Memorandum Memorandum Template Memo Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Marvelous Department Of The Army Memorandum For Record Template With Photos Memorandum Memorandum Template Memo Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1b/45/93/1b4593311125540bdf2853f24f4fbb83.jpg" data-lightbox="roadtrip" data-title="Army Training Outline Template Elegant Fm 3 23 30 Chptr 4 Training Program Army Training Money Template Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1b/45/93/1b4593311125540bdf2853f24f4fbb83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsm4b6oEgdTNsV7WkHS_D51aHoV3CUj7uh9g';" alt="Army Training Outline Template Elegant Fm 3 23 30 Chptr 4 Training Program Army Training Money Template Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Training Outline Template Elegant Fm 3 23 30 Chptr 4 Training Program Army Training Money Template Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/18/ed/2d18edd81fd6261693baa69580b0ea2f.jpg" data-lightbox="roadtrip" data-title="Army Board Biography Example Fresh Military Bio Carlos Romero Jr Biography Template Biography Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/18/ed/2d18edd81fd6261693baa69580b0ea2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdhGBi-h0whcks9vDhzcmZ6LKVTBfPRzhWQ';" alt="Army Board Biography Example Fresh Military Bio Carlos Romero Jr Biography Template Biography Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Board Biography Example Fresh Military Bio Carlos Romero Jr Biography Template Biography Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/94/e4/c994e40d8d53000c31efc7710ee11176.jpg" data-lightbox="roadtrip" data-title="Army Memorandum For Record Template Inspirational 12 Best Of Ar 25 50 Memorandum Example Ar 25 50 Memorandum Resume Cover Letter Design Memorandum Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/94/e4/c994e40d8d53000c31efc7710ee11176.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqPRNrBxcl5FjMcAfE5fNjhWS2dXY_op0Kig';" alt="Army Memorandum For Record Template Inspirational 12 Best Of Ar 25 50 Memorandum Example Ar 25 50 Memorandum Resume Cover Letter Design Memorandum Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum For Record Template Inspirational 12 Best Of Ar 25 50 Memorandum Example Ar 25 50 Memorandum Resume Cover Letter Design Memorandum Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/52/52/8d5252a38427301452c104e118a7009b.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/52/52/8d5252a38427301452c104e118a7009b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqSzNmjS07j0QzdGzoCTbqak51dddYevX3g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/12/d8/1912d8bb99700bb55437133e57d4e600.jpg" data-lightbox="roadtrip" data-title="Pin By Molly On Scammer Profiles Scammers Military Romance Internet Scams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/12/d8/1912d8bb99700bb55437133e57d4e600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblxPJRbp5cPvSFbceFWAw6xXVSOwfk9qIeg';" alt="Pin By Molly On Scammer Profiles Scammers Military Romance Internet Scams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Molly On Scammer Profiles Scammers Military Romance Internet Scams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/97/f4/9d97f4ddbfa46cbf80e0358e67f1a036.gif" data-lightbox="roadtrip" data-title="Armed Forces List Of Jobs Armed Forces Business Card Pattern">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/97/f4/9d97f4ddbfa46cbf80e0358e67f1a036.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-__kgi3LtN1Y1ceuUMszGoGFtw4ZP91n4w';" alt="Armed Forces List Of Jobs Armed Forces Business Card Pattern">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces List Of Jobs Armed Forces Business Card Pattern</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/d1/06/e3d106833fc9bd3bcee8661e1f7c650c.png" data-lightbox="roadtrip" data-title="Pin On Letter Writer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/d1/06/e3d106833fc9bd3bcee8661e1f7c650c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB8vP1qBGcCYqrg91jdLb2EPH3c8V-O4FQZg';" alt="Pin On Letter Writer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Letter Writer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/c9/6e/edc96e2dea82ee264a81d3587044d5a7.jpg" data-lightbox="roadtrip" data-title="Pin On Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/c9/6e/edc96e2dea82ee264a81d3587044d5a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbr9_qd5ulRn6cxkmXt6uvhl8r2CEzTdrWAQ';" alt="Pin On Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ohio-army-national-guard-human-resources.html">Ohio Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/philippine-air-force-headquarters-contact-number.html">Philippine Air Force Headquarters Contact Number</a></li>
+													<li class="list-group-item"><a href="/old-navy-mens-wife-beaters.html">Old Navy Mens Wife Beaters</a></li>
+													<li class="list-group-item"><a href="/pak-army-contact-number-faisalabad.html">Pak Army Contact Number Faisalabad</a></li>
+													<li class="list-group-item"><a href="/ortho-va-medical-records-request.html">Ortho Va Medical Records Request</a></li>
+													<li class="list-group-item"><a href="/northgate-air-force-academy-hours.html">Northgate Air Force Academy Hours</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-blue-hero.html">Nike Air Force Blue Hero</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-hrvatska.html">Nike Air Force Shadow Hrvatska</a></li>
+													<li class="list-group-item"><a href="/north-korean-military-hats-for-sale.html">North Korean Military Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/pendaftaran-sscn-bkn-2020.html">Pendaftaran Sscn Bkn 2020</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-grey-animal.html">Nike Air Force Shadow Grey Animal</a></li>
+													<li class="list-group-item"><a href="/online-msn-programs-usa.html">Online Msn Programs Usa</a></li>
+													<li class="list-group-item"><a href="/obtain-military-records-wwii-veterans.html">Obtain Military Records Wwii Veterans</a></li>
+													<li class="list-group-item"><a href="/permanent-military-dependent-id-card.html">Permanent Military Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/online-lpn-programs-for-military-spouses.html">Online Lpn Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/pakistan-air-force-war-heroes.html">Pakistan Air Force War Heroes</a></li>
+													<li class="list-group-item"><a href="/online-college-classes-for-military-spouses.html">Online College Classes For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/pengumuman-sscn-basarnas.html">Pengumuman Sscn Basarnas</a></li>
+													<li class="list-group-item"><a href="/pakistan-air-force-headquarters-address.html">Pakistan Air Force Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/pennsylvania-civil-war-soldiers-index-cards.html">Pennsylvania Civil War Soldiers Index Cards</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

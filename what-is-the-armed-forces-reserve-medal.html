@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Armed Forces Reserve Medal - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Armed Forces Reserve Medal",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/fd/41/c0/fd41c0cd08fbc5708315fff263706aab.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+armed+forces+reserve+medal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Armed Forces Reserve Medal</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The list of abbreviations related to AFRM - Armed Forces Reserve Medal. The Armed Forces Expeditionary Medal AFEM is a military award of the United States military which was first created in 1961 by Executive Order of President John Kennedy. Campaign or service medal is authorized. <br>				
+			</p>
+										<a class="badge badge-primary" href="/mycaa-interior-design.html">mycaa interior design</a>
+											<a class="badge badge-primary" href="/mycaa-laptop.html">mycaa laptop</a>
+											<a class="badge badge-warning" href="/mycaa-budget.html">mycaa budget</a>
+											<a class="badge badge-secondary" href="/mycaa-degree-programs.html">mycaa degree programs</a>
+											<a class="badge badge-dark" href="/mycaa-courses.html">mycaa courses</a>
+											<a class="badge badge-light" href="/mycaa-online-schools.html">mycaa online schools</a>
+											<a class="badge badge-primary" href="/mycaa-medical-assistant.html">mycaa medical assistant</a>
+											<a class="badge badge-primary" href="/mycaa-grant-programs.html">mycaa grant programs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/29/79/13297971036d96045c842c34f0324fc6.jpg" data-lightbox="roadtrip" data-title="Armed Forces Reserve Medal With M Device Army Ribbons Military Medals Military Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/29/79/13297971036d96045c842c34f0324fc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSWKf1b1f_pBtl43ee6K8QHdNk40ai3XMhw';" alt="Armed Forces Reserve Medal With M Device Army Ribbons Military Medals Military Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Reserve Medal With M Device Army Ribbons Military Medals Military Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/84/8a/56/848a56458cdf8e41a4a80ce32e8a9426.jpg" data-lightbox="roadtrip" data-title="Usmc Armed Forces Reserve Medal Usmc Armed Forces Military Issue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/84/8a/56/848a56458cdf8e41a4a80ce32e8a9426.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlA63LIYepSCziKmTqdMS1Qq7Gy0BZuhBAA';" alt="Usmc Armed Forces Reserve Medal Usmc Armed Forces Military Issue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Armed Forces Reserve Medal Usmc Armed Forces Military Issue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/12/05/991205271944daa716d2272fb01a396b.jpg" data-lightbox="roadtrip" data-title="Armed Forces Reserve Medal Navy Version Marine Corps Medals Military Medals Army Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/12/05/991205271944daa716d2272fb01a396b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiFLxTZlMVyoW-LaGEaFDkDJ2GtNI1jN2-wA';" alt="Armed Forces Reserve Medal Navy Version Marine Corps Medals Military Medals Army Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Reserve Medal Navy Version Marine Corps Medals Military Medals Army Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/1e/5d/ce1e5d9f35ee648174812ba57011d344.jpg" data-lightbox="roadtrip" data-title="Usa Military Medal Armed Forces Reserve Army Medal 71 M 913 300 Medal With Box And Bar Medal For Service Military Memorabilia Military Medals Etsy Store">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/1e/5d/ce1e5d9f35ee648174812ba57011d344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4YtzOU-9JM5Sout9QAH4-gsPS8nnKAnSQA';" alt="Usa Military Medal Armed Forces Reserve Army Medal 71 M 913 300 Medal With Box And Bar Medal For Service Military Memorabilia Military Medals Etsy Store">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Military Medal Armed Forces Reserve Army Medal 71 M 913 300 Medal With Box And Bar Medal For Service Military Memorabilia Military Medals Etsy Store</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/10/ef/da10ef95a66193a5849fd3396a0d7e30.jpg" data-lightbox="roadtrip" data-title="Us Army Armed Forces Reserve Medal Military Service Award Full Size Medals Army Military Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/10/ef/da10ef95a66193a5849fd3396a0d7e30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NasenMi-a1VfN-oYzkrAYphZKetNwyyLXQ';" alt="Us Army Armed Forces Reserve Medal Military Service Award Full Size Medals Army Military Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Armed Forces Reserve Medal Military Service Award Full Size Medals Army Military Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/10/38/8e1038ea2497942f4789894cf09b643e.jpg" data-lightbox="roadtrip" data-title="Armed Forces Reserve Miniature Medal Army Version Armed Forces Military Medals Miniatures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/10/38/8e1038ea2497942f4789894cf09b643e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeM3iXNSL7b-48tWkgPi0xqaBAB8RMB_BUQw';" alt="Armed Forces Reserve Miniature Medal Army Version Armed Forces Military Medals Miniatures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Reserve Miniature Medal Army Version Armed Forces Military Medals Miniatures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/ce/1e/5d/ce1e5d9f35ee648174812ba57011d344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeM3iXNSL7b-48tWkgPi0xqaBAB8RMB_BUQw';" alt="Armed Forces Reserve Miniature Medal Army Version Armed Forces Military Medals Miniatures">
+										<div class="card-body">
+						<h3 class="h5"><b>The Armed Forces Reserve Medal AFRM is a service medal of the United States Armed Forces that has been around since the 1950s.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the armed forces reserve medal</strong>. 
+								
+																	The Armed Forces Reserve Medal AFRM is granted to personnel who have completed 10 years of service as a member of a Reserve or National Guard component of the US. 
+																	The Armed Forces Expeditionary Medal AFEM is a military award of the United States Armed Forces which was first created in 1961 by Executive Order of President John Kennedy. 
+																	The Armed Forces Reserve Medal is a military award of the United States Armed Forces that has existed since 1950. 
+																	The medal recognizes service performed by members of the reserve components and is awarded to both officers and enlisted personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The medal is awarded for participation in a United States military operation and encountered foreign armed opposition or. 
+																	The reverse of all medals has the inscription ARMED FORCES RESERVE around the rim. 
+																	Operations in direct support of the United Nations or US. 
+																	Military ground naval or air service participated in a US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The AFSM is a deployed service medal that is presented to those service members who engage in significant activity for which no other US. 
+																	Armed Forces Reserve Medal Ribbon Criteria. 
+																	The Queens Volunteer Reserves Medal is a meritorious award given for members of any rank of the Volunteer Reserve Forces for devotion to duty and exemplary service over a period usually of at. 
+																	Operations of assistance for friendly foreign nations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Forces who after July 1 1958 participated in US. 
+																	The service can be cumulative given that the 10 years accumulate and are served over a period of 12 consecutive years. 
+																	Issued to any officer or enlisted member of the Reserve Components of the Armed Forces of the United States who completes a total of 10 years of honorable satisfactory service under the following conditions. 
+																	The medal recognizes service performed by members of the reserve components and is presented to both officers and enlisted personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the reverse is a different design for each of the Reserve Components. 
+																	Armed Forces Reserve Medal Eligibility Requirements. 
+																	The medal is considered a successor award to the Naval Reserve Medal and the Marine Corps Reserve Ribbon which were discontinued in 1958 and 1967 respectively. 
+																	This applies to all services including the Coast Guard and National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The medal is designed to recognize service that has been performed by members of the reserve branches. 
+																	A bronze medal 1 14 inches in diameter with a flaming torch in front of a crossed powder horn and a bugle within a circle composed of thirteen stars and thirteen rays. 
+																	The Volunteer Reserves Service Medal VRSM is a medal which may be awarded to members of the Volunteer Reserves of all branches of the British Armed Forces - the Royal Naval Reserve the Royal Marines Reserve the Army Reserve and the Royal Auxiliary Air Force. 
+																	It can be awarded to both enlisted and commissioned officers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Established 1950 the Armed Forces Reserve Medal is awarded to enlisted members including officers of the United States armed forces reserve after completing 10 years of service. 
+																	The AFRM with M Device is awarded regardless of length of reserve service to Soldiers who are involuntarily mobilized or who voluntarily mobilize in support of specific US. 
+																	The Armed Forces Reserve Medal is a service medal of the United States Armed Forces that has existed since 1950. 
+																	What qualifies as an Armed Forces Service Medal veteran. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The medal recognizes service performed by members of the reserve components and is awarded to both officers and enlisted personnel. 
+																	The Armed Forces Service Medal AFSM is a military award of the United States military that was created on January 11 1996 by President Bill Clinton under Executive Order 12985. 
+																	The medal is awarded to members of the US. 
+																	The Armed Forces Reserve Medal AFRM is a service medal of the United States Armed Forces that has existed since 1950. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An Armed Forces Service Medal veteran is defined as a veteran who while serving on active duty in the US. 
+																	Military operation for which an Armed Forces Service Medal was awarded pursuant to Executive Order 12985 Establishing the Armed Forces Service Medal Jan. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/29/82/5b29824dda81b0ec62c26a044b826af2.jpg" data-lightbox="roadtrip" data-title="Army Reserve Components Achievement Full Size Medal Army Reserve Us Army Reserve Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/29/82/5b29824dda81b0ec62c26a044b826af2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gCUyXYQpccugrWJnECrUdH_DmAB4zgak7w';" alt="Army Reserve Components Achievement Full Size Medal Army Reserve Us Army Reserve Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reserve Components Achievement Full Size Medal Army Reserve Us Army Reserve Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/41/c0/fd41c0cd08fbc5708315fff263706aab.jpg" data-lightbox="roadtrip" data-title="Armed Forces Reserve Service Medal And Ribbon With 30 Year Device On Etsy 10 00 Service Medals Military Memorabilia Vintage Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/41/c0/fd41c0cd08fbc5708315fff263706aab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpqdruwSRyxHJJNPGAHUAF3kh-kfVRx00WgQ';" alt="Armed Forces Reserve Service Medal And Ribbon With 30 Year Device On Etsy 10 00 Service Medals Military Memorabilia Vintage Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Reserve Service Medal And Ribbon With 30 Year Device On Etsy 10 00 Service Medals Military Memorabilia Vintage Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/d6/c0/5ad6c04a5df18dcc2bac4db1acb2e54f.jpg" data-lightbox="roadtrip" data-title="Armed Forces Reserve Medal Ribbon Afrm Medal Ribbon Armed Forces Military Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/d6/c0/5ad6c04a5df18dcc2bac4db1acb2e54f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3z5-M_ihUcWZLHPQ0JxTxMIxI3frIezDWA';" alt="Armed Forces Reserve Medal Ribbon Afrm Medal Ribbon Armed Forces Military Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Reserve Medal Ribbon Afrm Medal Ribbon Armed Forces Military Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/63/bb/8363bbc134d798ca0bb077bc4b90fb3c.jpg" data-lightbox="roadtrip" data-title="Armed Forces Service Medal Afsm Usamm Armed Forces Service Medal Military Medals Service Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/63/bb/8363bbc134d798ca0bb077bc4b90fb3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQph8eWGIM_9gxwgZ8j3yYs91vqBd31CFPMbQ';" alt="Armed Forces Service Medal Afsm Usamm Armed Forces Service Medal Military Medals Service Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Service Medal Afsm Usamm Armed Forces Service Medal Military Medals Service Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/38/0d/a7380d2fd5275f95cc8737fd31b3dadb.jpg" data-lightbox="roadtrip" data-title="Army Reserve Components Achievement Anodized Medal Army Reserve Army Decor Military Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/38/0d/a7380d2fd5275f95cc8737fd31b3dadb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQli8KFnOkUqJ5rBU-IqxiR_nIfzQ6SF8n7Gw';" alt="Army Reserve Components Achievement Anodized Medal Army Reserve Army Decor Military Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reserve Components Achievement Anodized Medal Army Reserve Army Decor Military Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/9a/6f/6f9a6f07e89eae90c44e189ee6b1a864.jpg" data-lightbox="roadtrip" data-title="Korean Defense Armed Forces Armed Forces Reserve Service Medals Insignias Militar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/9a/6f/6f9a6f07e89eae90c44e189ee6b1a864.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESo0Bcuuzd4XzMem6Fw4MwQUG9pPjwP_3LA';" alt="Korean Defense Armed Forces Armed Forces Reserve Service Medals Insignias Militar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean Defense Armed Forces Armed Forces Reserve Service Medals Insignias Militar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/07/33/cc07330f0b2aead89b5afb073ebea7ec.png" data-lightbox="roadtrip" data-title="Pin On United States Usaf Qualification Badges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/07/33/cc07330f0b2aead89b5afb073ebea7ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfpucyfXAcU8dMhagnvILw2nlp44yQwWM1Lg';" alt="Pin On United States Usaf Qualification Badges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On United States Usaf Qualification Badges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/7f/ff/9d7fff4e34032c78f26430448840e41b.jpg" data-lightbox="roadtrip" data-title="Selected Marine Corps Reserve Medal Marine Corps Reserve Marine Corps Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/7f/ff/9d7fff4e34032c78f26430448840e41b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aFbF0QahTlVrdayIJew40CXPgMmPM9zjLg';" alt="Selected Marine Corps Reserve Medal Marine Corps Reserve Marine Corps Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Selected Marine Corps Reserve Medal Marine Corps Reserve Marine Corps Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/e0/0d/eae00d784001955be012cfa0706449b6.jpg" data-lightbox="roadtrip" data-title="Humanitarian Service Anodized Medal Medals Armed Forces Service Medal Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/e0/0d/eae00d784001955be012cfa0706449b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtR0M0jVTqgtM5vIQ6nAkqQvgkHd2Q4KJ_w';" alt="Humanitarian Service Anodized Medal Medals Armed Forces Service Medal Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Humanitarian Service Anodized Medal Medals Armed Forces Service Medal Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/fc/2f/0a/fc2f0aaddb1f80286c7c9a2b14e78df8.jpg" data-lightbox="roadtrip" data-title="Pin On Navy Chief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/fc/2f/0a/fc2f0aaddb1f80286c7c9a2b14e78df8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVm3JcKRD1KZRtRIPOqqI8jfzHWrz_uoHSg';" alt="Pin On Navy Chief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Navy Chief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/6b/d8/0c6bd868310e125dca9abf20760608b4.jpg" data-lightbox="roadtrip" data-title="Air Reserve Meritorious Service Medal Air Force Medals Service Medals Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/6b/d8/0c6bd868310e125dca9abf20760608b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGL72CieJ-ne9Xdl4UIFYavVWzIFozJ8svew';" alt="Air Reserve Meritorious Service Medal Air Force Medals Service Medals Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Reserve Meritorious Service Medal Air Force Medals Service Medals Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/96/7c/4c/967c4c24bb78f5d176da9869e61df19f.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard Arctic Service Medal Coast Guard Military Medals And Ribbons Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/96/7c/4c/967c4c24bb78f5d176da9869e61df19f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdB_WoSV1WJSzJM6hcsTp0yHxvlInGi6a2aA';" alt="Us Coast Guard Arctic Service Medal Coast Guard Military Medals And Ribbons Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Arctic Service Medal Coast Guard Military Medals And Ribbons Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/45/3d/91453da0fb82f328f522aefb7341a40a.jpg" data-lightbox="roadtrip" data-title="Pin On My Medals And Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/45/3d/91453da0fb82f328f522aefb7341a40a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-aaYZu7XDFV4GB6fNxUfxEmKuRlOm2Vw9g';" alt="Pin On My Medals And Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Medals And Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycaar.html">Mycaar</a></li>
+													<li class="list-group-item"><a href="/mycar-macquarie.html">Mycar Macquarie</a></li>
+													<li class="list-group-item"><a href="/mycar-kingston.html">Mycar Kingston</a></li>
+													<li class="list-group-item"><a href="/mycaa-seco.html">Mycaa Seco</a></li>
+													<li class="list-group-item"><a href="/mycar-garden-city.html">Mycar Garden City</a></li>
+													<li class="list-group-item"><a href="/mycaa-zimbabwe-login.html">Mycaa Zimbabwe Login</a></li>
+													<li class="list-group-item"><a href="/mycar-hotline.html">Mycar Hotline</a></li>
+													<li class="list-group-item"><a href="/mycar-fountain-gate.html">Mycar Fountain Gate</a></li>
+													<li class="list-group-item"><a href="/mycar-southland.html">Mycar Southland</a></li>
+													<li class="list-group-item"><a href="/mycaa-training.html">Mycaa Training</a></li>
+													<li class="list-group-item"><a href="/mycampus-portal-la-sierra.html">Mycampus Portal La Sierra</a></li>
+													<li class="list-group-item"><a href="/mycambrian-housing-portal.html">Mycambrian Housing Portal</a></li>
+													<li class="list-group-item"><a href="/mycar-greensborough.html">Mycar Greensborough</a></li>
+													<li class="list-group-item"><a href="/mycar-driver-registration.html">Mycar Driver Registration</a></li>
+													<li class="list-group-item"><a href="/mycar-promo-code-2020.html">Mycar Promo Code 2020</a></li>
+													<li class="list-group-item"><a href="/mycaa-texas-am.html">Mycaa Texas Am</a></li>
+													<li class="list-group-item"><a href="/mycar-jihlava.html">Mycar Jihlava</a></li>
+													<li class="list-group-item"><a href="/mycar-auto-service.html">Mycar Auto Service</a></li>
+													<li class="list-group-item"><a href="/mycaa-teaching-certificate.html">Mycaa Teaching Certificate</a></li>
+													<li class="list-group-item"><a href="/mycampus-portal-arkansas-state-university.html">Mycampus Portal Arkansas State University</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Salvation Army Pickup Phone Number Jacksonville Fl - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Salvation Army Pickup Phone Number Jacksonville Fl",
+  "datePublished": "2021-02-14",
+  "image": "https://i.ebayimg.com/00/s/MjgwWDMxMA==/z/-OIAAOSwnUhfp9I3/$_1.JPG?set_id=8800005007",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=salvation+army+pickup+phone+number+jacksonville+fl",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Salvation Army Pickup Phone Number Jacksonville Fl</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Its ministry is motivated by the love of God. Online pick-ups and donations are not available for the zip code you searched. Salvation Army Family StoreDonation Center 9119 Merrill Road Jacksonville FL 32225 904 743-2725 Mon-Sat. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-wives-choir-film-release-date.html">military wives choir film release date</a>
+											<a class="badge badge-dark" href="/military-wives-kate-berkeley.html">military wives kate berkeley</a>
+											<a class="badge badge-secondary" href="/montana-army-national-guard-human-resources.html">montana army national guard human resources</a>
+											<a class="badge badge-info" href="/military-wives-choir-music.html">military wives choir music</a>
+											<a class="badge badge-primary" href="/mission-my-care-patient-portal.html">mission my care patient portal</a>
+											<a class="badge badge-light" href="/military-wives-choir-vue.html">military wives choir vue</a>
+											<a class="badge badge-light" href="/msc-bahrain-careers.html">msc bahrain careers</a>
+											<a class="badge badge-success" href="/military-wives-choir-naples.html">military wives choir naples</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right site.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://downtownjacksonville.org/wp-content/uploads/2019/11/592d6faf-e7ee-463d-96cf-56ecf973119d_dtmg-hi-res.jpg" data-lightbox="roadtrip" data-title="Salvation Army Downtown Jacksonville">
+											<img class="card-img v-image ads-img " src="https://downtownjacksonville.org/wp-content/uploads/2019/11/592d6faf-e7ee-463d-96cf-56ecf973119d_dtmg-hi-res.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0uu_8PYmvfu6fGlib4s6UTMxd275PdisbA';" alt="Salvation Army Downtown Jacksonville">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Downtown Jacksonville</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://salvationarmyflorida.org/wp-content/uploads/2020/11/shield.svg" data-lightbox="roadtrip" data-title="Northeast Florida Area Command The Salvation Army Florida">
+											<img class="card-img v-image ads-img " src="https://salvationarmyflorida.org/wp-content/uploads/2020/11/shield.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4oaqWA3B0ZtHqyXbN-wZKeCvZ55B21g1FeQ';" alt="Northeast Florida Area Command The Salvation Army Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northeast Florida Area Command The Salvation Army Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf.ltkcdn.net/charity/images/std/220560-675x450-men-lifting-dresser-onto-van.jpg" data-lightbox="roadtrip" data-title="Salvation Army Pick Up Lovetoknow">
+											<img class="card-img v-image ads-img " src="https://cf.ltkcdn.net/charity/images/std/220560-675x450-men-lifting-dresser-onto-van.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBvnrZOLPQHUASVx_wf--TDSbfLrUx3IVoA';" alt="Salvation Army Pick Up Lovetoknow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Pick Up Lovetoknow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.jaxdailyrecord.com/sites/default/files/styles/sliders_and_planned_story_image_870x580/public/_1415808117mathissalvationarmy.jpg" data-lightbox="roadtrip" data-title="Salvation Army S Arlington Store Relocating Jax Daily Record Jacksonville Daily Record Jacksonville Florida">
+											<img class="card-img v-image ads-img " src="https://www.jaxdailyrecord.com/sites/default/files/styles/sliders_and_planned_story_image_870x580/public/_1415808117mathissalvationarmy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3LJrjBHvjGfSLhLPjlh_e8W-oF5KFLPmZKA';" alt="Salvation Army S Arlington Store Relocating Jax Daily Record Jacksonville Daily Record Jacksonville Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army S Arlington Store Relocating Jax Daily Record Jacksonville Daily Record Jacksonville Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/30/b6/ee30b6d71ed631ffa1ae8712702ce22f.jpg" data-lightbox="roadtrip" data-title="Pin On Family Farm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/30/b6/ee30b6d71ed631ffa1ae8712702ce22f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07r9Ccd9MeoS80gBZAAZwjl0dpj0bQ4qV5A';" alt="Pin On Family Farm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Family Farm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/salvationarmyflorida.org/wp-content/uploads/2021/01/FB-Cover-Spring-2021-Food-Distribution.jpg?resize=1210%2C423&amp;ssl=1" data-lightbox="roadtrip" data-title="Northeast Florida Area Command The Salvation Army Florida">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/salvationarmyflorida.org/wp-content/uploads/2021/01/FB-Cover-Spring-2021-Food-Distribution.jpg?resize=1210%2C423&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtX9cVHOtZPOyr3OM7mlkk3WI0kYiBb0jqUw';" alt="Northeast Florida Area Command The Salvation Army Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northeast Florida Area Command The Salvation Army Florida</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://thriftstored.com/static/img/brands/profile-pics/salvation-army-profile-pic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtX9cVHOtZPOyr3OM7mlkk3WI0kYiBb0jqUw';" alt="Northeast Florida Area Command The Salvation Army Florida">
+										<div class="card-body">
+						<h3 class="h5"><b>10900 Beach Boulevard Jacksonville FL 32246 904 645-3919 Mon-Sat.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Salvation army pickup phone number jacksonville fl</strong>. 
+								
+																	Homepage for the Jacksonville ARC website. 
+																	5631 Van Dyke Road. 
+																	Due to COVID-19 many locations have suspended pickups but most locations are accepting drop-offs. 
+																	Please call 1-800-SA-TRUCK 1-800-728-7825 to find or schedule your donation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Show Stores Show Dropboxes. 
+																	If you would like to visit our donation value guide please click here. 
+																	1000 AM - 600 PM. 
+																	Its message is based on the Bible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Insert_invitationSchedule a Donation Pick-up. 
+																	The Salvation Army Jacksonville located in Jacksonville FL is a branch office of the Christian non-profit Salvation Army whose mission emphasizes aiding the poor and people in need. 
+																	Salvation Army pick up hours are typically 8 am. 
+																	10900 Beach Blvd Jacksonville FL 32246. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salvation Army Family StoreDonation Drop-off 10696 Lem Turner Road Jacksonville FL 32218. 
+																	See reviews photos directions phone numbers and more for Salvation Army Pickup locations in Jacksonville FL. 
+																	The Salvation Army of Florida. 
+																	See reviews photos directions phone numbers and more for Salvation Army Donations Pickup locations in Jacksonville FL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1258 Beach Blvd Jacksonville Beach FL 32250. 
+																	The Salvation Army an international movement is an evangelical part of the universal Christian Church. 
+																	Schedule a Salvation Army pick up online or call 1-800-SA-TRUCK. 
+																	The Salvation Army Family Store Donation Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salvation Army offers human services through its programs including disaster relief and public emergency services while taking an evangelical approach. 
+																	Looking for Value Guide for Tax Deductable information. 
+																	The Salvation Army Jacksonville located in Jacksonville FL is a branch office of the Christian non-profit Salvation Army whose mission emphasizes aiding the poor and people in need. 
+																	The Salvation Army Family Store Donation Center in Jacksonville FL Get Visit our website to schedule a free donation pick up or to find out how we help Tux Rental Jacksonville Fl Dining Room Sets Jacksonville Fl Get more information on Jacksonville FL Dining Room furniture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salvation Army Family Store Donation Ctr. 
+																	Lutz Florida 33558 US. 
+																	The Salvation Army offers human services through its programs including disaster relief and public emergency services while taking an evangelical approach. 
+																	However they can vary depending on the location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please notify me when pickup services resume in my area. 
+																	1000 AM - 700 PM. 
+																	For over 100 years The Salvation Armys Adult Rehabilitation Centers have provided spiritual social and emotional assistance for men and women who have lost the ability to cope with their problems and provide for themselves. 
+																	Nearby Salvation Army Locations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its mission is to preach the gospel of Jesus Christ and to meet human needs in His name without discrimination. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ebayimg.com/00/s/MjgwWDMxMA==/z/-OIAAOSwnUhfp9I3/$_1.JPG?set_id=8800005007" data-lightbox="roadtrip" data-title="The Salvation Army Jacksonville Arc Ebay For Charity">
+											<img class="card-img v-image ads-img " src="https://i.ebayimg.com/00/s/MjgwWDMxMA==/z/-OIAAOSwnUhfp9I3/$_1.JPG?set_id=8800005007" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqdYiF7nH5mIkOpj5tw_JoEqqjusd7O9KGQ';" alt="The Salvation Army Jacksonville Arc Ebay For Charity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Jacksonville Arc Ebay For Charity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/d3/56/b5d356a9718809750b97fa217bfb55db.jpg" data-lightbox="roadtrip" data-title="Salvation Army Coupon Wenatchee Thrifty Living Salvation Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/d3/56/b5d356a9718809750b97fa217bfb55db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhLvcEQxl-H0ZfbCAXkh_qUVuiZja9IAu3Q';" alt="Salvation Army Coupon Wenatchee Thrifty Living Salvation Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Coupon Wenatchee Thrifty Living Salvation Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thriftstored.com/static/img/brands/profile-pics/salvation-army-profile-pic.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Family Store Donation Center 11th St Springfield Il Springfield Il">
+											<img class="card-img v-image ads-img " src="https://thriftstored.com/static/img/brands/profile-pics/salvation-army-profile-pic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYchZF0Td7VzW56V4ZeN5nshqj-JxHnexPRg';" alt="The Salvation Army Family Store Donation Center 11th St Springfield Il Springfield Il">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Family Store Donation Center 11th St Springfield Il Springfield Il</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/usn-cache.salvationarmy.org/03e9dd76-b00a-4541-8e8c-fcf3dfaaf683_TerritorialMap_Lightblues.jpg" data-lightbox="roadtrip" data-title="P R Contacts The Salvation Army Usa">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/usn-cache.salvationarmy.org/03e9dd76-b00a-4541-8e8c-fcf3dfaaf683_TerritorialMap_Lightblues.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IdP22BkTKbeuQzDU4QB0Jq9ixIW1LMTpkA';" alt="P R Contacts The Salvation Army Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">P R Contacts The Salvation Army Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/bd/bb/adbdbb67033f4e14c1ce1f79ab269545.jpg" data-lightbox="roadtrip" data-title="Car Donations To Salvation Army Car Donate Car Saving Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/bd/bb/adbdbb67033f4e14c1ce1f79ab269545.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tliZrcxItQWriz7Xc8DopMem8V69w5XwGg';" alt="Car Donations To Salvation Army Car Donate Car Saving Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Donations To Salvation Army Car Donate Car Saving Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.salvationarmycarolinas.org/assets/components/phpthumbof/cache/Irma%20Canteen%20Staged.a204abfa97c49683023655c02a01c3f7.jpg" data-lightbox="roadtrip" data-title="10 Canteens To Florida The Salvation Army">
+											<img class="card-img v-image ads-img " src="https://www.salvationarmycarolinas.org/assets/components/phpthumbof/cache/Irma%20Canteen%20Staged.a204abfa97c49683023655c02a01c3f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoD53a0_-Ji5KoaTXrUAQYWXllwo6DEHYtQ';" alt="10 Canteens To Florida The Salvation Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Canteens To Florida The Salvation Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.southernspiritonline.org/wp-content/uploads/2019/12/wilber-2-e1575300040368.jpg?fit=300%2C222&amp;ssl=1" data-lightbox="roadtrip" data-title="Staying In Touch Hernandez Keeping Ties With The Salvation Army As He Serves His Country The Salvation Army Usa Southern Territory Website">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.southernspiritonline.org/wp-content/uploads/2019/12/wilber-2-e1575300040368.jpg?fit=300%2C222&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wwV8-VQpj1wmcZ5mykxdcZDGcCSZ8yHE3w';" alt="Staying In Touch Hernandez Keeping Ties With The Salvation Army As He Serves His Country The Salvation Army Usa Southern Territory Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Staying In Touch Hernandez Keeping Ties With The Salvation Army As He Serves His Country The Salvation Army Usa Southern Territory Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.homelessshelterdirectory.org/images/pics/11099_1.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Red Shield Lodge Emergency Shelter The Salvation Army Red Shield Lodge Emergency Shelter Tampa Fl">
+											<img class="card-img v-image ads-img " src="https://www.homelessshelterdirectory.org/images/pics/11099_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCxWZ5PBVBtTKrYNPpYOoI_UBnSstElQgagQ';" alt="The Salvation Army Red Shield Lodge Emergency Shelter The Salvation Army Red Shield Lodge Emergency Shelter Tampa Fl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Red Shield Lodge Emergency Shelter The Salvation Army Red Shield Lodge Emergency Shelter Tampa Fl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fastly.4sqi.net/img/general/200x200/4584156_WExu75oSBPOgVHZVxlhzyb0nq2QQeglDNLAYRMKpJgA.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Family Store Donation Center Thrift Vintage Store In Southeast Jacksonville">
+											<img class="card-img v-image ads-img " src="https://fastly.4sqi.net/img/general/200x200/4584156_WExu75oSBPOgVHZVxlhzyb0nq2QQeglDNLAYRMKpJgA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01eJsGXkt2lqatQVKP2XKBiLeJmg_RlYXSA';" alt="The Salvation Army Family Store Donation Center Thrift Vintage Store In Southeast Jacksonville">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Family Store Donation Center Thrift Vintage Store In Southeast Jacksonville</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-media0.fl.yelpcdn.com/bphoto/5TGofsUnbp1CeLZjw-X6rA/l.jpg" data-lightbox="roadtrip" data-title="The Salvation Army Family Store Donation Center 2221 County Road 220 Middleburg Fl Clothes Posts Mapquest">
+											<img class="card-img v-image ads-img " src="https://s3-media0.fl.yelpcdn.com/bphoto/5TGofsUnbp1CeLZjw-X6rA/l.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGH5YUVZnI0uxm5P3W0onj56PHZXUqNk3RyQ';" alt="The Salvation Army Family Store Donation Center 2221 County Road 220 Middleburg Fl Clothes Posts Mapquest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Family Store Donation Center 2221 County Road 220 Middleburg Fl Clothes Posts Mapquest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2849543975160333" data-lightbox="roadtrip" data-title="The Salvation Army Of St Johns County Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2849543975160333" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzhnIXlfD7Huhbkrvna_zHvn-BD-OmNfrE9w';" alt="The Salvation Army Of St Johns County Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Of St Johns County Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c0/7f/ed/c07fed67c080167ba7718bd75d2824df.jpg" data-lightbox="roadtrip" data-title="Arc Books Salvation Army Salvation Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c0/7f/ed/c07fed67c080167ba7718bd75d2824df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT85zkc5j-cIl5ty9RVMy_drd4zHROsiZ4pKA';" alt="Arc Books Salvation Army Salvation Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arc Books Salvation Army Salvation Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d1vhqlrjc8h82r.cloudfront.net/11-26-2019/t_de7b302dc90a4f1a879a314509b6cdfe_name_image.jpg" data-lightbox="roadtrip" data-title="Salvation Army">
+											<img class="card-img v-image ads-img " src="https://d1vhqlrjc8h82r.cloudfront.net/11-26-2019/t_de7b302dc90a4f1a879a314509b6cdfe_name_image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC93RkGKPOJqx6OGOFN0KVGT4bqr086SAV2w';" alt="Salvation Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hari-army-bts-tanggal.html">Hari Army Bts Tanggal</a></li>
+													<li class="list-group-item"><a href="/get-ncaa-eligibility-number.html">Get Ncaa Eligibility Number</a></li>
+													<li class="list-group-item"><a href="/full-scholarship-for-mba-in-india.html">Full Scholarship For Mba In India</a></li>
+													<li class="list-group-item"><a href="/hari-bengek-army.html">Hari Bengek Army</a></li>
+													<li class="list-group-item"><a href="/government-scholarship-for-mba-students-in-india.html">Government Scholarship For Mba Students In India</a></li>
+													<li class="list-group-item"><a href="/hari-army-bts-sedunia.html">Hari Army Bts Sedunia</a></li>
+													<li class="list-group-item"><a href="/georgia-army-national-guard-human-resources.html">Georgia Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/gifts-for-spouse-of-deployed-soldiers.html">Gifts For Spouse Of Deployed Soldiers</a></li>
+													<li class="list-group-item"><a href="/grace-marshall-air-force-one.html">Grace Marshall Air Force One</a></li>
+													<li class="list-group-item"><a href="/hari-army-tanggal.html">Hari Army Tanggal</a></li>
+													<li class="list-group-item"><a href="/hari-terbentuknya-army.html">Hari Terbentuknya Army</a></li>
+													<li class="list-group-item"><a href="/h-hour-military-term.html">H Hour Military Term</a></li>
+													<li class="list-group-item"><a href="/grants-for-college-for-military-members.html">Grants For College For Military Members</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-dependents-of-veterans.html">Health Insurance For Dependents Of Veterans</a></li>
+													<li class="list-group-item"><a href="/full-scholarship-for-mfa.html">Full Scholarship For Mfa</a></li>
+													<li class="list-group-item"><a href="/getting-veteran-medical-records.html">Getting Veteran Medical Records</a></li>
+													<li class="list-group-item"><a href="/harga-saham-army-hari-ini.html">Harga Saham Army Hari Ini</a></li>
+													<li class="list-group-item"><a href="/hari-army-bts-tanggal-berapa.html">Hari Army Bts Tanggal Berapa</a></li>
+													<li class="list-group-item"><a href="/free-premium-linkedin-for-military-spouses.html">Free Premium Linkedin For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/hampton-va-medical-records-mailed-to-wrong-person.html">Hampton Va Medical Records Mailed To Wrong Person</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

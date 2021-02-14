@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Campus Portal Paulding - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Campus Portal Paulding",
+  "datePublished": "2021-02-14",
+  "image": "kQx-WStEAwLGEM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=campus+portal+paulding",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Campus Portal Paulding</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">15 2021 at 500 PM. COVID-19 Login Company Products Services Partners Contact Search Request a Demo Parent or Student Teacher Current Customer Future Customer. More Details Future Customer. <br>				
+			</p>
+										<a class="badge badge-danger" href="/whats-the-definition-of-military-force.html">whats the definition of military force</a>
+											<a class="badge badge-primary" href="/whats-the-meaning-of-military-governor.html">whats the meaning of military governor</a>
+											<a class="badge badge-success" href="/where-can-i-find-ww1-service-records.html">where can i find ww1 service records</a>
+											<a class="badge badge-primary" href="/what-time-is-2400-hours.html">what time is 2400 hours</a>
+											<a class="badge badge-info" href="/what-is-your-ncaa-eligibility-number.html">what is your ncaa eligibility number</a>
+											<a class="badge badge-secondary" href="/whats-my-camper-trailer-worth.html">whats my camper trailer worth</a>
+											<a class="badge badge-success" href="/whats-my-calling-from-god.html">whats my calling from god</a>
+											<a class="badge badge-secondary" href="/when-will-military-dependents-get-covid-vaccine.html">when will military dependents get covid vaccine</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.paulding.k12.ga.us/cms/lib/GA01903603/Centricity/Domain/221/IC-ParentPortal.jpg" data-lightbox="roadtrip" data-title="For Parents Parent Portal Support">
+											<img class="card-img v-image ads-img " src="https://www.paulding.k12.ga.us/cms/lib/GA01903603/Centricity/Domain/221/IC-ParentPortal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHU8FxnVaDOQ4J9KM5nV_Nn8jsJw441IsIbg';" alt="For Parents Parent Portal Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Parents Parent Portal Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.paulding.k12.ga.us/cms/lib/GA01903603/Centricity/Domain/207/Portal-Icon-Rounded-Corner.png" data-lightbox="roadtrip" data-title="Technology Services Student Dashboard Elementary">
+											<img class="card-img v-image ads-img " src="https://www.paulding.k12.ga.us/cms/lib/GA01903603/Centricity/Domain/207/Portal-Icon-Rounded-Corner.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgu5npEIJD-BUA7cRJ871d8n6HTItPHCiXJA';" alt="Technology Services Student Dashboard Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Technology Services Student Dashboard Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="jdq828C51E4k9M" data-lightbox="roadtrip" data-title="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 108 Parent Portal Activation And Setup Pdf">
+											<img class="card-img v-image ads-img " src="jdq828C51E4k9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUWDRXexoIVKIDZ77lJEC1Eq_1_EOBw4BsA';" alt="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 108 Parent Portal Activation And Setup Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 108 Parent Portal Activation And Setup Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.smore.com/ss/5d6954ea2ee29d0bf9f49a90-screenshot-fb_wide.jpg?_v=1567199142" data-lightbox="roadtrip" data-title="Infinite Campus Parent Portal Paulding Official Login Page 100 Verified">
+											<img class="card-img v-image ads-img " src="https://s.smore.com/ss/5d6954ea2ee29d0bf9f49a90-screenshot-fb_wide.jpg?_v=1567199142" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0InGLfpjt_4v6d2mmC37fOg92V0y6JOLyg';" alt="Infinite Campus Parent Portal Paulding Official Login Page 100 Verified">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinite Campus Parent Portal Paulding Official Login Page 100 Verified</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chattahoocheetech.edu/wp-content/uploads/2019/11/FI-CHATT-PAULDING-Open-House-840x320.jpg" data-lightbox="roadtrip" data-title="Chattahoochee Tech To Host Open House At Paulding Campus Chattahoochee Technical College">
+											<img class="card-img v-image ads-img " src="https://www.chattahoocheetech.edu/wp-content/uploads/2019/11/FI-CHATT-PAULDING-Open-House-840x320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4NtW19WIxqNSAtdI_JVMGXVyciWK0mYvPg';" alt="Chattahoochee Tech To Host Open House At Paulding Campus Chattahoochee Technical College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chattahoochee Tech To Host Open House At Paulding Campus Chattahoochee Technical College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.studylib.net/store/data/006820270_1-38c76dfa5784520e4ea635c9bdf5cb46.png" data-lightbox="roadtrip" data-title="Syllabus Paulding County Schools">
+											<img class="card-img v-image ads-img " src="https://s3.studylib.net/store/data/006820270_1-38c76dfa5784520e4ea635c9bdf5cb46.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVJDABxtq4IxosbVniLIuFQOQqpDMtXebK9g';" alt="Syllabus Paulding County Schools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syllabus Paulding County Schools</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.paulding.k12.ga.us/cms/lib/GA01903603/Centricity/Domain/207/Portal-Icon-Rounded-Corner.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVJDABxtq4IxosbVniLIuFQOQqpDMtXebK9g';" alt="Syllabus Paulding County Schools">
+										<div class="card-body">
+						<h3 class="h5"><b>For assistance with Canvas please contact your school.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Campus portal paulding</strong>. 
+								
+																	The Parent Portal in Infinite Campus is the easiest way for parents to stay connected to their students 9. 
+																	Check out these free training resources to review the simple changes. 
+																	Parents can access the Parent Portal through the Infinite Campus app on their mobile device. 
+																	1 2021 at 900 AM and close Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Exciting updates are coming to Instruction and Campus Learning. 
+																	For assistance with established parent portal accounts please email portalpauldingk12gaus. 
+																	Parents needing to set up a parent portal account can contact your students school for your activation key. 
+																	Student ID or Username Back to Login Request Password. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For assistance with established parent portal accounts please email portalpauldingk12gaus. 
+																	Parent Portal District ID Parent Portal Paulding County. 
+																	Paulding County School District App Parent Portal Information and Support Parent Portal Usage Policy PDF. 
+																	The Infinite Campus app is included as part of the Paulding County School District app package that can be downloaded here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please allow 48 hours to process as we are receiving a high volume of requests. 
+																	Central Registration Parent Portal Paulding County School. 
+																	Parents needing to set up a parent portal account can contact your students school for your activation key. 
+																	First-time users to Parent Portal are required to establish a user identification which includes both alpha and numeric characters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First-time users to Parent Portal are required to establish a user identification which includes both alpha and numeric characters. 
+																	August 27 2008 - Parents and the community at large recognize the tremendous impact technology has on our daily lives. 
+																	Internet Explorer Safari Firefox Google Chrome On the main 4. 
+																	House Bill 251 School Choice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paulding County School District Infinite Campus Parent Portal Dallas Ga. 
+																	Infinite Campus Parent Portal is a tool for parents and students to remain up-to-date with and connected with their students educational and academic progress. 
+																	Parent or Student. 
+																	For assistance with Canvas please contact your school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student Transfer Procedures Guidelines Application House Bill 251 will open Feb. 
+																	Infinite Campus - Paulding County School District. 
+																	2003-2021 Infinite Campus Inc. 
+																	Enter your Student ID or Username and well send you a link to change your password. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Infinite Campus Parent Portal is a tool for parents and students to remain up-to-date with and connected with their students educational and academic progress. 
+																	It is the goal of the Paulding County School District to provide accurate timely communication. 
+																	Parent Portal District ID Login to your schools portal using a REGULAR WEB BROWSER ie. 
+																	Please allow 48 hours to process as we are receiving a high volume of requests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Teacher Training for Campus2104 Release. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.paulding.k12.ga.us//cms/lib/GA01903603/Centricity/Domain/37/Icons/IC.png" data-lightbox="roadtrip" data-title="Headlines Features">
+											<img class="card-img v-image ads-img " src="https://www.paulding.k12.ga.us//cms/lib/GA01903603/Centricity/Domain/37/Icons/IC.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrht-w4ofS188hyOjmDnoq9GTaVAfoZY0Eyw';" alt="Headlines Features">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Headlines Features</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kQx-WStEAwLGEM" data-lightbox="roadtrip" data-title="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 160 Ri 20results 20in 20portal 20directions 2020 2021 Pdf">
+											<img class="card-img v-image ads-img " src="kQx-WStEAwLGEM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLi7DlrJFRjeAlchS5nT5hfQ2EBYlxV7erg';" alt="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 160 Ri 20results 20in 20portal 20directions 2020 2021 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Moduleinstance 160 Ri 20results 20in 20portal 20directions 2020 2021 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chattahoocheetech.edu/wp-content/uploads/2018/12/Paulding_map_2019.jpg" data-lightbox="roadtrip" data-title="Chattahoochee Technical College Georgia S Biggest Technical College">
+											<img class="card-img v-image ads-img " src="https://www.chattahoocheetech.edu/wp-content/uploads/2018/12/Paulding_map_2019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueMJ03UbJEq5DNGzQ21owbqlHEXDDxcZYvA';" alt="Chattahoochee Technical College Georgia S Biggest Technical College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chattahoochee Technical College Georgia S Biggest Technical College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="bYK0JG2vAoa3jM" data-lightbox="roadtrip" data-title="Https App Oncoursesystems Com School Webpage 300066 1792148">
+											<img class="card-img v-image ads-img " src="bYK0JG2vAoa3jM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2getSlwzbcypqvxsaSiiBvvYTyaZYk4Juw';" alt="Https App Oncoursesystems Com School Webpage 300066 1792148">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https App Oncoursesystems Com School Webpage 300066 1792148</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.orthoatlanta.com/storage/components/paulding%20(1)_2.jpg" data-lightbox="roadtrip" data-title="Paulding Office Piedmont Orthopedics Orthoatlanta Orthopedics Sports Medicine Specialists">
+											<img class="card-img v-image ads-img " src="https://www.orthoatlanta.com/storage/components/paulding%20(1)_2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTK9g2K3gjnhz_p2dHenO6Vz_WlPSf1Exvrw';" alt="Paulding Office Piedmont Orthopedics Orthoatlanta Orthopedics Sports Medicine Specialists">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paulding Office Piedmont Orthopedics Orthoatlanta Orthopedics Sports Medicine Specialists</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/24/7516816/slides/slide_7.jpg" data-lightbox="roadtrip" data-title="Welcome To 6th Grade Team 602 Information Sheet Please Complete The Information Sheet And Return It As We Dismiss Thanks Newsletter The Newsletter Contains Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/24/7516816/slides/slide_7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMzWTUYkyMyNrKZqQF04Scu6-MPo-37soRQ';" alt="Welcome To 6th Grade Team 602 Information Sheet Please Complete The Information Sheet And Return It As We Dismiss Thanks Newsletter The Newsletter Contains Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To 6th Grade Team 602 Information Sheet Please Complete The Information Sheet And Return It As We Dismiss Thanks Newsletter The Newsletter Contains Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chattahoocheetech.edu/wp-content/uploads/2019/08/Welcome-Back-slider-image.jpg" data-lightbox="roadtrip" data-title="Campus Facts Chattahoochee Technical College">
+											<img class="card-img v-image ads-img " src="https://www.chattahoocheetech.edu/wp-content/uploads/2019/08/Welcome-Back-slider-image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1XcUhsD2zqeqYiMcBsesJU9xsJUXYoZLtbg';" alt="Campus Facts Chattahoochee Technical College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Facts Chattahoochee Technical College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mathflynn.weebly.com/uploads/5/4/1/2/54123831/1469503850.png" data-lightbox="roadtrip" data-title="Math Flynn Geometry">
+											<img class="card-img v-image ads-img " src="https://mathflynn.weebly.com/uploads/5/4/1/2/54123831/1469503850.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ77KEvEFcXrrEuaO8vTOv21A4EVDACpDO5cw';" alt="Math Flynn Geometry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Math Flynn Geometry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ecSRXRksr2Rf0M" data-lightbox="roadtrip" data-title="Http Logins Db Com Paulding County Canvas">
+											<img class="card-img v-image ads-img " src="ecSRXRksr2Rf0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3QtoCfk4P7oHnnkTZTNj7E72chd8uCdbijg';" alt="Http Logins Db Com Paulding County Canvas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Logins Db Com Paulding County Canvas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="vD2NENjGWPiwEM" data-lightbox="roadtrip" data-title="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Domain 28 Pcsd 20ri 20remote 20instructions Pdf">
+											<img class="card-img v-image ads-img " src="vD2NENjGWPiwEM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhMtKPw_jSBweyvaIdg4ewibTQO7OXjCglQ';" alt="Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Domain 28 Pcsd 20ri 20remote 20instructions Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Paulding K12 Ga Us Cms Lib Ga01903603 Centricity Domain 28 Pcsd 20ri 20remote 20instructions Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chattahoocheetech.edu/wp-content/uploads/2020/12/Marietta-map-F2020.jpg" data-lightbox="roadtrip" data-title="Student Email Chattahoochee Technical College">
+											<img class="card-img v-image ads-img " src="https://www.chattahoocheetech.edu/wp-content/uploads/2020/12/Marietta-map-F2020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gHQFFiAGpM1Zfq-NwY-KeVYm8CpwGJAVWg';" alt="Student Email Chattahoochee Technical College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Email Chattahoochee Technical College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chattahoocheetech.edu/wp-content/uploads/2019/06/ChattTech-Logo-Featured-Image-840x320.jpg" data-lightbox="roadtrip" data-title="Chattahoochee Tech Adult Education Summer Programs In Paulding And Gilmer Counties Chattahoochee Technical College">
+											<img class="card-img v-image ads-img " src="https://www.chattahoocheetech.edu/wp-content/uploads/2019/06/ChattTech-Logo-Featured-Image-840x320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1H-3BS7RhhInvZ9krdhku0zbz6z5egbl4Q';" alt="Chattahoochee Tech Adult Education Summer Programs In Paulding And Gilmer Counties Chattahoochee Technical College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chattahoochee Tech Adult Education Summer Programs In Paulding And Gilmer Counties Chattahoochee Technical College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="MMyx_8mloN7pSM" data-lightbox="roadtrip" data-title="Http Portal Db Live Paulding County School District Parent Portal">
+											<img class="card-img v-image ads-img " src="MMyx_8mloN7pSM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnuB84CaRmpLW5buTBqvJ-5n3uECRnhpdoVA';" alt="Http Portal Db Live Paulding County School District Parent Portal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Portal Db Live Paulding County School District Parent Portal</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-form-for-dependent-over-18.html">Va Form For Dependent Over 18</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-long-beach.html">Va Medical Records Long Beach</a></li>
+													<li class="list-group-item"><a href="/va-hospital-records-online.html">Va Hospital Records Online</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-okc.html">Va Medical Records Okc</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-columbia-sc.html">Va Medical Records Columbia Sc</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-columbus-ohio.html">Va Medical Records Columbus Ohio</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-cincinnati.html">Va Medical Records Cincinnati</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-bay-pines.html">Va Medical Records Bay Pines</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependents-in-college.html">Va Form For Dependents In College</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-access.html">Va Medical Records Access</a></li>
+													<li class="list-group-item"><a href="/va-loan-benefits-for-surviving-spouse.html">Va Loan Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-loma-linda.html">Va Medical Records Loma Linda</a></li>
+													<li class="list-group-item"><a href="/va-disability-spouse-medical-benefits.html">Va Disability Spouse Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/va-medical-coverage-for-dependents.html">Va Medical Coverage For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-life-insurance-for-dependents.html">Va Life Insurance For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-mandatory-status-of-dependents.html">Va Form Mandatory Status Of Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-buffalo-ny.html">Va Medical Records Buffalo Ny</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-gainesville-fl.html">Va Medical Records Gainesville Fl</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-lost-in-fire.html">Va Medical Records Lost In Fire</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-orlando.html">Va Medical Records Orlando</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

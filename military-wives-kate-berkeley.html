@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Wives Kate Berkeley - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Wives Kate Berkeley",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/77/a6/7b/77a67b8b0fa236493c5b444f26aa1276.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+wives+kate+berkeley",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Wives Kate Berkeley</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">With their partners away serving in Afghanistan a group of women on the home front form a choir and quickly find themselves at the center of a media sensation and global movement. Military Wives 2019 Plot. As one of the few members of the Plymouth branch of the choir who was a member not because she was a military spouse but because she was ex-military herself Kates voice is one that is not accounted for in dominant representations of the Military Wives Choir. <br>				
+			</p>
+										<a class="badge badge-success" href="/utah-army-national-guard-human-resources.html">utah army national guard human resources</a>
+											<a class="badge badge-danger" href="/va-benefits-dependents-form.html">va benefits dependents form</a>
+											<a class="badge badge-info" href="/usa-msn-program.html">usa msn program</a>
+											<a class="badge badge-dark" href="/ussr-military-hats-for-sale.html">ussr military hats for sale</a>
+											<a class="badge badge-secondary" href="/using-mysql-in-cmd.html">using mysql in cmd</a>
+											<a class="badge badge-dark" href="/us-veterans-affairs-death-records.html">us veterans affairs death records</a>
+											<a class="badge badge-success" href="/us-navy-benefits-for-veterans.html">us navy benefits for veterans</a>
+											<a class="badge badge-success" href="/usaa-hiring-military-spouses.html">usaa hiring military spouses</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our site provides you with hints for viewing the maximum quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fe62eaf04-5e29-11ea-ac5e-df00963c20e6?fit=scale-down&amp;source=next&amp;width=700" data-lightbox="roadtrip" data-title="Military Wives A Briskly Cheerful Film From The Director Of The Full Monty Financial Times">
+											<img class="card-img v-image ads-img " src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fe62eaf04-5e29-11ea-ac5e-df00963c20e6?fit=scale-down&amp;source=next&amp;width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPiSdOmYGXJ96-biNEh0HESk_WhCefWLA4Q';" alt="Military Wives A Briskly Cheerful Film From The Director Of The Full Monty Financial Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives A Briskly Cheerful Film From The Director Of The Full Monty Financial Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.guim.co.uk/img/media/943bce6bfdfe6bbfecf46974a7428f9cf6c83fe7/0_0_2000_1200/master/2000.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=dc8efa3bc90316df942ff0b252329c6d" data-lightbox="roadtrip" data-title="Military Wives Review Feelgood Choir Comedy Strains In Vain For Laughs Comedy Films The Guardian">
+											<img class="card-img v-image ads-img " src="https://i.guim.co.uk/img/media/943bce6bfdfe6bbfecf46974a7428f9cf6c83fe7/0_0_2000_1200/master/2000.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=dc8efa3bc90316df942ff0b252329c6d" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhG_MrwChdecLiUbuVKRIAWVP_0bfn-h1iA';" alt="Military Wives Review Feelgood Choir Comedy Strains In Vain For Laughs Comedy Films The Guardian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Review Feelgood Choir Comedy Strains In Vain For Laughs Comedy Films The Guardian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://m.media-amazon.com/images/M/MV5BZWUxZGJkNjgtMDFjMC00ZTFiLTlmMGMtZGZmNWY4N2FlOWE5XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg" data-lightbox="roadtrip" data-title="Military Wives 2019 Imdb">
+											<img class="card-img v-image ads-img " src="https://m.media-amazon.com/images/M/MV5BZWUxZGJkNjgtMDFjMC00ZTFiLTlmMGMtZGZmNWY4N2FlOWE5XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvl6gXrW4ASF3HSzWHf6d_tT0VBEWf5t0qeQ';" alt="Military Wives 2019 Imdb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives 2019 Imdb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/1/1b/Military_Wives_%28film%29.png" data-lightbox="roadtrip" data-title="Military Wives Film Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/1/1b/Military_Wives_%28film%29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQw407sMWLcaSSJXVAxxJ6LNffysl69-T3iQ';" alt="Military Wives Film Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Film Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/9e/af/5b9eaf41379e96c1bfe12d54c090850c--army-family-military-families.jpg" data-lightbox="roadtrip" data-title="Pin On Jack Attack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/9e/af/5b9eaf41379e96c1bfe12d54c090850c--army-family-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJ8pPADwUSQVurADMBRtAmMZaKR47iN7nHg';" alt="Pin On Jack Attack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jack Attack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/7c/c3/e87cc31b6d0d4fced164afdf1eca4ff7.jpg" data-lightbox="roadtrip" data-title="Sasha Alexander Maxim Gallery Sasha Alexander Clothes Sasha Alexander Fashion Clothes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/7c/c3/e87cc31b6d0d4fced164afdf1eca4ff7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUJjVkwWsGs_8GbDH172S57CyTqwnP_aBHg';" alt="Sasha Alexander Maxim Gallery Sasha Alexander Clothes Sasha Alexander Fashion Clothes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sasha Alexander Maxim Gallery Sasha Alexander Clothes Sasha Alexander Fashion Clothes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/5b/9e/af/5b9eaf41379e96c1bfe12d54c090850c--army-family-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUJjVkwWsGs_8GbDH172S57CyTqwnP_aBHg';" alt="Sasha Alexander Maxim Gallery Sasha Alexander Clothes Sasha Alexander Fashion Clothes">
+										<div class="card-body">
+						<h3 class="h5"><b>With their partners away serving in Afghanistan a group of women on the home front form a choir and quickly find themselves at the center of a media sensation and global movement.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military wives kate berkeley</strong>. 
+								
+																	Finding their voice together Kate Lisa and the choir put aside their own personal. 
+																	Kristin scott Thomas Sharon Horgon Jason Flemyng Emma Lowndes Lara Rossi Amy james Kelly india ria amarteifio etc Overall rating 97100 Military wives follows a group of women who have to find ways to entertain themselves after the husbands go off to the war. 
+																	I simply used to tell. 
+																	Military Wives 2109 IMDb 65 1 h 52 min 2020 X-Ray With their partners away serving in Afghanistan a band of misfit women form a choir on a military base in England and soon find themselves at the centre of a media sensation and global movement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kate Jastrams first memory of having Adrian Kinsella in her Armed Conflict and International Law class at UC Berkeley was how often he wasnt in class. 
+																	New film Military Wives starring Dame Kristin Scott Thomas is based on the choir of the same name. 
+																	Kristin Scott Thomas and Greg Wise co-star as Kate and Richard in Military Wives There is no point counting down the days until they go because that can be heartbreaking. 
+																	Military Wives is a 2019 British comedy-drama film directed by Peter Cattaneo from a screenplay by Rosanne Flynn and Rachel TunnardIt stars Kristin Scott Thomas Sharon Horgan and Jason Flemyng. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thus by its very nature her voice troubles the construction of the vulnerable military wife subject in and through the choir. 
+																	With over 2200 members the MWC network is tri-service Royal Navy Royal Marines British Army Royal Air Force and any woman with a military connection can join including those currently. 
+																	Most of the wives would be content to meet for coffee in the mornings and share alcohol in the evenings but after a failed attempt at a knitting club Kate Kristin Scott Thomas the wife of a. 
+																	Military Wives absolutely succeeds in what it sets out to do - which is admittedly not a particularly grand ambition but that doesnt mean its not a mark worth hitting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Topics Toronto film festival 2019. 
+																	Military Wives 2019 cast and crew credits including actors actresses directors writers and more. 
+																	When Kate Kristin Scott Thomas Darkest Hour persuades a disparate group of women on the base to form the Military Wives Choir Lisa Sharon Horgan Catastrophe is initially sceptical and embarrassed by such an amateur bunch. 
+																	Peter Cattaneo THE FULL MONTY directs Kristin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I think back to how often he had to leave class to take a phone call Jastram a lecturer-in-residence at Berkeley Law says. 
+																	Directed by Peter Cattaneo. 
+																	H enry spent half his childhood in this house the family enjoyed winters at Berkeley and summers at Spetchley but it was no place for him and his wife Kate a nutritional therapist to bring. 
+																	Faced with their loved ones absences they come together to form the very first military wives choir helping each other through some of lifes most difficult moments and quickly find themselves on an international stage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oscars Best Picture Winners Best Picture Winners Golden Globes Emmys Black History Month STARmeter Awards San Diego Comic-Con New York Comic-Con Sundance Film Festival Toronto Intl Film Festival Awards Central Festival Central All Events. 
+																	In the 1950s there were 45000 polio cases in the UK and. 
+																	The Military Wives Choirs is a registered charity and network of 75 choirs in British military bases across the UK and overseas bringing women in the military community closer together through singing. 
+																	However she is quickly transformed by the choirs friendship humour and courage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Wives is showing at the Toronto film festival and will be released in the UK on 6 March with a US date to be announced. 
+																	MILITARY WIVES centers on a group of women from different backgrounds whose partners are away serving in Afghanistan. 
+																	Showing all 2 items Jump to. 
+																	The film had its world premiere at the Toronto International Film Festival on 6 September 2019 and was released in the United Kingdom on 6 March 2020 by Lionsgate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So Kate Kristin Scott Thomas and Lisa Sharon Horgon decide to. 
+																	With Kristin Scott Thomas Sharon Horgan Emma Lowndes Gaby French. 
+																	Military wives 2020 12A Director. 
+																	Nine members of the Military Wives Choir tell Jill Foster how they found their voices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1958 Leslie Berkeley starred in his local paper as one of the first in Radcliffe Greater Manchester to have the polio inoculation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/ff/8c/79ff8c430bd20429069c69ab6cbc5273.jpg" data-lightbox="roadtrip" data-title="Ingrid Vandebosch Wifey Showdown The Hottest Women Of Nascar Kyle Busch Kyle Busch Wife Late Model Racing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/ff/8c/79ff8c430bd20429069c69ab6cbc5273.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSChjVPHQSc_FYs7jnUIK7jxr0Cdna5zv2aw';" alt="Ingrid Vandebosch Wifey Showdown The Hottest Women Of Nascar Kyle Busch Kyle Busch Wife Late Model Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ingrid Vandebosch Wifey Showdown The Hottest Women Of Nascar Kyle Busch Kyle Busch Wife Late Model Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/09/04/ff0904661046bfaf7c0587ffc06bc191.jpg" data-lightbox="roadtrip" data-title="Pin On Lagniappe Y All">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/09/04/ff0904661046bfaf7c0587ffc06bc191.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXeQPs1sJhFsJVleKv3K3a9ieGMqyPYaBZQ';" alt="Pin On Lagniappe Y All">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lagniappe Y All</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/08/1a/3b081a22efe863cf1fd10e0e874a8b5b.jpg" data-lightbox="roadtrip" data-title="Comfortable Seats Hallmark Good Witch The Good Witch The Good Witch Series">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/08/1a/3b081a22efe863cf1fd10e0e874a8b5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8Z5i-WmszfR6eldRfK6HZRcSmj_YjzQ0XQ';" alt="Comfortable Seats Hallmark Good Witch The Good Witch The Good Witch Series">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comfortable Seats Hallmark Good Witch The Good Witch The Good Witch Series</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/a6/7b/77a67b8b0fa236493c5b444f26aa1276.jpg" data-lightbox="roadtrip" data-title="Manuelita Wife North American Indians Native American Peoples Native American Indians">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/a6/7b/77a67b8b0fa236493c5b444f26aa1276.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmFcRDGp8aubszCq0-whskAP88UuZ4bxommA';" alt="Manuelita Wife North American Indians Native American Peoples Native American Indians">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manuelita Wife North American Indians Native American Peoples Native American Indians</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/9d/a8/099da837917b7d7c176390acec1c9dac.jpg" data-lightbox="roadtrip" data-title="Honor Bride Army Bride Personalized Wedding Sash 13 99 Via Etsy Army Bride Army Wedding Bride To Be Sash">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/9d/a8/099da837917b7d7c176390acec1c9dac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQED5Fzjajt1Q6yMV9FM7wIv-ylAk0WW79hRA';" alt="Honor Bride Army Bride Personalized Wedding Sash 13 99 Via Etsy Army Bride Army Wedding Bride To Be Sash">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honor Bride Army Bride Personalized Wedding Sash 13 99 Via Etsy Army Bride Army Wedding Bride To Be Sash</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/c9/fa/e3c9fa09184d1ce86dac9e535f9610db.jpg" data-lightbox="roadtrip" data-title="Alma Versano Bio Facts Parents Age Gail Gadot Daughter Pregnant Actress Gal Gadot Daughter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/c9/fa/e3c9fa09184d1ce86dac9e535f9610db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0chkRqVeiDrBBoTt0JIvG8zClFcmFleIFXw';" alt="Alma Versano Bio Facts Parents Age Gail Gadot Daughter Pregnant Actress Gal Gadot Daughter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alma Versano Bio Facts Parents Age Gail Gadot Daughter Pregnant Actress Gal Gadot Daughter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.npr.org/assets/img/2020/05/23/gettyimages-1208411794_wide-42d61256dcab13117fa1bca3ee1e993c3c1cf94e.jpg?s=1400" data-lightbox="roadtrip" data-title="Military Wives Sharon Horgan Kristin Scott Thomas Moved By The Power Of A Group Npr">
+											<img class="card-img v-image ads-img " src="https://media.npr.org/assets/img/2020/05/23/gettyimages-1208411794_wide-42d61256dcab13117fa1bca3ee1e993c3c1cf94e.jpg?s=1400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdv2xa_aubW80n-P3UhkdoSToglf9XTYEzg';" alt="Military Wives Sharon Horgan Kristin Scott Thomas Moved By The Power Of A Group Npr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Sharon Horgan Kristin Scott Thomas Moved By The Power Of A Group Npr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/6c/7f/fb6c7f4aac2e3f391f85def937a7a76d.jpg" data-lightbox="roadtrip" data-title="Rabbit Cage Get The Hay Off The Floor Rabbit Cage Bunny House Rabbit Cages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/6c/7f/fb6c7f4aac2e3f391f85def937a7a76d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEPHp5zXoD1aRT8QF_yU9i1mMDUKZzFuaLw';" alt="Rabbit Cage Get The Hay Off The Floor Rabbit Cage Bunny House Rabbit Cages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rabbit Cage Get The Hay Off The Floor Rabbit Cage Bunny House Rabbit Cages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/0d/47/df0d47e1810f51e5ed4570563530918f.jpg" data-lightbox="roadtrip" data-title="Howard Family Tree Anne Boleyn Royal Family Trees Family Tree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/0d/47/df0d47e1810f51e5ed4570563530918f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGbNHDF8HnqQ4l8wIM3PLF1Z2dI6e0uD0_w';" alt="Howard Family Tree Anne Boleyn Royal Family Trees Family Tree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Howard Family Tree Anne Boleyn Royal Family Trees Family Tree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/f0/ab/8ff0ab1aa806eb05fe00ef23450ed04a.jpg" data-lightbox="roadtrip" data-title="Indian Rock Park Explore California Yay Area Oh The Places You Ll Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/f0/ab/8ff0ab1aa806eb05fe00ef23450ed04a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l_FRjxkaoDvGc-iRcsPNIreQCOlvTVtepQ';" alt="Indian Rock Park Explore California Yay Area Oh The Places You Ll Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Rock Park Explore California Yay Area Oh The Places You Ll Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/ec/6b/aeec6bd60a6d07a12fe63cd8cb8e550b.jpg" data-lightbox="roadtrip" data-title="Dedicated To Our Soldiers And Family Share Rhema Note To God Music Videos Memorial Day Quotes Military Moments Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/ec/6b/aeec6bd60a6d07a12fe63cd8cb8e550b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo1l17dt_b4i-t_Lg-sdiHmtue29zlsOQ4EQ';" alt="Dedicated To Our Soldiers And Family Share Rhema Note To God Music Videos Memorial Day Quotes Military Moments Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dedicated To Our Soldiers And Family Share Rhema Note To God Music Videos Memorial Day Quotes Military Moments Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/9f/97/569f9775df747f13cd028b69ab06fc61.jpg" data-lightbox="roadtrip" data-title="Dare To Wear The History Of Bermuda Shorts In Photos Preppy Men Life Magazine Photos Well Dressed Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/9f/97/569f9775df747f13cd028b69ab06fc61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQct-o853kQDkKTu_PCRnQ-FoQAxMfA0B9n3g';" alt="Dare To Wear The History Of Bermuda Shorts In Photos Preppy Men Life Magazine Photos Well Dressed Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dare To Wear The History Of Bermuda Shorts In Photos Preppy Men Life Magazine Photos Well Dressed Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/b9/a3/b5b9a3bdf922908b345e64a442387ccf.jpg" data-lightbox="roadtrip" data-title="Wavy Gravy S 70th Birthday At Berkeley Community Theater Featuring Bob Weir Ratdog Mickey Hart Friends Steve Earle Gil Wavy Gravy Gillian Welch Bob Weir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/b9/a3/b5b9a3bdf922908b345e64a442387ccf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ADlBBRIccrKPo1kWE0Yp0THcYRGhMNsdwA';" alt="Wavy Gravy S 70th Birthday At Berkeley Community Theater Featuring Bob Weir Ratdog Mickey Hart Friends Steve Earle Gil Wavy Gravy Gillian Welch Bob Weir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wavy Gravy S 70th Birthday At Berkeley Community Theater Featuring Bob Weir Ratdog Mickey Hart Friends Steve Earle Gil Wavy Gravy Gillian Welch Bob Weir</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-medical-records-long-beach.html">Va Medical Records Long Beach</a></li>
+													<li class="list-group-item"><a href="/va-health-insurance-for-dependents.html">Va Health Insurance For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-oregon.html">Va Medical Records Oregon</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependents.html">Va Form For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-for-dependents.html">Va For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-jackson-ms.html">Va Medical Records Jackson Ms</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-new-orleans.html">Va Medical Records New Orleans</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-department.html">Va Medical Records Department</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-bay-pines.html">Va Medical Records Bay Pines</a></li>
+													<li class="list-group-item"><a href="/va-loan-benefits-for-surviving-spouse.html">Va Loan Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-las-vegas.html">Va Medical Records Las Vegas</a></li>
+													<li class="list-group-item"><a href="/va-health-care-dependents.html">Va Health Care Dependents</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-el-paso-tx.html">Va Medical Records El Paso Tx</a></li>
+													<li class="list-group-item"><a href="/va-health-records-apple.html">Va Health Records Apple</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-baltimore.html">Va Medical Records Baltimore</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-fax-number-tucson-az.html">Va Medical Records Fax Number Tucson Az</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-loma-linda.html">Va Medical Records Loma Linda</a></li>
+													<li class="list-group-item"><a href="/va-hiring-military-spouses.html">Va Hiring Military Spouses</a></li>
+													<li class="list-group-item"><a href="/va-medical-for-dependents.html">Va Medical For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-health-records-app.html">Va Health Records App</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

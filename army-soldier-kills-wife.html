@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Soldier Kills Wife - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Soldier Kills Wife",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/1b/bd/89/1bbd892c44d0b3cc83db4ab944b7254b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+soldier+kills+wife",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Soldier Kills Wife</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">US soldier Logan Kyle 22 right allegedly confessed to murdering his wife Shelena Kyle left after law enforcement found her dead body in the trunk of car he was riding in on Sunday in. Keith Lewis 31 allegedly carried out the fatal shootings while the couples 3-year-old daughter was with them at their home in Fayetteville North Carolina the Army Times reported. Raul Hernandez Perez 25 of Naples Florida was charged in. <br>				
+			</p>
+										<a class="badge badge-success" href="/veteran-spouse-dental-benefits.html">veteran spouse dental benefits</a>
+											<a class="badge badge-danger" href="/veteran-military-records-request.html">veteran military records request</a>
+											<a class="badge badge-warning" href="/va-pension-with-dependents.html">va pension with dependents</a>
+											<a class="badge badge-danger" href="/va-military-records-request-form.html">va military records request form</a>
+											<a class="badge badge-secondary" href="/va-medical-records-request.html">va medical records request</a>
+											<a class="badge badge-secondary" href="/va-status-of-dependents-form.html">va status of dependents form</a>
+											<a class="badge badge-light" href="/veteran-dependent-scholarships-2020.html">veteran dependent scholarships 2020</a>
+											<a class="badge badge-primary" href="/veteran-ptsd-helpline.html">veteran ptsd helpline</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the right site.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/37/a1/ce37a1604bfefc8a5e51409dc469af41.jpg" data-lightbox="roadtrip" data-title="Heartbreaking Moment The Daughter Of Army Officer Killed In Kashmir Shouts His Regiment S Indian Army Wallpapers Indian Army Quotes Indian Army Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/37/a1/ce37a1604bfefc8a5e51409dc469af41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGItH5elWocEcuRBv_sWJc4VzB4SpkE5JnhQ';" alt="Heartbreaking Moment The Daughter Of Army Officer Killed In Kashmir Shouts His Regiment S Indian Army Wallpapers Indian Army Quotes Indian Army Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heartbreaking Moment The Daughter Of Army Officer Killed In Kashmir Shouts His Regiment S Indian Army Wallpapers Indian Army Quotes Indian Army Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7b/9b/02/7b9b02bd80b1994bb92182fe54dfc83e.jpg" data-lightbox="roadtrip" data-title="Sergeant Wife Purposely Killed 4 Children Themselves With Carbon Dioxide At Family Garage In 2020 Fort Sam Houston Soldier Sam Houston">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7b/9b/02/7b9b02bd80b1994bb92182fe54dfc83e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWe-xZJmey6zjj0Wup_0-c8ckluESsPshig';" alt="Sergeant Wife Purposely Killed 4 Children Themselves With Carbon Dioxide At Family Garage In 2020 Fort Sam Houston Soldier Sam Houston">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sergeant Wife Purposely Killed 4 Children Themselves With Carbon Dioxide At Family Garage In 2020 Fort Sam Houston Soldier Sam Houston</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/99/8c/e9998c68fed207bb0b04f8404001a39e.png" data-lightbox="roadtrip" data-title="Martyred Soldier S Wife Joins The Indian Army As An Officer Soldier Wife Indian Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/99/8c/e9998c68fed207bb0b04f8404001a39e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2lTuq1gWWRKaRmObodEEaOhvAPIKYPR82sQ';" alt="Martyred Soldier S Wife Joins The Indian Army As An Officer Soldier Wife Indian Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Martyred Soldier S Wife Joins The Indian Army As An Officer Soldier Wife Indian Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/bd/89/1bbd892c44d0b3cc83db4ab944b7254b.jpg" data-lightbox="roadtrip" data-title="This Brave Soldier Was Killed In Afghanistan This Week Last Moments With His New Born Son God Bless Him And His Fami Soldier Touching Photos Afghanistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/bd/89/1bbd892c44d0b3cc83db4ab944b7254b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNIzPwZkfsvGN0yR-tn5Pxn43Muh7XdhNx7w';" alt="This Brave Soldier Was Killed In Afghanistan This Week Last Moments With His New Born Son God Bless Him And His Fami Soldier Touching Photos Afghanistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Brave Soldier Was Killed In Afghanistan This Week Last Moments With His New Born Son God Bless Him And His Fami Soldier Touching Photos Afghanistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/80/3a/61803a9ff23147f2bfae0b5086bad3b7.jpg" data-lightbox="roadtrip" data-title="Fallen British Soldier S Poignant Final Message Turned Into Song Military Heroes British Soldier American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/80/3a/61803a9ff23147f2bfae0b5086bad3b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYn7eSj0A3otihbbpWJWXQasvTstYxHgCNA';" alt="Fallen British Soldier S Poignant Final Message Turned Into Song Military Heroes British Soldier American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fallen British Soldier S Poignant Final Message Turned Into Song Military Heroes British Soldier American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/b4/41/04b441edae8358db4a879583548789eb.jpg" data-lightbox="roadtrip" data-title="Apocalypse Now Iraq Edition Billmoyers Com Military Military Love Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/b4/41/04b441edae8358db4a879583548789eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHJYg4g74MimRmZp1PykqLU5ekqnPntyMnQ';" alt="Apocalypse Now Iraq Edition Billmoyers Com Military Military Love Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apocalypse Now Iraq Edition Billmoyers Com Military Military Love Soldier</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c9/b1/4a/c9b14ab907ff5af763ee9ae602ba50cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHJYg4g74MimRmZp1PykqLU5ekqnPntyMnQ';" alt="Apocalypse Now Iraq Edition Billmoyers Com Military Military Love Soldier">
+										<div class="card-body">
+						<h3 class="h5"><b>Army soldier has been charged with murder after his wife was found dead at Hawaiis Schofield Barracks By The Associated Press February 6 2021 1050 PM.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army soldier kills wife</strong>. 
+								
+																	OR you might get someone else killed BECAUSE you werent focused on the job and the mission. 
+																	13 the Army said. 
+																	US soldier charged with murder wife found dead in barracks A US. 
+																	Raul Hernandez Perez 25 from Naples Fla. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hernandez Perez 25. 
+																	Army officials in Hawaii have charged a military intelligence soldier with the murder of his wife a former soldier who was found dead on Schofield Barracks in January. 
+																	Serviceman - and placed it beside her bed at a hospital authorities said Wednesday. 
+																	An Army intelligence analyst has been charged with murder after his wife was found dead at Hawaiis Schofield Barracks Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military investigators believe he killed Shelena. 
+																	I hate to say this but its a lot like being a single mom. 
+																	An army sergeant has been given a life sentence with a minimum term of 18 years after being found guilty of trying to murder his wife by tampering with her parachute before a skydive so he could. 
+																	4 with the murder of 25-year-old Selena Roth who was found dead in on-post housing Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During this time she holds down the fort. 
+																	Raul Hernandez Perez was charged by the military today of murdering his wife Selena Roth who was found dead in Schofield Barracks housing on Jan. 
+																	An Army soldier confessed that he killed his pregnant wife by persuading her to wear handcuffs during sex and then suffocating her with a plastic bag over her head according to the testimony of. 
+																	Staff Sergeant Keith Lewis 31 murdered his 34 year-old wife Sarah at their apartment on US Armys Fort Bragg base in North Carolina on Sunday evening. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Raul Hernandez Perez was charged Feb. 
+																	Chief Warrant Officer 2 Jermaine Ray Mealy is accused of killing 41-year. 
+																	Jeffrey MacDonald is accused of stabbing his family to death Jeffrey MacDonald stands trial in North Carolina for the murder of his wife and children nearly 10 years before. 
+																	Soldier Allegedly Kills Wifes Lover Brings Her His Head ARTHUR ALLEN December 8 1993 BONN Germany AP _ An American soldier who suspected his wife was having an affair chopped off the head of his rival - also a US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Being a medic in the Army. 
+																	A 31-year-old Army soldier allegedly killed a man he came across with his wife in the couples Georgia home this weekend. 
+																	Jared Esquibel Harless and his wife were both responsible for murdering their four young children before killing themselves two months ago. 
+																	An Army wife understands that her soldier can be deployed at any time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 25-year-old mom was an Army vet. 
+																	Authorities believe Army Staff Sgt. 
+																	It takes a very special woman to be an Army wife. 
+																	A US Army soldier has been arrested for allegedly killing his estranged wife in Hawaii weeks after her body was found in the barracks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Logan Kyle 22 was arrested with his alleged mistress Sarah Parker after he was accused of looking for a spot to dump his wife Shelenas corpse. 
+																	A Fort Bliss soldier was charged with murdering his wife on the base in El Paso Texas only a week after she returned from a combat tour in Kuwait military officials said Monday. 
+																	Spc Raul Hernandez Perez 25 has been charged with murder in the January 13 killing of his estranged wife Selena Roth left and right in Hawaii. 
+																	Sarah was just three days off from her due. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	13 after concerned family members requested a welfare check according to an Army. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/54/25/505425d8bb929c99de55f1852bcc66d0.jpg" data-lightbox="roadtrip" data-title="Illinois Soldier Killed In Afghanistan Military Heroes Remember The Fallen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/54/25/505425d8bb929c99de55f1852bcc66d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXW__VQrFZ-7HFvHt9M_ZnOaeBBfIZhigSnw';" alt="Illinois Soldier Killed In Afghanistan Military Heroes Remember The Fallen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Illinois Soldier Killed In Afghanistan Military Heroes Remember The Fallen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/b1/4a/c9b14ab907ff5af763ee9ae602ba50cb.jpg" data-lightbox="roadtrip" data-title="Suspected Pakistan National Killed In Pathankot Nia Raids On In Punjab 10 Developments In 2020 Indian Army Army Soldier Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/b1/4a/c9b14ab907ff5af763ee9ae602ba50cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBZJInhTjd8zQ_WBHfZwVlOJdoUW52iO6MQ';" alt="Suspected Pakistan National Killed In Pathankot Nia Raids On In Punjab 10 Developments In 2020 Indian Army Army Soldier Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suspected Pakistan National Killed In Pathankot Nia Raids On In Punjab 10 Developments In 2020 Indian Army Army Soldier Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/86/87/0e86872ed416c42b0ce9f44fd3784032.jpg" data-lightbox="roadtrip" data-title="A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/86/87/0e86872ed416c42b0ce9f44fd3784032.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3g5H9b_YDGwPK9nIwTSbwO79UuZ11lAObQ';" alt="A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/dd/12/47dd12c6939ac6982c99f3b6c4d69ed5.jpg" data-lightbox="roadtrip" data-title="Pin By Sue Harden On Military Heroes Canada Military Canadian Forces Canadian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/dd/12/47dd12c6939ac6982c99f3b6c4d69ed5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgucTUPaH_ccSZi4VPIwxM1VUezzSxzZDjQ';" alt="Pin By Sue Harden On Military Heroes Canada Military Canadian Forces Canadian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sue Harden On Military Heroes Canada Military Canadian Forces Canadian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/ee/ab/0ceeabc60b80379838c61901eb12d624.jpg" data-lightbox="roadtrip" data-title="Soldier Girlfriend Quotes Army Girl Military Girl Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/ee/ab/0ceeabc60b80379838c61901eb12d624.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTpu3IbIxpScR8fpPLesARAEujWu9pwo5tQ';" alt="Soldier Girlfriend Quotes Army Girl Military Girl Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Girlfriend Quotes Army Girl Military Girl Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ea/f7/8e/eaf78eb5874c0283f03c3276fbabe1a2.jpg" data-lightbox="roadtrip" data-title="Pin On Marga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ea/f7/8e/eaf78eb5874c0283f03c3276fbabe1a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnBe1ZqHYffnvge5e_AGq6S5zvjCwnm4fAA';" alt="Pin On Marga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/3e/51/eb3e510a9870b940240a4ea71a7ceaa3.jpg" data-lightbox="roadtrip" data-title="Pin On Ussocom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/3e/51/eb3e510a9870b940240a4ea71a7ceaa3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2q8yM3omf8E4mJdn4wW_zHVCCEiEB4Gr4w';" alt="Pin On Ussocom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ussocom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4e/22/43/4e22432c0b61cfcfaef853ffa21d03e4.jpg" data-lightbox="roadtrip" data-title="Indian Army Gives Free Hand To Loc Commanders 20 Pakistani Soldiers Killed In Retaliatory Fire This Year Report Latestnews Gunfight Jammu And Kashmir Jammu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4e/22/43/4e22432c0b61cfcfaef853ffa21d03e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTSgBFs461lr1e7iiGro2T3nO3FsxyDHCTQ';" alt="Indian Army Gives Free Hand To Loc Commanders 20 Pakistani Soldiers Killed In Retaliatory Fire This Year Report Latestnews Gunfight Jammu And Kashmir Jammu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Gives Free Hand To Loc Commanders 20 Pakistani Soldiers Killed In Retaliatory Fire This Year Report Latestnews Gunfight Jammu And Kashmir Jammu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/d6/77/25d6770c9b2367b51c2e2c1165b5779e.jpg" data-lightbox="roadtrip" data-title="In And Out Of Uniform Army Women Military Girl Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/d6/77/25d6770c9b2367b51c2e2c1165b5779e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzB4zDEuQWVa5ZdlXbcSDrhZy1C_czHydzA';" alt="In And Out Of Uniform Army Women Military Girl Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In And Out Of Uniform Army Women Military Girl Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/34/89/373489a79ff398606726ba0a97c8d619.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/34/89/373489a79ff398606726ba0a97c8d619.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9s4146Qm-KLspSp-uTt4mQKp4Qsf_cHQqg';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/38/d5/4238d54ce6b50eae788ac2d3e0de0fe5.jpg" data-lightbox="roadtrip" data-title="Pin On Woman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/38/d5/4238d54ce6b50eae788ac2d3e0de0fe5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHt-6siCddDoHlBBdFeup3Q-H9t_I6u9BBTQ';" alt="Pin On Woman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Woman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/fb/78/a3fb787f7708e75fac22620da9ab76f2.jpg" data-lightbox="roadtrip" data-title="Thrilling Media Hub Two Soldiers Killed During Anti Banditry Operation Boko Haram Soldier Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/fb/78/a3fb787f7708e75fac22620da9ab76f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB12UPJIn9lAU9XSEWKjq9DHxoE1tIdp2YBQ';" alt="Thrilling Media Hub Two Soldiers Killed During Anti Banditry Operation Boko Haram Soldier Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thrilling Media Hub Two Soldiers Killed During Anti Banditry Operation Boko Haram Soldier Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1f/ad/9e/1fad9e8a385b5bc8535246652001e553.jpg" data-lightbox="roadtrip" data-title="Army Couple And Four Others Killed After Heavy Rainfall In Ghana Photo Http Khrisblog12 Blogspot Com 2019 04 Army Couple And Four Army Couple Army Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1f/ad/9e/1fad9e8a385b5bc8535246652001e553.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIV6Ldm5HSrz--xdVFp8L9l7xMnKtppqQKXg';" alt="Army Couple And Four Others Killed After Heavy Rainfall In Ghana Photo Http Khrisblog12 Blogspot Com 2019 04 Army Couple And Four Army Couple Army Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Couple And Four Others Killed After Heavy Rainfall In Ghana Photo Http Khrisblog12 Blogspot Com 2019 04 Army Couple And Four Army Couple Army Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-retirement-pay-divorce-spouse.html">Military Retirement Pay Divorce Spouse</a></li>
+													<li class="list-group-item"><a href="/military-retirement-benefits-after-death.html">Military Retirement Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-set.html">Military Retirement Gift Set</a></li>
+													<li class="list-group-item"><a href="/military-retirement-with-dependents.html">Military Retirement With Dependents</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-to-ex-spouse-who-dies.html">Military Retirement Pay To Ex Spouse Who Dies</a></li>
+													<li class="list-group-item"><a href="/military-resume-examples-skills.html">Military Resume Examples Skills</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-divorce-in-california.html">Military Retirement And Divorce In California</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-calculator.html">Military Retirement Divorce Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-order.html">Military Retirement Divorce Order</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-ideas-navy.html">Military Retirement Gift Ideas Navy</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-remarriage.html">Military Retirement Divorce Remarriage</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gifts-for-family-members.html">Military Retirement Gifts For Family Members</a></li>
+													<li class="list-group-item"><a href="/military-retirement-dependent-benefits.html">Military Retirement Dependent Benefits</a></li>
+													<li class="list-group-item"><a href="/military-retiree-spouse-tricare.html">Military Retiree Spouse Tricare</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-dependents.html">Military Retirement Pay Dependents</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-shadow-box.html">Military Retirement Gift Shadow Box</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-and-divorce-and-remarriage.html">Military Retirement Pay And Divorce And Remarriage</a></li>
+													<li class="list-group-item"><a href="/military-scholarship-for-students.html">Military Scholarship For Students</a></li>
+													<li class="list-group-item"><a href="/military-retiree-scholarships-for-dependents.html">Military Retiree Scholarships For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-scholarships-for-dependents-2020.html">Military Scholarships For Dependents 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

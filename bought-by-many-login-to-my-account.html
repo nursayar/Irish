@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bought By Many Login To My Account - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bought By Many Login To My Account",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/fe/4c/89/fe4c898376af00a4baea305bad609591.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bought+by+many+login+to+my+account",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bought By Many Login To My Account</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Youll need to sign in to your account to access My eBay where you can keep track of all your buying and selling activities view items youve saved to your watch list and find your favorite sellers and searchesYoull also need to be signed in to exchange messages with other eBay members. 1-10 Summers Street London EC1R 5BD. Whenever you check out on a new device and browser when logged in with your Google account you can log in automatically at checkout without entering your password. <br>				
+			</p>
+										<a class="badge badge-light" href="/military-records-archives-canada.html">military records archives canada</a>
+											<a class="badge badge-secondary" href="/military-pay-chart-without-dependents.html">military pay chart without dependents</a>
+											<a class="badge badge-danger" href="/military-records-ww2-uk.html">military records ww2 uk</a>
+											<a class="badge badge-success" href="/military-records-at-the-national-archives.html">military records at the national archives</a>
+											<a class="badge badge-success" href="/military-records-for-canada.html">military records for canada</a>
+											<a class="badge badge-danger" href="/military-pay-with-dependents-2018.html">military pay with dependents 2018</a>
+											<a class="badge badge-primary" href="/military-records-ww1-uk.html">military records ww1 uk</a>
+											<a class="badge badge-secondary" href="/military-records-request-national-archives.html">military records request national archives</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/ab/f9/58abf9c56f7e60d4c5b0b48dacacdd75.png" data-lightbox="roadtrip" data-title="My Montgomery Ward Account Login Montgomery Ward Montgomery Ward Montgomery Ward">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/ab/f9/58abf9c56f7e60d4c5b0b48dacacdd75.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETezLmOlKoyVvW_P-dHLeCeZwnnQWD-Gr8A';" alt="My Montgomery Ward Account Login Montgomery Ward Montgomery Ward Montgomery Ward">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Montgomery Ward Account Login Montgomery Ward Montgomery Ward Montgomery Ward</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/4c/89/fe4c898376af00a4baea305bad609591.jpg" data-lightbox="roadtrip" data-title="How To Successfully Log In And Activate Your Mcafee Account Password Cracking Activated Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/4c/89/fe4c898376af00a4baea305bad609591.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbqHvHySotH0bMcaDG71WqRzc9jfmMgQlfFg';" alt="How To Successfully Log In And Activate Your Mcafee Account Password Cracking Activated Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Successfully Log In And Activate Your Mcafee Account Password Cracking Activated Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/16/b4/3816b4102ef88de3eaec4deb4147a47a.png" data-lightbox="roadtrip" data-title="Pin By Eli Rezaei On Recipes To Cook In 2021 Mail Login Free Email Services Mail Account">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/16/b4/3816b4102ef88de3eaec4deb4147a47a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-BXeiHQhKMGKdH9JorEvkjDBZJXp5vHaV-w';" alt="Pin By Eli Rezaei On Recipes To Cook In 2021 Mail Login Free Email Services Mail Account">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Eli Rezaei On Recipes To Cook In 2021 Mail Login Free Email Services Mail Account</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/fe/34/c3fe346ddf14967226211373a3f3d272.jpg" data-lightbox="roadtrip" data-title="There Are Many Reasons Why New Social Media App Tik Tok Is Blowing Up Recently Their Execution Social Media Instagram Marketing Tips Ecommerce Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/fe/34/c3fe346ddf14967226211373a3f3d272.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYMo-ij2a4-8T7ixVqb0AFOPmZt4x6YHC2w';" alt="There Are Many Reasons Why New Social Media App Tik Tok Is Blowing Up Recently Their Execution Social Media Instagram Marketing Tips Ecommerce Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Many Reasons Why New Social Media App Tik Tok Is Blowing Up Recently Their Execution Social Media Instagram Marketing Tips Ecommerce Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/18/fe/3e/18fe3ebba50eb68257f145a345a2450d.jpg" data-lightbox="roadtrip" data-title="How To Facing Trouble To Install Norton Antivirus Setup And Removal Antivirus Norton Antivirus Antivirus Setup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/18/fe/3e/18fe3ebba50eb68257f145a345a2450d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdvTbIm0w2ycXo0Rh0MSQfb1tVrDJ08kJkA';" alt="How To Facing Trouble To Install Norton Antivirus Setup And Removal Antivirus Norton Antivirus Antivirus Setup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Facing Trouble To Install Norton Antivirus Setup And Removal Antivirus Norton Antivirus Antivirus Setup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/69/99/916999577c83e712e115242b94cb6933.png" data-lightbox="roadtrip" data-title="All You Need To Know About Www 4myhr Com Pay Stub Credit Card Services Rewards Credit Cards Visa Rewards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/69/99/916999577c83e712e115242b94cb6933.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcP0v2WzM7JbMfyNrWCJR9Q4kb1-0oGdjuA';" alt="All You Need To Know About Www 4myhr Com Pay Stub Credit Card Services Rewards Credit Cards Visa Rewards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All You Need To Know About Www 4myhr Com Pay Stub Credit Card Services Rewards Credit Cards Visa Rewards</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/58/ab/f9/58abf9c56f7e60d4c5b0b48dacacdd75.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcP0v2WzM7JbMfyNrWCJR9Q4kb1-0oGdjuA';" alt="All You Need To Know About Www 4myhr Com Pay Stub Credit Card Services Rewards Credit Cards Visa Rewards">
+										<div class="card-body">
+						<h3 class="h5"><b>MyBT - Fibre Broadband TV Packages BT Sport Mobile Deals.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bought by many login to my account</strong>. 
+								
+																	Cant access your account. 
+																	Bought By Many Ltd is a company registered in England and Wales with number 7886430. 
+																	Bought By Many Ltd is authorised and regulated by the Financial Conduct Authority - Register number 652623. 
+																	The number of licenses you have on your current subscription and the amount you have in your credit are displayed on the left. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1-10 Summers Street London EC1R 5BD. 
+																	Bought By Many Ltd is authorised and regulated by the Financial Conduct Authority - Register number 652623. 
+																	Promotional offers will no longer apply from the beginning of any statement period during which you have breached your terms and conditions for example if you havent paid on time or have gone over your credit limit. 
+																	Terms of use Privacy cookies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We would like to show you a description here but the site wont allow us. 
+																	This register can be checked for details of our permissions history and contact details. 
+																	You can sign in using your email or username or with Facebook Google or Apple if youve. 
+																	Its important to make your monthly payments on time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can sign in using your email or username or with Facebook Google or Apple if youve. 
+																	This register can be checked for details of our permissions history and contact details. 
+																	Youll need to sign in to your account to access My eBay where you can keep track of all your buying and selling activities view items youve saved to your watch list and find your favorite sellers and searchesYoull also need to be signed in to exchange messages with other eBay members. 
+																	Stay logged in for faster checkout. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skip typing your password by staying logged in on this device. 
+																	Under Review your subscription upgrade. 
+																	1-10 Summers Street London EC1R 5BD. 
+																	Check the license period and the total number of devices selected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Making payments to your account. 
+																	Why connect my Google account. 
+																	Bought By Many Ltd is authorised and regulated by the Financial Conduct Authority - Register number 652623. 
+																	Log in to My F-Secure with your account username and password. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This register can be checked for details of our permissions history and contact details. 
+																	Bought By Many Ltd is a company registered in England and Wales with number 7886430. 
+																	Linking your Google account allows you to activate PayPal One Touch so youll speed through check-out without having to log in every time. 
+																	Bought By Many Ltd is a company registered in England and Wales with number 7886430. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bought By Many Ltd is a company registered in England and Wales with number 7886430. 
+																	Bought By Many Ltd is authorised and regulated by the Financial Conduct Authority - Register number 652623. 
+																	Click the Buy more button. 
+																	For security well occasionally ask you to log in including every time you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1-10 Summers Street London EC1R 5BD. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/4d/5b/974d5b5414459bb37338b9b157045982.jpg" data-lightbox="roadtrip" data-title="Pin On Login Archives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/4d/5b/974d5b5414459bb37338b9b157045982.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytNr2SfJtdeQR90zis1P3Pf0QLuPtrOpgpA';" alt="Pin On Login Archives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Login Archives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/06/03/700603de30459a0f7b5a00f2c63d539e.png" data-lightbox="roadtrip" data-title="My Verizon Log In Verizon Wireless Verizon Wireless Sms New Phones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/06/03/700603de30459a0f7b5a00f2c63d539e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgXLk09Q0nNVIfW6sTM8Lm-aYT-a1uvqGsw';" alt="My Verizon Log In Verizon Wireless Verizon Wireless Sms New Phones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Verizon Log In Verizon Wireless Verizon Wireless Sms New Phones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/40/51/68/405168a3d76d0429667c296d77f606c7.jpg" data-lightbox="roadtrip" data-title="How To Email Facebook Support Facebook Account Trendebook Facebook Support Facebook Help Center Facebook Platform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/40/51/68/405168a3d76d0429667c296d77f606c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnm1ySBsj3-Xz0arEhW4yE8VJEiA-IXV5dnQ';" alt="How To Email Facebook Support Facebook Account Trendebook Facebook Support Facebook Help Center Facebook Platform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Email Facebook Support Facebook Account Trendebook Facebook Support Facebook Help Center Facebook Platform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/f7/ca/57f7cac16e48f9bd9730d30ecee0cb9f.png" data-lightbox="roadtrip" data-title="Turn Off Activation Lock Used Iphone Iphone Iphone Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/f7/ca/57f7cac16e48f9bd9730d30ecee0cb9f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwKk75-eJL7DQVlUStqjgggw8ncllK8M0ijg';" alt="Turn Off Activation Lock Used Iphone Iphone Iphone Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turn Off Activation Lock Used Iphone Iphone Iphone Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4c/81/1d/4c811de1a098cc3f8a1c5dceec085864.jpg" data-lightbox="roadtrip" data-title="How To Set Up Two Factor Authentication For Amazon Account Social Bookmarking One Time Password Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4c/81/1d/4c811de1a098cc3f8a1c5dceec085864.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxvhH_Ham3MQ6XAlYNveyuU8mXBTTbn7Xrw';" alt="How To Set Up Two Factor Authentication For Amazon Account Social Bookmarking One Time Password Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Set Up Two Factor Authentication For Amazon Account Social Bookmarking One Time Password Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/56/5c/db565c79539957808b50c908b92fffe4.jpg" data-lightbox="roadtrip" data-title="Hulu Com Account Hulu Login Sign In Account Coding Hulu Error Code">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/56/5c/db565c79539957808b50c908b92fffe4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNJXqg4kJ401TIkNiM1Ou5PXQqonFO3GPZQ';" alt="Hulu Com Account Hulu Login Sign In Account Coding Hulu Error Code">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hulu Com Account Hulu Login Sign In Account Coding Hulu Error Code</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/cd/30/35cd30eb134d2eb304ae9146a3f394cb.jpg" data-lightbox="roadtrip" data-title="Vizzle University Log In To The Site Resource Classroom Self Contained Classroom Classroom Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/cd/30/35cd30eb134d2eb304ae9146a3f394cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrNg-xAg2uZEBfbbonY9aiQNy-oQWAxIhUw';" alt="Vizzle University Log In To The Site Resource Classroom Self Contained Classroom Classroom Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vizzle University Log In To The Site Resource Classroom Self Contained Classroom Classroom Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/90/d0/de/90d0dea442fef3b73f72d0a902ea8f0b.jpg" data-lightbox="roadtrip" data-title="Mobile App In 2020 American Express App Reward Card American Express">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/90/d0/de/90d0dea442fef3b73f72d0a902ea8f0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtdPz8MZWBXVWRriQFbTafKn4GWZ2mi6dFg';" alt="Mobile App In 2020 American Express App Reward Card American Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mobile App In 2020 American Express App Reward Card American Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/6e/04/196e04ca5c8dffe541174041ff8e7484.jpg" data-lightbox="roadtrip" data-title="Complaint Letter Sample Business Letter Of Complaintpptx Example 1 638 3fcb3d13945 Letter Example Printable Letter Templates Professional Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/6e/04/196e04ca5c8dffe541174041ff8e7484.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09yn1Xt3g-tibxyL7U7Z1vZPPbSRGtYbJRA';" alt="Complaint Letter Sample Business Letter Of Complaintpptx Example 1 638 3fcb3d13945 Letter Example Printable Letter Templates Professional Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Complaint Letter Sample Business Letter Of Complaintpptx Example 1 638 3fcb3d13945 Letter Example Printable Letter Templates Professional Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/94/77/76947717b8a1252d022c2d007f334302.jpg" data-lightbox="roadtrip" data-title="Norton Com Nu16 Download Install Activate Process Norton Com Myaccount Data Security Email Filter Pc System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/94/77/76947717b8a1252d022c2d007f334302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_21cOvJCWfBe8OKifv9TJqNHIwEhf4VZLMw';" alt="Norton Com Nu16 Download Install Activate Process Norton Com Myaccount Data Security Email Filter Pc System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Norton Com Nu16 Download Install Activate Process Norton Com Myaccount Data Security Email Filter Pc System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/f5/22/26f5227f6adead14c622278e51ba8142.jpg" data-lightbox="roadtrip" data-title="Map Of Hillwood Useful To Know Thanks Hey Arnold City Cartoon City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/f5/22/26f5227f6adead14c622278e51ba8142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkbblcpMh4kyaHBYpWtHxJQdrX1wp9ssWPA';" alt="Map Of Hillwood Useful To Know Thanks Hey Arnold City Cartoon City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Hillwood Useful To Know Thanks Hey Arnold City Cartoon City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/fb/e5/ddfbe5683d714efe2a25c45598023627.jpg" data-lightbox="roadtrip" data-title="Pin On Gift Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/fb/e5/ddfbe5683d714efe2a25c45598023627.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCZfmb_yldFIw_8R8fjBDBu3mAKlMJzuP5HA';" alt="Pin On Gift Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gift Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/cd/90/a8cd90e9e8b1e332ffe99c92d18f3b7a.png" data-lightbox="roadtrip" data-title="I Forgot My Security Question For My Yahoo Mail Account This Or That Questions Cell Phone Number Mail Account">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/cd/90/a8cd90e9e8b1e332ffe99c92d18f3b7a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdMMlU4H6j5VTHFLiuE8VxC-y7D175Ik3VA';" alt="I Forgot My Security Question For My Yahoo Mail Account This Or That Questions Cell Phone Number Mail Account">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Forgot My Security Question For My Yahoo Mail Account This Or That Questions Cell Phone Number Mail Account</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hero-fund.html">Military Hero Fund</a></li>
+													<li class="list-group-item"><a href="/military-hats-outfit.html">Military Hats Outfit</a></li>
+													<li class="list-group-item"><a href="/military-headgear-crossword-clue.html">Military Headgear Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/military-hats-off-indoors.html">Military Hats Off Indoors</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-bill.html">Military Health Insurance Bill</a></li>
+													<li class="list-group-item"><a href="/military-heroes-fund-application.html">Military Heroes Fund Application</a></li>
+													<li class="list-group-item"><a href="/military-hats-to-order.html">Military Hats To Order</a></li>
+													<li class="list-group-item"><a href="/military-hero-toys.html">Military Hero Toys</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-cost.html">Military Health Insurance Cost</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-for-life.html">Military Health Insurance For Life</a></li>
+													<li class="list-group-item"><a href="/military-hats-scrambled-eggs.html">Military Hats Scrambled Eggs</a></li>
+													<li class="list-group-item"><a href="/military-hats-of-the-world.html">Military Hats Of The World</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-login.html">Military Health Insurance Login</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-australia.html">Military Health Insurance Australia</a></li>
+													<li class="list-group-item"><a href="/military-hats-nfl.html">Military Hats Nfl</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-contacts.html">Military Health Insurance Contacts</a></li>
+													<li class="list-group-item"><a href="/military-hero-baby-names.html">Military Hero Baby Names</a></li>
+													<li class="list-group-item"><a href="/military-headquarters-in-hawaii.html">Military Headquarters In Hawaii</a></li>
+													<li class="list-group-item"><a href="/military-hats-near-me.html">Military Hats Near Me</a></li>
+													<li class="list-group-item"><a href="/military-hero-songs.html">Military Hero Songs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

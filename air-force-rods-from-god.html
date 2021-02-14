@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Rods From God - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Rods From God",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/a8/62/1e/a8621e4cdbac982dad9c470fec5e88ef.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+rods+from+god",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Rods From God</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The weapon reportedly. Amongst them was research. Air Force is reportedly considering the deployment of a highly sophisticated new weapons systems in space which is currently under development under Project Thor. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-navy-katipunan-contact-number.html">army navy katipunan contact number</a>
+											<a class="badge badge-warning" href="/army-regulation-covering-spousal-support.html">army regulation covering spousal support</a>
+											<a class="badge badge-success" href="/army-pha-online-form.html">army pha online form</a>
+											<a class="badge badge-secondary" href="/army-pha-online-training.html">army pha online training</a>
+											<a class="badge badge-dark" href="/army-reserve-spouse-education-benefits.html">army reserve spouse education benefits</a>
+											<a class="badge badge-dark" href="/army-pension-contact-details.html">army pension contact details</a>
+											<a class="badge badge-success" href="/army-officer-life-vs-enlisted.html">army officer life vs enlisted</a>
+											<a class="badge badge-info" href="/army-ptsd-support.html">army ptsd support</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal blog.  Our site gives you hints for seeing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/07/0b/7d070b221a3d7003f2dc08c147d2657a.jpg" data-lightbox="roadtrip" data-title="Pin On Air Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/07/0b/7d070b221a3d7003f2dc08c147d2657a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkx1-L6fZdUR9adOPumttqGrBrVNfnMr67pQ';" alt="Pin On Air Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/39/0c/d9390ca58a9e660c349d12616d6cd60f.jpg" data-lightbox="roadtrip" data-title="Pin On Stuff That Is Literally Awesome">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/39/0c/d9390ca58a9e660c349d12616d6cd60f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-YMUj4_772REdDPfwkKK_fu26Y33cTgVhA';" alt="Pin On Stuff That Is Literally Awesome">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stuff That Is Literally Awesome</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/6a/1a/796a1ab71a069dc2eedbdaa1c57f5b23.jpg" data-lightbox="roadtrip" data-title="Kinetic Bombardment Rods From God Militar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/6a/1a/796a1ab71a069dc2eedbdaa1c57f5b23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLl7bHKrR0qF4qDJYjwCpresj37gKddwlfg';" alt="Kinetic Bombardment Rods From God Militar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kinetic Bombardment Rods From God Militar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/56/fa/f456fac494c29ef8c3c079420766ea20.jpg" data-lightbox="roadtrip" data-title="Pin On Ozerstine Modern">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/56/fa/f456fac494c29ef8c3c079420766ea20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbR_I6xvCHKBGMPuxkqhY5KZSgnwxNq_M38A';" alt="Pin On Ozerstine Modern">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ozerstine Modern</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/d1/6e/b5d16ea463463b50a1725c8eb4679463.png" data-lightbox="roadtrip" data-title="Pin On Saluting Our Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/d1/6e/b5d16ea463463b50a1725c8eb4679463.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJN1E6LJNHeNOnaseGRLEPpSgdX2DxRrq9Xw';" alt="Pin On Saluting Our Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Saluting Our Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2d/67/09/2d6709fdc0e04a188940fea9b79ca284--sci-fi-armor-bunker.jpg" data-lightbox="roadtrip" data-title="Http Www Futuretimeline Net 21stcentury Images Space Rods Weapon Jpg Space Ship Concept Art Space Art Planets Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2d/67/09/2d6709fdc0e04a188940fea9b79ca284--sci-fi-armor-bunker.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_MGVgArZT3RZ6Bp4hTcizl7oqOCG3HQCvMQ';" alt="Http Www Futuretimeline Net 21stcentury Images Space Rods Weapon Jpg Space Ship Concept Art Space Art Planets Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Futuretimeline Net 21stcentury Images Space Rods Weapon Jpg Space Ship Concept Art Space Art Planets Art</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/79/6a/1a/796a1ab71a069dc2eedbdaa1c57f5b23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_MGVgArZT3RZ6Bp4hTcizl7oqOCG3HQCvMQ';" alt="Http Www Futuretimeline Net 21stcentury Images Space Rods Weapon Jpg Space Ship Concept Art Space Art Planets Art">
+										<div class="card-body">
+						<h3 class="h5"><b>As explained by Popular Science the rods from god were tungsten rods made to be nearly 20 feet in length and a foot in diameter.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force rods from god</strong>. 
+								
+																	These Air Force Rods from God Could Hit with the Force of a Nuclear Weapon. 
+																	Super-strong tungsten rods that can be fired from space to any city on Earth. 
+																	The rods from god idea was a bundle of telephone-pole-size 20 feet long 1 foot in diameter tungsten rods dropped from orbit reaching a speed of up to 10 times the speed of sound. 
+																	The 107-country Outer Space Treaty signed in 1967 prohibits nuclear biological or chemical weapons from being placed or used from Earths orbit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats the underlying idea behind a weapon system concept affectionately known as Rods From God and over the years the US. 
+																	The rod itself would penetrate hundreds of feet into the Earth destroying any potential hardened bunkers or secret underground sites. 
+																	Launching heavy tungsten rods into space will require substantially. 
+																	An Air Force report called them hypervelocity rod bundles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air-force-rods-from-god-could-hit-with-the-force-of-a-nuclear-weapon The rod itself would penetrate hundreds of feet into the Earth destroying any potential hardened bunkers or secret underground sites. 
+																	Hello my name is Jessica Edwards and I am a Masters of Social Work student at California State University San Bernardino. 
+																	The 107-country Outer Space Treaty signed in 1967 prohibits nuclear biological or chemical weapons from being placed or used from Earths orbit. 
+																	I am doing a study on the severity of postpartum depression on military women. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Others just called it Rods From God In reality weapons researchers refer to it as a kinetic energy projectile. 
+																	If so-called Rods from God--an informal nickname of untraceable origin--ever do materialize it wont be for at least 15 years. 
+																	Posted On September 10 2020 141520. 
+																	Another concept is the spacecraft as a carrier and launch vehicle for so-called Rods from God. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While the 1967 Outer Space Treaty prohibits the US. 
+																	The rods from god idea was a bundle of telephone-pole-size 20 feet long 1 foot in diameter tungsten rods dropped from orbit reaching a speed of up to 10 times the speed of sound. 
+																	The idea was dreamed up back in the 1950s by science fiction writer and space weapons expert Jerry Pournelle according to The New York Times. 
+																	These Air Force rods from God could hit with the force of a nuclear weapon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The phrase rods from God is also used to describe the same concept. 
+																	From deploying nuclear biological or chemical weapons in space this new weapon promises to deliver strikes more powerful than many types of nuclear and chemical attack - while. 
+																	These Air Force rods from god could hit with the force of a nuclear weapon The Air Force now draws new attention with their latest weapon development. 
+																	In June 2020 a senior Al Qaeda leader was killed by a kinetic weapon a modified AGM-114 Hellfire missile dropped by a United States Special Operations General Atomics MQ-1 Predator drone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force and other experts have seriously taken it into consideration. 
+																	A super-dense super-fast projectile that operating free of complex systems. 
+																	Rods from God is a theoretical weapon system that consists of a tungsten bar with a guidance. 
+																	Dropping the atomic bombs that essentially forced Japan to end World War II led to a number of weapons and munitions developments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What Americas Rods from God Space Based Superweapon Can Do. 
+																	It is hard to imagine how the rods from god would alter the equation in North Korea which possesses thousands of rockets and artillery pieces capable of hitting Seoul in retaliation for any. 
+																	This Rods From God concept was some telephone-pole-sized 20 feet in length and a diameter of one foot tungsten rods dropped down from Earths orbit reaching speeds of upwards to ten times the speed of sound. 
+																	A pair of satellites would be placed thousands of miles above the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These can hit their targets with a force comparable to that of intercontinental missiles reports the military news site We Are The Mighty. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/8a/8b/688a8be1efc6d02e55a0c087c05ed0c8.jpg" data-lightbox="roadtrip" data-title="Artstation Orbital Artillery System Orest Terremoto In 2020 Cannon Weapon Concept Art Concept Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/8a/8b/688a8be1efc6d02e55a0c087c05ed0c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55o_puKtrxpNNo3KAlmpjr8K9VlRd3w0pfA';" alt="Artstation Orbital Artillery System Orest Terremoto In 2020 Cannon Weapon Concept Art Concept Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Artstation Orbital Artillery System Orest Terremoto In 2020 Cannon Weapon Concept Art Concept Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/ad/cf/30adcfb868821e7f56e4ffd2fe11dd1a.jpg" data-lightbox="roadtrip" data-title="Insomniac 39 S Fuse Colingeller Concept Art World Concept Art Spaceship Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/ad/cf/30adcfb868821e7f56e4ffd2fe11dd1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5h6XH1MeMhkyWe1gp-903NHwsjKvKMlxSaw';" alt="Insomniac 39 S Fuse Colingeller Concept Art World Concept Art Spaceship Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Insomniac 39 S Fuse Colingeller Concept Art World Concept Art Spaceship Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/41/75/d8417524a0d46c4149dd87e6793e8ed3.jpg" data-lightbox="roadtrip" data-title="האם רוסיה כבר נלחמת בחלל Ihls Military Satellite Satellites Preston James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/41/75/d8417524a0d46c4149dd87e6793e8ed3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbnkSp0jJmJHiiWdyfhPF7PHxlxTmdVjPVnw';" alt="האם רוסיה כבר נלחמת בחלל Ihls Military Satellite Satellites Preston James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">האם רוסיה כבר נלחמת בחלל Ihls Military Satellite Satellites Preston James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/95/1c/41/951c4148d1608365618eec8a81117635.jpg" data-lightbox="roadtrip" data-title="Three Obstacles Are Slowing Space Sensors For Hypersonic Threats In 2020 Threat Military Technology Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/95/1c/41/951c4148d1608365618eec8a81117635.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPeVrd9AfJm_Yy0YEdFeAmJsrCzwDgBt-jg';" alt="Three Obstacles Are Slowing Space Sensors For Hypersonic Threats In 2020 Threat Military Technology Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Three Obstacles Are Slowing Space Sensors For Hypersonic Threats In 2020 Threat Military Technology Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/9c/c9/c49cc9b7fb677cde7ef491c53a401b68.jpg" data-lightbox="roadtrip" data-title="Sr71large Jpg 900 720 Sr 71 Blackbird Black Bird Sr 71">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/9c/c9/c49cc9b7fb677cde7ef491c53a401b68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3CiokJw0JMixH3FaKqPTRKcee56CwnhcI2A';" alt="Sr71large Jpg 900 720 Sr 71 Blackbird Black Bird Sr 71">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sr71large Jpg 900 720 Sr 71 Blackbird Black Bird Sr 71</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/b7/b7/f3b7b71b3b70f955f807d1bb8b37ea36.jpg" data-lightbox="roadtrip" data-title="Pin On Space">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/b7/b7/f3b7b71b3b70f955f807d1bb8b37ea36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0edefIZef0hWjvfqYOxJ_4X9wT2OkYnXHYw';" alt="Pin On Space">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Space</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/94/4c/c9944c43b87c390b00a047945ff6bb6e.jpg" data-lightbox="roadtrip" data-title="Riat Uk Takes Wraps Off Unmanned Lanca Concept In 2020 Riat Aircraft Design Royal International Air Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/94/4c/c9944c43b87c390b00a047945ff6bb6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB0NImzQ2q18b2c7GcZ2zueuyP_EsNTCERgQ';" alt="Riat Uk Takes Wraps Off Unmanned Lanca Concept In 2020 Riat Aircraft Design Royal International Air Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Riat Uk Takes Wraps Off Unmanned Lanca Concept In 2020 Riat Aircraft Design Royal International Air Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/55/f0/d1/55f0d1e44aeeab22532e4c76a1e27cee.jpg" data-lightbox="roadtrip" data-title="Pin By Haley On Airforce Daughter In 2020 Air Force Mom United States Air Force Air Force Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/55/f0/d1/55f0d1e44aeeab22532e4c76a1e27cee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCk2xdhGbsgOu-Z7GPUGlZAJGF2TrWKqjSA';" alt="Pin By Haley On Airforce Daughter In 2020 Air Force Mom United States Air Force Air Force Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Haley On Airforce Daughter In 2020 Air Force Mom United States Air Force Air Force Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/21/ae/5721ae04b4b4935adb2c1ae26de89961.jpg" data-lightbox="roadtrip" data-title="Air Force Thechive Usaf Thunderbirds Thunderbird Military Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/21/ae/5721ae04b4b4935adb2c1ae26de89961.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwqOYseeqG1zyOeQP4T93DDd805VT3Bk0sQ';" alt="Air Force Thechive Usaf Thunderbirds Thunderbird Military Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thechive Usaf Thunderbirds Thunderbird Military Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/78/33/1b783303700f771500f1c21840093c49.jpg" data-lightbox="roadtrip" data-title="Lockheed Martin F 16 Turkish Airforce Lockheed Air Force Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/78/33/1b783303700f771500f1c21840093c49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxPO5L8oZrIVnuf1ei2k_TC54_GRkOrJV7A';" alt="Lockheed Martin F 16 Turkish Airforce Lockheed Air Force Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lockheed Martin F 16 Turkish Airforce Lockheed Air Force Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a8/62/1e/a8621e4cdbac982dad9c470fec5e88ef.jpg" data-lightbox="roadtrip" data-title="Us Air Force Security Forces Military Police United States Carroll Trust Us National Security Case A Air Force Jobs Air Force Images United States Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a8/62/1e/a8621e4cdbac982dad9c470fec5e88ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3R_LnlikCibyZOD224Mre_GvcLfn8S06JQ';" alt="Us Air Force Security Forces Military Police United States Carroll Trust Us National Security Case A Air Force Jobs Air Force Images United States Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Security Forces Military Police United States Carroll Trust Us National Security Case A Air Force Jobs Air Force Images United States Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/31/41/fb3141111cca3353ce1dfd154828f42c.jpg" data-lightbox="roadtrip" data-title="Artstation Peregrine Missile Akela Freedom Stealth Aircraft Fighter Jets Custom Rat Rods">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/31/41/fb3141111cca3353ce1dfd154828f42c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKxqgIOqLcCIlQRv8T5_KPCX-RsDiXMXduRg';" alt="Artstation Peregrine Missile Akela Freedom Stealth Aircraft Fighter Jets Custom Rat Rods">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Artstation Peregrine Missile Akela Freedom Stealth Aircraft Fighter Jets Custom Rat Rods</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bb/bf/cb/bbbfcbb28699f1d9f7689ce40750854e.jpg" data-lightbox="roadtrip" data-title="Pin On Funny Bts Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bb/bf/cb/bbbfcbb28699f1d9f7689ce40750854e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBP8Sg8DUx0xBAi_0-8hdMXtruG2vEkuozZw';" alt="Pin On Funny Bts Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Funny Bts Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-dependent-military-id.html">Va Dependent Military Id</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-college.html">Va Dependent Benefits College</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-eligibility.html">Va Dependent Benefits Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-dependent-education-rates.html">Va Dependent Education Rates</a></li>
+													<li class="list-group-item"><a href="/va-dependent-benefits-application.html">Va Dependent Benefits Application</a></li>
+													<li class="list-group-item"><a href="/va-burial-benefits-for-the-spouse-of-veteran.html">Va Burial Benefits For The Spouse Of Veteran</a></li>
+													<li class="list-group-item"><a href="/va-dependent-compensation-age-limit.html">Va Dependent Compensation Age Limit</a></li>
+													<li class="list-group-item"><a href="/va-dependent-compensation-rates.html">Va Dependent Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/va-dependent-dental-insurance.html">Va Dependent Dental Insurance</a></li>
+													<li class="list-group-item"><a href="/va-dependent-pay-scale.html">Va Dependent Pay Scale</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-eligibility.html">Va Disability Dependent Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-dependents-definition.html">Va Dependents Definition</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-spouse.html">Va Disability Dependent Spouse</a></li>
+													<li class="list-group-item"><a href="/va-claim-pay-rate.html">Va Claim Pay Rate</a></li>
+													<li class="list-group-item"><a href="/va-disability-benefits-for-ex-spouse-after-death.html">Va Disability Benefits For Ex Spouse After Death</a></li>
+													<li class="list-group-item"><a href="/va-deers-id-card.html">Va Deers Id Card</a></li>
+													<li class="list-group-item"><a href="/va-dependents-health-care.html">Va Dependents Health Care</a></li>
+													<li class="list-group-item"><a href="/va-death-burial-benefits-for-spouse.html">Va Death Burial Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-dependent-claim-for-parents.html">Va Dependent Claim For Parents</a></li>
+													<li class="list-group-item"><a href="/va-child-home-alone-laws.html">Va Child Home Alone Laws</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

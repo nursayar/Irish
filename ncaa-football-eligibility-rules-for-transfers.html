@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Football Eligibility Rules For Transfers - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Football Eligibility Rules For Transfers",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/1c/7c/cf/1c7ccf1166aa1946f353629f4c7c0b69.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+football+eligibility+rules+for+transfers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Football Eligibility Rules For Transfers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Receive a transfer release from the previous. The elimination of the sit-out rule for transfers comes after the NCAA gradually chipped away at it over many years. An action that sets aside an NCAA rule because a specific extraordinary circumstance prevents you from meeting the rule. <br>				
+			</p>
+										<a class="badge badge-info" href="/does-army-reserve-get-tuition-assistance.html">does army reserve get tuition assistance</a>
+											<a class="badge badge-warning" href="/do-military-spouses-go-to-college-for-free.html">do military spouses go to college for free</a>
+											<a class="badge badge-warning" href="/do-military-spouses-qualify-for-fafsa.html">do military spouses qualify for fafsa</a>
+											<a class="badge badge-danger" href="/does-salvation-army-pick-up-donations-for-free.html">does salvation army pick up donations for free</a>
+											<a class="badge badge-primary" href="/do-military-dependents-get-free-dental.html">do military dependents get free dental</a>
+											<a class="badge badge-primary" href="/distance-learning-scholarship-for-mba.html">distance learning scholarship for mba</a>
+											<a class="badge badge-danger" href="/do-navy-wives-live-on-base.html">do navy wives live on base</a>
+											<a class="badge badge-light" href="/do-dependents-of-veterans-get-in-state-tuition.html">do dependents of veterans get in state tuition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/58/ca/5958ca56f4a2a8dea7b49f05013c8646.jpg" data-lightbox="roadtrip" data-title="Auburn College Football Teams Scholarships Football Officials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/58/ca/5958ca56f4a2a8dea7b49f05013c8646.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnz6A1qBw0u3Su6XmsnLNrrnTpavQCCNFJg';" alt="Auburn College Football Teams Scholarships Football Officials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Auburn College Football Teams Scholarships Football Officials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/59/5e/57/595e57869c9bfa8907db4a1da3d0672a.jpg" data-lightbox="roadtrip" data-title="Pin By Skullsparks On College Football Offers College Football Teams College Football Football Team">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/59/5e/57/595e57869c9bfa8907db4a1da3d0672a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLSqROl0wJb4HuWNkUkS1R6VHaOtS-dWLtkA';" alt="Pin By Skullsparks On College Football Offers College Football Teams College Football Football Team">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Skullsparks On College Football Offers College Football Teams College Football Football Team</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/27/ed/2227ed6a7a0fed04b5e7745c6595503d.jpg" data-lightbox="roadtrip" data-title="Illinois College Football Teams Student Athlete College Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/27/ed/2227ed6a7a0fed04b5e7745c6595503d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZCM7eXLFh4VUgDoRC3cEUbWoAeLezW_a1og';" alt="Illinois College Football Teams Student Athlete College Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Illinois College Football Teams Student Athlete College Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/75/e0/c1/75e0c1ff7a48787a4427a0ad4471fe12.jpg" data-lightbox="roadtrip" data-title="Ole Miss College Football Teams University Of Mississippi College Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/75/e0/c1/75e0c1ff7a48787a4427a0ad4471fe12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9hdbaM84TzS_4m-dTVop75PO7FZIIumC8g';" alt="Ole Miss College Football Teams University Of Mississippi College Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ole Miss College Football Teams University Of Mississippi College Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/b1/73/beb17327e54051c8a9d3bf2f04cbd32b.jpg" data-lightbox="roadtrip" data-title="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/b1/73/beb17327e54051c8a9d3bf2f04cbd32b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0aYo5nuN3fUvOJLdNge4T_D-_ne_9j-DwmQ';" alt="Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Center Checklist College Education Sports College Recruiting Online Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/fc/d4/25fcd40dad9a86807237f6a81c2d2a71.jpg" data-lightbox="roadtrip" data-title="Pin By Skullsparks On College Football Offers Football Squads College Football Teams Football Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/fc/d4/25fcd40dad9a86807237f6a81c2d2a71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3PsxiUmo8gv-z_k-5WK4TFFCfapM7HN-AQ';" alt="Pin By Skullsparks On College Football Offers Football Squads College Football Teams Football Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Skullsparks On College Football Offers Football Squads College Football Teams Football Design</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/59/5e/57/595e57869c9bfa8907db4a1da3d0672a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3PsxiUmo8gv-z_k-5WK4TFFCfapM7HN-AQ';" alt="Pin By Skullsparks On College Football Offers Football Squads College Football Teams Football Design">
+										<div class="card-body">
+						<h3 class="h5"><b>If the transfer working groups concept is adopted any athlete would be granted immediate eligibility after a transfer if four criteria are met.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa football eligibility rules for transfers</strong>. 
+								
+																	The eligibility extension is particularly interesting for the six conferences still planning to play football this fall. 
+																	One caveat to the NCAAs ruling on an extra year of eligibility is that individual schools and conferences have the authority to adopt this rule or not. 
+																	You receive a transfer-release agreement from your previous four-year school. 
+																	Under the rule a player gearing up for his senior season could play this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although the NCAA Board of Governors provided updated recommendations regarding name image and likeness NIL rules earlier this week the discussed one-time transfer waiver for five sports to. 
+																	NCAA rules require an undergraduate student-athlete transferring from one Division I school to another in football or mens basketball to sit out a year unless granted a waiver. 
+																	Generally graduate transfers are either fourth-year redshirt juniors or third-year players whove pursued an. 
+																	Learn the transfer and eligibility rules for the NCAA and the new conference and school you plan to join. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to the pandemic the NCAA is granting all student-athletes a free year of eligibility. 
+																	If a player graduates with college eligibility remaining. 
+																	The new waiver would allow transfers who are sitting out this season due to NCAA rules to be immediately eligible for their new teams as long as they were enrolled full-time in fall of 2020 and. 
+																	After first allowing graduate students to play immediately the NCAA then. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cannot file a waiver for yourself. 
+																	If the transfer working groups concept is adopted any athlete would be granted immediate eligibility after a transfer if four criteria are met. 
+																	An NCAA school may file a waiver on your behalf. 
+																	The simplest way to get around the rule is to graduate first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a player transfers they have to sit out a season. 
+																	The NCAA on Wednesday granted a blanket transfer waiver for Division I athletes in all sports meaning those who were previously sitting out this year can now play. 
+																	Fall and winter sport athletes would have to notify their schools of a transfer by May 1 with an exception extending the date to July 1 for an end-of-the-year head coaching change or the. 
+																	When you begin to think about going to a new school understand that the rules are different depending on whether you want to transfer to an NCAA Division I II or III school and whether you are currently enrolled at a two-year or a four-year school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division I Council took a step toward eventually allowing one-time transfers immediate eligibility in basketball football baseball and hockey on Wednesday by approving a measure that. 
+																	The waiver includes even those. 
+																	Minimum GPA Generally you need to have earned a minimum GPA of 20 in order to be eligible to play college sports at your current or any future institution. 
+																	NCAA graduate transfer rules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep in mind graduate transfers still must adhere to the NCAAs eligibility clock. 
+																	You are academically and athletically eligible at your previous four-year school. 
+																	Receive a transfer release from the previous. 
+																	They arent allowed to play in games for a full. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two seasons ago the NCAA relaxed its transfer rules and awarded waivers to players with documented mitigating circumstances that are outside the student-athletes control and directly impact the. 
+																	However when transferring from a two-year school to a four-year one higher GPAs are sometimes necessary or preferred. 
+																	This means that some schools may allow seniors to return for an extra year of eligibility while others may choose not to offer this due to program budgets housing availability etc. 
+																	NCAA transfer rules explained quickly and honestly The basic rule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA is also granting all Division I transfers the ability to play immediately at their new programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/15/16/42151628c3ab43d33c32732c124a3538.jpg" data-lightbox="roadtrip" data-title="Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting College Football Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/15/16/42151628c3ab43d33c32732c124a3538.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAWwLNB5FshQ3ADZwvfhqVfuxuQwj17MIoQ';" alt="Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting College Football Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting College Football Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/39/d4/2b/39d42b65cb1f2065917090f2f5c59ecf.jpg" data-lightbox="roadtrip" data-title="App State College Football Teams Football Players App State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/39/d4/2b/39d42b65cb1f2065917090f2f5c59ecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrCjhWkaYtdt7i_kucgNdL-YhD4hQK-GGKgg';" alt="App State College Football Teams Football Players App State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">App State College Football Teams Football Players App State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/41/5a/80415ae95f26c61373948bc9d28ddee1.jpg" data-lightbox="roadtrip" data-title="Power Transfer Why Georgia Qb Fields Could Make Big Move Justin Fields Football College Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/41/5a/80415ae95f26c61373948bc9d28ddee1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylMucpCCQkVr3kF0KNWWUK5WoZIqsU1BydQ';" alt="Power Transfer Why Georgia Qb Fields Could Make Big Move Justin Fields Football College Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Transfer Why Georgia Qb Fields Could Make Big Move Justin Fields Football College Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/86/9d/18869d7ed50c0d6171cfe974e4dd4d75.jpg" data-lightbox="roadtrip" data-title="Tennessee Sports Design Inspiration Sports Design Athletic Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/86/9d/18869d7ed50c0d6171cfe974e4dd4d75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRWelHFhrJvmDT4OZEdFfxUEQ7Fr3UVZbUw';" alt="Tennessee Sports Design Inspiration Sports Design Athletic Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Sports Design Inspiration Sports Design Athletic Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/4b/28/e24b2839b8ed47a4c11128388b0920f5.jpg" data-lightbox="roadtrip" data-title="Oregon State Athletic Scholarships College Football Recruiting Oregon State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/4b/28/e24b2839b8ed47a4c11128388b0920f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2DlrnmtpLuAs21h9Eb_Pz_dJ2v0Lh8wREQ';" alt="Oregon State Athletic Scholarships College Football Recruiting Oregon State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon State Athletic Scholarships College Football Recruiting Oregon State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/7c/cf/1c7ccf1166aa1946f353629f4c7c0b69.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa College Football 2016">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/7c/cf/1c7ccf1166aa1946f353629f4c7c0b69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqspA6kpoBu82it3XAZbSRbHjIhf6Y3dnKuA';" alt="Pin On Ncaa College Football 2016">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa College Football 2016</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/4e/4f/ca4e4f4e6384e1a24ee577fefc37da97.jpg" data-lightbox="roadtrip" data-title="Colorado College Football Recruiting Football Recruiting College Football Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/4e/4f/ca4e4f4e6384e1a24ee577fefc37da97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEV4WPUbjREgZX3JXK036RwlwPTa4uaHukg';" alt="Colorado College Football Recruiting Football Recruiting College Football Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colorado College Football Recruiting Football Recruiting College Football Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/3a/94/b93a949865318111b014c18bd7de28b4.jpg" data-lightbox="roadtrip" data-title="Boise State College Football Recruiting Athletic Scholarships Football Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/3a/94/b93a949865318111b014c18bd7de28b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDJpw6jsC_GfzyUymXWVs4Y4ZTghcmpHrpA';" alt="Boise State College Football Recruiting Athletic Scholarships Football Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boise State College Football Recruiting Athletic Scholarships Football Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/30/11/1c30111846236b1478072ac5ab9dbb83.jpg" data-lightbox="roadtrip" data-title="Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/30/11/1c30111846236b1478072ac5ab9dbb83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xBB86lBoN8DIfc5nuOYqXeLjmcCLsHYHBg';" alt="Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antonio Doyle Jr Goatopportunity Twitter College Football Recruiting Junior College Football Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d6/ae/07/d6ae07ad84a4c80ef882317f32454daf.jpg" data-lightbox="roadtrip" data-title="Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting Ohio University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d6/ae/07/d6ae07ad84a4c80ef882317f32454daf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCyJ7Cu0cPccadp3cA3D9bO2y7017GK_iNA';" alt="Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting Ohio University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Skullsparks On College Football Offers College Football Recruiting Football Recruiting Ohio University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Hot Topics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/aa/ee/f9aaee187a4ecf70026b93b493702be5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp8LUoZIBdgFJFUilSLsPKsrSN4_EM8hon9w';" alt="Pin On Ncaa Hot Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Hot Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ac/fa/7b/acfa7b036ddece7c04a5796830576517.jpg" data-lightbox="roadtrip" data-title="Pin By Lauren Chatelain On Sports Design College Football Recruiting Football Recruiting Sports Graphic Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ac/fa/7b/acfa7b036ddece7c04a5796830576517.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAd8nDf47k7FHdmxhbDsa3HB4BQMy4cGXxaA';" alt="Pin By Lauren Chatelain On Sports Design College Football Recruiting Football Recruiting Sports Graphic Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lauren Chatelain On Sports Design College Football Recruiting Football Recruiting Sports Graphic Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/20/ae/c620aef81d2089e37c38bd03a3da4747.jpg" data-lightbox="roadtrip" data-title="Colorado State Athletic Scholarships College Football Teams Colorado State University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/20/ae/c620aef81d2089e37c38bd03a3da4747.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBDMIbDDAEJd_4tllqQgDUdkLwaIu-P6muQ';" alt="Colorado State Athletic Scholarships College Football Teams Colorado State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colorado State Athletic Scholarships College Football Teams Colorado State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-kick-off-time.html">Man Utd Vs Chelsea Kick Off Time</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-rivalry.html">Man Utd Vs Chelsea Rivalry</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-streaming-link.html">Man Utd Vs Chelsea Streaming Link</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-video-highlights.html">Man Utd Vs Chelsea Video Highlights</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-extended-highlights.html">Man Utd Vs Chelsea Extended Highlights</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-champions-league-quarter-final.html">Man Utd Vs Chelsea Champions League Quarter Final</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-download-video.html">Man Utd Vs Chelsea Download Video</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-channel.html">Man Utd Vs Chelsea Channel</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-goal-highlights.html">Man Utd Vs Chelsea Goal Highlights</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-full-match.html">Man Utd Vs Chelsea Full Match</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-match-live.html">Man Utd Vs Chelsea Match Live</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-highlights.html">Man Utd Vs Chelsea Highlights</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-distance-covered.html">Man Utd Vs Chelsea Distance Covered</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-record.html">Man Utd Vs Chelsea Record</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-k.html">Man Utd Vs Chelsea K</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-head-to-head-record.html">Man Utd Vs Chelsea Head To Head Record</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-line-up.html">Man Utd Vs Chelsea Line Up</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-highest-score.html">Man Utd Vs Chelsea Highest Score</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-game-stats.html">Man Utd Vs Chelsea Game Stats</a></li>
+													<li class="list-group-item"><a href="/man-utd-vs-chelsea-update.html">Man Utd Vs Chelsea Update</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

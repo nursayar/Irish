@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Hero Dog Conan - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Hero Dog Conan",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/ff/14/87/ff14878f0329d1b240d8b1d3dbea48af.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+hero+dog+conan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Hero Dog Conan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Trump to welcome military hero dog Conan to White House. Conan the Military Hero Dog Featured on Zero Bark Thirty Merchandise. President Trump shared a photo of the Special Forces dog that became a national hero earlier this month when it was revealed that a Belgian Malinois was injured while helping to chase down ISIS leader Abu Bakr al-Baghdadi who died after detonating an explosive vest. <br>				
+			</p>
+										<a class="badge badge-light" href="/add-spouse-to-va-health-benefits.html">add spouse to va health benefits</a>
+											<a class="badge badge-light" href="/air-force-crossfit-wod-times.html">air force crossfit wod times</a>
+											<a class="badge badge-success" href="/air-force-commissioning-programs-prior-enlisted.html">air force commissioning programs prior enlisted</a>
+											<a class="badge badge-dark" href="/air-force-1-whiteblue-herobright-crimson.html">air force 1 whiteblue herobright crimson</a>
+											<a class="badge badge-warning" href="/act-score-for-ncaa-eligibility.html">act score for ncaa eligibility</a>
+											<a class="badge badge-success" href="/air-force-charm-bracelet.html">air force charm bracelet</a>
+											<a class="badge badge-danger" href="/advantages-of-being-a-marine-biologist.html">advantages of being a marine biologist</a>
+											<a class="badge badge-secondary" href="/air-force-chrome-car-emblem.html">air force chrome car emblem</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our website provides you with hints for seeing the maximum quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/7e/78/487e788c4e655a698ffd5f48681fcade.jpg" data-lightbox="roadtrip" data-title="Pin On Hero Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/7e/78/487e788c4e655a698ffd5f48681fcade.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZ4YCs2JI-UpDzF5fLwk0j7zRv1YY6-1Ovw';" alt="Pin On Hero Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hero Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/5e/b8/c85eb810a8a3c3613fb66baff69f29b1.png" data-lightbox="roadtrip" data-title="Donald Trumppublished 1 Hour Agoconan Dog Injured In Al Baghdadi Raid Honored By President Trump At White Houseby Nick Givas F Military Dogs Dog Wound Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/5e/b8/c85eb810a8a3c3613fb66baff69f29b1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5HXtV-Nq00B4vuePweSfqduR0aTDapyBH6w';" alt="Donald Trumppublished 1 Hour Agoconan Dog Injured In Al Baghdadi Raid Honored By President Trump At White Houseby Nick Givas F Military Dogs Dog Wound Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donald Trumppublished 1 Hour Agoconan Dog Injured In Al Baghdadi Raid Honored By President Trump At White Houseby Nick Givas F Military Dogs Dog Wound Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/8a/de/6e8ade2562695afa66d3e1a15a300891.jpg" data-lightbox="roadtrip" data-title="Combat Veterans Call For Hero Dog Conan To Receive Purple Heart Michaelantonio Media Purple Heart Hero Combat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/8a/de/6e8ade2562695afa66d3e1a15a300891.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uWr-RXqmBnzsPpiwHa8MZTQXJ5qLflxHnA';" alt="Combat Veterans Call For Hero Dog Conan To Receive Purple Heart Michaelantonio Media Purple Heart Hero Combat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Combat Veterans Call For Hero Dog Conan To Receive Purple Heart Michaelantonio Media Purple Heart Hero Combat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/4f/ae/084faef3a186ce3455b7cab9f0cccb4f.png" data-lightbox="roadtrip" data-title="Conan The Hero Dog Sketch On Saturday Night Live Is A Perfectly Adorable Mess Dog Sketch Dog Anatomy Military Canine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/4f/ae/084faef3a186ce3455b7cab9f0cccb4f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-ZclS1f0i2mThwF5DL6NQMUaRdHUeURgcA';" alt="Conan The Hero Dog Sketch On Saturday Night Live Is A Perfectly Adorable Mess Dog Sketch Dog Anatomy Military Canine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conan The Hero Dog Sketch On Saturday Night Live Is A Perfectly Adorable Mess Dog Sketch Dog Anatomy Military Canine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/4b/de/3a4bde18cddf5a3adf1634fc88e2f983.jpg" data-lightbox="roadtrip" data-title="American Hero Dog Conan The Military Support K 9 T Shirt T Shirt American Heroes Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/4b/de/3a4bde18cddf5a3adf1634fc88e2f983.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOPFMIMlEWqjF8-_0IqYXiz7yqv5FyM7sSQ';" alt="American Hero Dog Conan The Military Support K 9 T Shirt T Shirt American Heroes Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Hero Dog Conan The Military Support K 9 T Shirt T Shirt American Heroes Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/cf/d0/b9cfd0a98411d8097ea55d7e2f6cdce3.jpg" data-lightbox="roadtrip" data-title="Conan Wounded Chasing Al Baghdadi Down With Army S Airborne Delta Force Fun To Be One Dog Help Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/cf/d0/b9cfd0a98411d8097ea55d7e2f6cdce3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhdjPM8XLU3_7KYky_SKkntdG8gjxIeeVZFQ';" alt="Conan Wounded Chasing Al Baghdadi Down With Army S Airborne Delta Force Fun To Be One Dog Help Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conan Wounded Chasing Al Baghdadi Down With Army S Airborne Delta Force Fun To Be One Dog Help Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/64/08/5d/64085d1c23f50868e586d4135000457a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhdjPM8XLU3_7KYky_SKkntdG8gjxIeeVZFQ';" alt="Conan Wounded Chasing Al Baghdadi Down With Army S Airborne Delta Force Fun To Be One Dog Help Military Dogs">
+										<div class="card-body">
+						<h3 class="h5"><b>A heroic Belgian Malinois who chased down Abu Bakr al-Baghdadi last week and.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military hero dog conan</strong>. 
+								
+																	Share on Facebook Share on Twitter Share on LinkedIn Share on. 
+																	By Scott McDonald On 103019 at 623 PM EDT. 
+																	US Department of DefenseAFP via Its a barking shame. 
+																	Its an incredible story. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	President Trump and VP Mike Pence award Conan the hero dog who was wounded in Syria raid the killed ISIS leader al-Baghdadi Members of the US. 
+																	RealDonaldTrumpTwitter CNN GIM Published. 
+																	Trump Awards Conan the Hero Special Forces Dog a Medal at the White House President Trump Vice President Pence and first lady Melania Trump present Conan the military working dog injured in the. 
+																	26 visited the White House on Monday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Monday President Donald Trump released a declassified photo of the military dog and praised her for. 
+																	The dog has worked with special operations forces for four years and taken part in about 50 missions. 
+																	Conan is a special operations military working dog in the United States 1st SFOD-D Delta Force. 
+																	He is a male Belgian Malinois and was named after former Tonight Show host and comedian Conan OBrien due to his shaggy hair. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Military Conan the military dog. 
+																	Trump went on to praise Conan and the dogs human handlers for a flawless attack on al-Baghdadi. 
+																	The military dog who helped US. 
+																	The tale of Conan the Army dog shifted from one of pure canine heroism in the hunt for ISIS terror Abu Bakr al-Baghdadi to another example of Washington disconnect Tuesday as a Pentagon official. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The dogs name was originally kept classified but Trump. 
+																	The dog was described as slightly wounded. 
+																	Conans incredible dog actions are now the stuff of legend. 
+																	I learned a lot about this particular type of dog Trump. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Conan the military dog who participated in the raid that killed the elusive ISIS leader Abu Bakr al-Baghdadi on Oct. 
+																	This post was originally published on this site. 
+																	You can now purchase items emblazoned with the image of. 
+																	Kuno has completed two deployments to Afghanistan A military dog who charged through enemy gunfire to save the lives of British soldiers fighting al-Qaeda in Afghanistan is to be awarded the animal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The hero dog of the Belgian Malinois breed is female and her name is Conan according to a report by Newsweek which added that a senior Pentagon source clarified that she was named after the comedian Conan OBrien not the famed fictional character Conan the Barbarian. 
+																	Conanthe Belgian Malinois who chased down Abu Bakr al-Baghdadi. 
+																	Conan a Belgian Malinois military service dog. 
+																	Special forces raid on the Syria compound of Islamic State leader Abu Bakr al-Baghdadi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A WOUNDED hero dog was one of the few casualties from the US. 
+																	31 2019 at 641 AM AKDT It seems that every dog does have its day. 
+																	Military deserve our gratitude and appreciation and. 
+																	The military working dog injured during the commando raid on Islamic State leader Abu Bakr al-Baghdadii has achieved ultimate hero status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During the October raid the dog is said to have chased Baghdadi into a tunnel during a two-hour-long nighttime raid on a compound in. 
+																	Special forces kill ISIS leader Abu Bakr al-Baghdadi last month was honored as a hero at the White House on Monday. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/0c/68/b80c68a732a0e2df4e41e7f0b51bd4b6.png" data-lightbox="roadtrip" data-title="Aoc Backs Out Of Debate With Conan Military Dog After Getting Ko D On Twitter By Hero Canine In 2020 Military Dogs Canine Chinese Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/0c/68/b80c68a732a0e2df4e41e7f0b51bd4b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5RI2xyHApkKf14hu6Qmq41A50dNTy0V8og';" alt="Aoc Backs Out Of Debate With Conan Military Dog After Getting Ko D On Twitter By Hero Canine In 2020 Military Dogs Canine Chinese Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aoc Backs Out Of Debate With Conan Military Dog After Getting Ko D On Twitter By Hero Canine In 2020 Military Dogs Canine Chinese Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cb/0c/10/cb0c10fb8708dd2a7cf778e6cfaa97b9.jpg" data-lightbox="roadtrip" data-title="Conan Military Hero Dog Zero Bark Thirty Doberman Sweater Teebigpro Com Hoodie Shirt Sweater Hoodie Brains Shirt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cb/0c/10/cb0c10fb8708dd2a7cf778e6cfaa97b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRs_1M8kmH_grezcxW6fYfQtlJkvydkVvbQ';" alt="Conan Military Hero Dog Zero Bark Thirty Doberman Sweater Teebigpro Com Hoodie Shirt Sweater Hoodie Brains Shirt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conan Military Hero Dog Zero Bark Thirty Doberman Sweater Teebigpro Com Hoodie Shirt Sweater Hoodie Brains Shirt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/28/c8/b728c8d4ea8be798046f714cf17791b4.png" data-lightbox="roadtrip" data-title="Pin On Dog Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/28/c8/b728c8d4ea8be798046f714cf17791b4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuyB2fxKLxig8X5LM1IcKjKkY6H9EDmyzqw';" alt="Pin On Dog Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dog Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/e2/87/7de28712841f51bc596b25c1e24238ab.png" data-lightbox="roadtrip" data-title="Pin On Cuties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/e2/87/7de28712841f51bc596b25c1e24238ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3RzNsNabOOuT2WF0SD1yVYM0lGbaTwgNUmg';" alt="Pin On Cuties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cuties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/64/08/5d/64085d1c23f50868e586d4135000457a.jpg" data-lightbox="roadtrip" data-title="The Story Of Dyngo A War Dog Brought Home From Combat War Dogs Military Dogs Soldiers Dog Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/64/08/5d/64085d1c23f50868e586d4135000457a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMpNNXlrtDyDrRgteO2pEbqv04HhxZ7glMA';" alt="The Story Of Dyngo A War Dog Brought Home From Combat War Dogs Military Dogs Soldiers Dog Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Story Of Dyngo A War Dog Brought Home From Combat War Dogs Military Dogs Soldiers Dog Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/ec/05/2eec05ba62fdaba29f87d1d16525afe8.jpg" data-lightbox="roadtrip" data-title="The Dog Who Helped Kill Baghdadi Visited The White House But Conan Is Just The Latest Canine War Hero War Dogs Army Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/ec/05/2eec05ba62fdaba29f87d1d16525afe8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1u_M2cyuQnCZsbtsLEs-ECUWJFBc4Krx68g';" alt="The Dog Who Helped Kill Baghdadi Visited The White House But Conan Is Just The Latest Canine War Hero War Dogs Army Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Dog Who Helped Kill Baghdadi Visited The White House But Conan Is Just The Latest Canine War Hero War Dogs Army Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/cc/20/3dcc201ab3a46cc57a3c5675fa62d8a2.jpg" data-lightbox="roadtrip" data-title="I Love This Dog Trump Presents Conan The Incredible Hero Of Baghdadi Raid Award The Incredibles Hero Famous Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/cc/20/3dcc201ab3a46cc57a3c5675fa62d8a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDgEmhEUIoI5p5ywK36uN3HyHFZMBWBfn7Q';" alt="I Love This Dog Trump Presents Conan The Incredible Hero Of Baghdadi Raid Award The Incredibles Hero Famous Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love This Dog Trump Presents Conan The Incredible Hero Of Baghdadi Raid Award The Incredibles Hero Famous Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/ff/b7/f5ffb7c27c170488e087e1f20c6ef4a6.png" data-lightbox="roadtrip" data-title="Good Dog Animal Heros American Heroes Best Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/ff/b7/f5ffb7c27c170488e087e1f20c6ef4a6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRwZWC2mavLIqmrfNQhuhC_3NftpmwCnGurA';" alt="Good Dog Animal Heros American Heroes Best Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Good Dog Animal Heros American Heroes Best Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3e/b8/22/3eb8224d8437302ef84a0912f42e4ace.jpg" data-lightbox="roadtrip" data-title="Conan Hero Belgian Malinois Dog Journal In Dog We Trust Https Www Amazon Com Dp 1705355676 Ref Cm Sw Malinois Dog Belgian Malinois Belgian Malinois Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3e/b8/22/3eb8224d8437302ef84a0912f42e4ace.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQw1iRPmzWuWNbQcsb56nlJjmxKyggP4HPqg';" alt="Conan Hero Belgian Malinois Dog Journal In Dog We Trust Https Www Amazon Com Dp 1705355676 Ref Cm Sw Malinois Dog Belgian Malinois Belgian Malinois Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conan Hero Belgian Malinois Dog Journal In Dog We Trust Https Www Amazon Com Dp 1705355676 Ref Cm Sw Malinois Dog Belgian Malinois Belgian Malinois Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/14/87/ff14878f0329d1b240d8b1d3dbea48af.jpg" data-lightbox="roadtrip" data-title="Pin On History Around The World In 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/14/87/ff14878f0329d1b240d8b1d3dbea48af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTeGqptW5hiw9UzZbWY3dXzjsf3H959FEfw';" alt="Pin On History Around The World In 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History Around The World In 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/40/d4/6a40d421dfcb3c37dc176e8fda2c1604.png" data-lightbox="roadtrip" data-title="That S Ruff White House Mixes Up Hero Dog S Gender Military Dogs Dogs Famous Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/40/d4/6a40d421dfcb3c37dc176e8fda2c1604.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh9hgR_NufSvEHWDOuqam7IGYMm_l9o1l4gQ';" alt="That S Ruff White House Mixes Up Hero Dog S Gender Military Dogs Dogs Famous Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">That S Ruff White House Mixes Up Hero Dog S Gender Military Dogs Dogs Famous Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/36/4f/15364f6519d610e2f272c66a5f2a42f0.jpg" data-lightbox="roadtrip" data-title="Sultan Police K9 Eow 1 21 15 Police Dogs Dog Hero Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/36/4f/15364f6519d610e2f272c66a5f2a42f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQT5PcVqnSd-vEgyxfzIkvkYkLyiZTIqD4EA';" alt="Sultan Police K9 Eow 1 21 15 Police Dogs Dog Hero Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sultan Police K9 Eow 1 21 15 Police Dogs Dog Hero Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/01/ee/db01ee1e218567b54b1a67a85e215b4e.jpg" data-lightbox="roadtrip" data-title="Pin By Brenda Crellin On Goats Real Life Heros Military Dogs Dog Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/01/ee/db01ee1e218567b54b1a67a85e215b4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1FL_nYxjWMraDamyek2X4cN_b66xZSuhAw';" alt="Pin By Brenda Crellin On Goats Real Life Heros Military Dogs Dog Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Brenda Crellin On Goats Real Life Heros Military Dogs Dog Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hawaii-state-tax-military-spouse.html">Hawaii State Tax Military Spouse</a></li>
+													<li class="list-group-item"><a href="/german-military-records-from-ww2.html">German Military Records From Ww2</a></li>
+													<li class="list-group-item"><a href="/grace-marshall-air-force-one.html">Grace Marshall Air Force One</a></li>
+													<li class="list-group-item"><a href="/good-colleges-for-military-spouses.html">Good Colleges For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/happy-hour-in-military.html">Happy Hour In Military</a></li>
+													<li class="list-group-item"><a href="/hari-jadi-army-tanggal-berapa.html">Hari Jadi Army Tanggal Berapa</a></li>
+													<li class="list-group-item"><a href="/getting-veteran-medical-records.html">Getting Veteran Medical Records</a></li>
+													<li class="list-group-item"><a href="/hari-kemerdekaan-army-bts.html">Hari Kemerdekaan Army Bts</a></li>
+													<li class="list-group-item"><a href="/golden-star-ganesh-wedding-photos.html">Golden Star Ganesh Wedding Photos</a></li>
+													<li class="list-group-item"><a href="/gifts-for-navy-husband.html">Gifts For Navy Husband</a></li>
+													<li class="list-group-item"><a href="/grace-peterson-air-force.html">Grace Peterson Air Force</a></li>
+													<li class="list-group-item"><a href="/hari-kemerdekaan-army.html">Hari Kemerdekaan Army</a></li>
+													<li class="list-group-item"><a href="/french-military-hats-crossword-clue.html">French Military Hats Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/good-degrees-for-military-spouses.html">Good Degrees For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/hari-army-bts-tanggal.html">Hari Army Bts Tanggal</a></li>
+													<li class="list-group-item"><a href="/funny-army-wife-memes.html">Funny Army Wife Memes</a></li>
+													<li class="list-group-item"><a href="/funny-military-wife-memes.html">Funny Military Wife Memes</a></li>
+													<li class="list-group-item"><a href="/hari-lahir-army.html">Hari Lahir Army</a></li>
+													<li class="list-group-item"><a href="/haircut-exemption-military.html">Haircut Exemption Military</a></li>
+													<li class="list-group-item"><a href="/go-army-tuition-assistance-login.html">Go Army Tuition Assistance Login</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

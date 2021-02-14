@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Man Utd Vs Chelsea Statistics - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Man Utd Vs Chelsea Statistics",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/fd/d3/f2/fdd3f2aa4fb91b981f4f5b6c09d0a135.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=man+utd+vs+chelsea+statistics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Man Utd Vs Chelsea Statistics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">ABOUT Forebet presents mathematical football predictions generated by computer algorithm on the basis of statistics. Oct 24 2020 at 530pm UK at Old Trafford. L Lost 0 - 1 against Manchester City on January 30th 2021. <br>				
+			</p>
+										<a class="badge badge-info" href="/how-to-look-up-retired-military-records.html">how to look up retired military records</a>
+											<a class="badge badge-success" href="/how-to-survive-being-an-army-girlfriend.html">how to survive being an army girlfriend</a>
+											<a class="badge badge-danger" href="/how-to-search-ww1-military-records.html">how to search ww1 military records</a>
+											<a class="badge badge-secondary" href="/how-to-get-help-when-your-homeless.html">how to get help when your homeless</a>
+											<a class="badge badge-secondary" href="/how-to-find-military-records-from-ww1.html">how to find military records from ww1</a>
+											<a class="badge badge-secondary" href="/how-to-get-help-from-the-salvation-army.html">how to get help from the salvation army</a>
+											<a class="badge badge-light" href="/how-to-work-for-a-crisis-hotline.html">how to work for a crisis hotline</a>
+											<a class="badge badge-success" href="/how-to-verify-employment-for-army-reserves.html">how to verify employment for army reserves</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/48/42/47484276bf50fba2834ba71149ed2e47.jpg" data-lightbox="roadtrip" data-title="Pin On Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/48/42/47484276bf50fba2834ba71149ed2e47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gHGInzWn4PTJv4PRNWK-vaxkcQZ8BTP4gQ';" alt="Pin On Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/40/a1/5240a1437e33d2d6797ff1820a7563c0.jpg" data-lightbox="roadtrip" data-title="Manchester United On Twitter Chelsea United Manchester United The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/40/a1/5240a1437e33d2d6797ff1820a7563c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKgyaOWm5chh5U_kmzLvIZP9YacB2i-EtzQ';" alt="Manchester United On Twitter Chelsea United Manchester United The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manchester United On Twitter Chelsea United Manchester United The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/17/bc/5917bc7c2653a8bb05a56065091323ab.jpg" data-lightbox="roadtrip" data-title="Liverpool Vs Manchester United Utd Have Won The Last Four Premier League Meetings Liverpool Premier League League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/17/bc/5917bc7c2653a8bb05a56065091323ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxKWwA46olzrJ-yy-VnKcUqtnV9bJAY6STg';" alt="Liverpool Vs Manchester United Utd Have Won The Last Four Premier League Meetings Liverpool Premier League League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liverpool Vs Manchester United Utd Have Won The Last Four Premier League Meetings Liverpool Premier League League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/a8/b0/48a8b0aef316214950236b5d8782f780.png" data-lightbox="roadtrip" data-title="How Manchester United Could Line Up Against Chelsea Sports How Manchester Manchester United Line Up Arsenal Vs Manchester United Liverpool Manchester United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/a8/b0/48a8b0aef316214950236b5d8782f780.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpJVd4CCrWAugWGxr5NdzzPbpNKos2IS7BA';" alt="How Manchester United Could Line Up Against Chelsea Sports How Manchester Manchester United Line Up Arsenal Vs Manchester United Liverpool Manchester United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Manchester United Could Line Up Against Chelsea Sports How Manchester Manchester United Line Up Arsenal Vs Manchester United Liverpool Manchester United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/9b/b7/a39bb7a8cec64c683e56250a4b4a692b--infographics-chelsea.jpg" data-lightbox="roadtrip" data-title="Man Utd 2 Chelsea 0 Ander Herrera Was The Motm Man Of The Match Chelsea Match Chelsea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/9b/b7/a39bb7a8cec64c683e56250a4b4a692b--infographics-chelsea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPz6VtEMj18ULYRdfKjGZv7ixo8fk0TphBw';" alt="Man Utd 2 Chelsea 0 Ander Herrera Was The Motm Man Of The Match Chelsea Match Chelsea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Utd 2 Chelsea 0 Ander Herrera Was The Motm Man Of The Match Chelsea Match Chelsea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/e1/e4/2ae1e4a1eaea8be35532587a4ec059db.jpg" data-lightbox="roadtrip" data-title="Oulala Manchester United Premier League Man United Jose Mourinho">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/e1/e4/2ae1e4a1eaea8be35532587a4ec059db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmISrGPmRRospHYQuCkt_Zme-7iVNE9iZTQ';" alt="Oulala Manchester United Premier League Man United Jose Mourinho">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oulala Manchester United Premier League Man United Jose Mourinho</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/1b/3e/02/1b3e02dea4f89566da499878e7940032.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmISrGPmRRospHYQuCkt_Zme-7iVNE9iZTQ';" alt="Oulala Manchester United Premier League Man United Jose Mourinho">
+										<div class="card-body">
+						<h3 class="h5"><b>Report and free match highlights as Man Utd and Chelsea draw 0-0 at Old Trafford.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Man utd vs chelsea statistics</strong>. 
+								
+																	Eight of Tammy Abrahams 13 Premier League goals this season have given Chelsea the lead in a match. 
+																	W Won 2 - 1 against West Bromwich Albion on February 2nd 2021. 
+																	Chelsea have scored at least three goals in their last three Premier League away games. 
+																	201213 Man Utd won won Chelsea have won 12 including one on penalties of our last 13 FA Cup ties losing just to Man Utd in 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Compare form standings position and many match statistics. 
+																	Thursday December 3 045611 3008650086500. 
+																	Over 05 3 Half Cards. 
+																	1-2 Manchester United MAN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Man Utd 0-0 Chelsea. 
+																	Player Stats for Manchester United 0-0 Chelsea - Sports Mole. 
+																	Chelsea 5-0 Man Utd Stamford Bridge 19992000 Premier League Man Utd 6-0 Chelsea Old Trafford 196061 Division One Uniteds biggest league win at Stamford Bridge is 4-0 in 194748 Division One. 
+																	L Lost 1 - 2 against Chelsea on February 7th 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Predictions statistics live-score match previews and detail. 
+																	Read about Man Utd v Chelsea in the Premier League 201819 season including lineups stats and live blogs on the official website of the Premier League. 
+																	Edinson Cavani hits side-netting on debut as Edouard Mendy keeps out Ole Gunnar Solskjaers side. 
+																	Before the weekends games only Man City 310 have a higher such difference in the competition this term. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chelsea have had 186 more shots than we have faced in the Premier League this season 407 to 221. 
+																	1H Cards For Average. 
+																	Head to Head information H2H. 
+																	Match Stats for Manchester United 0-0 Chelsea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coverage of the Premier League clash between Manchester United and Chelsea. 
+																	Compare Chelsea and Manchester Utd. 
+																	Chelseas starting XI average age was 25 years and 199 days - compared to Manchester Uniteds average age of 24 years and 227 days. 
+																	Manchester United vs Chelsea Stats Over 25 goals have been scored in Chelseas last nine Premier League away games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Head to Head information H2H. 
+																	Compare form standings position and many match statistics. 
+																	Data For Premium Members Only. 
+																	0-2 Manchester United MAN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United England statistics Check out detailed statistics fixtures player team ratings squad top players formation summary goals assists. 
+																	Chelseas season in the FA Cup R3 Nottingham Forest h W 2-0 R4 Hull a W 2-1 R5 Liverpool h W 2-0 QF Leicester a W 1-0. 
+																	Compare Manchester Utd and Chelsea. 
+																	Shaw 39 Fred 46 Rashford 76 FT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United FC and Chelsea FCs first half and second half card stats for your predictions. 
+																	Man Utd have won four of their last six meetings between the two sides in all competitions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/e6/21/80e6215adbc415990bf5c25d13cd6ac0.jpg" data-lightbox="roadtrip" data-title="Frank Lampard Vs Steven Gerrard Vs Paul Scholes Chelsea Liverpool Manchester United 2009 10 2012 13 Steven Gerrard Soccer Poster Premier League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/e6/21/80e6215adbc415990bf5c25d13cd6ac0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjwrzB7BULrYTIkCvgceGNFjIDZCjt9vORg';" alt="Frank Lampard Vs Steven Gerrard Vs Paul Scholes Chelsea Liverpool Manchester United 2009 10 2012 13 Steven Gerrard Soccer Poster Premier League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Frank Lampard Vs Steven Gerrard Vs Paul Scholes Chelsea Liverpool Manchester United 2009 10 2012 13 Steven Gerrard Soccer Poster Premier League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/d3/f2/fdd3f2aa4fb91b981f4f5b6c09d0a135.jpg" data-lightbox="roadtrip" data-title="Oulala Henderson Liverpool Premier League Stoke City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/d3/f2/fdd3f2aa4fb91b981f4f5b6c09d0a135.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbwWvwpkR3hPReydN9PutsSDAQpxIy2sNjA';" alt="Oulala Henderson Liverpool Premier League Stoke City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oulala Henderson Liverpool Premier League Stoke City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/4c/7b/144c7b652de1c667282ddd3ef62252f1.png" data-lightbox="roadtrip" data-title="Pin On Premier League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/4c/7b/144c7b652de1c667282ddd3ef62252f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VTjztXw6x9RAUV_Ok7jI0hd5lg7D5N8H0A';" alt="Pin On Premier League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Premier League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ae/df/a0/aedfa0effba03e4449cc9324b82ead01.jpg" data-lightbox="roadtrip" data-title="Man Utd 1 Liverpool 1 Marcus Rashford Was The Motm Man Of The Match Ashley Young Marcus Rashford">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ae/df/a0/aedfa0effba03e4449cc9324b82ead01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTcOxxaB9zA_9rxFXhqNtJaYDH1jVEb-OEWQ';" alt="Man Utd 1 Liverpool 1 Marcus Rashford Was The Motm Man Of The Match Ashley Young Marcus Rashford">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Utd 1 Liverpool 1 Marcus Rashford Was The Motm Man Of The Match Ashley Young Marcus Rashford</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/3e/02/1b3e02dea4f89566da499878e7940032.jpg" data-lightbox="roadtrip" data-title="Liverpool 3 Man Utd 1 Xherdan Shaqiri Was The Motm Ashley Young Liverpool Premier League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/3e/02/1b3e02dea4f89566da499878e7940032.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_vMfy1zWp5nmAKhcKB_NXvx7SQk4_JW6-g';" alt="Liverpool 3 Man Utd 1 Xherdan Shaqiri Was The Motm Ashley Young Liverpool Premier League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liverpool 3 Man Utd 1 Xherdan Shaqiri Was The Motm Ashley Young Liverpool Premier League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/ca/9c/aeca9c4f6c85d5b796a53cfe8345468f.png" data-lightbox="roadtrip" data-title="Stats United Vs Liverpool Premier League In Focus Manchester United Vs Liverpool Revealed Key Liverpool Manchester United Manchester United Premier League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/ca/9c/aeca9c4f6c85d5b796a53cfe8345468f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQne1SVJxoh9rlbXoZoPSFpn3u_SkF48jnF6Q';" alt="Stats United Vs Liverpool Premier League In Focus Manchester United Vs Liverpool Revealed Key Liverpool Manchester United Manchester United Premier League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stats United Vs Liverpool Premier League In Focus Manchester United Vs Liverpool Revealed Key Liverpool Manchester United Manchester United Premier League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/94/13/7b/94137b49a0cab008467720f7d453be6f.jpg" data-lightbox="roadtrip" data-title="Chelsea 1 Liverpool 1 Eden Hazard Was The Motm Man Of The Match Eden Hazard Liverpool">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/94/13/7b/94137b49a0cab008467720f7d453be6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTantx5KXrnSJ16xXerMS_Tl9nGIoJyzMlbbw';" alt="Chelsea 1 Liverpool 1 Eden Hazard Was The Motm Man Of The Match Eden Hazard Liverpool">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea 1 Liverpool 1 Eden Hazard Was The Motm Man Of The Match Eden Hazard Liverpool</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/63/38/f163380ef50a3245725635e837db2ec6.jpg" data-lightbox="roadtrip" data-title="Man City 2 Man Utd 3 Paul Pogba Was The Motm Man Of The Match Pogba Manchester Paul Pogba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/63/38/f163380ef50a3245725635e837db2ec6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuf-IlowVhnUTX5AG__Z4Afsd8IBkvmz02wA';" alt="Man City 2 Man Utd 3 Paul Pogba Was The Motm Man Of The Match Pogba Manchester Paul Pogba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man City 2 Man Utd 3 Paul Pogba Was The Motm Man Of The Match Pogba Manchester Paul Pogba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/54/d9/b654d9606a0a8a71e2ad4fa22cc90dce.jpg" data-lightbox="roadtrip" data-title="Atletico Madrid 1 Chelsea 2 Eden Hazard Was The Motm Man Of The Match Eden Hazard Atletico Madrid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/54/d9/b654d9606a0a8a71e2ad4fa22cc90dce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTff5bP_dyd154teBJZbXpK3jU5FIT5BhF2VQ';" alt="Atletico Madrid 1 Chelsea 2 Eden Hazard Was The Motm Man Of The Match Eden Hazard Atletico Madrid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Atletico Madrid 1 Chelsea 2 Eden Hazard Was The Motm Man Of The Match Eden Hazard Atletico Madrid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/ad/87/72ad87acd114056249d56fd54a83d31e.jpg" data-lightbox="roadtrip" data-title="Chelsea Have Agreed Terms With Psg For Defender David Luiz David Luiz Psg Defender">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/ad/87/72ad87acd114056249d56fd54a83d31e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDEClID56OKR6svvMHkOhqW6kv-js5doBt0w';" alt="Chelsea Have Agreed Terms With Psg For Defender David Luiz David Luiz Psg Defender">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Have Agreed Terms With Psg For Defender David Luiz David Luiz Psg Defender</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/e1/26/a7e126ffdb3fa163e7e5add5a1bd883f.jpg" data-lightbox="roadtrip" data-title="Oulala Infografia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/e1/26/a7e126ffdb3fa163e7e5add5a1bd883f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSS2Kek6zJDQDP3vljoXaql7RQJWXZ1qrJsA';" alt="Oulala Infografia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oulala Infografia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/51/c3/ae/51c3aec7d4dc088c2e11a644356b594a.jpg" data-lightbox="roadtrip" data-title="Pin On Football Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/51/c3/ae/51c3aec7d4dc088c2e11a644356b594a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDy7wjqNWiS_H_rVd6xpz_-Q-M9N20ugHp3Q';" alt="Pin On Football Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Football Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/db/f5/5d/dbf55da6cd6e9e102556be6c5ffb5168.jpg" data-lightbox="roadtrip" data-title="We Present Live Score Lineups Game Statistics And Current Table Manchester United Arsenal Vs Manchester United Manchester United Team Liverpool Premier League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/db/f5/5d/dbf55da6cd6e9e102556be6c5ffb5168.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRTIbTd4ynXH_jYa_1dFss7SMRE4qvJpLfQ';" alt="We Present Live Score Lineups Game Statistics And Current Table Manchester United Arsenal Vs Manchester United Manchester United Team Liverpool Premier League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Present Live Score Lineups Game Statistics And Current Table Manchester United Arsenal Vs Manchester United Manchester United Team Liverpool Premier League</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycaa-military-spouse-login.html">Mycaa Military Spouse Login</a></li>
+													<li class="list-group-item"><a href="/mycaa-online-programs.html">Mycaa Online Programs</a></li>
+													<li class="list-group-item"><a href="/mycaa-myseco.html">Mycaa Myseco</a></li>
+													<li class="list-group-item"><a href="/mycaa-grant-phone-number.html">Mycaa Grant Phone Number</a></li>
+													<li class="list-group-item"><a href="/mycaa-real-estate.html">Mycaa Real Estate</a></li>
+													<li class="list-group-item"><a href="/mycaa-grant-military-spouse.html">Mycaa Grant Military Spouse</a></li>
+													<li class="list-group-item"><a href="/mycaa-degrees.html">Mycaa Degrees</a></li>
+													<li class="list-group-item"><a href="/mycaa-near-me.html">Mycaa Near Me</a></li>
+													<li class="list-group-item"><a href="/mycaa-dog-training.html">Mycaa Dog Training</a></li>
+													<li class="list-group-item"><a href="/mycaa-cosmetology.html">Mycaa Cosmetology</a></li>
+													<li class="list-group-item"><a href="/mycaa-bookkeeping.html">Mycaa Bookkeeping</a></li>
+													<li class="list-group-item"><a href="/mycaa-auburn-university.html">Mycaa Auburn University</a></li>
+													<li class="list-group-item"><a href="/mycaa-program-plan-file.html">Mycaa Program Plan File</a></li>
+													<li class="list-group-item"><a href="/mycaa-questions-and-answers.html">Mycaa Questions And Answers</a></li>
+													<li class="list-group-item"><a href="/mycaa-reserves.html">Mycaa Reserves</a></li>
+													<li class="list-group-item"><a href="/mycaa-number.html">Mycaa Number</a></li>
+													<li class="list-group-item"><a href="/mycaa-program-reviews.html">Mycaa Program Reviews</a></li>
+													<li class="list-group-item"><a href="/mycaa-nail-technician.html">Mycaa Nail Technician</a></li>
+													<li class="list-group-item"><a href="/mycaa-programs-offered.html">Mycaa Programs Offered</a></li>
+													<li class="list-group-item"><a href="/mycaa-for-veteran-spouses.html">Mycaa For Veteran Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

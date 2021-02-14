@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Help Desk Number - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Help Desk Number",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/600x315/95/c0/24/95c024b76b1174a41dabd6ee505eb609.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+help+desk+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Help Desk Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These number blocks are shown in the table below. There are five categories from which to pick. For the following locations you can reach the helpdesk by directly dialing the numbers listed below. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/us-army-clothing-regulations.html">us army clothing regulations</a>
+											<a class="badge badge-primary" href="/us-army-wife.html">us army wife</a>
+											<a class="badge badge-dark" href="/us-naval-academy-womens-lacrosse.html">us naval academy womens lacrosse</a>
+											<a class="badge badge-success" href="/us-army-civilian-hr.html">us army civilian hr</a>
+											<a class="badge badge-danger" href="/us-army-shirt-original.html">us army shirt original</a>
+											<a class="badge badge-dark" href="/us-army-womens-uniforms.html">us army womens uniforms</a>
+											<a class="badge badge-info" href="/us-department-of-veterans-affairs-medical-records.html">us department of veterans affairs medical records</a>
+											<a class="badge badge-info" href="/us-army-mos-42a.html">us army mos 42a</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/2c/73/c22c73e838cff22c9720ccb2458a02fe.jpg" data-lightbox="roadtrip" data-title="Pin By Eliana Brown On Ideas For The House Boys Army Room Army Bedroom Boys Army Bedroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/2c/73/c22c73e838cff22c9720ccb2458a02fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLLhIxQiVEd1wFS0kbnjimCwRWIoWPnXWLw';" alt="Pin By Eliana Brown On Ideas For The House Boys Army Room Army Bedroom Boys Army Bedroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Eliana Brown On Ideas For The House Boys Army Room Army Bedroom Boys Army Bedroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" data-lightbox="roadtrip" data-title="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/21/5f/af215f6bf6a89ad05d225304f07f4e5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYAZyhVz646mjPal8iiZTazTlnqqmCAJtUA';" alt="Army Memorandum Template 4 Memorandum Template Memo Template Paper Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Memorandum Template 4 Memorandum Template Memo Template Paper Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/c6/f9/4dc6f952e138e5697ec72fd791e8b7dd.jpg" data-lightbox="roadtrip" data-title="Pin On Proud Veteran Army Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/c6/f9/4dc6f952e138e5697ec72fd791e8b7dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGolUOATWFVrLWgbtILu-l1i97JRxERPUUA';" alt="Pin On Proud Veteran Army Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Proud Veteran Army Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/02/e6/7402e6d1276521f8bf0f66d2a02885fa.jpg" data-lightbox="roadtrip" data-title="Pin On Stl News Local National International">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/02/e6/7402e6d1276521f8bf0f66d2a02885fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnaiMeJHNOklq21wBMlc_TkOFQ3DSeyHvQ6A';" alt="Pin On Stl News Local National International">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stl News Local National International</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/77/70/09777023420b71137c098333d1d4696b.jpg" data-lightbox="roadtrip" data-title="Pin On Good Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/77/70/09777023420b71137c098333d1d4696b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQGf9b2xv3ttSWRCjjy02huVXN09o8DkfYw';" alt="Pin On Good Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Good Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/54/1b/07541bfa10922b00d284bda072f3efb2.jpg" data-lightbox="roadtrip" data-title="Army Examines Tiktok Security Concerns After Schumer S Data Warning In 2020 Security Assessment Us Army Army Information">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/54/1b/07541bfa10922b00d284bda072f3efb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWC5uRhaTcjteu_ZHkOQKftQGTVr7Ey9ZroQ';" alt="Army Examines Tiktok Security Concerns After Schumer S Data Warning In 2020 Security Assessment Us Army Army Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Examines Tiktok Security Concerns After Schumer S Data Warning In 2020 Security Assessment Us Army Army Information</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c4/cf/10/c4cf10f0af9b286d974de33555882959.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWC5uRhaTcjteu_ZHkOQKftQGTVr7Ey9ZroQ';" alt="Army Examines Tiktok Security Concerns After Schumer S Data Warning In 2020 Security Assessment Us Army Army Information">
+										<div class="card-body">
+						<h3 class="h5"><b>-- Call 1-866-335-ARMY to speak with an Army Enterprise Service Desk agent.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army help desk number</strong>. 
+								
+																	When contacting AKO Help Desk by phone the caller is required to pick a category by dialing a number. 
+																	For example if they were serving with the Royal Army Service Corps they were allotted a number from 1 to 294000. 
+																	Provide accurate information and log all calls into. 
+																	Use DSN switch board at 312-560-1110. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information about leaving a gift in your Will please visit our l egacy webpage. 
+																	Tier 1 provides support to various software applications besides GCSS-Army. 
+																	1-800-275-2872 Please listen to the audio menu for the ALMS option. 
+																	Bloomberg delivers business and markets news data analysis and video to the world featuring stories from Businessweek and Bloomberg News on everything pertaining to technology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Afghanistan Iraq Kuwait Yugoslavia - Kosovo - Using a pre-programmed telephone dial the OCONUS toll-free helpdesk number 1-800-861-7770 from your military base. 
+																	In 1920 soldiers were given an army number from the number block allocated to the corps or regiment they were then serving in. 
+																	You can always contact support at helpusarmymil. 
+																	-- Phone menu asks a series of questions to determine where to route the call. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Provide friendly service to all customers. 
+																	If you have any question related to Microsoft Teams you could post here I will help you here we are Microsoft support engineer that help customer handle Microsoft Teams issue. 
+																	The help desk operates 24 hours a day seven days per week and 365 days per year. 
+																	If you have a standard query about your pay in connection with SFA charges please contact the Amey helpdesk on 0800 707 6000 providing full details such as your service number about why you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Select 2 when prompted to select. 
+																	Users may also call the ARMY ENTERPRISE SERVICE DESK at 1-866-335-ARMY 2769. 
+																	If you fairly need to contact customer support for Teams-US Army please offer me more details so I can understand your actual concern clearly. 
+																	Ask the operator to connect you to 866-335-2769. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are experiencing a problem with LDAC services or applications please feel free to contact the LDAC Technical Service Desk at the numbers below. 
+																	You can call them at 1-866-335-ARMY 2769 or send them an email at armyesd-wsupportmailmil. 
+																	You can also contact the Army Training Help Desk via the following. 
+																	Or if you have a specific legacy query please email us or phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This will help ensure the incident is forwarded to the correct Tier 2 help desk. 
+																	Subject - Include GCSS-Army in the Subject line if submitting incident reports via e-mail. 
+																	The ako help desk number is 866-335-2769 when you are calling commercially. 
+																	-- The agent will resolve if possible the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Info - UICName Phone AKO e-mail andor alternate email address UnitOffice. 
+																	Afghanistan Iraq Kuwait Yugoslavia - Kosovo - Using a pre-programmed telephone dial the OCONUS toll-free helpdesk number 1-800-861-7770 from your military base. 
+																	In any other case you will need use the following instructions. 
+																	All first time users of the Help Desk will be required to go to the web link below and complete an initial registration form in order to gain access to the system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the following locations you can reach the helpdesk by directly dialing the numbers listed below. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/1d/03/d61d037c69bb732edeb7b0669e6d9ac8.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Entertainment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/1d/03/d61d037c69bb732edeb7b0669e6d9ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TvsGKlDKfvdzGw7rxuRAJKxiVV5rH2t3Ew';" alt="Pin On Sports Entertainment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Entertainment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/cf/10/c4cf10f0af9b286d974de33555882959.jpg" data-lightbox="roadtrip" data-title="Pin On Neighborhood Finds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/cf/10/c4cf10f0af9b286d974de33555882959.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHo7kTlucBQXqtS1MJf42nYFNTR0LFwaw2tw';" alt="Pin On Neighborhood Finds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Neighborhood Finds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/1c/bc/e11cbc25cf0cff0359d286e3d63fa7ce.jpg" data-lightbox="roadtrip" data-title="Dial Webroot Customer Support Service Phone Number 1 800 445 2810 Web Security Support Services Phone Numbers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/1c/bc/e11cbc25cf0cff0359d286e3d63fa7ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3psZoKkqTAkT9UZNqt9YokHsYJWDnLhep1Q';" alt="Dial Webroot Customer Support Service Phone Number 1 800 445 2810 Web Security Support Services Phone Numbers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dial Webroot Customer Support Service Phone Number 1 800 445 2810 Web Security Support Services Phone Numbers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/06/12/39fc38fe/size2.jpg" data-lightbox="roadtrip" data-title="U S Army G 1 Personnel">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/06/12/39fc38fe/size2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpi2kAms6yo-egeiXB4xASWozc6cKpbZ7XGA';" alt="U S Army G 1 Personnel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army G 1 Personnel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/c8/25/78c82584dc7d653a6dc0c1d031a7302f--portable-desk-chuck-box.jpg" data-lightbox="roadtrip" data-title="For The Expedition Base Camp 1944 U S Army Field Officer S Desk With Key Period Style Lamp Necessary But Not Incl Campaign Furniture Campaign Desk Desk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/c8/25/78c82584dc7d653a6dc0c1d031a7302f--portable-desk-chuck-box.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaaRDSXvis_KxH4t_zyVOoRjUUDE0UUVzbQ';" alt="For The Expedition Base Camp 1944 U S Army Field Officer S Desk With Key Period Style Lamp Necessary But Not Incl Campaign Furniture Campaign Desk Desk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For The Expedition Base Camp 1944 U S Army Field Officer S Desk With Key Period Style Lamp Necessary But Not Incl Campaign Furniture Campaign Desk Desk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/d9/57/75d95752cb50a5c9d1a80895d10e5fbf.jpg" data-lightbox="roadtrip" data-title="Ako Webmail Login A Way For The Army People To Stay Connected Login Arena Ako Webmail Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/d9/57/75d95752cb50a5c9d1a80895d10e5fbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfKBul_QUnAt7fXKc-g0ntpAqgmP-UyibNQ';" alt="Ako Webmail Login A Way For The Army People To Stay Connected Login Arena Ako Webmail Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ako Webmail Login A Way For The Army People To Stay Connected Login Arena Ako Webmail Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/95/c0/24/95c024b76b1174a41dabd6ee505eb609.jpg" data-lightbox="roadtrip" data-title="Welcome To Linda Ikeji S Blog Army Boko Haram Early Morning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/95/c0/24/95c024b76b1174a41dabd6ee505eb609.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBaVlCHoaDwcbHPUPQ7frx5uUTxTX151ksUw';" alt="Welcome To Linda Ikeji S Blog Army Boko Haram Early Morning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Linda Ikeji S Blog Army Boko Haram Early Morning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/50/29/c1/5029c149a10e4552e970083bcb7a12b6.jpg" data-lightbox="roadtrip" data-title="Pin By Igor Gumenyuk On Office Desk Workshop Desk Military Shadow Box">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/50/29/c1/5029c149a10e4552e970083bcb7a12b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNc-JcvFLnTqo9Cz1C_cm_aJ-mBvnxHVbjnQ';" alt="Pin By Igor Gumenyuk On Office Desk Workshop Desk Military Shadow Box">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Igor Gumenyuk On Office Desk Workshop Desk Military Shadow Box</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/ad/62/dcad62795bd979eeefd85f672a2e3b6e.jpg" data-lightbox="roadtrip" data-title="Pop Girly Study Shit Decorating Technology Place Cute Electrics Shara Https Weheartit Com Entry Army Room Decor Gamer Room Decor Game Room Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/ad/62/dcad62795bd979eeefd85f672a2e3b6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL-uIIA9CS2gFnJi_ZK7w4Lr-C34KW4Qx6gw';" alt="Pop Girly Study Shit Decorating Technology Place Cute Electrics Shara Https Weheartit Com Entry Army Room Decor Gamer Room Decor Game Room Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pop Girly Study Shit Decorating Technology Place Cute Electrics Shara Https Weheartit Com Entry Army Room Decor Gamer Room Decor Game Room Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/47/dd/c247dd5792f6c228a8ec92189e4c9cbf.jpg" data-lightbox="roadtrip" data-title="Pin By Dan Gonzalez On Soldier Tough Military Humor Army Humor Army Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/47/dd/c247dd5792f6c228a8ec92189e4c9cbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjsg3iLZ2Ye9Ep8JKrZVNV5n7mbID17tQbg';" alt="Pin By Dan Gonzalez On Soldier Tough Military Humor Army Humor Army Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dan Gonzalez On Soldier Tough Military Humor Army Humor Army Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/c0/90/b3c0908c742316e7877efc01f3e26ef4.jpg" data-lightbox="roadtrip" data-title="Field Desk Plans Use This Field Desk To Carry Pencils Paper Field Guides And Measuring Students Who Have Their Ow Chuck Box Plans Desk Plans Campaign Furniture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/c0/90/b3c0908c742316e7877efc01f3e26ef4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgfEHDvOgnK_OyovZBSXixPGaSc9NWr1MwA';" alt="Field Desk Plans Use This Field Desk To Carry Pencils Paper Field Guides And Measuring Students Who Have Their Ow Chuck Box Plans Desk Plans Campaign Furniture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Field Desk Plans Use This Field Desk To Carry Pencils Paper Field Guides And Measuring Students Who Have Their Ow Chuck Box Plans Desk Plans Campaign Furniture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/cc/66/f8cc66488b0d929b6cfe2fab85f0f5e7.jpg" data-lightbox="roadtrip" data-title="Items Manufactured By Hartmann For The Us Military During The Second World War Such As An Army Fiel Portable Furniture Campaign Furniture Woodworking Projects">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/cc/66/f8cc66488b0d929b6cfe2fab85f0f5e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTew3oSBY3F155K0IOeThWVsE1iNDjmvZBWJA';" alt="Items Manufactured By Hartmann For The Us Military During The Second World War Such As An Army Fiel Portable Furniture Campaign Furniture Woodworking Projects">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Items Manufactured By Hartmann For The Us Military During The Second World War Such As An Army Fiel Portable Furniture Campaign Furniture Woodworking Projects</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/9a/c4/b69ac425c586c4d7e909558a0bcca431.png" data-lightbox="roadtrip" data-title="Pin By Paramjeet Adhana On Arcler Desk Browser Technical Help Freshbooks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/9a/c4/b69ac425c586c4d7e909558a0bcca431.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFDLLCOi3LqvVwXcziDMnymiphlm4j36gLQ';" alt="Pin By Paramjeet Adhana On Arcler Desk Browser Technical Help Freshbooks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Paramjeet Adhana On Arcler Desk Browser Technical Help Freshbooks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/whats-my-car-worth-queensland.html">Whats My Car Worth Queensland</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-tattoo.html">What Is The Meaning Of Military Tattoo</a></li>
+													<li class="list-group-item"><a href="/whats-my-cash-app-tag.html">Whats My Cash App Tag</a></li>
+													<li class="list-group-item"><a href="/whats-the-meaning-of-military-man.html">Whats The Meaning Of Military Man</a></li>
+													<li class="list-group-item"><a href="/what-is-the-national-domestic-violence-hotline.html">What Is The National Domestic Violence Hotline</a></li>
+													<li class="list-group-item"><a href="/whats-the-definition-of-military-force.html">Whats The Definition Of Military Force</a></li>
+													<li class="list-group-item"><a href="/whats-mycaa.html">Whats Mycaa</a></li>
+													<li class="list-group-item"><a href="/whats-the-definition-of-military-brat.html">Whats The Definition Of Military Brat</a></li>
+													<li class="list-group-item"><a href="/whats-my-camel-worth.html">Whats My Camel Worth</a></li>
+													<li class="list-group-item"><a href="/when-do-military-dependent-id-cards-expire.html">When Do Military Dependent Id Cards Expire</a></li>
+													<li class="list-group-item"><a href="/what-schools-accept-military-tuition-assistance.html">What Schools Accept Military Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/whats-my-calling-from-god.html">Whats My Calling From God</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-urdu.html">What Is The Meaning Of Military Urdu</a></li>
+													<li class="list-group-item"><a href="/what-type-of-support-groups-exist-for-widows-and-widowers.html">What Type Of Support Groups Exist For Widows And Widowers</a></li>
+													<li class="list-group-item"><a href="/what-the-meaning-of-military-deployment.html">What The Meaning Of Military Deployment</a></li>
+													<li class="list-group-item"><a href="/whats-my-caller-id.html">Whats My Caller Id</a></li>
+													<li class="list-group-item"><a href="/what-time-is-army-time-converter.html">What Time Is Army Time Converter</a></li>
+													<li class="list-group-item"><a href="/what-military-bases-are-in-hawaii.html">What Military Bases Are In Hawaii</a></li>
+													<li class="list-group-item"><a href="/what-the-meaning-of-military-regime.html">What The Meaning Of Military Regime</a></li>
+													<li class="list-group-item"><a href="/whats-the-meaning-of-military-junta.html">Whats The Meaning Of Military Junta</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

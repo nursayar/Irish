@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy San Diego Theater - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy San Diego Theater",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/d6/d3/9d/d6d39def116973823806115e1947fee4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+san+diego+theater",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy San Diego Theater</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Training Support Center TSC San Diego provides centralized student management facilities information technology and training support to the following Naval Education and. Partner with Navy MWR to enhance events for our military community while gaining valuable promotional benefits for your business. Held annually Exercise Solid Curtain. <br>				
+			</p>
+										<a class="badge badge-warning" href="/military-scholarships-for-dependents-2019.html">military scholarships for dependents 2019</a>
+											<a class="badge badge-info" href="/military-resume-examples-skills.html">military resume examples skills</a>
+											<a class="badge badge-primary" href="/military-retirement-divorce-disability.html">military retirement divorce disability</a>
+											<a class="badge badge-success" href="/military-retirement-gift-etiquette.html">military retirement gift etiquette</a>
+											<a class="badge badge-info" href="/military-scholarships-and-grants-for-dependents.html">military scholarships and grants for dependents</a>
+											<a class="badge badge-light" href="/military-retirement-benefits-for-child.html">military retirement benefits for child</a>
+											<a class="badge badge-info" href="/military-retirement-divorce-1010-rule.html">military retirement divorce 1010 rule</a>
+											<a class="badge badge-secondary" href="/military-resume-examples-infantry-to-civilian.html">military resume examples infantry to civilian</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the ideal site.  Our site gives you hints for seeing the maximum quality video and image content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/0a/cd/2c0acd97545b7d42518244ee3e5e7225.jpg" data-lightbox="roadtrip" data-title="Pin By Jessica Bisner On Graduation Trip Graduation Trip San Diego San">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/0a/cd/2c0acd97545b7d42518244ee3e5e7225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiC1vV3i0er2nIJkNFRZ7H-0P7P74YcACdng';" alt="Pin By Jessica Bisner On Graduation Trip Graduation Trip San Diego San">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jessica Bisner On Graduation Trip Graduation Trip San Diego San</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/79/59/717959a1d453595b40f9e58285242ee8.jpg" data-lightbox="roadtrip" data-title="San Diego Night Photo Naasa San Diego Naval Base San Diego Travel Travel Usa San Diego">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/79/59/717959a1d453595b40f9e58285242ee8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhkSxAVBzCOZsX2HnCuN7HEUVcobMkkgwmA';" alt="San Diego Night Photo Naasa San Diego Naval Base San Diego Travel Travel Usa San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Night Photo Naasa San Diego Naval Base San Diego Travel Travel Usa San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/e2/76/7ae276ea89ac45a4c99f7b1c8fbfe9f8.jpg" data-lightbox="roadtrip" data-title="Amphibious Warship Uss Green Bay Lpd 20 Left Naval Station San Diego Calif On Monday To Join The U S Navy S Forward Dep Us Navy Ships Navy Ships Green Bay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/e2/76/7ae276ea89ac45a4c99f7b1c8fbfe9f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpiRHbV9Q2Ht3RmkNT6vbN1OMqS4yDVDIbeA';" alt="Amphibious Warship Uss Green Bay Lpd 20 Left Naval Station San Diego Calif On Monday To Join The U S Navy S Forward Dep Us Navy Ships Navy Ships Green Bay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amphibious Warship Uss Green Bay Lpd 20 Left Naval Station San Diego Calif On Monday To Join The U S Navy S Forward Dep Us Navy Ships Navy Ships Green Bay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/06/28/8006280ef7f2696dc97989d73e4deba9.jpg" data-lightbox="roadtrip" data-title="Uss Kinkaid Dd 965 In Floating Drydock Steadfast San Diego Naval San">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/06/28/8006280ef7f2696dc97989d73e4deba9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS4rr1XO9sqsAxD17gYCSN7dzSVSvQd8HGgg';" alt="Uss Kinkaid Dd 965 In Floating Drydock Steadfast San Diego Naval San">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uss Kinkaid Dd 965 In Floating Drydock Steadfast San Diego Naval San</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/8b/aa/598baa54fbe0335f04ff889ba8c11cc4.jpg" data-lightbox="roadtrip" data-title="54 Incredible Military Photos San Diego San Diego Area Military Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/8b/aa/598baa54fbe0335f04ff889ba8c11cc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehFAGn-yD5IOMdTVxk7ONKL-uIPf_yb3cJA';" alt="54 Incredible Military Photos San Diego San Diego Area Military Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">54 Incredible Military Photos San Diego San Diego Area Military Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/d3/9d/d6d39def116973823806115e1947fee4.jpg" data-lightbox="roadtrip" data-title="Naval Station San Diego Navy Day Naval Patriot Guard Riders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/d3/9d/d6d39def116973823806115e1947fee4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8tLpsoIxrqK5zGNbdoyV5GZcrZUKsYDe0w';" alt="Naval Station San Diego Navy Day Naval Patriot Guard Riders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Station San Diego Navy Day Naval Patriot Guard Riders</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d6/d3/9d/d6d39def116973823806115e1947fee4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8tLpsoIxrqK5zGNbdoyV5GZcrZUKsYDe0w';" alt="Naval Station San Diego Navy Day Naval Patriot Guard Riders">
+										<div class="card-body">
+						<h3 class="h5"><b>Naval base san diego theater Support for Support for the Fleet.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy san diego theater</strong>. 
+								
+																	Naval Base San Diego also known as 32nd Street Naval Station is the second largest Surface Ship base of the United States Navy and is located in San Diego CaliforniaNaval Base San Diego is the principal homeport of the Pacific Fleet consisting of over 50 ships and over 190 tenant commandsThe base is composed of 13 piers stretched over 977 acres 395 km 2 of land and 326 acres 132 km. 
+																	Find the perfect naval base san diego theater stock photo. 
+																	San Diego Ca 92136 United States. 
+																	SAN DIEGO Coast Guard and Navy personnel offloaded approximately 11400 pounds of cocaine and 9000 pounds of marijuana Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Naval Base San Diego is the principal homeport of the Pacific Fleet consisting of 46 Navy ships one Coast Guard cutters seven Military Sealift Command logistical support platforms several research and auxiliary vessels. 
+																	Huge collection amazing choice 100 million high quality affordable RF and RM images. 
+																	No need to register buy now. 
+																	Naval Base San Diego theater free movies for all active duty personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy veteran Paul Grisham and his wife Carole Salazar of San Diego examine the wallet that he lost in Antarctica in 1968. 
+																	Naval Base San Diego is home to 213 individual commands each having specific and specialized fleet support purposes. 
+																	The Naval Base San Diego dry side main gate is off of 28th St with another entrance from 32nd St. 
+																	MWR movie theaters are open to all active duty reservists retirees dependents DoD civilians their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	San Diego CA 92136. 
+																	1 amounting to more than 211 million from seizures in international waters of the Eastern Pacific Ocean. 
+																	Showtimes for Naval Base San Diego Theater. 
+																	3465 Senn Rd Bldg 71. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Beginning Monday the Navy is conducting a large-scale force protection training exercise at installations across the country including San Diego-area bases. 
+																	Patron groups that are authorized to use navy mwr facilities equipment and services include active-duty military personnel and their family members activated reservists retired military personnel civilian dod personnel foreign national employees assigned and working directly for the dod installations overseas and dod contractors working full-time on the installation. 
+																	Training Support Center TSC San Diego provides centralized student management facilities information technology and training support to Naval Education and Training Command supported commands in the Pacific region. 
+																	Movies MWR movie theaters are open to all active duty reservists retirees dependents DoD civilians their sponsored guests and individual contractors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3465 Senn Rd San Diego CA 92136. 
+																	The billfold was returned to him by a team of internet sleuths after 53. 
+																	Cinema in San Diego CA. 
+																	It has two gas stationsautoports the Commissary Main Exchange NEX and much more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Partner with Navy MWR to enhance events for our military community while gaining valuable promotional benefits for your business. 
+																	Naval Base San Diego Theater 3465 Senn St San Diego CA 92136. 
+																	British Naval Bases 1690-1940 This major new book traces for the first time the architectural and engineering works in the Royal Navys shore bases at home and overseas and the political imperatives and technologies that helped shape them up to the First World War. 
+																	Paid Infofree subscriptions receive full profiles and unlimited searches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	San Diego Repertory Theatre co-presents this theatrical film streaming through Sunday. 
+																	The wet side has the Naval Base San Diego Movie Theater Budweiser Brew House Mini-NEX and Uniform Store and several restaurants. 
+																	Showtimes for Naval Base San Diego Theater. 
+																	Naval Base San Diego Theater. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Japanese navy submarine and a commercial ship have collided off Japans southern coast. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/51/01/1b5101debc2992699c41194b0831f14a.jpg" data-lightbox="roadtrip" data-title="San Diego Naval Base 1989 Us Navy Ships United States Navy Ships Navy Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/51/01/1b5101debc2992699c41194b0831f14a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHakRpAGmZeYEFubzk4tXreBGNDi3wPdkgOQ';" alt="San Diego Naval Base 1989 Us Navy Ships United States Navy Ships Navy Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Naval Base 1989 Us Navy Ships United States Navy Ships Navy Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/04/d5/5b04d506957d94cc70e27fc912996a3c.jpg" data-lightbox="roadtrip" data-title="The United States Pacific Fleet Uspacflt Is A Pacific Ocean Theater Level Component Command Of The United St Pictures Of Soldiers Action Pictures Naval Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/04/d5/5b04d506957d94cc70e27fc912996a3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGYdgoxGFq0923jpQfDAb4Rf0Qj6Dp96Z2g';" alt="The United States Pacific Fleet Uspacflt Is A Pacific Ocean Theater Level Component Command Of The United St Pictures Of Soldiers Action Pictures Naval Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The United States Pacific Fleet Uspacflt Is A Pacific Ocean Theater Level Component Command Of The United St Pictures Of Soldiers Action Pictures Naval Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/12/12/c1121223b7b8469106157d80e8447731.jpg" data-lightbox="roadtrip" data-title="Pin On U S Navy Cruisers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/12/12/c1121223b7b8469106157d80e8447731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9Rs4dHXIMmPO4HLP5etwshgvMA0WKhTLBQ';" alt="Pin On U S Navy Cruisers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Navy Cruisers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/0e/a8/350ea863454b6c0741c46004f28aac92.jpg" data-lightbox="roadtrip" data-title="Pin On Uss Carl Vinson Cvn 70">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/0e/a8/350ea863454b6c0741c46004f28aac92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoRE0WjEMS-qruy6i4pmyDCMa4Joy-WKVObw';" alt="Pin On Uss Carl Vinson Cvn 70">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Uss Carl Vinson Cvn 70</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/9e/51/329e51cbd834e385bcaf891f3e809b2e.jpg" data-lightbox="roadtrip" data-title="Happy Birthday Uss Midway Cv 41 70 Years Navy Aircraft Carrier Navy Carriers Us Navy Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/9e/51/329e51cbd834e385bcaf891f3e809b2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sFX5FsDMZ23PcTHXy5H7ohiscDACwrD_gQ';" alt="Happy Birthday Uss Midway Cv 41 70 Years Navy Aircraft Carrier Navy Carriers Us Navy Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Birthday Uss Midway Cv 41 70 Years Navy Aircraft Carrier Navy Carriers Us Navy Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/ec/cd/95eccd1c8bf07ea5edba234bad7419f3.jpg" data-lightbox="roadtrip" data-title="Pin On Speech Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/ec/cd/95eccd1c8bf07ea5edba234bad7419f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGc6p5LdqlUTFCITJ805VSN0PDssgFEQPqKg';" alt="Pin On Speech Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Speech Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/fa/4b/44fa4b5cf69ef0ee2658223658fea15c.jpg" data-lightbox="roadtrip" data-title="Pin On Uss Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/fa/4b/44fa4b5cf69ef0ee2658223658fea15c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzyAeVELMKE_5zXqXV48C6S1mzIfGoIVSLQ';" alt="Pin On Uss Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Uss Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/1d/82/b21d827963793b063eb0e3c46ff5e3d7.jpg" data-lightbox="roadtrip" data-title="Navy Lodge In San Diego Ca Navy Lodge Navy Lodge Vacation Locations Military Lodging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/1d/82/b21d827963793b063eb0e3c46ff5e3d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPm7WIExfkkYG65-NaGqKNwDIG5w1YejXrA';" alt="Navy Lodge In San Diego Ca Navy Lodge Navy Lodge Vacation Locations Military Lodging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Lodge In San Diego Ca Navy Lodge Navy Lodge Vacation Locations Military Lodging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/32/26/2c32267e0e57cc2aa8e5e15e57435fae.jpg" data-lightbox="roadtrip" data-title="Uss Howard Departs Naval Base San Diego Naval Today Us Navy Ships Naval Navy Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/32/26/2c32267e0e57cc2aa8e5e15e57435fae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqLSj58df0ZqbTfJg44YBZ6ZJOoTYhkd0vZw';" alt="Uss Howard Departs Naval Base San Diego Naval Today Us Navy Ships Naval Navy Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uss Howard Departs Naval Base San Diego Naval Today Us Navy Ships Naval Navy Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/7a/7f/cd7a7fdce76b57e4db558cc084ed8091.jpg" data-lightbox="roadtrip" data-title="Pin On Flagships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/7a/7f/cd7a7fdce76b57e4db558cc084ed8091.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_NA1D4urrHD6XpFi4ekQTB1xw73gSzGBPg';" alt="Pin On Flagships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Flagships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/4b/8b/be4b8beb777459428f011f8892d3b8e9.jpg" data-lightbox="roadtrip" data-title="Coronado Village Theater Needs Help Classic Movie Theaters Coronado Classic Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/4b/8b/be4b8beb777459428f011f8892d3b8e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbXJj2CSjXWNj2EtD9JgEydaj4I8t4LV5JA';" alt="Coronado Village Theater Needs Help Classic Movie Theaters Coronado Classic Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronado Village Theater Needs Help Classic Movie Theaters Coronado Classic Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/f7/ce/c2f7ce430268b64534080431351373a9.png" data-lightbox="roadtrip" data-title="Pin On Ship To Shore">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/f7/ce/c2f7ce430268b64534080431351373a9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5WsbDu37U6GfAQ3ebxa0I6LbhaDeRgS9tg';" alt="Pin On Ship To Shore">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ship To Shore</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/98/b8/0b98b851d183082f4e5781fd375122e2.jpg" data-lightbox="roadtrip" data-title="Pin On Bucket List Check">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/98/b8/0b98b851d183082f4e5781fd375122e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1auOqu5GA9YYZ-DhM876Dm_XVypycz82RA';" alt="Pin On Bucket List Check">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bucket List Check</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-thank-you-cards-free-printable.html">Military Thank You Cards Free Printable</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-notes-samples.html">Military Thank You Notes Samples</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-songs.html">Military Thank You Songs</a></li>
+													<li class="list-group-item"><a href="/military-survival-kit-for-sale.html">Military Survival Kit For Sale</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-card-templates.html">Military Thank You Card Templates</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-for-your-service.html">Military Thank You For Your Service</a></li>
+													<li class="list-group-item"><a href="/military-tax-exempt-card.html">Military Tax Exempt Card</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-mens.html">Military T Shirt Mens</a></li>
+													<li class="list-group-item"><a href="/military-tax-exempt-number.html">Military Tax Exempt Number</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-california.html">Military Tax Exemption California</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-virginia.html">Military Tax Exemption Virginia</a></li>
+													<li class="list-group-item"><a href="/military-support-group-crossword.html">Military Support Group Crossword</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-music.html">Military Thank You Music</a></li>
+													<li class="list-group-item"><a href="/military-time-all-hours.html">Military Time All Hours</a></li>
+													<li class="list-group-item"><a href="/military-tax-exemption-in-virginia.html">Military Tax Exemption In Virginia</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-gif.html">Military Thank You Gif</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-shirts.html">Military Thank You Shirts</a></li>
+													<li class="list-group-item"><a href="/military-survival-kit-blanket.html">Military Survival Kit Blanket</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-printing.html">Military T Shirt Printing</a></li>
+													<li class="list-group-item"><a href="/military-t-shirt-design-ideas.html">Military T Shirt Design Ideas</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

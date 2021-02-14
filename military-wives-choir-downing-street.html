@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Wives Choir Downing Street - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Wives Choir Downing Street",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/1f/28/05/1f280530d3a2b50c51679906595609b6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+wives+choir+downing+street",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Wives Choir Downing Street</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Invited to meet Prime Minister David Cameron at Downing Street. With over 2200 members the MWC network is tri-service and any woman with a military connection can join including those currently serving veterans mothers sisters and daughters empowering women from across the military community. Gareth Malone conducts The Military Wives choir during a performance in Downing Street London before a reception for Forces personnel returning from Libya. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-flight-discounts-southwest.html">military flight discounts southwest</a>
+											<a class="badge badge-success" href="/military-dependent-support-requirements.html">military dependent support requirements</a>
+											<a class="badge badge-success" href="/military-dependent-parent-application.html">military dependent parent application</a>
+											<a class="badge badge-warning" href="/military-dog-hero-conan.html">military dog hero conan</a>
+											<a class="badge badge-light" href="/military-dependent-medical-coverage.html">military dependent medical coverage</a>
+											<a class="badge badge-light" href="/military-dependent-medical-records-archives.html">military dependent medical records archives</a>
+											<a class="badge badge-success" href="/military-dependent-tsa-precheck.html">military dependent tsa precheck</a>
+											<a class="badge badge-danger" href="/military-dependent-pay-chart.html">military dependent pay chart</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/bxQsQO8D85M/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir At 10 Downing Street Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/bxQsQO8D85M/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzsZaXwb3TICtz9_kegWbPoXnkbkuYu3qoQ';" alt="Military Wives Choir At 10 Downing Street Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir At 10 Downing Street Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/36/33/f636338b017104a205ef3af847d6f29c.jpg" data-lightbox="roadtrip" data-title="Margaret Thatcher Funeral In 2020 Margaret Thatcher The Iron Lady Thatcher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/36/33/f636338b017104a205ef3af847d6f29c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrcfRcmkGQv3rFNmpFlLf8aJYMUQttkZGRw';" alt="Margaret Thatcher Funeral In 2020 Margaret Thatcher The Iron Lady Thatcher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Margaret Thatcher Funeral In 2020 Margaret Thatcher The Iron Lady Thatcher</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/c1/dc/cdc1dcd4d83c403b02e570d3aee2783e.jpg" data-lightbox="roadtrip" data-title="Camilla Channels Kate Middleton And Meghan Markle In Forest Green">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/c1/dc/cdc1dcd4d83c403b02e570d3aee2783e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzn3QbGpb2_Zf_h8gjKB5K2DpOkQcFTwu4QQ';" alt="Camilla Channels Kate Middleton And Meghan Markle In Forest Green">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camilla Channels Kate Middleton And Meghan Markle In Forest Green</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/f2/06/31f2063e2837a7f6f96f48e23730bfad.jpg" data-lightbox="roadtrip" data-title="Pin On Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/f2/06/31f2063e2837a7f6f96f48e23730bfad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QYt0DWnzZWuUkrqrRu1e5F5CBxcPZvxSKA';" alt="Pin On Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.cbc.ca/1.2018693.1381570147!/httpImage/image.jpg_gen/derivatives/16x9_780/li-military-wives.jpg" data-lightbox="roadtrip" data-title="U K Military Wives Choir Vie For Christmas No 1 Cbc News">
+											<img class="card-img v-image ads-img " src="https://i.cbc.ca/1.2018693.1381570147!/httpImage/image.jpg_gen/derivatives/16x9_780/li-military-wives.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOSZNwLT7aeT7uyuX_ypx177jffQZZEkaJA';" alt="U K Military Wives Choir Vie For Christmas No 1 Cbc News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U K Military Wives Choir Vie For Christmas No 1 Cbc News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/32/2e/77/322e773fed7521c1cbc580c5dc1f6ed3--old-photos-vintage-photos.jpg" data-lightbox="roadtrip" data-title="Birmingham New Street Throwback Birmingham Britain England Uk Throwback Thursday Old History Postcard Birmingham England Birmingham Uk Birmingham">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/32/2e/77/322e773fed7521c1cbc580c5dc1f6ed3--old-photos-vintage-photos.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdNr2IYurzMz9OtPrY8ah7soklFBQHdEtMg';" alt="Birmingham New Street Throwback Birmingham Britain England Uk Throwback Thursday Old History Postcard Birmingham England Birmingham Uk Birmingham">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Birmingham New Street Throwback Birmingham Britain England Uk Throwback Thursday Old History Postcard Birmingham England Birmingham Uk Birmingham</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.lincolnshirelife.co.uk/images/uploads/main-images/_main/CRN-UNCLASS-20121226-119-013_email.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdNr2IYurzMz9OtPrY8ah7soklFBQHdEtMg';" alt="Birmingham New Street Throwback Birmingham Britain England Uk Throwback Thursday Old History Postcard Birmingham England Birmingham Uk Birmingham">
+										<div class="card-body">
+						<h3 class="h5"><b>See the Military Wives choirs performance in Downing Street.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military wives choir downing street</strong>. 
+								
+																	The soundtrack features favourites from the real-life Military Wives Choirs and new tracks by the on-screen cast celebrating. 
+																	The Military Wives Choirs is a registered charity and network of 75 choirs in British military bases across the UK and overseas bringing women in the military community closer together through singing. 
+																	Download this stock image. 
+																	A military wife from Exeter was a founding member of the choir that shot to fame in 2011 as part of the BBC Choir series and has gone on to raise hundreds of thousands of pounds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Year With The Military Wives. 
+																	David Cameron MP talking to members of choir and military personnel David Cameron MP speech SOT - welcome everybody - really warm welcome -. 
+																	Get premium high resolution news photos at Getty Images. 
+																	The Military Wives Choir featured in the BBC Two television programme The Choir is made up of about 100 wives and girlfriends from RMB Chivenor in north Devon and Plymouth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Wives Choir sing carols outside Number 10 Dominic LipinskiPA Richard Stringfellow vice chair of trustees at the charity Military Wives Choirs and musician in The Band of the. 
+																	The Military Wives Choir perform outside Downing Street before a reception for the British troops involved in operations in Libya Credit. 
+																	Malcolm ParkAlamy Live News. 
+																	The film was inspired by the true story of the Military Wives Choirs a network of 75 choirs in British military bases across the United Kingdom and overseas featured in the British documentary television series The Choir. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Tuesday this week the Military Wives performed at a reception in Downing Street for British troops involved in the Libya operations in front of the Prime Minister David Cameron. 
+																	British PM Theresa May switches on the Christmas tree lights in Downing Street with members of the Military Wives Choirs performing carols. 
+																	10 Downing Street London UK. 
+																	Jason Flemyng as Crooks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military wives choir perform at Downing Street and meet PM. 
+																	New film Military Wives starring Dame Kristin Scott Thomas is based on the inspirational choir of the same name. 
+																	Greg Wise as Richard. 
+																	Sharon Horgan as Lisa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Wives performing outside 10 Downing Street Image. 
+																	Military Wives look set to steal Christmas chart glory from X Factor winner as song smashes Amazon pre-order records. 
+																	The crew of a Royal Navy submarine were given a special welcome home performance in Plymouth Sound from the Military Wives Choir. 
+																	The phenomenon bloomed into the Military Wives Choirs a charity which supports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Wives choir could be set to go from Number 10 to Number 1 as they impressed crowds with their Christmas carol. 
+																	The organisation is also a subsidiary charity of SSAFA. 
+																	Kristin Scott Thomas as Kate. 
+																	Barring any last-minute shocks its likely to be either Little Mix or the Military Wives Choir two all-female groups flung together for two very different reality-television shows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We see the women as they embark upon launching what was to become a No1 Christmas single as they visit 10 Downing Street perform at the Golden. 
+																	Military Wives Choir Perform At Downing Street. 
+																	FREE Singing Tips Video. 
+																	- G4R46T from Alamys library of millions of high resolution stock photos illustrations and vectors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Emma Lowndes as Annie. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/60/46/13604657e364e91ca4aa69b484e47408.jpg" data-lightbox="roadtrip" data-title="The Guernsey Evacuation To England Of June 1940 An Overlooked Wartime Story Channel Islands Student Created Winston Churchill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/60/46/13604657e364e91ca4aa69b484e47408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89k9RG77VTIY3kYF4OXO52JZnq41evL1MXA';" alt="The Guernsey Evacuation To England Of June 1940 An Overlooked Wartime Story Channel Islands Student Created Winston Churchill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guernsey Evacuation To England Of June 1940 An Overlooked Wartime Story Channel Islands Student Created Winston Churchill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/R6TE9F/london-uk-6th-december-2018the-prime-minister-theresa-may-switches-on-the-downing-st-christmas-lights-members-of-the-military-wives-choirs-also-performed-credit-keith-larbyalamy-live-news-R6TE9F.jpg" data-lightbox="roadtrip" data-title="London Uk 6th December 2018 The Prime Minister Theresa May Switches On The Downing St Christmas Lights Members Of The Military Wives Choirs Also Performed Credit Keith Larby Alamy Live News Stock Photo">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/R6TE9F/london-uk-6th-december-2018the-prime-minister-theresa-may-switches-on-the-downing-st-christmas-lights-members-of-the-military-wives-choirs-also-performed-credit-keith-larbyalamy-live-news-R6TE9F.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGHote8vRvciCZ70w_Oqmv4TMg-HwBPAvByA';" alt="London Uk 6th December 2018 The Prime Minister Theresa May Switches On The Downing St Christmas Lights Members Of The Military Wives Choirs Also Performed Credit Keith Larby Alamy Live News Stock Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">London Uk 6th December 2018 The Prime Minister Theresa May Switches On The Downing St Christmas Lights Members Of The Military Wives Choirs Also Performed Credit Keith Larby Alamy Live News Stock Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/94/5c/ef/945cef9e99974f498193cb986a5bdfc3.jpg" data-lightbox="roadtrip" data-title="Eric Church At Scotiabank Saddledome Eric Church Eric Church Tickets Country Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/94/5c/ef/945cef9e99974f498193cb986a5bdfc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EtnhU7-PmX0SsuTVGQeRgPKVxTh1mYQ1vQ';" alt="Eric Church At Scotiabank Saddledome Eric Church Eric Church Tickets Country Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eric Church At Scotiabank Saddledome Eric Church Eric Church Tickets Country Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lincolnshirelife.co.uk/images/uploads/main-images/_main/CRN-UNCLASS-20121226-119-013_email.jpg" data-lightbox="roadtrip" data-title="A Chorus Of Approval From Military Wives Lincolnshire Life">
+											<img class="card-img v-image ads-img " src="https://www.lincolnshirelife.co.uk/images/uploads/main-images/_main/CRN-UNCLASS-20121226-119-013_email.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfw5KkQrmC7IQPdrDg4S-F9rgOotz8QPwiDg';" alt="A Chorus Of Approval From Military Wives Lincolnshire Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Chorus Of Approval From Military Wives Lincolnshire Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/38/a4/c538a45f4975b4832eedb392b01646bc.jpg" data-lightbox="roadtrip" data-title="Melody Green Wife Of The Late Keith Green Keith Green Inspirational People Jewish Christian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/38/a4/c538a45f4975b4832eedb392b01646bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1EeT23OeqTuopVMLAeKkeoE0ijIS9O3lNNA';" alt="Melody Green Wife Of The Late Keith Green Keith Green Inspirational People Jewish Christian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Melody Green Wife Of The Late Keith Green Keith Green Inspirational People Jewish Christian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/G4W11M/carol-singing-downing-street-2-G4W11M.jpg" data-lightbox="roadtrip" data-title="Carol Singing Downing Street 2 Stock Photo Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/G4W11M/carol-singing-downing-street-2-G4W11M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRX5C2SCH39fc9MBofV0OaAsXJVdJ17XYTxw';" alt="Carol Singing Downing Street 2 Stock Photo Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carol Singing Downing Street 2 Stock Photo Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/ff/dc/44ffdca77c2d6a2c5515d4973e8146b5.jpg" data-lightbox="roadtrip" data-title="Australia She Died Because She Was A Black Woman Australia Women Black Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/ff/dc/44ffdca77c2d6a2c5515d4973e8146b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mf4lOkyADQ9qmVy7bAmLp-Rb9TFm2GuNGg';" alt="Australia She Died Because She Was A Black Woman Australia Women Black Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Australia She Died Because She Was A Black Woman Australia Women Black Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/2CKFRCY/britains-prime-minister-theresa-may-looks-on-along-with-members-of-the-military-wives-choir-during-the-ceremony-of-switching-on-the-lights-of-the-christmas-tree-in-downing-street-in-central-london-britain-december-6-2018-reuters-toby-melville-2CKFRCY.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir High Resolution Stock Photography And Images Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/2CKFRCY/britains-prime-minister-theresa-may-looks-on-along-with-members-of-the-military-wives-choir-during-the-ceremony-of-switching-on-the-lights-of-the-christmas-tree-in-downing-street-in-central-london-britain-december-6-2018-reuters-toby-melville-2CKFRCY.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuy0p145duQKf-4fjADczShUX7NUtL-z6Vnw';" alt="Military Wives Choir High Resolution Stock Photography And Images Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir High Resolution Stock Photography And Images Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1f/28/05/1f280530d3a2b50c51679906595609b6.jpg" data-lightbox="roadtrip" data-title="Image Result For Small Heath 1920s Birmingham">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1f/28/05/1f280530d3a2b50c51679906595609b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxjui0AjxuOc0_r3xEmUdmD-ThbsSkqzxiIg';" alt="Image Result For Small Heath 1920s Birmingham">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Small Heath 1920s Birmingham</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/DCXJA7/members-of-the-military-wives-choir-and-gareth-malone-members-of-the-DCXJA7.jpg" data-lightbox="roadtrip" data-title="Members Of The Military Wives Choir And Gareth Malone Members Of The Stock Photo Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/DCXJA7/members-of-the-military-wives-choir-and-gareth-malone-members-of-the-DCXJA7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KZhUQKq67puXK5Hx7LQBDOEVDRCLTAGhKQ';" alt="Members Of The Military Wives Choir And Gareth Malone Members Of The Stock Photo Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Members Of The Military Wives Choir And Gareth Malone Members Of The Stock Photo Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/31/a7/c731a7f6c8d059f0f9492bedc0078540.jpg" data-lightbox="roadtrip" data-title="Pin On Politics 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/31/a7/c731a7f6c8d059f0f9492bedc0078540.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUdHaewgUppM_W3-dogSULCU9BRNYDU6HDw';" alt="Pin On Politics 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Politics 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/98/34/32983429a72975dcde8fbdeaa05257ba.jpg" data-lightbox="roadtrip" data-title="Pin On Music For Your Eyes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/98/34/32983429a72975dcde8fbdeaa05257ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYM_7leAa3hl5dO6VCLN8sykZdlLqWdve3NA';" alt="Pin On Music For Your Eyes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Music For Your Eyes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/12/12/1323707503227/Members-of-the-military-w-007.jpg" data-lightbox="roadtrip" data-title="Little Mix Or Military Wives Choir Who Will Be Christmas No 1 Wrongmog">
+											<img class="card-img v-image ads-img " src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/12/12/1323707503227/Members-of-the-military-w-007.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWhOrdNoYQmUjh4jGfU-cWgPVxKRE78aYgPQ';" alt="Little Mix Or Military Wives Choir Who Will Be Christmas No 1 Wrongmog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Little Mix Or Military Wives Choir Who Will Be Christmas No 1 Wrongmog</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/sscn-bkn-go-id-login-2021.html">Sscn Bkn Go Id Login 2021</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-cpns-2021.html">Sscn Bkn Cpns 2021</a></li>
+													<li class="list-group-item"><a href="/spouse-benefits-us-army.html">Spouse Benefits Us Army</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-jadwal-tes.html">Sscn Bkn Jadwal Tes</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-akun.html">Sscn Bkn Akun</a></li>
+													<li class="list-group-item"><a href="/soldiers-are-real-heroes-quotes.html">Soldiers Are Real Heroes Quotes</a></li>
+													<li class="list-group-item"><a href="/spouse-preference-for-retired-military.html">Spouse Preference For Retired Military</a></li>
+													<li class="list-group-item"><a href="/spousal-survivor-benefits-for-social-security.html">Spousal Survivor Benefits For Social Security</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-cpns-login.html">Sscn Bkn Cpns Login</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-kedinasan-2020.html">Sscn Bkn Kedinasan 2020</a></li>
+													<li class="list-group-item"><a href="/spouse-tuition-assistance-army.html">Spouse Tuition Assistance Army</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-cpns.html">Sscn Bkn Cpns</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-go-id.html">Sscn Bkn Go Id</a></li>
+													<li class="list-group-item"><a href="/sri-lanka-air-force-headquarters-colombo-address.html">Sri Lanka Air Force Headquarters Colombo Address</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-go-id-login.html">Sscn Bkn Go Id Login</a></li>
+													<li class="list-group-item"><a href="/spouse-veteran-death-benefits.html">Spouse Veteran Death Benefits</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-daftar.html">Sscn Bkn Daftar</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-jateng.html">Sscn Bkn Jateng</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-go-id-login-2019-cetak-kartu-ujian.html">Sscn Bkn Go Id Login 2019 Cetak Kartu Ujian</a></li>
+													<li class="list-group-item"><a href="/sscn-bkn-bali.html">Sscn Bkn Bali</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

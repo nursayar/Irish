@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Hrc Record Brief - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Hrc Record Brief",
+  "datePublished": "2021-02-14",
+  "image": "eITwCkzK8go3TM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+hrc+record+brief",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Hrc Record Brief</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Army Military Human Resource Record AMHRR The naming convention AMHRR is an umbrella term encompassing human resource HR records for Soldiers retirees veterans and deceased personnel. If you do not have a CAC create a Level 1 DS Logon account. At this time we are working to resolve issues with Promotion Point Worksheet. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/rebirth-of-a-little-military-wife.html">rebirth of a little military wife</a>
+											<a class="badge badge-primary" href="/pros-and-cons-of-being-a-military-doctor.html">pros and cons of being a military doctor</a>
+											<a class="badge badge-danger" href="/retired-dependent-military-id-card-expiration-date.html">retired dependent military id card expiration date</a>
+											<a class="badge badge-light" href="/retired-military-dependent-education-benefits.html">retired military dependent education benefits</a>
+											<a class="badge badge-primary" href="/pros-and-cons-of-being-a-navy-corpsman.html">pros and cons of being a navy corpsman</a>
+											<a class="badge badge-secondary" href="/proud-navy-wife-hoodie.html">proud navy wife hoodie</a>
+											<a class="badge badge-info" href="/pros-and-cons-of-being-a-marine-engineer.html">pros and cons of being a marine engineer</a>
+											<a class="badge badge-secondary" href="/post-matric-scholarship-for-mba-students.html">post matric scholarship for mba students</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncosupport.com/sitebuilder/images/new_army_promotion_system3-223x204.png" data-lightbox="roadtrip" data-title="U S Army Enlisted Record Brief Erb">
+											<img class="card-img v-image ads-img " src="https://www.ncosupport.com/sitebuilder/images/new_army_promotion_system3-223x204.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8VlkhWMNTTIVJF9_TzMonRvHEISR7vOlAFQ';" alt="U S Army Enlisted Record Brief Erb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Enlisted Record Brief Erb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="6y9ZiMCGo3LQUM" data-lightbox="roadtrip" data-title="Https Home Army Mil Knox Index Php Download File View 1328 714">
+											<img class="card-img v-image ads-img " src="6y9ZiMCGo3LQUM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQ76S-Un1X1Ddqu5ae4cF7J8YoEwE7cUh9w';" alt="Https Home Army Mil Knox Index Php Download File View 1328 714">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Knox Index Php Download File View 1328 714</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/19/5767760/slides/slide_27.jpg" data-lightbox="roadtrip" data-title="U S Army Recruiting Command Army Strong There S Strong Then There Is Army Strong Warrant Officer Recruiting 1 U S Army Recruiting Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/19/5767760/slides/slide_27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5H8pOcQS9D1P7jbJ744wZYPJXLSAc40XTA';" alt="U S Army Recruiting Command Army Strong There S Strong Then There Is Army Strong Warrant Officer Recruiting 1 U S Army Recruiting Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Recruiting Command Army Strong There S Strong Then There Is Army Strong Warrant Officer Recruiting 1 U S Army Recruiting Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/16154360/95/images/8/Enlisted+Record+Brief+SHOW+SLIDE%3A+ENLISTED+RECORD+BRIEF.jpg" data-lightbox="roadtrip" data-title="Adjutant General School Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/16154360/95/images/8/Enlisted+Record+Brief+SHOW+SLIDE%3A+ENLISTED+RECORD+BRIEF.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2JTtd75z129MuqsdYcKRRW8tlY-8UXfSinA';" alt="Adjutant General School Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjutant General School Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158585116138606" data-lightbox="roadtrip" data-title="Public Service Announcement Wtf U S Army W T F Moments Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158585116138606" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd7xTalkWy1BBi9w6-PRzkzNJLenEhqdydpg';" alt="Public Service Announcement Wtf U S Army W T F Moments Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Public Service Announcement Wtf U S Army W T F Moments Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eITwCkzK8go3TM" data-lightbox="roadtrip" data-title="Http Www Nationalguard Mil Leadership Joint Staff Special Staff Senior Leader Management Office Annoucements 2020 Army National Guard General Officer Federal Recognition Board Fileid 254520">
+											<img class="card-img v-image ads-img " src="eITwCkzK8go3TM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiqyVaYmOe984V9aMzfLTfR_fRzEJSFclUg';" alt="Http Www Nationalguard Mil Leadership Joint Staff Special Staff Senior Leader Management Office Annoucements 2020 Army National Guard General Officer Federal Recognition Board Fileid 254520">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Nationalguard Mil Leadership Joint Staff Special Staff Senior Leader Management Office Annoucements 2020 Army National Guard General Officer Federal Recognition Board Fileid 254520</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e6/e6/a5/e6e6a590c6cc7281efe1a2a0cab20f1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiqyVaYmOe984V9aMzfLTfR_fRzEJSFclUg';" alt="Http Www Nationalguard Mil Leadership Joint Staff Special Staff Senior Leader Management Office Annoucements 2020 Army National Guard General Officer Federal Recognition Board Fileid 254520">
+										<div class="card-body">
+						<h3 class="h5"><b>The AMHRR includes but is not limited to the Official Military Personnel File OMPF finance related documents and non-service related documents deemed necessary to store by the Army.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army hrc record brief</strong>. 
+								
+																	The Soldier Record Brief. 
+																	Section i - assignment information. 
+																	The Soldier Record Brief SRB is a new multiComponent report that provides a snapshot of a Soldiers military career information. 
+																	The security accreditation level of this site is UNCLASSIFIED and below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have a Common Access Card CAC you can use it to log into the Portal. 
+																	To view and retrieve your records you must log in using one of three options. 
+																	My Record Portal is HRCs self-service portal for Active Guard Reserve Retiree and Veteran Soldiers. 
+																	If you do not have a CAC create a Level 1 DS Logon account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section iii - service data. 
+																	The purpose of conducting the Personnel Record Review is to ensure data on the Record Brief is correct and all source documents required for filing in the Army Military Human Resource Record AMHRR are in iPERMS. 
+																	HRC Soldiers First US. 
+																	Enlisted Record Brief link under Army Links column on right side of the screen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officer Record Brief ERB. 
+																	A This review will be conducted using the most recent Record Brief to identify source. 
+																	My Record Portal is HRCs self-service portal for Active Guard Reserve Retiree and Veteran Soldiers. 
+																	Br dtl expires component. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Enlisted Record Brief ERB Since 18 December 2013 we have received many reports from Soldiers that are now missing up to 80 Promotion Points on their ERB and Promotion Points Worksheet. 
+																	The attending group held ranks ranging from junior enlisted all the way colonel. 
+																	Army Human Resources Command Soldiers First United States Army Human Resources Command Soldiers First Site Map. 
+																	Go to Army AKO at wwwusarmymil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers see the following message when they try to view their PPW. 
+																	Cassian Nunez delivered a speech to a small room of Soldiers at Camp Bondsteel Kosovo in honor of the US. 
+																	Save as a PDF to your desktop where they can be easily retrieved. 
+																	Once forwarded to the ORBERB page select the viewprint button. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section iv - personalfamily data. 
+																	Section ii - security data. 
+																	Officer record brief da pam 600-8 con no brief date131220. 
+																	If you have a Common Access Card CAC you can use it to log into the Portal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Portal - United States Army. 
+																	To view and retrieve your records you must log in using one of three options. 
+																	This brief will standardize and eventually replace the Enlisted and Officer Record Brief ORB and ERB and the RCMS Automated Record Brief for all Components. 
+																	If you are looking for rcms g1 portal simply check out our links below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not process store or transmit any Personally Identifiable Information PII UNCLASSIFIEDFOUO or CLASSIFIED. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2019/12/09/572737/max1200.jpg" data-lightbox="roadtrip" data-title="62nd Medical Brigade Hosts Amedd Hrc Visit To Jblm Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2019/12/09/572737/max1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdwZZJx8i3sI78aIsdwOw_fArRfZcOFAnNg';" alt="62nd Medical Brigade Hosts Amedd Hrc Visit To Jblm Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">62nd Medical Brigade Hosts Amedd Hrc Visit To Jblm Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ay18PYoTPJ2gnM" data-lightbox="roadtrip" data-title="Https Citeseerx Ist Psu Edu Viewdoc Download Doi 10 1 1 639 7881 Rep Rep1 Type Pdf">
+											<img class="card-img v-image ads-img " src="ay18PYoTPJ2gnM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYUs1U3KIsiPVsuKOL56IZx5RB0ZcC3h79nA';" alt="Https Citeseerx Ist Psu Edu Viewdoc Download Doi 10 1 1 639 7881 Rep Rep1 Type Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Citeseerx Ist Psu Edu Viewdoc Download Doi 10 1 1 639 7881 Rep Rep1 Type Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="GET-h6knZ3MplM" data-lightbox="roadtrip" data-title="Https Asc Army Mil Docs Pubs Army Supplement Dod Desk Guide Alt Pdf">
+											<img class="card-img v-image ads-img " src="GET-h6knZ3MplM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtxpfRZpL5k4C08h4ftaslov3IGywM-vWJ1Q';" alt="Https Asc Army Mil Docs Pubs Army Supplement Dod Desk Guide Alt Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Asc Army Mil Docs Pubs Army Supplement Dod Desk Guide Alt Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=415342185577771" data-lightbox="roadtrip" data-title="Reminder Da Photo Link Issues Army Soldier Records Branch Asrb Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=415342185577771" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HLue8VWCOgW96uy4A-MUUNUqY_K7NQxhbg';" alt="Reminder Da Photo Link Issues Army Soldier Records Branch Asrb Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reminder Da Photo Link Issues Army Soldier Records Branch Asrb Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/adayaalam.org/wp-content/uploads/2020/04/IMG_1635.jpeg?fit=1200%2C800&amp;w=640" data-lightbox="roadtrip" data-title="Situation Brief No 3 Covid 19 Sri Lanka S Militarised Response Poses Grave Threats To Human Rights Adayaalam Centre For Policy Research">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/adayaalam.org/wp-content/uploads/2020/04/IMG_1635.jpeg?fit=1200%2C800&amp;w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHjh28EmQMCXcKkyazD7hGFsB-3uM2uyKdA';" alt="Situation Brief No 3 Covid 19 Sri Lanka S Militarised Response Poses Grave Threats To Human Rights Adayaalam Centre For Policy Research">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Situation Brief No 3 Covid 19 Sri Lanka S Militarised Response Poses Grave Threats To Human Rights Adayaalam Centre For Policy Research</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/59/c6/8559c61be247e37750c143fd51cca14d.jpg" data-lightbox="roadtrip" data-title="Fort Sullivan Battle 1776 By Granger American War Of Independence American War American Revolutionary War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/59/c6/8559c61be247e37750c143fd51cca14d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw7tZIdxMcTI-Lgi7MiIzsMKPi3yJjbRmHGw';" alt="Fort Sullivan Battle 1776 By Granger American War Of Independence American War American Revolutionary War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Sullivan Battle 1776 By Granger American War Of Independence American War American Revolutionary War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/80/ee/7680eec13855a34d848e9967edc4fab6.jpg" data-lightbox="roadtrip" data-title="Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/80/ee/7680eec13855a34d848e9967edc4fab6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2M68ZIKoFlqWFY1Z_LCzNMhn1_mwIca46g';" alt="Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/59/54/a459548d05d36933e7f1993619f51897.jpg" data-lightbox="roadtrip" data-title="Pin On Cafe Racers Choppers Bobbers And Any Motorcycle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/59/54/a459548d05d36933e7f1993619f51897.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmMd9fbTehQqaRTIz4XrCNQw-30Zo5UmHjA';" alt="Pin On Cafe Racers Choppers Bobbers And Any Motorcycle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cafe Racers Choppers Bobbers And Any Motorcycle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/e6/a5/e6e6a590c6cc7281efe1a2a0cab20f1e.jpg" data-lightbox="roadtrip" data-title="Ktm 390 Duke Hd Wallpaper 999hdwallpaper Ktm Ktm Duke Ktm Super Duke">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/e6/a5/e6e6a590c6cc7281efe1a2a0cab20f1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk9nnjDG6DX5Um-XOZTUvrVF7y5MrWrMaFw';" alt="Ktm 390 Duke Hd Wallpaper 999hdwallpaper Ktm Ktm Duke Ktm Super Duke">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ktm 390 Duke Hd Wallpaper 999hdwallpaper Ktm Ktm Duke Ktm Super Duke</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/140x140_RS/04/b1/d2/04b1d23aa7a62352473a64fd466435ef.jpg" data-lightbox="roadtrip" data-title="Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/140x140_RS/04/b1/d2/04b1d23aa7a62352473a64fd466435ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRygiVMg6QNsuq6abRjETnCKWls-YutEE0ww';" alt="Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tosca Costume Designs By Attilio Comelli At Covent Garden 1914 Costume Design Costume Design Sketch Costumes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=full+screen+duke+390+wallpaper+hd+for+mobile&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+											<img class="card-img v-image ads-img " src="/search?q=full+screen+duke+390+wallpaper+hd+for+mobile&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=full+screen+duke+390+wallpaper+hd+for+mobile&amp;tbm=isch';" alt="1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=iphone+duke+390+wallpaper&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct Dbrbbeqw8hranz Qynv3glocbrb Cro Es Bpc Ouml0yos Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=iphone+duke+390+wallpaper&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=iphone+duke+390+wallpaper&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct Dbrbbeqw8hranz Qynv3glocbrb Cro Es Bpc Ouml0yos Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct Dbrbbeqw8hranz Qynv3glocbrb Cro Es Bpc Ouml0yos Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=black+duke+390+wallpaper&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+											<img class="card-img v-image ads-img " src="/search?q=black+duke+390+wallpaper&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=black+duke+390+wallpaper&amp;tbm=isch';" alt="1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/camp-hero-air-force-base-reddit.html">Camp Hero Air Force Base Reddit</a></li>
+													<li class="list-group-item"><a href="/black-peaked-military-hat.html">Black Peaked Military Hat</a></li>
+													<li class="list-group-item"><a href="/best-majors-for-military-spouses.html">Best Majors For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/california-free-tuition-for-veteransdependents.html">California Free Tuition For Veteransdependents</a></li>
+													<li class="list-group-item"><a href="/campus-portal-activation-key.html">Campus Portal Activation Key</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-seal-burpee.html">Benefits Of Navy Seal Burpee</a></li>
+													<li class="list-group-item"><a href="/best-military-spouse-college.html">Best Military Spouse College</a></li>
+													<li class="list-group-item"><a href="/black-hat-military-slang.html">Black Hat Military Slang</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-card.html">Benefits Of Navy Federal Credit Card</a></li>
+													<li class="list-group-item"><a href="/best-schools-to-use-mycaa.html">Best Schools To Use Mycaa</a></li>
+													<li class="list-group-item"><a href="/best-dental-insurance-for-military-dependents.html">Best Dental Insurance For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/california-free-college-for-military-dependents.html">California Free College For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/campus-portal-bmsce.html">Campus Portal Bmsce</a></li>
+													<li class="list-group-item"><a href="/by-joe-kent-gold-star-husband-and-a-retired-army-officer.html">By Joe Kent Gold Star Husband And A Retired Army Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-rotc.html">Benefits Of Navy Rotc</a></li>
+													<li class="list-group-item"><a href="/british-army-24hr-ration-pack.html">British Army 24hr Ration Pack</a></li>
+													<li class="list-group-item"><a href="/best-college-for-military-spouses.html">Best College For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/best-online-masters-programs-for-military-members.html">Best Online Masters Programs For Military Members</a></li>
+													<li class="list-group-item"><a href="/campus-portal-gilbert.html">Campus Portal Gilbert</a></li>
+													<li class="list-group-item"><a href="/best-military-wife-books.html">Best Military Wife Books</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

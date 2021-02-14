@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Free College Military Dependents Texas - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Free College Military Dependents Texas",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/65/e6/37/65e637b17f87754d3476965aa0bec1e7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=free+college+military+dependents+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Free College Military Dependents Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The scholarship gives dependents of disabled service members injured during active service. Texas Free College Tuition For Veterans. Contact the Commission on Colleges at 1866 Southern Lane Decatur Georgia 30033-4097 or call 404-679-4500 for questions about the accreditation of Central Texas College. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-hat-for-sale.html">military hat for sale</a>
+											<a class="badge badge-secondary" href="/military-hat-plume.html">military hat plume</a>
+											<a class="badge badge-light" href="/military-hat-design.html">military hat design</a>
+											<a class="badge badge-dark" href="/military-hat-guide.html">military hat guide</a>
+											<a class="badge badge-primary" href="/military-hat-names-crossword.html">military hat names crossword</a>
+											<a class="badge badge-secondary" href="/military-hat-osfa.html">military hat osfa</a>
+											<a class="badge badge-warning" href="/military-hat-travel-case.html">military hat travel case</a>
+											<a class="badge badge-secondary" href="/military-hats-and-shirts.html">military hats and shirts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our site gives you hints for seeing the highest quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/56/23/5f56237ff5735c23dbf5bbdb3b9168ed.jpg" data-lightbox="roadtrip" data-title="Texas Veterans Commission Hazlewood Act Free College Veteran Acting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/56/23/5f56237ff5735c23dbf5bbdb3b9168ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHytY_fhl1wkqjn0mY-ovkn-tnWFjSRKRg1A';" alt="Texas Veterans Commission Hazlewood Act Free College Veteran Acting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Veterans Commission Hazlewood Act Free College Veteran Acting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/c1/34/9bc134e7b1894a9d82389cb206375f8e.jpg" data-lightbox="roadtrip" data-title="Marine Corps Recruiters Out Of Recruiting Sub Station Arlington Texas Wear Different Marine Corp Marine Corps Uniforms Marine Corps United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/c1/34/9bc134e7b1894a9d82389cb206375f8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmJc__Bod15B5HDUB3DUproWSmON4Vz0-vg';" alt="Marine Corps Recruiters Out Of Recruiting Sub Station Arlington Texas Wear Different Marine Corp Marine Corps Uniforms Marine Corps United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Recruiters Out Of Recruiting Sub Station Arlington Texas Wear Different Marine Corp Marine Corps Uniforms Marine Corps United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/76/08/a67608b3ca509a13253173d39a29ea52.jpg" data-lightbox="roadtrip" data-title="New Ap U S History Test Infuriates Texas State Board Of Ed Military History Us History Army Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/76/08/a67608b3ca509a13253173d39a29ea52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gaN5pewt16jHp0n4y6KUeK6qzXXrB8hrzQ';" alt="New Ap U S History Test Infuriates Texas State Board Of Ed Military History Us History Army Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Ap U S History Test Infuriates Texas State Board Of Ed Military History Us History Army Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/d1/cb/82d1cb8173741462579f702fadd54cdf.jpg" data-lightbox="roadtrip" data-title="States That Offer Free College Tuition To Veterans Ehow Essay Contests Essay On Education College Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/d1/cb/82d1cb8173741462579f702fadd54cdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DiDLMIkHMaoHRXYJa7jbaFnd6aw1yBvuzQ';" alt="States That Offer Free College Tuition To Veterans Ehow Essay Contests Essay On Education College Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free College Tuition To Veterans Ehow Essay Contests Essay On Education College Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://texvet.org/sites/default/files/2018-01/active_duy_placeholder_banner.jpg" data-lightbox="roadtrip" data-title="Texvet">
+											<img class="card-img v-image ads-img " src="http://texvet.org/sites/default/files/2018-01/active_duy_placeholder_banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxVmhhNVPy7bV4W-QU5zGZUohaV1_DN7G6A';" alt="Texvet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texvet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/e6/37/65e637b17f87754d3476965aa0bec1e7.jpg" data-lightbox="roadtrip" data-title="No Gi Bill Benefits This State May Cover Your Tuition Anyway Tuition Gi Bill College Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/e6/37/65e637b17f87754d3476965aa0bec1e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDRYkLX7tRiVjMcwdV7vyveDSwLBDEgo18Q';" alt="No Gi Bill Benefits This State May Cover Your Tuition Anyway Tuition Gi Bill College Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No Gi Bill Benefits This State May Cover Your Tuition Anyway Tuition Gi Bill College Tuition</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://texvet.org/sites/default/files/2018-01/active_duy_placeholder_banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDRYkLX7tRiVjMcwdV7vyveDSwLBDEgo18Q';" alt="No Gi Bill Benefits This State May Cover Your Tuition Anyway Tuition Gi Bill College Tuition">
+										<div class="card-body">
+						<h3 class="h5"><b>For Military and Veterans Many Texans in the US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Free college military dependents texas</strong>. 
+								
+																	To qualify you must be a dependent spouse or child not older than 30 years of age of a member of the National Guard Member or the United States Armed Forces. 
+																	Check MySECO for financial assistance resources and career development opportunities offered specifically to military spouses and family members. 
+																	States That Offer Free College To Veterans And Dependents. 
+																	Or as a veteran you might be curious about your state and if they offer any tuition waivers for veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Hazlewood Act is a State of Texas benefit that provides qualified veterans spouses and dependent children with an education benefit of up to 150 hours tuition free college at state schools. 
+																	One part of raising children is figuring out how you will pay for college when the day comes. 
+																	Its part of whats called. 
+																	The ThanksUSA scholarship awards 3000 scholarships to dependents of military service members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Survivors and Dependents Educational Assistance DEA Program offers education and training opportunities to eligible dependents of Veterans who are permanently and totally disabled due to a service-related condition or of Veterans who died while on active duty or as a result of a service-related condition. 
+																	As a military service member you probably wonder how your time in service can help. 
+																	Because Mike Rhoten served in the Marines the State of Texas could offer him his wife or his children free tuition at any public college or university in the state. 
+																	The Higher Education Opportunity Act of 2008 requires that states offer in-state tuition to military family members who live in the state due to their active duty military members service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through the act Texas veterans who have completed at least 181 days as an active-duty service member might be eligible for a tuition exemption that encompasses up to 150 free credit hours at a. 
+																	There are many states that are offering the tuition waiver to veterans and their dependents Below we have discussed few of them for you. 
+																	The My Career Advancement Account Scholarship is a workforce development program that provides eligible military spouses with up to 4000 in financial assistance for licenses certifications or associate degrees to pursue an occupation or career field. 
+																	Under this system every college has a staff. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Survivors and Dependents Educational Assistance Program DEA Children with a parent who died or became permanently disabled as a result of their involvement in active duty or who is or was missing in action captured or detained while serving in the Armed Forces are eligible for this money for college. 
+																	Free Tuition for Dependents Arkansas Department of Higher Education ADHE has the authority to provide free tuition and fees at any state supported college university technical school or. 
+																	Spouse and Dependents Who Previously Lived in Texas Program Purpose To provide a waiver of nonresident tuition for the spouse andor dependent child of a member of the Armed Forces of the United States including the Public Health Service who is not currently assigned to duty in Texas. 
+																	If youre serving in the military and seeking higher education at a Texas college or university this section will walk you through some important information on special benefits and rules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This benefit provides qualified veterans an education benefit of up to 150 hours of tuition exemption including most fee charges at public institutions of higher education in Texas. 
+																	The State of Texas offers benefits through the Hazelwood Act. 
+																	Arizonas tuition waiver program provides surviving dependents with tuition-free education at any public state university or community college. 
+																	Armed Services or National Guard go on to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hazlewood Act SpousesDependents The Hazlewood Act is a State of Texas benefit that provides qualified spouses and dependent children of Veterans with a 100 permanent and total VA disability are paid the 100 rate due to individual unemployability are missing in action or who died as a result of a service-related injury or illness with an education benefit of up to 150 hours of tuition exemption including most fee charges at public institutions of higher education in Texas. 
+																	Central Texas College is accredited by the Southern Association of Colleges and Schools Commission on Colleges to award associate degrees and certificates of completion. 
+																	This Exemption exempts all non-resident tuition and is processed by Student Business Services. 
+																	This has the propensity to save dependents or spouses of totally disabled Veterans 1090000 each a year while they are in college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free College for 100 Disabled Veterans Dependents. 
+																	There are many totally disabled Veterans out there who are not aware of this law. 
+																	Again this is a new law passed by our Texas Congress and signed into law by Governor Perry. 
+																	Current members of the Armed Forces veterans and their spouses and children who meet certain eligibility requirements may receive the Military Personnel and Dependents Non-Resident Tuition Exemption. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means that military kids are eligible for in-state tuition where they are actually living in conjunction with their parents job. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/1d/b4/411db484e59c7aef357b665501d6f915.jpg" data-lightbox="roadtrip" data-title="Pin On Health Wellness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/1d/b4/411db484e59c7aef357b665501d6f915.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwNuHbcjCF8lYpN_ukloZobYaE4CdxcJQFQ';" alt="Pin On Health Wellness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Wellness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/9f/21/9b9f21a68b93e8f3afca23e6e16f4125.jpg" data-lightbox="roadtrip" data-title="Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/9f/21/9b9f21a68b93e8f3afca23e6e16f4125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-APJVjSl5VgCZI9KvDhG4MMdZQnAQZ8ULA';" alt="Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/bc/58/3abc58465ce8cbcf95656ee6f89f5d8a.jpg" data-lightbox="roadtrip" data-title="Thank You Texas Aggies Texas A M Texas A M University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/bc/58/3abc58465ce8cbcf95656ee6f89f5d8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYonKxs84oqd5tsB7udWUmomuDJVPTwSqfA';" alt="Thank You Texas Aggies Texas A M Texas A M University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Texas Aggies Texas A M Texas A M University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/00/03/f30003e6b8a31eb4414dc247d7b5c600.jpg" data-lightbox="roadtrip" data-title="Change Of Command Ceremony Passing The Guidon Change Military Spouse Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/00/03/f30003e6b8a31eb4414dc247d7b5c600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2hUsJF4MeWtiSitFh3NJaQ_3RJZ4XvHzrIg';" alt="Change Of Command Ceremony Passing The Guidon Change Military Spouse Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Change Of Command Ceremony Passing The Guidon Change Military Spouse Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/37/94/f137941a15e8eec68f99e50c122c4e0e.jpg" data-lightbox="roadtrip" data-title="A Letter To My Brother In The Military Fort Hood Funeral Memorial Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/37/94/f137941a15e8eec68f99e50c122c4e0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPoLpdFKMpNh44mjo9ubbnfuZUxTq6zJMoA';" alt="A Letter To My Brother In The Military Fort Hood Funeral Memorial Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Letter To My Brother In The Military Fort Hood Funeral Memorial Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/0a/e4/bb0ae4e0a6ad95e20669add0ea8394ff.jpg" data-lightbox="roadtrip" data-title="Are Lenders Cheating Soldiers On Student Loan Programs Military Scholarships Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/0a/e4/bb0ae4e0a6ad95e20669add0ea8394ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB7mM9F2UvQJQoQ-Hjb_2lSUFN_uqhNLYmQ';" alt="Are Lenders Cheating Soldiers On Student Loan Programs Military Scholarships Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Lenders Cheating Soldiers On Student Loan Programs Military Scholarships Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/3b/59/883b5948820af02cc12f2289781c4e8d.jpg" data-lightbox="roadtrip" data-title="Air Force Bmt For The Spouse Airman S Week Megan Voegele In 2020 Air Force Spouse Joining The Military Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/3b/59/883b5948820af02cc12f2289781c4e8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimNlXY_s5FVOZ0lVZ9ZVMQaZkH1aTtfkQRg';" alt="Air Force Bmt For The Spouse Airman S Week Megan Voegele In 2020 Air Force Spouse Joining The Military Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Bmt For The Spouse Airman S Week Megan Voegele In 2020 Air Force Spouse Joining The Military Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/22/f2/1a22f2fb9aa6c072eab0aa1413019fbd.png" data-lightbox="roadtrip" data-title="West Point Quotes On Leadership Anderson Leadership Solutions United States Military Academy Military Academy United States Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/22/f2/1a22f2fb9aa6c072eab0aa1413019fbd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8K_M10vSHT1_xGM0grZUfMH_rmb9gNYq9Ww';" alt="West Point Quotes On Leadership Anderson Leadership Solutions United States Military Academy Military Academy United States Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Point Quotes On Leadership Anderson Leadership Solutions United States Military Academy Military Academy United States Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/79/c6/d179c6f82f56b7fbbfab2dcbe7a33c1e.jpg" data-lightbox="roadtrip" data-title="Finding Military Contract Jobs Do You Know Where To Look Military Jobs Military Archives Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/79/c6/d179c6f82f56b7fbbfab2dcbe7a33c1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzpfc-s-XDhx5dsmRmonT0wwUxeXB5uO9XQ';" alt="Finding Military Contract Jobs Do You Know Where To Look Military Jobs Military Archives Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finding Military Contract Jobs Do You Know Where To Look Military Jobs Military Archives Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/1d/6c/0d/1d6c0d7f32e832c24f0ac56411089ee4.jpg" data-lightbox="roadtrip" data-title="Aggie Band Always Wins Halftime Texas Aggies Texas A M Gig Em Aggies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/1d/6c/0d/1d6c0d7f32e832c24f0ac56411089ee4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJStdP4J_A_qudjTR8ubFB2csy3zMo6JGKw';" alt="Aggie Band Always Wins Halftime Texas Aggies Texas A M Gig Em Aggies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aggie Band Always Wins Halftime Texas Aggies Texas A M Gig Em Aggies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTd5ModnOlZ_GybbBxQvdcK8tm3en5b5hQQ';" alt="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition To Spouses Dependents Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://marvel-b1-cdn.bc0a.com/f00000000229279/twu.edu/media/images/veterans/veterans-hero-web.jpg" data-lightbox="roadtrip" data-title="G6oijewkl7hqkm">
+											<img class="card-img v-image ads-img " src="https://marvel-b1-cdn.bc0a.com/f00000000229279/twu.edu/media/images/veterans/veterans-hero-web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAnQtOfiRBYOwyFXwRC73ifV7OyHOSO3yeA';" alt="G6oijewkl7hqkm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G6oijewkl7hqkm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/d5/6d/ccd56db51985f0a7f0430eff8476d354.png" data-lightbox="roadtrip" data-title="Texas Educational Benefits Threatened Education Texas Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/d5/6d/ccd56db51985f0a7f0430eff8476d354.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqB2bYmrAZ8wAmuuZLBKDAdiMuOxq62lBS-A';" alt="Texas Educational Benefits Threatened Education Texas Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Educational Benefits Threatened Education Texas Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ny-army-national-guard-human-resources.html">Ny Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/online-courses-for-military-spouses.html">Online Courses For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/penfed-military-heroes-fund.html">Penfed Military Heroes Fund</a></li>
+													<li class="list-group-item"><a href="/perks-of-being-an-officer-in-the-military.html">Perks Of Being An Officer In The Military</a></li>
+													<li class="list-group-item"><a href="/pakistan-air-force-hero.html">Pakistan Air Force Hero</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-custom-hrvatska.html">Nike Air Force Custom Hrvatska</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-grey-animal-trainers.html">Nike Air Force Shadow Grey Animal Trainers</a></li>
+													<li class="list-group-item"><a href="/old-navy-wife-beaters.html">Old Navy Wife Beaters</a></li>
+													<li class="list-group-item"><a href="/overseas-jobs-for-military-spouse.html">Overseas Jobs For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/nursing-programs-military-spouses.html">Nursing Programs Military Spouses</a></li>
+													<li class="list-group-item"><a href="/pak-army-contact-number-karachi.html">Pak Army Contact Number Karachi</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-hrvatska.html">Nike Air Force Shadow Hrvatska</a></li>
+													<li class="list-group-item"><a href="/pennsylvania-civil-war-soldiers-index-cards.html">Pennsylvania Civil War Soldiers Index Cards</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-blue-hero.html">Nike Air Force Blue Hero</a></li>
+													<li class="list-group-item"><a href="/novel-rebirth-of-the-little-military-wife-bahasa-indonesia.html">Novel Rebirth Of The Little Military Wife Bahasa Indonesia</a></li>
+													<li class="list-group-item"><a href="/online-colleges-that-accept-mycaa.html">Online Colleges That Accept Mycaa</a></li>
+													<li class="list-group-item"><a href="/philippine-air-force-headquarters-address.html">Philippine Air Force Headquarters Address</a></li>
+													<li class="list-group-item"><a href="/online-nursing-programs-for-military-spouses.html">Online Nursing Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-grey-orange.html">Nike Air Force Shadow Grey Orange</a></li>
+													<li class="list-group-item"><a href="/perks-of-being-a-military-brat.html">Perks Of Being A Military Brat</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

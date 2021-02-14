@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy San Diego Hospital - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy San Diego Hospital",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/91/87/97/91879727e5c950113b26709ed3759924.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+san+diego+hospital",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy San Diego Hospital</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Naval Medical Center San Diego 34800 Bob Wilson Drive San Diego CA 92134. Naval Base San Diego is home to 213 individual commands each having specific and specialized fleet support purposes. This military hospital has 1202 doctors in total including. <br>				
+			</p>
+										<a class="badge badge-success" href="/hk-handgun-military.html">hk handgun military</a>
+											<a class="badge badge-primary" href="/how-can-i-obtain-my-military-medical-records-online.html">how can i obtain my military medical records online</a>
+											<a class="badge badge-light" href="/hiring-100k-military-spouses.html">hiring 100k military spouses</a>
+											<a class="badge badge-light" href="/hill-air-force-base-civilian-personnel-office.html">hill air force base civilian personnel office</a>
+											<a class="badge badge-dark" href="/heroes-war-java.html">heroes war java</a>
+											<a class="badge badge-info" href="/hk-military-discount.html">hk military discount</a>
+											<a class="badge badge-light" href="/heroes-fund-stimulus-military.html">heroes fund stimulus military</a>
+											<a class="badge badge-secondary" href="/hill-air-force-base-commissary-hours.html">hill air force base commissary hours</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/55/36/e6553671b451216997e75f3550297f8c.jpg" data-lightbox="roadtrip" data-title="U S Naval Hospital San Diego In The 1950s Stationed There For Hospital Corps School And Follow On Ward San Diego California San Diego Travel San Diego Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/55/36/e6553671b451216997e75f3550297f8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsNYama-vaHNZWuIF5Vrkr2A5kdTV9-pg4XQ';" alt="U S Naval Hospital San Diego In The 1950s Stationed There For Hospital Corps School And Follow On Ward San Diego California San Diego Travel San Diego Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Naval Hospital San Diego In The 1950s Stationed There For Hospital Corps School And Follow On Ward San Diego California San Diego Travel San Diego Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/c1/13/11c1132582b800b6d6e39bd65aaa6200.jpg" data-lightbox="roadtrip" data-title="Aerial View Of Naval Medical Center San Diego San Diego Aerial View San">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/c1/13/11c1132582b800b6d6e39bd65aaa6200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_JI7NAqdRJA3pCf0TJyXHiaIS5nN3BrjyKQ';" alt="Aerial View Of Naval Medical Center San Diego San Diego Aerial View San">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aerial View Of Naval Medical Center San Diego San Diego Aerial View San</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d3/2f/72/d32f723d182e50a6181cd0ee5dc3dd25.jpg" data-lightbox="roadtrip" data-title="Naval Hospital San Diego Pictures Google Search In 2020 San Diego Navy Life Del Norte County">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d3/2f/72/d32f723d182e50a6181cd0ee5dc3dd25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgV41GwrFxv51OFpZJv5YvLEY2PZa6NN_Vcw';" alt="Naval Hospital San Diego Pictures Google Search In 2020 San Diego Navy Life Del Norte County">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Hospital San Diego Pictures Google Search In 2020 San Diego Navy Life Del Norte County</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/f8/f1/16f8f10c13c631c602aa26b56d39813c.jpg" data-lightbox="roadtrip" data-title="Panoramio Photo Of Old Navy Hospital San Diego San Diego Travel San Diego California Navy Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/f8/f1/16f8f10c13c631c602aa26b56d39813c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_ofKtxOS5nwKmsCqPCY53yj1a-2bIWqLdw';" alt="Panoramio Photo Of Old Navy Hospital San Diego San Diego Travel San Diego California Navy Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panoramio Photo Of Old Navy Hospital San Diego San Diego Travel San Diego California Navy Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/74/bc/dd74bc74a82a90445f9fa764c7301789.jpg" data-lightbox="roadtrip" data-title="Pin On My Home Town">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/74/bc/dd74bc74a82a90445f9fa764c7301789.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY3L6bxnvhltdHktTPbenWtO_NLTdqMsIreg';" alt="Pin On My Home Town">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Home Town</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/35/20/a7352029d66f52d26f5b0776a579bb7d.jpg" data-lightbox="roadtrip" data-title="My Birthplace Balboa Hospital Naval Hospital In San Diego National Monuments Downtown San Diego Favorite Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/35/20/a7352029d66f52d26f5b0776a579bb7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqLptaAbfQJuF_RYH8LzQQHbDe_XQOotnlsw';" alt="My Birthplace Balboa Hospital Naval Hospital In San Diego National Monuments Downtown San Diego Favorite Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Birthplace Balboa Hospital Naval Hospital In San Diego National Monuments Downtown San Diego Favorite Places</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b4/88/36/b48836b7884a3f32458cdfc74f7450b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqLptaAbfQJuF_RYH8LzQQHbDe_XQOotnlsw';" alt="My Birthplace Balboa Hospital Naval Hospital In San Diego National Monuments Downtown San Diego Favorite Places">
+										<div class="card-body">
+						<h3 class="h5"><b>While our team is busy the ICUs are not full.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy san diego hospital</strong>. 
+								
+																	COVID-19 Information Resources Naval Medical Center San Diego NMCSD and its branch health clinics continue to serve the health care needs of our active duty service members their families and. 
+																	If you are experiencing a medical emergency please dial. 
+																	Naval Medical Center San Diego received an unspecified number of vaccines Monday with front-line medical workers and essential mission personnel such as EMS firefighters and gate personnel to. 
+																	Naval Medical Center San Diego also known as Bob Wilson Naval Hospital and informally referred to as Balboa Hospital or The Pink Palace is a technologically advanced Navy medical treatment facility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The coronavirus outbreak on the San Diego-based aircraft carrier was made worse by lapses in the Navys infectious disease mitigation policy according to the redacted report which is a. 
+																	Located within the grounds of Balboa Park in San Diego the hospital has played a role in the history of San Diego for more than 100 years. 
+																	The NBHC Naval Base San Diego is staffed by an exceptional healthcare team of 155 medical and dental professionals from the Directorate of Branch Clinics. 
+																	This resource is specifically designed for individuals with a potential exposure to COVID-19 and a fever cough or difficulty breathing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your Naval Base San Diego healthcare team strives to provide excellent customer service professional medical and dental treatment to our 12000 shore and shipboard customers. 
+																	Naval Medical Center San Diego is a military hospital located in San Diego CA. 
+																	Hospital Name Website Aurora Behavioral Health Care-San Diego. 
+																	Naval Base San Diego is the principal homeport of the Pacific Fleet consisting of 46 Navy ships one Coast Guard cutters seven Military Sealift Command logistical support platforms several research and auxiliary vessels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hospital Care Surgery. 
+																	Your Health is Our Mission. 
+																	It is one of the largest and most comprehensive military medical centers in the world with nearly every kind of doctor and specialist available. 
+																	26691 likes 2441 talking about this 91583 were here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Balboa Naval Hospital Official Website. 
+																	Balboa Naval Hospital also known as Naval Medical Center San Diego NMCSD is located in the heart of San Diegos beautiful Balboa Park. 
+																	81 of all reviewers would recommend doctors at this military hospital to a friend or family member. 
+																	This military hospital has 20 doctor ratings including 16 doctors who are highly-rated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Billed as the worlds largest and most modern naval medical facility the Naval Medical Center San Diego is informally known as the Balboa Naval Hospital. 
+																	Naval Hospital Camp Pendleton and Naval Medical Center San Diego were selected based on their populations and the number of medical personnel who can monitor vaccine recipients. 
+																	Naval Medical Center San Diego also known as Bob Wilson Naval Hospital and informally referred to as Balboa Hospital or The Pink Palace is a technologically advanced Navy medical treatment facility. 
+																	At Naval Medical Center San Diego its 16 ICU beds are at 70 percent capacity and Naval Hospital Camp Pendletons four ICU beds are at 75 percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Like their civilian counterparts San Diegos two major military hospitals are experiencing a surge of coronavirus patients as the winter spike in cases affects military members their families and. 
+																	Naval Medical Center San Diego is situated 450 feet northwest of Naval Medical Center San Diego. 
+																	Heart Valve Surgery Aortic Surgery Coronary Artery Surgery Atrial Fibrillation Surgery. 
+																	Naval Medical Center San Diego San Diego CA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Navy military health care workers first responders and personnel security forces at Naval Medical Center San Diego are expected to be among the first DoD personnel to get shots. 
+																	Anesthesiology Bariatric Surgery Clinic Cardiothoracic Surgery. 
+																	The Navys first medical facility in the. 
+																	The goal has remained constant to provide the finest medical care in a family-centered care environment to operational forces their families and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adam CC BY 20. 
+																	34800 Bob Wilson Drive San Diego CA 92134. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/88/36/b48836b7884a3f32458cdfc74f7450b8.jpg" data-lightbox="roadtrip" data-title="Balboa Naval Hospital 1950s San Diego Area San Diego California San Diego">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/88/36/b48836b7884a3f32458cdfc74f7450b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg88aI-Fa-w1s6dZoUc1AVORimzI-TeyNKew';" alt="Balboa Naval Hospital 1950s San Diego Area San Diego California San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Balboa Naval Hospital 1950s San Diego Area San Diego California San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/87/97/91879727e5c950113b26709ed3759924.jpg" data-lightbox="roadtrip" data-title="Balboa Naval Hospital In San Diego Where I Was Born San Diego Area San Diego California Navy Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/87/97/91879727e5c950113b26709ed3759924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_7vZwN3NgnqzcBvxkujtI0GZWzh3NF7W93w';" alt="Balboa Naval Hospital In San Diego Where I Was Born San Diego Area San Diego California Navy Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Balboa Naval Hospital In San Diego Where I Was Born San Diego Area San Diego California Navy Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/51/6c/8f516c9e9439896234c511d9cc8efe4d.jpg" data-lightbox="roadtrip" data-title="U S Naval Hospital Balboa Park Balboa Park San Diego Balboa Park San Diego California">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/51/6c/8f516c9e9439896234c511d9cc8efe4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYSAYNXygxyO--0T1XMmO9cuB8SOSIJt1ZhA';" alt="U S Naval Hospital Balboa Park Balboa Park San Diego Balboa Park San Diego California">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Naval Hospital Balboa Park Balboa Park San Diego Balboa Park San Diego California</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/d8/99/f3d899e0d8a0d6d87e69f62fda914104.jpg" data-lightbox="roadtrip" data-title="Sdchargers13 S Image San Diego Travel San Diego City Downtown San Diego">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/d8/99/f3d899e0d8a0d6d87e69f62fda914104.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAMNbw5vF6OCHH5mxBotookIozhpGnMv7oQ';" alt="Sdchargers13 S Image San Diego Travel San Diego City Downtown San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sdchargers13 S Image San Diego Travel San Diego City Downtown San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/27/03/a3270383774fabe2b88d6f95af5da422.jpg" data-lightbox="roadtrip" data-title="Bethesda Naval Hospital Cool Places To Visit Navy Day Bethesda">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/27/03/a3270383774fabe2b88d6f95af5da422.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_f9SoLf3YYwsJPuetZa19NWYnBsDYyxMGg';" alt="Bethesda Naval Hospital Cool Places To Visit Navy Day Bethesda">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bethesda Naval Hospital Cool Places To Visit Navy Day Bethesda</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/ae/84/70ae84f0ce1eb074a36bd903c6532bf8.jpg" data-lightbox="roadtrip" data-title="Us Naval Hospital Ship Mercy Berthed At Naval Base San Diego Joe Cruz Photo Medical Transportation Military Life Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/ae/84/70ae84f0ce1eb074a36bd903c6532bf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaZmpPK-iAJSjUgs10PzoLOrrfDmU6K9rLJw';" alt="Us Naval Hospital Ship Mercy Berthed At Naval Base San Diego Joe Cruz Photo Medical Transportation Military Life Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Naval Hospital Ship Mercy Berthed At Naval Base San Diego Joe Cruz Photo Medical Transportation Military Life Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/0a/7c/ee0a7c4c197d1367df45bd4c20d4e706.jpg" data-lightbox="roadtrip" data-title="Pin On San Diego Ca">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/0a/7c/ee0a7c4c197d1367df45bd4c20d4e706.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoXiF3WsHSHAiCVTAiHXzQGtzF64MN8dbRWg';" alt="Pin On San Diego Ca">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On San Diego Ca</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e7/55/bc/e755bc783c5d5ee7c6a8a6c76951d209.jpg" data-lightbox="roadtrip" data-title="The U S Navy Hospital Ship Usns Mercy Is Shown At Naval Base San Diego Ad Paid Usns Mercy Ship Navy Hospital In 2020 San San Diego Diego">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e7/55/bc/e755bc783c5d5ee7c6a8a6c76951d209.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXREAtzBzKdDfEynuuDRq0GCkfvx17nZifqQ';" alt="The U S Navy Hospital Ship Usns Mercy Is Shown At Naval Base San Diego Ad Paid Usns Mercy Ship Navy Hospital In 2020 San San Diego Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Navy Hospital Ship Usns Mercy Is Shown At Naval Base San Diego Ad Paid Usns Mercy Ship Navy Hospital In 2020 San San Diego Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/4b/5a/234b5a64df5290a7aea6af9de0ca9a94.jpg" data-lightbox="roadtrip" data-title="Monicbbhall Shots Fired Naval Medical Center">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/4b/5a/234b5a64df5290a7aea6af9de0ca9a94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIhLRgotGxPNr-chKu3jUI3XF1P6kteLPePQ';" alt="Monicbbhall Shots Fired Naval Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monicbbhall Shots Fired Naval Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/fd/37/f3fd378d23fe75fe849b773612ff93ab.jpg" data-lightbox="roadtrip" data-title="San Diego Naval Hospital Balboa Park San Diego La Jolla San Diego Balboa Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/fd/37/f3fd378d23fe75fe849b773612ff93ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zLEHPzL-tmc8bjzG3ioBPDTK_jjqB9607g';" alt="San Diego Naval Hospital Balboa Park San Diego La Jolla San Diego Balboa Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Naval Hospital Balboa Park San Diego La Jolla San Diego Balboa Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/52/a3/8552a355eb1bdbdcf92955ad5c67bb73.jpg" data-lightbox="roadtrip" data-title="Https I Pinimg Com Originals F9 6c 93 F96c9331ed3abdabbbaeca63d0eec6bc Jpg Wwii Women Military Women Vintage Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/52/a3/8552a355eb1bdbdcf92955ad5c67bb73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCy2S6I4dPktXNQ3_pcm0jH539r4G7ITc-g';" alt="Https I Pinimg Com Originals F9 6c 93 F96c9331ed3abdabbbaeca63d0eec6bc Jpg Wwii Women Military Women Vintage Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https I Pinimg Com Originals F9 6c 93 F96c9331ed3abdabbbaeca63d0eec6bc Jpg Wwii Women Military Women Vintage Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/65/f4/a965f4f5ba8bbc0c4dda9187ec057c73.jpg" data-lightbox="roadtrip" data-title="Us Naval Hospital Admin Bldg San Diego Ca 1985 In San Diego Scpo Retired Our Younger Daughter Was B San Diego Area San Diego California Downtown San Diego">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/65/f4/a965f4f5ba8bbc0c4dda9187ec057c73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr__doIERRuCc5LIytU5npmgj3bHLxtS-zfA';" alt="Us Naval Hospital Admin Bldg San Diego Ca 1985 In San Diego Scpo Retired Our Younger Daughter Was B San Diego Area San Diego California Downtown San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Naval Hospital Admin Bldg San Diego Ca 1985 In San Diego Scpo Retired Our Younger Daughter Was B San Diego Area San Diego California Downtown San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/22/64/1e2264cd1ba39e79992463054bee9295.jpg" data-lightbox="roadtrip" data-title="Pin On Tdelcoro Plane Hunter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/22/64/1e2264cd1ba39e79992463054bee9295.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRAMozyOFpPfhvi2X6EsrOibzzZQDt47KnA';" alt="Pin On Tdelcoro Plane Hunter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tdelcoro Plane Hunter</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hq-sand-island.html">Military Hq Sand Island</a></li>
+													<li class="list-group-item"><a href="/military-id-card-canada.html">Military Id Card Canada</a></li>
+													<li class="list-group-item"><a href="/military-hrvatska.html">Military Hrvatska</a></li>
+													<li class="list-group-item"><a href="/military-hq-crossword-clue.html">Military Hq Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/military-hq-london.html">Military Hq London</a></li>
+													<li class="list-group-item"><a href="/military-id-card-locations.html">Military Id Card Locations</a></li>
+													<li class="list-group-item"><a href="/military-id-card-madison-wi.html">Military Id Card Madison Wi</a></li>
+													<li class="list-group-item"><a href="/military-hq-surplus-hawaii.html">Military Hq Surplus Hawaii</a></li>
+													<li class="list-group-item"><a href="/military-humvee-mpg.html">Military Humvee Mpg</a></li>
+													<li class="list-group-item"><a href="/military-id-card-eligibility.html">Military Id Card Eligibility</a></li>
+													<li class="list-group-item"><a href="/military-id-card-colors.html">Military Id Card Colors</a></li>
+													<li class="list-group-item"><a href="/military-id-card-office-birmingham-al.html">Military Id Card Office Birmingham Al</a></li>
+													<li class="list-group-item"><a href="/military-humvee-replacement.html">Military Humvee Replacement</a></li>
+													<li class="list-group-item"><a href="/military-id-card-milwaukee.html">Military Id Card Milwaukee</a></li>
+													<li class="list-group-item"><a href="/military-id-card-charlotte-nc.html">Military Id Card Charlotte Nc</a></li>
+													<li class="list-group-item"><a href="/military-id-card-johnstown-pa.html">Military Id Card Johnstown Pa</a></li>
+													<li class="list-group-item"><a href="/military-id-card-millington-tn.html">Military Id Card Millington Tn</a></li>
+													<li class="list-group-item"><a href="/military-id-card-jefferson-barracks.html">Military Id Card Jefferson Barracks</a></li>
+													<li class="list-group-item"><a href="/military-id-card-bentonville-ar.html">Military Id Card Bentonville Ar</a></li>
+													<li class="list-group-item"><a href="/military-humvee-for-sale-florida.html">Military Humvee For Sale Florida</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

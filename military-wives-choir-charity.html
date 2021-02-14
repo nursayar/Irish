@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Wives Choir Charity - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Wives Choir Charity",
+  "datePublished": "2021-02-14",
+  "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1916676748458246",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+wives+choir+charity",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Wives Choir Charity</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Military Wives Choirs is a charity that brings all women in the military community closer through singing. With over 70 choirs and more than 2000 members in British military bases across the UK and overseas the Military Wives Choirs empower all women with a military connection. Trustees and a small employed management team provide guidance funding and support for the volunteer committees running their own individual choirs as well as the. <br>				
+			</p>
+										<a class="badge badge-warning" href="/vietnam-veterans-war-records.html">vietnam veterans war records</a>
+											<a class="badge badge-warning" href="/virginia-civil-war-soldiers-records.html">virginia civil war soldiers records</a>
+											<a class="badge badge-info" href="/vietnam-veterans-dependents-scholarships.html">vietnam veterans dependents scholarships</a>
+											<a class="badge badge-dark" href="/visored-military-cap-crossword-clue.html">visored military cap crossword clue</a>
+											<a class="badge badge-primary" href="/veterans-administration-records-management-center.html">veterans administration records management center</a>
+											<a class="badge badge-info" href="/veterans-affairs-immunization-records.html">veterans affairs immunization records</a>
+											<a class="badge badge-warning" href="/visiting-spouse-on-deployment.html">visiting spouse on deployment</a>
+											<a class="badge badge-danger" href="/veterans-medical-records-destroyed.html">veterans medical records destroyed</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://surveymonkey-assets.s3.amazonaws.com/survey/112818741/9691eafa-de7d-4b5f-a8a2-014e6cdf6abc.png" data-lightbox="roadtrip" data-title="Military Wives Choirs Membership Charter Registration Form Survey">
+											<img class="card-img v-image ads-img " src="https://surveymonkey-assets.s3.amazonaws.com/survey/112818741/9691eafa-de7d-4b5f-a8a2-014e6cdf6abc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4n6_k8satqm-hNJlwxUuDe5nihpvWNGpiQ';" alt="Military Wives Choirs Membership Charter Registration Form Survey">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choirs Membership Charter Registration Form Survey</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8d8q6i8.stackpathcdn.com/wp-content/uploads/2018/07/Military-Wives-Choir-Contact-Information.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir Agent Manager Publicist Contact Info">
+											<img class="card-img v-image ads-img " src="https://c8d8q6i8.stackpathcdn.com/wp-content/uploads/2018/07/Military-Wives-Choir-Contact-Information.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfZReH9sppUXqeNZoMKTvYi9P_UBd7i5TNA';" alt="Military Wives Choir Agent Manager Publicist Contact Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Agent Manager Publicist Contact Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cardsforcharity.co.uk/pub/media/catalog/product/cache/4f42450835a8c76e71f62dcc969e675e/r/e/remember.jpg" data-lightbox="roadtrip" data-title="Remember Cd Military Wives Choir Foundation Charity Christmas Gifts Decorations">
+											<img class="card-img v-image ads-img " src="https://www.cardsforcharity.co.uk/pub/media/catalog/product/cache/4f42450835a8c76e71f62dcc969e675e/r/e/remember.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeYWg87D15vsa8mot6_LM88KNhuTUL9fBfw';" alt="Remember Cd Military Wives Choir Foundation Charity Christmas Gifts Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remember Cd Military Wives Choir Foundation Charity Christmas Gifts Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bathecho.co.uk/uploads/2018/11/Military-Wives-choir-770x470.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir Set To Hit The High Notes During Charity Event In Bath Bath Echo">
+											<img class="card-img v-image ads-img " src="https://www.bathecho.co.uk/uploads/2018/11/Military-Wives-choir-770x470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrMBW3PuGnA7Zc9DHBH_kMq6K3bbmwSHygg';" alt="Military Wives Choir Set To Hit The High Notes During Charity Event In Bath Bath Echo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Set To Hit The High Notes During Charity Event In Bath Bath Echo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.inews.co.uk/content/uploads/2020/03/image2-e1583347230559.jpg" data-lightbox="roadtrip" data-title="Our Military Wives Choir Was A Lifeline And Now Kristen Scott Thomas Is Starring In A Film About Us">
+											<img class="card-img v-image ads-img " src="https://i.inews.co.uk/content/uploads/2020/03/image2-e1583347230559.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqOQowDrekSXLFa5xr2jdgRw2miuFm5n-9Q';" alt="Our Military Wives Choir Was A Lifeline And Now Kristen Scott Thomas Is Starring In A Film About Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Military Wives Choir Was A Lifeline And Now Kristen Scott Thomas Is Starring In A Film About Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1659044357531830" data-lightbox="roadtrip" data-title="Military Wives Choir Shorncliffe Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1659044357531830" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrEjGYJEtY_sciJ6TOpNS5mds-9ifx7S2kQ';" alt="Military Wives Choir Shorncliffe Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Shorncliffe Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=158121025635826" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrEjGYJEtY_sciJ6TOpNS5mds-9ifx7S2kQ';" alt="Military Wives Choir Shorncliffe Home Facebook">
+										<div class="card-body">
+						<h3 class="h5"><b>The Military Wives Choirs is a charity that brings all women in the military community closer through singing.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military wives choir charity</strong>. 
+								
+																	The Military Wives Choirs Foundation is a network of choirs that reaches across the whole military community to bring women closer together through singing. 
+																	As part of the SSAFA family they work side by side with us and support our mission to relieve need suffering and distress amongst the Armed Forces veterans and their families. 
+																	Military Wives Choirs are Recruiting They may not be able to meet right now but the community is still as active as ever with virtual music-making. 
+																	Military Wives with Gareth Malone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Foundation is a registered subsidary. 
+																	The Military Wives Choirs charity is looking to release a new album to commemorate the centenary of the end of World War 1 bringing together their network of 74 choirs across the UK and overseas but they need support to make it happen. 
+																	The first Military Wives Choirs were formed in 2012 following the success of the BBC TV series The Military Wives Choir starring Gareth Malone who is now our patron. 
+																	Maggie Pedder Chair of Trustees and choir member said Choir is a really important evening in my busy week where I can set aside some time just for me and really feel part of a community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Wives Choirs Foundation was created following the enormous success of the No1 single Wherever You Are which raised over half a million pounds for SSAFA and The Royal British Legion. 
+																	With 72 choirs and nearly 2000 members in British military bases across the UK and overseas the Military Wives Choirs empower all women with a military connection. 
+																	With over 2200 members the MWC network is tri-service and any woman with a military connection can join including those currently serving veterans mothers sisters and daughters empowering women from across the military community. 
+																	With over 70 choirs and 2300 members in British military bases across the UK and overseas the Military Wives Choirs is a charity that brings woman in the military community closer together through singing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The phenomenon bloomed into the Military Wives Choirs a charity which supports. 
+																	More information on our membership criteria choir locations and the charity is available on our website. 
+																	The organisation is also a subsidiary charity of SSAFA. 
+																	The Military Wives Choirs is part of the SSAFA the Armed Forces charity family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With 72 choirs and nearly 2000 members in British military bases across the UK and overseas the Military Wives Choirs is a charity that brings women in the military community closer together and empowers them through singing. 
+																	The Military Wives Choirs is a registered charity and network of 75 choirs in British military bases across the UK and overseas bringing women in the military community closer together through singing. 
+																	The Military Wives Choirs welcomes women with a variety of military connections. 
+																	The Foundation is a registered subsidary charity of SSAFA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	596064 Text alternative for this canvas. 
+																	The unpredictable nature of Forces life means that lots of pressure can be put on families and the feeling of isolation can be common. 
+																	The Military Wives Choirs Foundation is a network of choirs that reaches across the whole military community to bring women closer together through singing. 
+																	We have been singing since February 2011 and many of our current members have been members since then. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Wives Choirs is an independent charity and subsidiary of SSAFA run by for and with women in the military community. 
+																	Military wives from Chivenor co-founded the Military Wives Choirs Foundation and inspired many military wives to form their own choirs. 
+																	The Military Wives Choirs Foundation is a charity that brings women in the military community closer together through singing. 
+																	Formerly one half of the Military Wives Choir which featured as part of the TV programme The Choir. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Foundation is a volunteer led organisation with Gareth Malone as its Patron. 
+																	With 72 choirs and nearly 2000 members in British military bases across the UK and overseas the Military Wives Choirs is a charity that brings women in the military community closer together and empowers them through singing. 
+																	Chivenor Military Ladies Choir has since incorporated as its own charity The Chivenor Military Ladies Choir. 
+																	The Military Wives Choirs Foundation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New film Military Wives starring Dame Kristin Scott Thomas is based on the inspirational choir of the same name. 
+																	Income and expenditure Data for financial year ending 31 December 2018 Total income. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1897091983656564&amp;get_thumbnail=1" data-lightbox="roadtrip" data-title="Nottingham Military Wives Choir Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1897091983656564&amp;get_thumbnail=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4uV5X0IUswkRpVqPj38PW50i0X7cLHz06w';" alt="Nottingham Military Wives Choir Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nottingham Military Wives Choir Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1916676748458246" data-lightbox="roadtrip" data-title="Falkland Islands Military Wives Choir Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1916676748458246" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRBdDjtqRvsgqlAZ1m4WICrtAB-gFqRZCzA';" alt="Falkland Islands Military Wives Choir Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Falkland Islands Military Wives Choir Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lirp-cdn.multiscreensite.com/1ecc2b30/dms3rep/multi/opt/Admat_Square-640w.jpg" data-lightbox="roadtrip" data-title="Spring Concert Series Military Wives Choirs">
+											<img class="card-img v-image ads-img " src="https://lirp-cdn.multiscreensite.com/1ecc2b30/dms3rep/multi/opt/Admat_Square-640w.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwlFQnLd2kNeH3f04WmhyzTA5BFyyf9DUjg';" alt="Spring Concert Series Military Wives Choirs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spring Concert Series Military Wives Choirs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3466942303387122" data-lightbox="roadtrip" data-title="Waddington Military Wives Choir Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3466942303387122" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYt2EKYVdyRwav2HIlR0yYhISeM89vcNe8pg';" alt="Waddington Military Wives Choir Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Waddington Military Wives Choir Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.braintreeandwithamtimes.co.uk/resources/images/6560602.jpg?display=1&amp;htype=0&amp;type=responsive-gallery" data-lightbox="roadtrip" data-title="Singers Including The Military Wives Choir And Colchester Mp Will Quince To Hold Concert To Raise Cash For Charity Braintree And Witham Times">
+											<img class="card-img v-image ads-img " src="https://www.braintreeandwithamtimes.co.uk/resources/images/6560602.jpg?display=1&amp;htype=0&amp;type=responsive-gallery" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9D-mMsRV_ccHFrubUu6o1C6dEaSQrK4y0LA';" alt="Singers Including The Military Wives Choir And Colchester Mp Will Quince To Hold Concert To Raise Cash For Charity Braintree And Witham Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Singers Including The Military Wives Choir And Colchester Mp Will Quince To Hold Concert To Raise Cash For Charity Braintree And Witham Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2112206205698282" data-lightbox="roadtrip" data-title="Military Wives Choir Stafford Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2112206205698282" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GwKn42sr5edtkj_rdfEhFUUj5qllsNSLsg';" alt="Military Wives Choir Stafford Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Stafford Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lincolnshirelife.co.uk/images/uploads/main-images/_main/CRN-UNCLASS-20121226-119-013_email.jpg" data-lightbox="roadtrip" data-title="A Chorus Of Approval From Military Wives Lincolnshire Life">
+											<img class="card-img v-image ads-img " src="https://www.lincolnshirelife.co.uk/images/uploads/main-images/_main/CRN-UNCLASS-20121226-119-013_email.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfw5KkQrmC7IQPdrDg4S-F9rgOotz8QPwiDg';" alt="A Chorus Of Approval From Military Wives Lincolnshire Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Chorus Of Approval From Military Wives Lincolnshire Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://marketingweek.imgix.net/content/uploads/2012/09/militarywives460.jpg?auto=compress,format&amp;q=60&amp;w=460&amp;h=306" data-lightbox="roadtrip" data-title="Military Wives Choirs Outlines National Brand Strategy Marketing Week">
+											<img class="card-img v-image ads-img " src="https://marketingweek.imgix.net/content/uploads/2012/09/militarywives460.jpg?auto=compress,format&amp;q=60&amp;w=460&amp;h=306" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJo63d2YHgRiJMKy4bHsy3YVxXH8RzcTX6QA';" alt="Military Wives Choirs Outlines National Brand Strategy Marketing Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choirs Outlines National Brand Strategy Marketing Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eventim.co.uk/obj/media/UK-eventim/galery/222x222/m/military-wives-choir-tickets.jpg" data-lightbox="roadtrip" data-title="Military Wives Choir Tickets Eventim">
+											<img class="card-img v-image ads-img " src="https://www.eventim.co.uk/obj/media/UK-eventim/galery/222x222/m/military-wives-choir-tickets.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKEgsz3DSc0FwPp4ZsRt-VM1_FvfXBihJI0Q';" alt="Military Wives Choir Tickets Eventim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Choir Tickets Eventim</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lirp-cdn.multiscreensite.com/cba73a04/dms3rep/multi/opt/MWC-TopSlider-baba5346-640w.png" data-lightbox="roadtrip" data-title="Digity Create New Website For The Military Wives Choirs">
+											<img class="card-img v-image ads-img " src="https://lirp-cdn.multiscreensite.com/cba73a04/dms3rep/multi/opt/MWC-TopSlider-baba5346-640w.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-NcjZvxWzJ-5OJhqRPq-wOqPpT6vHT4lDw';" alt="Digity Create New Website For The Military Wives Choirs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digity Create New Website For The Military Wives Choirs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=158121025635826" data-lightbox="roadtrip" data-title="Halton Military Wives Choir Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=158121025635826" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyiHpvfidSyu-LMHDpquuKNWhaa1hFMXFdpQ';" alt="Halton Military Wives Choir Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Halton Military Wives Choir Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.telegraph.co.uk/content/dam/news/2016/12/06/militarywoives1_trans_NvBQzQNjv4BqPbPiJufZwY0ug2_XIzyrtkrzM7DL5XheTBBQtHxwg3Y.jpg" data-lightbox="roadtrip" data-title="Military Wives Go Head To Head With Gareth Malone In Battle For Number One Christmas Single Slot">
+											<img class="card-img v-image ads-img " src="https://www.telegraph.co.uk/content/dam/news/2016/12/06/militarywoives1_trans_NvBQzQNjv4BqPbPiJufZwY0ug2_XIzyrtkrzM7DL5XheTBBQtHxwg3Y.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrimdR4HGetlLaYloY2_3Erlg8P6qhF1jT6g';" alt="Military Wives Go Head To Head With Gareth Malone In Battle For Number One Christmas Single Slot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Go Head To Head With Gareth Malone In Battle For Number One Christmas Single Slot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2806659452788635" data-lightbox="roadtrip" data-title="Lossiemouth Military Wives Choir Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2806659452788635" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrwFdBY2ClQ0mU3raK21POMOaqbYxBCDDZ8w';" alt="Lossiemouth Military Wives Choir Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lossiemouth Military Wives Choir Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/north-carolina-civil-war-service-records-of-confederate-soldiers.html">North Carolina Civil War Service Records Of Confederate Soldiers</a></li>
+													<li class="list-group-item"><a href="/pak-army-contact-number-lahore.html">Pak Army Contact Number Lahore</a></li>
+													<li class="list-group-item"><a href="/online-degrees-for-military-spouses.html">Online Degrees For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/op-jindal-scholarship-for-mba.html">Op Jindal Scholarship For Mba</a></li>
+													<li class="list-group-item"><a href="/overseas-spouse-education-assistance-program.html">Overseas Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/obtaining-military-dependent-medical-records.html">Obtaining Military Dependent Medical Records</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-chrome-yellow.html">Nike Air Force Chrome Yellow</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-green.html">Nike Air Force Green</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-rodman.html">Nike Air Force Rodman</a></li>
+													<li class="list-group-item"><a href="/perks-of-being-a-marine-officer.html">Perks Of Being A Marine Officer</a></li>
+													<li class="list-group-item"><a href="/nmfa-military-spouse-scholarship.html">Nmfa Military Spouse Scholarship</a></li>
+													<li class="list-group-item"><a href="/parents-becoming-military-dependents.html">Parents Becoming Military Dependents</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-cijena-hrvatska.html">Nike Air Force Cijena Hrvatska</a></li>
+													<li class="list-group-item"><a href="/nsw-career-portal.html">Nsw Career Portal</a></li>
+													<li class="list-group-item"><a href="/pa-state-tax-military-spouse.html">Pa State Tax Military Spouse</a></li>
+													<li class="list-group-item"><a href="/perks-of-being-an-army-recruiter.html">Perks Of Being An Army Recruiter</a></li>
+													<li class="list-group-item"><a href="/nike-air-force-shadow-grey-animal.html">Nike Air Force Shadow Grey Animal</a></li>
+													<li class="list-group-item"><a href="/out-of-state-tuition-waiver-for-military-dependents.html">Out Of State Tuition Waiver For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/pak-army-contact-number-faisalabad.html">Pak Army Contact Number Faisalabad</a></li>
+													<li class="list-group-item"><a href="/odu-mycaa.html">Odu Mycaa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

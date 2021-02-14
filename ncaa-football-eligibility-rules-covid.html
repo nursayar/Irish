@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Football Eligibility Rules Covid - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Football Eligibility Rules Covid",
+  "datePublished": "2021-02-14",
+  "image": "https://e0.365dm.com/20/08/768x432/skysports-trevor-lawrence-clemson_5063893.jpg?20200810125431",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+football+eligibility+rules+covid",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Football Eligibility Rules Covid</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When it comes to decision-making our commitment is this. This page is experiencing technical difficulties and we are working on it. NCAA eligibility ruling solves some problems creates others. <br>				
+			</p>
+										<a class="badge badge-success" href="/merchant-navy-india-official-website.html">merchant navy india official website</a>
+											<a class="badge badge-success" href="/merchant-navy-india-ranks.html">merchant navy india ranks</a>
+											<a class="badge badge-secondary" href="/man-utd-vs-chelsea-what-channel.html">man utd vs chelsea what channel</a>
+											<a class="badge badge-secondary" href="/man-utd-vs-chelsea-what-channel-is-it-on.html">man utd vs chelsea what channel is it on</a>
+											<a class="badge badge-light" href="/merchant-navy-india-recruitment.html">merchant navy india recruitment</a>
+											<a class="badge badge-secondary" href="/merchant-navy-in-india.html">merchant navy in india</a>
+											<a class="badge badge-light" href="/martin-army-medical-records-hours.html">martin army medical records hours</a>
+											<a class="badge badge-success" href="/marine-kills-wife-camp-lejeune-nc.html">marine kills wife camp lejeune nc</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ftw.usatoday.com/wp-content/uploads/sites/90/2021/01/USP-NCAA-Football_-Sugar-Bowl-Ohio-State-vs-Clemso-4.jpg?w=1000&amp;h=600&amp;crop=1" data-lightbox="roadtrip" data-title="College Football Targeting Rules How Ncaa Defines Targeting Ejection">
+											<img class="card-img v-image ads-img " src="https://ftw.usatoday.com/wp-content/uploads/sites/90/2021/01/USP-NCAA-Football_-Sugar-Bowl-Ohio-State-vs-Clemso-4.jpg?w=1000&amp;h=600&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvk8O0DO3XG2JCuf4c0POwTJwzBlk630uQ9g';" alt="College Football Targeting Rules How Ncaa Defines Targeting Ejection">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Targeting Rules How Ncaa Defines Targeting Ejection</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/IN2e4yKHmxSjGSO45BUuaulF2us=/0x55:3154x2208/1200x800/filters:focal(1174x220:1678x724)/cdn.vox-cdn.com/uploads/chorus_image/image/67465813/899172056.jpg.0.jpg" data-lightbox="roadtrip" data-title="Ncaa To Waive Bowl Eligibility Requirements In 2020 Which Is Good News For Arizona Wildcats Arizona Desert Swarm">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/IN2e4yKHmxSjGSO45BUuaulF2us=/0x55:3154x2208/1200x800/filters:focal(1174x220:1678x724)/cdn.vox-cdn.com/uploads/chorus_image/image/67465813/899172056.jpg.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nwIqszizXW_O4Jx23PrZUnK3DfgAKnGo-w';" alt="Ncaa To Waive Bowl Eligibility Requirements In 2020 Which Is Good News For Arizona Wildcats Arizona Desert Swarm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa To Waive Bowl Eligibility Requirements In 2020 Which Is Good News For Arizona Wildcats Arizona Desert Swarm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/profile_images/1350148028779417600/Kc9QqtHH_400x400.jpg" data-lightbox="roadtrip" data-title="Ncaa Football Ncaafootball Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/profile_images/1350148028779417600/Kc9QqtHH_400x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOyaX0_8ggY9cpihE8UUi-g8K5xSVb312Mw';" alt="Ncaa Football Ncaafootball Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Football Ncaafootball Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/67GRGwznAtmsP0xAy8e4ZA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQxMC4xMjI0NDg5Nzk1OTE4/https://s.yimg.com/os/creatr-uploaded-images/2020-12/e3514670-3fbf-11eb-b67f-efeaa313555f" data-lightbox="roadtrip" data-title="Ncaa Football College Players Could End Up Stranded In 2021">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/67GRGwznAtmsP0xAy8e4ZA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQxMC4xMjI0NDg5Nzk1OTE4/https://s.yimg.com/os/creatr-uploaded-images/2020-12/e3514670-3fbf-11eb-b67f-efeaa313555f" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWI3lrdGw28rnkYNFtGRJCPWw7VnLRcsq2DA';" alt="Ncaa Football College Players Could End Up Stranded In 2021">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Football College Players Could End Up Stranded In 2021</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/2f/4f/d42f4f50abbfee5d449d3a484c597690.jpg" data-lightbox="roadtrip" data-title="Pin On Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/2f/4f/d42f4f50abbfee5d449d3a484c597690.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljsg3tRdvrVcoii0cyjyDAqFztOrD6YzXkA';" alt="Pin On Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/428/382/844b822be287cc6bae25eb02602d2e0a_crop_exact.jpg" data-lightbox="roadtrip" data-title="Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights">
+											<img class="card-img v-image ads-img " src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-slides/004/428/382/844b822be287cc6bae25eb02602d2e0a_crop_exact.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCok2888KHx2Czg0n2J4xqRuD086Uu19R42A';" alt="Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f1/f9/a2/f1f9a2bc0830d368fcc33981a54b9f79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCok2888KHx2Czg0n2J4xqRuD086Uu19R42A';" alt="Ultimate Guide To 2020 21 College Football Bowl Season Bleacher Report Latest News Videos And Highlights">
+										<div class="card-body">
+						<h3 class="h5"><b>The NCAA Board of Directors approved a blanket waiver Friday which will allow fall sports athletes to retain their eligibility for the 2021-22 season.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa football eligibility rules covid</strong>. 
+								
+																	How Does This Affect FSU. 
+																	For the college athletes who are heading into a season of uncertainty brought on by COVID-19 the NCAAs decision to not charge them a year of eligibility no matter how much they play brings peace of mind. 
+																	The NCAA Division I board of directors voted Friday to give all fall sport student-athletes an additional year of eligibility and an additional year to complete it through a blanket waiver. 
+																	The Council met by videoconference Tuesday and Wednesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA Division I athletes who participate in winter sports will be given another year of eligibility and football teams will be allowed to compete in bowl games regardless of record in one-time. 
+																	The Councils decision allows schools to self-apply waivers to restore one of those seasons of competition for student-athletes who had competed while eligible in the COVID-19-shortened 2020 spring season. 
+																	Initial Eligibility Prospective student-athletes will still need to meet minimum grade-point averages in NCAA core courses to be eligible for Division I competition as freshmen. 
+																	A lack of strict standardized COVID-19 protocols from the NCAA has led to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA adopts eligibility waiver for all fall sport student-athletes On Friday Aug. 
+																	The NCAA Rules In Favor Of Eligibility Relief For Spring Sport Athletes. 
+																	October 14 2020 352pm. 
+																	Even athletes who compete this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DI Council approves football bowl eligibility requirements waiver The Division I Council waived bowl eligibility requirements for the 2020-21 bowl season and waived the minimum number of contests for all football teams. 
+																	Mike Settle The Covid-19 virus has brought about a lot of change for every single one of us. 
+																	Protect the health and safety of college athletes. 
+																	The Big Tens guidelines for a teams eligibility use data from both. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to Nicole Auerbach of The Athletic. 
+																	The Council met by videoconference Tuesday and Wednesday. 
+																	The NCAA continues to closely monitor COVID-19 and is taking proactive measures to mitigate the impact of the virus. 
+																	Division I rules limit student-athletes to four seasons of competition in a five-year period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In normal circumstances to. 
+																	The NCAA Division I Council is recommending additional eligibility for student-athletes impacted by the coronavirus pandemic and might decide to push forward additional protections it said Wednesday. 
+																	In normal circumstances to qualify for a postseason bowl game a team must meet the criteria to be considered a deserving team which is generally defined as having a 500 overall record. 
+																	On Friday the NCAA announced that the Division I Council a panel of administrators tasked with making rules affecting programs day-to-day operations will vote on March 30 concerning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Alabama football coach Nick Saban has. 
+																	USATSI The NCAA Board of Governors took a landmark step on Friday by approving a measure that will grant an extra year of eligibility to all fall sports athletes. 
+																	The Division I Council waived bowl eligibility requirements for the 2020-21 bowl season and waived the minimum number of contests for all football teams. 
+																	The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In anticipation of the impacts COVID-19 will continue to have on college sports on October 15 the NCAA Division 1 committee agreed to grant winter sport student-athletes who compete during the 2020-21 season an extra year of eligibility and an additional year to complete their eligibility. 
+																	21 the Division I Board of Directors announced that it approved a blanket waiver granting all DI I fall sport. 
+																	The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. 
+																	NCAA Grants Winter Student-Athletes Another Year of Eligibility Due to COVID-19 complications the NCAA will extend the same extra eligibility to winter student-athletes that it previously offered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student-athletes enrolling in a Division I school during the 2021-22 academic year will be academically eligible by earning a 23 grade-point average in 16 NCAA-approved core courses. 
+																	Winter sport student-athletes who compete during 2020-21 in Division I will receive both an additional season of competition and an additional year in which to complete it the Division I Council decided. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/c7/fa/83c7fa58742de583dfe09b3bb293cc63.jpg" data-lightbox="roadtrip" data-title="Ghim Tren Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/c7/fa/83c7fa58742de583dfe09b3bb293cc63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2xu8JtZzWsQ8ONnbDnD1PVBkBh9VVixtVA';" alt="Ghim Tren Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghim Tren Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kgmi.com/wp-content/plugins/share-multisite-content/public/share-image.php?guid=https%3A%2F%2Fnews.sagacom.com%2Fwp-content%2Fblogs.dir%2F3%2Ffiles%2F2021%2F02%2FAP21012131130044.jpg&amp;size=1200x768" data-lightbox="roadtrip" data-title="Video Game Maker Ea Sports Announces Return Of Ncaa Football">
+											<img class="card-img v-image ads-img " src="https://kgmi.com/wp-content/plugins/share-multisite-content/public/share-image.php?guid=https%3A%2F%2Fnews.sagacom.com%2Fwp-content%2Fblogs.dir%2F3%2Ffiles%2F2021%2F02%2FAP21012131130044.jpg&amp;size=1200x768" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bVeeHwwHLrfG4cAG3ph6HNJawP586FoGHw';" alt="Video Game Maker Ea Sports Announces Return Of Ncaa Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Game Maker Ea Sports Announces Return Of Ncaa Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.wwltv.com/assets/WTSP/images/a28078c4-5482-49fb-9716-c85af7526367/a28078c4-5482-49fb-9716-c85af7526367_1920x1080.jpg" data-lightbox="roadtrip" data-title="Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Wwltv Com">
+											<img class="card-img v-image ads-img " src="https://media.wwltv.com/assets/WTSP/images/a28078c4-5482-49fb-9716-c85af7526367/a28078c4-5482-49fb-9716-c85af7526367_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRW2WXphUWkrF5x4nfImJY3fjw32TKdIf2rw';" alt="Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Wwltv Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Athletes Won T Lose Year Of Eligibility Due To Covid 19 Wwltv Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/9JlTsk61w6DaiuYftF8-c-5ErkI=/0x0:2750x1855/1200x480/filters:focal(1197x805:1637x1245)/cdn.vox-cdn.com/uploads/chorus_image/image/67176819/merlin_14893.0.jpg" data-lightbox="roadtrip" data-title="How The Covid 19 Pandemic Empowered Players In The Pac 12 And Big Ten Deseret News">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/9JlTsk61w6DaiuYftF8-c-5ErkI=/0x0:2750x1855/1200x480/filters:focal(1197x805:1637x1245)/cdn.vox-cdn.com/uploads/chorus_image/image/67176819/merlin_14893.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGG-RyzuPILS0Usml4KqOLDmFPc3xnopoYUg';" alt="How The Covid 19 Pandemic Empowered Players In The Pac 12 And Big Ten Deseret News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Covid 19 Pandemic Empowered Players In The Pac 12 And Big Ten Deseret News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/f/e7/fe74ddd4-29bf-11ea-b3d1-5bb0b7ce66ef/5e07d4bd49187.image.jpg?resize=400%2C306" data-lightbox="roadtrip" data-title="Ncaa Football Oversight Committee Recommends Waiving Bowl Qualification Requirements Penn State Football News Daily Collegian Collegian Psu Edu">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/f/e7/fe74ddd4-29bf-11ea-b3d1-5bb0b7ce66ef/5e07d4bd49187.image.jpg?resize=400%2C306" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFd0jYGWDLULwl8bZd_u2WwUhUOqYp5n5bVw';" alt="Ncaa Football Oversight Committee Recommends Waiving Bowl Qualification Requirements Penn State Football News Daily Collegian Collegian Psu Edu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Football Oversight Committee Recommends Waiving Bowl Qualification Requirements Penn State Football News Daily Collegian Collegian Psu Edu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://e0.365dm.com/20/08/768x432/skysports-trevor-lawrence-clemson_5063893.jpg?20200810125431" data-lightbox="roadtrip" data-title="College Football Players Unite In Push To Save 2020 Season Nfl News Sky Sports">
+											<img class="card-img v-image ads-img " src="https://e0.365dm.com/20/08/768x432/skysports-trevor-lawrence-clemson_5063893.jpg?20200810125431" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK3GTOy6gPRNW_TDdyCXZm_Iv6mrLPwEURsQ';" alt="College Football Players Unite In Push To Save 2020 Season Nfl News Sky Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Football Players Unite In Push To Save 2020 Season Nfl News Sky Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/7c/2f/a57c2fd613e000bdd099389267368ec8.jpg" data-lightbox="roadtrip" data-title="Pin On Fun Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/7c/2f/a57c2fd613e000bdd099389267368ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl-yazzp089_OsqzDrvuVrLR7T48utzbwHQ';" alt="Pin On Fun Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fun Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9f/5c/c6/9f5cc6d5b1fa395f30b1b866e19d1d86.jpg" data-lightbox="roadtrip" data-title="College Recruit Letter Sample College Recruiting College Football Recruiting Football Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9f/5c/c6/9f5cc6d5b1fa395f30b1b866e19d1d86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHi2SlFGvuFAzR79GC-9z7NX-xeTgVEtX0w';" alt="College Recruit Letter Sample College Recruiting College Football Recruiting Football Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Recruit Letter Sample College Recruiting College Football Recruiting Football Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/f9/a2/f1f9a2bc0830d368fcc33981a54b9f79.jpg" data-lightbox="roadtrip" data-title="Pin On Michigan Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/f9/a2/f1f9a2bc0830d368fcc33981a54b9f79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsa0PgeTRV7QBHZyfF35PCu26izRfgUxYYhA';" alt="Pin On Michigan Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Michigan Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/fa/99/8ffa99c1ffdaf91549590adb7a7cb541.png" data-lightbox="roadtrip" data-title="Recruiting Visits What You Need To Know About The New Ncaa Rules 2018 Student Athlete Connections College Recruiting Student Athlete Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/fa/99/8ffa99c1ffdaf91549590adb7a7cb541.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPxE2zXxnRiESvby-XBhx5fhE3kHjnW_2sDg';" alt="Recruiting Visits What You Need To Know About The New Ncaa Rules 2018 Student Athlete Connections College Recruiting Student Athlete Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting Visits What You Need To Know About The New Ncaa Rules 2018 Student Athlete Connections College Recruiting Student Athlete Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/O9F6f64Jv0mATYvhUdIw2UE8XMk=/0x0:3600x2648/1200x800/filters:focal(983x499:1559x1075)/cdn.vox-cdn.com/uploads/chorus_image/image/68682143/1288587291.0.jpg" data-lightbox="roadtrip" data-title="Is The Transfer Portal Hurting College Football Corn Nation">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/O9F6f64Jv0mATYvhUdIw2UE8XMk=/0x0:3600x2648/1200x800/filters:focal(983x499:1559x1075)/cdn.vox-cdn.com/uploads/chorus_image/image/68682143/1288587291.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtsT3bcr0zkJ8krO5c0DljXLxs9Yvm1TJWA';" alt="Is The Transfer Portal Hurting College Football Corn Nation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is The Transfer Portal Hurting College Football Corn Nation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/tpjr9Xd1ye_YS3rM2ls4ZA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU2Ny40OTE0MjcwNjQwOTky/https://s.yimg.com/os/creatr-uploaded-images/2020-10/10935950-14cf-11eb-a3ef-21d2d4a88341" data-lightbox="roadtrip" data-title="Ncaa Football List Of Canceled Bowl Games Amid Pandemic">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/tpjr9Xd1ye_YS3rM2ls4ZA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU2Ny40OTE0MjcwNjQwOTky/https://s.yimg.com/os/creatr-uploaded-images/2020-10/10935950-14cf-11eb-a3ef-21d2d4a88341" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWm8yhcHFyvqg1l8IWMVGG2OL9nwbJ_A1zrA';" alt="Ncaa Football List Of Canceled Bowl Games Amid Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Football List Of Canceled Bowl Games Amid Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/Mjl6yvHozsyuorLzyPyrQw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzOS45MTM2MDY5MTE0NDcx/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/eb33ab40-0c24-11eb-a6e7-7329f11f66d5" data-lightbox="roadtrip" data-title="Ncaa Football The Most Disappointing Teams Of 2020 So Far">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/Mjl6yvHozsyuorLzyPyrQw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzOS45MTM2MDY5MTE0NDcx/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/eb33ab40-0c24-11eb-a6e7-7329f11f66d5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST2aI-JXk8EZ862GA-sUmePOwcAKUoWMkvlg';" alt="Ncaa Football The Most Disappointing Teams Of 2020 So Far">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Football The Most Disappointing Teams Of 2020 So Far</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hats-list.html">Military Hats List</a></li>
+													<li class="list-group-item"><a href="/military-hero-costume.html">Military Hero Costume</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-after-retirement.html">Military Health Insurance After Retirement</a></li>
+													<li class="list-group-item"><a href="/military-hero-el-paso.html">Military Hero El Paso</a></li>
+													<li class="list-group-item"><a href="/military-hero-names.html">Military Hero Names</a></li>
+													<li class="list-group-item"><a href="/military-heroes-list.html">Military Heroes List</a></li>
+													<li class="list-group-item"><a href="/military-hats-indoors.html">Military Hats Indoors</a></li>
+													<li class="list-group-item"><a href="/military-hero-necklace.html">Military Hero Necklace</a></li>
+													<li class="list-group-item"><a href="/military-hats-nfl.html">Military Hats Nfl</a></li>
+													<li class="list-group-item"><a href="/military-heroes-award-crossword-clue.html">Military Heroes Award Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/military-hero-romance-novels.html">Military Hero Romance Novels</a></li>
+													<li class="list-group-item"><a href="/military-heroes-burial.html">Military Heroes Burial</a></li>
+													<li class="list-group-item"><a href="/military-heroes-losing-hold.html">Military Heroes Losing Hold</a></li>
+													<li class="list-group-item"><a href="/military-hats-history.html">Military Hats History</a></li>
+													<li class="list-group-item"><a href="/military-hats-on-amazon.html">Military Hats On Amazon</a></li>
+													<li class="list-group-item"><a href="/military-hero-workouts.html">Military Hero Workouts</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-company.html">Military Health Insurance Company</a></li>
+													<li class="list-group-item"><a href="/military-hero-dog-names.html">Military Hero Dog Names</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-for-veterans.html">Military Health Insurance For Veterans</a></li>
+													<li class="list-group-item"><a href="/military-headquarters-in-hawaii.html">Military Headquarters In Hawaii</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

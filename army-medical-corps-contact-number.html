@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Medical Corps Contact Number - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Medical Corps Contact Number",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/c3/8c/4d/c38c4d0db3c2f8c23df48f544b50f1d8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+medical+corps+contact+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Medical Corps Contact Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The IAMC was re-designated as Army Medical Corps with effect from 26 January 1950. AMS Recruiting Team Travers Block Head Quarters Army Medical Services Slim Road CamberleyGU15 4NP. The Royal Australian Army Medical Corps RAAMC in conjunction with the Royal Australian Army Dental Corps RAADC and the Royal Australian Army Nursing Corps RAANC is responsible for providing every aspect of health care to support and maintain the health and well-being of Army personnel. <br>				
+			</p>
+										<a class="badge badge-light" href="/hero-military-surplus.html">hero military surplus</a>
+											<a class="badge badge-danger" href="/how-do-i-contact-the-salvation-army.html">how do i contact the salvation army</a>
+											<a class="badge badge-secondary" href="/hill-air-force-base-security-office.html">hill air force base security office</a>
+											<a class="badge badge-secondary" href="/hill-air-force-base-phone-number.html">hill air force base phone number</a>
+											<a class="badge badge-light" href="/hk-handgun-military.html">hk handgun military</a>
+											<a class="badge badge-light" href="/hill-air-force-base-exchange-phone-number.html">hill air force base exchange phone number</a>
+											<a class="badge badge-success" href="/how-do-i-find-my-british-army-service-records.html">how do i find my british army service records</a>
+											<a class="badge badge-dark" href="/hk-hk416-military.html">hk hk416 military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right site.  Our site gives you suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/24/43/3624435294214ef8265853295d424d15.jpg" data-lightbox="roadtrip" data-title="Lieutenant General Manoj Kumar Unni Director General Of Armed Forces Medical Services Dgafms A Graduate Fro Indian Army Medical Services Lieutenant General">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/24/43/3624435294214ef8265853295d424d15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsPCq3eNrZAgf41Tjh-sbsxk7ILWmp3g7T6g';" alt="Lieutenant General Manoj Kumar Unni Director General Of Armed Forces Medical Services Dgafms A Graduate Fro Indian Army Medical Services Lieutenant General">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lieutenant General Manoj Kumar Unni Director General Of Armed Forces Medical Services Dgafms A Graduate Fro Indian Army Medical Services Lieutenant General</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/88/b7/f488b72b2f7b4f3f435b5e7afc995958.jpg" data-lightbox="roadtrip" data-title="Pin On Historical Symbols">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/88/b7/f488b72b2f7b4f3f435b5e7afc995958.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy6EMjfV06ENxFuyfyMr3FuopdymDSU1q9bA';" alt="Pin On Historical Symbols">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Historical Symbols</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/64/e7/1564e7441dd38bf7d1ae13528e13fdec.jpg" data-lightbox="roadtrip" data-title="Royal Army Medical Corps Badge Custom Hand Embroidered Patches Copper Gold And Silver Bullion Wires Wi Custom Embroidered Patches Badge Embroidered Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/64/e7/1564e7441dd38bf7d1ae13528e13fdec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyR81yyTkIQhkZgm3x7g2l89VtVnmESL0jxQ';" alt="Royal Army Medical Corps Badge Custom Hand Embroidered Patches Copper Gold And Silver Bullion Wires Wi Custom Embroidered Patches Badge Embroidered Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Army Medical Corps Badge Custom Hand Embroidered Patches Copper Gold And Silver Bullion Wires Wi Custom Embroidered Patches Badge Embroidered Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/70/2d/b2702d5ce6195f625c9c20c5d01a9425.jpg" data-lightbox="roadtrip" data-title="9ct Gold Ww1 Royal Army Medical Corps Ramc Sweetheart Brooch With Enamel Detail Motto In Arduis Fidelis Lovely Condition Gold Jewelry Brooch Sweetheart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/70/2d/b2702d5ce6195f625c9c20c5d01a9425.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Nk3vo44JHPxW_VScK_4CjJdLi5SWV9sFSw';" alt="9ct Gold Ww1 Royal Army Medical Corps Ramc Sweetheart Brooch With Enamel Detail Motto In Arduis Fidelis Lovely Condition Gold Jewelry Brooch Sweetheart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9ct Gold Ww1 Royal Army Medical Corps Ramc Sweetheart Brooch With Enamel Detail Motto In Arduis Fidelis Lovely Condition Gold Jewelry Brooch Sweetheart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/e2/49/fce249040ba3957bd9552002228ef195.jpg" data-lightbox="roadtrip" data-title="Military Peak Cap No 1 2 Royal Army Medical Corps Peaked Cap Rizwan Sales Young Bird Enterpries Address Doburgi Araia Muhallah Peaked Cap Sialkot Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/e2/49/fce249040ba3957bd9552002228ef195.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7IJ64VsjVbQtoOKl280PnZsnZlY8Ux1R0MA';" alt="Military Peak Cap No 1 2 Royal Army Medical Corps Peaked Cap Rizwan Sales Young Bird Enterpries Address Doburgi Araia Muhallah Peaked Cap Sialkot Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Peak Cap No 1 2 Royal Army Medical Corps Peaked Cap Rizwan Sales Young Bird Enterpries Address Doburgi Araia Muhallah Peaked Cap Sialkot Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/eb/60/55/eb6055635fb1958665530df9e38d70a8.jpg" data-lightbox="roadtrip" data-title="Army Medical Corps Insignia Clear Decal Clear Decals Army Medic Leather Tooling Patterns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/eb/60/55/eb6055635fb1958665530df9e38d70a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2993kBOoCk5BRkoM9eNMz-ov-VxrMfIBY4w';" alt="Army Medical Corps Insignia Clear Decal Clear Decals Army Medic Leather Tooling Patterns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Medical Corps Insignia Clear Decal Clear Decals Army Medic Leather Tooling Patterns</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b2/70/2d/b2702d5ce6195f625c9c20c5d01a9425.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2993kBOoCk5BRkoM9eNMz-ov-VxrMfIBY4w';" alt="Army Medical Corps Insignia Clear Decal Clear Decals Army Medic Leather Tooling Patterns">
+										<div class="card-body">
+						<h3 class="h5"><b>Degree at least one year of post-graduate clinical training and a state medical license.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army medical corps contact number</strong>. 
+								
+																	Looking for a job in medicine. 
+																	Defence Medical Services DMS is made up of the Royal Navy Medical Service Army Medical Service the Royal Air Force Medical Service and the Defence Medical Service Group. 
+																	Army Medical Corps promises both professional and personal growth at every stage of the career. 
+																	Therefore an army number will let you know which corps or regiment your soldier joined first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check out the Army AMEDD program and be a part of the medical profession with extensive options in military medical careers. 
+																	The Medical Corps MC of the US. 
+																	The Curator AMS Museum Keogh Barracks Ash Vale Aldershot Hampshire GU12 5RQ Telephone number. 
+																	The Indian Army Medical Corps is a specialist corps in the Indian Army which provides medical services to all Army personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The MC traces its earliest origins to the first physicians recruited by the Medical. 
+																	The RAMC was formed in 1898 and is the largest corps in the Army Medical Services AMS. 
+																	Welcome To The RAMC Association Website The RAMC Association Website is an important vehicle for not just communicating within and around the Association and its Members but to inform educate and entertain everybody the world at large on the RAMCs contribution to Army life to its Members former Members families and friends. 
+																	Contact Details The Curator of the Army Medical Services Museum is Captain Peter Starling. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get military service records for the army Royal Navy Royal Marines or RAF from 1920 - who can apply how long it takes cost how to apply. 
+																	Check out the Army AMEDD program and be a part of the medical profession with extensive options in military medical careers. 
+																	Army is a staff corps non-combat specialty branch of the US. 
+																	The Corps has a role which ranges from providing immediate first aid emergency care on front line and routine treatment or long term care at health centres and hospitals as well as health promotion and disease prevention. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sri Lanka Army Medical Corps Faithful in Distress. 
+																	Royal Army Medical Corps RAMC This page summarises records created by this Organisation The summary includes a brief description of the collections usually including the covering dates of the collection the name of the archive where they are held and reference information to help you find the collection. 
+																	She does have a cigarette wallet in her possession which was given to him when he was serving in the Royal Army Medical Corps. 
+																	In addition to the professional growth and development the adventure and extra-curricular activities in the service ensure an all round development essential for todays world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	01252 868612 The military tel no is. 
+																	Military abbreviations applicable to the Medical Corps. 
+																	Royal Army Medical Corps 1st Scottish General Hospital 2nd Scottish General Hospital 3rd 4th Scottish General Hospitals South eastern Mounted Brigade Tank Corps Tank Corps 1916-1919 SECTION 2 - OTHER ARTICLES Case studies Alf Webb - a Bedfordshire regular Donald Banks a Lincolnshire Terrier Every number tells a story - The 15th Essex. 
+																	Within the military medical officers could occupy a number of roles that were dependent on experience rank and location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Army Medical Corps website. 
+																	In this article we are throwing some light on what is Army Medical Corps AMC and how one could join Indian Army Medical Corps. 
+																	The AMS is recruiting people just like you right now. 
+																	Army Law JAG Corps Army Health Care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Regimental number on it is 92650 20 but the last 2 digits are not clear. 
+																	Royal Australian Army Medical Corps. 
+																	To speak to someone about joining us please get in touch with the AMS recruiting team. 
+																	Army Medical Department AMEDD consisting of commissioned medical officers physicians with either an MD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All new recruits after the introduction of army numbers until the formation of the General Service Corps in 1942 were allotted a number from the first corps or regiment they joined after enlistment. 
+																	This page is intended to provide you with pertinent links information and contacts to learn more about the incredible things our team is doing and the multiple service opportunities that will enhance your professional development and support the strategic goals of our nation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/c7/3f/10/c73f104a546fdcb04cd6691c4d65e849--british-pub-military-insignia.jpg" data-lightbox="roadtrip" data-title="British Empire Army British Other Royal Army Medical Corps Military Insignia Military History Corpse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/c7/3f/10/c73f104a546fdcb04cd6691c4d65e849--british-pub-military-insignia.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBlf_ZWGiJ_QykrmMmXiYM5nl_gF6LA9ejA';" alt="British Empire Army British Other Royal Army Medical Corps Military Insignia Military History Corpse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Empire Army British Other Royal Army Medical Corps Military Insignia Military History Corpse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/8d/63/cb8d6309431723cc0d635e2d3fb62ae7.jpg" data-lightbox="roadtrip" data-title="Pin On British Army Badges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/8d/63/cb8d6309431723cc0d635e2d3fb62ae7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhDcsf-mYYDh6OdetvfGyFN_REX77fpvEtg';" alt="Pin On British Army Badges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On British Army Badges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/c9/de/87c9de858e170581e24a0b9f26bddf71.jpg" data-lightbox="roadtrip" data-title="Amedd Regimental Distinctive Insignia Army Medic Combat Medic Army Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/c9/de/87c9de858e170581e24a0b9f26bddf71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuQXzkhnJ1cZmDYuqRX2mgHOuugDSyyH5QA';" alt="Amedd Regimental Distinctive Insignia Army Medic Combat Medic Army Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amedd Regimental Distinctive Insignia Army Medic Combat Medic Army Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/ab/22/21ab22466b1d822f569b20479ffbcc63.gif" data-lightbox="roadtrip" data-title="U S Army Medical Corps Regimental Insignia Army Medic Combat Medic Army Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/ab/22/21ab22466b1d822f569b20479ffbcc63.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYDiJ7ETb6oyHQCuVcB-jLFkFxboyManAGWg';" alt="U S Army Medical Corps Regimental Insignia Army Medic Combat Medic Army Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Medical Corps Regimental Insignia Army Medic Combat Medic Army Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/74/1f/b6741fddeadf01737ee629a6175b794b.gif" data-lightbox="roadtrip" data-title="Royal Army Medical Corps Wikipedia Combat Medic Medical Military Stickers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/74/1f/b6741fddeadf01737ee629a6175b794b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWqSQjKqyrie5JXINLOW188gmVdW6TefnDQ';" alt="Royal Army Medical Corps Wikipedia Combat Medic Medical Military Stickers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Army Medical Corps Wikipedia Combat Medic Medical Military Stickers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/1a/83/711a838bb2aa82b78ddde64c171175a0.jpg" data-lightbox="roadtrip" data-title="Pin On Pakistan Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/1a/83/711a838bb2aa82b78ddde64c171175a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6vn8D45VyBDFKZKY94uLrvyvnznNTJ7X1g';" alt="Pin On Pakistan Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pakistan Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/b8/56/85b856f5f6e22e68a8543f86b4deef78.jpg" data-lightbox="roadtrip" data-title="Cap Badges Ink Pen Drawings Badge Military Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/b8/56/85b856f5f6e22e68a8543f86b4deef78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRghZeOVEEDOoruPTDQ2XQCyHv-czOR5cS7kg';" alt="Cap Badges Ink Pen Drawings Badge Military Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cap Badges Ink Pen Drawings Badge Military Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/cc/9b/fccc9b934d9b0d08e2112f32a888bffd.jpg" data-lightbox="roadtrip" data-title="List Of Army Administrated Medical Colleges Army Medical College Rawalpindi Cmh Medical College Lahore Cmh Medical College Medical College Pakistan Army Quetta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/cc/9b/fccc9b934d9b0d08e2112f32a888bffd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWcsSzsBU80BSlQfgTQAUh7SVVu11EL7iS1w';" alt="List Of Army Administrated Medical Colleges Army Medical College Rawalpindi Cmh Medical College Lahore Cmh Medical College Medical College Pakistan Army Quetta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Army Administrated Medical Colleges Army Medical College Rawalpindi Cmh Medical College Lahore Cmh Medical College Medical College Pakistan Army Quetta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/4a/00/fe4a00433ada82b24f42020508186939.jpg" data-lightbox="roadtrip" data-title="Army Medical Corps Doctor Army Army Pics Pakistan Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/4a/00/fe4a00433ada82b24f42020508186939.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-DH5h2rq9NE04wCPSIBVMtL5cHWqq8S7NVQ';" alt="Army Medical Corps Doctor Army Army Pics Pakistan Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Medical Corps Doctor Army Army Pics Pakistan Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c3/8c/4d/c38c4d0db3c2f8c23df48f544b50f1d8.jpg" data-lightbox="roadtrip" data-title="Ww1 Royal Army Medical Corps Bearer Supplying Water To The Front Line Medical Army Medical War Art World War Military Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c3/8c/4d/c38c4d0db3c2f8c23df48f544b50f1d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5X6mXpVXGcjDK-XgqT8LqkDTdcooM8B8NiQ';" alt="Ww1 Royal Army Medical Corps Bearer Supplying Water To The Front Line Medical Army Medical War Art World War Military Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ww1 Royal Army Medical Corps Bearer Supplying Water To The Front Line Medical Army Medical War Art World War Military Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/bb/3d/94bb3da837569a3bcbfe5c43f3cf31f1.jpg" data-lightbox="roadtrip" data-title="British Royal Army Medical Corps Medical Officer C 1900 By Alix Baker Britische Armee Britische Uniformen Armee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/bb/3d/94bb3da837569a3bcbfe5c43f3cf31f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJv8pS6pTZDszC16PSHFg9_6IXtm5fb4TkA';" alt="British Royal Army Medical Corps Medical Officer C 1900 By Alix Baker Britische Armee Britische Uniformen Armee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Royal Army Medical Corps Medical Officer C 1900 By Alix Baker Britische Armee Britische Uniformen Armee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/4b/4a/394b4ab495711500a621d11683a04116.jpg" data-lightbox="roadtrip" data-title="Royal Army Medical Corps Blazer Badge Army Badge Embroidered Patches Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/4b/4a/394b4ab495711500a621d11683a04116.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91xbI3YkI0ZgKzhAYr6sEqw5xzZSXujrfTQ';" alt="Royal Army Medical Corps Blazer Badge Army Badge Embroidered Patches Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Army Medical Corps Blazer Badge Army Badge Embroidered Patches Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/4d/f7/384df718618a4a1b3e04a3745130b22b.png" data-lightbox="roadtrip" data-title="Happy Birthday Army Medical Corps Happy Birthday Docs Medical Tattoo Military Tattoos Army Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/4d/f7/384df718618a4a1b3e04a3745130b22b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCTLDCey84tcu8x3yO_nRYXqTN2YD4huBYQ';" alt="Happy Birthday Army Medical Corps Happy Birthday Docs Medical Tattoo Military Tattoos Army Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Birthday Army Medical Corps Happy Birthday Docs Medical Tattoo Military Tattoos Army Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-eligibility-centerorg.html">Ncaa Eligibility Centerorg</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-for-division-3.html">Ncaa Eligibility Rules For Division 3</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-gpa-act.html">Ncaa Eligibility Gpa Act</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-2019.html">Ncaa Eligibility Requirements 2019</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-course-list.html">Ncaa Eligibility Course List</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-for-transfers.html">Ncaa Eligibility Rules For Transfers</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-clock-rules.html">Ncaa Eligibility Clock Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-centercom.html">Ncaa Eligibility Centercom</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-waiver.html">Ncaa Eligibility Rules Waiver</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-gifts.html">Ncaa Eligibility Rules Gifts</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-gpa-sliding-scale.html">Ncaa Eligibility Gpa Sliding Scale</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-clock-rules-football.html">Ncaa Eligibility Clock Rules Football</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-covid-football.html">Ncaa Eligibility Rules Covid Football</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-waiver-process.html">Ncaa Eligibility Waiver Process</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-for-international-student-athletes.html">Ncaa Eligibility Requirements For International Student Athletes</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-clock-exceptions.html">Ncaa Eligibility Clock Exceptions</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-scores.html">Ncaa Eligibility Scores</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-for-college-athletes.html">Ncaa Eligibility Rules For College Athletes</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-for-student-athletes.html">Ncaa Eligibility Requirements For Student Athletes</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-transfer-students.html">Ncaa Eligibility Rules Transfer Students</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Transfer Eligibility Rules Basketball - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Transfer Eligibility Rules Basketball",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/e4/9a/3f/e49a3fa7707b3d95be4c6ffe245d54eb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+transfer+eligibility+rules+basketball",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Transfer Eligibility Rules Basketball</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The rest of them allow. They arent allowed to play in games for a full. If a player transfers they have to sit out a season. <br>				
+			</p>
+										<a class="badge badge-success" href="/hrcarmymil-ees.html">hrcarmymil ees</a>
+											<a class="badge badge-primary" href="/human-resources-for-the-army.html">human resources for the army</a>
+											<a class="badge badge-info" href="/human-resources-for-military.html">human resources for military</a>
+											<a class="badge badge-warning" href="/if-your-spouse-is-in-the-military-do-you-get-free-college.html">if your spouse is in the military do you get free college</a>
+											<a class="badge badge-dark" href="/indian-army-officers-wife-photos.html">indian army officers wife photos</a>
+											<a class="badge badge-success" href="/i-forgot-my-ncaa-eligibility-number.html">i forgot my ncaa eligibility number</a>
+											<a class="badge badge-info" href="/i-lost-my-military-dependent-id.html">i lost my military dependent id</a>
+											<a class="badge badge-dark" href="/indian-army-love-wife-photo.html">indian army love wife photo</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-media.theathletic.com/cdn-cgi/image/fit=cover,width=700,height=466/WFUlSBGTqljG_8LqYoiTFx2Bl_1440x960.jpg" data-lightbox="roadtrip" data-title="Ncaa To Approve Immediate Eligibility Waiver Sources The Athletic">
+											<img class="card-img v-image ads-img " src="https://cdn-media.theathletic.com/cdn-cgi/image/fit=cover,width=700,height=466/WFUlSBGTqljG_8LqYoiTFx2Bl_1440x960.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPZF6ozz03w9-zgosDVNDhskYtwodPjHOIg';" alt="Ncaa To Approve Immediate Eligibility Waiver Sources The Athletic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa To Approve Immediate Eligibility Waiver Sources The Athletic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/1210820897/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Ncaa One Time Transfer Rule Expected To Pass In January Opening Up A Floodgate Of Transfers">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/1210820897/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqCyCW5ZZjWMjGqWbxMP9STg0hKSC3Csiow';" alt="Ncaa One Time Transfer Rule Expected To Pass In January Opening Up A Floodgate Of Transfers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa One Time Transfer Rule Expected To Pass In January Opening Up A Floodgate Of Transfers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/8GEgnQbJzrnQOp4du1Q5mGZd1A0=/0x0:4650x3168/1200x800/filters:focal(1587x987:2331x1731)/cdn.vox-cdn.com/uploads/chorus_image/image/59676091/usa_today_10745761.0.jpg" data-lightbox="roadtrip" data-title="Ncaa Transfer Rules Explained Quickly And Honestly Sbnation Com">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/8GEgnQbJzrnQOp4du1Q5mGZd1A0=/0x0:4650x3168/1200x800/filters:focal(1587x987:2331x1731)/cdn.vox-cdn.com/uploads/chorus_image/image/59676091/usa_today_10745761.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9mBrLIVe4pwhccKwDyx2zQCGL-emZl1FrQ';" alt="Ncaa Transfer Rules Explained Quickly And Honestly Sbnation Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Transfer Rules Explained Quickly And Honestly Sbnation Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.org/sites/default/files/Jan2020_MBBTransfersByNumbers.png" data-lightbox="roadtrip" data-title="Transfer Information Ncaa Org The Official Site Of The Ncaa">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.org/sites/default/files/Jan2020_MBBTransfersByNumbers.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QE68Y7JXdLNV_7JtHdAhYaEKc2sX-OUs_w';" alt="Transfer Information Ncaa Org The Official Site Of The Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transfer Information Ncaa Org The Official Site Of The Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/ncaa-transfer-rules-01.png" data-lightbox="roadtrip" data-title="Ncaa Transfer Rules Ncaa Football Transfer Rules Ncaa Transfer Eligibility Rules">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/ncaa-transfer-rules-01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPjxZtn76X3hoezp_DgOCRzYCUcylJFHERw';" alt="Ncaa Transfer Rules Ncaa Football Transfer Rules Ncaa Transfer Eligibility Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Transfer Rules Ncaa Football Transfer Rules Ncaa Transfer Eligibility Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/4ixkH9oZXxNl9qsDeyrxHPWx3PY=/0x0:3264x2155/1200x800/filters:focal(1787x122:2309x644)/cdn.vox-cdn.com/uploads/chorus_image/image/65578925/usa_today_11855346.0.jpg" data-lightbox="roadtrip" data-title="Here S All Of The Eligibility Waivers The Ncaa Granted To Mid Major Transfers So Far Mid Major Madness">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/4ixkH9oZXxNl9qsDeyrxHPWx3PY=/0x0:3264x2155/1200x800/filters:focal(1787x122:2309x644)/cdn.vox-cdn.com/uploads/chorus_image/image/65578925/usa_today_11855346.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbE4cg2WUkcTlqWpfKEQOlPw53GmnckOKkRg';" alt="Here S All Of The Eligibility Waivers The Ncaa Granted To Mid Major Transfers So Far Mid Major Madness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S All Of The Eligibility Waivers The Ncaa Granted To Mid Major Transfers So Far Mid Major Madness</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://accsports.com/wp-content/uploads/2020/03/AP_20076573918743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbE4cg2WUkcTlqWpfKEQOlPw53GmnckOKkRg';" alt="Here S All Of The Eligibility Waivers The Ncaa Granted To Mid Major Transfers So Far Mid Major Madness">
+										<div class="card-body">
+						<h3 class="h5"><b>Minimum GPA Generally you need to have earned a minimum GPA of 20 in order to be eligible to play college sports at your current or any future institution.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa transfer eligibility rules basketball</strong>. 
+								
+																	You receive a transfer-release agreement from your previous four-year school. 
+																	Football mens basketball womens basketball baseball and mens ice hockey. 
+																	Minimum GPA for NCAA Transfer Rules Based on the NCAA basketball transfer rules student-athletes with a minimum GPA of 20 are eligible for college sports in their current and future institutions. 
+																	The biggest issue to be resolved with the transfer rule is whether the NCAA will implement a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While most sports including swimming diving already allow for immediate eligibility after a student-athletes first transfer without the waiver they needed a transfer release from their prior. 
+																	However when transferring from a two-year school to a four-year one higher GPAs are sometimes necessary or preferred. 
+																	You are academically and athletically eligible at your previous four-year school. 
+																	The working group concept would change the waiver criteria to allow student athletes for first-time four-year transfers in all sports to compete immediately if they meet the following. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn the transfer and eligibility rules for the NCAA and the new conference and school you plan to join. 
+																	If a player graduates with college eligibility remaining. 
+																	In other words if you have 13 basketball players on scholarship and three seniors stay for their extra year you still get three additional scholarships for 2021-22. 
+																	NCAA grants extra year of eligibility for all winter sport athletes voids 500 rule for bowl teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The simplest way to get around the rule is to graduate first. 
+																	After months of waiting Wednesdays decision by the NCAA Division I Council to approve a blanket waiver for immediate eligibility to transfers freed dozens of college basketball players stuck in. 
+																	Currently there are five Division I sports that require transfers to sit out a season. 
+																	NCAA graduate transfer rules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division 1 Division 2 and Division 3 Committees announced last March that eligibility relief would be granted to student-athletes who compete in spring. 
+																	This page is experiencing technical difficulties and we are working on it. 
+																	Being a student-athlete you need to be on this grade point before you can be open for transfer. 
+																	An action that sets aside an NCAA rule because a specific extraordinary circumstance prevents you from meeting the rule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA transfer rules explained quickly and honestly The basic rule. 
+																	You cannot file a waiver for yourself. 
+																	When it comes to decision-making our commitment is this. 
+																	The new waiver would allow transfers who are sitting out this season due to NCAA rules to be immediately eligible for their new teams as long as they were enrolled full-time in fall of 2020 and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fall and winter sport athletes would have to notify their schools of a transfer by May 1 with an exception extending the date to July 1 for an end-of-the-year head coaching change or the. 
+																	When you begin to think about going to a new school understand that the rules are different depending on whether you want to transfer to an NCAA Division I II or III school and whether you are currently enrolled at a two-year or a four-year school. 
+																	While its still uncertain how many Division 1 2 3 spring sport athletes will take advantage of an additional year to compete college coaches were split when asked if they expect seniors to return for an extra year of eligibility with 43 of spring sports coaches expecting seniors to return for an extra year of eligibility. 
+																	The NCAA continues to closely monitor COVID-19 and is taking proactive measures to mitigate the impact of the virus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An NCAA school may file a waiver on your behalf. 
+																	The NCAA Division I council approved a package of updated guidelines Wednesday that could make it more difficult for college football and basketball players who transfer to receive immediate. 
+																	NCAA expected to vote Wednesday on immediate eligibility for all basketball transfers for 2020-2021 season The NCAA is expected to vote Wednesday on a motion that would make all basketball. 
+																	The NCAA Division I Council took a step toward eventually allowing one-time transfers immediate eligibility in basketball football baseball and hockey on Wednesday by approving a measure that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a senior transfers to. 
+																	Protect the health and safety of college athletes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/1210961669/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Ncaa Vote On One Time Transfer Waiver Pushed To January 2021">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/1210961669/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yucditR6YCF0WVw4TwmPSxUu5KxODPZXxQ';" alt="Ncaa Vote On One Time Transfer Waiver Pushed To January 2021">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Vote On One Time Transfer Waiver Pushed To January 2021</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.concordmonitor.com/getattachment/d4dad4dc-94f7-484c-a387-9c076e8c5e46/NCAATransferRules-cm-021920-ph1" data-lightbox="roadtrip" data-title="Ncaa Moves Toward Immediate Eligibility For All Transfers">
+											<img class="card-img v-image ads-img " src="https://www.concordmonitor.com/getattachment/d4dad4dc-94f7-484c-a387-9c076e8c5e46/NCAATransferRules-cm-021920-ph1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kCvEQOi5MQKUap2-bfNOi3kr1KsmG1udqw';" alt="Ncaa Moves Toward Immediate Eligibility For All Transfers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Moves Toward Immediate Eligibility For All Transfers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kentuckysportsradio.com/wp-content/uploads/2018/03/28685589_1848052951894776_7125086771079020544_o.jpg" data-lightbox="roadtrip" data-title="Ncaa Expected To Grant Penalty Free One Time Transfer Rule In 2021 Kentucky Sports Radio">
+											<img class="card-img v-image ads-img " src="https://kentuckysportsradio.com/wp-content/uploads/2018/03/28685589_1848052951894776_7125086771079020544_o.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbi3Mwvm3AFl29K5IapNxzJ8LU4yjqmBjTQ';" alt="Ncaa Expected To Grant Penalty Free One Time Transfer Rule In 2021 Kentucky Sports Radio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Expected To Grant Penalty Free One Time Transfer Rule In 2021 Kentucky Sports Radio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/22/76/c4227684eb8702364d102e28a701d8a9.jpg" data-lightbox="roadtrip" data-title="Ncaab Rodney Hood Is Going To Duke Former Mississippi State Rodney Hood Decided Saturday To Transfer To Duke Hood Must S Ncaab Mississippi State Rodney Hood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/22/76/c4227684eb8702364d102e28a701d8a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZAGJcE9DiIL6_qNYG-S79y6pels4SgAhRQ';" alt="Ncaab Rodney Hood Is Going To Duke Former Mississippi State Rodney Hood Decided Saturday To Transfer To Duke Hood Must S Ncaab Mississippi State Rodney Hood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaab Rodney Hood Is Going To Duke Former Mississippi State Rodney Hood Decided Saturday To Transfer To Duke Hood Must S Ncaab Mississippi State Rodney Hood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.syracuse.com/resizer/YFPptVIEfJBHGeGOaJmHMYBlpDI=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/UJ22WDZHHBAJXAHH36KYKUVHOM.JPG" data-lightbox="roadtrip" data-title="Ex Syracuse Players Discuss Ncaa Transfer Rule Why Should A Kid Be Punished Syracuse Com">
+											<img class="card-img v-image ads-img " src="https://www.syracuse.com/resizer/YFPptVIEfJBHGeGOaJmHMYBlpDI=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/UJ22WDZHHBAJXAHH36KYKUVHOM.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRQmHNG5Gs8wIXxtprU6_qVUIKcHRhButxA';" alt="Ex Syracuse Players Discuss Ncaa Transfer Rule Why Should A Kid Be Punished Syracuse Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ex Syracuse Players Discuss Ncaa Transfer Rule Why Should A Kid Be Punished Syracuse Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/3c/6c/143c6cb9cb0f14d88976859adcb856a3.jpg" data-lightbox="roadtrip" data-title="Tgtn Ncaa Basketball Top 25 2 4 19 Ncaa Basketball Ncaa Kentucky Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/3c/6c/143c6cb9cb0f14d88976859adcb856a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTceD8J4CQGUB25GNHbxptH0WAYRlS1HQYZiA';" alt="Tgtn Ncaa Basketball Top 25 2 4 19 Ncaa Basketball Ncaa Kentucky Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tgtn Ncaa Basketball Top 25 2 4 19 Ncaa Basketball Ncaa Kentucky Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://accsports.com/wp-content/uploads/2020/03/AP_20076573918743.jpg" data-lightbox="roadtrip" data-title="Ncaa Division I Council Suggests Pushing Back Transfer Vote Until Jan 2021 Accsports Com">
+											<img class="card-img v-image ads-img " src="https://accsports.com/wp-content/uploads/2020/03/AP_20076573918743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHis9q4FyIpI9jNq4OzQ2b0V0asJ6WaKIQA';" alt="Ncaa Division I Council Suggests Pushing Back Transfer Vote Until Jan 2021 Accsports Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division I Council Suggests Pushing Back Transfer Vote Until Jan 2021 Accsports Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/8b/85/a18b85051dfc16c00903e53c66020410.png" data-lightbox="roadtrip" data-title="Ncaa Study Validates Cynicism Regarding One Year Graduate Transfers Ncaa Scholarships For College Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/8b/85/a18b85051dfc16c00903e53c66020410.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IRFE1onq8-6dsVALRda82QoAv4Usk3Fr-g';" alt="Ncaa Study Validates Cynicism Regarding One Year Graduate Transfers Ncaa Scholarships For College Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Study Validates Cynicism Regarding One Year Graduate Transfers Ncaa Scholarships For College Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://buckeyeswire.usatoday.com/wp-content/uploads/sites/32/2020/10/NCAA-logo-basketball.jpg?w=1000&amp;h=600&amp;crop=1" data-lightbox="roadtrip" data-title="Ncaa Expected To Approve One Time Penalty Free Transfer Legislation">
+											<img class="card-img v-image ads-img " src="https://buckeyeswire.usatoday.com/wp-content/uploads/sites/32/2020/10/NCAA-logo-basketball.jpg?w=1000&amp;h=600&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0AOX11c9U4tRe-8w9ZZu5h3_Oct7OZ1CjyA';" alt="Ncaa Expected To Approve One Time Penalty Free Transfer Legislation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Expected To Approve One Time Penalty Free Transfer Legislation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/2e/2e/c82e2ef79e3716a3ebadf02287ee2153.jpg" data-lightbox="roadtrip" data-title="Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Athletic Scholarships Ncaa Aau Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/2e/2e/c82e2ef79e3716a3ebadf02287ee2153.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaauC4A07lc_eHfqEv1FVNbIlNVSqts_-TiA';" alt="Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Athletic Scholarships Ncaa Aau Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Eligibility Site The Ncaa Eligibility Center Certifies Academic And Amatuer Credentials Click This Link Athletic Scholarships Ncaa Aau Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sportico.com/wp-content/uploads/2020/10/1013_Csports_Art-copy.jpg?w=681&amp;h=383&amp;crop=1" data-lightbox="roadtrip" data-title="Ncaa Division I Council Weighs Transfer Nil Opportunity Proposals Sportico Com">
+											<img class="card-img v-image ads-img " src="https://www.sportico.com/wp-content/uploads/2020/10/1013_Csports_Art-copy.jpg?w=681&amp;h=383&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLGEwsHhEqdyvAobzIQZY8PESrcmbSgxLqJw';" alt="Ncaa Division I Council Weighs Transfer Nil Opportunity Proposals Sportico Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Division I Council Weighs Transfer Nil Opportunity Proposals Sportico Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://imageproxy.themaven.net/https%3A%2F%2Fimages.saymedia-content.com%2F.image%2FMTcwNjcyODYwMzg0MjA4MTM0%2Fusatsi_14086333.jpg" data-lightbox="roadtrip" data-title="The Ncaa One Time Transfer Rule And Wisconsin">
+											<img class="card-img v-image ads-img " src="https://imageproxy.themaven.net/https%3A%2F%2Fimages.saymedia-content.com%2F.image%2FMTcwNjcyODYwMzg0MjA4MTM0%2Fusatsi_14086333.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-LL2KZIEotQgqYsxzvYboh7gyETk-HPi0g';" alt="The Ncaa One Time Transfer Rule And Wisconsin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ncaa One Time Transfer Rule And Wisconsin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/9a/3f/e49a3fa7707b3d95be4c6ffe245d54eb.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Cal S Kristine Anigwe Drops 50 Points In Win Ncaa Com Womens Basketball Sacramento State School Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/9a/3f/e49a3fa7707b3d95be4c6ffe245d54eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXEUWUtHQTfjJSCCHKMzo6DvedCq-TtSxw7Q';" alt="Women S Basketball Cal S Kristine Anigwe Drops 50 Points In Win Ncaa Com Womens Basketball Sacramento State School Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Cal S Kristine Anigwe Drops 50 Points In Win Ncaa Com Womens Basketball Sacramento State School Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-human-resources-manager.html">Army Human Resources Manager</a></li>
+													<li class="list-group-item"><a href="/army-navy-contact-number-eastwood.html">Army Navy Contact Number Eastwood</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-specialist-salary.html">Army Human Resources Specialist Salary</a></li>
+													<li class="list-group-item"><a href="/army-man-wife-images.html">Army Man Wife Images</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-officer-42b.html">Army Human Resources Officer 42b</a></li>
+													<li class="list-group-item"><a href="/army-medical-corps-record-helpline-number.html">Army Medical Corps Record Helpline Number</a></li>
+													<li class="list-group-item"><a href="/army-hrcapps-portal.html">Army Hrcapps Portal</a></li>
+													<li class="list-group-item"><a href="/army-hrc-reserve-records.html">Army Hrc Reserve Records</a></li>
+													<li class="list-group-item"><a href="/army-navy-contact-number-delivery.html">Army Navy Contact Number Delivery</a></li>
+													<li class="list-group-item"><a href="/army-love-quotes-in-hindi.html">Army Love Quotes In Hindi</a></li>
+													<li class="list-group-item"><a href="/army-hrc-quartermaster-branch.html">Army Hrc Quartermaster Branch</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-jobs.html">Army Human Resources Jobs</a></li>
+													<li class="list-group-item"><a href="/army-human-resources-command.html">Army Human Resources Command</a></li>
+													<li class="list-group-item"><a href="/army-living-in-germany.html">Army Living In Germany</a></li>
+													<li class="list-group-item"><a href="/army-medical-records-password.html">Army Medical Records Password</a></li>
+													<li class="list-group-item"><a href="/army-hrc-warrant-officer.html">Army Hrc Warrant Officer</a></li>
+													<li class="list-group-item"><a href="/army-husband-wife-image.html">Army Husband Wife Image</a></li>
+													<li class="list-group-item"><a href="/army-hrc-retirement-branch.html">Army Hrc Retirement Branch</a></li>
+													<li class="list-group-item"><a href="/army-husband-status-in-hindi.html">Army Husband Status In Hindi</a></li>
+													<li class="list-group-item"><a href="/army-navy-delivery-hotline-number.html">Army Navy Delivery Hotline Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

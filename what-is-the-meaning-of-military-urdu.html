@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Meaning Of Military Urdu - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Meaning Of Military Urdu",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/df/0a/fa/df0afabff822aa04f24c57e5083f0d22.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+meaning+of+military+urdu",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Meaning Of Military Urdu</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The other meanings are Jungi Herbi Askari and Foji. The other meanings are Tarkeeb Jung and Fun E. Military Offence meaning in Urdu. <br>				
+			</p>
+										<a class="badge badge-warning" href="/life-of-army-officer-quora.html">life of army officer quora</a>
+											<a class="badge badge-info" href="/man-utd-v-chelsea-champions-league-quarter-final.html">man utd v chelsea champions league quarter final</a>
+											<a class="badge badge-warning" href="/man-utd-vs-chelsea-all-matches.html">man utd vs chelsea all matches</a>
+											<a class="badge badge-secondary" href="/life-of-army-ranger.html">life of army ranger</a>
+											<a class="badge badge-primary" href="/life-of-a-merchant-navy-officer-wife.html">life of a merchant navy officer wife</a>
+											<a class="badge badge-primary" href="/login-to-my-campus.html">login to my campus</a>
+											<a class="badge badge-success" href="/lowes-military-discount-for-spouses.html">lowes military discount for spouses</a>
+											<a class="badge badge-danger" href="/login-to-my-time-warner-cable-email.html">login to my time warner cable email</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/ad/8c/66ad8c7ba465faaaa6ca7e3d3704cbda.jpg" data-lightbox="roadtrip" data-title="Pin On Urdu Persian Arabic Word Meaning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/ad/8c/66ad8c7ba465faaaa6ca7e3d3704cbda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEP4xdcUZMgFaqfEkUPJC8b1TOvzu7ez3lGg';" alt="Pin On Urdu Persian Arabic Word Meaning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Urdu Persian Arabic Word Meaning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/bf/67/34bf67b753842c568f0cb2ee5c324578.jpg" data-lightbox="roadtrip" data-title="Pakistan S Proud Armed Forces Pak Army Quotes Army Quotes Army Poetry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/bf/67/34bf67b753842c568f0cb2ee5c324578.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXEwQcdD1tcDqpFHR2byhY-B29grX4e3J1g';" alt="Pakistan S Proud Armed Forces Pak Army Quotes Army Quotes Army Poetry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan S Proud Armed Forces Pak Army Quotes Army Quotes Army Poetry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/df/cd/b2dfcd05a16f22475217b4802b378c1e.jpg" data-lightbox="roadtrip" data-title="Pin On Pak Army My Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/df/cd/b2dfcd05a16f22475217b4802b378c1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHALsA7Kn6g6xFibKaSGFzmW7SyMxhRXMAoQ';" alt="Pin On Pak Army My Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pak Army My Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/35/dc/c635dc15843dd324433ec9620aab273c.png" data-lightbox="roadtrip" data-title="Masculine And Feminine Muzakar And Monas With Urdu Meanings Contains List Of Male And Female Words With Urdu Meanings For Masculine English Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/35/dc/c635dc15843dd324433ec9620aab273c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4344Z4w-hZQamNP2J5dO99OvljyljVWyKg';" alt="Masculine And Feminine Muzakar And Monas With Urdu Meanings Contains List Of Male And Female Words With Urdu Meanings For Masculine English Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masculine And Feminine Muzakar And Monas With Urdu Meanings Contains List Of Male And Female Words With Urdu Meanings For Masculine English Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/9d/86/c09d8697ab83f1d9eee03ee91b0ff846.png" data-lightbox="roadtrip" data-title="Newspaper Vocabulary Words List With Urdu Meanings Vocabulary Words English Vocabulary Words Learn English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/9d/86/c09d8697ab83f1d9eee03ee91b0ff846.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH5j5nx0JCnbynIVAJIta2i_cTLhzbtpjwfA';" alt="Newspaper Vocabulary Words List With Urdu Meanings Vocabulary Words English Vocabulary Words Learn English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newspaper Vocabulary Words List With Urdu Meanings Vocabulary Words English Vocabulary Words Learn English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/15/38/7d153889c955a357fa7838843cff28f0.jpg" data-lightbox="roadtrip" data-title="Pin By Shamim Khan On Poetic Urdu Words Urdu Words Hindi Words Urdu Words With Meaning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/15/38/7d153889c955a357fa7838843cff28f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlsGAoxvXonURsmEuAdyWJELIH67lxPzNyQ';" alt="Pin By Shamim Khan On Poetic Urdu Words Urdu Words Hindi Words Urdu Words With Meaning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shamim Khan On Poetic Urdu Words Urdu Words Hindi Words Urdu Words With Meaning</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d5/2f/b7/d52fb75969012e35ac571877deed7c22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlsGAoxvXonURsmEuAdyWJELIH67lxPzNyQ';" alt="Pin By Shamim Khan On Poetic Urdu Words Urdu Words Hindi Words Urdu Words With Meaning">
+										<div class="card-body">
+						<h3 class="h5"><b>Pronunciation of Military in roman Urdu is askari and Translation of Military in Urdu writing script is عسکر ی.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the meaning of military urdu</strong>. 
+								
+																	غیر فوجی - Ghair Fouji meaning Definition Synonyms at English to Urdu dictionary gives you the best and accurate urdu translation and meanings of Non Military and Ghair Fouji Meaning. 
+																	There are always several meanings of each word in Urdu the correct meaning of Strategy in Urdu is جنگ and in roman we write it Jung. 
+																	There are always several meanings of each word in Urdu the correct meaning of Military in Urdu is فوجی and in roman we write it Foji. 
+																	جنگی خدمت - Jungi Khidmat meaning Definition Synonyms at English to Urdu dictionary gives you the best and accurate urdu translation and meanings of Military Service and Jungi Khidmat Meaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The other meanings are. 
+																	The definition of Military is followed by practically usable example sentences which allow you to construct your own sentences based on it. 
+																	Military Meaning in Urdu Military meaning in Urdu is askari. 
+																	فوجی قانون - Fouji Qanoon meaning Definition Synonyms at English to Urdu dictionary gives you the best and accurate urdu translation and meanings of Military Law and Fouji Qanoon Meaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Draft meaning in Urdu is مسودہ کرنا and Draft word meaning in roman can write as Musawada Karna. 
+																	There are always several meanings of each word in Urdu the correct meaning of Military School in Urdu is فوجی اسکول and in roman we write it. 
+																	There are always several meanings of each word in Urdu the correct meaning of Military Trial in Urdu is فوجی آزمائش and in roman we write it. 
+																	You can also find multiple synonyms or similar words of Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meaning and Translation of Military in Urdu Script and Roman Urdu with Definition Wikipedia Reference Synonyms Antonyms. 
+																	The page not only provides Urdu meaning of Military but also gives extensive definition in English language. 
+																	There are many synonyms of Military Operation which include Aggressive Armed Army Combatant Combative Fighting Martial Militant Militaristic Soldierly Warlike Warmongering etc. 
+																	There are also several similar words to Military School in our dictionary which are Aggressive Armed Army Combatant Combative Fighting Martial Militant Militaristic Soldierly Warlike and Warmongering. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The other meanings are. 
+																	Military Person Urdu Meaning - Find the correct meaning of Military Person in Urdu it is important to understand the word properly when we translate it from English to Urdu. 
+																	ایسا جرم جو فوجی عدالت میں قابل سماعت ہو - Aisa Jurm Jo Fouji Adalat Mein Qabil E Samaat Ho meaning Definition Synonyms at English to Urdu dictionary gives you the best and accurate urdu translation and meanings of Military Offence and Aisa Jurm Jo Fouji Adalat Mein Qabil E Samaat Ho Meaning. 
+																	Similar words of Military are also commonly used in daily talk like as Military Police Military Man and Military Academy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It should be noted that the Qurʾan 2190 explicitly forbids the initiation of war and. 
+																	Military Law meaning in Urdu. 
+																	Military Service meaning in Urdu. 
+																	Military thousands of English and Urdu words Synonyms definition and meaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find English word Military meaning in Urdu at UrduWire online English to Urdu dictionary. 
+																	There are also several similar words to Military Trial in our dictionary which are Aggressive Armed Army Combatant Combative Fighting Martial Militant Militaristic Soldierly Warlike and Warmongering. 
+																	There are always several meanings of each word in Urdu the correct meaning of Military Person in Urdu is فوجی شخص and in roman we write it Foji Shaks. 
+																	Draft meaning is also available in other languages as well as you can also check the spelling of word Draft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are several meanings of the Draft word and it can be used in different situations with a combination of other words as well. 
+																	In their articulation of international law classical Muslim jurists were primarily concerned with issues of state security and military defense of Islamic realms and accordingly they focused primarily on jihad as a military duty which became the predominant meaning in legal and official literature. 
+																	Non Military meaning in Urdu. 
+																	Military is an adjective according to parts of speech. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Operation Meaning in English to Urdu is جنگی آپریشن as written in Urdu and as written in Roman Urdu. 
+																	Strategy Urdu Meaning - Find the correct meaning of Strategy in Urdu it is important to understand the word properly when we translate it from English to Urdu. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/f0/7c/0cf07cf742d0b1b9faa49617789b3e23.jpg" data-lightbox="roadtrip" data-title="Really Pak Army Quotes Army Poetry Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/f0/7c/0cf07cf742d0b1b9faa49617789b3e23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLnrg02lKBeQIlNT6AN9SImkx4oGRYOsos3w';" alt="Really Pak Army Quotes Army Poetry Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Really Pak Army Quotes Army Poetry Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/2c/dc/442cdc7abde7d2f3c582bdf629e75062.jpg" data-lightbox="roadtrip" data-title="Ooh God Almighty Always Grant Our Pak Army With Success Ameen Pakistan S Proud Armed Forces Army Poetry Pakistan Armed Forces Pakistan Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/2c/dc/442cdc7abde7d2f3c582bdf629e75062.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2xGx_KpWdQS6SMcG2oa-Lxtno3ZrigXTsDA';" alt="Ooh God Almighty Always Grant Our Pak Army With Success Ameen Pakistan S Proud Armed Forces Army Poetry Pakistan Armed Forces Pakistan Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ooh God Almighty Always Grant Our Pak Army With Success Ameen Pakistan S Proud Armed Forces Army Poetry Pakistan Armed Forces Pakistan Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/8b/d4/5f8bd40b22442e5c2fd47b471c6264a3.png" data-lightbox="roadtrip" data-title="A To Z Vocabulary Words With Urdu Meaning Pdf Download In 2021 New Vocabulary Words English Vocabulary Words Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/8b/d4/5f8bd40b22442e5c2fd47b471c6264a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_e34odtMNWwqavXwD4pPnFQHgaJTqRmZfGA';" alt="A To Z Vocabulary Words With Urdu Meaning Pdf Download In 2021 New Vocabulary Words English Vocabulary Words Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A To Z Vocabulary Words With Urdu Meaning Pdf Download In 2021 New Vocabulary Words English Vocabulary Words Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a1/c2/6c/a1c26c22053a92fd72912f5abe9e1f26.jpg" data-lightbox="roadtrip" data-title="Saim Name Meaning In Urdu Saim Arabic Name Meaning Youtube Names With Meaning Islamic Baby Names Arabic Baby Boy Names">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a1/c2/6c/a1c26c22053a92fd72912f5abe9e1f26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAAb1KOrXV9PGi0ntsqSfhwhMUv4MXigDAWg';" alt="Saim Name Meaning In Urdu Saim Arabic Name Meaning Youtube Names With Meaning Islamic Baby Names Arabic Baby Boy Names">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saim Name Meaning In Urdu Saim Arabic Name Meaning Youtube Names With Meaning Islamic Baby Names Arabic Baby Boy Names</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/0a/fa/df0afabff822aa04f24c57e5083f0d22.png" data-lightbox="roadtrip" data-title="English Vocabulary Quiz With Urdu Meaning English To Urdu Quiz کاجو Words Meaning In English Learn English Vocabulary Quiz Vocabulary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/0a/fa/df0afabff822aa04f24c57e5083f0d22.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmO88k6YWlKUIAkmPDNaz3sl8Op8lCojo1Gw';" alt="English Vocabulary Quiz With Urdu Meaning English To Urdu Quiz کاجو Words Meaning In English Learn English Vocabulary Quiz Vocabulary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">English Vocabulary Quiz With Urdu Meaning English To Urdu Quiz کاجو Words Meaning In English Learn English Vocabulary Quiz Vocabulary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/b4/13/6fb413880a19e3ec327e0dcb94b34c01.jpg" data-lightbox="roadtrip" data-title="English To Urdu Important Words Ea English Good Vocabulary Words English Vocabulary Words English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/b4/13/6fb413880a19e3ec327e0dcb94b34c01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFAsrm0pH-VdUyUP-DWF5UVqi9cialQbMB9A';" alt="English To Urdu Important Words Ea English Good Vocabulary Words English Vocabulary Words English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">English To Urdu Important Words Ea English Good Vocabulary Words English Vocabulary Words English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/90/db/ed90dbeab364ee88e51c08d3c08f03a7.jpg" data-lightbox="roadtrip" data-title="Pin On Wordsandmeditation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/90/db/ed90dbeab364ee88e51c08d3c08f03a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHikBZm2RQdXWmOVd3rljoCovYC37mGtiMA';" alt="Pin On Wordsandmeditation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wordsandmeditation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/f1/66/aef166b99d3017bce26cd8037e7e0aa6.jpg" data-lightbox="roadtrip" data-title="Real Heroes Pak Army Soldiers Pak Army Quotes Pakistan Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/f1/66/aef166b99d3017bce26cd8037e7e0aa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCRypFppDVi17Ab5zmlg4qI5FpDxyvLKwxw';" alt="Real Heroes Pak Army Soldiers Pak Army Quotes Pakistan Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Heroes Pak Army Soldiers Pak Army Quotes Pakistan Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/eb/e7/dbebe76117cf4ac932a978e263d001d7.png" data-lightbox="roadtrip" data-title="Important Synonyms Words List With Urdu Meanings Pdf File Words Word List English Writing Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/eb/e7/dbebe76117cf4ac932a978e263d001d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDQPQFd9jiwzTbVmvT1YdJK3QZ76Ufmg4Aw';" alt="Important Synonyms Words List With Urdu Meanings Pdf File Words Word List English Writing Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Synonyms Words List With Urdu Meanings Pdf File Words Word List English Writing Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/a2/21/f6a221b7054479550ff5bcea5349899e.jpg" data-lightbox="roadtrip" data-title="Inshaallah Pak Army Quotes Army Quotes Pak Army Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/a2/21/f6a221b7054479550ff5bcea5349899e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIYkgkl-37WDaEUEoQbL9ykt3mYdNTH9tLw';" alt="Inshaallah Pak Army Quotes Army Quotes Pak Army Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inshaallah Pak Army Quotes Army Quotes Pak Army Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/2f/b7/d52fb75969012e35ac571877deed7c22.jpg" data-lightbox="roadtrip" data-title="Kashmir Urdu Poetry Qwrites Pak Army Quotes Army Quotes Poetry About Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/2f/b7/d52fb75969012e35ac571877deed7c22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YAJ6bteEX8gB3Za9XTqeO3IpSiQaCsqdpg';" alt="Kashmir Urdu Poetry Qwrites Pak Army Quotes Army Quotes Poetry About Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kashmir Urdu Poetry Qwrites Pak Army Quotes Army Quotes Poetry About Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/79/7f/e9797fadf36b47814f0c069d160efc88.jpg" data-lightbox="roadtrip" data-title="How To Make An Interesting Art Piece Using Tree Branches Ehow Army Quotes Army Poetry Funny Girl Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/79/7f/e9797fadf36b47814f0c069d160efc88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStSVUpSqnRMFOegFJi5Q_SSXdHjx61_bGieg';" alt="How To Make An Interesting Art Piece Using Tree Branches Ehow Army Quotes Army Poetry Funny Girl Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make An Interesting Art Piece Using Tree Branches Ehow Army Quotes Army Poetry Funny Girl Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/7f/a9/a87fa98f44197074625300f7772fdc70.jpg" data-lightbox="roadtrip" data-title="Paasbaan Protector In 2020 Image Poetry Words Urdu Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/7f/a9/a87fa98f44197074625300f7772fdc70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjSj5ATe0ED5u593tAIW_32nVDRqV2TECpg';" alt="Paasbaan Protector In 2020 Image Poetry Words Urdu Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paasbaan Protector In 2020 Image Poetry Words Urdu Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-cost-per-flying-hour.html">Air Force Cost Per Flying Hour</a></li>
+													<li class="list-group-item"><a href="/air-force-billy-hoyle.html">Air Force Billy Hoyle</a></li>
+													<li class="list-group-item"><a href="/air-force-1-type-hrvatska.html">Air Force 1 Type Hrvatska</a></li>
+													<li class="list-group-item"><a href="/air-force-civilian-human-resources.html">Air Force Civilian Human Resources</a></li>
+													<li class="list-group-item"><a href="/advantages-of-being-a-marine-engineer.html">Advantages Of Being A Marine Engineer</a></li>
+													<li class="list-group-item"><a href="/academic-eligibility-ncaa-division-1.html">Academic Eligibility Ncaa Division 1</a></li>
+													<li class="list-group-item"><a href="/aetherian-archive-veteran-guide.html">Aetherian Archive Veteran Guide</a></li>
+													<li class="list-group-item"><a href="/aer-spouse-education-assistance-program.html">Aer Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/air-force-academy-visitor-center-hours.html">Air Force Academy Visitor Center Hours</a></li>
+													<li class="list-group-item"><a href="/air-force-crossfit-wod.html">Air Force Crossfit Wod</a></li>
+													<li class="list-group-item"><a href="/age-limit-for-military-dependents.html">Age Limit For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/a-navy-seals-salary.html">A Navy Seals Salary</a></li>
+													<li class="list-group-item"><a href="/a-navy-seal-explains-8-secrets-to-grit-and-resilience.html">A Navy Seal Explains 8 Secrets To Grit And Resilience</a></li>
+													<li class="list-group-item"><a href="/1973-fire-that-destroyed-military-records.html">1973 Fire That Destroyed Military Records</a></li>
+													<li class="list-group-item"><a href="/air-force-aircraft-cost-per-flying-hour.html">Air Force Aircraft Cost Per Flying Hour</a></li>
+													<li class="list-group-item"><a href="/air-force-academy-hours.html">Air Force Academy Hours</a></li>
+													<li class="list-group-item"><a href="/air-force-charm-bracelet.html">Air Force Charm Bracelet</a></li>
+													<li class="list-group-item"><a href="/advantages-of-having-a-military-draft.html">Advantages Of Having A Military Draft</a></li>
+													<li class="list-group-item"><a href="/active-duty-military-spouse-education-benefits.html">Active Duty Military Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/advantages-of-being-a-marine-biologist.html">Advantages Of Being A Marine Biologist</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

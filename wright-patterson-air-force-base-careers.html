@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wright Patterson Air Force Base Careers - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wright Patterson Air Force Base Careers",
+  "datePublished": "2021-02-14",
+  "image": "https://www.music.af.mil/portals/33/BoGW%20Images/Official%20Photos/TRUE75468x10.jpg?ver=2017-01-24-152927-633",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wright+patterson+air+force+base+careers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wright Patterson Air Force Base Careers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">WRIGHT-PATTERSON AIR FORCE BASE Ohio Before the COVID-19 pandemic it would not be unusual to see Mindy Schwickerath a key spouse for the 88th Security Forces Squadron appear in costume in support of the many events in which she participated. This is accomplished through a variety of programs and services available to military and civilian personnel. Mike Turner said. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-retiree-dental-for-dependents.html">military retiree dental for dependents</a>
+											<a class="badge badge-warning" href="/military-retirement-pay-to-ex-spouse-who-dies.html">military retirement pay to ex spouse who dies</a>
+											<a class="badge badge-info" href="/military-retirement-gift-ideas-for-husband.html">military retirement gift ideas for husband</a>
+											<a class="badge badge-warning" href="/military-resume-examples-infantry-to-civilian.html">military resume examples infantry to civilian</a>
+											<a class="badge badge-light" href="/military-retirement-and-divorce-in-california.html">military retirement and divorce in california</a>
+											<a class="badge badge-secondary" href="/military-retirement-benefits-after-death.html">military retirement benefits after death</a>
+											<a class="badge badge-danger" href="/military-retirement-pay-with-dependents.html">military retirement pay with dependents</a>
+											<a class="badge badge-light" href="/military-retirement-for-divorced-spouse.html">military retirement for divorced spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Dec/30/2002568790/780/780/0/201230-F-WG123-1001.JPG" data-lightbox="roadtrip" data-title="Wage Grade Career Progression Site Live Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Dec/30/2002568790/780/780/0/201230-F-WG123-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhMzzItvtEmTZYsmUc6tUjmiMwqL3WYmGiA';" alt="Wage Grade Career Progression Site Live Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wage Grade Career Progression Site Live Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shopify.com/s/files/1/1213/6024/files/Wright-Patterson_AFB_93e9752e-fde3-45a7-bf38-f1e55763c337_1024x1024.jpg?v=1541979183" data-lightbox="roadtrip" data-title="Civil Service Employment Wright Patterson Air Force Base Afb Ohio Defense Studies Institute">
+											<img class="card-img v-image ads-img " src="https://cdn.shopify.com/s/files/1/1213/6024/files/Wright-Patterson_AFB_93e9752e-fde3-45a7-bf38-f1e55763c337_1024x1024.jpg?v=1541979183" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdfLq9yE6eoBBoqz0TBwynXDAhUmKrcJCxQ';" alt="Civil Service Employment Wright Patterson Air Force Base Afb Ohio Defense Studies Institute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Service Employment Wright Patterson Air Force Base Afb Ohio Defense Studies Institute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Dec/21/2002555729/670/394/0/201218-F-F3456-0001.JPG" data-lightbox="roadtrip" data-title="News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Dec/21/2002555729/670/394/0/201218-F-F3456-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHz0xRN_nTsGkSsWEmLSzujYXERgv1Yjr-cg';" alt="News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Aug/06/2002167156/780/780/0/190805-F-BB219-203.JPG" data-lightbox="roadtrip" data-title="Civilian Finds Career Family At Afmc Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Aug/06/2002167156/780/780/0/190805-F-BB219-203.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGjN4FF2X3ZsvZN-QtoXsWtkZO6d9VmDOKQg';" alt="Civilian Finds Career Family At Afmc Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civilian Finds Career Family At Afmc Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2010/Jun/18/2000350545/780/780/0/100610-F-0000P-001.JPG" data-lightbox="roadtrip" data-title="New 445th Sfs Recruit Has The Wright Stuff 445th Airlift Wing Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2010/Jun/18/2000350545/780/780/0/100610-F-0000P-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKmxgr2yqZFrjE1Cjb2ISjYcmMqcOkxPe9w';" alt="New 445th Sfs Recruit Has The Wright Stuff 445th Airlift Wing Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New 445th Sfs Recruit Has The Wright Stuff 445th Airlift Wing Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Aug/08/2002168592/780/780/0/190726-F-BB219-117.JPG" data-lightbox="roadtrip" data-title="Autism At Work Brings Civilian Opportunities To Individuals On The Spectrum Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Aug/08/2002168592/780/780/0/190726-F-BB219-117.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7DTYpXdFuBAky4Sld6F_xJ7tjnyW9Shp51w';" alt="Autism At Work Brings Civilian Opportunities To Individuals On The Spectrum Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Autism At Work Brings Civilian Opportunities To Individuals On The Spectrum Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://positivesolutionsbehaviorgroup.com/wp-content/uploads/autism-at-work_red-sized-791x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7DTYpXdFuBAky4Sld6F_xJ7tjnyW9Shp51w';" alt="Autism At Work Brings Civilian Opportunities To Individuals On The Spectrum Wright Patterson Afb Article Display">
+										<div class="card-body">
+						<h3 class="h5"><b>FFO is a United States Air Force base and census-designated place just east of Dayton Ohio in Greene and Montgomery counties.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wright patterson air force base careers</strong>. 
+								
+																	Wright-Patterson Air Force Base WPAFB IATA. 
+																	The low-stress way to find your next wright patterson air force base job opportunity is on SimplyHired. 
+																	WRIGHT-PATTERSON AIR FORCE BASE 0hio -- Need repair work. 
+																	Wright-Patterson Air Force Base is open and on a normal operating schedule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Warehouse Worker Warehouse Lead Call Center Representative and more. 
+																	Apply to Logistic Coordinator Logistics Analyst Logistics Associate and more. 
+																	Patterson Field is approximately 16 kilometres 10 mi. 
+																	Wright-Patterson Air Force Base Jobs February 2021 - Java Software Engineer Lead Engineering Manager at Root Insurance Full Stack Web Developer Full Stack Software Developer Senior Full-Stack Application Engineer IT Software Engineering Manager Senior Backend Engineer Senior Java Software Eng. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Education and Training sections mission is to develop the Wright-Patterson AFB workforce for current and future assignments through effective and efficient management of Education and Training products and services. 
+																	Patrick Miller center 88th Air Base Wing and installation commander was briefed by 88th Medical Group personnel Jan. 
+																	For up-to-date information on weather call 656-7669 snow. 
+																	Among the ensembles the former preschool teacher owns are a shark elf Easter bunny and superheroes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Registered Nurse Nurse Consultant Nurse Assessor and more. 
+																	With more than 30000 Airmen civilian and contractor employees Wright-Patterson Air Force Base is the largest single site employer in Ohio. 
+																	Additionally we are only a short drive from Daytons main attractions including the National Museum of the US Air Force local cuisine local hiking and biking trails shopping and so much more. 
+																	White Glove Placement Inc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wright-Patterson Child Development Centers CDC provide safe healthy environments for children ages 6-weeks through 5-years. 
+																	Wright-Patterson Inns are located within close proximity to all of Wright-Pattersons fantastic FSS facilities. 
+																	This fact sheet is designed to assist those seeking employment with the Air Force both at Wright-Patterson and other locations. 
+																	To be removed from WPAFB emergency notifications AtHoc e-mail your name e-mail address and phone number to HQAFMCCommandCenterusafmil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For uniformed military career opportunities as an officer enlisted member or healthcare professional visit. 
+																	Located in the Kittyhawk Area of Wright-Patterson Air Force Base near the Pharmacy the Auto. 
+																	Following are the companies paying the highest salaries for a nurse in Wright-Patterson AFB OH. 
+																	There are two Human Resources offices at Wright-Patterson that can assist you in finding your career with the federal government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It includes both Wright and Patterson Fields which were originally Wilbur Wright Field and Fairfield Aviation General Supply Depot. 
+																	They are the Civilian Personnel Office and the NAF Human Resources Office. 
+																	4 as the COVID-19 vaccine is administered at Wright-Patterson Air. 
+																	We strive to provide employment opportunities for talented individuals at Wright-Patterson AFB to support the current and future warfighter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are over 232 wright patterson air force base careers waiting for you to apply. 
+																	The Wright-Patt Auto Hobby Shop offers customers in-store vehicle repair as well the opportunity for do-it-yourselfers at a fraction of the cost. 
+																	Wright-Patterson Air Force Base Ohios largest single-site employer with about 30000 employees should fare well under the new administration of President Joe Biden US. 
+																	Between its four different facilities the CDCs provide childcare on Area A Area B and in the Prairies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Research Scientist Management Analyst Air Force Acquisition Engagement Lead and more. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jul/17/2002458971/-1/-1/0/200716-F-AV193-1001.JPG" data-lightbox="roadtrip" data-title="Chief Master Sergeant Jason Q Shaffer Wright Patterson Afb Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jul/17/2002458971/-1/-1/0/200716-F-AV193-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_Qt9REmOBCYaPHpav1pdO0SS1jn2DW8EsA';" alt="Chief Master Sergeant Jason Q Shaffer Wright Patterson Afb Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chief Master Sergeant Jason Q Shaffer Wright Patterson Afb Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Aug/10/2002473695/780/780/0/200807-F-BB219-1023.JPG" data-lightbox="roadtrip" data-title="Schaefer Promoted To Three Star General Officer Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Aug/10/2002473695/780/780/0/200807-F-BB219-1023.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXC9lwg_lpmX0QEPELXdWhnn57OdwS-EV_4w';" alt="Schaefer Promoted To Three Star General Officer Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schaefer Promoted To Three Star General Officer Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://positivesolutionsbehaviorgroup.com/wp-content/uploads/autism-at-work_red-sized-791x1024.jpg" data-lightbox="roadtrip" data-title="Autism At Work Wpafb Positive Solutions Behavior Group">
+											<img class="card-img v-image ads-img " src="https://positivesolutionsbehaviorgroup.com/wp-content/uploads/autism-at-work_red-sized-791x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlawp-HNlmU_cRlLGT4a3y1jg2JzRkdy_nQ';" alt="Autism At Work Wpafb Positive Solutions Behavior Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Autism At Work Wpafb Positive Solutions Behavior Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/May/12/2001746293/780/780/0/170509-F-JW079-2097.JPG" data-lightbox="roadtrip" data-title="Ceremony Honors 229 Graduates From Fall Spring Classes Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/May/12/2001746293/780/780/0/170509-F-JW079-2097.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4d4xjo0Ud6apnUU_-9rZsSQ5yWci8jJeo3Q';" alt="Ceremony Honors 229 Graduates From Fall Spring Classes Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ceremony Honors 229 Graduates From Fall Spring Classes Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Apr/12/2002116038/780/780/0/190405-F-YD697-001.JPG" data-lightbox="roadtrip" data-title="Airmen Benefit Charity Fundraising Campaign Runs Through May 3 Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Apr/12/2002116038/780/780/0/190405-F-YD697-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3HFNgv_9lBtj8W2oXoIU896s2UMgSkvdQg';" alt="Airmen Benefit Charity Fundraising Campaign Runs Through May 3 Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airmen Benefit Charity Fundraising Campaign Runs Through May 3 Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Dec/07/2001853794/780/780/0/171130-F-ZZ999-1004.JPG" data-lightbox="roadtrip" data-title="Wright Patt Honor Guard Among Heaviest Tasked In Air Force Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Dec/07/2001853794/780/780/0/171130-F-ZZ999-1004.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9L4Z0hPvh9UbARIy6-VzJapkDLwRarF5AXg';" alt="Wright Patt Honor Guard Among Heaviest Tasked In Air Force Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wright Patt Honor Guard Among Heaviest Tasked In Air Force Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.music.af.mil/portals/33/BoGW%20Images/Official%20Photos/TRUE75468x10.jpg?ver=2017-01-24-152927-633" data-lightbox="roadtrip" data-title="Air Force Bands Bands U S Air Force Band Of The Golden West Ensembles Concert Band Master Sergeant Jeremiah True">
+											<img class="card-img v-image ads-img " src="https://www.music.af.mil/portals/33/BoGW%20Images/Official%20Photos/TRUE75468x10.jpg?ver=2017-01-24-152927-633" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFinNRhq2TlGYIGrwMmnTf7LBczUGQcruYhw';" alt="Air Force Bands Bands U S Air Force Band Of The Golden West Ensembles Concert Band Master Sergeant Jeremiah True">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Bands Bands U S Air Force Band Of The Golden West Ensembles Concert Band Master Sergeant Jeremiah True</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/May/03/2001531852/780/780/0/160503-F-QM942-018.JPG" data-lightbox="roadtrip" data-title="Mental Health Flight Helps Shape The Future Of The Air Force Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/May/03/2001531852/780/780/0/160503-F-QM942-018.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMIslX-tqDedJAf6XfLua8ju1aKqRunLCNg';" alt="Mental Health Flight Helps Shape The Future Of The Air Force Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mental Health Flight Helps Shape The Future Of The Air Force Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Jun/27/2002150778/780/780/0/170902-F-FC975-303.JPG" data-lightbox="roadtrip" data-title="Afsac Welcomes New Leader Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Jun/27/2002150778/780/780/0/170902-F-FC975-303.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7qAtVti04VpPs7kHEtQqXMbJ2PqalB8B3zA';" alt="Afsac Welcomes New Leader Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afsac Welcomes New Leader Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/May/13/2001538487/-1/-1/0/140124-F-JJ904-034.JPG" data-lightbox="roadtrip" data-title="Masiello Steps Down As Afrl Commander To End 35 Year Air Force Career Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/May/13/2001538487/-1/-1/0/140124-F-JJ904-034.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8t_v2Fb2kmLrEipU383HsPTcEY82ylxKLjw';" alt="Masiello Steps Down As Afrl Commander To End 35 Year Air Force Career Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masiello Steps Down As Afrl Commander To End 35 Year Air Force Career Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Nov/08/2001840045/780/780/0/171027-F-FC975-312.JPG" data-lightbox="roadtrip" data-title="Job Shadow Program Inspires Next Generation Of Innovators Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Nov/08/2001840045/780/780/0/171027-F-FC975-312.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMDpeoig2FAXaySrunTEhZnjVNq0z1fL66KQ';" alt="Job Shadow Program Inspires Next Generation Of Innovators Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Shadow Program Inspires Next Generation Of Innovators Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/Feb/25/2001499246/780/780/0/160225-F-ZZ999-005.jpg" data-lightbox="roadtrip" data-title="Afit S School Of Systems And Logistics Ties Education To Experience Wright Patterson Afb Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/Feb/25/2001499246/780/780/0/160225-F-ZZ999-005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3COxZQrxX6W9iHGv_OgBpCpPFQqbZp43-vg';" alt="Afit S School Of Systems And Logistics Ties Education To Experience Wright Patterson Afb Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afit S School Of Systems And Logistics Ties Education To Experience Wright Patterson Afb Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2011/Feb/07/2000287725/780/780/0/101105-F-2038B-001.JPG" data-lightbox="roadtrip" data-title="Nco Leadership Development Course Important To Career 445th Airlift Wing Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2011/Feb/07/2000287725/780/780/0/101105-F-2038B-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchw8uAv1hTmxm54C2v9SEGI5HP5ZSeTtFOg';" alt="Nco Leadership Development Course Important To Career 445th Airlift Wing Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nco Leadership Development Course Important To Career 445th Airlift Wing Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/british-army-hr-graduate-scheme.html">British Army Hr Graduate Scheme</a></li>
+													<li class="list-group-item"><a href="/campus-portal-gcms.html">Campus Portal Gcms</a></li>
+													<li class="list-group-item"><a href="/campus-portal-allendale.html">Campus Portal Allendale</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-checking-account.html">Benefits Of Navy Federal Checking Account</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-union.html">Benefits Of Navy Federal Credit Union</a></li>
+													<li class="list-group-item"><a href="/camden-national-bank-login-to-my-account.html">Camden National Bank Login To My Account</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-membership.html">Benefits Of Navy Federal Membership</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navy-federal-credit-card.html">Benefits Of Navy Federal Credit Card</a></li>
+													<li class="list-group-item"><a href="/california-army-national-guard-human-resources.html">California Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/best-military-wife-books.html">Best Military Wife Books</a></li>
+													<li class="list-group-item"><a href="/berita-army-indonesia-hari-ini.html">Berita Army Indonesia Hari Ini</a></li>
+													<li class="list-group-item"><a href="/campus-portal-grossmont.html">Campus Portal Grossmont</a></li>
+													<li class="list-group-item"><a href="/california-state-tax-for-military-spouse.html">California State Tax For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/british-army-pay-contact-number.html">British Army Pay Contact Number</a></li>
+													<li class="list-group-item"><a href="/by-joe-kent-gold-star-husband-and-a-retired-army-officer.html">By Joe Kent Gold Star Husband And A Retired Army Officer</a></li>
+													<li class="list-group-item"><a href="/british-army-benefits-for-family.html">British Army Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/best-online-colleges-for-military-spouses.html">Best Online Colleges For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/black-military-hat-uk.html">Black Military Hat Uk</a></li>
+													<li class="list-group-item"><a href="/black-wool-hat-military.html">Black Wool Hat Military</a></li>
+													<li class="list-group-item"><a href="/british-army-ww1-service-records-free.html">British Army Ww1 Service Records Free</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

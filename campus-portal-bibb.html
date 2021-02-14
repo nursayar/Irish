@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Campus Portal Bibb - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Campus Portal Bibb",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/65/19/4e/65194e940ee2cc353176477db0ffa3c8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=campus+portal+bibb",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Campus Portal Bibb</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">After clicking the SLDS Portal button the Parent Portal Welcome Page will open. Students and Staff please access your school resources using ClassLink. Services Campus Community Client Services Implementation Support Technical Services Training Contact Sales. <br>				
+			</p>
+										<a class="badge badge-warning" href="/benefits-of-military-service.html">benefits of military service</a>
+											<a class="badge badge-dark" href="/benefits-of-military-press-exercise.html">benefits of military press exercise</a>
+											<a class="badge badge-warning" href="/benefits-of-military-star-card.html">benefits of military star card</a>
+											<a class="badge badge-primary" href="/benefits-of-military-nurse.html">benefits of military nurse</a>
+											<a class="badge badge-secondary" href="/benefits-of-military-reddit.html">benefits of military reddit</a>
+											<a class="badge badge-danger" href="/benefits-of-military-commissary.html">benefits of military commissary</a>
+											<a class="badge badge-secondary" href="/benefits-of-being-a-army-recruiter.html">benefits of being a army recruiter</a>
+											<a class="badge badge-info" href="/benefits-of-naval-kottai-powder.html">benefits of naval kottai powder</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/01/75/be017590d6131075060132f8a5b7da96.jpg" data-lightbox="roadtrip" data-title="Rutland High School Home Of The Mighty Hurricanes Rutland Macon Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/01/75/be017590d6131075060132f8a5b7da96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lSZgCf1GkpHC-ctJBWOrA8rrzoOg3Qx6vA';" alt="Rutland High School Home Of The Mighty Hurricanes Rutland Macon Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rutland High School Home Of The Mighty Hurricanes Rutland Macon Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/d3/db/55d3db33abd7ab164f8619bdae7c525e.jpg" data-lightbox="roadtrip" data-title="Berlin Mies Van Der Rohe Modern Museum Courtyard Modern Landscape Design Landscape Design Landscape Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/d3/db/55d3db33abd7ab164f8619bdae7c525e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYH4-UaPve4e5oxil1OcDbe1yAyYBfBC-OgA';" alt="Berlin Mies Van Der Rohe Modern Museum Courtyard Modern Landscape Design Landscape Design Landscape Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Berlin Mies Van Der Rohe Modern Museum Courtyard Modern Landscape Design Landscape Design Landscape Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/16/3a/ef163a31816319dfd3881450ff461ec2.jpg" data-lightbox="roadtrip" data-title="Pin On Victorian Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/16/3a/ef163a31816319dfd3881450ff461ec2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzsC23LNLvq7m6576f38I1DSksb9zRTw6QQ';" alt="Pin On Victorian Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Victorian Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/19/4e/65194e940ee2cc353176477db0ffa3c8.jpg" data-lightbox="roadtrip" data-title="Notes In The Flour Fine Dining Recipes Fancy Salads Food Presentation Plates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/19/4e/65194e940ee2cc353176477db0ffa3c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdJ0OkBH_W5m34RCww9cxbaWC9ujtf19y5g';" alt="Notes In The Flour Fine Dining Recipes Fancy Salads Food Presentation Plates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Notes In The Flour Fine Dining Recipes Fancy Salads Food Presentation Plates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/f5/e4/d5f5e4fd47372e1996d62264ebeddfa6.png" data-lightbox="roadtrip" data-title="Kentucky State University The Historically Black Educational Institution In Frankfort Has Entered Into A Partnership Kentucky State State University Kentucky">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/f5/e4/d5f5e4fd47372e1996d62264ebeddfa6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkcGEwnoznBJT1_dumGyKwFzlkZFHWZQDVQ';" alt="Kentucky State University The Historically Black Educational Institution In Frankfort Has Entered Into A Partnership Kentucky State State University Kentucky">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky State University The Historically Black Educational Institution In Frankfort Has Entered Into A Partnership Kentucky State State University Kentucky</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/5a/ad/5d5aad154b770deb50362a0f175bf035.jpg" data-lightbox="roadtrip" data-title="The Original Bell On Lemoyne Owen College Campus College Campus Lemoyne Renaissance Center">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/5a/ad/5d5aad154b770deb50362a0f175bf035.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqZ2rhjFOd9m7lnNHOWlQvOtSeyiKVtV6AQ';" alt="The Original Bell On Lemoyne Owen College Campus College Campus Lemoyne Renaissance Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Original Bell On Lemoyne Owen College Campus College Campus Lemoyne Renaissance Center</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/a3/02/28/a30228a61a1ef8bf07b34bfe39144929.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqZ2rhjFOd9m7lnNHOWlQvOtSeyiKVtV6AQ';" alt="The Original Bell On Lemoyne Owen College Campus College Campus Lemoyne Renaissance Center">
+										<div class="card-body">
+						<h3 class="h5"><b>Bibb County School District schools will close indefinitely after.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Campus portal bibb</strong>. 
+								
+																	2003-2021 Infinite Campus Inc. 
+																	Welcome to the Bibb County School District. 
+																	Company Blog Careers Infinite Campus Foundation Magazine News Our Technology Partners Store Success Stories Videos. 
+																	Welcome to the Bibb County School District. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Access to the parent and student portal will be available in late July 2020. 
+																	Infinite Campus Parent Portal Menus ClassLink ClassLink For Parents Transcript Requests WVIP. 
+																	Previous Campus App expired June 30 2019. 
+																	Bibb County School District Departments Research Evaluation Assessment and Accountability Infinite Campus Parent Portal Information for Parents 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students say hello to your new best friend. 
+																	Search for your District Name and State. 
+																	Be sure to download the most recent version of Student or Parent App via iTunes or Google Play. 
+																	Services Campus Community Client. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2003-2021 Infinite Campus Inc. 
+																	Select your district from the list 3. 
+																	Parents Bibb County School District. 
+																	Download the app from the App Store or Google Play 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Campus Parent can be accessed on the web login information is received from your district using the Campus Parent mobile app or through Amazon Alexa if its available to your district Learn more about Alexa. 
+																	Products Student Information System Statewide Student Information System Learning Management System Premium Products Request a Demo. 
+																	For more information about the Georgia SLDS Parent Portal click here. 
+																	Login to Infinite Campus Parent Portal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click the SLDS Portal button at the bottom of the list on the left side of the students age. 
+																	Products Student Information System Statewide Student Information System Learning Management System Premium Products Request a Demo. 
+																	Our website is currently experiencing technical issues and is being worked on by our hosting provider. 
+																	Current Customer Future Customer Login Teacher Parent or Student StudentParent Mobile App. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Company Blog Careers Infinite Campus Foundation Magazine News Our Technology Partners Store Success Stories Videos. 
+																	Student login information may be obtained by the students classroom teacher or by the front office staff. 
+																	Welcome to Bibb County School District. 
+																	Campus Student helps you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Juggling academics social life sports and extracurricular activities can be overwhelming. 
+																	2003-2021 Infinite Campus Inc. 
+																	2003-2021 Infinite Campus Inc. 
+																	Infinite Campus - Bibb County Public School District. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Campus Student and Campus Parent apps provide the same tools as the browser version with the benefit of the option to Stay Logged In and receive push notifications. 
+																	Bibb County School District Departments Research Evaluation Assessment and Accountability Infinite Campus Infinite Campus Periodically users will report issues with being unable to see specific screens or areas of Campus. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/2553634/9/images/slide_1.jpg" data-lightbox="roadtrip" data-title="Parent Portal In Infinite Campus Ppt Video Online Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/2553634/9/images/slide_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQOYN7S89N4wU0Ai1P8ABiMrXIKaqA9IHGw';" alt="Parent Portal In Infinite Campus Ppt Video Online Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parent Portal In Infinite Campus Ppt Video Online Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a3/02/28/a30228a61a1ef8bf07b34bfe39144929.jpg" data-lightbox="roadtrip" data-title="A Dormitory At Framingham State University Will Soon Be Renamed In Honor Of The First Afr Framingham State University College Logo Machine Learning Programming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a3/02/28/a30228a61a1ef8bf07b34bfe39144929.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDwupV_1eEqIVeEYl_MYeDQUzpHf3c361tg';" alt="A Dormitory At Framingham State University Will Soon Be Renamed In Honor Of The First Afr Framingham State University College Logo Machine Learning Programming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Dormitory At Framingham State University Will Soon Be Renamed In Honor Of The First Afr Framingham State University College Logo Machine Learning Programming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/33/cb/7933cbc78f36ea17ad2848ba438a5978.jpg" data-lightbox="roadtrip" data-title="You Are My Sunshine Mandala Tattoo Tattoos Mandala Tattoo Triangle Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/33/cb/7933cbc78f36ea17ad2848ba438a5978.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLIT1aZDH6TZt1Nc-LaeEJCqlVNZUR34Vlpg';" alt="You Are My Sunshine Mandala Tattoo Tattoos Mandala Tattoo Triangle Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Are My Sunshine Mandala Tattoo Tattoos Mandala Tattoo Triangle Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/b6/ba/eeb6ba21e5055ae1d8e6715922e37721.jpg" data-lightbox="roadtrip" data-title="The Midnight Meat Train The Midnight Meat Train Train Movie Scary Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/b6/ba/eeb6ba21e5055ae1d8e6715922e37721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Ln8lDN_N5uZ3Z7D8uW3opoiaESEJxEIvog';" alt="The Midnight Meat Train The Midnight Meat Train Train Movie Scary Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Midnight Meat Train The Midnight Meat Train Train Movie Scary Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/c6/94/ccc694eedebd0abd47eb18ddc3e5a04f.jpg" data-lightbox="roadtrip" data-title="Mercer University Walter F George School Of Law Macon Georgia Mercer University Ferry Building San Francisco Macon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/c6/94/ccc694eedebd0abd47eb18ddc3e5a04f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-5uRzS2cl-1TGP_mDRsJhLfVBfKKKbNhklw';" alt="Mercer University Walter F George School Of Law Macon Georgia Mercer University Ferry Building San Francisco Macon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mercer University Walter F George School Of Law Macon Georgia Mercer University Ferry Building San Francisco Macon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/e2/02/07e2021080014ba79e2525e742b9bfc5.jpg" data-lightbox="roadtrip" data-title="Pin On Siarchitects Universities And Higher Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/e2/02/07e2021080014ba79e2525e742b9bfc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfDfZUfIIlY3xpm3dha1XUw_o-1fVyHLtPQ';" alt="Pin On Siarchitects Universities And Higher Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Siarchitects Universities And Higher Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/43/42/cc4342a8a63c7e90027204109d6397f9.jpg" data-lightbox="roadtrip" data-title="Piet Oudolf On Instagram So Happy To See The Garden At Vitra Campus Happening The Plants Arrived And The Planting Has Landscape Architecture Landscape Piet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/43/42/cc4342a8a63c7e90027204109d6397f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwVUs3XSmwwo3t9imNL4UcNbtgIoirbyGTmw';" alt="Piet Oudolf On Instagram So Happy To See The Garden At Vitra Campus Happening The Plants Arrived And The Planting Has Landscape Architecture Landscape Piet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Piet Oudolf On Instagram So Happy To See The Garden At Vitra Campus Happening The Plants Arrived And The Planting Has Landscape Architecture Landscape Piet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/6e/2f/706e2fb33e894359b3c1eee9aa26ac0d.jpg" data-lightbox="roadtrip" data-title="Snowy Evening At Liberty University January 17 2013 Liberty University Lynchburg Future College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/6e/2f/706e2fb33e894359b3c1eee9aa26ac0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjbZaQH8VUGUtOEmVLFF7SW9ciDD8xsAerQ';" alt="Snowy Evening At Liberty University January 17 2013 Liberty University Lynchburg Future College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Snowy Evening At Liberty University January 17 2013 Liberty University Lynchburg Future College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/70/82/be7082449d271c5a715cf551c7003084.jpg" data-lightbox="roadtrip" data-title="Twitter Sandyinlondon Jennitpk The Nag S Head Historical London London Pictures Old London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/70/82/be7082449d271c5a715cf551c7003084.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1EbgilwM8bElrXvm6UIqvRb1cNGk8Yl5C6A';" alt="Twitter Sandyinlondon Jennitpk The Nag S Head Historical London London Pictures Old London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Twitter Sandyinlondon Jennitpk The Nag S Head Historical London London Pictures Old London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/14/b8/3814b8089215c5f0a60c14fd5ee49b1e.png" data-lightbox="roadtrip" data-title="Login Smart Blogger Campus Login Content Marketing Blogger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/14/b8/3814b8089215c5f0a60c14fd5ee49b1e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtyNAljH0ot21SsQ6Y-I_y3Icb3oqorIWaQ';" alt="Login Smart Blogger Campus Login Content Marketing Blogger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login Smart Blogger Campus Login Content Marketing Blogger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/fb/1f/65fb1f5033be0d68fa736e0aef685240.png" data-lightbox="roadtrip" data-title="Result Et Edu Student Result Portal Online Student Result Student Portal Student Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/fb/1f/65fb1f5033be0d68fa736e0aef685240.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VrmLoB-wngcVeBlu6v67UezdADiAfIzVgw';" alt="Result Et Edu Student Result Portal Online Student Result Student Portal Student Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Result Et Edu Student Result Portal Online Student Result Student Portal Student Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://support.schoology.com/hc/article_attachments/360008751773/IC_Teacher_App.png" data-lightbox="roadtrip" data-title="Infinite Campus Teacher App Schoology Support">
+											<img class="card-img v-image ads-img " src="https://support.schoology.com/hc/article_attachments/360008751773/IC_Teacher_App.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4a4_SqYi_7_Wf2DwKOo3EYCloEKBdn6CtQ';" alt="Infinite Campus Teacher App Schoology Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinite Campus Teacher App Schoology Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/cd/bf/7bcdbfa72cd79ad6fd75db1d16f46210.jpg" data-lightbox="roadtrip" data-title="Los Arcos De Guadalajara Son Un Monumento Representativo De La Ciudad De Guadalajara Dicho Monumento Fue Declarado Como Entrada De La Ciud Home Decor Fireplace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/cd/bf/7bcdbfa72cd79ad6fd75db1d16f46210.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuRECrdSEt6ZImdwfKz5EguMlz671xqqE6zA';" alt="Los Arcos De Guadalajara Son Un Monumento Representativo De La Ciudad De Guadalajara Dicho Monumento Fue Declarado Como Entrada De La Ciud Home Decor Fireplace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Los Arcos De Guadalajara Son Un Monumento Representativo De La Ciudad De Guadalajara Dicho Monumento Fue Declarado Como Entrada De La Ciud Home Decor Fireplace</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/student-loan-forgiveness-for-disabled-veterans-spouses.html">Student Loan Forgiveness For Disabled Veterans Spouses</a></li>
+													<li class="list-group-item"><a href="/tennessee-veteran-dependent-education-benefits.html">Tennessee Veteran Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/student-loan-spouse.html">Student Loan Spouse</a></li>
+													<li class="list-group-item"><a href="/student-loan-forgiveness-for-spouses-of-veterans.html">Student Loan Forgiveness For Spouses Of Veterans</a></li>
+													<li class="list-group-item"><a href="/student-loans-when-spouse-dies.html">Student Loans When Spouse Dies</a></li>
+													<li class="list-group-item"><a href="/survivor-benefits-for-veteran-spouses.html">Survivor Benefits For Veteran Spouses</a></li>
+													<li class="list-group-item"><a href="/student-loans-navy-spouse.html">Student Loans Navy Spouse</a></li>
+													<li class="list-group-item"><a href="/student-loan-before-marriage.html">Student Loan Before Marriage</a></li>
+													<li class="list-group-item"><a href="/the-national-archives-and-records-service-of-south-africa-act.html">The National Archives And Records Service Of South Africa Act</a></li>
+													<li class="list-group-item"><a href="/support-for-army-wives-uk.html">Support For Army Wives Uk</a></li>
+													<li class="list-group-item"><a href="/tax-deduction-for-spouse-education.html">Tax Deduction For Spouse Education</a></li>
+													<li class="list-group-item"><a href="/survivors-and-dependents-educational-assistance-chapter-35.html">Survivors And Dependents Educational Assistance Chapter 35</a></li>
+													<li class="list-group-item"><a href="/student-loan-relief-for-military-spouses.html">Student Loan Relief For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/survivors-and-dependents-educational-assistance-chapter-35-benefits.html">Survivors And Dependents Educational Assistance Chapter 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/student-loans-gov-spouse-signature.html">Student Loans Gov Spouse Signature</a></li>
+													<li class="list-group-item"><a href="/surviving-spouse-benefits-va-loan.html">Surviving Spouse Benefits Va Loan</a></li>
+													<li class="list-group-item"><a href="/therapy-for-military-spouses.html">Therapy For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/the-military-spouse-career-advancement-accounts.html">The Military Spouse Career Advancement Accounts</a></li>
+													<li class="list-group-item"><a href="/student-loan-spouse-income.html">Student Loan Spouse Income</a></li>
+													<li class="list-group-item"><a href="/the-marine-corps-wife-book.html">The Marine Corps Wife Book</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

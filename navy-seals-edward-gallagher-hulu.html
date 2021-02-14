@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Seals Edward Gallagher Hulu - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Seals Edward Gallagher Hulu",
+  "datePublished": "2021-02-14",
+  "image": "https://static01.nyt.com/images/2019/12/29/universal/29theweekly-sandiego-edwardgallagher-where/29theweekly-sandiego-edwardgallagher-where-articleLarge.jpg?quality=75&amp;auto=webp&amp;disable=upscale",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+seals+edward+gallagher+hulu",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Seals Edward Gallagher Hulu</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The New York Times has obtained video of investigative interviews conducted with the Navy SEALs who accused Special Operations Chief Eddie Gallagher of war crimes the most serious of which he was. Gallagher who recently retired as a Navy chief petty officer after President Donald Trump intervened in his long legal plight was back in the headlines Friday when The New York Times published. Navy SEALs were warned not to report their platoon leader for war crimes. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-hk416-good.html">is hk416 good</a>
+											<a class="badge badge-success" href="/is-the-ncaa-eligibility-center-necessary.html">is the ncaa eligibility center necessary</a>
+											<a class="badge badge-success" href="/indonesian-air-force-headquarters-address.html">indonesian air force headquarters address</a>
+											<a class="badge badge-warning" href="/italian-military-records-ww2-online.html">italian military records ww2 online</a>
+											<a class="badge badge-success" href="/iraqi-air-force-iran-iraq-war.html">iraqi air force iran iraq war</a>
+											<a class="badge badge-light" href="/jobs-for-military-spouses-las-vegas.html">jobs for military spouses las vegas</a>
+											<a class="badge badge-primary" href="/joining-the-navy-with-a-wife.html">joining the navy with a wife</a>
+											<a class="badge badge-dark" href="/is-my-spouse-bipolar.html">is my spouse bipolar</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EMb-_bWWsAAMies.jpg" data-lightbox="roadtrip" data-title="Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EMb-_bWWsAAMies.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5sI_qYBcIdiBNviv933GK5ZBB_i7hhHT_A';" alt="Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hulu On Twitter The Gallagher Effect A New Documentary From Theweeklynyt Is Now Streaming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/0Op6RQgc7z0/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Navy Seals Call Edward Gallagher Evil In Leaked Videos Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/0Op6RQgc7z0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6Dotu4OGmok8yk-IRLo0qaXz7TnYNqC3Iw';" alt="Navy Seals Call Edward Gallagher Evil In Leaked Videos Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Call Edward Gallagher Evil In Leaked Videos Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EMb-FITXUAI0Y21.jpg" data-lightbox="roadtrip" data-title="The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EMb-FITXUAI0Y21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IRWzREe1lOf6A2WftZQBncTlAvIJETTYog';" alt="The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly On Twitter Watch Video Of Navy Seal Chief Edward Gallagher During The Mission In Iraq That Led To Accusations Of War Crimes Https T Co Cydrfeqc2m Https T Co Jl6lqg9nt0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/7IXrI0Jh55s/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Navy Seals Describe Edward Gallagher In Video Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/7IXrI0Jh55s/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8asi5sKd_BiPGhDspu78EPoIuo71sw3qDsg';" alt="Navy Seals Describe Edward Gallagher In Video Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Describe Edward Gallagher In Video Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/profile_images/1128050383467831297/gm5yiD6u.png" data-lightbox="roadtrip" data-title="The Weekly On Twitter A New Documentary From Theweeklynyt Now On Hulu Videos Reveal New Details About The Case Of Edward Gallagher A Navy Seal Accused By His Own Men Of War">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/profile_images/1128050383467831297/gm5yiD6u.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe0-gYYD-MtAQ889b89trBDgKSgfovIz0Ptg';" alt="The Weekly On Twitter A New Documentary From Theweeklynyt Now On Hulu Videos Reveal New Details About The Case Of Edward Gallagher A Navy Seal Accused By His Own Men Of War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly On Twitter A New Documentary From Theweeklynyt Now On Hulu Videos Reveal New Details About The Case Of Edward Gallagher A Navy Seal Accused By His Own Men Of War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nypost.com/wp-content/uploads/sites/2/2019/06/guy.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" data-lightbox="roadtrip" data-title="Trial Set For Navy Seal In Islamic State Prisoner S Killing">
+											<img class="card-img v-image ads-img " src="https://nypost.com/wp-content/uploads/sites/2/2019/06/guy.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09ZxthPpqaljmgW355aO347f3DX5HK0JB_Q';" alt="Trial Set For Navy Seal In Islamic State Prisoner S Killing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trial Set For Navy Seal In Islamic State Prisoner S Killing</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://press.hulu.com/wp-content/uploads/2020/03/121919_UHD-STILLS_22-scaled-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09ZxthPpqaljmgW355aO347f3DX5HK0JB_Q';" alt="Trial Set For Navy Seal In Islamic State Prisoner S Killing">
+										<div class="card-body">
+						<h3 class="h5"><b>The WeeklyThe New York TimesFXHulu.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy seals edward gallagher hulu</strong>. 
+								
+																	Fellow Navy SEALs call Edward Gallagher toxic and evil in never-before-seen interviews. 
+																	Navy special operations chief Edward Gallagher celebrates after being acquitted of premeditated murder at Naval Base San Diego on July 2. 
+																	It was Gallagher a Navy corpsman assigned to Marines before he became a SEAL who began treating the wounded Iraqi which the SO1 assumed was a shrapnel wound. 
+																	He lives with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy SEAL team leader Edward Gallagher will face a demotion and a pay cut after posing for a photo with a dead 12-year-old ISIS fighter in Iraq. 
+																	When SEALs captured the injured ISIS fighter Gallagher allegedly drove miles to the scene where he was being held. 
+																	Edward Gallagher retired from the Navy with full honors on Nov. 
+																	Another SEAL told investigators he once saw Gallagher take a shot at probably a 12-year-old kid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GREGORY BULLAP T he navy SEAL whose demotion after being convicted of posing next to the corpse of a captured. 
+																	Confidential Videos Show Why Navy SEALs Reported Edward Gallagher. 
+																	Producers Jessica Dimmock and Zackary Canepari. 
+																	Gallagher born May 29 1979 is a former United States Navy SEAL who came to national attention in the United States after he was charged in September 2018 with ten offenses under the Uniform Code of Military Justice over accusations that he had stabbed to death an injured sedated 17-year-old ISIS prisoner photographing himself with the corpse and sending the photo to friends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gallagher told naval criminal investigators about behavior they witnessed including the alleged. 
+																	A year ago Navy SEAL Chief Petty Officer Edward Gallagher was wearing a Navy uniform at a brig near San Diego facing murder charges that could have sent him to prison for the rest of his life. 
+																	The leaked video testimonies show Navy SEALs tense and stressed recounting Gallaghers brutal behavior while deployed in Iraq in 2017. 
+																	Edward Gallagher who has denied wrongdoing was reinstated by President Trump Credit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy SEALs who served alongside Special Operations Chief Edward Gallagher described their platoon leader as freaking evil and toxic according to new video recordings conducted by criminal investigators obtained by the New York Times. 
+																	Award-winning SKorean director Kim Ki-duk dies in Latvia Watch a special Times documentary featuring combat video and confidential interviews with the Navy SEALs who accused their chief of war. 
+																	Special Operations Chief Edward Gallaghers case continues to roil the Navy even after his acquittal on most charges after another SEAL surprised prosecutors on the stand. 
+																	They did it anyway. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Miller trying to hide his tears apologized for his. 
+																	A jury of Gallaghers fellow soldiers handed down. 
+																	At one point Gallagher allegedly bragged about killing four women saying he had fired warning shots first even though one SEAL told investigators hed never seen Eddie fire warning shots. 
+																	Combat video text messages and confidential interviews with members of the Navy SEALs obtained by The New York Times reveal chilling details about the conduct of Special Operations Chief Edward Gallagher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy SEALs who served alongside Special Operations Chief Edward Gallagher described their platoon leader as freaking evil and toxic according to new video recordings conducted by criminal investigators obtained by the New York Times. 
+																	The SEAL didnt think Gallagher. 
+																	The Navy Board also considered stripping Gallagher of his status as a Navy SEAL. 
+																	Dave when did you first hear about Chief Edward Gallagher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New on Netflix. 
+																	Navy SEALs who were never called to testify in the war crimes trial of Chief Petty Officer Edward R. 
+																	Its Thursday April 25. 
+																	The recordings were part of the Navys investigation into Gallagher who was accused of war crimes during a 2017 deployment to Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can watch the full documentary now on Hulu and Sunday on FX at 10 pm. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/i.dailymail.co.uk/1s/2019/12/27/18/22717694-7830351-image-a-78_1577472188277.jpg?resize=634%2C339&amp;ssl=1" data-lightbox="roadtrip" data-title="Eddie Gallagher S Fellow Navy Seals Describe Him As Evil Post Of Asia">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/i.dailymail.co.uk/1s/2019/12/27/18/22717694-7830351-image-a-78_1577472188277.jpg?resize=634%2C339&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSayegLX8M9HsGe7M8EIZfDZR1kTm9Ge_Nw';" alt="Eddie Gallagher S Fellow Navy Seals Describe Him As Evil Post Of Asia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eddie Gallagher S Fellow Navy Seals Describe Him As Evil Post Of Asia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EMf3PJwXkAUEVTu.jpg" data-lightbox="roadtrip" data-title="The Weekly On Twitter When Navy Seals Learned Edward Gallagher Was To Get A Silver Star For Heroism They Threatened To Go Public About Alleged War Crimes Including The Stabbing Of An">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EMf3PJwXkAUEVTu.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdXIJhqJsNzqr4mjZDCx1KtwEos14pAqUzw';" alt="The Weekly On Twitter When Navy Seals Learned Edward Gallagher Was To Get A Silver Star For Heroism They Threatened To Go Public About Alleged War Crimes Including The Stabbing Of An">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly On Twitter When Navy Seals Learned Edward Gallagher Was To Get A Silver Star For Heroism They Threatened To Go Public About Alleged War Crimes Including The Stabbing Of An</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/tgPZyDHCqzDY7huROA3-fHDkx_0F7rpz3Wq_bM5PJo4.jpg?auto=webp&amp;s=1ca09c8c9565676c3b4ceb0e84842946d51522d5" data-lightbox="roadtrip" data-title="The Weekly Season 1 Ep 23 The Gallagher Effect Fx Hulu Episode By The Nyt On The Case Of Navy Seal Operator Eddie Gallagher And His Outing Of War Crimes By Other">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/tgPZyDHCqzDY7huROA3-fHDkx_0F7rpz3Wq_bM5PJo4.jpg?auto=webp&amp;s=1ca09c8c9565676c3b4ceb0e84842946d51522d5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv8BF7rgrjJFBRrH8sLlzy8c8-nsb-vEzQZg';" alt="The Weekly Season 1 Ep 23 The Gallagher Effect Fx Hulu Episode By The Nyt On The Case Of Navy Seal Operator Eddie Gallagher And His Outing Of War Crimes By Other">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly Season 1 Ep 23 The Gallagher Effect Fx Hulu Episode By The Nyt On The Case Of Navy Seal Operator Eddie Gallagher And His Outing Of War Crimes By Other</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nypost.com/wp-content/uploads/sites/2/2019/06/gettyimages-1151697246.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" data-lightbox="roadtrip" data-title="Navy Seals Defend Edward Gallagher Contradict Snipers">
+											<img class="card-img v-image ads-img " src="https://nypost.com/wp-content/uploads/sites/2/2019/06/gettyimages-1151697246.jpg?quality=80&amp;strip=all&amp;w=618&amp;h=410&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7ZhSjBdr1LxcaHX-hULAlDUftkfM3qBwEw';" alt="Navy Seals Defend Edward Gallagher Contradict Snipers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Defend Edward Gallagher Contradict Snipers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/nypost.com/wp-content/uploads/sites/2/2019/11/eddie-gallagher-index-1.jpg?quality=80&amp;strip=all&amp;ssl=1" data-lightbox="roadtrip" data-title="Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/nypost.com/wp-content/uploads/sites/2/2019/11/eddie-gallagher-index-1.jpg?quality=80&amp;strip=all&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdd7_exUOQTJ-vGU_rOPVYhDjMoj_KUKmB2g';" alt="Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Ordered That Disgraced Navy Seal Eddie Gallagher Keep His Trident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://taskandpurpose.com/app/uploads/2020/11/22212927-1.jpg" data-lightbox="roadtrip" data-title="Navy Seals Who Were Never Called To Testify In The War Crimes Trial Of Chief Petty Officer Eddie Gallagher Told Naval Criminal Investigators About Behavior They Witnessed Including The Alleged Stabbing Of">
+											<img class="card-img v-image ads-img " src="https://taskandpurpose.com/app/uploads/2020/11/22212927-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPM0ynAxoOhQQAusWmyoqYeRt4S_9PWLtgCg';" alt="Navy Seals Who Were Never Called To Testify In The War Crimes Trial Of Chief Petty Officer Eddie Gallagher Told Naval Criminal Investigators About Behavior They Witnessed Including The Alleged Stabbing Of">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Who Were Never Called To Testify In The War Crimes Trial Of Chief Petty Officer Eddie Gallagher Told Naval Criminal Investigators About Behavior They Witnessed Including The Alleged Stabbing Of</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static01.nyt.com/images/2019/12/29/universal/29theweekly-sandiego-edwardgallagher-where/29theweekly-sandiego-edwardgallagher-where-articleLarge.jpg?quality=75&amp;auto=webp&amp;disable=upscale" data-lightbox="roadtrip" data-title="The Weekly Confidential Videos Show Why Navy Seals Reported Edward Gallagher The New York Times Global Ideas Trust">
+											<img class="card-img v-image ads-img " src="https://static01.nyt.com/images/2019/12/29/universal/29theweekly-sandiego-edwardgallagher-where/29theweekly-sandiego-edwardgallagher-where-articleLarge.jpg?quality=75&amp;auto=webp&amp;disable=upscale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsxECSxQLtO8pdGeG7cJDMVNrutyyHxmmpw';" alt="The Weekly Confidential Videos Show Why Navy Seals Reported Edward Gallagher The New York Times Global Ideas Trust">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly Confidential Videos Show Why Navy Seals Reported Edward Gallagher The New York Times Global Ideas Trust</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cfm.yidio.com/images/tv/55368/1448740/episode-image-400x225.jpg" data-lightbox="roadtrip" data-title="Watch The Weekly Season 1 Episode 23 The Gallagher Effect Online Now">
+											<img class="card-img v-image ads-img " src="https://cfm.yidio.com/images/tv/55368/1448740/episode-image-400x225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwTkRZ9nTZsnjs3yeQS7_Y7T9nxMq-RAMBg';" alt="Watch The Weekly Season 1 Episode 23 The Gallagher Effect Online Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch The Weekly Season 1 Episode 23 The Gallagher Effect Online Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.dailymail.co.uk/1s/2019/12/27/14/22709632-7830351-image-m-7_1577455943047.jpg" data-lightbox="roadtrip" data-title="Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon">
+											<img class="card-img v-image ads-img " src="https://i.dailymail.co.uk/1s/2019/12/27/14/22709632-7830351-image-m-7_1577455943047.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pqREHrU_Vo5QnhNuHzi8vbNS83jU8VkhJw';" alt="Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-large-169.jpg" data-lightbox="roadtrip" data-title="Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/190330101135-02-eddie-gallagher-large-169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUBQ1h4nXXDb7m0OYqlTFk55mHQ5IxrGtlw';" alt="Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals Call Eddie Gallagher Evil And Toxic In Video Cnn Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.dailymail.co.uk/1s/2020/01/29/11/22709638-7939945-The_SEALs_described_their_platoon_leader_as_evil_toxic_and_perfe-a-58_1580296516625.jpg" data-lightbox="roadtrip" data-title="Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon Names Them All On Social Media Lipstick Alley">
+											<img class="card-img v-image ads-img " src="https://i.dailymail.co.uk/1s/2020/01/29/11/22709638-7939945-The_SEALs_described_their_platoon_leader_as_evil_toxic_and_perfe-a-58_1580296516625.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrGQXnA5_LmHtLK3xL3BQHUImzWCG_aY_cg';" alt="Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon Names Them All On Social Media Lipstick Alley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retired Navy Seal Eddie Gallagher Lashes Out At Coward Platoon Names Them All On Social Media Lipstick Alley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://press.hulu.com/wp-content/uploads/2020/03/121919_UHD-STILLS_22-scaled-1.jpg" data-lightbox="roadtrip" data-title="The Weekly Hulu Press">
+											<img class="card-img v-image ads-img " src="https://press.hulu.com/wp-content/uploads/2020/03/121919_UHD-STILLS_22-scaled-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ2Pw_aoj5er4EeO8bdG8Oc0pZ9tH7EEmafg';" alt="The Weekly Hulu Press">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Weekly Hulu Press</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2471839309737128&amp;get_thumbnail=1" data-lightbox="roadtrip" data-title="The Navy Seals Who Served Alongside Good Morning America">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2471839309737128&amp;get_thumbnail=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1re3nhBoikmgS-8FHoAWg02nCmM-GuojZw';" alt="The Navy Seals Who Served Alongside Good Morning America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Navy Seals Who Served Alongside Good Morning America</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-face-mask-rules.html">Navy Face Mask Rules</a></li>
+													<li class="list-group-item"><a href="/navy-face-mask-wholesale.html">Navy Face Mask Wholesale</a></li>
+													<li class="list-group-item"><a href="/navy-baseball-cap-leather-brim.html">Navy Baseball Cap Leather Brim</a></li>
+													<li class="list-group-item"><a href="/navy-phone-cases-for-iphone.html">Navy Phone Cases For Iphone</a></li>
+													<li class="list-group-item"><a href="/navy-base-in-san-diego-name.html">Navy Base In San Diego Name</a></li>
+													<li class="list-group-item"><a href="/navy-chiefs-wife-poem.html">Navy Chiefs Wife Poem</a></li>
+													<li class="list-group-item"><a href="/navy-baseball-cap-singapore.html">Navy Baseball Cap Singapore</a></li>
+													<li class="list-group-item"><a href="/navy-education-benefits-for-spouses.html">Navy Education Benefits For Spouses</a></li>
+													<li class="list-group-item"><a href="/navy-face-mask-australia-online.html">Navy Face Mask Australia Online</a></li>
+													<li class="list-group-item"><a href="/navy-couple-tattoos.html">Navy Couple Tattoos</a></li>
+													<li class="list-group-item"><a href="/navy-face-mask-ladies.html">Navy Face Mask Ladies</a></li>
+													<li class="list-group-item"><a href="/navy-housing-in-san-diego-ca.html">Navy Housing In San Diego Ca</a></li>
+													<li class="list-group-item"><a href="/navy-face-mask-reusable.html">Navy Face Mask Reusable</a></li>
+													<li class="list-group-item"><a href="/navy-face-mask-cotton.html">Navy Face Mask Cotton</a></li>
+													<li class="list-group-item"><a href="/navy-lodge-in-san-diego-california.html">Navy Lodge In San Diego California</a></li>
+													<li class="list-group-item"><a href="/navy-overseas-screening-for-spouses.html">Navy Overseas Screening For Spouses</a></li>
+													<li class="list-group-item"><a href="/navy-baseball-cap-womens.html">Navy Baseball Cap Womens</a></li>
+													<li class="list-group-item"><a href="/navy-license-plate-texas.html">Navy License Plate Texas</a></li>
+													<li class="list-group-item"><a href="/navy-baseball-cap-velcro.html">Navy Baseball Cap Velcro</a></li>
+													<li class="list-group-item"><a href="/navy-power-of-attorney.html">Navy Power Of Attorney</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

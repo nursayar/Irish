@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Dependents Dental Insurance - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Dependents Dental Insurance",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/e8/0e/51/e80e5167b91b2fa64eba488c8a764bce.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+dependents+dental+insurance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Dependents Dental Insurance</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Public Health Service Active Duty Dental Program. Tricare Dental Plan Benefits and Coverage The TRICARE dental plan is for dependents of active duty and guardreserve members and their dependents. Office of Personnel Management OPM sponsored enrollment portal that eligible participants use to enroll in the Federal Employees Dental and. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-helpline-number-punjab.html">army helpline number punjab</a>
+											<a class="badge badge-dark" href="/army-hr-manager.html">army hr manager</a>
+											<a class="badge badge-success" href="/army-heroes-quotes.html">army heroes quotes</a>
+											<a class="badge badge-danger" href="/army-childrens-education-advisory-service.html">army childrens education advisory service</a>
+											<a class="badge badge-secondary" href="/army-hat-looks.html">army hat looks</a>
+											<a class="badge badge-warning" href="/army-hrc-infantry-branch.html">army hrc infantry branch</a>
+											<a class="badge badge-info" href="/army-helpline-number-kashmir.html">army helpline number kashmir</a>
+											<a class="badge badge-info" href="/army-hats-meaning.html">army hats meaning</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our site provides you with hints for viewing the highest quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/3a/f6/603af6e56e638a21faceafcce8508e6d.jpg" data-lightbox="roadtrip" data-title="Top 5 Military Apps For Newbie Wives Army Wife Quotes Army Spouse Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/3a/f6/603af6e56e638a21faceafcce8508e6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wEUvJROkh_wb6QN_Rr31sCTT262h8eBHBQ';" alt="Top 5 Military Apps For Newbie Wives Army Wife Quotes Army Spouse Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Military Apps For Newbie Wives Army Wife Quotes Army Spouse Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/16/ac/9c/16ac9c255065a446fd72e71529e610b0.jpg" data-lightbox="roadtrip" data-title="Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/16/ac/9c/16ac9c255065a446fd72e71529e610b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmzBS90T9ZYukqEJqCx8bi8f50Hb9DBWfNA';" alt="Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/4b/9e/664b9e6a816339454666988a645d08a2.jpg" data-lightbox="roadtrip" data-title="Tell It Like It Is Talk Show How To Get A New Id Card When Everything Is Shut D In 2020 Business Card Design Inspiration Cards Dental And Vision Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/4b/9e/664b9e6a816339454666988a645d08a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGhPCHeknyMdZeAi4fgDhH9TS-QZSGeLkDMA';" alt="Tell It Like It Is Talk Show How To Get A New Id Card When Everything Is Shut D In 2020 Business Card Design Inspiration Cards Dental And Vision Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tell It Like It Is Talk Show How To Get A New Id Card When Everything Is Shut D In 2020 Business Card Design Inspiration Cards Dental And Vision Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/ad/14/e5ad141596aff791ab791c508a7e8f39.png" data-lightbox="roadtrip" data-title="Smile Doctor Braces Military Discount Invisalign Offer Proudly Serving The Military Community In 13 States Military Discounts Invisalign Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/ad/14/e5ad141596aff791ab791c508a7e8f39.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMECEc-bxfYa9fGK5EPtRHpjfGSheaazC5g';" alt="Smile Doctor Braces Military Discount Invisalign Offer Proudly Serving The Military Community In 13 States Military Discounts Invisalign Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Smile Doctor Braces Military Discount Invisalign Offer Proudly Serving The Military Community In 13 States Military Discounts Invisalign Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/8f/f9/8b8ff996bbb1ba6f714946984abdbbdd.jpg" data-lightbox="roadtrip" data-title="Servicemembers Group Life Insurance Sgli Group Life Insurance Army Values Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/8f/f9/8b8ff996bbb1ba6f714946984abdbbdd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_2KNsIrdWaTZhNRvnbSZhvdb8bPmYR-o8g';" alt="Servicemembers Group Life Insurance Sgli Group Life Insurance Army Values Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Servicemembers Group Life Insurance Sgli Group Life Insurance Army Values Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/a5/cd/36a5cd6f03a187cd5a5b6043fd9b9872.jpg" data-lightbox="roadtrip" data-title="Pin On Military Spouses Who Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/a5/cd/36a5cd6f03a187cd5a5b6043fd9b9872.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeaH58rHP38WOr4iO_2wrUI0s-FQIkV-KwA';" alt="Pin On Military Spouses Who Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Spouses Who Blog</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/16/ac/9c/16ac9c255065a446fd72e71529e610b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeaH58rHP38WOr4iO_2wrUI0s-FQIkV-KwA';" alt="Pin On Military Spouses Who Blog">
+										<div class="card-body">
+						<h3 class="h5"><b>Service Academies may be able to receive emergency dental care through the Active Duty Dental Program.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army dependents dental insurance</strong>. 
+								
+																	Dental care is free to active duty members and to members of the GuardReserve who are on active duty but not free to non-mobilized GuardReserve members or military dependents. 
+																	The dental benefit is administered by United Concordia and is available to eligible active duty family members eligible. 
+																	The TRICARE Dental Program TDP is a voluntary dental plan. 
+																	The rates for vision and retiree dental insurance will be increasing in 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once enrolled in the CF for 3 months members are eligible to join this voluntary premium free plan through their unit orderly room. 
+																	When Activated Called or ordered to active duty service for more than 30 days in a row. 
+																	Service Academy Emergency Dental Care Due to COVID-19 members of the US. 
+																	The Tricare Dental Plan TDP is a voluntary dental insurance program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enroll Now at milConnect. 
+																	Hope somebody knows more about this. 
+																	Over the past 20 years weve proudly served over 3 million military members and their families veterans and government employees. 
+																	In June 1987 the Treasury Board Secretariat of Canada approved the implementation of the Canadian Forces Dependants Dental Care Plan DDCP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Family member of an active duty service member. 
+																	Private-sector dental care to help ensure active duty service members are ready and fit to deploy. 
+																	I was wondering if this was true if this is true who will the dependents be insured with. 
+																	With more than 45 years of experience our expertise is why millions of people like you depend on us for their dental insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program applies to most active duty members most Guard and Reservist members and all of their family members and dependents. 
+																	United Concordia network dentists provide dental care for those referred by a military dental treatment facility DTF or live and work more than 50 miles from a DTF. 
+																	You can enroll if youre a. 
+																	Click here to access your TRICARE online account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tricare Select - Tricare. 
+																	Dependents for active duty families will need to select the Tricare Dental Plan which is a voluntary dental insurance program. 
+																	Dependents of Active Duty Members Active duty dependents members can enroll in one of the Prime plans listed above or they may qualify to use one of the following plans. 
+																	If you are enrolled in FEDVIP which is vision insurance for military dependents retirees and their families and dental insurance for retirees and their families you will have needed to decide if you were going to change plans or stick with what you have based on the new 2020 rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National GuardReserve Member who isnt on active duty or covered by the Transitional Assistance Management Program TAMP. 
+																	To enroll via phone you should call 844-653-4060 or 717-888-7400 you can. 
+																	Will the dependents still be able to get Dental Insurance through the military. 
+																	Family member of a National GuardReserve member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cannot enroll in the Tricare Dental program online if you are overseas you must either enroll via telephone or mail. 
+																	No matter what your familys situation is there should be a Tricare benefit that fits your dependents medical needs perfectly. 
+																	This program is administered by Delta Dental. 
+																	Thank you in advance for your answers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can purchase the TRICARE Dental Program. 
+																	The plan became effective on 1 October 1987 for all Regular Force and Reserve Force members on Class C service to provide dental coverage for their dependants. 
+																	Active Duty Family Members. 
+																	Medical and dental benefits Comprehensive medical and dental services available to Canadian Armed Forces CAF members under the Spectrum of Care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sponsors can enroll through the Beneficiary Web Enrollment website. 
+																	Can enroll in the TRICARE Dental Program at any time. 
+																	Covered by active duty dental benefits. 
+																	Active Duty Dental Program ADDP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2017 we were awarded the worlds largest voluntary dental contract by the Department of Defense to administer the TRICARE Dental Program. 
+																	If they have the room they can and will treat your dependents and provide all the same health care that you are eligible for including eye and dental - all at no cost. 
+																	Military retirees and their families as well as military dependents can now see what options they will have available to them for vision and dental insurance in 2021. 
+																	Click below to learn how to register your My Account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click below to enroll for TDP Dental Coverage Online through milConnect. 
+																	Hi I was told the Army was gonna get rid of United Concordia in 2012 because they are not that great of a Insurance. 
+																	Learn about My Account. 
+																	You have dental coverage through US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tricare Active Duty Dental Program Tricare Active. 
+																	Covered by active duty dental benefits. 
+																	Canadian Forces Dependants Dental Care Plan. 
+																	BENEFEDS is the government-authorized and the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a second way to get Dental and that is to enroll your CHAMPVA eligible but not Medicare dependents into the CITI program at your local VA hospclinic. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/f8/a1/1df8a16a8695f2c1d4c7d3b2158eaf3b.jpg" data-lightbox="roadtrip" data-title="Directorate Of Human Resources Fort George G Meade Md Business Card Design Inspiration Cards Dental And Vision Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/f8/a1/1df8a16a8695f2c1d4c7d3b2158eaf3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJEPgwW0Q-YeOPEEl-tIC2ravTtaighhPIQ';" alt="Directorate Of Human Resources Fort George G Meade Md Business Card Design Inspiration Cards Dental And Vision Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directorate Of Human Resources Fort George G Meade Md Business Card Design Inspiration Cards Dental And Vision Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/0e/51/e80e5167b91b2fa64eba488c8a764bce.jpg" data-lightbox="roadtrip" data-title="Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/0e/51/e80e5167b91b2fa64eba488c8a764bce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZvdHy-j2bXmV2pZ00nr-JxpLHAMv9cJQaA';" alt="Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/e4/71/2fe4710286ebf4dc52f3cbb91cfda71d.jpg" data-lightbox="roadtrip" data-title="Facebook Quote Graphics In 2020 Graphic Quotes Military Life Army Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/e4/71/2fe4710286ebf4dc52f3cbb91cfda71d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKytLfeeyH0xIekpxhcTfEnrZRjwTpGyC7pg';" alt="Facebook Quote Graphics In 2020 Graphic Quotes Military Life Army Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook Quote Graphics In 2020 Graphic Quotes Military Life Army Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/77/b3/fa77b3d364321eedc485ecc3228715fb.jpg" data-lightbox="roadtrip" data-title="Leaving The Military A Conversation About Retirement Military Wife Life Military Retirement Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/77/b3/fa77b3d364321eedc485ecc3228715fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMIb2wZpbPTF-DSoKw6yhrMvzVwZAyZFrSQ';" alt="Leaving The Military A Conversation About Retirement Military Wife Life Military Retirement Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leaving The Military A Conversation About Retirement Military Wife Life Military Retirement Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/df/60/da/df60da31be60ecb9f7498beac7ef8cc3.jpg" data-lightbox="roadtrip" data-title="Internationalmensday You Sacrifice Your Life For The Family To Bring A Smile On Their Faces Like W Health Insurance Mother Health International Men S Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/df/60/da/df60da31be60ecb9f7498beac7ef8cc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXfYycJh9BemI-BKcHLeS1d-7_esyupzdGMQ';" alt="Internationalmensday You Sacrifice Your Life For The Family To Bring A Smile On Their Faces Like W Health Insurance Mother Health International Men S Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Internationalmensday You Sacrifice Your Life For The Family To Bring A Smile On Their Faces Like W Health Insurance Mother Health International Men S Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/96/52/be/9652be19d2636ced3edeac1a1ddad814.jpg" data-lightbox="roadtrip" data-title="Https Creeksidedds Com Dental Implants The Use Of Dental Implants To Restore The Loss Of Teeth Has Increased O Dental Implants Dental Implant Surgery Dental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/96/52/be/9652be19d2636ced3edeac1a1ddad814.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaiWHHHy0q21InKN7x0AvpgjlTjRcpdC_ntw';" alt="Https Creeksidedds Com Dental Implants The Use Of Dental Implants To Restore The Loss Of Teeth Has Increased O Dental Implants Dental Implant Surgery Dental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Creeksidedds Com Dental Implants The Use Of Dental Implants To Restore The Loss Of Teeth Has Increased O Dental Implants Dental Implant Surgery Dental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/11/6d/09116d1614b18f80fade9b49905ec752.png" data-lightbox="roadtrip" data-title="How I M Preparing For 3 Big Transitions This Fall Tips From A Mom Of 3 Littles Read Now Life Insurance Policy Military Family Term Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/11/6d/09116d1614b18f80fade9b49905ec752.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ07i-lW28om5sv-QTFE56-AXTogiW7O5QSQ';" alt="How I M Preparing For 3 Big Transitions This Fall Tips From A Mom Of 3 Littles Read Now Life Insurance Policy Military Family Term Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How I M Preparing For 3 Big Transitions This Fall Tips From A Mom Of 3 Littles Read Now Life Insurance Policy Military Family Term Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8c/c6/2f/8cc62ff4bb85ff2296a37333b1c8bc89.jpg" data-lightbox="roadtrip" data-title="Those Who Join The Military And Dependent Children And Spouses Where Applicable Will Have Health Care Insurance Medical Services Sensory Integration Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8c/c6/2f/8cc62ff4bb85ff2296a37333b1c8bc89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAXMDF3oQnHJ08SqyuasmWSCN-85-NMbwNdw';" alt="Those Who Join The Military And Dependent Children And Spouses Where Applicable Will Have Health Care Insurance Medical Services Sensory Integration Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Those Who Join The Military And Dependent Children And Spouses Where Applicable Will Have Health Care Insurance Medical Services Sensory Integration Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/eb/58/47eb5802444f6104b69fa0f8f85a1333.png" data-lightbox="roadtrip" data-title="Dd Form 2792 Family Member Medical Summary Is Department Of Defense Issued Form Used For Enrollment In The Efmp And For Recordin Medical Efmp Medical Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/eb/58/47eb5802444f6104b69fa0f8f85a1333.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7YHV-U1gHqDLpIE_7_8hSN8raA1gTTYcaw';" alt="Dd Form 2792 Family Member Medical Summary Is Department Of Defense Issued Form Used For Enrollment In The Efmp And For Recordin Medical Efmp Medical Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dd Form 2792 Family Member Medical Summary Is Department Of Defense Issued Form Used For Enrollment In The Efmp And For Recordin Medical Efmp Medical Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/3e/69/9b3e696fac4dbef7c9e7d4d2b71f1736.png" data-lightbox="roadtrip" data-title="Contemporary Issues Geography Image Intensive Usaf Complete Aircraft Fleet Usaf Air Force Us Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/3e/69/9b3e696fac4dbef7c9e7d4d2b71f1736.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd1PqfkEUmkUcphrdLZQ2fGkZLuycWkH_3Zw';" alt="Contemporary Issues Geography Image Intensive Usaf Complete Aircraft Fleet Usaf Air Force Us Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contemporary Issues Geography Image Intensive Usaf Complete Aircraft Fleet Usaf Air Force Us Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/34/af/1434af6d9bb7f60b0e14d064792bba3e.jpg" data-lightbox="roadtrip" data-title="Dental Clinic In Old Dental Building The University Of Iowa 1900s The University Of Iowa Photography 20th Century Dental Clinic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/34/af/1434af6d9bb7f60b0e14d064792bba3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwDOLiK7eac4YzZXIcBkjB3mEwqQEJQO3t5w';" alt="Dental Clinic In Old Dental Building The University Of Iowa 1900s The University Of Iowa Photography 20th Century Dental Clinic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dental Clinic In Old Dental Building The University Of Iowa 1900s The University Of Iowa Photography 20th Century Dental Clinic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/20/9d/6b209d267c5bfa2784cc76dc0457dfd0.png" data-lightbox="roadtrip" data-title="2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/20/9d/6b209d267c5bfa2784cc76dc0457dfd0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMdVjJaR-jDvgShnVXN-aNZ-3IE1fYmSWLQ';" alt="2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Usaa Military Pay Deposit Dates With Printables Katehorrell In 2020 Military Spouse Blog Military Pay Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/13/85/15/1385150097f23bc9906bbbd1f9c260ad.jpg" data-lightbox="roadtrip" data-title="Pin On Mn Veterans Home Hastings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/13/85/15/1385150097f23bc9906bbbd1f9c260ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3mCLEhg-4nFHsEST9Un4SFoyKRUeR2owZw';" alt="Pin On Mn Veterans Home Hastings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mn Veterans Home Hastings</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-uk-monthly-unique-users.html">Msn Uk Monthly Unique Users</a></li>
+													<li class="list-group-item"><a href="/msn-news-usa-video.html">Msn News Usa Video</a></li>
+													<li class="list-group-item"><a href="/msn-uk-money-stock-charts.html">Msn Uk Money Stock Charts</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-page.html">Msn Uk News Page</a></li>
+													<li class="list-group-item"><a href="/msn-uk-homepage-not-responding.html">Msn Uk Homepage Not Responding</a></li>
+													<li class="list-group-item"><a href="/msn-uk-cars.html">Msn Uk Cars</a></li>
+													<li class="list-group-item"><a href="/msn-uk-media-pack.html">Msn Uk Media Pack</a></li>
+													<li class="list-group-item"><a href="/msn-uk-email-login.html">Msn Uk Email Login</a></li>
+													<li class="list-group-item"><a href="/msn-us-a.html">Msn Us A</a></li>
+													<li class="list-group-item"><a href="/msn-uk-lifestyle.html">Msn Uk Lifestyle</a></li>
+													<li class="list-group-item"><a href="/msn-uk-latest-news.html">Msn Uk Latest News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-gov.html">Msn Uk Gov</a></li>
+													<li class="list-group-item"><a href="/msn-uk-horoscope.html">Msn Uk Horoscope</a></li>
+													<li class="list-group-item"><a href="/msn-uk-weather-10-day-forecast.html">Msn Uk Weather 10 Day Forecast</a></li>
+													<li class="list-group-item"><a href="/msn-uk-latest-news-weather-hotmail-sign-in.html">Msn Uk Latest News Weather Hotmail Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-uk-brexit.html">Msn Uk Brexit</a></li>
+													<li class="list-group-item"><a href="/msn-us-food.html">Msn Us Food</a></li>
+													<li class="list-group-item"><a href="/msn-us-income-tax.html">Msn Us Income Tax</a></li>
+													<li class="list-group-item"><a href="/msn-us-corona.html">Msn Us Corona</a></li>
+													<li class="list-group-item"><a href="/msn-uk-breaking-news.html">Msn Uk Breaking News</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

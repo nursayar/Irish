@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Chelsea Vs Man United Youtube Highlight - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Chelsea Vs Man United Youtube Highlight",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/78/61/17/786117c3fdac50266e84e97fb74d38f0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=chelsea+vs+man+united+youtube+highlight",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Chelsea Vs Man United Youtube Highlight</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Olivier Giroud Mason Mount and a Harry Maguire own-goal did for the Red Devils. Manchester United vs Chelsea highlights and reaction after Man Utd suffer 3-1 FA Cup defeat. Preview and stats followed by live commentary video highlights and match report. <br>				
+			</p>
+										<a class="badge badge-light" href="/capita-army-recruitment-contact-number.html">capita army recruitment contact number</a>
+											<a class="badge badge-primary" href="/campus-portal-trumbull.html">campus portal trumbull</a>
+											<a class="badge badge-warning" href="/capital-one-scra-benefits-phone-number.html">capital one scra benefits phone number</a>
+											<a class="badge badge-danger" href="/can-military-spouses-go-to-college-for-free.html">can military spouses go to college for free</a>
+											<a class="badge badge-success" href="/can-a-military-spouse-keep-tricare-after-divorce.html">can a military spouse keep tricare after divorce</a>
+											<a class="badge badge-secondary" href="/can-military-dependents-travel-to-germany.html">can military dependents travel to germany</a>
+											<a class="badge badge-danger" href="/can-you-look-up-death-certificates-online.html">can you look up death certificates online</a>
+											<a class="badge badge-dark" href="/can-civilians-buy-hk416.html">can civilians buy hk416</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our website gives you hints for seeing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/69/46/0b694650016f0d02040ae54707842b6a.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 4 0 All Goals Extended Highlights Pre Chelsea Premier League Chelsea Vs Tottenham">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/69/46/0b694650016f0d02040ae54707842b6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhw1ilRl5xuqSGLO9Ly6WRCZdphufstKbVg';" alt="Chelsea Vs Manchester United 4 0 All Goals Extended Highlights Pre Chelsea Premier League Chelsea Vs Tottenham">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 4 0 All Goals Extended Highlights Pre Chelsea Premier League Chelsea Vs Tottenham</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d6/87/18/d68718d1266ac03e89b8717045c665d6.jpg" data-lightbox="roadtrip" data-title="Manchester United 6 5 Chelsea 2008 Champions League Final All Goals Highlights Fhd 1080p Youtube Champions League Final Manchester United Ronaldo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d6/87/18/d68718d1266ac03e89b8717045c665d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA_y2-ALjD0MqKqJQMvCg98m17uDAmw3mRw';" alt="Manchester United 6 5 Chelsea 2008 Champions League Final All Goals Highlights Fhd 1080p Youtube Champions League Final Manchester United Ronaldo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manchester United 6 5 Chelsea 2008 Champions League Final All Goals Highlights Fhd 1080p Youtube Champions League Final Manchester United Ronaldo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/72/76/53727637d8890d82636b18180f0bb6a7.jpg" data-lightbox="roadtrip" data-title="Psg Vs Manchester United 1 3 All Goals Extended Highlights 2019 Hd Manchester United Football Gif Psg">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/72/76/53727637d8890d82636b18180f0bb6a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6SXPGR2WVDFb3y4LEod7zNg_8KbMWYXIilQ';" alt="Psg Vs Manchester United 1 3 All Goals Extended Highlights 2019 Hd Manchester United Football Gif Psg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Psg Vs Manchester United 1 3 All Goals Extended Highlights 2019 Hd Manchester United Football Gif Psg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/61/17/786117c3fdac50266e84e97fb74d38f0.jpg" data-lightbox="roadtrip" data-title="Barcelona Vs Manchester United 3 0 Full Match Hightlight Youtube Live Matches Man United Barcelona Vs Manchester United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/61/17/786117c3fdac50266e84e97fb74d38f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZC-Ta9JoCUGt37xXpMHvsY0AznP05Ra9iw';" alt="Barcelona Vs Manchester United 3 0 Full Match Hightlight Youtube Live Matches Man United Barcelona Vs Manchester United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barcelona Vs Manchester United 3 0 Full Match Hightlight Youtube Live Matches Man United Barcelona Vs Manchester United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/54/50/495450d2d221645cadb6b10f4a25ccc3.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 1 6 Highlights Goals Resumen Goles Last Matches 2020 Hd Premier League Season 2019 20 High Definition By Match Of The D">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/54/50/495450d2d221645cadb6b10f4a25ccc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp0ZzMHx89IDej3x6P-Rk9WocFVA0tKxpxfA';" alt="Chelsea Vs Manchester United 1 6 Highlights Goals Resumen Goles Last Matches 2020 Hd Premier League Season 2019 20 High Definition By Match Of The D">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 1 6 Highlights Goals Resumen Goles Last Matches 2020 Hd Premier League Season 2019 20 High Definition By Match Of The D</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/d8/76/77d876eedc17cf95e590352ccbc3349f.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 1 1 All Goals Highlights Premier League 07 02 2016 Hd Manchester United App Development Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/d8/76/77d876eedc17cf95e590352ccbc3349f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8e0iQpKA8QuWVhbXSt3Z1ecXXTotJJ33mCA';" alt="Chelsea Vs Manchester United 1 1 All Goals Highlights Premier League 07 02 2016 Hd Manchester United App Development Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 1 1 All Goals Highlights Premier League 07 02 2016 Hd Manchester United App Development Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/77/d8/76/77d876eedc17cf95e590352ccbc3349f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8e0iQpKA8QuWVhbXSt3Z1ecXXTotJJ33mCA';" alt="Chelsea Vs Manchester United 1 1 All Goals Highlights Premier League 07 02 2016 Hd Manchester United App Development Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>Manchester United vs Chelsea.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Chelsea vs man united youtube highlight</strong>. 
+								
+																	The FA Cup Semi-Final. 
+																	Chelsea 3-3 Man Utd 1722019 CC. 
+																	Frank Lampard thrashed on PL managerial debut. 
+																	Subscribe to Manchester United on YouTube at httpbitlyManU_YTSee all the highlights from Uniteds 1-1 draw with Chelsea in the Premier League at Old Tra. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chelsea U23 6-1 Manchester United U23 highlights and reaction as Hugill nets consolation goal in heavy defeat. 
+																	600pm Sunday 19th July 2020. 
+																	A pair of headers from Anthony Martial and Harry Maguire lifted Manchester United to a controversial win over Chelsea who had two goals ruled out after VAR. 
+																	In what is ought to be a competitive top-of-the-table clash Casey Stoneys Reds travel south to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our 202021 home away and third kits are available to buy now from United. 
+																	Ole Gunnar Solskjaer and Frank Lampard met for a fourth time this season as Man Utd were knocked out of. 
+																	Go Ask Your Mother. 
+																	Watch the highlights from Chelseas Carabao Cup match against Manchester UnitedMichyBatshuayi ChelseaManUnited ChelseaFC Download Chelsea FCs official m. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0230 Schmeichel on De Geas journey to the top 1692019 CC AD. 
+																	Chelsea stun Man United as De Gea howler helps set up FA Cup final with Arsenal. 
+																	Enjoy the best of the action as goals from Anthony Martial and Harry Maguire saw the Reds run out 2-0 winners over Chelsea at Stamford BridgeSubscribe to Ma. 
+																	Highlights from our Premier League match v Manchester United at Stamford BridgeChelseaHighlights ManchesterUnitedHighlights PremierLeagueHighlights Downl. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Matas volley versus Man Utd 0452020 CC AD. 
+																	Manchester United 4-0 Chelsea. 
+																	Manchester United U23s were beaten by Chelsea U23 in Premier League 2 Division 1. 
+																	0035 Goal of the day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manchester United 1-3 Chelsea. 
+																	Gianfranco Zola reveals his career highlights. 
+																	Watch the highlights from Chelseas FA Cup semi-final clash against Manchester UnitedDownload Chelsea FCs official mobile app-App Store httpsappleco2. 
+																	Report and highlights as Marcus Rashford Anthony Martial and Daniel James find the target in impressive opening-day win. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Match of the Day Top 10. 
+																	A parenting podcast with style. 
+																	11 View Full Table Goals. 
+																	Chelsea last faced Man Utd in the League Cup in a fourth-round tie in October 2012 winning a 5-4 thriller in extra-time with eight different players scoring on that day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chelsea vs Manchester United 3 1 Highlights Goals. 
+																	Shorter highlights and post-match interviews with Ole Gunnar Solskjaer David De Gea and Luke Shaw are available below. 
+																	The FA Cup known officially as The Football Association Challenge Cup is an annual knockout football competition in mens domestic English football. 
+																	Premier League match Man Utd vs Chelsea 24102020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Man Utd hold Chelsea from three down 20102020 CC AD. 
+																	Manchester United Women face reigning champions Chelsea in the Womens Super League on Sunday. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/14/99/1e1499aa135a1b6b225262efac2f850d.png" data-lightbox="roadtrip" data-title="Chelsea V Man United Highlights 2 17 2020 In 2020 Premier League Highlights Manchester United Football Club Manchester United Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/14/99/1e1499aa135a1b6b225262efac2f850d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ZDx4cN0kPXFv_9z82g-oLGK_C1_bVPs1xA';" alt="Chelsea V Man United Highlights 2 17 2020 In 2020 Premier League Highlights Manchester United Football Club Manchester United Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea V Man United Highlights 2 17 2020 In 2020 Premier League Highlights Manchester United Football Club Manchester United Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/2b/41/722b41172e4ef9457eb7c18e454937fd.jpg" data-lightbox="roadtrip" data-title="Manchester United Vs Chelsea 2 0 All Goals Extended Highlights 16 04">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/2b/41/722b41172e4ef9457eb7c18e454937fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKodVR0ZAfriFQu2-d_E56ygpyDCXfMHGfww';" alt="Manchester United Vs Chelsea 2 0 All Goals Extended Highlights 16 04">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manchester United Vs Chelsea 2 0 All Goals Extended Highlights 16 04</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/13/a2/3913a283bfe78605911b3add02ffc02f.jpg" data-lightbox="roadtrip" data-title="Pin On Football Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/13/a2/3913a283bfe78605911b3add02ffc02f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoRQyZLS9Uv9Y5yf3RhizFcRPugRcDESl4uA';" alt="Pin On Football Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Football Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/c1/a3/e4c1a368f79b02acc6dc3ac011812e91.png" data-lightbox="roadtrip" data-title="Pin On Liverpool Fc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/c1/a3/e4c1a368f79b02acc6dc3ac011812e91.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJqybwE8DBctL0xEl1hxEOcBrNzsb9ZsgzHw';" alt="Pin On Liverpool Fc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Liverpool Fc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/b8/40/03b8407e4fd702afb25c825819a58cdd.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 1 1 All Goals Highlights 07 02 2016 Hd Manchester United Manchester The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/b8/40/03b8407e4fd702afb25c825819a58cdd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9hpci98vGLXm6OP0vP4n1qjH_9KtH4LFaww';" alt="Chelsea Vs Manchester United 1 1 All Goals Highlights 07 02 2016 Hd Manchester United Manchester The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 1 1 All Goals Highlights 07 02 2016 Hd Manchester United Manchester The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/06/66/42/0666422e590af01ad6722ea70212735b.jpg" data-lightbox="roadtrip" data-title="Manchester United Vs Chelsea 4 0 Highlights Goals Epl 2019 Manchester United Manchester Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/06/66/42/0666422e590af01ad6722ea70212735b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDz5Baa3cW22w3TdmA1eSu-flZ_Qny5Rbg-g';" alt="Manchester United Vs Chelsea 4 0 Highlights Goals Epl 2019 Manchester United Manchester Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manchester United Vs Chelsea 4 0 Highlights Goals Epl 2019 Manchester United Manchester Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fd/55/2d/fd552d87ff51f6ec2300a1198ffbd434.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 2 2 Highlight Goals 2o18 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fd/55/2d/fd552d87ff51f6ec2300a1198ffbd434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mS63ZyTsebP-dhzDR_zKTpUIkuIjh8dN8A';" alt="Chelsea Vs Manchester United 2 2 Highlight Goals 2o18 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 2 2 Highlight Goals 2o18 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/6b/d5/f26bd5f8c7422948c406810620977da4.jpg" data-lightbox="roadtrip" data-title="Chelsea 1 2 Manchester United A Special Goal From Michy Batshuayi Carabao Cup Highlights Https Www Youtube Com Watc Manchester United Chelsea Manchester">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/6b/d5/f26bd5f8c7422948c406810620977da4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimrPA3nkN4Ef8A17L6vc_zqHEaB1k_BcULA';" alt="Chelsea 1 2 Manchester United A Special Goal From Michy Batshuayi Carabao Cup Highlights Https Www Youtube Com Watc Manchester United Chelsea Manchester">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea 1 2 Manchester United A Special Goal From Michy Batshuayi Carabao Cup Highlights Https Www Youtube Com Watc Manchester United Chelsea Manchester</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/27/fb/ca27fbfc315e9e109e8bc717a7d64d16.jpg" data-lightbox="roadtrip" data-title="Istanbul Basaksehir Vs Manchester United Istanbulbasaksehir Manchesterunited Match Highlights 20 2 Football Highlight Manchester United Match Highlights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/27/fb/ca27fbfc315e9e109e8bc717a7d64d16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxF6o5FCNy84jfB-8p0K-YYFqBHOuL23nP3A';" alt="Istanbul Basaksehir Vs Manchester United Istanbulbasaksehir Manchesterunited Match Highlights 20 2 Football Highlight Manchester United Match Highlights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Istanbul Basaksehir Vs Manchester United Istanbulbasaksehir Manchesterunited Match Highlights 20 2 Football Highlight Manchester United Match Highlights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/1e/36/4f1e3629e2a43f555153c9ae80242b34.jpg" data-lightbox="roadtrip" data-title="Liverpool Vs Manchester United 0 0 Highlights Full Match Liverpool V Liverpool Vs Manchester United Liverpool Full Match">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/1e/36/4f1e3629e2a43f555153c9ae80242b34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCfpgv28ye2tysk8aFDq0n3QJXB_VZbOsbQ';" alt="Liverpool Vs Manchester United 0 0 Highlights Full Match Liverpool V Liverpool Vs Manchester United Liverpool Full Match">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liverpool Vs Manchester United 0 0 Highlights Full Match Liverpool V Liverpool Vs Manchester United Liverpool Full Match</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/32/82/a1/3282a14e730e29230a9d5cea96cc1976.jpg" data-lightbox="roadtrip" data-title="Pin On Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/32/82/a1/3282a14e730e29230a9d5cea96cc1976.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJLlNBwteMPeqoUSjoanex6R5C8lDgXSpQ0Q';" alt="Pin On Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ce/35/56/ce35564bad877182f95d5aff04ca47f9.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Brighton 3 0 Full Match Highlight And Stats Dopearena">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ce/35/56/ce35564bad877182f95d5aff04ca47f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBIdJHe52_L6IxIFikjJVFtTxPE1KM1T7Og';" alt="Chelsea Vs Brighton 3 0 Full Match Highlight And Stats Dopearena">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Brighton 3 0 Full Match Highlight And Stats Dopearena</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/18/a7/cb18a76b46f03e7a8753a926bc89ed74.jpg" data-lightbox="roadtrip" data-title="Chelsea Vs Manchester United 1 0 Bpl 2017 18 Superhighlights Manchester United Chelsea Football Club Chelsea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/18/a7/cb18a76b46f03e7a8753a926bc89ed74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNH8WkyE4KUJFeM3UgPTIeMQuDxyhY6H4Lw';" alt="Chelsea Vs Manchester United 1 0 Bpl 2017 18 Superhighlights Manchester United Chelsea Football Club Chelsea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Vs Manchester United 1 0 Bpl 2017 18 Superhighlights Manchester United Chelsea Football Club Chelsea</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-benefits-vs-army-benefits.html">Air Force Benefits Vs Army Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-aircraft-cost-per-flying-hour.html">Air Force Aircraft Cost Per Flying Hour</a></li>
+													<li class="list-group-item"><a href="/air-force-commissioning-programs-prior-enlisted.html">Air Force Commissioning Programs Prior Enlisted</a></li>
+													<li class="list-group-item"><a href="/42a-job-in-army.html">42a Job In Army</a></li>
+													<li class="list-group-item"><a href="/24-hour-vs-military-time-garmin.html">24 Hour Vs Military Time Garmin</a></li>
+													<li class="list-group-item"><a href="/42a-reclass-requirements.html">42a Reclass Requirements</a></li>
+													<li class="list-group-item"><a href="/24-hour-military-time-sundial.html">24 Hour Military Time Sundial</a></li>
+													<li class="list-group-item"><a href="/100-percent-scholarship-for-mba-in-usa.html">100 Percent Scholarship For Mba In Usa</a></li>
+													<li class="list-group-item"><a href="/air-force-charms-for-bracelet.html">Air Force Charms For Bracelet</a></li>
+													<li class="list-group-item"><a href="/air-force-crossfit-wod.html">Air Force Crossfit Wod</a></li>
+													<li class="list-group-item"><a href="/air-force-college-scholarship-program.html">Air Force College Scholarship Program</a></li>
+													<li class="list-group-item"><a href="/air-force-commissioning-programs-for-enlisted.html">Air Force Commissioning Programs For Enlisted</a></li>
+													<li class="list-group-item"><a href="/a-navy-seal-training.html">A Navy Seal Training</a></li>
+													<li class="list-group-item"><a href="/42a-mos-promotion-points.html">42a Mos Promotion Points</a></li>
+													<li class="list-group-item"><a href="/air-force-1-my-hero-academia.html">Air Force 1 My Hero Academia</a></li>
+													<li class="list-group-item"><a href="/24-hour-military-time-format.html">24 Hour Military Time Format</a></li>
+													<li class="list-group-item"><a href="/advantages-and-disadvantages-of-being-a-military-nurse.html">Advantages And Disadvantages Of Being A Military Nurse</a></li>
+													<li class="list-group-item"><a href="/air-force-enlisted-aide-program.html">Air Force Enlisted Aide Program</a></li>
+													<li class="list-group-item"><a href="/air-force-chrome-car-emblem.html">Air Force Chrome Car Emblem</a></li>
+													<li class="list-group-item"><a href="/air-force-benefits-fact-sheet-2020-pdf.html">Air Force Benefits Fact Sheet 2020 Pdf</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

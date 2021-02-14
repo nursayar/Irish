@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>If My Son Is In The Military Can I Get Usaa Insurance - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "If My Son Is In The Military Can I Get Usaa Insurance",
+  "datePublished": "2021-02-14",
+  "image": "https://www.veteransautoinsurance.com/wp-content/uploads/USAA-Front-page.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=if+my+son+is+in+the+military+can+i+get+usaa+insurance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>If My Son Is In The Military Can I Get Usaa Insurance</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However if your father joined USAA and had an insurance account with them then you are eligible to join whether hes deceased or alive. Military and their eligible family members. I just confirmed that yes your son is eligible. <br>				
+			</p>
+										<a class="badge badge-primary" href="/air-force-jobs-that-rarely-deploy.html">air force jobs that rarely deploy</a>
+											<a class="badge badge-warning" href="/air-force-pay-and-benefits-calculator.html">air force pay and benefits calculator</a>
+											<a class="badge badge-success" href="/air-force-rapid-capabilities-office.html">air force rapid capabilities office</a>
+											<a class="badge badge-info" href="/air-force-patike-hrvatska.html">air force patike hrvatska</a>
+											<a class="badge badge-danger" href="/air-force-jobs-that-dont-deploy-often.html">air force jobs that dont deploy often</a>
+											<a class="badge badge-danger" href="/air-force-officer-salary-and-benefits.html">air force officer salary and benefits</a>
+											<a class="badge badge-dark" href="/air-force-programs-enlisted-to-officer.html">air force programs enlisted to officer</a>
+											<a class="badge badge-warning" href="/air-force-jrotc-cadet-creed.html">air force jrotc cadet creed</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usaa.i.lithium.com/t5/image/serverpage/image-id/8750iC739EF4D03818DDC?v=1.0" data-lightbox="roadtrip" data-title="Usaa Membership Eligibility For Family Members Usaa Community 176724">
+											<img class="card-img v-image ads-img " src="https://usaa.i.lithium.com/t5/image/serverpage/image-id/8750iC739EF4D03818DDC?v=1.0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeP-bgIZQWCz6sPbiNSj6LwrY1Ygy7U8Y-Dg';" alt="Usaa Membership Eligibility For Family Members Usaa Community 176724">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Membership Eligibility For Family Members Usaa Community 176724</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://debtfreegeek.org/wp-content/uploads/2017/09/usaa.jpg" data-lightbox="roadtrip" data-title="How To Become A Usaa Member Even If You Aren T In The Military Debt Free Geek">
+											<img class="card-img v-image ads-img " src="http://debtfreegeek.org/wp-content/uploads/2017/09/usaa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvjh71HFvmE62YZMu6OoWNinCLL5-a8yn5Tw';" alt="How To Become A Usaa Member Even If You Aren T In The Military Debt Free Geek">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Usaa Member Even If You Aren T In The Military Debt Free Geek</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/v1/military-car-insurance-rates_mpgkuz" data-lightbox="roadtrip" data-title="Best Car Insurance Companies For Veterans And Military Families Valuepenguin">
+											<img class="card-img v-image ads-img " src="http://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/v1/military-car-insurance-rates_mpgkuz" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYl5fqyV2j7wNf9Ztb4j51-6kWKy6fBTi5w';" alt="Best Car Insurance Companies For Veterans And Military Families Valuepenguin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Car Insurance Companies For Veterans And Military Families Valuepenguin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="yzOqBrkLvZ9koM" data-lightbox="roadtrip" data-title="Https Clearsurance Com Blog Am I Eligible For Usaa Insurance">
+											<img class="card-img v-image ads-img " src="yzOqBrkLvZ9koM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_-0cFLRj3IOnTGC4P2zJRZRN9anBqvZQDA';" alt="Https Clearsurance Com Blog Am I Eligible For Usaa Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Clearsurance Com Blog Am I Eligible For Usaa Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/05/usaa-bank-military-benefits.jpg" data-lightbox="roadtrip" data-title="Usaa Bank Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/05/usaa-bank-military-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdlBLt86XNJAMyljJM6jyIMW_9d1b2CzQIQ';" alt="Usaa Bank Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Bank Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ad/e7/7c/ade77cd276cebd85826b9e3b636188d3.jpg" data-lightbox="roadtrip" data-title="Pin On Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ad/e7/7c/ade77cd276cebd85826b9e3b636188d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm8b4jrE-W9vWhoRWOr1uVATG6mghFPP8hQ';" alt="Pin On Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Love</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a7/2e/40/a72e40bbed955db1d8d65a4ace5a0a2a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm8b4jrE-W9vWhoRWOr1uVATG6mghFPP8hQ';" alt="Pin On Love">
+										<div class="card-body">
+						<h3 class="h5"><b>If you dont qualify or want to look at other options be sure to check out our guide to the Best and Worst Auto Insurance Companies.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>If my son is in the military can i get usaa insurance</strong>. 
+								
+																	Ava Lynch Feb 16 2018 USAA membership extends to spouses children and possibly parents. 
+																	If a child is a full-time college student they can still receive Tricare until age 23. 
+																	Final Word on Who Is Eligible for USAA Insurance. 
+																	When Ive spoken about insurance rates to agents I usually get a pretty stock answer about USAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have to be a child or spouse of the military personnel. 
+																	If youre an active member of the military former member of the military eligible family member of someone in the military or a cadet or midshipmen then you may qualify for USAA insurance. 
+																	If you are a Level 1 USAA Member your children and spouse are not eligible to become a USAA member. 
+																	But you can just get your cars listed in your sons name and pay your share of the insurance your choice in the end. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You dont have to be an officer you can be career retired. 
+																	Once you become a Level 2 USAA Member your children and spouse are now eligible to become a USAA member. 
+																	Of course you want them to sign up only if they can get better insurance rates than they currently receive. 
+																	Are you willing to marry your son in order to qualify for USAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Who is an eligible family member. 
+																	USAA Mobile gives you immediate and secure account access from your mobile device. 
+																	The parent has to get an account with USAA in order for the child to have full membership. 
+																	Here is what you need to know about USAA eligibility for family members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USAA auto insurance does a good job serving the members of our nations military and their family members. 
+																	Generally USAA membership is open to active retired and separated veterans with a discharge type of Honorable from the US. 
+																	Assuming your child who is married to your son-in-law is on the membership as well you may be able to qualify. 
+																	From what Ive seen chances are good that they can get better rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can add your son under your profilefamily members this option can be found in your personal profile or have your son call new member solutions at 800-365-USAA or 800-365-8722. 
+																	However only certain people will qualify for USAA insurance including active duty military and veterans as well as their immediate family. 
+																	In a sense USAA is like the Mafia. 
+																	Another key point is that military status and history no longer matter once you gain Level 2 USAA Membership. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once youre in youre in. 
+																	Most types of USAA insurance with the exception of life insurance are only available to people with a strong connection to the military. 
+																	Manage your finances investments insurance and much moreall from one convenient app. 
+																	USAA offers some of the best prices on car insurance in the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Determine your connection to the military. 
+																	If your father is deceased but never established his membership then you cannot join. 
+																	Most military benefits for non-disabled adult children end at age 21 -- and all of them disappear by age 27. 
+																	Favorite Answer If you or your spouse or a parent is active or retired career military or a police officer you qualify for USAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You qualify if your parents are USAA members for example regardless of whether or not youve ever served. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/3f/7c/ee3f7cfb8a7e0d7750fbf038d083d5eb.jpg" data-lightbox="roadtrip" data-title="Usaa Insurance Customer Service Support Phone Number Credit Card Approval Best Auto Insurance Companies American Family Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/3f/7c/ee3f7cfb8a7e0d7750fbf038d083d5eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7W1pAXm6dAvXNJjgHLDQ5IEi0LfyPNrU05Q';" alt="Usaa Insurance Customer Service Support Phone Number Credit Card Approval Best Auto Insurance Companies American Family Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Insurance Customer Service Support Phone Number Credit Card Approval Best Auto Insurance Companies American Family Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteransautoinsurance.com/wp-content/uploads/USAA-Front-page.jpg" data-lightbox="roadtrip" data-title="Usaa Auto Insurance Review Veterans Guide Veteransautoinsurance Com">
+											<img class="card-img v-image ads-img " src="https://www.veteransautoinsurance.com/wp-content/uploads/USAA-Front-page.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCFwZEaCRaZg7PeuxqQXiqYNOqD4wT54d_w';" alt="Usaa Auto Insurance Review Veterans Guide Veteransautoinsurance Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Auto Insurance Review Veterans Guide Veteransautoinsurance Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.investopedia.com/thmb/c77gu-MKnFqspVumt3nqB8c5NIE=/827x827/smart/filters:no_upscale()/usaa-dcc9d47f062c478fa2035ddb3b720e4a.png" data-lightbox="roadtrip" data-title="Best Military Car Insurance Of February 2021">
+											<img class="card-img v-image ads-img " src="https://www.investopedia.com/thmb/c77gu-MKnFqspVumt3nqB8c5NIE=/827x827/smart/filters:no_upscale()/usaa-dcc9d47f062c478fa2035ddb3b720e4a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTddxbKwBwrXhVp11C1PLJV1EK-VUNT54E9LA';" alt="Best Military Car Insurance Of February 2021">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Military Car Insurance Of February 2021</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/fc/c3/a8fcc3656a410137c995071fbd17d1de.png" data-lightbox="roadtrip" data-title="Finding Financial Success Takes Time And Sacrifice How Do You Do It Here Are Some Secrets To Help You Find Success My Secrets Dream Life Life Life Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/fc/c3/a8fcc3656a410137c995071fbd17d1de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKu-nF3Erdxc0eM3yoMhKos71iE5kuwOByXQ';" alt="Finding Financial Success Takes Time And Sacrifice How Do You Do It Here Are Some Secrets To Help You Find Success My Secrets Dream Life Life Life Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finding Financial Success Takes Time And Sacrifice How Do You Do It Here Are Some Secrets To Help You Find Success My Secrets Dream Life Life Life Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/89/41/1c89413494f14f199d49cb43ca2b65fb.jpg" data-lightbox="roadtrip" data-title="Join And Get An Insurance Quote Today Members Could Save On Auto Property Insurance In 2020 Good Luck Today Insurance Quotes Home And Auto Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/89/41/1c89413494f14f199d49cb43ca2b65fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSae_y25gKxMqV2-b-f3Kdp1woN2QqHEHZQwQ';" alt="Join And Get An Insurance Quote Today Members Could Save On Auto Property Insurance In 2020 Good Luck Today Insurance Quotes Home And Auto Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join And Get An Insurance Quote Today Members Could Save On Auto Property Insurance In 2020 Good Luck Today Insurance Quotes Home And Auto Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.usaa.com/mcontent/static_assets/Media/life-mainBnr-universalLife.jpg?cacheid=1296782353_p" data-lightbox="roadtrip" data-title="Usaa Welcome To Usaa">
+											<img class="card-img v-image ads-img " src="https://content.usaa.com/mcontent/static_assets/Media/life-mainBnr-universalLife.jpg?cacheid=1296782353_p" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yTD0UFq1G2_YyzDyg4-au5rP467kdW-Bhg';" alt="Usaa Welcome To Usaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Welcome To Usaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/7a/e8/e67ae858d1b462a4abe5de79b0e58e28.png" data-lightbox="roadtrip" data-title="2021 And 2020 Usaa Military Pay Deposit Dates With Printables Katehorrell Military Spouse Blog Military Pay Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/7a/e8/e67ae858d1b462a4abe5de79b0e58e28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB4S1DmcM1utuY0FETEkGtcEKSxhAwJajBwQ';" alt="2021 And 2020 Usaa Military Pay Deposit Dates With Printables Katehorrell Military Spouse Blog Military Pay Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 And 2020 Usaa Military Pay Deposit Dates With Printables Katehorrell Military Spouse Blog Military Pay Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/2e/40/a72e40bbed955db1d8d65a4ace5a0a2a.png" data-lightbox="roadtrip" data-title="National Take Our Daughters And Sons To Work Day Is Recognized On The Fourth Thursday In April Each Year Usaaco Investment Services Investing Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/2e/40/a72e40bbed955db1d8d65a4ace5a0a2a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvRsls5CcUh1W28dkJaTSUKOopFsyQdkJPQ';" alt="National Take Our Daughters And Sons To Work Day Is Recognized On The Fourth Thursday In April Each Year Usaaco Investment Services Investing Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Take Our Daughters And Sons To Work Day Is Recognized On The Fourth Thursday In April Each Year Usaaco Investment Services Investing Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/e5/68/bce56852c12957eda4d21d575d1646ff.png" data-lightbox="roadtrip" data-title="Printable 2017 Usaa Military Pay Deposit Calendar Military Pay Military Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/e5/68/bce56852c12957eda4d21d575d1646ff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoSciExMbY_CMvd525vZ8qScBkgQhLp53Vw';" alt="Printable 2017 Usaa Military Pay Deposit Calendar Military Pay Military Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printable 2017 Usaa Military Pay Deposit Calendar Military Pay Military Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.autoinsuresavings.org/wp-content/uploads/2016/11/USAA-compared-to-other-car-insurance-companies-by-price.-min.png" data-lightbox="roadtrip" data-title="Review Of Usaa Car Insurance Policy Options Autoinsuresavings Llc">
+											<img class="card-img v-image ads-img " src="https://www.autoinsuresavings.org/wp-content/uploads/2016/11/USAA-compared-to-other-car-insurance-companies-by-price.-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUdq7ernfkFzHkWEy0pEoKHDVtK_ieBsV0UA';" alt="Review Of Usaa Car Insurance Policy Options Autoinsuresavings Llc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Review Of Usaa Car Insurance Policy Options Autoinsuresavings Llc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/60/e0/bd/60e0bdc558f912703d78e82d7eb38143.jpg" data-lightbox="roadtrip" data-title="5 Schritt Finanzplan Infografik Usaa Financial Planning Infographic How To Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/60/e0/bd/60e0bdc558f912703d78e82d7eb38143.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMLzn0r9y-4kxu5-l5O5G1oerg0yWsyLq6w';" alt="5 Schritt Finanzplan Infografik Usaa Financial Planning Infographic How To Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Schritt Finanzplan Infografik Usaa Financial Planning Infographic How To Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/65/d8/f065d81096363b4a0ddec391eb325451.jpg" data-lightbox="roadtrip" data-title="Usaa Mobile By Usaa Banking App Mobile Banking Financial Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/65/d8/f065d81096363b4a0ddec391eb325451.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaTUGgYjRhymrGfUmyowDsYsGpq3ihNYcLg';" alt="Usaa Mobile By Usaa Banking App Mobile Banking Financial Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Mobile By Usaa Banking App Mobile Banking Financial Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/e8/ee/45e8eeea2ecfcafda76faaa2f4fd53d5.jpg" data-lightbox="roadtrip" data-title="Disaster Prep And Recovery Infographic Usaa Disaster Prep Emergency First Aid Evacuation Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/e8/ee/45e8eeea2ecfcafda76faaa2f4fd53d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLqyBTw9rmxQ3SWzTlBX1K8jUpQP7HUfHpA';" alt="Disaster Prep And Recovery Infographic Usaa Disaster Prep Emergency First Aid Evacuation Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disaster Prep And Recovery Infographic Usaa Disaster Prep Emergency First Aid Evacuation Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/in-state-tuition-for-dependents-of-veterans.html">In State Tuition For Dependents Of Veterans</a></li>
+													<li class="list-group-item"><a href="/indian-army-benefits-for-family.html">Indian Army Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-army-resume.html">Human Resources Specialist Army Resume</a></li>
+													<li class="list-group-item"><a href="/indian-army-benefits-and-issues.html">Indian Army Benefits And Issues</a></li>
+													<li class="list-group-item"><a href="/indian-army-helpline-number-gujarat.html">Indian Army Helpline Number Gujarat</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-hq-address.html">Indian Air Force Hq Address</a></li>
+													<li class="list-group-item"><a href="/human-resources-manager-army.html">Human Resources Manager Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-assistant-militaryoffice-automation.html">Human Resources Assistant Militaryoffice Automation</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-us-army.html">Human Resources Specialist Us Army</a></li>
+													<li class="list-group-item"><a href="/indian-army-benefits-for-family-in-hindi.html">Indian Army Benefits For Family In Hindi</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-officer-benefits.html">Indian Air Force Officer Benefits</a></li>
+													<li class="list-group-item"><a href="/i-cant-login-to-my-cash-app.html">I Cant Login To My Cash App</a></li>
+													<li class="list-group-item"><a href="/human-resources-command-army.html">Human Resources Command Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-in-the-army.html">Human Resources Specialist In The Army</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-scholarship-for-college-students.html">Indian Air Force Scholarship For College Students</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-quits-job-qualifying-event.html">If My Spouse Quits Job Qualifying Event</a></li>
+													<li class="list-group-item"><a href="/human-resources-in-army.html">Human Resources In Army</a></li>
+													<li class="list-group-item"><a href="/illinois-civil-war-soldiers-records.html">Illinois Civil War Soldiers Records</a></li>
+													<li class="list-group-item"><a href="/hr-specialist-army-jobs.html">Hr Specialist Army Jobs</a></li>
+													<li class="list-group-item"><a href="/human-resource-officer-army.html">Human Resource Officer Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

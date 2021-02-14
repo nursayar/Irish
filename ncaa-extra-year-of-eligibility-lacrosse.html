@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Extra Year Of Eligibility Lacrosse - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Extra Year Of Eligibility Lacrosse",
+  "datePublished": "2021-02-14",
+  "image": "https://cdn.images.insidelacrosse.com/auto/0520/5eb56ea73a4c8/900x600/5eb56ea73a4c8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+extra+year+of+eligibility+lacrosse",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Extra Year Of Eligibility Lacrosse</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The NCAA Division I Council extended an extra year of eligibility to spring student-athletes due to their seasons being shut down as a result of the coronavirus pandemic. Many CSU Pueblo senior athletes return with another year of eligibility following a special NCAA ruling due to the coronavirus pandemic. The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. <br>				
+			</p>
+										<a class="badge badge-info" href="/south-dakota-army-national-guard-human-resources.html">south dakota army national guard human resources</a>
+											<a class="badge badge-warning" href="/sscn-bkn-akun.html">sscn bkn akun</a>
+											<a class="badge badge-success" href="/spouse-of-deployed-soldier.html">spouse of deployed soldier</a>
+											<a class="badge badge-info" href="/spouse-deployment-meme.html">spouse deployment meme</a>
+											<a class="badge badge-secondary" href="/spousal-support-after-military-divorce.html">spousal support after military divorce</a>
+											<a class="badge badge-primary" href="/spouse-and-dependents-educational-assistance-program.html">spouse and dependents educational assistance program</a>
+											<a class="badge badge-info" href="/sscn-bkn-go-id-2020-registrasi.html">sscn bkn go id 2020 registrasi</a>
+											<a class="badge badge-danger" href="/spouse-education-and-career-opportunities-seco-program.html">spouse education and career opportunities seco program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our site gives you hints for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/Y_5XaiwKoSHntB7Sd4V3driGaSg=/0x0:3644x2429/1200x800/filters:focal(1108x1066:1690x1648)/cdn.vox-cdn.com/uploads/chorus_image/image/66498677/1211448574.jpg.0.jpg" data-lightbox="roadtrip" data-title="Ncaa To Grant Spring Sport Student Athletes Extra Year Of Eligibility College Crosse">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/Y_5XaiwKoSHntB7Sd4V3driGaSg=/0x0:3644x2429/1200x800/filters:focal(1108x1066:1690x1648)/cdn.vox-cdn.com/uploads/chorus_image/image/66498677/1211448574.jpg.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8aTPPr6T62Xf2EudfwIA1YYVQZCzWvxvvw';" alt="Ncaa To Grant Spring Sport Student Athletes Extra Year Of Eligibility College Crosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa To Grant Spring Sport Student Athletes Extra Year Of Eligibility College Crosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/images.onwardstate.com/uploads/2020/02/Penn-State-Mens-Lacrosse-vs.-Lafayette-2-1-20-25-scaled.jpg?fit=2560%2C1702&amp;ssl=1" data-lightbox="roadtrip" data-title="Reports Ncaa To Grant Spring Athletes Extra Year Of Eligibility Onward State">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/images.onwardstate.com/uploads/2020/02/Penn-State-Mens-Lacrosse-vs.-Lafayette-2-1-20-25-scaled.jpg?fit=2560%2C1702&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_xkZq2QPqfkmWHsbWxOjfYp1QvMD77aQDtQ';" alt="Reports Ncaa To Grant Spring Athletes Extra Year Of Eligibility Onward State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reports Ncaa To Grant Spring Athletes Extra Year Of Eligibility Onward State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://snworksceo.imgix.net/cav/21be5b0d-99f2-4e2e-8bd0-f2c28bf0c000.sized-1000x1000.jpg?w=1000" data-lightbox="roadtrip" data-title="Ncaa Moves To Extend Eligibility Of Spring Student Athletes Cancel In Person Recruiting The Cavalier Daily University Of Virginia S Student Newspaper">
+											<img class="card-img v-image ads-img " src="https://snworksceo.imgix.net/cav/21be5b0d-99f2-4e2e-8bd0-f2c28bf0c000.sized-1000x1000.jpg?w=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8kbfaBOl886bPQvG55T0b8uxU8LTbNN_VA';" alt="Ncaa Moves To Extend Eligibility Of Spring Student Athletes Cancel In Person Recruiting The Cavalier Daily University Of Virginia S Student Newspaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Moves To Extend Eligibility Of Spring Student Athletes Cancel In Person Recruiting The Cavalier Daily University Of Virginia S Student Newspaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d5/2c/07/d52c07e7c699193c49ba03cf8e3fec7a.jpg" data-lightbox="roadtrip" data-title="Ncaa Grants Waiver For All Spring Sports Athletes To Receive Extra Year Of Eligibility Ncaa College Athletics Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d5/2c/07/d52c07e7c699193c49ba03cf8e3fec7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7CgD3RMk0nr7yGCBTobZAX-ZEk_-ocxJKg';" alt="Ncaa Grants Waiver For All Spring Sports Athletes To Receive Extra Year Of Eligibility Ncaa College Athletics Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Grants Waiver For All Spring Sports Athletes To Receive Extra Year Of Eligibility Ncaa College Athletics Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/d/06/d060a312-452e-11ea-9275-ab1f66759489/5e35db137eaba.image.jpg?resize=400%2C287" data-lightbox="roadtrip" data-title="Per Report Ncaa To Vote Soon On Extra Year Of Eligibility For Winter And Spring Sport Athletes Penn State Sports Daily Collegian Collegian Psu Edu">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/d/06/d060a312-452e-11ea-9275-ab1f66759489/5e35db137eaba.image.jpg?resize=400%2C287" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShtJRSI9b6DLvZ0ayxGpz7bjQBzfBlt9EQg';" alt="Per Report Ncaa To Vote Soon On Extra Year Of Eligibility For Winter And Spring Sport Athletes Penn State Sports Daily Collegian Collegian Psu Edu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Per Report Ncaa To Vote Soon On Extra Year Of Eligibility For Winter And Spring Sport Athletes Penn State Sports Daily Collegian Collegian Psu Edu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.syracuse.com/resizer/M5G8-RTsyO7adEWt0qtmS0ctsCU=/450x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/I533Z4SXG5G6LENTRZHADE5C5Q.jpg" data-lightbox="roadtrip" data-title="Ncaa Plans To Give Spring Athletes Another Year Of Eligibility After Coronavirus Cancellations Syracuse Com">
+											<img class="card-img v-image ads-img " src="https://www.syracuse.com/resizer/M5G8-RTsyO7adEWt0qtmS0ctsCU=/450x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/I533Z4SXG5G6LENTRZHADE5C5Q.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oYQt3K2B_Gi202mVNN9usOir4RVKX74TlA';" alt="Ncaa Plans To Give Spring Athletes Another Year Of Eligibility After Coronavirus Cancellations Syracuse Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Plans To Give Spring Athletes Another Year Of Eligibility After Coronavirus Cancellations Syracuse Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://wps3.dbknews.com/uploads/2020/03/IMG_0424-e1584387306409.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oYQt3K2B_Gi202mVNN9usOir4RVKX74TlA';" alt="Ncaa Plans To Give Spring Athletes Another Year Of Eligibility After Coronavirus Cancellations Syracuse Com">
+										<div class="card-body">
+						<h3 class="h5"><b>This means NCAA student-athletes can compete in all or a portion of the 2020-21 season but it wont be counted against their years of eligibility depending on their division level specific eligibility rules.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa extra year of eligibility lacrosse</strong>. 
+								
+																	Lacrosse fans were hit with unfortunate news this week as the NCAA announced the cancellation of all winter and spring championship events effectively ending the 2020 lacrosse season. 
+																	The NCAA has agreed to grant a year of eligibility relief to Division I and III student-athletes who compete in spring sports after a mass cancellation by the organization on Thursday. 
+																	The next year the Blue Raiders repeated as Conference USA champs and rolled into the NCAA tournament at 30-4 and 43 percent of BCG users picked Middle Tennessee to beat a Big Ten team again. 
+																	The waivers will be applied for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA will permit Division I spring-sport athletes such as baseball softball and lacrosse players who had their seasons shortened by the coronavirus pandemic to have an additional year. 
+																	The NCAA will permit Division I spring-sport athletes such as baseball softball and lacrosse players who had their seasons shortened by the coronavirus pandemic to have an additional year of eligibility. 
+																	Terps Tillman on extra year of eligibility who could return Count Maryland mens lacrosse coach John Tillman mong the coaches who arent thrilled about the NCAAs decision to allow spring. 
+																	Spring Athletes Granted Extra Year of Eligibility by NCAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 athlete in a spring sport whose season got cut short by the COVID-19 pandemic looks great on paper. 
+																	OKeefe was the first senior to inform Tambroni that if afforded the opportunity he wanted to take another run with the Nittany Lions. 
+																	047 The NCAAs decision to grant an extra year of eligibility for every Div. 
+																	Maryland lacrosse coach John Tillman reveals that coaches around the NCAA were surprised that spring athletes were granted an extra year of eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA said in a statement that the financial aid flexibility applies only to student-athletes who would have exhausted their eligibility in 2019-20. 
+																	August 21 2020 NCAA grants extra year of eligibility to fall-sport athletes The NCAA Board of Directors voted to approve a blanket waiver for all fall-sport athletes on Friday granting them an extra year of eligibility even if they decide to participate in sports this season. 
+																	Athletes an extra year of eligibility because of COVID. 
+																	NCAA Is Open to Granting an Additional Year of Eligibility to Spring Athletes Athletes in baseball softball lacrosse and tennis would effectively get a mulligan for the 2020 season but winter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Indianapolis-based NCAA has decided to grant spring athletes such as baseball or softball players an extra year of eligibility after their seasons were cancelled due to COVID-19. 
+																	Im coming back he told Tambroni while sitting in his office last March even before the NCAA granted the extra year of eligibility to spring student-athletes. 
+																	Grant Ament a senior will reportedly have an extra year of eligibility. 
+																	An extra year means a current college student-athlete would have 6 years to play their 4 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Athletes who participated in winter sports were not granted an extra year of eligibility regardless of whether they were still in the midst of their seasons. 
+																	Jeff Goodman GoodmanHoops March 13 2020 As more Tweets started popping up it appeared that the NCAA was leaning towards granting spring sport student athletes an extra year of eligibility. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://laxbucket.files.wordpress.com/2020/10/mercer_mens_lax_52.jpg" data-lightbox="roadtrip" data-title="What To Watch Ncaa Week Zero Lacrosse Bucket">
+											<img class="card-img v-image ads-img " src="https://laxbucket.files.wordpress.com/2020/10/mercer_mens_lax_52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJgC0x-5bc1PwFkA-3iR4lO9H368rPfi_gw';" alt="What To Watch Ncaa Week Zero Lacrosse Bucket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Watch Ncaa Week Zero Lacrosse Bucket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://laxbucket.files.wordpress.com/2019/10/carraway_action_1.jpg?w=940" data-lightbox="roadtrip" data-title="Ncaa Lacrosse Bucket">
+											<img class="card-img v-image ads-img " src="https://laxbucket.files.wordpress.com/2019/10/carraway_action_1.jpg?w=940" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjXJkghy21cYMSDBWYc5DL9yBZxXQmBprk8w';" alt="Ncaa Lacrosse Bucket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Lacrosse Bucket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static01.nyt.com/images/2008/05/10/sports/dukespan600.jpg?quality=75&amp;auto=webp&amp;disable=upscale" data-lightbox="roadtrip" data-title="For Duke Extra Year Of Players Eligibility Makes A Difference The New York Times">
+											<img class="card-img v-image ads-img " src="https://static01.nyt.com/images/2008/05/10/sports/dukespan600.jpg?quality=75&amp;auto=webp&amp;disable=upscale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtyVrlN2HaE6SzCVZjmNd8MsH2s4b4RL2IQ';" alt="For Duke Extra Year Of Players Eligibility Makes A Difference The New York Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Duke Extra Year Of Players Eligibility Makes A Difference The New York Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.images.insidelacrosse.com/auto/0420/5e9721031cdb9/900x600/5e9721031cdb9.jpg" data-lightbox="roadtrip" data-title="Ncaa Transfer Portal Notable Diii Players Weighing Their Options Inside Lacrosse">
+											<img class="card-img v-image ads-img " src="https://cdn.images.insidelacrosse.com/auto/0420/5e9721031cdb9/900x600/5e9721031cdb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvK1weMXh9jLrwgenKdJVlCE_205iqVJrgiw';" alt="Ncaa Transfer Portal Notable Diii Players Weighing Their Options Inside Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Transfer Portal Notable Diii Players Weighing Their Options Inside Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsasports.org/sites/default/files/field/image/Lacrosse-rules-and-calendar_0.png" data-lightbox="roadtrip" data-title="2020 21 Ncaa Men S Lacrosse Recruiting Rules And Calendar">
+											<img class="card-img v-image ads-img " src="https://www.ncsasports.org/sites/default/files/field/image/Lacrosse-rules-and-calendar_0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAKfduwxGiMTt1Ke9LFj_tXU3zpn-JmqOUw';" alt="2020 21 Ncaa Men S Lacrosse Recruiting Rules And Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 21 Ncaa Men S Lacrosse Recruiting Rules And Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.wsj.net/im-168855?width=620&amp;size=1.5" data-lightbox="roadtrip" data-title="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+											<img class="card-img v-image ads-img " src="https://images.wsj.net/im-168855?width=620&amp;size=1.5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdZSqhAvzgbNVkC4zgXfl-h2QTPv3R_cxtA';" alt="Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Is Open To Granting An Additional Year Of Eligibility To Spring Athletes Wsj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.images.insidelacrosse.com/auto/0520/5eb56ea73a4c8/900x600/5eb56ea73a4c8.jpg" data-lightbox="roadtrip" data-title="Ncaa Transfer Portal Rankings Top 30 Dii Diii Players Inside Lacrosse">
+											<img class="card-img v-image ads-img " src="https://cdn.images.insidelacrosse.com/auto/0520/5eb56ea73a4c8/900x600/5eb56ea73a4c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dcuhWVkKfLHtIOZ8vpXjfvRDwuLP7hQfDw';" alt="Ncaa Transfer Portal Rankings Top 30 Dii Diii Players Inside Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Transfer Portal Rankings Top 30 Dii Diii Players Inside Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uslaxmagazine.com/sites/default/files/images/articles/emily-hawryschuk-syracuse-rich-barnes_0.jpg" data-lightbox="roadtrip" data-title="2021 Ncaa Lacrosse Preview No 4 Syracuse Women Us Lacrosse Magazine">
+											<img class="card-img v-image ads-img " src="https://www.uslaxmagazine.com/sites/default/files/images/articles/emily-hawryschuk-syracuse-rich-barnes_0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YUJ6Ws89eXOB1DiDNZ1Fe5FP9Du2wGl42w';" alt="2021 Ncaa Lacrosse Preview No 4 Syracuse Women Us Lacrosse Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Ncaa Lacrosse Preview No 4 Syracuse Women Us Lacrosse Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uslaxmagazine.com/sites/default/files/images/articles/kathleen-roe-notre-dame-risley-sports-photography.jpg" data-lightbox="roadtrip" data-title="Vidzsep6yxan M">
+											<img class="card-img v-image ads-img " src="https://www.uslaxmagazine.com/sites/default/files/images/articles/kathleen-roe-notre-dame-risley-sports-photography.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1OlgYCKClvlqdrvPrWyBoecIFqiK9nAHEBQ';" alt="Vidzsep6yxan M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vidzsep6yxan M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.images.insidelacrosse.com/auto/0520/5eb1c4c6406d2/900x600/5eb1c4c6406d2.jpg" data-lightbox="roadtrip" data-title="Ncaa Transfer Portal Rankings Top 15 Underclassmen Watchlist Inside Lacrosse">
+											<img class="card-img v-image ads-img " src="https://cdn.images.insidelacrosse.com/auto/0520/5eb1c4c6406d2/900x600/5eb1c4c6406d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrM93Lj-yg6a-Qu4-VOUFwPxq7K716bKoIA';" alt="Ncaa Transfer Portal Rankings Top 15 Underclassmen Watchlist Inside Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Transfer Portal Rankings Top 15 Underclassmen Watchlist Inside Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wps3.dbknews.com/uploads/2020/03/IMG_0424-e1584387306409.jpg" data-lightbox="roadtrip" data-title="Ncaa Grants Eligibility Relief To All Spring Sports Players After Covid 19 Outbreak The Diamondback">
+											<img class="card-img v-image ads-img " src="https://wps3.dbknews.com/uploads/2020/03/IMG_0424-e1584387306409.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnmlvqw1rRHUC-znSwsMycbyh_Jfyx14U51A';" alt="Ncaa Grants Eligibility Relief To All Spring Sports Players After Covid 19 Outbreak The Diamondback">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Grants Eligibility Relief To All Spring Sports Players After Covid 19 Outbreak The Diamondback</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.images.insidelacrosse.com/auto/0118/5a65f7d6836ec/900x600/5a65f7d6836ec.jpg" data-lightbox="roadtrip" data-title="Ncaa 2018 Preview Richmond Inside Lacrosse">
+											<img class="card-img v-image ads-img " src="https://cdn.images.insidelacrosse.com/auto/0118/5a65f7d6836ec/900x600/5a65f7d6836ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_o_tbblGAbwaCKv6DAdIQp6YIis1ZsfZtWw';" alt="Ncaa 2018 Preview Richmond Inside Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa 2018 Preview Richmond Inside Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gazettenet.com/getattachment/140fd6c1-71a9-4f90-8c35-b21ee283c4c5/BamfordNCAA-HG-040120-ph01" data-lightbox="roadtrip" data-title="Ncaa Votes To Give Spring Athletes Extra Year Of Eligibility">
+											<img class="card-img v-image ads-img " src="https://www.gazettenet.com/getattachment/140fd6c1-71a9-4f90-8c35-b21ee283c4c5/BamfordNCAA-HG-040120-ph01" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFyVjG2RbpOe3e0E-0v60QRl2wYDvaID3uA';" alt="Ncaa Votes To Give Spring Athletes Extra Year Of Eligibility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Votes To Give Spring Athletes Extra Year Of Eligibility</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-youtube.html">Navy Seal Eddie Gallagher Youtube</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-mwr-tickets.html">Navy San Diego Mwr Tickets</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-attrition-rate.html">Navy Seal Officer Attrition Rate</a></li>
+													<li class="list-group-item"><a href="/navy-retirement-gifts-for-him.html">Navy Retirement Gifts For Him</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-podcast.html">Navy Seal Gallagher Podcast</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-medals.html">Navy Seal Gallagher Medals</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-bio.html">Navy Seal Edward Gallagher Bio</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-itt.html">Navy San Diego Itt</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-news.html">Navy San Diego News</a></li>
+													<li class="list-group-item"><a href="/navy-seal-benefits-for-family.html">Navy Seal Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-wiki.html">Navy Seal Edward Gallagher Wiki</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-case.html">Navy Seal Gallagher Case</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-video.html">Navy Seal Eddie Gallagher Video</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-crimes.html">Navy Seal Gallagher Crimes</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-movie.html">Navy Seal Gallagher Movie</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-picture.html">Navy Seal Edward Gallagher Picture</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-instagram.html">Navy Seal Edward Gallagher Instagram</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-facebook.html">Navy Seal Edward Gallagher Facebook</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-t-shirt.html">Navy Seal Edward Gallagher T Shirt</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-enlistment.html">Navy Seal Officer Enlistment</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

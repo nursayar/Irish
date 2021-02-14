@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Spring Eligibility Relief - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Spring Eligibility Relief",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/e3/76/10/e376105be7b360295a2eb167ccdcda61.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+spring+eligibility+relief",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Spring Eligibility Relief</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There wont be any eligibility relief for student-athletes in winter sports as the majority of their seasons were completed the council also announced. All NCAA Division 1 spring sports athletes were granted an additional year of eligibility due to the loss of their season. In response to the cancellation of collegiate spring sports due to the coronavirus pandemic the NCAA Division I Council Committee has recommended that eligibility relief be provided to all. <br>				
+			</p>
+										<a class="badge badge-primary" href="/benefits-of-navy-nurse.html">benefits of navy nurse</a>
+											<a class="badge badge-primary" href="/campus-portal-gilbert.html">campus portal gilbert</a>
+											<a class="badge badge-danger" href="/california-veterans-dependents-educational-benefits.html">california veterans dependents educational benefits</a>
+											<a class="badge badge-secondary" href="/best-student-loans-for-military-spouses.html">best student loans for military spouses</a>
+											<a class="badge badge-secondary" href="/camp-hero-air-force-base-reddit.html">camp hero air force base reddit</a>
+											<a class="badge badge-warning" href="/cal-vet-dependent-college-benefits.html">cal vet dependent college benefits</a>
+											<a class="badge badge-success" href="/best-masters-programs-for-military-spouses.html">best masters programs for military spouses</a>
+											<a class="badge badge-danger" href="/braces-for-military-dependents.html">braces for military dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/15/53/371553d0be950c3a1a54351f30a93c9b.jpg" data-lightbox="roadtrip" data-title="Ncaa Panel Backs Spring Athlete Eligibility Relief In 2020 Ncaa Athlete College Athletics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/15/53/371553d0be950c3a1a54351f30a93c9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCRVLJO8ld1Auu7TAhhQB5MJrtRk2lxtrxA';" alt="Ncaa Panel Backs Spring Athlete Eligibility Relief In 2020 Ncaa Athlete College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Panel Backs Spring Athlete Eligibility Relief In 2020 Ncaa Athlete College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/5f/93/ab5f9394fbdc77a41ddd8cde663c6d34.jpg" data-lightbox="roadtrip" data-title="Pin On Viportal Inc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/5f/93/ab5f9394fbdc77a41ddd8cde663c6d34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGRroYOJZIKn6K1EQ2Etj0PN7bhLSzpLKvQ';" alt="Pin On Viportal Inc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Viportal Inc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/97/ff/b3/97ffb3b18c9d5715f5dbc6ad8c52604e.jpg" data-lightbox="roadtrip" data-title="Lebron Responds To Sb 206 Signing Now It S Ncaa S Turn To Step Up Ncaa Athlete College Athletics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/97/ff/b3/97ffb3b18c9d5715f5dbc6ad8c52604e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4TejR39PnDvoaawk-M3LAIr6kdUd47rtCg';" alt="Lebron Responds To Sb 206 Signing Now It S Ncaa S Turn To Step Up Ncaa Athlete College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron Responds To Sb 206 Signing Now It S Ncaa S Turn To Step Up Ncaa Athlete College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/91/d6/6c91d63663fabd11bbdc513cb062a167.jpg" data-lightbox="roadtrip" data-title="Ncaa Kentucky Wildcats Melamine Chip And Dip Tray Bsi Http Www Amazon Com Dp B0088miy32 Ref Cm Sw R Pi Dp Hos Sb00749h6dy1 Dip Tray Kentucky Wild Cats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/91/d6/6c91d63663fabd11bbdc513cb062a167.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCiF-dMEEahmpUkKyCNOLTtYO469lxGz7g8g';" alt="Ncaa Kentucky Wildcats Melamine Chip And Dip Tray Bsi Http Www Amazon Com Dp B0088miy32 Ref Cm Sw R Pi Dp Hos Sb00749h6dy1 Dip Tray Kentucky Wild Cats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Kentucky Wildcats Melamine Chip And Dip Tray Bsi Http Www Amazon Com Dp B0088miy32 Ref Cm Sw R Pi Dp Hos Sb00749h6dy1 Dip Tray Kentucky Wild Cats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/55/84/66558425a393074c583225fc7cd8000c.png" data-lightbox="roadtrip" data-title="Recovery Spot Compression Apparel Available To Basketball Players Recovery Spot Of Winnipeg Is Offering A Spe Compression Compression Gear Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/55/84/66558425a393074c583225fc7cd8000c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrha3Abl8kha_z2lEr1AfyLggJIdVAB2WDbg';" alt="Recovery Spot Compression Apparel Available To Basketball Players Recovery Spot Of Winnipeg Is Offering A Spe Compression Compression Gear Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recovery Spot Compression Apparel Available To Basketball Players Recovery Spot Of Winnipeg Is Offering A Spe Compression Compression Gear Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/dc/3b/e0dc3bf65eb42dcdefb139dba06585ac.jpg" data-lightbox="roadtrip" data-title="2009 2010 Western Kentucky White On Red Uniform Ncaa College Football Football Football Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/dc/3b/e0dc3bf65eb42dcdefb139dba06585ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbGm72PbGJweb2zXcYCjIdDatxXyrh0ys2iA';" alt="2009 2010 Western Kentucky White On Red Uniform Ncaa College Football Football Football Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2009 2010 Western Kentucky White On Red Uniform Ncaa College Football Football Football Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/ab/f6/61/abf6610a14c1322a0da13f7161bbe14e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbGm72PbGJweb2zXcYCjIdDatxXyrh0ys2iA';" alt="2009 2010 Western Kentucky White On Red Uniform Ncaa College Football Football Football Uniforms">
+										<div class="card-body">
+						<h3 class="h5"><b>As the NCAA continues to work through contingency plans to deal with the coronavirus the organization has announced that the Council Coordination Committee will grant some form of eligibility.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa spring eligibility relief</strong>. 
+								
+																	The NCAA will vote on providing a framework for schools to provide eligibility relief to student-athletes who saw their spring sports seasons cut short. 
+																	The NCAA Division 1 Division 2 and Division 3 Committees announced last March that eligibility relief would be granted to student-athletes who compete in spring sports. 
+																	The day after the NCAA canceled its winter and spring championship events an NCAA committee announced its leadership agreed that eligibility relief is appropriate for all Division I. 
+																	The NCAA also will discuss granting relief to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Friday afternoon the Division I Council Coordination Committee declared that eligibility relief is appropriate for spring sports Division I Council Coordination Committee agrees eligibility. 
+																	NCAA gives eligibility relief to DI spring student athletes By Morgan Casey on April 6 2020 The National Collegiate Athletic Association NCAA Division I Council the DI decision-making council composed of administrative representatives from all DI conferences voted on March 30 to give eligibility relief to all spring student athletes whose seasons were canceled due to the COVID-19 outbreak. 
+																	In response to the cancellation of collegiate spring sports due to the coronavirus pandemic the NCAA Division I Council Committee has recommended that eligibility relief be provided to all. 
+																	The NCAA Division I Coordination Committee has already agreed that relief should be given to spring sports such as baseball and softball and the committee now supports giving schools a framework. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division I Council Committee has recommended that student-athletes who participate in spring sports should be provided eligibility relief. 
+																	The NCAA has agreed to grant a year of eligibility relief to Division I and III student-athletes who compete in spring sports after a mass cancellation by the organization on Thursday. 
+																	An announcement from the NCAA within 24 hours of the decision left student-athletes with some hope yet- the Division I Council Coordination Committee released a statement that eligibility relief is appropriate for spring sports. 
+																	College-bound student-athletes preparing to enroll in a Division I or Division II school need to register with the NCAA Eligibility Center to ensure they have met amateurism standards and are academically prepared for college coursework. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Division I Council announced Monday it will allow D-I spring-sport student-athletes whose seasons were canceled because of the COVID-19 pandemic an extra year of eligibility. 
+																	On March 13 2020 The NCAA Division I Council Coordination Committee on Friday announced it would grant eligibility relief for spring athletes as a result of the unprecedented decision to cancel. 
+																	Details of eligibility relief will be finalized at a later time. 
+																	Mar 30 2020 The NCAA Division I Council Coordination Committee voted Monday to grant spring athletes an extra year of eligibility after the coronavirus pandemic shut down spring college sports in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additional issues with NCAA rules must be addressed and appropriate governance bodies will work through those in the coming days and weeks. 
+																	The Council also will allow schools to self-apply a one-year extension of eligibility for spring-sport student-athletes effectively extending each students five-year clock by a year. 
+																	Division I rules limit student-athletes to four seasons of competition in a five-year period. 
+																	Council leadership agreed that eligibility relief is appropriate for all Division I student-athletes who participated in spring sports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Councils decision allows schools to self-apply waivers to restore one of those seasons of competition for student-athletes who had competed while eligible in the COVID-19-shortened 2020 spring season. 
+																	SALT LAKE CITY NCAA Division I student-athletes who compete in spring sports will have an additional season of competition and an extension of their period of eligibility the NCAA Division I Council voted Monday as college athletics have been impacted by the novel conoravirus pandemic. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9e/14/9e/9e149eed6678d567813db82f6b179e07.jpg" data-lightbox="roadtrip" data-title="Basketball Jerseys Buying Guide And Review In 2019 Buying Guide And Ncaa Basketball Jersey Basketball Jersey Ncaa Apparel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9e/14/9e/9e149eed6678d567813db82f6b179e07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbPhOZVmVcaNh4jxrc2nl3jAuKwpoV4MMUDg';" alt="Basketball Jerseys Buying Guide And Review In 2019 Buying Guide And Ncaa Basketball Jersey Basketball Jersey Ncaa Apparel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Jerseys Buying Guide And Review In 2019 Buying Guide And Ncaa Basketball Jersey Basketball Jersey Ncaa Apparel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/77/a0/39/77a03999e7e7842bd7f350cfc6aa27c1.jpg" data-lightbox="roadtrip" data-title="Ncaa Louisiana State Relief Coffee Mug 2 Lsu Tigers 14 Oz Ceramic Coffee Cup Set Of 2 Click On The Image For Additional Mugs Set Mugs Ceramic Coffee Cups">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/77/a0/39/77a03999e7e7842bd7f350cfc6aa27c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsguAqTusGjK-w4Nz7Y_ZkpFCdkieucVwQDA';" alt="Ncaa Louisiana State Relief Coffee Mug 2 Lsu Tigers 14 Oz Ceramic Coffee Cup Set Of 2 Click On The Image For Additional Mugs Set Mugs Ceramic Coffee Cups">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Louisiana State Relief Coffee Mug 2 Lsu Tigers 14 Oz Ceramic Coffee Cup Set Of 2 Click On The Image For Additional Mugs Set Mugs Ceramic Coffee Cups</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ca/81/b0/ca81b01d57f08cff4168c3989bb9282b.jpg" data-lightbox="roadtrip" data-title="Amazon Com College Covers Louisiana State University Tigers Ncaa Rising Sun Bungee Chair Kitchen Dining Bungee Chair Sun Chair Lsu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ca/81/b0/ca81b01d57f08cff4168c3989bb9282b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMO94MkJk9OsSHmgtSPohGbbXmWt_bYw8lA';" alt="Amazon Com College Covers Louisiana State University Tigers Ncaa Rising Sun Bungee Chair Kitchen Dining Bungee Chair Sun Chair Lsu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Com College Covers Louisiana State University Tigers Ncaa Rising Sun Bungee Chair Kitchen Dining Bungee Chair Sun Chair Lsu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/6f/33/cd6f33e40be4dfabaa939ac646e21219.jpg" data-lightbox="roadtrip" data-title="Northwest College Ncaa Team Georgia Bean Bag Chair Details Can Be Found By Clicking On The Image Note It I Bean Bag Chair Kids Bean Bag Chair Cool Bean Bags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/6f/33/cd6f33e40be4dfabaa939ac646e21219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMh5IQZVGrcqCNqAO7SVenqgP47qLrSDWfQ';" alt="Northwest College Ncaa Team Georgia Bean Bag Chair Details Can Be Found By Clicking On The Image Note It I Bean Bag Chair Kids Bean Bag Chair Cool Bean Bags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northwest College Ncaa Team Georgia Bean Bag Chair Details Can Be Found By Clicking On The Image Note It I Bean Bag Chair Kids Bean Bag Chair Cool Bean Bags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/e5/42/28e54246649058eb914a6df86e0bd259.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Outdoors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/e5/42/28e54246649058eb914a6df86e0bd259.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPl3RrGfRIhUpx5Il7X4xB6Q-mL46X5LLyTg';" alt="Pin On Sports Outdoors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Outdoors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/a0/bc/9da0bca9a15cf156266ee1db42ef5ba9.jpg" data-lightbox="roadtrip" data-title="Ncaa North Carolina Tar Heels Unc Black Leather Card Holder And Magnetic Money C Leather Money Clip Wallet Leather Money Clips Leather Money Clip Card Holder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/a0/bc/9da0bca9a15cf156266ee1db42ef5ba9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmshVNKVCnyWg0Bk33OQzzZpQd0iKFXKfYAw';" alt="Ncaa North Carolina Tar Heels Unc Black Leather Card Holder And Magnetic Money C Leather Money Clip Wallet Leather Money Clips Leather Money Clip Card Holder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa North Carolina Tar Heels Unc Black Leather Card Holder And Magnetic Money C Leather Money Clip Wallet Leather Money Clips Leather Money Clip Card Holder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/0f/cb/8a0fcbddffc4676c56b4d56e23c96803.jpg" data-lightbox="roadtrip" data-title="Brigham Young University Cougars Paulson Designs Spirit Case For Samsung Galaxy S4 Case Samsung Galaxy S4 Smartphone Case">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/0f/cb/8a0fcbddffc4676c56b4d56e23c96803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8xa10LCd_u_LUCgHlniGlmrhKQ8hO-VZ00w';" alt="Brigham Young University Cougars Paulson Designs Spirit Case For Samsung Galaxy S4 Case Samsung Galaxy S4 Smartphone Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brigham Young University Cougars Paulson Designs Spirit Case For Samsung Galaxy S4 Case Samsung Galaxy S4 Smartphone Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/76/10/e376105be7b360295a2eb167ccdcda61.png" data-lightbox="roadtrip" data-title="Michigan Football What We Learned During Week Off What To Watch Vs Ohio State Michigan Football Ohio State Ohio State Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/76/10/e376105be7b360295a2eb167ccdcda61.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ulomX_80Mp7_oTcgUTxY0FuvQ78oFl5kDQ';" alt="Michigan Football What We Learned During Week Off What To Watch Vs Ohio State Michigan Football Ohio State Ohio State Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan Football What We Learned During Week Off What To Watch Vs Ohio State Michigan Football Ohio State Ohio State Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/f6/61/abf6610a14c1322a0da13f7161bbe14e.jpg" data-lightbox="roadtrip" data-title="Men S Ua Spotlight Le Nfl Football Gloves Nfl Football Gloves Football Gloves College Football Gloves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/f6/61/abf6610a14c1322a0da13f7161bbe14e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5czhVP8YremXhtKr-uJFs9uJgSFU60EVnQ';" alt="Men S Ua Spotlight Le Nfl Football Gloves Nfl Football Gloves Football Gloves College Football Gloves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Men S Ua Spotlight Le Nfl Football Gloves Nfl Football Gloves Football Gloves College Football Gloves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/bd/00/93bd00c0ae3cd1b6d53920a8ee92976f.jpg" data-lightbox="roadtrip" data-title="Style Forum Blog A Visit To E Marinella Naples Moda Uomo Abbigliamento Abbigliamento Uomo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/bd/00/93bd00c0ae3cd1b6d53920a8ee92976f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdr_nvuBdCZW3GKiS8DzrmXCjvAlu48F9CKg';" alt="Style Forum Blog A Visit To E Marinella Naples Moda Uomo Abbigliamento Abbigliamento Uomo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Style Forum Blog A Visit To E Marinella Naples Moda Uomo Abbigliamento Abbigliamento Uomo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/4c/1f/6f4c1ff255065677f575f4d765f229d6.jpg" data-lightbox="roadtrip" data-title="Key Holder For Wall Mail Organizer Whit A Floating Shelf And 4 Double Key Hooks Perfect For Entry In 2021 Wall Key Holder Mail Organizer Wall Mail Organizer Wall Mount">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/4c/1f/6f4c1ff255065677f575f4d765f229d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThhoxhVkoAF1-1K_VD4bbWdR42XH53ObCkZg';" alt="Key Holder For Wall Mail Organizer Whit A Floating Shelf And 4 Double Key Hooks Perfect For Entry In 2021 Wall Key Holder Mail Organizer Wall Mail Organizer Wall Mount">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Key Holder For Wall Mail Organizer Whit A Floating Shelf And 4 Double Key Hooks Perfect For Entry In 2021 Wall Key Holder Mail Organizer Wall Mail Organizer Wall Mount</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/0c/3d/88/0c3d886e02c4fdc85dd26ddd5991c716.jpg" data-lightbox="roadtrip" data-title="S Winter Gloves Zuoxi Touch Screen Gloves Thermal Gloves Https Www Amazon Com Dp B0787ygj75 Ref Cm S Best Winter Gloves Touch Screen Gloves Gloves Winter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/0c/3d/88/0c3d886e02c4fdc85dd26ddd5991c716.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0slz-1rFZJl__FPyHzUQrIT95MWXnSIjJQ';" alt="S Winter Gloves Zuoxi Touch Screen Gloves Thermal Gloves Https Www Amazon Com Dp B0787ygj75 Ref Cm S Best Winter Gloves Touch Screen Gloves Gloves Winter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">S Winter Gloves Zuoxi Touch Screen Gloves Thermal Gloves Https Www Amazon Com Dp B0787ygj75 Ref Cm S Best Winter Gloves Touch Screen Gloves Gloves Winter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/9c/e4/199ce4fd434b7d0499d561058c4125fa.jpg" data-lightbox="roadtrip" data-title="Pin On Cheap Wholesale Ncaa Penn State Nittany Lions Jerseys From Http Www Sunshinejerseys Ru">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/9c/e4/199ce4fd434b7d0499d561058c4125fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8622UURGiS3M3Jv7TbtDqzd5BEctDr83Mw';" alt="Pin On Cheap Wholesale Ncaa Penn State Nittany Lions Jerseys From Http Www Sunshinejerseys Ru">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cheap Wholesale Ncaa Penn State Nittany Lions Jerseys From Http Www Sunshinejerseys Ru</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-air-force-reserve-officer.html">Benefits Of Air Force Reserve Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-national-guard.html">Benefits Of Air Force National Guard</a></li>
+													<li class="list-group-item"><a href="/benefits-do-navy-spouses-get.html">Benefits Do Navy Spouses Get</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-officer-in-india.html">Benefits Of Army Officer In India</a></li>
+													<li class="list-group-item"><a href="/benefits-for-family-members-of-military.html">Benefits For Family Members Of Military</a></li>
+													<li class="list-group-item"><a href="/benefits-for-married-couples-in-the-navy.html">Benefits For Married Couples In The Navy</a></li>
+													<li class="list-group-item"><a href="/being-a-male-military-spouse.html">Being A Male Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-for-a-military-wife.html">Benefits For A Military Wife</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-training-and-experience.html">Benefits Of Army Training And Experience</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-pension.html">Benefits Of A Military Pension</a></li>
+													<li class="list-group-item"><a href="/benefits-for-a-divorced-military-spouse.html">Benefits For A Divorced Military Spouse</a></li>
+													<li class="list-group-item"><a href="/benefits-for-retired-military-spouses.html">Benefits For Retired Military Spouses</a></li>
+													<li class="list-group-item"><a href="/being-a-soldiers-wife-quotes.html">Being A Soldiers Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/being-an-army-wife-pros-and-cons.html">Being An Army Wife Pros And Cons</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reserve-uk.html">Benefits Of Army Reserve Uk</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-deployment.html">Benefits Of Army Deployment</a></li>
+													<li class="list-group-item"><a href="/becoming-an-army-ranger-officer.html">Becoming An Army Ranger Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-nurse.html">Benefits Of Army Nurse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-reserve-philippines.html">Benefits Of Air Force Reserve Philippines</a></li>
+													<li class="list-group-item"><a href="/being-a-teacher-as-a-military-spouse.html">Being A Teacher As A Military Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

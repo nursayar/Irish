@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hong Kong Military Build Up - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hong Kong Military Build Up",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/1a/26/e7/1a26e78b92766adc32453b702b9f7a90.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hong+kong+military+build+up",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hong Kong Military Build Up</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Chinas military buildup in response to over 10 weeks of escalating protests in Hong Kong can now been seen from space. Tanks and troops are being amassed by China close to their border with Hong Kong after weeks of political unrest The Chinese military has declared it can reach Hong Kong in just ten minutes as. The Hong Kong Front China has quietly doubled its troop levels in Hong Kong envoys tell Reuters including forces from a crack paramilitary trained in riot suppression and crowd control. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-id-card-wilmington-nc.html">military id card wilmington nc</a>
+											<a class="badge badge-secondary" href="/military-id-card-san-antonio.html">military id card san antonio</a>
+											<a class="badge badge-success" href="/military-id-card-walk-in-near-me.html">military id card walk in near me</a>
+											<a class="badge badge-info" href="/military-leave-for-spouse-surgery.html">military leave for spouse surgery</a>
+											<a class="badge badge-secondary" href="/military-id-cards-for-spouses.html">military id cards for spouses</a>
+											<a class="badge badge-secondary" href="/military-jacket-hk.html">military jacket hk</a>
+											<a class="badge badge-dark" href="/military-id-for-dependents-over-18.html">military id for dependents over 18</a>
+											<a class="badge badge-warning" href="/military-loans-for-dependents.html">military loans for dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/87/59/7f8759d135e2b0142ccd36257fd8ac1b.jpg" data-lightbox="roadtrip" data-title="Huge Chinese Military Build Up Filmed On Hong Kong Border After Flights Were Canceled Weird World Military Funny Pranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/87/59/7f8759d135e2b0142ccd36257fd8ac1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8U4996lh4eZ4VZdkTK5b2CW_AkIBSrKQ_w';" alt="Huge Chinese Military Build Up Filmed On Hong Kong Border After Flights Were Canceled Weird World Military Funny Pranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Huge Chinese Military Build Up Filmed On Hong Kong Border After Flights Were Canceled Weird World Military Funny Pranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/49/0c/2b/490c2b74aa9039e9784559ef5eb5bd5d.jpg" data-lightbox="roadtrip" data-title="Pin On 19 Sep 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/49/0c/2b/490c2b74aa9039e9784559ef5eb5bd5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCv5AOY3JZNotiJ0c2KgczMQ5t-RWm_UNY9w';" alt="Pin On 19 Sep 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 19 Sep 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1a/26/e7/1a26e78b92766adc32453b702b9f7a90.jpg" data-lightbox="roadtrip" data-title="Pin On Amazing Pin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1a/26/e7/1a26e78b92766adc32453b702b9f7a90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWiVynhJaS373esCKcXD4FHALyYXMR8Aqh9A';" alt="Pin On Amazing Pin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amazing Pin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/df/c2/93dfc24976f1c23cea3e5635b1b0f30f.png" data-lightbox="roadtrip" data-title="Pin On Omg Wtf Fact Bizarre Weird">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/df/c2/93dfc24976f1c23cea3e5635b1b0f30f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNNDfthtglzEngUuilOXIayKYsK7agyJmO_w';" alt="Pin On Omg Wtf Fact Bizarre Weird">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Omg Wtf Fact Bizarre Weird</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/61/a2/db61a2f80d5a4de34fbdfc7420cc1e33.png" data-lightbox="roadtrip" data-title="Pin On Happy Pins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/61/a2/db61a2f80d5a4de34fbdfc7420cc1e33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QDLkI-Jv-TR1oyvDnjJdB10k7qusnwWqQA';" alt="Pin On Happy Pins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Happy Pins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/7c/20/7b7c20faaebda7b52bbcd57118fc3f24.jpg" data-lightbox="roadtrip" data-title="Report China Military Buildup Seen At India Border Military China Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/7c/20/7b7c20faaebda7b52bbcd57118fc3f24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvmX1fqwZ2SwRp4LPZkjdorU8aMQZq3CJ5w';" alt="Report China Military Buildup Seen At India Border Military China Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Report China Military Buildup Seen At India Border Military China Defence</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cf/27/44/cf27446766fe7639f83b025a1466b0c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvmX1fqwZ2SwRp4LPZkjdorU8aMQZq3CJ5w';" alt="Report China Military Buildup Seen At India Border Military China Defence">
+										<div class="card-body">
+						<h3 class="h5"><b>Any military deployment in Hong Kong will also lead to internal disagreements within the Chinese Communist Party he said adding that the city is an important financial hub for the party.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hong kong military build up</strong>. 
+								
+																	Chuck Schumer D-NY chastised the president Wednesday for not standing up to China during the. 
+																	Alarmed by the troop build-up the US has urged Beijing to respond with restraint to more than 10 weeks of violent clashes between pro-democracy demonstrators and police in Hong Kong which is. 
+																	The deployment does not appear to be the prelude to a military intervention in Hong Kong but few analysts expressed doubt that China would act if Mr. 
+																	Video shows Chinese military building up outside Hong Kongs border Soldiers of the Chinese Peoples Liberation Army 1st Amphibious Mechanized Infantry Division prepare to provide Chairman of the Joint Chiefs of Staff Adm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A White House official who wished to remain anonymous told journalists that there could be a build-up of military troops or armed police at the border between mainland China and Hong Kong without. 
+																	RuptlysubscribeChinese military vehicles could be seen stationed less than five miles eight km from the Hong Kong border in She. 
+																	In a dramatic turn of events a video of huge Chinese military build-up at the Hong Kong border has surfaced raising fears of an imminent intervention by Beijing after weeks of protests brought. 
+																	For instance Ryan Mathers a 20-year-old Marine in Hawaii helped to sell stolen military night-vision devices through eBay in 2008 to buyers in Hong Kong Japan and Poland and to undercover. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Xi believed the countrys sovereignty over. 
+																	Mike Mullen with a demonstration of their capablities during a visit to the unit in China on July 12 2011. 
+																	Wednesday 14 August 2019 2245 UK. 
+																	Protests have been ravaging Hong Kong over the last. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Trump said earlier this week the Chinese military is building up along the Hong Kong border. 
+																	Something extraordinarily bad is about to happen. 
+																	Hong Kong and the mainland Chinese city of Shenzhen shares a 37-kilometre-long 22-mile-long border. 
+																	Huge Chinese military build-up filmed on Hong Kong border amid airport clashes Protesters shut down Hong Kongs main airport again on Tuesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jamie Ensor Satellite images have revealed a massive build-up of military vehicles in a stadium near the border of mainland China and Hong Kong. 
+																	The satellite images suggested the military trucks have been assembled in Shenzhen Bay a. 
+																	Subscribe to our channel. 
+																	The White House is monitoring the sudden congregation of Chinese forces at the border with Hong Kong according to reports following another night of unrest and clashes between protesters and police. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rear Admiral Karl Thomas made the comments aboard the USS Ronald Reagan after it sailed into Hong Kong at the head of a strike group on Wednesday following training exercises in the contested. 
+																	Satellite images show troop build-up on Hong Kong border Aerial pictures emerge of a stadium in neighbouring Shenzhen where more than 100 army or police trucks are apparently parked. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/d8/6d/97d86dd156d7b0b3ea013e28ceb6b3f6.png" data-lightbox="roadtrip" data-title="Pin On Viral Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/d8/6d/97d86dd156d7b0b3ea013e28ceb6b3f6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMLatcUH0TuNdswK69xkWSkJQIXZEMFJ17g';" alt="Pin On Viral Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Viral Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/58/3b/4f583b84c8a1ae6e6b843400bca5fcbf.jpg" data-lightbox="roadtrip" data-title="Backstory Using Satellites To Count Buildings In South China Sea South China Sea South China Man Made Island">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/58/3b/4f583b84c8a1ae6e6b843400bca5fcbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OXswmJI1PH1gdftGxMEdiTNRT_Aq5N2BaQ';" alt="Backstory Using Satellites To Count Buildings In South China Sea South China Sea South China Man Made Island">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Backstory Using Satellites To Count Buildings In South China Sea South China Sea South China Man Made Island</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/cd/0d/b0cd0de3ec166c217407dc2e72c78dbc.jpg" data-lightbox="roadtrip" data-title="Inside Hong Kong In Kowloon City There Was A Settlement Known As Kowloon Walled City The Settlement Being Largely Ungov Kowloon Walled City Walled City City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/cd/0d/b0cd0de3ec166c217407dc2e72c78dbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUsR-uZYZ_6nESoLEx0hdi4E2H6N9kaYC3Q';" alt="Inside Hong Kong In Kowloon City There Was A Settlement Known As Kowloon Walled City The Settlement Being Largely Ungov Kowloon Walled City Walled City City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inside Hong Kong In Kowloon City There Was A Settlement Known As Kowloon Walled City The Settlement Being Largely Ungov Kowloon Walled City Walled City City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/28/ae/3e28ae989dc623d2fd766ccc6a61294b.png" data-lightbox="roadtrip" data-title="The Last Refuge Rag Tag Bunch Of Conservative Misfits Contact Info Thelastrefuge Reagan Com With Images Jinping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/28/ae/3e28ae989dc623d2fd766ccc6a61294b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1CeE26mCJSkFb0TtHVWvqZstAvPj5R-lmA';" alt="The Last Refuge Rag Tag Bunch Of Conservative Misfits Contact Info Thelastrefuge Reagan Com With Images Jinping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Last Refuge Rag Tag Bunch Of Conservative Misfits Contact Info Thelastrefuge Reagan Com With Images Jinping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/f3/52/36f352939734b8a6fb2f5378a3ecf715.jpg" data-lightbox="roadtrip" data-title="Pin On Rising Expectations Revolution">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/f3/52/36f352939734b8a6fb2f5378a3ecf715.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxK7-IZZQpVPKzVsaXluJw1ge8KKRQrwXPQ';" alt="Pin On Rising Expectations Revolution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Rising Expectations Revolution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/6d/db/dc6ddb8dad5b60a779393359582eb641.jpg" data-lightbox="roadtrip" data-title="China Challenges Obama S Asia Pivot With Rapid Military Buildup Pictures Of The Week Military Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/6d/db/dc6ddb8dad5b60a779393359582eb641.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQs0V-rl6PmGFCTYKr4RuO6-EqMzUehbYlg';" alt="China Challenges Obama S Asia Pivot With Rapid Military Buildup Pictures Of The Week Military Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China Challenges Obama S Asia Pivot With Rapid Military Buildup Pictures Of The Week Military Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/aa/43/18/aa4318f15a698d69f137310cfc5f86ae.jpg" data-lightbox="roadtrip" data-title="1968 British Military Hospital Kowloon British Hong Kong Hong Kong History Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/aa/43/18/aa4318f15a698d69f137310cfc5f86ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-giv2AuOeBtNLD3aXf4muOITWCc-CpML_fQ';" alt="1968 British Military Hospital Kowloon British Hong Kong Hong Kong History Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1968 British Military Hospital Kowloon British Hong Kong Hong Kong History Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/82/81/4082813eb650b4e345606c78c9cb082f.png" data-lightbox="roadtrip" data-title="Pin On Thx Expose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/82/81/4082813eb650b4e345606c78c9cb082f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8f5Cgg5tAFaToqvxJlM-VIxTICIOt780tw';" alt="Pin On Thx Expose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thx Expose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/6b/49/ed6b4955b4cfe4324236c538b4960954.jpg" data-lightbox="roadtrip" data-title="The Modelling News Build Review Part 2 Hong Kong Models 1 32 Mosquito B Mk Iv Series Ii Model Airplanes Aircraft Model Kits Model Airplanes Kit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/6b/49/ed6b4955b4cfe4324236c538b4960954.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReNQee_Geg-JkKqX0KWYoDgL-__SAXvy8NAg';" alt="The Modelling News Build Review Part 2 Hong Kong Models 1 32 Mosquito B Mk Iv Series Ii Model Airplanes Aircraft Model Kits Model Airplanes Kit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Modelling News Build Review Part 2 Hong Kong Models 1 32 Mosquito B Mk Iv Series Ii Model Airplanes Aircraft Model Kits Model Airplanes Kit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/4b/da/d64bdac1f6b38f625a5a9b3fb15b2faa.png" data-lightbox="roadtrip" data-title="From Japan To Britain The World Loves Hosting U S Troops South Korean Flag South China Sea Korean Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/4b/da/d64bdac1f6b38f625a5a9b3fb15b2faa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dLo55xe-6gjd2D4FrilvU7stpK1D3JsXBg';" alt="From Japan To Britain The World Loves Hosting U S Troops South Korean Flag South China Sea Korean Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Japan To Britain The World Loves Hosting U S Troops South Korean Flag South China Sea Korean Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/27/44/cf27446766fe7639f83b025a1466b0c6.jpg" data-lightbox="roadtrip" data-title="4 1941 The British Reinforce Singapore British Troops Singapore There Were Many Official British Publicity Shots Of World War Two Military History Singapore">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/27/44/cf27446766fe7639f83b025a1466b0c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2JnEnNFHhS_w17K6PhXTKYYYcrFY55-nKmQ';" alt="4 1941 The British Reinforce Singapore British Troops Singapore There Were Many Official British Publicity Shots Of World War Two Military History Singapore">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 1941 The British Reinforce Singapore British Troops Singapore There Were Many Official British Publicity Shots Of World War Two Military History Singapore</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/70/85/fe7085167fb5359bc2a503551cac2fb1.png" data-lightbox="roadtrip" data-title="Tinian Military Buildup In 2021 Google Search Marine Corps Bases Marine Corps Marine Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/70/85/fe7085167fb5359bc2a503551cac2fb1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmozQ35vuNpyzUiXIGSsTrF8XQq2nAFsiFdA';" alt="Tinian Military Buildup In 2021 Google Search Marine Corps Bases Marine Corps Marine Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinian Military Buildup In 2021 Google Search Marine Corps Bases Marine Corps Marine Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/e7/50/74e7504b64a0a61f5717f1d6405a08a0.jpg" data-lightbox="roadtrip" data-title="Armored Rv Military Expedition Rigs Pirate4x4 Com 4x4 And Off Road Forum Vehicles Police Cars Police Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/e7/50/74e7504b64a0a61f5717f1d6405a08a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQApy9sKtJY3GdL6wSEQM6YNvNNKni38TOWeQ';" alt="Armored Rv Military Expedition Rigs Pirate4x4 Com 4x4 And Off Road Forum Vehicles Police Cars Police Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armored Rv Military Expedition Rigs Pirate4x4 Com 4x4 And Off Road Forum Vehicles Police Cars Police Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-time-zone-l.html">Military Time Zone L</a></li>
+													<li class="list-group-item"><a href="/military-wives-choir-bristol.html">Military Wives Choir Bristol</a></li>
+													<li class="list-group-item"><a href="/military-wives-at-the-albert-hall.html">Military Wives At The Albert Hall</a></li>
+													<li class="list-group-item"><a href="/military-time-utc-now.html">Military Time Utc Now</a></li>
+													<li class="list-group-item"><a href="/military-time-zone-now.html">Military Time Zone Now</a></li>
+													<li class="list-group-item"><a href="/military-with-dependent.html">Military With Dependent</a></li>
+													<li class="list-group-item"><a href="/military-unit-hat-pins.html">Military Unit Hat Pins</a></li>
+													<li class="list-group-item"><a href="/military-time-half-hour-increments.html">Military Time Half Hour Increments</a></li>
+													<li class="list-group-item"><a href="/military-wife-killed.html">Military Wife Killed</a></li>
+													<li class="list-group-item"><a href="/military-wife-retirement-poem.html">Military Wife Retirement Poem</a></li>
+													<li class="list-group-item"><a href="/military-time-with-l.html">Military Time With L</a></li>
+													<li class="list-group-item"><a href="/military-time-reference-sheet.html">Military Time Reference Sheet</a></li>
+													<li class="list-group-item"><a href="/military-wedding-vows-for-him.html">Military Wedding Vows For Him</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-reimbursement.html">Military Tuition Assistance Reimbursement</a></li>
+													<li class="list-group-item"><a href="/military-time-right-now-chicago.html">Military Time Right Now Chicago</a></li>
+													<li class="list-group-item"><a href="/military-wife-coffee-mug.html">Military Wife Coffee Mug</a></li>
+													<li class="list-group-item"><a href="/military-time-right-now-eastern.html">Military Time Right Now Eastern</a></li>
+													<li class="list-group-item"><a href="/military-veteran-spouse-education-benefits.html">Military Veteran Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/military-visor-hats.html">Military Visor Hats</a></li>
+													<li class="list-group-item"><a href="/military-veteran-hat.html">Military Veteran Hat</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Pastor Kills Wife At Navy Federal - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Pastor Kills Wife At Navy Federal",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c3/a0/89/c3a08992fbfb128151857bfec65d6307.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Irish Army",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pastor+kills+wife+at+navy+federal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Irish Army" class="navbar-brand mb-1">Irish Army</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Pastor Kills Wife At Navy Federal</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A popular Ghanaian pastor identified as Sylvester Ofori has been arrested after he reportedly murdered his 27 year old wife Barabar in front of her work place in the US. Lyndon Abioye Sep 13 2020 A Florida pastor was charged with fatally shooting his wife outside her job at the Navy Federal Credit Union and just two days before their fifth wedding anniversary. The incident took place outside Barbaras workplace at the Navy Federal Credit Union near the Mall at Millenia in Orlando on Tuesday 8th September 2020. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-family-support.html">army family support</a>
+											<a class="badge badge-dark" href="/army-hr-specialist-salary.html">army hr specialist salary</a>
+											<a class="badge badge-success" href="/army-contact-number-uk.html">army contact number uk</a>
+											<a class="badge badge-success" href="/army-haircut-design.html">army haircut design</a>
+											<a class="badge badge-danger" href="/army-helpline-number-srinagar.html">army helpline number srinagar</a>
+											<a class="badge badge-secondary" href="/army-family-financial-support.html">army family financial support</a>
+											<a class="badge badge-primary" href="/army-family-support-regulation.html">army family support regulation</a>
+											<a class="badge badge-success" href="/army-hat-roblox.html">army hat roblox</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the right site.  Our website gives you hints for seeing the highest quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f5/5a/68/f55a683e825aa9fa11b914d529f02400.jpg" data-lightbox="roadtrip" data-title="Florida Pastor Reportedly Killed His Wife Because She Was Cheating With The Choir Director Choir Director Choir Pastor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f5/5a/68/f55a683e825aa9fa11b914d529f02400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9MsWrTmjK_f7DaOK96uMt50el3AbRhgI3SA';" alt="Florida Pastor Reportedly Killed His Wife Because She Was Cheating With The Choir Director Choir Director Choir Pastor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida Pastor Reportedly Killed His Wife Because She Was Cheating With The Choir Director Choir Director Choir Pastor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/b8/1d/52b81d5b4526e18c263387080c3312fe.jpg" data-lightbox="roadtrip" data-title="Popular Ghanaian Pastor Shoots His Wife Dead In The Us Ghanaian Orlando Police Department Navy Federal Credit Union">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/b8/1d/52b81d5b4526e18c263387080c3312fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunyYSCjVSrWwH6iaKviQWRZVaR3om3myvrQ';" alt="Popular Ghanaian Pastor Shoots His Wife Dead In The Us Ghanaian Orlando Police Department Navy Federal Credit Union">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Popular Ghanaian Pastor Shoots His Wife Dead In The Us Ghanaian Orlando Police Department Navy Federal Credit Union</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ee/9d/bd/ee9dbda031ef463a61a7db038bf879b7.jpg" data-lightbox="roadtrip" data-title="Pin On Latest Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ee/9d/bd/ee9dbda031ef463a61a7db038bf879b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnWuWghvVkBe3EtmI2YME52BWNQIMAQZUfg';" alt="Pin On Latest Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Latest Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cyboknews.files.wordpress.com/2020/09/us-based-ghanaian-pastor-sylvester-ofori-shot-wife-barbara-tommey-dead.jpg" data-lightbox="roadtrip" data-title="Us Based Ghanaian Pastor Ofori Who Killed His Wife Dropped Warnings">
+											<img class="card-img v-image ads-img " src="https://cyboknews.files.wordpress.com/2020/09/us-based-ghanaian-pastor-sylvester-ofori-shot-wife-barbara-tommey-dead.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1kQsv45swBuJGZWmP-qsFmrk_2wM7XhmL6Q';" alt="Us Based Ghanaian Pastor Ofori Who Killed His Wife Dropped Warnings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Based Ghanaian Pastor Ofori Who Killed His Wife Dropped Warnings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/a9/44/3da94475dafc419407cf4d7c9d6acfb8.jpg" data-lightbox="roadtrip" data-title="Pin On Bloody City Song Published By Love Groove Music Publishing Company Bmi Usa Perform By Jah Rain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/a9/44/3da94475dafc419407cf4d7c9d6acfb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1y6d7R8x3aRca6eHu-oq959CorMhUC4y8w';" alt="Pin On Bloody City Song Published By Love Groove Music Publishing Company Bmi Usa Perform By Jah Rain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bloody City Song Published By Love Groove Music Publishing Company Bmi Usa Perform By Jah Rain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.atinkaonline.com/fm/wp-content/uploads/2020/09/IMG-20200909-WA0012-640x440.jpg" data-lightbox="roadtrip" data-title="Us Based Ghanaian Pastor Allegedly Kills Wife Atinka Fm">
+											<img class="card-img v-image ads-img " src="https://www.atinkaonline.com/fm/wp-content/uploads/2020/09/IMG-20200909-WA0012-640x440.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--n9sUDVnR8UX4abTpaWwZBMsbKU9l7mnbg';" alt="Us Based Ghanaian Pastor Allegedly Kills Wife Atinka Fm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Based Ghanaian Pastor Allegedly Kills Wife Atinka Fm</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i2.wp.com/starrfm.com.gh/wp-content/uploads/2020/09/us-PASTOR.jpg?resize=696%2C464&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--n9sUDVnR8UX4abTpaWwZBMsbKU9l7mnbg';" alt="Us Based Ghanaian Pastor Allegedly Kills Wife Atinka Fm">
+										<div class="card-body">
+						<h3 class="h5"><b>The heated conversation was caught on video.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Pastor kills wife at navy federal</strong>. 
+								
+																	Ofori killed his wife who was identified as Barbara Tommey outside the Navy. 
+																	The preacher identified as Sylvester Ofori shot and killed wife Barbara Tommey at Navy Federal Credit Union near the Mall at Millenia in Orlando USA on Tuesday 8th September 2020. 
+																	Sep 09 2020 at 232 PM A Ghanaian pastor has been arrested on a murder charge after Orlando police say he shot and killed his 27-year-old wife outside her job at the Navy Federal Credit Union near. 
+																	September 14 2020 According to several confirmed reports 35-year-old Sylvester Ofori an Orlando-area pastor shot and killed his estranged wife last week right outside of her job at the Navy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sylvester Ofori 35 who heads the Floodgates of Heaven International Ministries and believes he is a prophet is being held in Orange County Jail after gunning down his wife Barbara Tommey 27 on Tuesday Sept. 
+																	A Ghanaian pastor Sylvester Ofori has been arrested for shooting his wife dead in the United States of America. 
+																	The fatal shooting happened outside of the bank near the Mall at Millenia on Gardens Park Boulevard in Orlando according to reports. 
+																	News went viral that on Tuesday August 8 2020 that a US-based Ghanaian Pastor named Sylvester Ofori shot his wife Barbara Tammey 7 times to death at Navy Federal Credit Union near the Mall at Millenia in Orlando USA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She was shot outside the Navy Federal Credit Union branch where she worked. 
+																	News went viral that on Tuesday August 8 2020 that a US-based Ghanaian Pastor named Sylvester Ofori shot his wife Barbara Tammey to death at Navy Federal Credit Union near the Mall at Millenia in Orlando USA. 
+																	The incident took place outside the 27-year-old womans workplace at the Navy Federal Credit Union near the Mall at Millenia in Orlando on Tuesday 8th September 2020. 
+																	Orlando Florida On Tuesday an abusive pastor and self-proclaimed prophet shot and killed his estranged wife as she arrived for work at the bank she was employed at. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An Orlando Florida based Ghanaian pastor Sylvester Ofori who shot his wife to death on Tuesday dropped tell-tale signs on Facebook about his unstable mind and violent intent. 
+																	Killer pastors last Facebook post before shooting his wife Watch the video below. 
+																	The 27-year-old was shot. 
+																	In a newly released affidavit details show that Sylvester Ofori argued with his wife the day prior and threatened to kill her. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A pastor and self. 
+																	Sylvester Ofori 35 who heads the Floodgates of Heaven International Ministries and believes he is a prophet is being held in Orange County Jail after gunning down his wife Barbara Tommey 27 on. 
+																	Pastor charged with murder accused of killing wife outside credit union where she worked Barbara Tommey never made it into work on Tuesday. 
+																	A heinous act of violence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Popular Ghanaian pastor shoots wife dead in the US A popular US-based Ghanaian pastor identified as Sylvester Ofori has been arrested after he shot his wife Barbara Tommey dead. 
+																	Detectives have arrested Sylvester Ofori 35 in the murder of his 27-year-old wife on September 8. 
+																	The tragic incident occurred last Tuesday in Florida MTO News has learned. 
+																	Pastor Sylvester Ofori 35 shot and killed his wife Barbara Tommey 27 outside her workplace at the Navy Federal Credit Union on the 4600 block of Gardens Park Boulevard just before 900 am on September 8 2020 just two days before their fifth wedding anniversary last Tuesday in Florida. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Police say Sylvester Ofori 35 shot and killed his wife Barbara Tommey outside her job at Navy Federal Credit Union in Orlando Tuesday morning. 
+																	On Tuesday morning 35 year-old Ofori tracked his wife 27 year-old Barbara Tommey to her work place at Navy Federal Credit Union and shot her point blank. 
+																	Sylvester Ofori who has 60000 online followers and believes he is a prophet is being held in Orange County Jail after his wife Barbara Tommey was gunned down on Tuesday. 
+																	The murder was captured on CCTV and happened outside the Navy Federal Credit Union. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Police said the 27-year-old. 
+																	Sep 12 2020 at 530 AM. 
+																	A Florida church is devastated after their pastor whos also a self-styled prophet with thousands of followers was charged with fatally shooting his wife outside her job at the Navy Federal Credit Union just two days before their fifth wedding anniversary Tuesday. 
+																	Sylvesters actions resulted in him being detained as he is currently in police custody at the Orange County Jail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some Ghanaians are still in shock after news went viral that a preacher had shot his wife in the United States. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/MNqssrD5LLY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Man Arrested In Fatal Shooting Of Wife Outside Navy Federal Credit Union In Orlando Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/MNqssrD5LLY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBIiNI0w32z-AqxnogrXKXK9nRlYPGG-votw';" alt="Man Arrested In Fatal Shooting Of Wife Outside Navy Federal Credit Union In Orlando Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Arrested In Fatal Shooting Of Wife Outside Navy Federal Credit Union In Orlando Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://starrfm.com.gh/wp-content/uploads/2020/09/US-pastor-1.jpeg--696x352.png" data-lightbox="roadtrip" data-title="Us Based Ghanaian Pastor Arrested For Killing Wife Starr Fm">
+											<img class="card-img v-image ads-img " src="https://starrfm.com.gh/wp-content/uploads/2020/09/US-pastor-1.jpeg--696x352.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbX_1dwhWGL9PHxEj0nKHJ9tAa9eiCjQcXA';" alt="Us Based Ghanaian Pastor Arrested For Killing Wife Starr Fm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Based Ghanaian Pastor Arrested For Killing Wife Starr Fm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/0R2erdN_LrU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Woman Shot Killed Outside Navy Federal Credit Union In Orlando Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/0R2erdN_LrU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSncUIHR5D8t9GEibdkP5M0cP3BUobrXaEvA';" alt="Woman Shot Killed Outside Navy Federal Credit Union In Orlando Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Woman Shot Killed Outside Navy Federal Credit Union In Orlando Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ehz1tjqxcaaxcxv-1599580043.jpg?crop=1.00xw:0.752xh;0,0.0891xh&amp;resize=1200:*" data-lightbox="roadtrip" data-title="Shooting Outside Orlando Navy Federal Credit Union Leaves 1 Dead">
+											<img class="card-img v-image ads-img " src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ehz1tjqxcaaxcxv-1599580043.jpg?crop=1.00xw:0.752xh;0,0.0891xh&amp;resize=1200:*" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9Rui42hgoM7XcrC3PxFfdhuxet9YgzPu5w';" alt="Shooting Outside Orlando Navy Federal Credit Union Leaves 1 Dead">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shooting Outside Orlando Navy Federal Credit Union Leaves 1 Dead</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/N_UfYTcdf3U/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Navy Federal Employee Shot And Killed Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/N_UfYTcdf3U/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaV-o1DaBKGD8qZXP5rp1N2l15D9-NOAo02g';" alt="Navy Federal Employee Shot And Killed Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Federal Employee Shot And Killed Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/starrfm.com.gh/wp-content/uploads/2020/09/us-PASTOR.jpg?resize=696%2C464&amp;ssl=1" data-lightbox="roadtrip" data-title="Us Based Ghanaian Pastor Arrested For Killing Wife Theafricandream">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/starrfm.com.gh/wp-content/uploads/2020/09/us-PASTOR.jpg?resize=696%2C464&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qeMYV55C2kYlOgXZQyGnS4aTSAqIWkxvig';" alt="Us Based Ghanaian Pastor Arrested For Killing Wife Theafricandream">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Based Ghanaian Pastor Arrested For Killing Wife Theafricandream</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/7a/66/7c7a6680d409399e628f43a2a0d3647d.jpg" data-lightbox="roadtrip" data-title="Pin On Lifestyle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/7a/66/7c7a6680d409399e628f43a2a0d3647d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJa-YXnV64gr2CIRgRIQP7iJJPOBIiiEYBw';" alt="Pin On Lifestyle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lifestyle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/2b/29/ec2b291740e110b20adf245657f6a261.jpg" data-lightbox="roadtrip" data-title="Watch Shameful Angel Group Of Companies Boss Dr Oteng S Wife Akua Gmb Exposed For Cheating Afia Schwar Drops A Bomb Shell Group Of Companies Cheating Boss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/2b/29/ec2b291740e110b20adf245657f6a261.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQtoUGOYWBzi9hk1vKx2IlUhlGBQfKFHV6Q';" alt="Watch Shameful Angel Group Of Companies Boss Dr Oteng S Wife Akua Gmb Exposed For Cheating Afia Schwar Drops A Bomb Shell Group Of Companies Cheating Boss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Shameful Angel Group Of Companies Boss Dr Oteng S Wife Akua Gmb Exposed For Cheating Afia Schwar Drops A Bomb Shell Group Of Companies Cheating Boss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/a7/f7/d3a7f7d99f6bb3cfe6ada0c785299bba.jpg" data-lightbox="roadtrip" data-title="Pin On Centapost News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/a7/f7/d3a7f7d99f6bb3cfe6ada0c785299bba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4D_cJofGl3YEgWXZGwQc7KDQhpPP6AyLMQ';" alt="Pin On Centapost News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Centapost News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/a0/89/c3a08992fbfb128151857bfec65d6307.jpg" data-lightbox="roadtrip" data-title="Security Operatives Allegedly Acting On Orders Of Kaduna Governor El Rufai Kill Shiite Member Coronation Chieftaincy Politics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/a0/89/c3a08992fbfb128151857bfec65d6307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pXLKwrVfwNW9tY4O5vKoT2PM8zVpYe6GMA';" alt="Security Operatives Allegedly Acting On Orders Of Kaduna Governor El Rufai Kill Shiite Member Coronation Chieftaincy Politics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security Operatives Allegedly Acting On Orders Of Kaduna Governor El Rufai Kill Shiite Member Coronation Chieftaincy Politics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/96/a9/9d96a95e15af9ed1359edd4018ef2c27.jpg" data-lightbox="roadtrip" data-title="Pin On Ghana News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/96/a9/9d96a95e15af9ed1359edd4018ef2c27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHf3mh5unaiATjZDhRe7pdEFmvb_RT6Ui1A';" alt="Pin On Ghana News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ghana News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/c0/d5/84c0d5c7b90e01be10047fc92d530205.png" data-lightbox="roadtrip" data-title="How Military Service Strengthens Your Financial Fitness Financial Fitness Navy Federal Credit Union Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/c0/d5/84c0d5c7b90e01be10047fc92d530205.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPxlsUCmtq7PsLVrFGGTKNIFr-7WJ7kS3kA';" alt="How Military Service Strengthens Your Financial Fitness Financial Fitness Navy Federal Credit Union Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Military Service Strengthens Your Financial Fitness Financial Fitness Navy Federal Credit Union Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/06/59/83065940a146ac3865d1cf5c314d7807.jpg" data-lightbox="roadtrip" data-title="Pin On Centapost News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/06/59/83065940a146ac3865d1cf5c314d7807.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZ4vTTR6o-QOZhr4u_AEVwZfW8BT85Vu4aw';" alt="Pin On Centapost News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Centapost News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/h-hour-british-army.html">H Hour British Army</a></li>
+													<li class="list-group-item"><a href="/hari-bezwada-army.html">Hari Bezwada Army</a></li>
+													<li class="list-group-item"><a href="/german-ww1-soldier-records.html">German Ww1 Soldier Records</a></li>
+													<li class="list-group-item"><a href="/gcss-army-help-number.html">Gcss Army Help Number</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-active-duty-military-dependents.html">Health Insurance For Active Duty Military Dependents</a></li>
+													<li class="list-group-item"><a href="/french-military-hat-names.html">French Military Hat Names</a></li>
+													<li class="list-group-item"><a href="/government-scholarship-for-mba-students-in-india.html">Government Scholarship For Mba Students In India</a></li>
+													<li class="list-group-item"><a href="/gifts-for-wife-before-deployment.html">Gifts For Wife Before Deployment</a></li>
+													<li class="list-group-item"><a href="/hari-army-tanggal.html">Hari Army Tanggal</a></li>
+													<li class="list-group-item"><a href="/golden-hour-military-medicine.html">Golden Hour Military Medicine</a></li>
+													<li class="list-group-item"><a href="/free-online-courses-for-military-spouses.html">Free Online Courses For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/hari-army-bts-sedunia.html">Hari Army Bts Sedunia</a></li>
+													<li class="list-group-item"><a href="/hero-military-abbreviation.html">Hero Military Abbreviation</a></li>
+													<li class="list-group-item"><a href="/free-premium-linkedin-for-military-spouses.html">Free Premium Linkedin For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/gcss-army-equipment-status-report-cheat-sheet.html">Gcss Army Equipment Status Report Cheat Sheet</a></li>
+													<li class="list-group-item"><a href="/hari-army-tanggal-berapa.html">Hari Army Tanggal Berapa</a></li>
+													<li class="list-group-item"><a href="/free-tuition-for-100-disabled-veterans-dependents.html">Free Tuition For 100 Disabled Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/hari-spesial-army.html">Hari Spesial Army</a></li>
+													<li class="list-group-item"><a href="/free-tuition-for-military-dependents.html">Free Tuition For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/golden-hour-luxury-brand-waterproof-military-sport.html">Golden Hour Luxury Brand Waterproof Military Sport</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
